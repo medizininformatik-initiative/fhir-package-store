@@ -1,0 +1,56 @@
+name: Build FHIR Cache from .tgz Packages
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  build-cache:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout
+      uses: actions/checkout@v4
+
+    - name: Configure Git
+      run: |
+        git config --global user.name "github-actions[bot]"
+        git config --global user.email "github-actions[bot]@users.noreply.github.com"
+
+    - name: Prepare folders
+      run: |
+        mkdir -p .fhir/packages
+        mkdir -p fhir-cache  # Folder that gets committed
+
+    - name: Extract FHIR Packages to .fhir
+      run: |
+        for pkg in package-tarballs/*.tgz; do
+          pkgfile=$(basename "$pkg" .tgz)
+          cleaned="${pkgfile%-snapshots}"
+          name="${cleaned%-*}"
+          version="${cleaned##*-}"
+          target=".fhir/packages/${name}#${version}"
+          echo "Rebuilding cache for $target"
+          rm -rf "$target"
+          mkdir -p "$target"
+          tar -xzf "$pkg" -C "$target"
+        done
+
+    - name: Copy .fhir content to cache folder
+      run: |
+        cp -r .fhir/. fhir-cache/
+
+    - name: Commit cache to `cache-store` branch
+      run: |
+        git fetch origin
+        git switch --force-create cache-store || git switch cache-store
+        mv fhir-cache /tmp/fhir-cache
+        rm -rf *
+        mv /tmp/fhir-cache/* .
+        git add .
+        git commit -m "Update FHIR cache $(date -u +'%Y-%m-%dT%H:%M:%SZ')" || echo "No changes to commit"
+        git push --force origin cache-store
