@@ -1,0 +1,13 @@
+{
+  "name": "de.einwilligungsmanagement",
+  "version": "2.0.0",
+  "description": "Einwilligungsmanagement Release 2.0.0\r\n",
+  "author": "stefanlang1",
+  "fhirVersions": [
+    "4.0.1"
+  ],
+  "jurisdiction": "urn:iso:std:iso:3166#DE",
+  "dependencies": {
+    "hl7.fhir.r4.core": "4.0.1"
+  }
+}

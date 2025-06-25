@@ -1,0 +1,31 @@
+{
+  "name": "hl7.fhir.uv.genomics-reporting",
+  "version": "2.0.0",
+  "tools-version": 3,
+  "type": "IG",
+  "date": "20220509165218",
+  "license": "CC0-1.0",
+  "canonical": "http://hl7.org/fhir/uv/genomics-reporting",
+  "url": "http://hl7.org/fhir/uv/genomics-reporting/STU2",
+  "title": "Genomics Reporting Implementation Guide",
+  "description": "Guidelines for reporting of clinical genomics results using HL7 FHIR. (built Mon, May 9, 2022 16:52+0000+00:00)",
+  "fhirVersions": [
+    "4.0.1"
+  ],
+  "dependencies": {
+    "hl7.fhir.r4.core": "4.0.1"
+  },
+  "author": "HL7 Clinical Genomics Working Group",
+  "maintainers": [
+    {
+      "name": "HL7 Clinical Genomics Working Group",
+      "email": "cg@lists.HL7.org",
+      "url": "http://www.hl7.org/Special/committees/clingenomics"
+    }
+  ],
+  "directories": {
+    "lib": "package",
+    "example": "example"
+  },
+  "jurisdiction": "http://unstats.un.org/unsd/methods/m49/m49.htm#001"
+}

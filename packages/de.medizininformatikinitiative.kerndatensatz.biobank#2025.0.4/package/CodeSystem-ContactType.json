@@ -1,0 +1,1 @@
+{"resourceType":"CodeSystem","id":"ContactType","url":"https://www.medizininformatik-initiative.de/fhir/ext/modul-biobank/CodeSystem/ContactType","version":"2025.0.4","name":"CodeSystemContactType","title":"CodeSystem - Contact Type","status":"active","content":"complete","count":1,"concept":[{"code":"RESEARCH","display":"Contact for researchers about sample and data requests"}]}

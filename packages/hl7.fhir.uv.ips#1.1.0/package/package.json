@@ -1,0 +1,26 @@
+{
+  "name": "hl7.fhir.uv.ips",
+  "version": "1.1.0",
+  "tools-version": 3,
+  "type": "IG",
+  "date": "20221122032408",
+  "license": "CC0-1.0",
+  "canonical": "http://hl7.org/fhir/uv/ips",
+  "url": "http://hl7.org/fhir/uv/ips/STU1.1",
+  "title": "International Patient Summary Implementation Guide",
+  "description": "International Patient Summary (IPS) FHIR Implementation Guide (built Tue, Nov 22, 2022 03:24+0000+00:00)",
+  "fhirVersions": [
+    "4.0.1"
+  ],
+  "dependencies": {
+    "hl7.fhir.r4.core": "4.0.1",
+    "hl7.terminology.r4": "5.0.0",
+    "fhir.dicom": "2022.4.20221006"
+  },
+  "author": "Health Level Seven International - Patient Care Work Group",
+  "directories": {
+    "lib": "package",
+    "example": "example"
+  },
+  "jurisdiction": "http://unstats.un.org/unsd/methods/m49/m49.htm#001"
+}

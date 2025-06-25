@@ -1,0 +1,14 @@
+{
+  "name": "de.gematik.isik-basismodul",
+  "version": "4.0.3",
+  "fhirVersions": [
+    "4.0.1"
+  ],
+  "description": "Put a description here",
+  "author": "nilskohl2",
+  "dependencies": {
+    "de.basisprofil.r4": "1.5.2",
+    "hl7.fhir.uv.subscriptions-backport.r4": "1.1.0"
+  },
+  "jurisdiction": "urn:iso:std:iso:3166#DE"
+}
