@@ -38,3 +38,4 @@ repos:
   # ===== Cross-Module =====
   - repo: medizininformatik-initiative/kerndatensatz-meta
   - repo: medizininformatik-initiative/kerndatensatz-complete
+  - repo: medizininformatik-initiative/kds-fdpg-layer            # FDPG Overlay-Layer (eigenes Release-tgz)
