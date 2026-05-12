@@ -1,0 +1,40 @@
+# Tracked upstream repositories for auto-sync of FHIR package tarballs.
+#
+# Der Workflow .github/workflows/sync-mii-packages.yml liest diese Datei einmal
+# pro Lauf, holt den jeweils letzten Release (oder pre-release wenn
+# allow_prerelease: true), lädt den .tgz-Asset, und stellt einen batched PR
+# zum Review.
+#
+# Felder:
+#   repo               GitHub owner/name (required)
+#   allow_prerelease   true → auch alpha/beta/rc Releases ziehen. Default false.
+#                      Module, deren "aktiver" Release aktuell ein Prerelease ist
+#                      (consent, mikrobiologie), setzen das explizit.
+#   skip               true → temporär deaktivieren (z.B. weil upstream broken
+#                      und unter overrides/ lokal gepatcht)
+
+repos:
+  # ===== KDS Module =====
+  - repo: medizininformatik-initiative/kerndatensatz-basis
+  - repo: medizininformatik-initiative/kerndatensatzmodul-labor
+  - repo: medizininformatik-initiative/kerndatensatzmodul-medikation
+  - repo: medizininformatik-initiative/kerndatensatzmodul-biobank
+  - repo: medizininformatik-initiative/kerndatensatzmodul-studie
+  - repo: medizininformatik-initiative/kerndatensatzmodul-GenetischeTests   # publiziert als kerndatensatz.molgen — TODO verify
+  - repo: medizininformatik-initiative/kerndatensatzmodul-PathologieBefund
+  - repo: medizininformatik-initiative/kerndatensatzmodul-intensivmedizin
+  - repo: medizininformatik-initiative/kerndatensatz-bildgebung
+  - repo: medizininformatik-initiative/kerndatensatzmodul-seltene-erkrankungen
+  - repo: medizininformatik-initiative/kerndatensatzmodul-onkologie
+  - repo: medizininformatik-initiative/kerndatensatz-dokument
+  - repo: medizininformatik-initiative/kerndatensatzmodul-molekulares-tumorboard
+  - repo: medizininformatik-initiative/kerndatensatzmodul-proms
+  - repo: medizininformatik-initiative/kerndatensatzmodul-consent
+    allow_prerelease: true
+  - repo: medizininformatik-initiative/kerndatensatzmodul-mikrobiologie
+    allow_prerelease: true
+    skip: true   # bis alpha-3 mit Snapshots upstream da ist
+
+  # ===== Cross-Module =====
+  - repo: medizininformatik-initiative/kerndatensatz-meta
+  - repo: medizininformatik-initiative/kerndatensatz-complete
