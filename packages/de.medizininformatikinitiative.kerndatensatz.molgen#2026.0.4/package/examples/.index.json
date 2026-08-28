@@ -1,0 +1,529 @@
+{
+  "index-version" : 2,
+  "files" : [
+    {
+      "filename" : "Bundle-mii-exa-befund-bundle-1-braf.json",
+      "resourceType" : "Bundle",
+      "id" : "mii-exa-befund-bundle-1-braf",
+      "type" : "transaction"
+    },
+    {
+      "filename" : "Bundle-mii-exa-befund-bundle-befund-2-nipbl-clinical.json",
+      "resourceType" : "Bundle",
+      "id" : "mii-exa-befund-bundle-befund-2-nipbl-clinical",
+      "type" : "transaction"
+    },
+    {
+      "filename" : "Bundle-mii-exa-befund-bundle-befund-fgfr2-fusion.json",
+      "resourceType" : "Bundle",
+      "id" : "mii-exa-befund-bundle-befund-fgfr2-fusion",
+      "type" : "transaction"
+    },
+    {
+      "filename" : "Bundle-mii-exa-befund-bundle-befund-srcc.json",
+      "resourceType" : "Bundle",
+      "id" : "mii-exa-befund-bundle-befund-srcc",
+      "type" : "transaction"
+    },
+    {
+      "filename" : "Bundle-mii-exa-molgen-bundle-befund-2-nipbl.json",
+      "resourceType" : "Bundle",
+      "id" : "mii-exa-molgen-bundle-befund-2-nipbl",
+      "type" : "transaction"
+    },
+    {
+      "filename" : "Bundle-mii-exa-molgen-bundle-comprehensive-wes.json",
+      "resourceType" : "Bundle",
+      "id" : "mii-exa-molgen-bundle-comprehensive-wes",
+      "type" : "transaction"
+    },
+    {
+      "filename" : "Bundle-mii-exa-molgen-bundle-fam-his-breast-ovar-can.json",
+      "resourceType" : "Bundle",
+      "id" : "mii-exa-molgen-bundle-fam-his-breast-ovar-can",
+      "type" : "transaction"
+    },
+    {
+      "filename" : "ChargeItem-mii-exa-molgen-chargeitem-ebm-21.json",
+      "resourceType" : "ChargeItem",
+      "id" : "mii-exa-molgen-chargeitem-ebm-21"
+    },
+    {
+      "filename" : "ChargeItem-mii-exa-molgen-chargeitem-ebm-22.json",
+      "resourceType" : "ChargeItem",
+      "id" : "mii-exa-molgen-chargeitem-ebm-22"
+    },
+    {
+      "filename" : "ChargeItem-mii-exa-molgen-chargeitem-ebm-23.json",
+      "resourceType" : "ChargeItem",
+      "id" : "mii-exa-molgen-chargeitem-ebm-23"
+    },
+    {
+      "filename" : "ChargeItem-mii-exa-molgen-chargeitem-ebm-24.json",
+      "resourceType" : "ChargeItem",
+      "id" : "mii-exa-molgen-chargeitem-ebm-24"
+    },
+    {
+      "filename" : "Condition-mii-exa-molgen-bundle-befund-2-nipbl-condition-lab.json",
+      "resourceType" : "Condition",
+      "id" : "mii-exa-molgen-bundle-befund-2-nipbl-condition-lab"
+    },
+    {
+      "filename" : "Condition-mii-exa-molgen-condition-nipbl-clinical.json",
+      "resourceType" : "Condition",
+      "id" : "mii-exa-molgen-condition-nipbl-clinical"
+    },
+    {
+      "filename" : "Device-mii-exa-molgen-device-illumina-novaseq.json",
+      "resourceType" : "Device",
+      "id" : "mii-exa-molgen-device-illumina-novaseq",
+      "type" : "{"
+    },
+    {
+      "filename" : "Device-mii-exa-molgen-device-sequencer-2.json",
+      "resourceType" : "Device",
+      "id" : "mii-exa-molgen-device-sequencer-2"
+    },
+    {
+      "filename" : "Device-mii-exa-molgen-device-sequencer-nextseq.json",
+      "resourceType" : "Device",
+      "id" : "mii-exa-molgen-device-sequencer-nextseq"
+    },
+    {
+      "filename" : "Device-mii-exa-molgen-device-sequencer.json",
+      "resourceType" : "Device",
+      "id" : "mii-exa-molgen-device-sequencer"
+    },
+    {
+      "filename" : "Device-mii-exa-molgen-device-thermofisher-ionchef.json",
+      "resourceType" : "Device",
+      "id" : "mii-exa-molgen-device-thermofisher-ionchef",
+      "type" : "{"
+    },
+    {
+      "filename" : "DiagnosticReport-mii-exa-molgen-befundbericht-comprehensive-wes.json",
+      "resourceType" : "DiagnosticReport",
+      "id" : "mii-exa-molgen-befundbericht-comprehensive-wes"
+    },
+    {
+      "filename" : "DiagnosticReport-mii-exa-molgen-molekulargenetischer-befundbericht-1.json",
+      "resourceType" : "DiagnosticReport",
+      "id" : "mii-exa-molgen-molekulargenetischer-befundbericht-1"
+    },
+    {
+      "filename" : "DiagnosticReport-mii-exa-molgen-molekulargenetischer-befundbericht-2.json",
+      "resourceType" : "DiagnosticReport",
+      "id" : "mii-exa-molgen-molekulargenetischer-befundbericht-2"
+    },
+    {
+      "filename" : "DiagnosticReport-mii-exa-molgen-molekulargenetischer-befundbericht-fgfr2-fusion.json",
+      "resourceType" : "DiagnosticReport",
+      "id" : "mii-exa-molgen-molekulargenetischer-befundbericht-fgfr2-fusion"
+    },
+    {
+      "filename" : "DiagnosticReport-mii-exa-molgen-molekulargenetischer-befundbericht-srcc.json",
+      "resourceType" : "DiagnosticReport",
+      "id" : "mii-exa-molgen-molekulargenetischer-befundbericht-srcc"
+    },
+    {
+      "filename" : "DiagnosticReport-mii-exa-molgen-molekulargenetischer-befundbericht-trurisk-panel.json",
+      "resourceType" : "DiagnosticReport",
+      "id" : "mii-exa-molgen-molekulargenetischer-befundbericht-trurisk-panel"
+    },
+    {
+      "filename" : "DiagnosticReport-mii-exa-molgen-molekulargenetischer-befundbericht-tumorboard-3.json",
+      "resourceType" : "DiagnosticReport",
+      "id" : "mii-exa-molgen-molekulargenetischer-befundbericht-tumorboard-3"
+    },
+    {
+      "filename" : "DocumentReference-mii-exa-molgen-documentreference-bed-file.json",
+      "resourceType" : "DocumentReference",
+      "id" : "mii-exa-molgen-documentreference-bed-file",
+      "type" : "{",
+      "content" : "{"
+    },
+    {
+      "filename" : "DocumentReference-mii-exa-molgen-documentreference-fastq.json",
+      "resourceType" : "DocumentReference",
+      "id" : "mii-exa-molgen-documentreference-fastq",
+      "type" : "{",
+      "content" : "{"
+    },
+    {
+      "filename" : "FamilyMemberHistory-mii-exa-molgen-family-member-history-1.json",
+      "resourceType" : "FamilyMemberHistory",
+      "id" : "mii-exa-molgen-family-member-history-1"
+    },
+    {
+      "filename" : "FamilyMemberHistory-mii-exa-molgen-family-member-history-2.json",
+      "resourceType" : "FamilyMemberHistory",
+      "id" : "mii-exa-molgen-family-member-history-2"
+    },
+    {
+      "filename" : "FamilyMemberHistory-mii-exa-molgen-family-member-history-diabetes.json",
+      "resourceType" : "FamilyMemberHistory",
+      "id" : "mii-exa-molgen-family-member-history-diabetes"
+    },
+    {
+      "filename" : "FamilyMemberHistory-mii-exa-molgen-family-member-history-mi.json",
+      "resourceType" : "FamilyMemberHistory",
+      "id" : "mii-exa-molgen-family-member-history-mi"
+    },
+    {
+      "filename" : "FamilyMemberHistory-mii-exa-molgen-family-member-history-retinal.json",
+      "resourceType" : "FamilyMemberHistory",
+      "id" : "mii-exa-molgen-family-member-history-retinal"
+    },
+    {
+      "filename" : "FamilyMemberHistory-mii-exa-molgen-family-member-history-srcc.json",
+      "resourceType" : "FamilyMemberHistory",
+      "id" : "mii-exa-molgen-family-member-history-srcc"
+    },
+    {
+      "filename" : "Media-mii-exa-molgen-media-coverage-plot.json",
+      "resourceType" : "Media",
+      "id" : "mii-exa-molgen-media-coverage-plot",
+      "type" : "{",
+      "content" : "contentType",
+      "url" : "https://www.medizininformatik-initiative.de/fhir/plots/coverage_wes_2024001.png"
+    },
+    {
+      "filename" : "Observation-mii-exa-molgen-diagnostische-implikation-1.json",
+      "resourceType" : "Observation",
+      "id" : "mii-exa-molgen-diagnostische-implikation-1"
+    },
+    {
+      "filename" : "Observation-mii-exa-molgen-diagnostische-implikation-2.json",
+      "resourceType" : "Observation",
+      "id" : "mii-exa-molgen-diagnostische-implikation-2"
+    },
+    {
+      "filename" : "Observation-mii-exa-molgen-diagnostische-implikation-brca1.json",
+      "resourceType" : "Observation",
+      "id" : "mii-exa-molgen-diagnostische-implikation-brca1"
+    },
+    {
+      "filename" : "Observation-mii-exa-molgen-diagnostische-implikation-cnv-4.json",
+      "resourceType" : "Observation",
+      "id" : "mii-exa-molgen-diagnostische-implikation-cnv-4"
+    },
+    {
+      "filename" : "Observation-mii-exa-molgen-diagnostische-implikation-comprehensive.json",
+      "resourceType" : "Observation",
+      "id" : "mii-exa-molgen-diagnostische-implikation-comprehensive"
+    },
+    {
+      "filename" : "Observation-mii-exa-molgen-diagnostische-implikation-fgfr2-fusion.json",
+      "resourceType" : "Observation",
+      "id" : "mii-exa-molgen-diagnostische-implikation-fgfr2-fusion"
+    },
+    {
+      "filename" : "Observation-mii-exa-molgen-diagnostische-implikation-srcc-ctnna1.json",
+      "resourceType" : "Observation",
+      "id" : "mii-exa-molgen-diagnostische-implikation-srcc-ctnna1"
+    },
+    {
+      "filename" : "Observation-mii-exa-molgen-genotyp-1.json",
+      "resourceType" : "Observation",
+      "id" : "mii-exa-molgen-genotyp-1"
+    },
+    {
+      "filename" : "Observation-mii-exa-molgen-genotyp-2.json",
+      "resourceType" : "Observation",
+      "id" : "mii-exa-molgen-genotyp-2"
+    },
+    {
+      "filename" : "Observation-mii-exa-molgen-genotyp-brca1.json",
+      "resourceType" : "Observation",
+      "id" : "mii-exa-molgen-genotyp-brca1"
+    },
+    {
+      "filename" : "Observation-mii-exa-molgen-mikrosatelliteninstabilitaet-1.json",
+      "resourceType" : "Observation",
+      "id" : "mii-exa-molgen-mikrosatelliteninstabilitaet-1"
+    },
+    {
+      "filename" : "Observation-mii-exa-molgen-molekulare-konsequenz-1.json",
+      "resourceType" : "Observation",
+      "id" : "mii-exa-molgen-molekulare-konsequenz-1"
+    },
+    {
+      "filename" : "Observation-mii-exa-molgen-molekulare-konsequenz-2.json",
+      "resourceType" : "Observation",
+      "id" : "mii-exa-molgen-molekulare-konsequenz-2"
+    },
+    {
+      "filename" : "Observation-mii-exa-molgen-molekulare-konsequenz-brca1.json",
+      "resourceType" : "Observation",
+      "id" : "mii-exa-molgen-molekulare-konsequenz-brca1"
+    },
+    {
+      "filename" : "Observation-mii-exa-molgen-molekulare-konsequenz-cnv-4.json",
+      "resourceType" : "Observation",
+      "id" : "mii-exa-molgen-molekulare-konsequenz-cnv-4"
+    },
+    {
+      "filename" : "Observation-mii-exa-molgen-mutationslast-1.json",
+      "resourceType" : "Observation",
+      "id" : "mii-exa-molgen-mutationslast-1"
+    },
+    {
+      "filename" : "Observation-mii-exa-molgen-phenotypic-feature-1.json",
+      "resourceType" : "Observation",
+      "id" : "mii-exa-molgen-phenotypic-feature-1"
+    },
+    {
+      "filename" : "Observation-mii-exa-molgen-phenotypic-feature-2.json",
+      "resourceType" : "Observation",
+      "id" : "mii-exa-molgen-phenotypic-feature-2"
+    },
+    {
+      "filename" : "Observation-mii-exa-molgen-phenotypic-feature-3.json",
+      "resourceType" : "Observation",
+      "id" : "mii-exa-molgen-phenotypic-feature-3"
+    },
+    {
+      "filename" : "Observation-mii-exa-molgen-phenotypic-feature-4.json",
+      "resourceType" : "Observation",
+      "id" : "mii-exa-molgen-phenotypic-feature-4"
+    },
+    {
+      "filename" : "Observation-mii-exa-molgen-therapeutische-implikation-1.json",
+      "resourceType" : "Observation",
+      "id" : "mii-exa-molgen-therapeutische-implikation-1"
+    },
+    {
+      "filename" : "Observation-mii-exa-molgen-therapeutische-implikation-fgfr2-fusion.json",
+      "resourceType" : "Observation",
+      "id" : "mii-exa-molgen-therapeutische-implikation-fgfr2-fusion"
+    },
+    {
+      "filename" : "Observation-mii-exa-molgen-variante-1.json",
+      "resourceType" : "Observation",
+      "id" : "mii-exa-molgen-variante-1"
+    },
+    {
+      "filename" : "Observation-mii-exa-molgen-variante-2.json",
+      "resourceType" : "Observation",
+      "id" : "mii-exa-molgen-variante-2"
+    },
+    {
+      "filename" : "Observation-mii-exa-molgen-variante-brca1.json",
+      "resourceType" : "Observation",
+      "id" : "mii-exa-molgen-variante-brca1"
+    },
+    {
+      "filename" : "Observation-mii-exa-molgen-variante-cnv-4.json",
+      "resourceType" : "Observation",
+      "id" : "mii-exa-molgen-variante-cnv-4"
+    },
+    {
+      "filename" : "Observation-mii-exa-molgen-variante-comprehensive-pathogenic.json",
+      "resourceType" : "Observation",
+      "id" : "mii-exa-molgen-variante-comprehensive-pathogenic"
+    },
+    {
+      "filename" : "Observation-mii-exa-molgen-variante-fgfr2-fusion.json",
+      "resourceType" : "Observation",
+      "id" : "mii-exa-molgen-variante-fgfr2-fusion"
+    },
+    {
+      "filename" : "Observation-mii-exa-molgen-variante-srcc-ctnna1.json",
+      "resourceType" : "Observation",
+      "id" : "mii-exa-molgen-variante-srcc-ctnna1"
+    },
+    {
+      "filename" : "Patient-mii-exa-molgen-patient-2.json",
+      "resourceType" : "Patient",
+      "id" : "mii-exa-molgen-patient-2"
+    },
+    {
+      "filename" : "Patient-mii-exa-molgen-patient-brca1.json",
+      "resourceType" : "Patient",
+      "id" : "mii-exa-molgen-patient-brca1"
+    },
+    {
+      "filename" : "Patient-mii-exa-molgen-patient-fgfr2-fusion.json",
+      "resourceType" : "Patient",
+      "id" : "mii-exa-molgen-patient-fgfr2-fusion"
+    },
+    {
+      "filename" : "Patient-mii-exa-molgen-patient-srcc.json",
+      "resourceType" : "Patient",
+      "id" : "mii-exa-molgen-patient-srcc"
+    },
+    {
+      "filename" : "Patient-mii-exa-molgen-patient.json",
+      "resourceType" : "Patient",
+      "id" : "mii-exa-molgen-patient"
+    },
+    {
+      "filename" : "PlanDefinition-mii-exa-molgen-protocol-agilent-sureselect.json",
+      "resourceType" : "PlanDefinition",
+      "id" : "mii-exa-molgen-protocol-agilent-sureselect",
+      "type" : "{"
+    },
+    {
+      "filename" : "Practitioner-mii-exa-molgen-practitioner-lab.json",
+      "resourceType" : "Practitioner",
+      "id" : "mii-exa-molgen-practitioner-lab"
+    },
+    {
+      "filename" : "Practitioner-mii-exa-molgen-practitioner-ordering.json",
+      "resourceType" : "Practitioner",
+      "id" : "mii-exa-molgen-practitioner-ordering"
+    },
+    {
+      "filename" : "Practitioner-mii-exa-molgen-practitioner-physician.json",
+      "resourceType" : "Practitioner",
+      "id" : "mii-exa-molgen-practitioner-physician"
+    },
+    {
+      "filename" : "Procedure-mii-exa-molgen-genomic-study-1.json",
+      "resourceType" : "Procedure",
+      "id" : "mii-exa-molgen-genomic-study-1"
+    },
+    {
+      "filename" : "Procedure-mii-exa-molgen-genomic-study-analysis-braf.json",
+      "resourceType" : "Procedure",
+      "id" : "mii-exa-molgen-genomic-study-analysis-braf"
+    },
+    {
+      "filename" : "Procedure-mii-exa-molgen-genomic-study-analysis-cornelia-de-lange.json",
+      "resourceType" : "Procedure",
+      "id" : "mii-exa-molgen-genomic-study-analysis-cornelia-de-lange"
+    },
+    {
+      "filename" : "Procedure-mii-exa-molgen-genomic-study-analysis-trurisk-panel.json",
+      "resourceType" : "Procedure",
+      "id" : "mii-exa-molgen-genomic-study-analysis-trurisk-panel"
+    },
+    {
+      "filename" : "Procedure-mii-exa-molgen-genomic-study-analysis-wes-bioinformatics.json",
+      "resourceType" : "Procedure",
+      "id" : "mii-exa-molgen-genomic-study-analysis-wes-bioinformatics"
+    },
+    {
+      "filename" : "Procedure-mii-exa-molgen-genomic-study-analysis-wes-library-prep.json",
+      "resourceType" : "Procedure",
+      "id" : "mii-exa-molgen-genomic-study-analysis-wes-library-prep"
+    },
+    {
+      "filename" : "Procedure-mii-exa-molgen-genomic-study-analysis-wes-sequencing.json",
+      "resourceType" : "Procedure",
+      "id" : "mii-exa-molgen-genomic-study-analysis-wes-sequencing"
+    },
+    {
+      "filename" : "Procedure-mii-exa-molgen-genomic-study-comprehensive-wes.json",
+      "resourceType" : "Procedure",
+      "id" : "mii-exa-molgen-genomic-study-comprehensive-wes"
+    },
+    {
+      "filename" : "Procedure-mii-exa-molgen-genomic-study-cornelia-de-lange.json",
+      "resourceType" : "Procedure",
+      "id" : "mii-exa-molgen-genomic-study-cornelia-de-lange"
+    },
+    {
+      "filename" : "Procedure-mii-exa-molgen-genomic-study-trurisk-panel.json",
+      "resourceType" : "Procedure",
+      "id" : "mii-exa-molgen-genomic-study-trurisk-panel"
+    },
+    {
+      "filename" : "RiskAssessment-mii-exa-molgen-prs-brca1.json",
+      "resourceType" : "RiskAssessment",
+      "id" : "mii-exa-molgen-prs-brca1"
+    },
+    {
+      "filename" : "ServiceRequest-mii-exa-molgen-anforderung-1.json",
+      "resourceType" : "ServiceRequest",
+      "id" : "mii-exa-molgen-anforderung-1"
+    },
+    {
+      "filename" : "ServiceRequest-mii-exa-molgen-anforderung-2.json",
+      "resourceType" : "ServiceRequest",
+      "id" : "mii-exa-molgen-anforderung-2"
+    },
+    {
+      "filename" : "ServiceRequest-mii-exa-molgen-anforderung-fgfr2-fusion.json",
+      "resourceType" : "ServiceRequest",
+      "id" : "mii-exa-molgen-anforderung-fgfr2-fusion"
+    },
+    {
+      "filename" : "ServiceRequest-mii-exa-molgen-anforderung-srcc.json",
+      "resourceType" : "ServiceRequest",
+      "id" : "mii-exa-molgen-anforderung-srcc"
+    },
+    {
+      "filename" : "ServiceRequest-mii-exa-molgen-anforderung-trurisk-panel.json",
+      "resourceType" : "ServiceRequest",
+      "id" : "mii-exa-molgen-anforderung-trurisk-panel"
+    },
+    {
+      "filename" : "ServiceRequest-mii-exa-molgen-anforderung-wes.json",
+      "resourceType" : "ServiceRequest",
+      "id" : "mii-exa-molgen-anforderung-wes"
+    },
+    {
+      "filename" : "Specimen-mii-exa-molgen-specimen-1.json",
+      "resourceType" : "Specimen",
+      "id" : "mii-exa-molgen-specimen-1",
+      "type" : "{"
+    },
+    {
+      "filename" : "Specimen-mii-exa-molgen-specimen-2.json",
+      "resourceType" : "Specimen",
+      "id" : "mii-exa-molgen-specimen-2",
+      "type" : "{"
+    },
+    {
+      "filename" : "Specimen-mii-exa-molgen-specimen-blood-edta.json",
+      "resourceType" : "Specimen",
+      "id" : "mii-exa-molgen-specimen-blood-edta",
+      "type" : "{"
+    },
+    {
+      "filename" : "Specimen-mii-exa-molgen-specimen-brca1.json",
+      "resourceType" : "Specimen",
+      "id" : "mii-exa-molgen-specimen-brca1",
+      "type" : "{"
+    },
+    {
+      "filename" : "Specimen-mii-exa-molgen-specimen-dna-library.json",
+      "resourceType" : "Specimen",
+      "id" : "mii-exa-molgen-specimen-dna-library",
+      "type" : "{"
+    },
+    {
+      "filename" : "Specimen-mii-exa-molgen-specimen-srcc-2.json",
+      "resourceType" : "Specimen",
+      "id" : "mii-exa-molgen-specimen-srcc-2",
+      "type" : "{"
+    },
+    {
+      "filename" : "Specimen-mii-exa-molgen-specimen-srcc.json",
+      "resourceType" : "Specimen",
+      "id" : "mii-exa-molgen-specimen-srcc",
+      "type" : "{"
+    },
+    {
+      "filename" : "Task-mii-exa-molgen-folgemassnahme-1.json",
+      "resourceType" : "Task",
+      "id" : "mii-exa-molgen-folgemassnahme-1"
+    },
+    {
+      "filename" : "Task-mii-exa-molgen-folgemassnahme-brca1.json",
+      "resourceType" : "Task",
+      "id" : "mii-exa-molgen-folgemassnahme-brca1"
+    },
+    {
+      "filename" : "Task-mii-exa-molgen-medikationsempfehlung-1.json",
+      "resourceType" : "Task",
+      "id" : "mii-exa-molgen-medikationsempfehlung-1"
+    },
+    {
+      "filename" : "Task-mii-exa-molgen-medikationsempfehlung-fgfr2-fusion.json",
+      "resourceType" : "Task",
+      "id" : "mii-exa-molgen-medikationsempfehlung-fgfr2-fusion"
+    }
+  ]
+}

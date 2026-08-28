@@ -1,0 +1,69 @@
+{
+  "resourceType": "Organization",
+  "id": "NetworkOrgInstance",
+  "meta": {
+    "profile": [
+      "https://fhir.bbmri-eric.eu/fhir/StructureDefinition/miabis-network-organization"
+    ]
+  },
+  "identifier": [
+    {
+      "value": "networkOrgId"
+    }
+  ],
+  "alias": [
+    "collectionOrgAlias"
+  ],
+  "telecom": [
+    {
+      "system": "url",
+      "value": "http://collectionOrg.com"
+    }
+  ],
+  "contact": [
+    {
+      "name": {
+        "given": [
+          "contactName"
+        ],
+        "family": "contactFamilyName"
+      },
+      "telecom": [
+        {
+          "system": "email",
+          "value": "contactEmail"
+        }
+      ]
+    }
+  ],
+  "address": [
+    {
+      "country": "CZ"
+    }
+  ],
+  "extension": [
+    {
+      "url": "https://fhir.bbmri-eric.eu/fhir/StructureDefinition/miabis-juristic-person-extension",
+      "valueString": "juristicPerson"
+    },
+    {
+      "url": "https://fhir.bbmri-eric.eu/fhir/StructureDefinition/miabis-common-collaboration-topics-extension",
+      "valueCodeableConcept": {
+        "coding": [
+          {
+            "code": "Charter",
+            "system": "https://fhir.bbmri-eric.eu/fhir/CodeSystem/miabis-common-collaboration-topics-cs"
+          }
+        ]
+      }
+    },
+    {
+      "url": "https://fhir.bbmri-eric.eu/fhir/StructureDefinition/miabis-organization-description-extension",
+      "valueString": "descriptionExample"
+    }
+  ],
+  "name": "collectionOrgName",
+  "partOf": {
+    "reference": "Organization/biobankId"
+  }
+}

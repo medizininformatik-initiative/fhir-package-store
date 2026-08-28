@@ -1,0 +1,59 @@
+{
+  "resourceType": "CodeSystem",
+  "status": "active",
+  "content": "supplement",
+  "name": "MII_CS_Fall_SupplementPatientClass",
+  "id": "mii-cs-fall-supplement-patient-class",
+  "description": "CodeSystem Supplement für v2-0004",
+  "url": "https://www.medizininformatik-initiative.de/fhir/core/modul-fall/CodeSystem/SupplementPatientClass",
+  "concept": [
+    {
+      "code": "R",
+      "display": "recurring patient",
+      "designation": [
+        {
+          "language": "de-DE",
+          "value": "Wiederholungspatient"
+        }
+      ]
+    },
+    {
+      "code": "B",
+      "display": "Obstetrics",
+      "designation": [
+        {
+          "language": "de-DE",
+          "value": "Geburtshilfe"
+        }
+      ]
+    }
+  ],
+  "version": "2025.0.1",
+  "experimental": false,
+  "publisher": "Medizininformatik Initiative",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "https://www.medizininformatik-initiative.de"
+        }
+      ]
+    }
+  ],
+  "extension": [
+    {
+      "url": "https://www.medizininformatik-initiative.de/fhir/modul-meta/StructureDefinition/mii-ex-meta-license-codeable",
+      "valueCodeableConcept": {
+        "coding": [
+          {
+            "code": "CC-BY-4.0",
+            "system": "http://hl7.org/fhir/spdx-license",
+            "display": "Creative Commons Attribution 4.0 International"
+          }
+        ]
+      }
+    }
+  ],
+  "supplements": "http://terminology.hl7.org/CodeSystem/v2-0004"
+}

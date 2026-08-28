@@ -1,0 +1,34 @@
+{
+  "name": "de.medizininformatikinitiative.kerndatensatz.dokument",
+  "version": "2026.0.1",
+  "description": "Medizininformatik Initiative - Modul Dokument",
+  "author": "Medizininformatik Initiative",
+  "dependencies": {
+    "de.ihe-d.terminology": "3.0.1",
+    "de.medizininformatikinitiative.kerndatensatz.base": "2026.0.0",
+    "de.medizininformatikinitiative.kerndatensatz.meta": "2026.0.0",
+    "dvmd.kdl.r4": "2025.0.1",
+    "ihe.formatcode.fhir": "1.4.0"
+  },
+  "keywords": [
+    "MII",
+    "KDS",
+    "Dokument",
+    "DocumentReference"
+  ],
+  "license": "CC0-1.0",
+  "homepage": "https://www.medizininformatik-initiative.de",
+  "title": "MII IG Dokument",
+  "fhirVersions": [
+    "4.0.1"
+  ],
+  "type": "IG",
+  "maintainers": [
+    {
+      "name": "Medizininformatik Initiative"
+    }
+  ],
+  "canonical": "https://www.medizininformatik-initiative.de/fhir/ext/modul-dokument/ImplementationGuide/mii-ig-dokument",
+  "url": "https://simplifier.net/mii-erweiterungsmodul-dokument",
+  "jurisdiction": "http://unstats.un.org/unsd/methods/m49/m49.htm#276"
+}

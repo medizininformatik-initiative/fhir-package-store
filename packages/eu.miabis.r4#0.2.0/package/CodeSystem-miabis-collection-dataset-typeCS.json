@@ -1,0 +1,69 @@
+{
+  "resourceType": "CodeSystem",
+  "status": "active",
+  "content": "complete",
+  "name": "CollectionDatasetTypeCS",
+  "id": "miabis-collection-dataset-typeCS",
+  "title": "MIABIS Collection Dataset Type",
+  "description": "Codes describing the type of dataset that is part of a collection.",
+  "url": "https://fhir.bbmri-eric.eu/fhir/CodeSystem/miabis-collection-dataset-typeCS",
+  "concept": [
+    {
+      "code": "Lifesyle",
+      "display": "Lifestyle dataset"
+    },
+    {
+      "code": "Environmental",
+      "display": "Environmental dataset"
+    },
+    {
+      "code": "Physiological",
+      "display": "Physiological dataset"
+    },
+    {
+      "code": "Biochemical",
+      "display": "Biochemical dataset"
+    },
+    {
+      "code": "Clinical",
+      "display": "Clinical dataset"
+    },
+    {
+      "code": "Psychological",
+      "display": "Psychological dataset"
+    },
+    {
+      "code": "Genomic",
+      "display": "Genomic dataset"
+    },
+    {
+      "code": "Proteomic",
+      "display": "Proteomic dataset"
+    },
+    {
+      "code": "Metabolomic",
+      "display": "Metabolomic dataset"
+    },
+    {
+      "code": "BodyImage",
+      "display": "Body (Radiological) image"
+    },
+    {
+      "code": "WholeSlideImage",
+      "display": "Whole slide image"
+    },
+    {
+      "code": "PhotoImage",
+      "display": "Photo image"
+    },
+    {
+      "code": "GenealogicalRecords",
+      "display": "Genealogical records"
+    },
+    {
+      "code": "Other",
+      "display": "Other"
+    }
+  ],
+  "count": 14
+}

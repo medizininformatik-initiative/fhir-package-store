@@ -1,0 +1,143 @@
+{
+  "resourceType": "Group",
+  "id": "CollectionInstance",
+  "meta": {
+    "profile": [
+      "https://fhir.bbmri-eric.eu/fhir/StructureDefinition/miabis-collection"
+    ]
+  },
+  "identifier": [
+    {
+      "value": "collectionId"
+    }
+  ],
+  "characteristic": [
+    {
+      "valueRange": {
+        "low": {
+          "value": 18,
+          "unit": "years"
+        },
+        "high": {
+          "value": 65,
+          "unit": "years"
+        }
+      },
+      "code": {
+        "coding": [
+          {
+            "code": "Age",
+            "system": "https://fhir.bbmri-eric.eu/fhir/CodeSystem/miabis-characteristicCS"
+          }
+        ]
+      },
+      "exclude": false
+    },
+    {
+      "code": {
+        "coding": [
+          {
+            "code": "Sex",
+            "system": "https://fhir.bbmri-eric.eu/fhir/CodeSystem/miabis-characteristicCS"
+          }
+        ]
+      },
+      "exclude": false,
+      "valueCodeableConcept": {
+        "coding": [
+          {
+            "code": "female",
+            "system": "http://hl7.org/fhir/administrative-gender"
+          }
+        ]
+      }
+    },
+    {
+      "code": {
+        "coding": [
+          {
+            "code": "StorageTemperature",
+            "system": "https://fhir.bbmri-eric.eu/fhir/CodeSystem/miabis-characteristicCS"
+          }
+        ]
+      },
+      "exclude": false,
+      "valueCodeableConcept": {
+        "coding": [
+          {
+            "code": "RT",
+            "system": "https://fhir.bbmri-eric.eu/fhir/CodeSystem/miabis-storage-temperature-cs"
+          }
+        ]
+      }
+    },
+    {
+      "code": {
+        "coding": [
+          {
+            "code": "MaterialType",
+            "system": "https://fhir.bbmri-eric.eu/fhir/CodeSystem/miabis-characteristicCS"
+          }
+        ]
+      },
+      "exclude": false,
+      "valueCodeableConcept": {
+        "coding": [
+          {
+            "code": "RNA",
+            "system": "https://fhir.bbmri-eric.eu/fhir/CodeSystem/miabis-collection-sample-type-cs"
+          }
+        ]
+      }
+    },
+    {
+      "code": {
+        "coding": [
+          {
+            "code": "Diagnosis",
+            "system": "https://fhir.bbmri-eric.eu/fhir/CodeSystem/miabis-characteristicCS"
+          }
+        ]
+      },
+      "exclude": false,
+      "valueCodeableConcept": {
+        "coding": [
+          {
+            "code": "C50",
+            "system": "http://hl7.org/fhir/sid/icd-10"
+          }
+        ]
+      }
+    }
+  ],
+  "extension": [
+    {
+      "url": "https://fhir.bbmri-eric.eu/fhir/StructureDefinition/miabis-number-of-subjects-extension",
+      "valueInteger": 100
+    },
+    {
+      "url": "https://fhir.bbmri-eric.eu/fhir/StructureDefinition/miabis-inclusion-criteria-extension",
+      "valueCodeableConcept": {
+        "coding": [
+          {
+            "code": "HealthStatus",
+            "system": "https://fhir.bbmri-eric.eu/fhir/CodeSystem/miabis-inclusion-criteria-cs"
+          }
+        ]
+      }
+    },
+    {
+      "url": "http://hl7.org/fhir/5.0/StructureDefinition/extension-Group.member.entity",
+      "valueReference": {
+        "reference": "Specimen/sampleId"
+      }
+    }
+  ],
+  "type": "person",
+  "name": "CollectionName",
+  "active": true,
+  "actual": true,
+  "managingEntity": {
+    "reference": "Organization/collectionOrgId"
+  }
+}

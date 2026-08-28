@@ -1,0 +1,34 @@
+{
+  "resourceType": "Observation",
+  "id": "WachstumstypOrganoidLunge",
+  "meta": {
+    "profile": [
+      "https://www.medizininformatik-initiative.de/fhir/ext/modul-biobank/StructureDefinition/mii-pr-biobank-observation-wachstumstyp"
+    ]
+  },
+  "code": {
+    "coding": [
+      {
+        "code": "CLO:0000030",
+        "system": "http://purl.obolibrary.org/obo/clo.owl",
+        "display": "cell culture growth mode"
+      }
+    ]
+  },
+  "status": "final",
+  "focus": [
+    {
+      "reference": "Specimen/OrganoidLunge"
+    }
+  ],
+  "valueCodeableConcept": {
+    "coding": [
+      {
+        "code": "CLO:0000028",
+        "system": "http://purl.obolibrary.org/obo/clo.owl",
+        "display": "adherent cell culture growth mode"
+      }
+    ]
+  },
+  "effectiveDateTime": "2018-07-05T10:00:00+01:00"
+}

@@ -1,0 +1,1 @@
+{"resourceType":"Parameters","id":"FindPopulationDxImplicationsOutput","parameter":[{"name":"implications","part":[{"name":"numerator","valueQuantity":{"value":23}},{"name":"subject","valueString":"patient/12345"},{"name":"subject","valueString":"patient/23456"},{"name":"subject","valueString":"..."}]}]}

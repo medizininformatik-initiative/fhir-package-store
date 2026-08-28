@@ -1,0 +1,45 @@
+{
+  "resourceType": "CodeSystem",
+  "status": "active",
+  "content": "complete",
+  "name": "UseAndAccessConditionsCS",
+  "id": "miabis-use-and-access-conditions-cs",
+  "title": "MIABIS Use and Access Conditions Code System",
+  "description": "Code system representing the conditions that may change the availability of the samples/data in the collection.",
+  "url": "https://fhir.bbmri-eric.eu/fhir/CodeSystem/miabis-use-and-access-conditions-cs",
+  "concept": [
+    {
+      "code": "CommercialUse",
+      "display": "Commercial use"
+    },
+    {
+      "code": "Collaboration",
+      "display": "Collaboration"
+    },
+    {
+      "code": "SpecificResearchUse",
+      "display": "Specific research use"
+    },
+    {
+      "code": "GeneticDataUse",
+      "display": "Genetic data use"
+    },
+    {
+      "code": "OutsideEUAccess",
+      "display": "Outside EU access"
+    },
+    {
+      "code": "Xenograft",
+      "display": "Xenograft"
+    },
+    {
+      "code": "OtherAnimalWork",
+      "display": "Other animal work"
+    },
+    {
+      "code": "Other",
+      "display": "Other"
+    }
+  ],
+  "count": 8
+}

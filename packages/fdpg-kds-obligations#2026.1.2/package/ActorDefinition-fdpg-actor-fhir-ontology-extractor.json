@@ -1,0 +1,17 @@
+{
+  "resourceType": "ActorDefinition",
+  "id": "fdpg-actor-fhir-ontology-extractor",
+  "url": "https://forschen-fuer-gesundheit.de/fhir/fdpg-obligations/ActorDefinition/fdpg-actor-fhir-ontology-extractor",
+  "identifier": [
+    {
+      "system": "https://forschen-fuer-gesundheit.de/fhir/fdpg-obligations",
+      "value": "fhir-ontology-extractor"
+    }
+  ],
+  "name": "FHIROntologyExtractor",
+  "title": "FHIR Ontology Extractor",
+  "status": "active",
+  "type": "system",
+  "description": "FDPG-Tool, das aus den MII/FDPG-Profilen die Antragsportal-UI, die Feasibility-Queries und die Extraktions-Mappings ableitet.",
+  "documentation": "### Rolle\nDer **FHIR Ontology Extractor** ist das übergreifende FDPG-Tool, das die in diesem\nImplementation Guide definierten Obligations konsumiert. Es leitet daraus drei\nArtefakte ab:\n\n1. die **Merkmalselektion** im FDPG-Antragsportal (forschen-fuer-gesundheit.de) —\n   aus `display` und `pre-select`,\n2. die **Feasibility-Queries** für Kohortenselektion — aus `handle`,\n3. die **Extraktions-Mappings** für die tatsächliche Datenlieferung — aus `handle`.\n\nImplementiert wird das im Repository [`medizininformatik-initiative/fhir-ontology-generator`](https://github.com/medizininformatik-initiative/fhir-ontology-generator).\n\n### Obligation Codes\n- `handle` (FHIR-Standard) — alle MS-Elemente außer Metadaten; Element kann\n  programmatisch verarbeitet werden.\n- `display` (FHIR-Standard) — alle MS-Elemente außer Metadaten; Element wird\n  in der Antragsportal-Merkmalselektion angezeigt.\n- `pre-select` (FDPG-eigenes CodeSystem) — kuratierte Untermenge; Checkbox in\n  der Merkmalselektion ist initial aktiviert. Quelle: `field_config.json`\n  im fhir-ontology-generator.\n\n### Scope\nDiese IG beschreibt **ausschließlich Anforderungen an Datenkonsumenten**.\nProvider-seitige Anforderungen (Befüllung, Datenqualität, Pseudonymisierung)\nsind Gegenstand einer separaten Provider-Conformance-Spec.\n\nSiehe [Obligations-Konzept](obligations-konzept.html) für Details."
+}

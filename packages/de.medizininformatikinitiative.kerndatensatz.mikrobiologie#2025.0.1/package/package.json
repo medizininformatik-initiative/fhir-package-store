@@ -1,0 +1,13 @@
+{
+  "name": "de.medizininformatikinitiative.kerndatensatz.mikrobiologie",
+  "version": "2025.0.1",
+  "description": "Medizininformatik Initiative - Modul Mikrobiologie",
+  "author": "patrick-werner",
+  "fhirVersions": [
+    "4.0.1"
+  ],
+  "jurisdiction": "urn:iso:std:iso:3166#DE",
+  "dependencies": {
+    "de.medizininformatikinitiative.kerndatensatz.laborbefund": "2025.0.1"
+  }
+}

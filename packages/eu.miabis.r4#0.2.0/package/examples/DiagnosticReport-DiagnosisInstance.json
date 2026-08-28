@@ -1,0 +1,36 @@
+{
+  "resourceType": "DiagnosticReport",
+  "id": "DiagnosisInstance",
+  "meta": {
+    "profile": [
+      "https://fhir.bbmri-eric.eu/fhir/StructureDefinition/miabis-diagnosis-report"
+    ]
+  },
+  "identifier": [
+    {
+      "value": "diagnosisId"
+    }
+  ],
+  "specimen": [
+    {
+      "reference": "Specimen/sampleId"
+    }
+  ],
+  "code": {
+    "coding": [
+      {
+        "system": "http://loinc.org",
+        "code": "52797-8"
+      }
+    ]
+  },
+  "result": [
+    {
+      "reference": "Observation/observationId"
+    }
+  ],
+  "status": "final",
+  "subject": {
+    "reference": "Patient/donorId"
+  }
+}

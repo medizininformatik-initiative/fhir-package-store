@@ -1,0 +1,16 @@
+{
+  "resourceType": "ValueSet",
+  "status": "active",
+  "name": "InclusionCriteriaVS",
+  "id": "miabis-inclusion-criteria-vs",
+  "title": "Inclusion Criteria ValueSet",
+  "description": "Value set containing codes describing information on type of parameters that determine which subjects will become collection participants.",
+  "url": "https://fhir.bbmri-eric.eu/fhir/ValueSet/miabis-inclusion-criteria-vs",
+  "compose": {
+    "include": [
+      {
+        "system": "https://fhir.bbmri-eric.eu/fhir/CodeSystem/miabis-inclusion-criteria-cs"
+      }
+    ]
+  }
+}

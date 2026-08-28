@@ -1,0 +1,132 @@
+{
+  "resourceType": "Specimen",
+  "id": "AliquotgruppeDNA",
+  "meta": {
+    "profile": [
+      "https://www.medizininformatik-initiative.de/fhir/ext/modul-biobank/StructureDefinition/Specimen"
+    ]
+  },
+  "type": {
+    "coding": [
+      {
+        "system": "http://snomed.info/sct",
+        "code": "258566005",
+        "display": "Deoxyribonucleic acid specimen (specimen)"
+      },
+      {
+        "system": "https://fhir.bbmri-eric.eu/fhir/CodeSystem/miabis-detailed-samply-type-cs",
+        "code": "DNA",
+        "display": "DNA"
+      }
+    ]
+  },
+  "container": [
+    {
+      "capacity": {
+        "system": "http://unitsofmeasure.org",
+        "value": 0.5,
+        "code": "ml",
+        "unit": "ml"
+      },
+      "specimenQuantity": {
+        "system": "http://unitsofmeasure.org",
+        "value": 0.05,
+        "code": "ml",
+        "unit": "ml"
+      },
+      "type": {
+        "coding": [
+          {
+            "code": "83059008",
+            "system": "http://snomed.info/sct",
+            "display": "Tube, device (physical object)"
+          }
+        ]
+      }
+    }
+  ],
+  "extension": [
+    {
+      "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-biobank/StructureDefinition/mii-ex-biobank-ebene",
+      "valueCoding": {
+        "code": "ALIQUOTGRUPPE",
+        "system": "https://www.medizininformatik-initiative.de/fhir/ext/modul-biobank/CodeSystem/mii-cs-biobank-probenebene",
+        "display": "Aliquotgruppe"
+      }
+    },
+    {
+      "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-biobank/StructureDefinition/mii-ex-biobank-anzahl-aliquots",
+      "valueInteger": 2
+    }
+  ],
+  "processing": [
+    {
+      "extension": [
+        {
+          "valueRange": {
+            "low": {
+              "system": "http://unitsofmeasure.org",
+              "code": "Cel",
+              "unit": "°C",
+              "value": -80
+            },
+            "high": {
+              "system": "http://unitsofmeasure.org",
+              "code": "Cel",
+              "unit": "°C",
+              "value": -70
+            }
+          },
+          "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-biobank/StructureDefinition/Temperaturbedingungen"
+        },
+        {
+          "url": "https://fhir.bbmri-eric.eu/fhir/StructureDefinition/miabis-sample-storage-temperature-extension",
+          "valueCodeableConcept": {
+            "coding": [
+              {
+                "code": "-60to-85",
+                "system": "https://fhir.bbmri-eric.eu/fhir/CodeSystem/miabis-storage-temperature-cs",
+                "display": "between -60 and -85 degrees Celsius"
+              }
+            ]
+          }
+        }
+      ],
+      "procedure": {
+        "coding": [
+          {
+            "code": "1186936003",
+            "system": "http://snomed.info/sct",
+            "display": "Storage of specimen (procedure)"
+          }
+        ]
+      },
+      "timePeriod": {
+        "start": "2018-09-07T13:55:00+01:00"
+      }
+    }
+  ],
+  "parent": [
+    {
+      "reference": "Specimen/AliquotBuffyCoat2"
+    }
+  ],
+  "identifier": [
+    {
+      "system": "https://biobank.uk-musterstadt.de/fhir/sid/proben",
+      "value": "12345-DNA-1"
+    }
+  ],
+  "status": "available",
+  "subject": {
+    "reference": "Patient/mii-exa-test-data-patient-1"
+  },
+  "collection": {
+    "collectedDateTime": "2018-06-07T15:54:00+01:00"
+  },
+  "note": [
+    {
+      "text": "DNA Aliquots gewonnen aus Buffy-Coat"
+    }
+  ]
+}

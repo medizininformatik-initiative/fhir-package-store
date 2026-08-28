@@ -1,0 +1,41 @@
+{
+  "name": "de.medizininformatikinitiative.kerndatensatz.pros",
+  "version": "2026.3.0",
+  "description": "MII PRO Module v2026.3.0 - GAD-7 instrument, PROMIS-29 English variant repair (33 text fields fixed), removed incomplete PROMIS-29 minimal variant and BDI-II→PROMIS ConceptMap stub, capabilities-extension fixes (PROMIS Cognitive Function SF 4a, PRO-CTCAE Brustkrebs-Subset). Release Notes: https://simplifier.net/guide/mii-pro-v2026-de/MIIIGModulPRO/Release-Notes",
+  "keywords": [
+    "MII",
+    "KDS",
+    "PRO",
+    "PROM",
+    "Measure"
+  ],
+  "type": "IG",
+  "license": "CC0-1.0",
+  "canonical": "https://www.medizininformatik-initiative.de/fhir/ext/modul-dok/ImplementationGuide/mii-ig-pro",
+  "url": "https://simplifier.net/mii-erweiterungsmodul-pro-2025",
+  "title": "MII IG Dokument",
+  "author": "Medizininformatik Initiative",
+  "jurisdiction": "http://unstats.un.org/unsd/methods/m49/m49.htm#276",
+  "fhirVersions": [
+    "4.0.1"
+  ],
+  "language": "de-DE",
+  "homepage": "https://www.medizininformatik-initiative.de",
+  "maintainers": [
+    {
+      "name": "Medizininformatik Initiative"
+    }
+  ],
+  "bugs": {
+    "url": "https://github.com/medizininformatik-initiative/kerndatensatzmodul-proms/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/medizininformatik-initiative/kerndatensatzmodul-proms.git"
+  },
+  "dependencies": {
+    "de.medizininformatikinitiative.kerndatensatz.meta": "2026.0.x",
+    "hl7.fhir.uv.sdc": "3.0.0",
+    "de.gematik.isik": "5.1.1"
+  }
+}

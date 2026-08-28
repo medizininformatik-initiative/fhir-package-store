@@ -1,0 +1,2382 @@
+{
+  "index-version" : 2,
+  "files" : [{
+    "filename" : "CapabilityStatement-mii-cps-onko-capabilitystatement.json",
+    "resourceType" : "CapabilityStatement",
+    "id" : "mii-cps-onko-capabilitystatement",
+    "url" : "https://www.medizininformatik-initiative.de/fhir/modul-onko/CapabilityStatement/metadata",
+    "version" : "2026.0.0-ballot",
+    "kind" : "requirements"
+  },
+  {
+    "filename" : "CodeSystem-mii-cs-onko-allgemeiner-leistungszustand-ecog.json",
+    "resourceType" : "CodeSystem",
+    "id" : "mii-cs-onko-allgemeiner-leistungszustand-ecog",
+    "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/CodeSystem/mii-cs-onko-allgemeiner-leistungszustand-ecog",
+    "version" : "2026.0.0-ballot",
+    "valueSet" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/ValueSet/mii-vs-onko-allgemeiner-leistungszustand-ecog",
+    "content" : "complete"
+  },
+  {
+    "filename" : "CodeSystem-mii-cs-onko-allgemeiner-leistungszustand-karnofsky.json",
+    "resourceType" : "CodeSystem",
+    "id" : "mii-cs-onko-allgemeiner-leistungszustand-karnofsky",
+    "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/CodeSystem/mii-cs-onko-allgemeiner-leistungszustand-karnofsky",
+    "version" : "2026.0.0-ballot",
+    "valueSet" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/ValueSet/mii-vs-onko-allgemeiner-leistungszustand-karnofsky",
+    "content" : "complete"
+  },
+  {
+    "filename" : "CodeSystem-mii-cs-onko-asa-obds.json",
+    "resourceType" : "CodeSystem",
+    "id" : "mii-cs-onko-asa-obds",
+    "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/CodeSystem/mii-cs-onko-asa-obds",
+    "version" : "2026.0.0-ballot",
+    "content" : "complete"
+  },
+  {
+    "filename" : "CodeSystem-mii-cs-onko-fernmetastasen.json",
+    "resourceType" : "CodeSystem",
+    "id" : "mii-cs-onko-fernmetastasen",
+    "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/CodeSystem/mii-cs-onko-fernmetastasen",
+    "version" : "2026.0.0-ballot",
+    "valueSet" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/ValueSet/mii-vs-onko-fernmetastasen",
+    "content" : "complete"
+  },
+  {
+    "filename" : "CodeSystem-mii-cs-onko-genetische-variante-auspraegung.json",
+    "resourceType" : "CodeSystem",
+    "id" : "mii-cs-onko-genetische-variante-auspraegung",
+    "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/CodeSystem/mii-cs-onko-genetische-variante-auspraegung",
+    "version" : "2026.0.0-ballot",
+    "content" : "complete"
+  },
+  {
+    "filename" : "CodeSystem-mii-cs-onko-grading.json",
+    "resourceType" : "CodeSystem",
+    "id" : "mii-cs-onko-grading",
+    "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/CodeSystem/mii-cs-onko-grading",
+    "version" : "2026.0.0-ballot",
+    "valueSet" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/ValueSet/mii-vs-onko-grading",
+    "content" : "complete"
+  },
+  {
+    "filename" : "CodeSystem-mii-cs-onko-intention.json",
+    "resourceType" : "CodeSystem",
+    "id" : "mii-cs-onko-intention",
+    "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/CodeSystem/mii-cs-onko-intention",
+    "version" : "2026.0.0-ballot",
+    "content" : "complete"
+  },
+  {
+    "filename" : "CodeSystem-mii-cs-onko-krk-anastomoseninsuffizienz.json",
+    "resourceType" : "CodeSystem",
+    "id" : "mii-cs-onko-krk-anastomoseninsuffizienz",
+    "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/CodeSystem/mii-cs-onko-krk-anastomoseninsuffizienz",
+    "version" : "2026.0.0-ballot",
+    "content" : "complete"
+  },
+  {
+    "filename" : "CodeSystem-mii-cs-onko-krk-mrt-mesorektale-faszie-status.json",
+    "resourceType" : "CodeSystem",
+    "id" : "mii-cs-onko-krk-mrt-mesorektale-faszie-status",
+    "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/CodeSystem/mii-cs-onko-krk-mrt-mesorektale-faszie-status",
+    "version" : "2026.0.0-ballot",
+    "valueSet" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/ValueSet/mii-vs-onko-krk-mrt-mesorektale-faszie-status",
+    "content" : "complete"
+  },
+  {
+    "filename" : "CodeSystem-mii-cs-onko-krk-operationstyp.json",
+    "resourceType" : "CodeSystem",
+    "id" : "mii-cs-onko-krk-operationstyp",
+    "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/CodeSystem/mii-cs-onko-krk-operationstyp",
+    "version" : "2026.0.0-ballot",
+    "content" : "fragment"
+  },
+  {
+    "filename" : "CodeSystem-mii-cs-onko-krk-stoma-anzeichnung.json",
+    "resourceType" : "CodeSystem",
+    "id" : "mii-cs-onko-krk-stoma-anzeichnung",
+    "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/CodeSystem/mii-cs-onko-krk-stoma-anzeichnung",
+    "version" : "2026.0.0-ballot",
+    "valueSet" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/ValueSet/mii-vs-onko-krk-stoma-anzeichnung",
+    "content" : "complete"
+  },
+  {
+    "filename" : "CodeSystem-mii-cs-onko-krk-tme-qualitaet.json",
+    "resourceType" : "CodeSystem",
+    "id" : "mii-cs-onko-krk-tme-qualitaet",
+    "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/CodeSystem/mii-cs-onko-krk-tme-qualitaet",
+    "version" : "2026.0.0-ballot",
+    "content" : "complete"
+  },
+  {
+    "filename" : "CodeSystem-mii-cs-onko-mamma-her2neu-status-leitlinie.json",
+    "resourceType" : "CodeSystem",
+    "id" : "mii-cs-onko-mamma-her2neu-status-leitlinie",
+    "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/CodeSystem/mii-cs-onko-mamma-her2neu-status-leitlinie",
+    "version" : "2026.0.0-ballot",
+    "content" : "complete"
+  },
+  {
+    "filename" : "CodeSystem-mii-cs-onko-mamma-her2neu-status-obds.json",
+    "resourceType" : "CodeSystem",
+    "id" : "mii-cs-onko-mamma-her2neu-status-obds",
+    "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/CodeSystem/mii-cs-onko-mamma-her2neu-status-obds",
+    "version" : "2026.0.0-ballot",
+    "content" : "complete"
+  },
+  {
+    "filename" : "CodeSystem-mii-cs-onko-mamma-rezeptorstatus-leitlinie.json",
+    "resourceType" : "CodeSystem",
+    "id" : "mii-cs-onko-mamma-rezeptorstatus-leitlinie",
+    "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/CodeSystem/mii-cs-onko-mamma-rezeptorstatus-leitlinie",
+    "version" : "2026.0.0-ballot",
+    "content" : "complete"
+  },
+  {
+    "filename" : "CodeSystem-mii-cs-onko-melanom-ulzeration.json",
+    "resourceType" : "CodeSystem",
+    "id" : "mii-cs-onko-melanom-ulzeration",
+    "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/CodeSystem/mii-cs-onko-melanom-ulzeration",
+    "version" : "2026.0.0-ballot",
+    "content" : "complete"
+  },
+  {
+    "filename" : "CodeSystem-mii-cs-onko-nebenwirkung-ctcae-grad.json",
+    "resourceType" : "CodeSystem",
+    "id" : "mii-cs-onko-nebenwirkung-ctcae-grad",
+    "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/CodeSystem/mii-cs-onko-nebenwirkung-ctcae-grad",
+    "version" : "2026.0.0-ballot",
+    "content" : "complete"
+  },
+  {
+    "filename" : "CodeSystem-mii-cs-onko-operation-komplikation.json",
+    "resourceType" : "CodeSystem",
+    "id" : "mii-cs-onko-operation-komplikation",
+    "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/CodeSystem/mii-cs-onko-operation-komplikation",
+    "version" : "2026.0.0-ballot",
+    "valueSet" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/ValueSet/mii-vs-onko-operation-komplikation",
+    "content" : "complete"
+  },
+  {
+    "filename" : "CodeSystem-mii-cs-onko-operation-urgency.json",
+    "resourceType" : "CodeSystem",
+    "id" : "mii-cs-onko-operation-urgency",
+    "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/CodeSystem/mii-cs-onko-operation-urgency",
+    "version" : "2026.0.0-ballot",
+    "valueSet" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/ValueSet/mii-vs-onko-operation-urgency",
+    "content" : "complete"
+  },
+  {
+    "filename" : "CodeSystem-mii-cs-onko-primaertumor-diagnosesicherung.json",
+    "resourceType" : "CodeSystem",
+    "id" : "mii-cs-onko-primaertumor-diagnosesicherung",
+    "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/CodeSystem/mii-cs-onko-primaertumor-diagnosesicherung",
+    "version" : "2026.0.0-ballot",
+    "valueSet" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/ValueSet/mii-vs-onko-primaertumor-diagnosesicherung",
+    "content" : "complete"
+  },
+  {
+    "filename" : "CodeSystem-mii-cs-onko-prostata-postsurgical-complications.json",
+    "resourceType" : "CodeSystem",
+    "id" : "mii-cs-onko-prostata-postsurgical-complications",
+    "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/CodeSystem/mii-cs-onko-prostata-postsurgical-complications",
+    "version" : "2026.0.0-ballot",
+    "content" : "complete"
+  },
+  {
+    "filename" : "CodeSystem-mii-cs-onko-residualstatus.json",
+    "resourceType" : "CodeSystem",
+    "id" : "mii-cs-onko-residualstatus",
+    "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/CodeSystem/mii-cs-onko-residualstatus",
+    "version" : "2026.0.0-ballot",
+    "valueSet" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/ValueSet/mii-vs-onko-gesamtbeurteilung-residualstatus",
+    "content" : "complete"
+  },
+  {
+    "filename" : "CodeSystem-mii-cs-onko-seitenlokalisation.json",
+    "resourceType" : "CodeSystem",
+    "id" : "mii-cs-onko-seitenlokalisation",
+    "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/CodeSystem/mii-cs-onko-seitenlokalisation",
+    "version" : "2026.0.0-ballot",
+    "content" : "complete"
+  },
+  {
+    "filename" : "CodeSystem-mii-cs-onko-strahlentherapie-applikationsart.json",
+    "resourceType" : "CodeSystem",
+    "id" : "mii-cs-onko-strahlentherapie-applikationsart",
+    "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/CodeSystem/mii-cs-onko-strahlentherapie-applikationsart",
+    "version" : "2026.0.0-ballot",
+    "valueSet" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/ValueSet/mii-vs-onko-strahlentherapie-applikationsart",
+    "content" : "complete"
+  },
+  {
+    "filename" : "CodeSystem-mii-cs-onko-strahlentherapie-boost.json",
+    "resourceType" : "CodeSystem",
+    "id" : "mii-cs-onko-strahlentherapie-boost",
+    "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/CodeSystem/mii-cs-onko-strahlentherapie-boost",
+    "version" : "2026.0.0-ballot",
+    "valueSet" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/ValueSet/mii-vs-onko-strahlentherapie-boost",
+    "content" : "complete"
+  },
+  {
+    "filename" : "CodeSystem-mii-cs-onko-strahlentherapie-strahlenart.json",
+    "resourceType" : "CodeSystem",
+    "id" : "mii-cs-onko-strahlentherapie-strahlenart",
+    "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/CodeSystem/mii-cs-onko-strahlentherapie-strahlenart",
+    "version" : "2026.0.0-ballot",
+    "valueSet" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/ValueSet/mii-vs-onko-strahlentherapie-strahlenart",
+    "content" : "complete"
+  },
+  {
+    "filename" : "CodeSystem-mii-cs-onko-strahlentherapie-zielgebiet-2014.json",
+    "resourceType" : "CodeSystem",
+    "id" : "mii-cs-onko-strahlentherapie-zielgebiet-2014",
+    "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/CodeSystem/mii-cs-onko-strahlentherapie-zielgebiet-2014",
+    "version" : "2026.0.0-ballot",
+    "valueSet" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/ValueSet/mii-vs-onko-strahlentherapie-zielgebiet-2014",
+    "content" : "complete"
+  },
+  {
+    "filename" : "CodeSystem-mii-cs-onko-strahlentherapie-zielgebiet.json",
+    "resourceType" : "CodeSystem",
+    "id" : "mii-cs-onko-strahlentherapie-zielgebiet",
+    "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/CodeSystem/mii-cs-onko-strahlentherapie-zielgebiet",
+    "version" : "2026.0.0-ballot",
+    "valueSet" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/ValueSet/mii-vs-onko-strahlentherapie-zielgebiet",
+    "content" : "complete"
+  },
+  {
+    "filename" : "CodeSystem-mii-cs-onko-studienteilnahme.json",
+    "resourceType" : "CodeSystem",
+    "id" : "mii-cs-onko-studienteilnahme",
+    "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/CodeSystem/mii-cs-onko-studienteilnahme",
+    "version" : "2026.0.0-ballot",
+    "content" : "complete"
+  },
+  {
+    "filename" : "CodeSystem-mii-cs-onko-systemische-therapie-protokolle.json",
+    "resourceType" : "CodeSystem",
+    "id" : "mii-cs-onko-systemische-therapie-protokolle",
+    "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/CodeSystem/mii-cs-onko-systemische-therapie-protokolle",
+    "version" : "2026.0.0-ballot",
+    "valueSet" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/ValueSet/mii-vs-onko-systemische-therapie-protokolle",
+    "content" : "complete"
+  },
+  {
+    "filename" : "CodeSystem-mii-cs-onko-therapie-ende-grund.json",
+    "resourceType" : "CodeSystem",
+    "id" : "mii-cs-onko-therapie-ende-grund",
+    "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/CodeSystem/mii-cs-therapie-grund-ende",
+    "version" : "2026.0.0-ballot",
+    "content" : "complete"
+  },
+  {
+    "filename" : "CodeSystem-mii-cs-onko-therapie-stellungzurop.json",
+    "resourceType" : "CodeSystem",
+    "id" : "mii-cs-onko-therapie-stellungzurop",
+    "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/CodeSystem/mii-cs-therapie-stellungzurop",
+    "version" : "2026.0.0-ballot",
+    "content" : "complete"
+  },
+  {
+    "filename" : "CodeSystem-mii-cs-onko-therapie-typ.json",
+    "resourceType" : "CodeSystem",
+    "id" : "mii-cs-onko-therapie-typ",
+    "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/CodeSystem/mii-cs-onko-therapie-typ",
+    "version" : "2026.0.0-ballot",
+    "content" : "complete"
+  },
+  {
+    "filename" : "CodeSystem-mii-cs-onko-therapieabweichung.json",
+    "resourceType" : "CodeSystem",
+    "id" : "mii-cs-onko-therapieabweichung",
+    "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/CodeSystem/mii-cs-onko-therapieabweichung",
+    "version" : "2026.0.0-ballot",
+    "content" : "complete"
+  },
+  {
+    "filename" : "CodeSystem-mii-cs-onko-therapieplanung-typ.json",
+    "resourceType" : "CodeSystem",
+    "id" : "mii-cs-onko-therapieplanung-typ",
+    "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/CodeSystem/mii-cs-onko-therapieplanung-typ",
+    "version" : "2026.0.0-ballot",
+    "content" : "complete"
+  },
+  {
+    "filename" : "CodeSystem-mii-cs-onko-tnm-uicc.json",
+    "resourceType" : "CodeSystem",
+    "id" : "mii-cs-onko-tnm-uicc",
+    "url" : "https://www.uicc.org/resources/tnm",
+    "version" : "2026.0.0-ballot",
+    "content" : "complete"
+  },
+  {
+    "filename" : "CodeSystem-mii-cs-onko-tnm-version.json",
+    "resourceType" : "CodeSystem",
+    "id" : "mii-cs-onko-tnm-version",
+    "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/CodeSystem/mii-cs-onko-tnm-version",
+    "version" : "2026.0.0-ballot",
+    "valueSet" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/ValueSet/mii-vs-onko-tnm-version",
+    "content" : "complete"
+  },
+  {
+    "filename" : "CodeSystem-mii-cs-onko-tod.json",
+    "resourceType" : "CodeSystem",
+    "id" : "mii-cs-onko-tod",
+    "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/CodeSystem/mii-cs-onko-tod",
+    "version" : "2026.0.0-ballot",
+    "content" : "complete"
+  },
+  {
+    "filename" : "CodeSystem-mii-cs-onko-verlauf-fernmetastasen.json",
+    "resourceType" : "CodeSystem",
+    "id" : "mii-cs-onko-verlauf-fernmetastasen",
+    "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/CodeSystem/mii-cs-onko-verlauf-fernmetastasen",
+    "version" : "2026.0.0-ballot",
+    "content" : "complete"
+  },
+  {
+    "filename" : "CodeSystem-mii-cs-onko-verlauf-gesamtbeurteilung.json",
+    "resourceType" : "CodeSystem",
+    "id" : "mii-cs-onko-verlauf-gesamtbeurteilung",
+    "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/CodeSystem/mii-cs-onko-verlauf-gesamtbeurteilung",
+    "version" : "2026.0.0-ballot",
+    "content" : "complete"
+  },
+  {
+    "filename" : "CodeSystem-mii-cs-onko-verlauf-lymphknoten.json",
+    "resourceType" : "CodeSystem",
+    "id" : "mii-cs-onko-verlauf-lymphknoten",
+    "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/CodeSystem/mii-cs-onko-verlauf-lymphknoten",
+    "version" : "2026.0.0-ballot",
+    "content" : "complete"
+  },
+  {
+    "filename" : "CodeSystem-mii-cs-onko-verlauf-primaertumor.json",
+    "resourceType" : "CodeSystem",
+    "id" : "mii-cs-onko-verlauf-primaertumor",
+    "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/CodeSystem/mii-cs-onko-verlauf-primaertumor",
+    "version" : "2026.0.0-ballot",
+    "content" : "complete"
+  },
+  {
+    "filename" : "CodeSystem-mii-cs-onko-weitere-klassifikationen-obds.json",
+    "resourceType" : "CodeSystem",
+    "id" : "mii-cs-onko-weitere-klassifikationen-obds",
+    "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/CodeSystem/mii-cs-onko-weitere-klassifikationen-obds",
+    "version" : "2026.0.0-ballot",
+    "content" : "complete"
+  },
+  {
+    "filename" : "ConceptMap-mii-cm-onko-allgemeiner-leistungszustand-ecog-loinc.json",
+    "resourceType" : "ConceptMap",
+    "id" : "mii-cm-onko-allgemeiner-leistungszustand-ecog-loinc",
+    "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/ConceptMap/mii-cm-onko-allgemeiner-leistungszustand-ecog-loinc",
+    "version" : "2026.0.0-ballot"
+  },
+  {
+    "filename" : "ConceptMap-mii-cm-onko-allgemeiner-leistungszustand-karnofsky-loinc.json",
+    "resourceType" : "ConceptMap",
+    "id" : "mii-cm-onko-allgemeiner-leistungszustand-karnofsky-loinc",
+    "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/ConceptMap/mii-cm-onko-allgemeiner-leistungszustand-karnofsky-loinc",
+    "version" : "2026.0.0-ballot"
+  },
+  {
+    "filename" : "ConceptMap-mii-cm-onko-allgemeiner-leistungszustand-sct.json",
+    "resourceType" : "ConceptMap",
+    "id" : "mii-cm-onko-allgemeiner-leistungszustand-sct",
+    "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/ConceptMap/mii-cm-onko-allgemeiner-leistungszustand-sct",
+    "version" : "2026.0.0-ballot"
+  },
+  {
+    "filename" : "ConceptMap-mii-cm-onko-asa-obds-loinc.json",
+    "resourceType" : "ConceptMap",
+    "id" : "mii-cm-onko-asa-obds-loinc",
+    "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/ConceptMap/mii-cm-onko-asa-obds-loinc",
+    "version" : "2026.0.0-ballot"
+  },
+  {
+    "filename" : "ConceptMap-mii-cm-onko-atc-transitions-2021.json",
+    "resourceType" : "ConceptMap",
+    "id" : "mii-cm-onko-atc-transitions-2021",
+    "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/ConceptMap/mii-cm-onko-atc-transitions-2021",
+    "version" : "2026.0.0-ballot"
+  },
+  {
+    "filename" : "ConceptMap-mii-cm-onko-atc-transitions-2023.json",
+    "resourceType" : "ConceptMap",
+    "id" : "mii-cm-onko-atc-transitions-2023",
+    "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/ConceptMap/mii-cm-onko-atc-transitions-2023",
+    "version" : "2026.0.0-ballot"
+  },
+  {
+    "filename" : "ConceptMap-mii-cm-onko-atc-transitions-2024.json",
+    "resourceType" : "ConceptMap",
+    "id" : "mii-cm-onko-atc-transitions-2024",
+    "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/ConceptMap/mii-cm-onko-atc-transitions-2024",
+    "version" : "2026.0.0-ballot"
+  },
+  {
+    "filename" : "ConceptMap-mii-cm-onko-atc-transitions-2025.json",
+    "resourceType" : "ConceptMap",
+    "id" : "mii-cm-onko-atc-transitions-2025",
+    "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/ConceptMap/mii-cm-onko-atc-transitions-2025",
+    "version" : "2026.0.0-ballot"
+  },
+  {
+    "filename" : "ConceptMap-mii-cm-onko-atc-transitions-2026.json",
+    "resourceType" : "ConceptMap",
+    "id" : "mii-cm-onko-atc-transitions-2026",
+    "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/ConceptMap/mii-cm-onko-atc-transitions-2026"
+  },
+  {
+    "filename" : "ConceptMap-mii-cm-onko-fernmetastasen-sct.json",
+    "resourceType" : "ConceptMap",
+    "id" : "mii-cm-onko-fernmetastasen-sct",
+    "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/ConceptMap/mii-cm-onko-fernmetastasen-sct",
+    "version" : "2026.0.0-ballot"
+  },
+  {
+    "filename" : "ConceptMap-mii-cm-onko-genetische-variante-auspraegung-sct.json",
+    "resourceType" : "ConceptMap",
+    "id" : "mii-cm-onko-genetische-variante-auspraegung-sct",
+    "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/ConceptMap/mii-cm-onko-genetische-variante-auspraegung-sct",
+    "version" : "2026.0.0-ballot"
+  },
+  {
+    "filename" : "ConceptMap-mii-cm-onko-grading-sct.json",
+    "resourceType" : "ConceptMap",
+    "id" : "mii-cm-onko-grading-sct",
+    "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/ConceptMap/mii-cm-onko-grading-sct",
+    "version" : "2026.0.0-ballot"
+  },
+  {
+    "filename" : "ConceptMap-mii-cm-onko-intention-sct.json",
+    "resourceType" : "ConceptMap",
+    "id" : "mii-cm-onko-intention-sct",
+    "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/ConceptMap/mii-cm-onko-intention-sct",
+    "version" : "2026.0.0-ballot"
+  },
+  {
+    "filename" : "ConceptMap-mii-cm-onko-krk-stoma-obds-sct.json",
+    "resourceType" : "ConceptMap",
+    "id" : "mii-cm-onko-krk-stoma-obds-sct",
+    "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/ConceptMap/mii-cm-onko-krk-stoma-obds-sct",
+    "version" : "2026.0.0-ballot"
+  },
+  {
+    "filename" : "ConceptMap-mii-cm-onko-nebenwirkung-sct.json",
+    "resourceType" : "ConceptMap",
+    "id" : "mii-cm-onko-nebenwirkung-sct",
+    "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/ConceptMap/mii-cm-onko-nebenwirkung-sct",
+    "version" : "2026.0.0-ballot"
+  },
+  {
+    "filename" : "ConceptMap-mii-cm-onko-operation-komplikation-sct.json",
+    "resourceType" : "ConceptMap",
+    "id" : "mii-cm-onko-operation-komplikation-sct",
+    "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/ConceptMap/mii-cm-onko-operation-komplikation-sct",
+    "version" : "2026.0.0-ballot"
+  },
+  {
+    "filename" : "ConceptMap-mii-cm-onko-primaertumor-diagnosesicherung-sct.json",
+    "resourceType" : "ConceptMap",
+    "id" : "mii-cm-onko-primaertumor-diagnosesicherung-sct",
+    "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/ConceptMap/mii-cm-onko-primaertumor-diagnosesicherung-sct",
+    "version" : "2026.0.0-ballot"
+  },
+  {
+    "filename" : "ConceptMap-mii-cm-onko-residualstatus-uicc-sct.json",
+    "resourceType" : "ConceptMap",
+    "id" : "mii-cm-onko-residualstatus-uicc-sct",
+    "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/ConceptMap/mii-cm-onko-residualstatus-uicc-sct",
+    "version" : "2026.0.0-ballot"
+  },
+  {
+    "filename" : "ConceptMap-mii-cm-onko-seitenlokalisation-sct.json",
+    "resourceType" : "ConceptMap",
+    "id" : "mii-cm-onko-seitenlokalisation-sct",
+    "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/ConceptMap/mii-cm-onko-seitenlokalisation-sct",
+    "version" : "2026.0.0-ballot"
+  },
+  {
+    "filename" : "ConceptMap-mii-cm-onko-strahlentherapie-applikationsart-sct.json",
+    "resourceType" : "ConceptMap",
+    "id" : "mii-cm-onko-strahlentherapie-applikationsart-sct",
+    "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/ConceptMap/mii-cm-onko-strahlentherapie-applikationsart-sct",
+    "version" : "2026.0.0-ballot"
+  },
+  {
+    "filename" : "ConceptMap-mii-cm-onko-strahlentherapie-boost-sct.json",
+    "resourceType" : "ConceptMap",
+    "id" : "mii-cm-onko-strahlentherapie-boost-sct",
+    "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/ConceptMap/mii-cm-onko-strahlentherapie-boost-sct",
+    "version" : "2026.0.0-ballot"
+  },
+  {
+    "filename" : "ConceptMap-mii-cm-onko-strahlentherapie-strahlenart-sct.json",
+    "resourceType" : "ConceptMap",
+    "id" : "mii-cm-onko-strahlentherapie-strahlenart-sct",
+    "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/ConceptMap/mii-cm-onko-strahlentherapie-strahlenart-sct",
+    "version" : "2026.0.0-ballot"
+  },
+  {
+    "filename" : "ConceptMap-mii-cm-onko-strahlentherapie-strahleneinheit-sct.json",
+    "resourceType" : "ConceptMap",
+    "id" : "mii-cm-onko-strahlentherapie-strahleneinheit-sct",
+    "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/ConceptMap/mii-cm-onko-strahlentherapie-strahleneinheit-sct",
+    "version" : "2026.0.0-ballot"
+  },
+  {
+    "filename" : "ConceptMap-mii-cm-onko-strahlentherapie-zielgebiet-sct.json",
+    "resourceType" : "ConceptMap",
+    "id" : "mii-cm-onko-strahlentherapie-zielgebiet-sct",
+    "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/ConceptMap/mii-cm-onko-strahlentherapie-zielgebiet-sct",
+    "version" : "2026.0.0-ballot"
+  },
+  {
+    "filename" : "ConceptMap-mii-cm-onko-studienteilnahme-sct.json",
+    "resourceType" : "ConceptMap",
+    "id" : "mii-cm-onko-studienteilnahme-sct",
+    "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/ConceptMap/mii-cm-onko-studienteilnahme-sct",
+    "version" : "2026.0.0-ballot"
+  },
+  {
+    "filename" : "ConceptMap-mii-cm-onko-therapie-ende-sct.json",
+    "resourceType" : "ConceptMap",
+    "id" : "mii-cm-onko-therapie-ende-sct",
+    "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/ConceptMap/mii-cm-onko-therapie-ende-sct",
+    "version" : "2026.0.0-ballot"
+  },
+  {
+    "filename" : "ConceptMap-mii-cm-onko-therapie-stellung-sct.json",
+    "resourceType" : "ConceptMap",
+    "id" : "mii-cm-onko-therapie-stellung-sct",
+    "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/ConceptMap/mii-cm-onko-therapie-stellung-sct",
+    "version" : "2026.0.0-ballot"
+  },
+  {
+    "filename" : "ConceptMap-mii-cm-onko-therapie-typ-sct.json",
+    "resourceType" : "ConceptMap",
+    "id" : "mii-cm-onko-therapie-typ-sct",
+    "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/ConceptMap/mii-cm-onko-therapie-typ-sct",
+    "version" : "2026.0.0-ballot"
+  },
+  {
+    "filename" : "ConceptMap-mii-cm-onko-therapieabweichung-sct.json",
+    "resourceType" : "ConceptMap",
+    "id" : "mii-cm-onko-therapieabweichung-sct",
+    "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/ConceptMap/mii-cm-onko-therapieabweichung-sct",
+    "version" : "2026.0.0-ballot"
+  },
+  {
+    "filename" : "ConceptMap-mii-cm-onko-therapieplanung-sct.json",
+    "resourceType" : "ConceptMap",
+    "id" : "mii-cm-onko-therapieplanung-sct",
+    "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/ConceptMap/mii-cm-onko-therapieplanung-sct",
+    "version" : "2026.0.0-ballot"
+  },
+  {
+    "filename" : "ConceptMap-mii-cm-onko-tnm-uicc-sct-clinical.json",
+    "resourceType" : "ConceptMap",
+    "id" : "mii-cm-onko-tnm-uicc-sct-clinical",
+    "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/ConceptMap/mii-cm-onko-tnm-uicc-sct-clinical",
+    "version" : "2026.0.0-ballot"
+  },
+  {
+    "filename" : "ConceptMap-mii-cm-onko-tnm-uicc-sct-pathological.json",
+    "resourceType" : "ConceptMap",
+    "id" : "mii-cm-onko-tnm-uicc-sct-pathological",
+    "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/ConceptMap/mii-cm-onko-tnm-uicc-sct-pathological",
+    "version" : "2026.0.0-ballot"
+  },
+  {
+    "filename" : "ConceptMap-mii-cm-onko-tod-sct.json",
+    "resourceType" : "ConceptMap",
+    "id" : "mii-cm-onko-tod-sct",
+    "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/ConceptMap/mii-cm-onko-tod-sct",
+    "version" : "2026.0.0-ballot"
+  },
+  {
+    "filename" : "ConceptMap-mii-cm-onko-verlauf-fernmetastasen-sct.json",
+    "resourceType" : "ConceptMap",
+    "id" : "mii-cm-onko-verlauf-fernmetastasen-sct",
+    "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/ConceptMap/mii-cm-onko-verlauf-fernmetastasen-sct",
+    "version" : "2026.0.0-ballot"
+  },
+  {
+    "filename" : "ConceptMap-mii-cm-onko-verlauf-gesamtbeurteilung-sct.json",
+    "resourceType" : "ConceptMap",
+    "id" : "mii-cm-onko-verlauf-gesamtbeurteilung-sct",
+    "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/ConceptMap/mii-cm-onko-verlauf-gesamtbeurteilung-sct",
+    "version" : "2026.0.0-ballot"
+  },
+  {
+    "filename" : "ConceptMap-mii-cm-onko-verlauf-lymphknoten-sct.json",
+    "resourceType" : "ConceptMap",
+    "id" : "mii-cm-onko-verlauf-lymphknoten-sct",
+    "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/ConceptMap/mii-cm-onko-verlauf-lymphknoten-sct",
+    "version" : "2026.0.0-ballot"
+  },
+  {
+    "filename" : "ConceptMap-mii-cm-onko-verlauf-primaertumor-sct.json",
+    "resourceType" : "ConceptMap",
+    "id" : "mii-cm-onko-verlauf-primaertumor-sct",
+    "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/ConceptMap/mii-cm-onko-verlauf-primaertumor-sct",
+    "version" : "2026.0.0-ballot"
+  },
+  {
+    "filename" : "SearchParameter-mii-sp-onko-condition-ext-morphology-behavior-icdo3.json",
+    "resourceType" : "SearchParameter",
+    "id" : "mii-sp-onko-condition-ext-morphology-behavior-icdo3",
+    "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/SearchParameter/mii-sp-onko-condition-ext-morphology-behavior-icdo3",
+    "version" : "2026.0.0-ballot",
+    "type" : "token"
+  },
+  {
+    "filename" : "SearchParameter-mii-sp-onko-ext-strahlentherapie-stellungzurop.json",
+    "resourceType" : "SearchParameter",
+    "id" : "mii-sp-onko-ext-strahlentherapie-stellungzurop",
+    "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/SearchParameter/mii-sp-onko-ext-strahlentherapie-stellungzurop",
+    "version" : "2026.0.0-ballot",
+    "type" : "token"
+  },
+  {
+    "filename" : "SearchParameter-mii-sp-onko-ext-systemischetherapie-stellungzurop.json",
+    "resourceType" : "SearchParameter",
+    "id" : "mii-sp-onko-ext-systemischetherapie-stellungzurop",
+    "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/SearchParameter/mii-sp-onko-ext-systemischetherapie-stellungzurop",
+    "version" : "2026.0.0-ballot",
+    "type" : "token"
+  },
+  {
+    "filename" : "SearchParameter-mii-sp-onko-observation-ext-tnm-m-cppraefix.json",
+    "resourceType" : "SearchParameter",
+    "id" : "mii-sp-onko-observation-ext-tnm-m-cppraefix",
+    "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/SearchParameter/mii-sp-onko-observation-ext-tnm-m-cppraefix",
+    "version" : "2026.0.0-ballot",
+    "type" : "token"
+  },
+  {
+    "filename" : "SearchParameter-mii-sp-onko-observation-ext-tnm-n-cppraefix.json",
+    "resourceType" : "SearchParameter",
+    "id" : "mii-sp-onko-observation-ext-tnm-n-cppraefix",
+    "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/SearchParameter/mii-sp-onko-observation-ext-tnm-n-cppraefix",
+    "version" : "2026.0.0-ballot",
+    "type" : "token"
+  },
+  {
+    "filename" : "SearchParameter-mii-sp-onko-observation-ext-tnm-n-itc.json",
+    "resourceType" : "SearchParameter",
+    "id" : "mii-sp-onko-observation-ext-tnm-n-itc",
+    "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/SearchParameter/mii-sp-onko-observation-ext-tnm-n-itc",
+    "version" : "2026.0.0-ballot",
+    "type" : "token"
+  },
+  {
+    "filename" : "SearchParameter-mii-sp-onko-observation-ext-tnm-n-sn-suffix.json",
+    "resourceType" : "SearchParameter",
+    "id" : "mii-sp-onko-observation-ext-tnm-n-sn-suffix",
+    "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/SearchParameter/mii-sp-onko-observation-ext-tnm-n-sn-suffix",
+    "version" : "2026.0.0-ballot",
+    "type" : "token"
+  },
+  {
+    "filename" : "SearchParameter-mii-sp-onko-observation-ext-tnm-t-cppraefix.json",
+    "resourceType" : "SearchParameter",
+    "id" : "mii-sp-onko-observation-ext-tnm-t-cppraefix",
+    "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/SearchParameter/mii-sp-onko-observation-ext-tnm-t-cppraefix",
+    "version" : "2026.0.0-ballot",
+    "type" : "token"
+  },
+  {
+    "filename" : "SearchParameter-mii-sp-onko-procedure-ext-operation-intention.json",
+    "resourceType" : "SearchParameter",
+    "id" : "mii-sp-onko-procedure-ext-operation-intention",
+    "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/SearchParameter/mii-sp-onko-procedure-ext-operation-intention",
+    "version" : "2026.0.0-ballot",
+    "type" : "token"
+  },
+  {
+    "filename" : "SearchParameter-mii-sp-onko-procedure-ext-strahlentherapie-bs-boost.json",
+    "resourceType" : "SearchParameter",
+    "id" : "mii-sp-onko-procedure-ext-strahlentherapie-bs-boost",
+    "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/SearchParameter/mii-sp-onko-procedure-ext-strahlentherapie-bs-boost",
+    "version" : "2026.0.0-ballot",
+    "type" : "token"
+  },
+  {
+    "filename" : "SearchParameter-mii-sp-onko-procedure-ext-strahlentherapie-bs-einzeldosis.json",
+    "resourceType" : "SearchParameter",
+    "id" : "mii-sp-onko-procedure-ext-strahlentherapie-bs-einzeldosis",
+    "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/SearchParameter/mii-sp-onko-procedure-ext-strahlentherapie-bs-einzeldosis",
+    "version" : "2026.0.0-ballot",
+    "type" : "quantity"
+  },
+  {
+    "filename" : "SearchParameter-mii-sp-onko-procedure-ext-strahlentherapie-bs-gesamtdosis.json",
+    "resourceType" : "SearchParameter",
+    "id" : "mii-sp-onko-procedure-ext-strahlentherapie-bs-gesamtdosis",
+    "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/SearchParameter/mii-sp-onko-procedure-ext-strahlentherapie-bs-gesamtdosis",
+    "version" : "2026.0.0-ballot",
+    "type" : "quantity"
+  },
+  {
+    "filename" : "SearchParameter-mii-sp-onko-procedure-ext-strahlentherapie-intention.json",
+    "resourceType" : "SearchParameter",
+    "id" : "mii-sp-onko-procedure-ext-strahlentherapie-intention",
+    "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/SearchParameter/mii-sp-onko-procedure-ext-strahlentherapie-intention",
+    "version" : "2026.0.0-ballot",
+    "type" : "token"
+  },
+  {
+    "filename" : "SearchParameter-mii-sp-onko-procedure-ext-systemischetherapie-intention.json",
+    "resourceType" : "SearchParameter",
+    "id" : "mii-sp-onko-procedure-ext-systemischetherapie-intention",
+    "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/SearchParameter/mii-sp-onko-procedure-ext-systemischetherapie-intention",
+    "version" : "2026.0.0-ballot",
+    "type" : "token"
+  },
+  {
+    "filename" : "SearchParameter-mii-sp-onko-procedure-strahlentherapie-applikationsart.json",
+    "resourceType" : "SearchParameter",
+    "id" : "mii-sp-onko-procedure-strahlentherapie-applikationsart",
+    "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/SearchParameter/mii-sp-onko-procedure-strahlentherapie-applikationsart",
+    "version" : "2026.0.0-ballot",
+    "type" : "token"
+  },
+  {
+    "filename" : "SearchParameter-mii-sp-onko-procedure-strahlentherapie-lateralitaet.json",
+    "resourceType" : "SearchParameter",
+    "id" : "mii-sp-onko-procedure-strahlentherapie-lateralitaet",
+    "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/SearchParameter/mii-sp-onko-procedure-strahlentherapie-lateralitaet",
+    "version" : "2026.0.0-ballot",
+    "type" : "token"
+  },
+  {
+    "filename" : "SearchParameter-mii-sp-onko-procedure-strahlentherapie-strahlenart.json",
+    "resourceType" : "SearchParameter",
+    "id" : "mii-sp-onko-procedure-strahlentherapie-strahlenart",
+    "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/SearchParameter/mii-sp-onko-procedure-strahlentherapie-strahlenart",
+    "version" : "2026.0.0-ballot",
+    "type" : "token"
+  },
+  {
+    "filename" : "StructureDefinition-mii-ex-onko-histology-morphology-behavior-icdo3.json",
+    "resourceType" : "StructureDefinition",
+    "id" : "mii-ex-onko-histology-morphology-behavior-icdo3",
+    "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/StructureDefinition/mii-ex-onko-histology-morphology-behavior-icdo3",
+    "version" : "2026.0.0-ballot",
+    "kind" : "complex-type",
+    "type" : "Extension",
+    "derivation" : "constraint"
+  },
+  {
+    "filename" : "StructureDefinition-mii-ex-onko-operation-intention.json",
+    "resourceType" : "StructureDefinition",
+    "id" : "mii-ex-onko-operation-intention",
+    "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/StructureDefinition/mii-ex-onko-operation-intention",
+    "version" : "2026.0.0-ballot",
+    "kind" : "complex-type",
+    "type" : "Extension",
+    "derivation" : "constraint"
+  },
+  {
+    "filename" : "StructureDefinition-mii-ex-onko-operation-urgency.json",
+    "resourceType" : "StructureDefinition",
+    "id" : "mii-ex-onko-operation-urgency",
+    "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/StructureDefinition/mii-ex-onko-operation-urgency",
+    "version" : "2026.0.0-ballot",
+    "kind" : "complex-type",
+    "type" : "Extension",
+    "derivation" : "constraint"
+  },
+  {
+    "filename" : "StructureDefinition-mii-ex-onko-strahlentherapie-bestrahlung-boost.json",
+    "resourceType" : "StructureDefinition",
+    "id" : "mii-ex-onko-strahlentherapie-bestrahlung-boost",
+    "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/StructureDefinition/mii-ex-onko-strahlentherapie-bestrahlung-boost",
+    "version" : "2026.0.0-ballot",
+    "kind" : "complex-type",
+    "type" : "Extension",
+    "derivation" : "constraint"
+  },
+  {
+    "filename" : "StructureDefinition-mii-ex-onko-strahlentherapie-bestrahlung-einzeldosis.json",
+    "resourceType" : "StructureDefinition",
+    "id" : "mii-ex-onko-strahlentherapie-bestrahlung-einzeldosis",
+    "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/StructureDefinition/mii-ex-onko-strahlentherapie-bestrahlung-einzeldosis",
+    "version" : "2026.0.0-ballot",
+    "kind" : "complex-type",
+    "type" : "Extension",
+    "derivation" : "constraint"
+  },
+  {
+    "filename" : "StructureDefinition-mii-ex-onko-strahlentherapie-bestrahlung-gesamtdosis.json",
+    "resourceType" : "StructureDefinition",
+    "id" : "mii-ex-onko-strahlentherapie-bestrahlung-gesamtdosis",
+    "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/StructureDefinition/mii-ex-onko-strahlentherapie-bestrahlung-gesamtdosis",
+    "version" : "2026.0.0-ballot",
+    "kind" : "complex-type",
+    "type" : "Extension",
+    "derivation" : "constraint"
+  },
+  {
+    "filename" : "StructureDefinition-mii-ex-onko-strahlentherapie-bestrahlung-seitenlokalisation.json",
+    "resourceType" : "StructureDefinition",
+    "id" : "mii-ex-onko-strahlentherapie-bestrahlung-seitenlokalisation",
+    "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/StructureDefinition/mii-ex-onko-strahlentherapie-bestrahlung-seitenlokalisation",
+    "version" : "2026.0.0-ballot",
+    "kind" : "complex-type",
+    "type" : "Extension",
+    "derivation" : "constraint"
+  },
+  {
+    "filename" : "StructureDefinition-mii-ex-onko-strahlentherapie-intention.json",
+    "resourceType" : "StructureDefinition",
+    "id" : "mii-ex-onko-strahlentherapie-intention",
+    "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/StructureDefinition/mii-ex-onko-strahlentherapie-intention",
+    "version" : "2026.0.0-ballot",
+    "kind" : "complex-type",
+    "type" : "Extension",
+    "derivation" : "constraint"
+  },
+  {
+    "filename" : "StructureDefinition-mii-ex-onko-strahlentherapie-stellungzurop.json",
+    "resourceType" : "StructureDefinition",
+    "id" : "mii-ex-onko-strahlentherapie-stellungzurop",
+    "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/StructureDefinition/mii-ex-onko-strahlentherapie-stellungzurop",
+    "version" : "2026.0.0-ballot",
+    "kind" : "complex-type",
+    "type" : "Extension",
+    "derivation" : "constraint"
+  },
+  {
+    "filename" : "StructureDefinition-mii-ex-onko-systemische-therapie-intention.json",
+    "resourceType" : "StructureDefinition",
+    "id" : "mii-ex-onko-systemische-therapie-intention",
+    "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/StructureDefinition/mii-ex-onko-systemische-therapie-intention",
+    "version" : "2026.0.0-ballot",
+    "kind" : "complex-type",
+    "type" : "Extension",
+    "derivation" : "constraint"
+  },
+  {
+    "filename" : "StructureDefinition-mii-ex-onko-systemische-therapie-stellungzurop.json",
+    "resourceType" : "StructureDefinition",
+    "id" : "mii-ex-onko-systemische-therapie-stellungzurop",
+    "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/StructureDefinition/mii-ex-onko-systemische-therapie-stellungzurop",
+    "version" : "2026.0.0-ballot",
+    "kind" : "complex-type",
+    "type" : "Extension",
+    "derivation" : "constraint"
+  },
+  {
+    "filename" : "StructureDefinition-mii-ex-onko-tnm-cp-praefix.json",
+    "resourceType" : "StructureDefinition",
+    "id" : "mii-ex-onko-tnm-cp-praefix",
+    "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/StructureDefinition/mii-ex-onko-tnm-cp-praefix",
+    "version" : "2026.0.0-ballot",
+    "kind" : "complex-type",
+    "type" : "Extension",
+    "derivation" : "constraint"
+  },
+  {
+    "filename" : "StructureDefinition-mii-ex-onko-tnm-itc-suffix.json",
+    "resourceType" : "StructureDefinition",
+    "id" : "mii-ex-onko-tnm-itc-suffix",
+    "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/StructureDefinition/mii-ex-onko-tnm-itc-suffix",
+    "version" : "2026.0.0-ballot",
+    "kind" : "complex-type",
+    "type" : "Extension",
+    "derivation" : "constraint"
+  },
+  {
+    "filename" : "StructureDefinition-mii-ex-onko-tnm-sn-suffix.json",
+    "resourceType" : "StructureDefinition",
+    "id" : "mii-ex-onko-tnm-sn-suffix",
+    "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/StructureDefinition/mii-ex-onko-tnm-sn-suffix",
+    "version" : "2026.0.0-ballot",
+    "kind" : "complex-type",
+    "type" : "Extension",
+    "derivation" : "constraint"
+  },
+  {
+    "filename" : "StructureDefinition-mii-lm-mvgenomseq-onkologie.json",
+    "resourceType" : "StructureDefinition",
+    "id" : "mii-lm-mvgenomseq-onkologie",
+    "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/StructureDefinition/LogicalModel/mii-lm-mvgenomseq-onkologie",
+    "version" : "2026.0.0-ballot",
+    "kind" : "logical",
+    "type" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/StructureDefinition/LogicalModel/mii-lm-mvgenomseq-onkologie",
+    "derivation" : "specialization"
+  },
+  {
+    "filename" : "StructureDefinition-mii-lm-onko-organspezifische-zusatzmodule.json",
+    "resourceType" : "StructureDefinition",
+    "id" : "mii-lm-onko-organspezifische-zusatzmodule",
+    "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/StructureDefinition/LogicalModel/OrganspezifischeZusatzmodule",
+    "version" : "2026.0.0-ballot",
+    "kind" : "logical",
+    "type" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/StructureDefinition/LogicalModel/OrganspezifischeZusatzmodule",
+    "derivation" : "specialization"
+  },
+  {
+    "filename" : "StructureDefinition-mii-lm-onko.json",
+    "resourceType" : "StructureDefinition",
+    "id" : "mii-lm-onko",
+    "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/StructureDefinition/LogicalModel/Onkologie",
+    "version" : "2026.0.0-ballot",
+    "kind" : "logical",
+    "type" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/StructureDefinition/LogicalModel/Onkologie",
+    "derivation" : "specialization"
+  },
+  {
+    "filename" : "StructureDefinition-mii-pr-onko-allgemeiner-leistungszustand-ecog-quantity.json",
+    "resourceType" : "StructureDefinition",
+    "id" : "mii-pr-onko-allgemeiner-leistungszustand-ecog-quantity",
+    "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/StructureDefinition/mii-pr-onko-allgemeiner-leistungszustand-ecog-quantity",
+    "version" : "2026.0.0-ballot",
+    "kind" : "resource",
+    "type" : "Observation",
+    "derivation" : "constraint"
+  },
+  {
+    "filename" : "StructureDefinition-mii-pr-onko-allgemeiner-leistungszustand-ecog.json",
+    "resourceType" : "StructureDefinition",
+    "id" : "mii-pr-onko-allgemeiner-leistungszustand-ecog",
+    "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/StructureDefinition/mii-pr-onko-allgemeiner-leistungszustand-ecog",
+    "version" : "2026.0.0-ballot",
+    "kind" : "resource",
+    "type" : "Observation",
+    "derivation" : "constraint"
+  },
+  {
+    "filename" : "StructureDefinition-mii-pr-onko-allgemeiner-leistungszustand-karnofsky-quantity.json",
+    "resourceType" : "StructureDefinition",
+    "id" : "mii-pr-onko-allgemeiner-leistungszustand-karnofsky-quantity",
+    "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/StructureDefinition/mii-pr-onko-allgemeiner-leistungszustand-karnofsky-quantity",
+    "version" : "2026.0.0-ballot",
+    "kind" : "resource",
+    "type" : "Observation",
+    "derivation" : "constraint"
+  },
+  {
+    "filename" : "StructureDefinition-mii-pr-onko-allgemeiner-leistungszustand-karnofsky.json",
+    "resourceType" : "StructureDefinition",
+    "id" : "mii-pr-onko-allgemeiner-leistungszustand-karnofsky",
+    "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/StructureDefinition/mii-pr-onko-allgemeiner-leistungszustand-karnofsky",
+    "version" : "2026.0.0-ballot",
+    "kind" : "resource",
+    "type" : "Observation",
+    "derivation" : "constraint"
+  },
+  {
+    "filename" : "StructureDefinition-mii-pr-onko-anzahl-befallene-lymphknoten.json",
+    "resourceType" : "StructureDefinition",
+    "id" : "mii-pr-onko-anzahl-befallene-lymphknoten",
+    "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/StructureDefinition/mii-pr-onko-anzahl-befallene-lymphknoten",
+    "version" : "2026.0.0-ballot",
+    "kind" : "resource",
+    "type" : "Observation",
+    "derivation" : "constraint"
+  },
+  {
+    "filename" : "StructureDefinition-mii-pr-onko-anzahl-befallene-sentinel-lymphknoten.json",
+    "resourceType" : "StructureDefinition",
+    "id" : "mii-pr-onko-anzahl-befallene-sentinel-lymphknoten",
+    "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/StructureDefinition/mii-pr-onko-anzahl-befallene-sentinel-lymphknoten",
+    "version" : "2026.0.0-ballot",
+    "kind" : "resource",
+    "type" : "Observation",
+    "derivation" : "constraint"
+  },
+  {
+    "filename" : "StructureDefinition-mii-pr-onko-anzahl-untersuchte-lymphknoten.json",
+    "resourceType" : "StructureDefinition",
+    "id" : "mii-pr-onko-anzahl-untersuchte-lymphknoten",
+    "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/StructureDefinition/mii-pr-onko-anzahl-untersuchte-lymphknoten",
+    "version" : "2026.0.0-ballot",
+    "kind" : "resource",
+    "type" : "Observation",
+    "derivation" : "constraint"
+  },
+  {
+    "filename" : "StructureDefinition-mii-pr-onko-anzahl-untersuchte-sentinel-lymphknoten.json",
+    "resourceType" : "StructureDefinition",
+    "id" : "mii-pr-onko-anzahl-untersuchte-sentinel-lymphknoten",
+    "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/StructureDefinition/mii-pr-onko-anzahl-untersuchte-sentinel-lymphknoten",
+    "version" : "2026.0.0-ballot",
+    "kind" : "resource",
+    "type" : "Observation",
+    "derivation" : "constraint"
+  },
+  {
+    "filename" : "StructureDefinition-mii-pr-onko-asa-klassifikation.json",
+    "resourceType" : "StructureDefinition",
+    "id" : "mii-pr-onko-asa-klassifikation",
+    "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/StructureDefinition/mii-pr-onko-asa-klassifikation",
+    "version" : "2026.0.0-ballot",
+    "kind" : "resource",
+    "type" : "Observation",
+    "derivation" : "constraint"
+  },
+  {
+    "filename" : "StructureDefinition-mii-pr-onko-befund.json",
+    "resourceType" : "StructureDefinition",
+    "id" : "mii-pr-onko-befund",
+    "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/StructureDefinition/mii-pr-onko-befund",
+    "version" : "2026.0.0-ballot",
+    "kind" : "resource",
+    "type" : "DiagnosticReport",
+    "derivation" : "constraint"
+  },
+  {
+    "filename" : "StructureDefinition-mii-pr-onko-diagnose-primaertumor.json",
+    "resourceType" : "StructureDefinition",
+    "id" : "mii-pr-onko-diagnose-primaertumor",
+    "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/StructureDefinition/mii-pr-onko-diagnose-primaertumor",
+    "version" : "2026.0.0-ballot",
+    "kind" : "resource",
+    "type" : "Condition",
+    "derivation" : "constraint"
+  },
+  {
+    "filename" : "StructureDefinition-mii-pr-onko-fernmetastasen.json",
+    "resourceType" : "StructureDefinition",
+    "id" : "mii-pr-onko-fernmetastasen",
+    "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/StructureDefinition/mii-pr-onko-fernmetastasen",
+    "version" : "2026.0.0-ballot",
+    "kind" : "resource",
+    "type" : "Observation",
+    "derivation" : "constraint"
+  },
+  {
+    "filename" : "StructureDefinition-mii-pr-onko-fruehere-tumorerkrankung.json",
+    "resourceType" : "StructureDefinition",
+    "id" : "mii-pr-onko-fruehere-tumorerkrankung",
+    "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/StructureDefinition/mii-pr-onko-fruehere-tumorerkrankung",
+    "version" : "2026.0.2",
+    "kind" : "resource",
+    "type" : "Condition",
+    "derivation" : "constraint"
+  },
+  {
+    "filename" : "StructureDefinition-mii-pr-onko-genetische-variante.json",
+    "resourceType" : "StructureDefinition",
+    "id" : "mii-pr-onko-genetische-variante",
+    "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/StructureDefinition/mii-pr-onko-genetische-variante",
+    "version" : "2026.0.0-ballot",
+    "kind" : "resource",
+    "type" : "Observation",
+    "derivation" : "constraint"
+  },
+  {
+    "filename" : "StructureDefinition-mii-pr-onko-grading.json",
+    "resourceType" : "StructureDefinition",
+    "id" : "mii-pr-onko-grading",
+    "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/StructureDefinition/mii-pr-onko-grading",
+    "version" : "2026.0.0-ballot",
+    "kind" : "resource",
+    "type" : "Observation",
+    "derivation" : "constraint"
+  },
+  {
+    "filename" : "StructureDefinition-mii-pr-onko-histologie-icdo3.json",
+    "resourceType" : "StructureDefinition",
+    "id" : "mii-pr-onko-histologie-icdo3",
+    "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/StructureDefinition/mii-pr-onko-histologie-icdo3",
+    "version" : "2026.0.0-ballot",
+    "kind" : "resource",
+    "type" : "Observation",
+    "derivation" : "constraint"
+  },
+  {
+    "filename" : "StructureDefinition-mii-pr-onko-krk-abstand-aboral.json",
+    "resourceType" : "StructureDefinition",
+    "id" : "mii-pr-onko-krk-abstand-aboral",
+    "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/StructureDefinition/mii-pr-onko-krk-abstand-aboral",
+    "version" : "2026.0.2",
+    "kind" : "resource",
+    "type" : "Observation",
+    "derivation" : "constraint"
+  },
+  {
+    "filename" : "StructureDefinition-mii-pr-onko-krk-abstand-anokutan.json",
+    "resourceType" : "StructureDefinition",
+    "id" : "mii-pr-onko-krk-abstand-anokutan",
+    "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/StructureDefinition/mii-pr-onko-krk-abstand-anokutan",
+    "version" : "2026.0.2",
+    "kind" : "resource",
+    "type" : "Observation",
+    "derivation" : "constraint"
+  },
+  {
+    "filename" : "StructureDefinition-mii-pr-onko-krk-abstand-circumferelle-resektionsebene.json",
+    "resourceType" : "StructureDefinition",
+    "id" : "mii-pr-onko-krk-abstand-circumferelle-resektionsebene",
+    "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/StructureDefinition/mii-pr-onko-krk-abstand-circumferelle-resektionsebene",
+    "version" : "2026.0.2",
+    "kind" : "resource",
+    "type" : "Observation",
+    "derivation" : "constraint"
+  },
+  {
+    "filename" : "StructureDefinition-mii-pr-onko-krk-anastomoseninsuffizienz.json",
+    "resourceType" : "StructureDefinition",
+    "id" : "mii-pr-onko-krk-anastomoseninsuffizienz",
+    "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/StructureDefinition/mii-pr-onko-krk-anastomoseninsuffizienz",
+    "version" : "2026.0.0-ballot",
+    "kind" : "resource",
+    "type" : "Observation",
+    "derivation" : "constraint"
+  },
+  {
+    "filename" : "StructureDefinition-mii-pr-onko-krk-mrt-mesorektale-faszie.json",
+    "resourceType" : "StructureDefinition",
+    "id" : "mii-pr-onko-krk-mrt-mesorektale-faszie",
+    "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/StructureDefinition/mii-pr-onko-krk-mrt-mesorektale-faszie",
+    "version" : "2026.0.2",
+    "kind" : "resource",
+    "type" : "Observation",
+    "derivation" : "constraint"
+  },
+  {
+    "filename" : "StructureDefinition-mii-pr-onko-krk-operation.json",
+    "resourceType" : "StructureDefinition",
+    "id" : "mii-pr-onko-krk-operation",
+    "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/StructureDefinition/mii-pr-onko-krk-operation",
+    "version" : "2026.0.2",
+    "kind" : "resource",
+    "type" : "Procedure",
+    "derivation" : "constraint"
+  },
+  {
+    "filename" : "StructureDefinition-mii-pr-onko-krk-specimen.json",
+    "resourceType" : "StructureDefinition",
+    "id" : "mii-pr-onko-krk-specimen",
+    "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/StructureDefinition/mii-pr-onko-krk-specimen",
+    "version" : "2026.0.0-ballot",
+    "kind" : "resource",
+    "type" : "Specimen",
+    "derivation" : "constraint"
+  },
+  {
+    "filename" : "StructureDefinition-mii-pr-onko-krk-stoma-markierung.json",
+    "resourceType" : "StructureDefinition",
+    "id" : "mii-pr-onko-krk-stoma-markierung",
+    "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/StructureDefinition/mii-pr-onko-krk-stoma-markierung",
+    "version" : "2026.0.0-ballot",
+    "kind" : "resource",
+    "type" : "Procedure",
+    "derivation" : "constraint"
+  },
+  {
+    "filename" : "StructureDefinition-mii-pr-onko-liste-evidenz-erstdiagnose.json",
+    "resourceType" : "StructureDefinition",
+    "id" : "mii-pr-onko-liste-evidenz-erstdiagnose",
+    "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/StructureDefinition/mii-pr-onko-liste-evidenz-erstdiagnose",
+    "version" : "2026.0.0-ballot",
+    "kind" : "resource",
+    "type" : "List",
+    "derivation" : "constraint"
+  },
+  {
+    "filename" : "StructureDefinition-mii-pr-onko-mamma-her2neu-status.json",
+    "resourceType" : "StructureDefinition",
+    "id" : "mii-pr-onko-mamma-her2neu-status",
+    "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/StructureDefinition/mii-pr-onko-mamma-her2neu-status",
+    "version" : "2026.0.2",
+    "kind" : "resource",
+    "type" : "Observation",
+    "derivation" : "constraint"
+  },
+  {
+    "filename" : "StructureDefinition-mii-pr-onko-mamma-menopause-status.json",
+    "resourceType" : "StructureDefinition",
+    "id" : "mii-pr-onko-mamma-menopause-status",
+    "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/StructureDefinition/mii-pr-onko-mamma-menopause-status",
+    "version" : "2026.0.2",
+    "kind" : "resource",
+    "type" : "Observation",
+    "derivation" : "constraint"
+  },
+  {
+    "filename" : "StructureDefinition-mii-pr-onko-mamma-operation.json",
+    "resourceType" : "StructureDefinition",
+    "id" : "mii-pr-onko-mamma-operation",
+    "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/StructureDefinition/mii-pr-onko-mamma-operation",
+    "version" : "2026.0.2",
+    "kind" : "resource",
+    "type" : "Procedure",
+    "derivation" : "constraint"
+  },
+  {
+    "filename" : "StructureDefinition-mii-pr-onko-mamma-praeoperative-markierung.json",
+    "resourceType" : "StructureDefinition",
+    "id" : "mii-pr-onko-mamma-praeoperative-markierung",
+    "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/StructureDefinition/mii-pr-onko-mamma-praeoperative-markierung",
+    "version" : "2026.0.2",
+    "kind" : "resource",
+    "type" : "Procedure",
+    "derivation" : "constraint"
+  },
+  {
+    "filename" : "StructureDefinition-mii-pr-onko-mamma-rezeptorstatus-estrogen.json",
+    "resourceType" : "StructureDefinition",
+    "id" : "mii-pr-onko-mamma-rezeptorstatus-estrogen",
+    "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/StructureDefinition/mii-pr-onko-mamma-rezeptorstatus-estrogen",
+    "version" : "2026.0.2",
+    "kind" : "resource",
+    "type" : "Observation",
+    "derivation" : "constraint"
+  },
+  {
+    "filename" : "StructureDefinition-mii-pr-onko-mamma-rezeptorstatus-progesteron.json",
+    "resourceType" : "StructureDefinition",
+    "id" : "mii-pr-onko-mamma-rezeptorstatus-progesteron",
+    "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/StructureDefinition/mii-pr-onko-mamma-rezeptorstatus-progesteron",
+    "version" : "2026.0.2",
+    "kind" : "resource",
+    "type" : "Observation",
+    "derivation" : "constraint"
+  },
+  {
+    "filename" : "StructureDefinition-mii-pr-onko-mamma-sozialdienst.json",
+    "resourceType" : "StructureDefinition",
+    "id" : "mii-pr-onko-mamma-sozialdienst",
+    "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/StructureDefinition/mii-pr-onko-mamma-sozialdienst",
+    "version" : "2026.0.2",
+    "kind" : "resource",
+    "type" : "Procedure",
+    "derivation" : "constraint"
+  },
+  {
+    "filename" : "StructureDefinition-mii-pr-onko-melanom-breslow-tiefe.json",
+    "resourceType" : "StructureDefinition",
+    "id" : "mii-pr-onko-melanom-breslow-tiefe",
+    "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/StructureDefinition/mii-pr-onko-melanom-breslow-tiefe",
+    "version" : "2026.0.0-ballot",
+    "kind" : "resource",
+    "type" : "Observation",
+    "derivation" : "constraint"
+  },
+  {
+    "filename" : "StructureDefinition-mii-pr-onko-melanom-exzision.json",
+    "resourceType" : "StructureDefinition",
+    "id" : "mii-pr-onko-melanom-exzision",
+    "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/StructureDefinition/mii-pr-onko-melanom-exzision",
+    "version" : "2026.0.0-ballot",
+    "kind" : "resource",
+    "type" : "Procedure",
+    "derivation" : "constraint"
+  },
+  {
+    "filename" : "StructureDefinition-mii-pr-onko-melanom-ldh.json",
+    "resourceType" : "StructureDefinition",
+    "id" : "mii-pr-onko-melanom-ldh",
+    "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/StructureDefinition/mii-pr-onko-melanom-ldh",
+    "version" : "2026.0.0-ballot",
+    "kind" : "resource",
+    "type" : "Observation",
+    "derivation" : "constraint"
+  },
+  {
+    "filename" : "StructureDefinition-mii-pr-onko-melanom-sicherheitsabstand.json",
+    "resourceType" : "StructureDefinition",
+    "id" : "mii-pr-onko-melanom-sicherheitsabstand",
+    "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/StructureDefinition/mii-pr-onko-melanom-sicherheitsabstand",
+    "version" : "2026.0.0-ballot",
+    "kind" : "resource",
+    "type" : "Observation",
+    "derivation" : "constraint"
+  },
+  {
+    "filename" : "StructureDefinition-mii-pr-onko-melanom-ulzeration.json",
+    "resourceType" : "StructureDefinition",
+    "id" : "mii-pr-onko-melanom-ulzeration",
+    "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/StructureDefinition/mii-pr-onko-melanom-ulzeration",
+    "version" : "2026.0.0-ballot",
+    "kind" : "resource",
+    "type" : "Observation",
+    "derivation" : "constraint"
+  },
+  {
+    "filename" : "StructureDefinition-mii-pr-onko-nebenwirkung-adverse-event.json",
+    "resourceType" : "StructureDefinition",
+    "id" : "mii-pr-onko-nebenwirkung-adverse-event",
+    "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/StructureDefinition/mii-pr-onko-nebenwirkung-adverse-event",
+    "version" : "2026.0.0-ballot",
+    "kind" : "resource",
+    "type" : "AdverseEvent",
+    "derivation" : "constraint"
+  },
+  {
+    "filename" : "StructureDefinition-mii-pr-onko-operation.json",
+    "resourceType" : "StructureDefinition",
+    "id" : "mii-pr-onko-operation",
+    "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/StructureDefinition/mii-pr-onko-operation",
+    "version" : "2026.0.0-ballot",
+    "kind" : "resource",
+    "type" : "Procedure",
+    "derivation" : "constraint"
+  },
+  {
+    "filename" : "StructureDefinition-mii-pr-onko-prostata-operation.json",
+    "resourceType" : "StructureDefinition",
+    "id" : "mii-pr-onko-prostata-operation",
+    "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/StructureDefinition/mii-pr-onko-prostata-operation",
+    "version" : "2026.0.0-ballot",
+    "kind" : "resource",
+    "type" : "Procedure",
+    "derivation" : "constraint"
+  },
+  {
+    "filename" : "StructureDefinition-mii-pr-onko-prostate-anzahl-positive-stanzen.json",
+    "resourceType" : "StructureDefinition",
+    "id" : "mii-pr-onko-prostate-anzahl-positive-stanzen",
+    "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/StructureDefinition/mii-pr-onko-prostate-anzahl-positive-stanzen",
+    "version" : "2026.0.2",
+    "kind" : "resource",
+    "type" : "Observation",
+    "derivation" : "constraint"
+  },
+  {
+    "filename" : "StructureDefinition-mii-pr-onko-prostate-anzahl-stanzen.json",
+    "resourceType" : "StructureDefinition",
+    "id" : "mii-pr-onko-prostate-anzahl-stanzen",
+    "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/StructureDefinition/mii-pr-onko-prostate-anzahl-stanzen",
+    "version" : "2026.0.2",
+    "kind" : "resource",
+    "type" : "Observation",
+    "derivation" : "constraint"
+  },
+  {
+    "filename" : "StructureDefinition-mii-pr-onko-prostate-ca-befall-stanze.json",
+    "resourceType" : "StructureDefinition",
+    "id" : "mii-pr-onko-prostate-ca-befall-stanze",
+    "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/StructureDefinition/mii-pr-onko-prostate-ca-befall-stanze",
+    "version" : "2026.0.2",
+    "kind" : "resource",
+    "type" : "Observation",
+    "derivation" : "constraint"
+  },
+  {
+    "filename" : "StructureDefinition-mii-pr-onko-prostate-clavien-dindo.json",
+    "resourceType" : "StructureDefinition",
+    "id" : "mii-pr-onko-prostate-clavien-dindo",
+    "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/StructureDefinition/mii-pr-onko-prostate-clavien-dindo",
+    "version" : "2026.0.2",
+    "kind" : "resource",
+    "type" : "Observation",
+    "derivation" : "constraint"
+  },
+  {
+    "filename" : "StructureDefinition-mii-pr-onko-prostate-gleason-grade-group.json",
+    "resourceType" : "StructureDefinition",
+    "id" : "mii-pr-onko-prostate-gleason-grade-group",
+    "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/StructureDefinition/mii-pr-onko-prostate-gleason-grade-group",
+    "version" : "2026.0.2",
+    "kind" : "resource",
+    "type" : "Observation",
+    "derivation" : "constraint"
+  },
+  {
+    "filename" : "StructureDefinition-mii-pr-onko-prostate-gleason-patterns.json",
+    "resourceType" : "StructureDefinition",
+    "id" : "mii-pr-onko-prostate-gleason-patterns",
+    "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/StructureDefinition/mii-pr-onko-prostate-gleason-patterns",
+    "version" : "2026.0.2",
+    "kind" : "resource",
+    "type" : "Observation",
+    "derivation" : "constraint"
+  },
+  {
+    "filename" : "StructureDefinition-mii-pr-onko-prostate-psa.json",
+    "resourceType" : "StructureDefinition",
+    "id" : "mii-pr-onko-prostate-psa",
+    "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/StructureDefinition/mii-pr-onko-prostate-psa",
+    "version" : "2026.0.2",
+    "kind" : "resource",
+    "type" : "Observation",
+    "derivation" : "constraint"
+  },
+  {
+    "filename" : "StructureDefinition-mii-pr-onko-residualstatus.json",
+    "resourceType" : "StructureDefinition",
+    "id" : "mii-pr-onko-residualstatus",
+    "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/StructureDefinition/mii-pr-onko-residualstatus",
+    "version" : "2026.0.0-ballot",
+    "kind" : "resource",
+    "type" : "Observation",
+    "derivation" : "constraint"
+  },
+  {
+    "filename" : "StructureDefinition-mii-pr-onko-specimen.json",
+    "resourceType" : "StructureDefinition",
+    "id" : "mii-pr-onko-specimen",
+    "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/StructureDefinition/mii-pr-onko-specimen",
+    "version" : "2026.0.0-ballot",
+    "kind" : "resource",
+    "type" : "Specimen",
+    "derivation" : "constraint"
+  },
+  {
+    "filename" : "StructureDefinition-mii-pr-onko-strahlentherapie-bestrahlung-nuklearmedizin.json",
+    "resourceType" : "StructureDefinition",
+    "id" : "mii-pr-onko-strahlentherapie-bestrahlung-nuklearmedizin",
+    "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/StructureDefinition/mii-pr-onko-strahlentherapie-bestrahlung-nuklearmedizin",
+    "version" : "2026.0.0-ballot",
+    "kind" : "resource",
+    "type" : "Procedure",
+    "derivation" : "constraint"
+  },
+  {
+    "filename" : "StructureDefinition-mii-pr-onko-strahlentherapie-bestrahlung-strahlentherapie.json",
+    "resourceType" : "StructureDefinition",
+    "id" : "mii-pr-onko-strahlentherapie-bestrahlung-strahlentherapie",
+    "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/StructureDefinition/mii-pr-onko-strahlentherapie-bestrahlung-strahlentherapie",
+    "version" : "2026.0.0-ballot",
+    "kind" : "resource",
+    "type" : "Procedure",
+    "derivation" : "constraint"
+  },
+  {
+    "filename" : "StructureDefinition-mii-pr-onko-strahlentherapie.json",
+    "resourceType" : "StructureDefinition",
+    "id" : "mii-pr-onko-strahlentherapie",
+    "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/StructureDefinition/mii-pr-onko-strahlentherapie",
+    "version" : "2026.0.0-ballot",
+    "kind" : "resource",
+    "type" : "Procedure",
+    "derivation" : "constraint"
+  },
+  {
+    "filename" : "StructureDefinition-mii-pr-onko-studienteilnahme.json",
+    "resourceType" : "StructureDefinition",
+    "id" : "mii-pr-onko-studienteilnahme",
+    "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/StructureDefinition/mii-pr-onko-studienteilnahme",
+    "version" : "2026.0.0-ballot",
+    "kind" : "resource",
+    "type" : "Observation",
+    "derivation" : "constraint"
+  },
+  {
+    "filename" : "StructureDefinition-mii-pr-onko-systemische-therapie-medikation.json",
+    "resourceType" : "StructureDefinition",
+    "id" : "mii-pr-onko-systemische-therapie-medikation",
+    "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/StructureDefinition/mii-pr-onko-systemische-therapie-medikation",
+    "version" : "2026.0.0-ballot",
+    "kind" : "resource",
+    "type" : "MedicationStatement",
+    "derivation" : "constraint"
+  },
+  {
+    "filename" : "StructureDefinition-mii-pr-onko-systemische-therapie.json",
+    "resourceType" : "StructureDefinition",
+    "id" : "mii-pr-onko-systemische-therapie",
+    "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/StructureDefinition/mii-pr-onko-systemische-therapie",
+    "version" : "2026.0.0-ballot",
+    "kind" : "resource",
+    "type" : "Procedure",
+    "derivation" : "constraint"
+  },
+  {
+    "filename" : "StructureDefinition-mii-pr-onko-therapieempfehlung-kombinationstherapie.json",
+    "resourceType" : "StructureDefinition",
+    "id" : "mii-pr-onko-therapieempfehlung-kombinationstherapie",
+    "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/StructureDefinition/mii-pr-onko-therapieempfehlung-kombinationstherapie",
+    "version" : "2026.0.0-ballot",
+    "kind" : "resource",
+    "type" : "RequestGroup",
+    "derivation" : "constraint"
+  },
+  {
+    "filename" : "StructureDefinition-mii-pr-onko-therapieempfehlung-medikation.json",
+    "resourceType" : "StructureDefinition",
+    "id" : "mii-pr-onko-therapieempfehlung-medikation",
+    "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/StructureDefinition/mii-pr-onko-therapieempfehlung-medikation",
+    "version" : "2026.0.0-ballot",
+    "kind" : "resource",
+    "type" : "MedicationRequest",
+    "derivation" : "constraint"
+  },
+  {
+    "filename" : "StructureDefinition-mii-pr-onko-therapieempfehlung-operation.json",
+    "resourceType" : "StructureDefinition",
+    "id" : "mii-pr-onko-therapieempfehlung-operation",
+    "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/StructureDefinition/mii-pr-onko-therapieempfehlung-operation",
+    "version" : "2026.0.0-ballot",
+    "kind" : "resource",
+    "type" : "ServiceRequest",
+    "derivation" : "constraint"
+  },
+  {
+    "filename" : "StructureDefinition-mii-pr-onko-tnm-a-symbol.json",
+    "resourceType" : "StructureDefinition",
+    "id" : "mii-pr-onko-tnm-a-symbol",
+    "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/StructureDefinition/mii-pr-onko-tnm-a-symbol",
+    "version" : "2026.0.0-ballot",
+    "kind" : "resource",
+    "type" : "Observation",
+    "derivation" : "constraint"
+  },
+  {
+    "filename" : "StructureDefinition-mii-pr-onko-tnm-klassifikation.json",
+    "resourceType" : "StructureDefinition",
+    "id" : "mii-pr-onko-tnm-klassifikation",
+    "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/StructureDefinition/mii-pr-onko-tnm-klassifikation",
+    "version" : "2026.0.0-ballot",
+    "kind" : "resource",
+    "type" : "Observation",
+    "derivation" : "constraint"
+  },
+  {
+    "filename" : "StructureDefinition-mii-pr-onko-tnm-l-kategorie.json",
+    "resourceType" : "StructureDefinition",
+    "id" : "mii-pr-onko-tnm-l-kategorie",
+    "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/StructureDefinition/mii-pr-onko-tnm-l-kategorie",
+    "version" : "2026.0.0-ballot",
+    "kind" : "resource",
+    "type" : "Observation",
+    "derivation" : "constraint"
+  },
+  {
+    "filename" : "StructureDefinition-mii-pr-onko-tnm-m-kategorie.json",
+    "resourceType" : "StructureDefinition",
+    "id" : "mii-pr-onko-tnm-m-kategorie",
+    "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/StructureDefinition/mii-pr-onko-tnm-m-kategorie",
+    "version" : "2026.0.0-ballot",
+    "kind" : "resource",
+    "type" : "Observation",
+    "derivation" : "constraint"
+  },
+  {
+    "filename" : "StructureDefinition-mii-pr-onko-tnm-m-symbol.json",
+    "resourceType" : "StructureDefinition",
+    "id" : "mii-pr-onko-tnm-m-symbol",
+    "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/StructureDefinition/mii-pr-onko-tnm-m-symbol",
+    "version" : "2026.0.0-ballot",
+    "kind" : "resource",
+    "type" : "Observation",
+    "derivation" : "constraint"
+  },
+  {
+    "filename" : "StructureDefinition-mii-pr-onko-tnm-n-kategorie.json",
+    "resourceType" : "StructureDefinition",
+    "id" : "mii-pr-onko-tnm-n-kategorie",
+    "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/StructureDefinition/mii-pr-onko-tnm-n-kategorie",
+    "version" : "2026.0.0-ballot",
+    "kind" : "resource",
+    "type" : "Observation",
+    "derivation" : "constraint"
+  },
+  {
+    "filename" : "StructureDefinition-mii-pr-onko-tnm-pn-kategorie.json",
+    "resourceType" : "StructureDefinition",
+    "id" : "mii-pr-onko-tnm-pn-kategorie",
+    "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/StructureDefinition/mii-pr-onko-tnm-pn-kategorie",
+    "version" : "2026.0.0-ballot",
+    "kind" : "resource",
+    "type" : "Observation",
+    "derivation" : "constraint"
+  },
+  {
+    "filename" : "StructureDefinition-mii-pr-onko-tnm-r-symbol.json",
+    "resourceType" : "StructureDefinition",
+    "id" : "mii-pr-onko-tnm-r-symbol",
+    "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/StructureDefinition/mii-pr-onko-tnm-r-symbol",
+    "version" : "2026.0.0-ballot",
+    "kind" : "resource",
+    "type" : "Observation",
+    "derivation" : "constraint"
+  },
+  {
+    "filename" : "StructureDefinition-mii-pr-onko-tnm-s-kategorie.json",
+    "resourceType" : "StructureDefinition",
+    "id" : "mii-pr-onko-tnm-s-kategorie",
+    "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/StructureDefinition/mii-pr-onko-tnm-s-kategorie",
+    "version" : "2026.0.0-ballot",
+    "kind" : "resource",
+    "type" : "Observation",
+    "derivation" : "constraint"
+  },
+  {
+    "filename" : "StructureDefinition-mii-pr-onko-tnm-t-kategorie.json",
+    "resourceType" : "StructureDefinition",
+    "id" : "mii-pr-onko-tnm-t-kategorie",
+    "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/StructureDefinition/mii-pr-onko-tnm-t-kategorie",
+    "version" : "2026.0.0-ballot",
+    "kind" : "resource",
+    "type" : "Observation",
+    "derivation" : "constraint"
+  },
+  {
+    "filename" : "StructureDefinition-mii-pr-onko-tnm-v-kategorie.json",
+    "resourceType" : "StructureDefinition",
+    "id" : "mii-pr-onko-tnm-v-kategorie",
+    "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/StructureDefinition/mii-pr-onko-tnm-v-kategorie",
+    "version" : "2026.0.0-ballot",
+    "kind" : "resource",
+    "type" : "Observation",
+    "derivation" : "constraint"
+  },
+  {
+    "filename" : "StructureDefinition-mii-pr-onko-tnm-y-symbol.json",
+    "resourceType" : "StructureDefinition",
+    "id" : "mii-pr-onko-tnm-y-symbol",
+    "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/StructureDefinition/mii-pr-onko-tnm-y-symbol",
+    "version" : "2026.0.0-ballot",
+    "kind" : "resource",
+    "type" : "Observation",
+    "derivation" : "constraint"
+  },
+  {
+    "filename" : "StructureDefinition-mii-pr-onko-tod.json",
+    "resourceType" : "StructureDefinition",
+    "id" : "mii-pr-onko-tod",
+    "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/StructureDefinition/mii-pr-onko-tod",
+    "version" : "2026.0.0-ballot",
+    "kind" : "resource",
+    "type" : "Observation",
+    "derivation" : "constraint"
+  },
+  {
+    "filename" : "StructureDefinition-mii-pr-onko-tumorgroesse.json",
+    "resourceType" : "StructureDefinition",
+    "id" : "mii-pr-onko-tumorgroesse",
+    "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/StructureDefinition/mii-pr-onko-tumorgroesse",
+    "version" : "2026.0.0-ballot",
+    "kind" : "resource",
+    "type" : "Observation",
+    "derivation" : "constraint"
+  },
+  {
+    "filename" : "StructureDefinition-mii-pr-onko-tumorkonferenz-detailed-recommendations.json",
+    "resourceType" : "StructureDefinition",
+    "id" : "mii-pr-onko-tumorkonferenz-detailed-recommendations",
+    "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/StructureDefinition/mii-pr-onko-tumorkonferenz-detailed-recommendations",
+    "version" : "2026.0.0-ballot",
+    "kind" : "resource",
+    "type" : "CarePlan",
+    "derivation" : "constraint"
+  },
+  {
+    "filename" : "StructureDefinition-mii-pr-onko-tumorkonferenz.json",
+    "resourceType" : "StructureDefinition",
+    "id" : "mii-pr-onko-tumorkonferenz",
+    "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/StructureDefinition/mii-pr-onko-tumorkonferenz",
+    "version" : "2026.0.0-ballot",
+    "kind" : "resource",
+    "type" : "CarePlan",
+    "derivation" : "constraint"
+  },
+  {
+    "filename" : "StructureDefinition-mii-pr-onko-verlauf.json",
+    "resourceType" : "StructureDefinition",
+    "id" : "mii-pr-onko-verlauf",
+    "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/StructureDefinition/mii-pr-onko-verlauf",
+    "version" : "2026.0.0-ballot",
+    "kind" : "resource",
+    "type" : "Observation",
+    "derivation" : "constraint"
+  },
+  {
+    "filename" : "StructureDefinition-mii-pr-onko-weitere-klassifikationen.json",
+    "resourceType" : "StructureDefinition",
+    "id" : "mii-pr-onko-weitere-klassifikationen",
+    "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/StructureDefinition/mii-pr-onko-weitere-klassifikationen",
+    "version" : "2026.0.0-ballot",
+    "kind" : "resource",
+    "type" : "Observation",
+    "derivation" : "constraint"
+  },
+  {
+    "filename" : "ValueSet-mii-vs-onko-allgemeiner-leistungszustand-ecog.json",
+    "resourceType" : "ValueSet",
+    "id" : "mii-vs-onko-allgemeiner-leistungszustand-ecog",
+    "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/ValueSet/mii-vs-onko-allgemeiner-leistungszustand-ecog",
+    "version" : "2026.0.0-ballot"
+  },
+  {
+    "filename" : "ValueSet-mii-vs-onko-allgemeiner-leistungszustand-karnofsky.json",
+    "resourceType" : "ValueSet",
+    "id" : "mii-vs-onko-allgemeiner-leistungszustand-karnofsky",
+    "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/ValueSet/mii-vs-onko-allgemeiner-leistungszustand-karnofsky",
+    "version" : "2026.0.0-ballot"
+  },
+  {
+    "filename" : "ValueSet-mii-vs-onko-asa-loinc.json",
+    "resourceType" : "ValueSet",
+    "id" : "mii-vs-onko-asa-loinc",
+    "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/ValueSet/mii-vs-onko-asa-loinc",
+    "version" : "2026.0.0-ballot"
+  },
+  {
+    "filename" : "ValueSet-mii-vs-onko-asa-obds.json",
+    "resourceType" : "ValueSet",
+    "id" : "mii-vs-onko-asa-obds",
+    "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/ValueSet/mii-vs-onko-asa-obds",
+    "version" : "2026.0.0-ballot"
+  },
+  {
+    "filename" : "ValueSet-mii-vs-onko-beurteilung-lokaler-residualstatus.json",
+    "resourceType" : "ValueSet",
+    "id" : "mii-vs-onko-beurteilung-lokaler-residualstatus",
+    "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/ValueSet/mii-vs-onko-beurteilung-lokaler-residualstatus",
+    "version" : "2026.0.0-ballot"
+  },
+  {
+    "filename" : "ValueSet-mii-vs-onko-fernmetastasen.json",
+    "resourceType" : "ValueSet",
+    "id" : "mii-vs-onko-fernmetastasen",
+    "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/ValueSet/mii-vs-onko-fernmetastasen",
+    "version" : "2026.0.0-ballot"
+  },
+  {
+    "filename" : "ValueSet-mii-vs-onko-genetische-variante-auspraegung.json",
+    "resourceType" : "ValueSet",
+    "id" : "mii-vs-onko-genetische-variante-auspraegung",
+    "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/ValueSet/mii-vs-onko-genetische-variante-auspraegung",
+    "version" : "2026.0.0-ballot"
+  },
+  {
+    "filename" : "ValueSet-mii-vs-onko-gesamtbeurteilung-residualstatus.json",
+    "resourceType" : "ValueSet",
+    "id" : "mii-vs-onko-gesamtbeurteilung-residualstatus",
+    "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/ValueSet/mii-vs-onko-gesamtbeurteilung-residualstatus",
+    "version" : "2026.0.0-ballot"
+  },
+  {
+    "filename" : "ValueSet-mii-vs-onko-grading.json",
+    "resourceType" : "ValueSet",
+    "id" : "mii-vs-onko-grading",
+    "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/ValueSet/mii-vs-onko-grading",
+    "version" : "2026.0.0-ballot"
+  },
+  {
+    "filename" : "ValueSet-mii-vs-onko-icdo3-morphologie.json",
+    "resourceType" : "ValueSet",
+    "id" : "mii-vs-onko-icdo3-morphologie",
+    "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/ValueSet/mii-vs-onko-icdo3-morphologie",
+    "version" : "2026.0.0-ballot"
+  },
+  {
+    "filename" : "ValueSet-mii-vs-onko-icdo3-topographie.json",
+    "resourceType" : "ValueSet",
+    "id" : "mii-vs-onko-icdo3-topographie",
+    "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/ValueSet/mii-vs-onko-icdo3-topographie",
+    "version" : "2026.0.0-ballot"
+  },
+  {
+    "filename" : "ValueSet-mii-vs-onko-krk-abstand-circumferelle-resektionsrand.json",
+    "resourceType" : "ValueSet",
+    "id" : "mii-vs-onko-krk-abstand-circumferelle-resektionsrand",
+    "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/ValueSet/mii-vs-onko-krk-abstand-circumferelle-resektionsrand",
+    "version" : "2026.0.0-ballot"
+  },
+  {
+    "filename" : "ValueSet-mii-vs-onko-krk-abstand-resektionslinie-aboral.json",
+    "resourceType" : "ValueSet",
+    "id" : "mii-vs-onko-krk-abstand-resektionslinie-aboral",
+    "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/ValueSet/mii-vs-onko-krk-abstand-resektionslinie-aboral",
+    "version" : "2026.0.0-ballot"
+  },
+  {
+    "filename" : "ValueSet-mii-vs-onko-krk-anastomoseninsuffizienz.json",
+    "resourceType" : "ValueSet",
+    "id" : "mii-vs-onko-krk-anastomoseninsuffizienz",
+    "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/ValueSet/mii-vs-onko-krk-anastomoseninsuffizienz",
+    "version" : "2026.0.0-ballot"
+  },
+  {
+    "filename" : "ValueSet-mii-vs-onko-krk-mrt-mesorektale-faszie-status.json",
+    "resourceType" : "ValueSet",
+    "id" : "mii-vs-onko-krk-mrt-mesorektale-faszie-status",
+    "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/ValueSet/mii-vs-onko-krk-mrt-mesorektale-faszie-status",
+    "version" : "2026.0.0-ballot"
+  },
+  {
+    "filename" : "ValueSet-mii-vs-onko-krk-stoma-anzeichnung.json",
+    "resourceType" : "ValueSet",
+    "id" : "mii-vs-onko-krk-stoma-anzeichnung",
+    "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/ValueSet/mii-vs-onko-krk-stoma-anzeichnung",
+    "version" : "2026.0.0-ballot"
+  },
+  {
+    "filename" : "ValueSet-mii-vs-onko-krk-stoma-status-reason.json",
+    "resourceType" : "ValueSet",
+    "id" : "mii-vs-onko-krk-stoma-status-reason",
+    "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/ValueSet/mii-vs-onko-krk-stoma-status-reason",
+    "version" : "2026.0.0-ballot"
+  },
+  {
+    "filename" : "ValueSet-mii-vs-onko-krk-tme-qualitaet.json",
+    "resourceType" : "ValueSet",
+    "id" : "mii-vs-onko-krk-tme-qualitaet",
+    "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/ValueSet/mii-vs-onko-krk-tme-qualitaet",
+    "version" : "2026.0.0-ballot"
+  },
+  {
+    "filename" : "ValueSet-mii-vs-onko-mamma-her2neu-status-leitlinie.json",
+    "resourceType" : "ValueSet",
+    "id" : "mii-vs-onko-mamma-her2neu-status-leitlinie",
+    "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/ValueSet/mii-vs-onko-mamma-her2neu-status-leitlinie",
+    "version" : "2026.0.0-ballot"
+  },
+  {
+    "filename" : "ValueSet-mii-vs-onko-mamma-her2neu-status-obds.json",
+    "resourceType" : "ValueSet",
+    "id" : "mii-vs-onko-mamma-her2neu-status-obds",
+    "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/ValueSet/mii-vs-onko-mamma-her2neu-status-obds",
+    "version" : "2026.0.0-ballot"
+  },
+  {
+    "filename" : "ValueSet-mii-vs-onko-mamma-intraoperatives-imaging-praeparat.json",
+    "resourceType" : "ValueSet",
+    "id" : "mii-vs-onko-mamma-intraoperatives-imaging-praeparat",
+    "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/ValueSet/mii-vs-onko-mamma-intraoperatives-imaging-praeparat",
+    "version" : "2026.0.0-ballot"
+  },
+  {
+    "filename" : "ValueSet-mii-vs-onko-mamma-menopause-status.json",
+    "resourceType" : "ValueSet",
+    "id" : "mii-vs-onko-mamma-menopause-status",
+    "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/ValueSet/mii-vs-onko-mamma-menopause-status",
+    "version" : "2026.0.0-ballot"
+  },
+  {
+    "filename" : "ValueSet-mii-vs-onko-mamma-operation-ops.json",
+    "resourceType" : "ValueSet",
+    "id" : "mii-vs-onko-mamma-operation-ops",
+    "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/ValueSet/mii-vs-onko-mamma-operation-ops",
+    "version" : "2026.0.0-ballot"
+  },
+  {
+    "filename" : "ValueSet-mii-vs-onko-mamma-operation-sct.json",
+    "resourceType" : "ValueSet",
+    "id" : "mii-vs-onko-mamma-operation-sct",
+    "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/ValueSet/mii-vs-onko-mamma-operation-sct",
+    "version" : "2026.0.0-ballot"
+  },
+  {
+    "filename" : "ValueSet-mii-vs-onko-mamma-praeoperative-markierung-modalitaet.json",
+    "resourceType" : "ValueSet",
+    "id" : "mii-vs-onko-mamma-praeoperative-markierung-modalitaet",
+    "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/ValueSet/mii-vs-onko-mamma-praeoperative-markierung-modalitaet",
+    "version" : "2026.0.0-ballot"
+  },
+  {
+    "filename" : "ValueSet-mii-vs-onko-mamma-rezeptorstatus-leitlinie.json",
+    "resourceType" : "ValueSet",
+    "id" : "mii-vs-onko-mamma-rezeptorstatus-leitlinie",
+    "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/ValueSet/mii-vs-onko-mamma-rezeptorstatus-leitlinie",
+    "version" : "2026.0.0-ballot"
+  },
+  {
+    "filename" : "ValueSet-mii-vs-onko-mamma-rezeptorstatus-obds.json",
+    "resourceType" : "ValueSet",
+    "id" : "mii-vs-onko-mamma-rezeptorstatus-obds",
+    "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/ValueSet/mii-vs-onko-mamma-rezeptorstatus-obds",
+    "version" : "2026.0.0-ballot"
+  },
+  {
+    "filename" : "ValueSet-mii-vs-onko-melanom-exzision-snomedct.json",
+    "resourceType" : "ValueSet",
+    "id" : "mii-vs-onko-melanom-exzision-snomedct",
+    "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/ValueSet/mii-vs-onko-melanom-exzision-snomedct",
+    "version" : "2026.0.0-ballot"
+  },
+  {
+    "filename" : "ValueSet-mii-vs-onko-melanom-ldh.json",
+    "resourceType" : "ValueSet",
+    "id" : "mii-vs-onko-melanom-ldh",
+    "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/ValueSet/mii-vs-onko-melanom-ldh",
+    "version" : "2026.0.0-ballot"
+  },
+  {
+    "filename" : "ValueSet-mii-vs-onko-melanom-ulzeration.json",
+    "resourceType" : "ValueSet",
+    "id" : "mii-vs-onko-melanom-ulzeration",
+    "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/ValueSet/mii-vs-onko-melanom-ulzeration",
+    "version" : "2026.0.0-ballot"
+  },
+  {
+    "filename" : "ValueSet-mii-vs-onko-nebenwirkung-art.json",
+    "resourceType" : "ValueSet",
+    "id" : "mii-vs-onko-nebenwirkung-art",
+    "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/ValueSet/mii-vs-onko-nebenwirkung-art",
+    "version" : "2026.0.0-ballot"
+  },
+  {
+    "filename" : "ValueSet-mii-vs-onko-nebenwirkung-ctcae-grad.json",
+    "resourceType" : "ValueSet",
+    "id" : "mii-vs-onko-nebenwirkung-ctcae-grad",
+    "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/ValueSet/mii-vs-onko-nebenwirkung-ctcae-grad",
+    "version" : "2026.0.0-ballot"
+  },
+  {
+    "filename" : "ValueSet-mii-vs-onko-operation-intention.json",
+    "resourceType" : "ValueSet",
+    "id" : "mii-vs-onko-operation-intention",
+    "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/ValueSet/mii-vs-onko-operation-intention",
+    "version" : "2026.0.0-ballot"
+  },
+  {
+    "filename" : "ValueSet-mii-vs-onko-operation-komplikation.json",
+    "resourceType" : "ValueSet",
+    "id" : "mii-vs-onko-operation-komplikation",
+    "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/ValueSet/mii-vs-onko-operation-komplikation",
+    "version" : "2026.0.0-ballot"
+  },
+  {
+    "filename" : "ValueSet-mii-vs-onko-operation-urgency.json",
+    "resourceType" : "ValueSet",
+    "id" : "mii-vs-onko-operation-urgency",
+    "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/ValueSet/mii-vs-onko-operation-urgency",
+    "version" : "2026.0.0-ballot"
+  },
+  {
+    "filename" : "ValueSet-mii-vs-onko-ops-nuklearmedizin.json",
+    "resourceType" : "ValueSet",
+    "id" : "mii-vs-onko-ops-nuklearmedizin",
+    "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/ValueSet/mii-vs-onko-ops-nuklearmedizin",
+    "version" : "2026.0.0-ballot"
+  },
+  {
+    "filename" : "ValueSet-mii-vs-onko-ops-strahlentherapie.json",
+    "resourceType" : "ValueSet",
+    "id" : "mii-vs-onko-ops-strahlentherapie",
+    "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/ValueSet/mii-vs-onko-ops-strahlentherapie",
+    "version" : "2026.0.0-ballot"
+  },
+  {
+    "filename" : "ValueSet-mii-vs-onko-primaertumor-diagnosesicherung.json",
+    "resourceType" : "ValueSet",
+    "id" : "mii-vs-onko-primaertumor-diagnosesicherung",
+    "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/ValueSet/mii-vs-onko-primaertumor-diagnosesicherung",
+    "version" : "2026.0.0-ballot"
+  },
+  {
+    "filename" : "ValueSet-mii-vs-onko-prostata-clavien-dindo.json",
+    "resourceType" : "ValueSet",
+    "id" : "mii-vs-onko-prostata-clavien-dindo",
+    "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/ValueSet/mii-vs-onko-prostata-clavien-dindo",
+    "version" : "2026.0.0-ballot"
+  },
+  {
+    "filename" : "ValueSet-mii-vs-onko-prostata-gleason-patterns.json",
+    "resourceType" : "ValueSet",
+    "id" : "mii-vs-onko-prostata-gleason-patterns",
+    "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/ValueSet/mii-vs-onko-prostata-gleason-patterns",
+    "version" : "2026.0.0-ballot"
+  },
+  {
+    "filename" : "ValueSet-mii-vs-onko-prostata-gleason-primary-secondary-tertiary.json",
+    "resourceType" : "ValueSet",
+    "id" : "mii-vs-onko-prostata-gleason-primary-secondary-tertiary",
+    "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/ValueSet/mii-vs-onko-prostata-gleason-primary-secondary-tertiary",
+    "version" : "2026.0.0-ballot"
+  },
+  {
+    "filename" : "ValueSet-mii-vs-onko-prostata-gleason-score.json",
+    "resourceType" : "ValueSet",
+    "id" : "mii-vs-onko-prostata-gleason-score",
+    "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/ValueSet/mii-vs-onko-prostata-gleason-score",
+    "version" : "2026.0.0-ballot"
+  },
+  {
+    "filename" : "ValueSet-mii-vs-onko-prostata-operation-snomedct.json",
+    "resourceType" : "ValueSet",
+    "id" : "mii-vs-onko-prostata-operation-snomedct",
+    "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/ValueSet/mii-vs-onko-prostata-operation-snomedct",
+    "version" : "2026.0.0-ballot"
+  },
+  {
+    "filename" : "ValueSet-mii-vs-onko-prostata-postsurgical-complications.json",
+    "resourceType" : "ValueSet",
+    "id" : "mii-vs-onko-prostata-postsurgical-complications",
+    "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/ValueSet/mii-vs-onko-prostata-postsurgical-complications",
+    "version" : "2026.0.0-ballot"
+  },
+  {
+    "filename" : "ValueSet-mii-vs-onko-prostata-psa-loinc.json",
+    "resourceType" : "ValueSet",
+    "id" : "mii-vs-onko-prostata-psa-loinc",
+    "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/ValueSet/mii-vs-onko-prostata-psa-loinc",
+    "version" : "2026.0.0-ballot"
+  },
+  {
+    "filename" : "ValueSet-mii-vs-onko-seitenlokalisation.json",
+    "resourceType" : "ValueSet",
+    "id" : "mii-vs-onko-seitenlokalisation",
+    "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/ValueSet/mii-vs-onko-seitenlokalisation",
+    "version" : "2026.0.0-ballot"
+  },
+  {
+    "filename" : "ValueSet-mii-vs-onko-strahlentherapie-applikationsart.json",
+    "resourceType" : "ValueSet",
+    "id" : "mii-vs-onko-strahlentherapie-applikationsart",
+    "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/ValueSet/mii-vs-onko-strahlentherapie-applikationsart",
+    "version" : "2026.0.0-ballot"
+  },
+  {
+    "filename" : "ValueSet-mii-vs-onko-strahlentherapie-boost.json",
+    "resourceType" : "ValueSet",
+    "id" : "mii-vs-onko-strahlentherapie-boost",
+    "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/ValueSet/mii-vs-onko-strahlentherapie-boost",
+    "version" : "2026.0.0-ballot"
+  },
+  {
+    "filename" : "ValueSet-mii-vs-onko-strahlentherapie-ende-grund.json",
+    "resourceType" : "ValueSet",
+    "id" : "mii-vs-onko-strahlentherapie-ende-grund",
+    "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/ValueSet/mii-vs-strahlentherapie-ende-grund",
+    "version" : "2026.0.0-ballot"
+  },
+  {
+    "filename" : "ValueSet-mii-vs-onko-strahlentherapie-intention.json",
+    "resourceType" : "ValueSet",
+    "id" : "mii-vs-onko-strahlentherapie-intention",
+    "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/ValueSet/mii-vs-onko-strahlentherapie-intention",
+    "version" : "2026.0.0-ballot"
+  },
+  {
+    "filename" : "ValueSet-mii-vs-onko-strahlentherapie-stellungzurop.json",
+    "resourceType" : "ValueSet",
+    "id" : "mii-vs-onko-strahlentherapie-stellungzurop",
+    "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/ValueSet/mii-vs-strahlentherapie-stellungzurop",
+    "version" : "2026.0.0-ballot"
+  },
+  {
+    "filename" : "ValueSet-mii-vs-onko-strahlentherapie-strahlenart.json",
+    "resourceType" : "ValueSet",
+    "id" : "mii-vs-onko-strahlentherapie-strahlenart",
+    "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/ValueSet/mii-vs-strahlentherapie-strahlenart",
+    "version" : "2026.0.0-ballot"
+  },
+  {
+    "filename" : "ValueSet-mii-vs-onko-strahlentherapie-strahlungseinheit.json",
+    "resourceType" : "ValueSet",
+    "id" : "mii-vs-onko-strahlentherapie-strahlungseinheit",
+    "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/ValueSet/mii-vs-strahlentherapie-strahlungseinheit",
+    "version" : "2026.0.0-ballot"
+  },
+  {
+    "filename" : "ValueSet-mii-vs-onko-strahlentherapie-zielgebiet.json",
+    "resourceType" : "ValueSet",
+    "id" : "mii-vs-onko-strahlentherapie-zielgebiet",
+    "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/ValueSet/mii-vs-strahlentherapie-zielgebiet",
+    "version" : "2026.0.0-ballot"
+  },
+  {
+    "filename" : "ValueSet-mii-vs-onko-studienteilnahme.json",
+    "resourceType" : "ValueSet",
+    "id" : "mii-vs-onko-studienteilnahme",
+    "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/ValueSet/mii-vs-onko-studienteilnahme",
+    "version" : "2026.0.0-ballot"
+  },
+  {
+    "filename" : "ValueSet-mii-vs-onko-systemische-therapie-art.json",
+    "resourceType" : "ValueSet",
+    "id" : "mii-vs-onko-systemische-therapie-art",
+    "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/ValueSet/mii-vs-onko-systemische-therapie-art",
+    "version" : "2026.0.0-ballot"
+  },
+  {
+    "filename" : "ValueSet-mii-vs-onko-systemische-therapie-ende-grund.json",
+    "resourceType" : "ValueSet",
+    "id" : "mii-vs-onko-systemische-therapie-ende-grund",
+    "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/ValueSet/mii-vs-systemische-therapie-ende-grund",
+    "version" : "2026.0.0-ballot"
+  },
+  {
+    "filename" : "ValueSet-mii-vs-onko-systemische-therapie-intention.json",
+    "resourceType" : "ValueSet",
+    "id" : "mii-vs-onko-systemische-therapie-intention",
+    "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/ValueSet/mii-vs-onko-systemische-therapie-intention",
+    "version" : "2026.0.0-ballot"
+  },
+  {
+    "filename" : "ValueSet-mii-vs-onko-systemische-therapie-protokolle.json",
+    "resourceType" : "ValueSet",
+    "id" : "mii-vs-onko-systemische-therapie-protokolle",
+    "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/ValueSet/mii-vs-onko-systemische-therapie-protokolle",
+    "version" : "2026.0.0-ballot"
+  },
+  {
+    "filename" : "ValueSet-mii-vs-onko-systemische-therapie-stellungzurop.json",
+    "resourceType" : "ValueSet",
+    "id" : "mii-vs-onko-systemische-therapie-stellungzurop",
+    "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/ValueSet/mii-vs-systemische-therapie-stellungzurop",
+    "version" : "2026.0.0-ballot"
+  },
+  {
+    "filename" : "ValueSet-mii-vs-onko-systemische-therapie-substanzen-2018.json",
+    "resourceType" : "ValueSet",
+    "id" : "mii-vs-onko-systemische-therapie-substanzen-2018",
+    "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/ValueSet/mii-vs-onko-systemische-therapie-substanzen-2018",
+    "version" : "2026.0.0-ballot"
+  },
+  {
+    "filename" : "ValueSet-mii-vs-onko-systemische-therapie-substanzen-2019.json",
+    "resourceType" : "ValueSet",
+    "id" : "mii-vs-onko-systemische-therapie-substanzen-2019",
+    "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/ValueSet/mii-vs-onko-systemische-therapie-substanzen-2019",
+    "version" : "2026.0.0-ballot"
+  },
+  {
+    "filename" : "ValueSet-mii-vs-onko-systemische-therapie-substanzen-2020.json",
+    "resourceType" : "ValueSet",
+    "id" : "mii-vs-onko-systemische-therapie-substanzen-2020",
+    "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/ValueSet/mii-vs-onko-systemische-therapie-substanzen-2020",
+    "version" : "2026.0.0-ballot"
+  },
+  {
+    "filename" : "ValueSet-mii-vs-onko-systemische-therapie-substanzen-2021.json",
+    "resourceType" : "ValueSet",
+    "id" : "mii-vs-onko-systemische-therapie-substanzen-2021",
+    "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/ValueSet/mii-vs-onko-systemische-therapie-substanzen-2021",
+    "version" : "2026.0.0-ballot"
+  },
+  {
+    "filename" : "ValueSet-mii-vs-onko-systemische-therapie-substanzen-2022.json",
+    "resourceType" : "ValueSet",
+    "id" : "mii-vs-onko-systemische-therapie-substanzen-2022",
+    "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/ValueSet/mii-vs-onko-systemische-therapie-substanzen-2022",
+    "version" : "2026.0.0-ballot"
+  },
+  {
+    "filename" : "ValueSet-mii-vs-onko-systemische-therapie-substanzen-2023.json",
+    "resourceType" : "ValueSet",
+    "id" : "mii-vs-onko-systemische-therapie-substanzen-2023",
+    "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/ValueSet/mii-vs-onko-systemische-therapie-substanzen-2023",
+    "version" : "2026.0.0-ballot"
+  },
+  {
+    "filename" : "ValueSet-mii-vs-onko-systemische-therapie-substanzen-2024.json",
+    "resourceType" : "ValueSet",
+    "id" : "mii-vs-onko-systemische-therapie-substanzen-2024",
+    "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/ValueSet/mii-vs-onko-systemische-therapie-substanzen-2024",
+    "version" : "2026.0.0-ballot"
+  },
+  {
+    "filename" : "ValueSet-mii-vs-onko-systemische-therapie-substanzen-2025.json",
+    "resourceType" : "ValueSet",
+    "id" : "mii-vs-onko-systemische-therapie-substanzen-2025",
+    "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/ValueSet/mii-vs-onko-systemische-therapie-substanzen-2025",
+    "version" : "2026.0.0-ballot"
+  },
+  {
+    "filename" : "ValueSet-mii-vs-onko-systemische-therapie-substanzen-2026.json",
+    "resourceType" : "ValueSet",
+    "id" : "mii-vs-onko-systemische-therapie-substanzen-2026",
+    "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/ValueSet/mii-vs-onko-systemische-therapie-substanzen-2026",
+    "version" : "2026.0.2"
+  },
+  {
+    "filename" : "ValueSet-mii-vs-onko-systemische-therapie-substanzen-unii.json",
+    "resourceType" : "ValueSet",
+    "id" : "mii-vs-onko-systemische-therapie-substanzen-unii",
+    "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/ValueSet/mii-vs-onko-systemische-therapie-substanzen-unii",
+    "version" : "2026.0.0-ballot"
+  },
+  {
+    "filename" : "ValueSet-mii-vs-onko-systemische-therapie-substanzen.json",
+    "resourceType" : "ValueSet",
+    "id" : "mii-vs-onko-systemische-therapie-substanzen",
+    "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/ValueSet/mii-vs-onko-systemische-therapie-substanzen",
+    "version" : "2026.0.0-ballot"
+  },
+  {
+    "filename" : "ValueSet-mii-vs-onko-therapieabweichung.json",
+    "resourceType" : "ValueSet",
+    "id" : "mii-vs-onko-therapieabweichung",
+    "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/ValueSet/mii-vs-onko-therapieabweichung",
+    "version" : "2026.0.0-ballot"
+  },
+  {
+    "filename" : "ValueSet-mii-vs-onko-therapieempfehlung-typ.json",
+    "resourceType" : "ValueSet",
+    "id" : "mii-vs-onko-therapieempfehlung-typ",
+    "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/ValueSet/mii-vs-onko-therapieempfehlung-typ",
+    "version" : "2026.0.0-ballot"
+  },
+  {
+    "filename" : "ValueSet-mii-vs-onko-therapieplanung-typ.json",
+    "resourceType" : "ValueSet",
+    "id" : "mii-vs-onko-therapieplanung-typ",
+    "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/ValueSet/mii-vs-onko-therapieplanung-typ",
+    "version" : "2026.0.0-ballot"
+  },
+  {
+    "filename" : "ValueSet-mii-vs-onko-tnm-cp-praefix.json",
+    "resourceType" : "ValueSet",
+    "id" : "mii-vs-onko-tnm-cp-praefix",
+    "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/ValueSet/mii-vs-onko-tnm-cp-praefix",
+    "version" : "2026.0.0-ballot"
+  },
+  {
+    "filename" : "ValueSet-mii-vs-onko-tnm-itc-suffix.json",
+    "resourceType" : "ValueSet",
+    "id" : "mii-vs-onko-tnm-itc-suffix",
+    "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/ValueSet/mii-vs-onko-tnm-itc-suffix",
+    "version" : "2026.0.0-ballot"
+  },
+  {
+    "filename" : "ValueSet-mii-vs-onko-tnm-klassifikation-typ.json",
+    "resourceType" : "ValueSet",
+    "id" : "mii-vs-onko-tnm-klassifikation-typ",
+    "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/ValueSet/mii-vs-onko-tnm-klassifikation-typ",
+    "version" : "2026.0.0-ballot"
+  },
+  {
+    "filename" : "ValueSet-mii-vs-onko-tnm-l-kategorie-werte.json",
+    "resourceType" : "ValueSet",
+    "id" : "mii-vs-onko-tnm-l-kategorie-werte",
+    "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/ValueSet/mii-vs-onko-tnm-l-kategorie-werte",
+    "version" : "2026.0.0-ballot"
+  },
+  {
+    "filename" : "ValueSet-mii-vs-onko-tnm-m-kategorie-werte.json",
+    "resourceType" : "ValueSet",
+    "id" : "mii-vs-onko-tnm-m-kategorie-werte",
+    "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/ValueSet/mii-vs-onko-tnm-m-kategorie-werte",
+    "version" : "2026.0.0-ballot"
+  },
+  {
+    "filename" : "ValueSet-mii-vs-onko-tnm-m-kategorie.json",
+    "resourceType" : "ValueSet",
+    "id" : "mii-vs-onko-tnm-m-kategorie",
+    "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/ValueSet/mii-vs-onko-tnm-m-kategorie",
+    "version" : "2026.0.0-ballot"
+  },
+  {
+    "filename" : "ValueSet-mii-vs-onko-tnm-m-symbol.json",
+    "resourceType" : "ValueSet",
+    "id" : "mii-vs-onko-tnm-m-symbol",
+    "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/ValueSet/mii-vs-onko-tnm-m-symbol",
+    "version" : "2026.0.0-ballot"
+  },
+  {
+    "filename" : "ValueSet-mii-vs-onko-tnm-n-kategorie-werte.json",
+    "resourceType" : "ValueSet",
+    "id" : "mii-vs-onko-tnm-n-kategorie-werte",
+    "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/ValueSet/mii-vs-onko-tnm-n-kategorie-werte",
+    "version" : "2026.0.0-ballot"
+  },
+  {
+    "filename" : "ValueSet-mii-vs-onko-tnm-n-kategorie.json",
+    "resourceType" : "ValueSet",
+    "id" : "mii-vs-onko-tnm-n-kategorie",
+    "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/ValueSet/mii-vs-onko-tnm-n-kategorie",
+    "version" : "2026.0.0-ballot"
+  },
+  {
+    "filename" : "ValueSet-mii-vs-onko-tnm-pn-kategorie-werte.json",
+    "resourceType" : "ValueSet",
+    "id" : "mii-vs-onko-tnm-pn-kategorie-werte",
+    "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/ValueSet/mii-vs-onko-tnm-pn-kategorie-werte",
+    "version" : "2026.0.0-ballot"
+  },
+  {
+    "filename" : "ValueSet-mii-vs-onko-tnm-s-kategorie-werte.json",
+    "resourceType" : "ValueSet",
+    "id" : "mii-vs-onko-tnm-s-kategorie-werte",
+    "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/ValueSet/mii-vs-onko-tnm-s-kategorie-werte",
+    "version" : "2026.0.0-ballot"
+  },
+  {
+    "filename" : "ValueSet-mii-vs-onko-tnm-sn-suffix.json",
+    "resourceType" : "ValueSet",
+    "id" : "mii-vs-onko-tnm-sn-suffix",
+    "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/ValueSet/mii-vs-onko-tnm-sn-suffix",
+    "version" : "2026.0.0-ballot"
+  },
+  {
+    "filename" : "ValueSet-mii-vs-onko-tnm-t-kategorie-werte.json",
+    "resourceType" : "ValueSet",
+    "id" : "mii-vs-onko-tnm-t-kategorie-werte",
+    "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/ValueSet/mii-vs-onko-tnm-t-kategorie-werte",
+    "version" : "2026.0.0-ballot"
+  },
+  {
+    "filename" : "ValueSet-mii-vs-onko-tnm-t-kategorie.json",
+    "resourceType" : "ValueSet",
+    "id" : "mii-vs-onko-tnm-t-kategorie",
+    "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/ValueSet/mii-vs-onko-tnm-t-kategorie",
+    "version" : "2026.0.0-ballot"
+  },
+  {
+    "filename" : "ValueSet-mii-vs-onko-tnm-uicc-stadium.json",
+    "resourceType" : "ValueSet",
+    "id" : "mii-vs-onko-tnm-uicc-stadium",
+    "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/ValueSet/mii-vs-onko-tnm-uicc-stadium",
+    "version" : "2026.0.0-ballot"
+  },
+  {
+    "filename" : "ValueSet-mii-vs-onko-tnm-v-kategorie-werte.json",
+    "resourceType" : "ValueSet",
+    "id" : "mii-vs-onko-tnm-v-kategorie-werte",
+    "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/ValueSet/mii-vs-onko-tnm-v-kategorie-werte",
+    "version" : "2026.0.0-ballot"
+  },
+  {
+    "filename" : "ValueSet-mii-vs-onko-tnm-version.json",
+    "resourceType" : "ValueSet",
+    "id" : "mii-vs-onko-tnm-version",
+    "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/ValueSet/mii-vs-onko-tnm-version",
+    "version" : "2026.0.0-ballot"
+  },
+  {
+    "filename" : "ValueSet-mii-vs-onko-tod.json",
+    "resourceType" : "ValueSet",
+    "id" : "mii-vs-onko-tod",
+    "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/ValueSet/mii-vs-onko-tod",
+    "version" : "2026.0.0-ballot"
+  },
+  {
+    "filename" : "ValueSet-mii-vs-onko-verlauf-fernmetastasen.json",
+    "resourceType" : "ValueSet",
+    "id" : "mii-vs-onko-verlauf-fernmetastasen",
+    "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/ValueSet/mii-vs-onko-verlauf-fernmetastasen",
+    "version" : "2026.0.0-ballot"
+  },
+  {
+    "filename" : "ValueSet-mii-vs-onko-verlauf-gesamtbeurteilung.json",
+    "resourceType" : "ValueSet",
+    "id" : "mii-vs-onko-verlauf-gesamtbeurteilung",
+    "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/ValueSet/mii-vs-onko-verlauf-gesamtbeurteilung",
+    "version" : "2026.0.0-ballot"
+  },
+  {
+    "filename" : "ValueSet-mii-vs-onko-verlauf-lymphknoten.json",
+    "resourceType" : "ValueSet",
+    "id" : "mii-vs-onko-verlauf-lymphknoten",
+    "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/ValueSet/mii-vs-onko-verlauf-lymphknoten",
+    "version" : "2026.0.0-ballot"
+  },
+  {
+    "filename" : "ValueSet-mii-vs-onko-verlauf-primaertumor.json",
+    "resourceType" : "ValueSet",
+    "id" : "mii-vs-onko-verlauf-primaertumor",
+    "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/ValueSet/mii-vs-onko-verlauf-primaertumor",
+    "version" : "2026.0.0-ballot"
+  },
+  {
+    "filename" : "ValueSet-mii-vs-onko-weitere-klassifikationen-auspraegungen.json",
+    "resourceType" : "ValueSet",
+    "id" : "mii-vs-onko-weitere-klassifikationen-auspraegungen",
+    "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/ValueSet/mii-vs-onko-weitere-klassifikationen-auspraegungen",
+    "version" : "2026.0.0-ballot"
+  },
+  {
+    "filename" : "ValueSet-mii-vs-onko-weitere-klassifikationen.json",
+    "resourceType" : "ValueSet",
+    "id" : "mii-vs-onko-weitere-klassifikationen",
+    "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/ValueSet/mii-vs-onko-weitere-klassifikationen",
+    "version" : "2026.0.0-ballot"
+  }]
+}

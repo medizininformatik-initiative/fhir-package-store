@@ -1,0 +1,139 @@
+{
+  "resourceType": "Specimen",
+  "id": "OrganoidLunge",
+  "meta": {
+    "profile": [
+      "https://www.medizininformatik-initiative.de/fhir/ext/modul-biobank/StructureDefinition/mii-pr-biobank-zellinie-organoid"
+    ]
+  },
+  "type": {
+    "coding": [
+      {
+        "system": "http://snomed.info/sct",
+        "code": "123038009",
+        "display": "Specimen (specimen)"
+      },
+      {
+        "system": "https://fhir.bbmri-eric.eu/fhir/CodeSystem/miabis-detailed-samply-type-cs",
+        "code": "Organoid",
+        "display": "Organoids"
+      }
+    ]
+  },
+  "container": [
+    {
+      "specimenQuantity": {
+        "system": "http://unitsofmeasure.org",
+        "value": 1,
+        "code": "ml",
+        "unit": "ml"
+      },
+      "type": {
+        "coding": [
+          {
+            "code": "83059008",
+            "system": "http://snomed.info/sct",
+            "display": "Tube, device (physical object)"
+          }
+        ]
+      }
+    }
+  ],
+  "extension": [
+    {
+      "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-biobank/StructureDefinition/mii-ex-biobank-kulturprotokoll",
+      "valueReference": {
+        "reference": "DocumentReference/Kulturprotokoll"
+      }
+    },
+    {
+      "extension": [
+        {
+          "url": "artDerModifikation",
+          "valueCodeableConcept": {
+            "coding": [
+              {
+                "code": "CLO:0037375",
+                "system": "http://purl.obolibrary.org/obo/clo.owl",
+                "display": "derived from cell with knockout gene"
+              }
+            ]
+          }
+        },
+        {
+          "url": "zielGen",
+          "valueCoding": {
+            "code": "TP53",
+            "system": "http://www.genenames.org",
+            "display": "tumor protein p53"
+          }
+        },
+        {
+          "url": "protokoll",
+          "valueReference": {
+            "reference": "DocumentReference/ProtocolCRISPRTP53"
+          }
+        }
+      ],
+      "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-biobank/StructureDefinition/mii-ex-biobank-modifikationen"
+    },
+    {
+      "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-biobank/StructureDefinition/mii-ex-biobank-anzahl-passagen",
+      "valueInteger": 3
+    }
+  ],
+  "processing": [
+    {
+      "extension": [
+        {
+          "valueRange": {
+            "low": {
+              "system": "http://unitsofmeasure.org",
+              "code": "Cel",
+              "unit": "°C",
+              "value": 37
+            },
+            "high": {
+              "system": "http://unitsofmeasure.org",
+              "code": "Cel",
+              "unit": "°C",
+              "value": 37
+            }
+          },
+          "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-biobank/StructureDefinition/Temperaturbedingungen"
+        }
+      ],
+      "procedure": {
+        "coding": [
+          {
+            "system": "http://snomed.info/sct",
+            "code": "1186936003",
+            "display": "Storage of specimen (procedure)"
+          }
+        ]
+      },
+      "timePeriod": {
+        "start": "2018-06-20T10:00:00+01:00",
+        "end": "2018-06-27T10:00:00+01:00"
+      }
+    }
+  ],
+  "parent": [
+    {
+      "reference": "Specimen/MusterprobeGewebe"
+    }
+  ],
+  "identifier": [
+    {
+      "system": "https://biobank.uk-musterstadt.de/fhir/sid/proben",
+      "value": "6789-ORG-1"
+    }
+  ],
+  "status": "available",
+  "subject": {
+    "reference": "Patient/mii-exa-test-data-patient-1"
+  },
+  "collection": {
+    "collectedDateTime": "2018-06-08T15:34:00+01:00"
+  }
+}

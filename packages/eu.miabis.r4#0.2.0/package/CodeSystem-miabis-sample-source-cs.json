@@ -1,0 +1,25 @@
+{
+  "resourceType": "CodeSystem",
+  "status": "active",
+  "content": "complete",
+  "name": "SampleSourceCS",
+  "id": "miabis-sample-source-cs",
+  "title": "MIABIS Code system for the source of the sample",
+  "description": "This Code system defines codes for the source of the sample",
+  "url": "https://fhir.bbmri-eric.eu/fhir/CodeSystem/miabis-sample-source-cs",
+  "concept": [
+    {
+      "code": "Human",
+      "display": "Human"
+    },
+    {
+      "code": "Animal",
+      "display": "Animal"
+    },
+    {
+      "code": "Enviroment",
+      "display": "Enviroment"
+    }
+  ],
+  "count": 3
+}

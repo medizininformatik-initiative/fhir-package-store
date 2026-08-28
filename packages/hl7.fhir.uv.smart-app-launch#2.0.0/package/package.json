@@ -1,0 +1,30 @@
+{
+  "name": "hl7.fhir.uv.smart-app-launch",
+  "version": "2.0.0",
+  "tools-version": 3,
+  "type": "fhir.ig",
+  "date": "20211126051155",
+  "license": "CC-BY-4.0",
+  "canonical": "http://hl7.org/fhir/smart-app-launch",
+  "url": "http://hl7.org/fhir/smart-app-launch/STU2",
+  "title": "SMART App Launch",
+  "fhirVersions": [
+    "4.0.1"
+  ],
+  "dependencies": {
+    "hl7.fhir.r4.core": "4.0.1"
+  },
+  "author": "HL7 International - FHIR Infrastructure WG",
+  "maintainers": [
+    {
+      "name": "HL7 International - FHIR Infrastructure WG",
+      "email": "fhir@lists.HL7.org",
+      "url": "https://hl7.org/Special/committees/fiwg"
+    }
+  ],
+  "directories": {
+    "lib": "package",
+    "example": "example"
+  },
+  "jurisdiction": "http://unstats.un.org/unsd/methods/m49/m49.htm#001"
+}

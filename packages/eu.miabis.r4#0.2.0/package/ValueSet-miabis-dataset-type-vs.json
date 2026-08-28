@@ -1,0 +1,16 @@
+{
+  "resourceType": "ValueSet",
+  "status": "active",
+  "name": "DatasetTypeVS",
+  "id": "miabis-dataset-type-vs",
+  "title": "dataset type Value Set",
+  "description": "The data categories from which data are available or can be linked to the sample donor. Can be one or more of the provided values",
+  "url": "https://fhir.bbmri-eric.eu/fhir/ValueSet/miabis-dataset-type-vs",
+  "compose": {
+    "include": [
+      {
+        "system": "https://fhir.bbmri-eric.eu/fhir/CodeSystem/miabis-dataset-type-CS"
+      }
+    ]
+  }
+}

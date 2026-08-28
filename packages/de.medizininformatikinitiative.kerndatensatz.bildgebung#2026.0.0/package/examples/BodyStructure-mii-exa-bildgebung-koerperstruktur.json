@@ -1,0 +1,41 @@
+{
+  "resourceType": "BodyStructure",
+  "id": "mii-exa-bildgebung-koerperstruktur",
+  "meta": {
+    "profile": [
+      "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-pr-bildgebung-koerperstruktur"
+    ]
+  },
+  "morphology": {
+    "coding": [
+      {
+        "code": "12747003",
+        "system": "http://snomed.info/sct",
+        "display": "Microcalcification, calcified structure (morphologic abnormality)"
+      }
+    ]
+  },
+  "location": {
+    "coding": [
+      {
+        "code": "76752008",
+        "system": "http://snomed.info/sct",
+        "display": "Breast structure (body structure)"
+      }
+    ]
+  },
+  "locationQualifier": [
+    {
+      "coding": [
+        {
+          "code": "7771000",
+          "system": "http://snomed.info/sct",
+          "display": "Left (qualifier value)"
+        }
+      ]
+    }
+  ],
+  "patient": {
+    "reference": "Patient/PatExample"
+  }
+}

@@ -1,0 +1,87 @@
+{
+  "resourceType": "Organization",
+  "id": "BiobankInstance",
+  "meta": {
+    "profile": [
+      "https://fhir.bbmri-eric.eu/fhir/StructureDefinition/miabis-biobank"
+    ]
+  },
+  "identifier": [
+    {
+      "system": "http://www.bbmri-eric.eu/",
+      "value": "biobankId"
+    }
+  ],
+  "alias": [
+    "biobankAlias"
+  ],
+  "contact": [
+    {
+      "name": {
+        "given": [
+          "contactName"
+        ],
+        "family": "contactFamilyName"
+      },
+      "telecom": [
+        {
+          "system": "phone",
+          "value": "contactEmail"
+        }
+      ]
+    }
+  ],
+  "address": [
+    {
+      "country": "CZ"
+    }
+  ],
+  "extension": [
+    {
+      "url": "https://fhir.bbmri-eric.eu/fhir/StructureDefinition/miabis-infrastructural-capabilities-extension",
+      "valueCodeableConcept": {
+        "coding": [
+          {
+            "code": "SampleStorage",
+            "system": "https://fhir.bbmri-eric.eu/fhir/CodeSystem/miabis-infrastructural-capabilities-cs"
+          }
+        ]
+      }
+    },
+    {
+      "url": "https://fhir.bbmri-eric.eu/fhir/StructureDefinition/miabis-organisational-capabilities-extension",
+      "valueCodeableConcept": {
+        "coding": [
+          {
+            "code": "Other",
+            "system": "https://fhir.bbmri-eric.eu/fhir/CodeSystem/miabis-organisational-capabilities-cs"
+          }
+        ]
+      }
+    },
+    {
+      "url": "https://fhir.bbmri-eric.eu/fhir/StructureDefinition/miabis-bioprocessing-and-analytical-capabilities-extension",
+      "valueCodeableConcept": {
+        "coding": [
+          {
+            "code": "Other",
+            "system": "https://fhir.bbmri-eric.eu/fhir/CodeSystem/miabis-bioprocessing-and-analytical-capabilities-cs"
+          }
+        ]
+      }
+    },
+    {
+      "url": "https://fhir.bbmri-eric.eu/fhir/StructureDefinition/miabis-quality-management-standard-extension",
+      "valueString": "ISO 9001"
+    },
+    {
+      "url": "https://fhir.bbmri-eric.eu/fhir/StructureDefinition/miabis-juristic-person-extension",
+      "valueString": "juristicPerson"
+    },
+    {
+      "url": "https://fhir.bbmri-eric.eu/fhir/StructureDefinition/miabis-organization-description-extension",
+      "valueString": "descriptionExample"
+    }
+  ],
+  "name": "biobankName"
+}

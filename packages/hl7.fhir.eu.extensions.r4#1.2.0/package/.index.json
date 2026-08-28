@@ -1,0 +1,96 @@
+{
+  "index-version" : 2,
+  "files" : [
+    {
+      "filename" : "ImplementationGuide-hl7.fhir.eu.extensions.json",
+      "resourceType" : "ImplementationGuide",
+      "id" : "hl7.fhir.eu.extensions",
+      "url" : "http://hl7.eu/fhir/extensions/ImplementationGuide/hl7.fhir.eu.extensions",
+      "version" : "1.2.0"
+    },
+    {
+      "filename" : "StructureDefinition-composition-basedOn-order-or-requisition.json",
+      "resourceType" : "StructureDefinition",
+      "id" : "composition-basedOn-order-or-requisition",
+      "url" : "http://hl7.eu/fhir/StructureDefinition/composition-basedOn-order-or-requisition",
+      "version" : "1.2.0",
+      "kind" : "complex-type",
+      "type" : "Extension",
+      "derivation" : "constraint"
+    },
+    {
+      "filename" : "StructureDefinition-composition-diagnosticReportReference.json",
+      "resourceType" : "StructureDefinition",
+      "id" : "composition-diagnosticReportReference",
+      "url" : "http://hl7.eu/fhir/extensions/StructureDefinition/composition-diagnosticReportReference",
+      "version" : "1.2.0",
+      "kind" : "complex-type",
+      "type" : "Extension",
+      "derivation" : "constraint"
+    },
+    {
+      "filename" : "StructureDefinition-consent-relatedCondition.json",
+      "resourceType" : "StructureDefinition",
+      "id" : "consent-relatedCondition",
+      "url" : "http://hl7.eu/fhir/StructureDefinition/consent-relatedCondition",
+      "version" : "1.2.0",
+      "kind" : "complex-type",
+      "type" : "Extension",
+      "derivation" : "constraint"
+    },
+    {
+      "filename" : "StructureDefinition-encounter-legalStatus.json",
+      "resourceType" : "StructureDefinition",
+      "id" : "encounter-legalStatus",
+      "url" : "http://hl7.eu/fhir/StructureDefinition/encounter-legalStatus",
+      "version" : "1.2.0",
+      "kind" : "complex-type",
+      "type" : "Extension",
+      "derivation" : "constraint"
+    },
+    {
+      "filename" : "StructureDefinition-information-recipient.json",
+      "resourceType" : "StructureDefinition",
+      "id" : "information-recipient",
+      "url" : "http://hl7.eu/fhir/StructureDefinition/information-recipient",
+      "version" : "1.2.0",
+      "kind" : "complex-type",
+      "type" : "Extension",
+      "derivation" : "constraint"
+    },
+    {
+      "filename" : "StructureDefinition-medication-package-type.json",
+      "resourceType" : "StructureDefinition",
+      "id" : "medication-package-type",
+      "url" : "http://hl7.eu/fhir/StructureDefinition/medication-package-type",
+      "version" : "1.2.0",
+      "kind" : "complex-type",
+      "type" : "Extension",
+      "derivation" : "constraint"
+    },
+    {
+      "filename" : "StructureDefinition-periods-of-life.json",
+      "resourceType" : "StructureDefinition",
+      "id" : "periods-of-life",
+      "url" : "http://hl7.eu/fhir/extensions/StructureDefinition/periods-of-life",
+      "version" : "1.2.0",
+      "kind" : "complex-type",
+      "type" : "Extension",
+      "derivation" : "constraint"
+    },
+    {
+      "filename" : "ValueSet-example-legal-status-vs.json",
+      "resourceType" : "ValueSet",
+      "id" : "example-legal-status-vs",
+      "url" : "http://hl7.eu/fhir/extensions/ValueSet/example-legal-status-vs",
+      "version" : "1.2.0"
+    },
+    {
+      "filename" : "ValueSet-periods-of-life-vs.json",
+      "resourceType" : "ValueSet",
+      "id" : "periods-of-life-vs",
+      "url" : "http://hl7.eu/fhir/extensions/ValueSet/periods-of-life-vs",
+      "version" : "1.2.0"
+    }
+  ]
+}

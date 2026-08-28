@@ -1,0 +1,1 @@
+{"resourceType":"Specimen","id":"PatientKimMusterperson-Specimen-1","identifier":[{"value":"12345678"}],"subject":{"reference":"Patient/PatientKimMusterperson"},"collection":{"collectedDateTime":"2021-09-30"}}

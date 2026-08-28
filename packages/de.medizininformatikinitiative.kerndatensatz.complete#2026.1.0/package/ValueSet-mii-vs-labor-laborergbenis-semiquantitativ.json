@@ -1,0 +1,88 @@
+{
+  "resourceType": "ValueSet",
+  "status": "active",
+  "name": "MII_VS_Labor_Laborergbenis_Semiquantitativ",
+  "id": "mii-vs-labor-laborergbenis-semiquantitativ",
+  "title": "MII VS Labor Laborergbenis Semiquantitativ",
+  "description": "Kodierung für semi-quantitative Laborergebnisse",
+  "version": "2026.0.0",
+  "url": "https://www.medizininformatik-initiative.de/fhir/core/modul-labor/ValueSet/Laborergebnis-semiquantitativ",
+  "meta": {
+    "profile": [
+      "http://hl7.org/fhir/StructureDefinition/shareablevalueset"
+    ]
+  },
+  "publisher": "Medizininformatik Initiative",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "https://www.medizininformatik-initiative.de"
+        }
+      ]
+    }
+  ],
+  "extension": [
+    {
+      "url": "https://www.medizininformatik-initiative.de/fhir/modul-meta/StructureDefinition/mii-ex-meta-license-codeable",
+      "valueCodeableConcept": {
+        "coding": [
+          {
+            "code": "CC-BY-4.0",
+            "system": "http://hl7.org/fhir/spdx-license",
+            "display": "Creative Commons Attribution 4.0 International"
+          }
+        ]
+      }
+    }
+  ],
+  "experimental": false,
+  "date": "2023-12-12",
+  "compose": {
+    "include": [
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/900000000000207008/version/20250701",
+        "concept": [
+          {
+            "code": "260347006",
+            "display": "Present + out of ++++ (qualifier value)"
+          },
+          {
+            "code": "260348001",
+            "display": "Present ++ out of ++++ (qualifier value)"
+          },
+          {
+            "code": "260349009",
+            "display": "Present +++ out of ++++ (qualifier value)"
+          },
+          {
+            "code": "260350009",
+            "display": "Present ++++ out of ++++ (qualifier value)"
+          },
+          {
+            "code": "410594000",
+            "display": "Definitely NOT present (qualifier value)"
+          },
+          {
+            "code": "260405006",
+            "display": "Trace (qualifier value)"
+          },
+          {
+            "code": "441614007",
+            "display": "Present one plus out of three plus"
+          },
+          {
+            "code": "441517005",
+            "display": "Present two plus out of three plus"
+          },
+          {
+            "code": "441521003",
+            "display": "Present three plus out of three plus"
+          }
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,34 @@
+{
+  "name": "fdpg-kds-obligations",
+  "version": "2026.1.1",
+  "description": "FDPG-Overlay-Layer für den MII-Kerndatensatz (KDS Complete 2026.1.0) — fügt Must-Support-Flags, deutsch/englische Translations, Obligation-Extensions und Module-Keywords (FDPGModuleCS) für die FDPG-Merkmalselektion hinzu. Deckt 16 KDS-Module ab (326 Profile, ohne abstrakte Patho-Observations, inkl. Mikrobiologie alpha-2). IG: https://medizininformatik-initiative.github.io/kds-fdpg-layer/",
+  "fhirVersions": [
+    "4.0.1"
+  ],
+  "license": "CC-BY-4.0",
+  "author": "FDPG / Medizininformatik-Initiative",
+  "jurisdiction": "urn:iso:std:iso:3166#DE",
+  "dependencies": {
+    "hl7.fhir.r4.core": "4.0.1",
+    "hl7.fhir.uv.extensions.r4": "5.1.0",
+    "de.basisprofil.r4": "1.5.4",
+    "de.medizininformatikinitiative.kerndatensatz.meta": "2026.0.0",
+    "de.medizininformatikinitiative.kerndatensatz.base": "2026.0.0",
+    "de.medizininformatikinitiative.kerndatensatz.laborbefund": "2026.0.1",
+    "de.medizininformatikinitiative.kerndatensatz.medikation": "2026.0.1",
+    "de.medizininformatikinitiative.kerndatensatz.biobank": "2026.0.1",
+    "de.medizininformatikinitiative.kerndatensatz.studie": "2026.0.2",
+    "de.medizininformatikinitiative.kerndatensatz.molgen": "2026.0.4",
+    "de.medizininformatikinitiative.kerndatensatz.patho": "2026.0.1",
+    "de.medizininformatikinitiative.kerndatensatz.icu": "2026.0.2",
+    "de.medizininformatikinitiative.kerndatensatz.bildgebung": "2026.0.0",
+    "de.medizininformatikinitiative.kerndatensatz.seltene": "2026.0.1",
+    "de.medizininformatikinitiative.kerndatensatz.onkologie": "2026.0.3",
+    "de.medizininformatikinitiative.kerndatensatz.consent": "2026.0.1-rc-2",
+    "de.medizininformatikinitiative.kerndatensatz.dokument": "2026.0.1",
+    "de.medizininformatikinitiative.kerndatensatz.mtb": "2026.0.1",
+    "de.medizininformatikinitiative.kerndatensatz.pros": "2026.3.0",
+    "de.medizininformatikinitiative.kerndatensatz.mikrobiologie": "2027.0.0-alpha.2",
+    "hl7.fhir.uv.xver-r5.r4": "0.1.0"
+  }
+}

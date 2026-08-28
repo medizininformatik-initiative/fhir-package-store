@@ -1,0 +1,38 @@
+{
+  "resourceType": "Observation",
+  "id": "ObservationInstance",
+  "meta": {
+    "profile": [
+      "https://fhir.bbmri-eric.eu/fhir/StructureDefinition/miabis-observation"
+    ]
+  },
+  "identifier": [
+    {
+      "value": "observationId"
+    }
+  ],
+  "code": {
+    "coding": [
+      {
+        "system": "http://loinc.org",
+        "code": "52797-8"
+      }
+    ]
+  },
+  "valueCodeableConcept": {
+    "coding": [
+      {
+        "code": "A01",
+        "system": "http://hl7.org/fhir/sid/icd-10"
+      }
+    ]
+  },
+  "effectiveDateTime": "2020-01-01",
+  "subject": {
+    "reference": "Patient/donorId"
+  },
+  "specimen": {
+    "reference": "Sample/sampleId"
+  },
+  "status": "final"
+}

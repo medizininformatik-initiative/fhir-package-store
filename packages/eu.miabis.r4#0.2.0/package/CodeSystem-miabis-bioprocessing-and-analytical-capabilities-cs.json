@@ -1,0 +1,61 @@
+{
+  "resourceType": "CodeSystem",
+  "status": "active",
+  "content": "complete",
+  "name": "BioprocessingAndAnalyticalCapabilitiesCS",
+  "id": "miabis-bioprocessing-and-analytical-capabilities-cs",
+  "title": "Bioprocessing and Analytical Capabilities Code System",
+  "description": "Code system representing the bioprocessing and analytical services that the biobank can offer to the clients. ",
+  "url": "https://fhir.bbmri-eric.eu/fhir/CodeSystem/miabis-bioprocessing-and-analytical-capabilities-cs",
+  "concept": [
+    {
+      "code": "BioChemAnalyses",
+      "display": "Biochemical analyses"
+    },
+    {
+      "code": "Genomics",
+      "display": "Genomics"
+    },
+    {
+      "code": "NucleicAcidExtraction",
+      "display": "Nucleic acid extraction"
+    },
+    {
+      "code": "Proteomics",
+      "display": "Proteomics"
+    },
+    {
+      "code": "Metabolomics",
+      "display": "Metabolomics"
+    },
+    {
+      "code": "Histology",
+      "display": "Histology"
+    },
+    {
+      "code": "CellLinesProcessing",
+      "display": "Cell-lines processing"
+    },
+    {
+      "code": "Virology",
+      "display": "Virology"
+    },
+    {
+      "code": "SampleProcessing",
+      "display": "Sample processing"
+    },
+    {
+      "code": "SampleShipping",
+      "display": "Sample shipping"
+    },
+    {
+      "code": "SampleQualityControlServices",
+      "display": "Sample quality control services"
+    },
+    {
+      "code": "Other",
+      "display": "Other"
+    }
+  ],
+  "count": 12
+}

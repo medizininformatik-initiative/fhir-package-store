@@ -1,0 +1,60 @@
+{
+  "resourceType": "ValueSet",
+  "status": "active",
+  "name": "MII_VS_Biobank_DNA_Concentration_Units_UCUM",
+  "id": "mii-vs-biobank-dna-concentration-units-ucum",
+  "title": "MII VS Biobank DNA Concentration Units UCUM",
+  "description": "Value Set for DNA Concentration Units (UCUM)",
+  "version": "2026.0.1",
+  "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-biobank/ValueSet/mii-vs-biobank-dna-concentration-units-ucum",
+  "publisher": "Medizininformatik Initiative",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "https://www.medizininformatik-initiative.de"
+        }
+      ]
+    }
+  ],
+  "date": "2025-09-02",
+  "extension": [
+    {
+      "url": "https://www.medizininformatik-initiative.de/fhir/modul-meta/StructureDefinition/mii-ex-meta-license-codeable",
+      "valueCodeableConcept": {
+        "coding": [
+          {
+            "code": "CC-BY-4.0",
+            "system": "http://hl7.org/fhir/spdx-license",
+            "display": "Creative Commons Attribution 4.0 International"
+          }
+        ]
+      }
+    }
+  ],
+  "copyright": "This value set includes content from UCUM, which is vopyright 1999-2024 Regenstrief Institute, Inc. All rights reserved. Licensed under the UCUM License, Version 1.1 (the “License”); you may not use this file except in compliance with the License. You may obtain a copy of the License at https://unitsofmeasure.org/license",
+  "meta": {
+    "profile": [
+      "http://hl7.org/fhir/StructureDefinition/shareablevalueset"
+    ]
+  },
+  "experimental": false,
+  "compose": {
+    "include": [
+      {
+        "system": "http://unitsofmeasure.org",
+        "concept": [
+          {
+            "code": "ng/uL",
+            "display": "nanogram per microliter"
+          },
+          {
+            "code": "pg/uL",
+            "display": "picogram per microliter"
+          }
+        ]
+      }
+    ]
+  }
+}

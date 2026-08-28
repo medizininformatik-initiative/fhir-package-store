@@ -1,0 +1,18 @@
+{
+  "name": "de.medizininformatikinitiative.kerndatensatz.bildgebung",
+  "version": "2026.0.0",
+  "description": "Medizininformatik Initiative - Modul Befunde bildgebender Verfahren",
+  "author": "lucasscherer",
+  "fhirVersions": [
+    "4.0.1"
+  ],
+  "jurisdiction": "urn:iso:std:iso:3166#DE",
+  "dependencies": {
+    "de.medizininformatikinitiative.kerndatensatz.meta": "2026.0.0",
+    "hl7.fhir.r4.core": "4.0.1",
+    "fhir.dicom": "2025.3.20250714",
+    "de.medizininformatikinitiative.kerndatensatz.base": "2026.0.0",
+    "de.medizininformatikinitiative.kerndatensatz.medikation": "2026.0.0",
+    "hl7.fhir.uv.extensions.r4": "5.2.0"
+  }
+}

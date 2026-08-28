@@ -1,0 +1,409 @@
+{
+  "index-version": 1,
+  "files": [
+    {
+      "filename": "ConceptMap-dna-change-type-map.json",
+      "resourceType": "ConceptMap",
+      "id": "dna-change-type-map",
+      "url": "http://hl7.org/fhir/uv/genomics-reporting/ConceptMap/dna-change-type-map",
+      "version": "2.0.0"
+    },
+    {
+      "filename": "StructureDefinition-tmb.json",
+      "resourceType": "StructureDefinition",
+      "id": "tmb",
+      "url": "http://hl7.org/fhir/uv/genomics-reporting/StructureDefinition/tmb",
+      "version": "2.0.0",
+      "kind": "resource",
+      "type": "Observation"
+    },
+    {
+      "filename": "CodeSystem-coded-annotation-types-cs.json",
+      "resourceType": "CodeSystem",
+      "id": "coded-annotation-types-cs",
+      "url": "http://hl7.org/fhir/uv/genomics-reporting/CodeSystem/coded-annotation-types-cs",
+      "version": "2.0.0"
+    },
+    {
+      "filename": "StructureDefinition-overall-interpretation.json",
+      "resourceType": "StructureDefinition",
+      "id": "overall-interpretation",
+      "url": "http://hl7.org/fhir/uv/genomics-reporting/StructureDefinition/overall-interpretation",
+      "version": "2.0.0",
+      "kind": "resource",
+      "type": "Observation"
+    },
+    {
+      "filename": "CodeSystem-pharmgkb-evidence-level-custom-cs.json",
+      "resourceType": "CodeSystem",
+      "id": "pharmgkb-evidence-level-custom-cs",
+      "url": "http://hl7.org/fhir/uv/genomics-reporting/CodeSystem/pharmgkb-evidence-level-custom-cs",
+      "version": "2.0.0"
+    },
+    {
+      "filename": "ValueSet-high-low-codes-vs.json",
+      "resourceType": "ValueSet",
+      "id": "high-low-codes-vs",
+      "url": "http://hl7.org/fhir/uv/genomics-reporting/ValueSet/high-low-codes-vs",
+      "version": "2.0.0"
+    },
+    {
+      "filename": "ValueSet-evidence-level-example-vs.json",
+      "resourceType": "ValueSet",
+      "id": "evidence-level-example-vs",
+      "url": "http://hl7.org/fhir/uv/genomics-reporting/ValueSet/evidence-level-example-vs",
+      "version": "2.0.0"
+    },
+    {
+      "filename": "ValueSet-variant-inheritance-vs.json",
+      "resourceType": "ValueSet",
+      "id": "variant-inheritance-vs",
+      "url": "http://hl7.org/fhir/uv/genomics-reporting/ValueSet/variant-inheritance-vs",
+      "version": "2.0.0"
+    },
+    {
+      "filename": "ImplementationGuide-hl7.fhir.uv.genomics-reporting.json",
+      "resourceType": "ImplementationGuide",
+      "id": "hl7.fhir.uv.genomics-reporting",
+      "url": "http://hl7.org/fhir/uv/genomics-reporting/ImplementationGuide/hl7.fhir.uv.genomics-reporting",
+      "version": "2.0.0"
+    },
+    {
+      "filename": "StructureDefinition-genotype.json",
+      "resourceType": "StructureDefinition",
+      "id": "genotype",
+      "url": "http://hl7.org/fhir/uv/genomics-reporting/StructureDefinition/genotype",
+      "version": "2.0.0",
+      "kind": "resource",
+      "type": "Observation"
+    },
+    {
+      "filename": "ValueSet-hgnc-vs.json",
+      "resourceType": "ValueSet",
+      "id": "hgnc-vs",
+      "url": "http://hl7.org/fhir/uv/genomics-reporting/ValueSet/hgnc-vs",
+      "version": "2.0.0"
+    },
+    {
+      "filename": "StructureDefinition-medication-recommendation.json",
+      "resourceType": "StructureDefinition",
+      "id": "medication-recommendation",
+      "url": "http://hl7.org/fhir/uv/genomics-reporting/StructureDefinition/medication-recommendation",
+      "version": "2.0.0",
+      "kind": "resource",
+      "type": "Task"
+    },
+    {
+      "filename": "StructureDefinition-genomics-risk-assessment.json",
+      "resourceType": "StructureDefinition",
+      "id": "genomics-risk-assessment",
+      "url": "http://hl7.org/fhir/uv/genomics-reporting/StructureDefinition/genomics-risk-assessment",
+      "version": "2.0.0",
+      "kind": "complex-type",
+      "type": "Extension"
+    },
+    {
+      "filename": "ig-r4.json",
+      "resourceType": "ImplementationGuide",
+      "id": "hl7.fhir.uv.genomics-reporting",
+      "url": "http://hl7.org/fhir/uv/genomics-reporting/ImplementationGuide/hl7.fhir.uv.genomics-reporting",
+      "version": "2.0.0"
+    },
+    {
+      "filename": "CodeSystem-sequence-phase-relationship-cs.json",
+      "resourceType": "CodeSystem",
+      "id": "sequence-phase-relationship-cs",
+      "url": "http://hl7.org/fhir/uv/genomics-reporting/CodeSystem/sequence-phase-relationship-cs",
+      "version": "2.0.0"
+    },
+    {
+      "filename": "StructureDefinition-msi.json",
+      "resourceType": "StructureDefinition",
+      "id": "msi",
+      "url": "http://hl7.org/fhir/uv/genomics-reporting/StructureDefinition/msi",
+      "version": "2.0.0",
+      "kind": "resource",
+      "type": "Observation"
+    },
+    {
+      "filename": "ValueSet-dna-change-type-vs.json",
+      "resourceType": "ValueSet",
+      "id": "dna-change-type-vs",
+      "url": "http://hl7.org/fhir/uv/genomics-reporting/ValueSet/dna-change-type-vs",
+      "version": "2.0.0"
+    },
+    {
+      "filename": "StructureDefinition-followup-recommendation.json",
+      "resourceType": "StructureDefinition",
+      "id": "followup-recommendation",
+      "url": "http://hl7.org/fhir/uv/genomics-reporting/StructureDefinition/followup-recommendation",
+      "version": "2.0.0",
+      "kind": "resource",
+      "type": "Task"
+    },
+    {
+      "filename": "StructureDefinition-genomics-report.json",
+      "resourceType": "StructureDefinition",
+      "id": "genomics-report",
+      "url": "http://hl7.org/fhir/uv/genomics-reporting/StructureDefinition/genomics-report",
+      "version": "2.0.0",
+      "kind": "resource",
+      "type": "DiagnosticReport"
+    },
+    {
+      "filename": "StructureDefinition-genomics-document-reference.json",
+      "resourceType": "StructureDefinition",
+      "id": "genomics-document-reference",
+      "url": "http://hl7.org/fhir/uv/genomics-reporting/StructureDefinition/genomics-document-reference",
+      "version": "2.0.0",
+      "kind": "resource",
+      "type": "DocumentReference"
+    },
+    {
+      "filename": "ValueSet-genetic-therapeutic-implications-vs.json",
+      "resourceType": "ValueSet",
+      "id": "genetic-therapeutic-implications-vs",
+      "url": "http://hl7.org/fhir/uv/genomics-reporting/ValueSet/genetic-therapeutic-implications-vs",
+      "version": "2.0.0"
+    },
+    {
+      "filename": "ValueSet-molecular-consequence-vs.json",
+      "resourceType": "ValueSet",
+      "id": "molecular-consequence-vs",
+      "url": "http://hl7.org/fhir/uv/genomics-reporting/ValueSet/molecular-consequence-vs",
+      "version": "2.0.0"
+    },
+    {
+      "filename": "StructureDefinition-diagnostic-implication.json",
+      "resourceType": "StructureDefinition",
+      "id": "diagnostic-implication",
+      "url": "http://hl7.org/fhir/uv/genomics-reporting/StructureDefinition/diagnostic-implication",
+      "version": "2.0.0",
+      "kind": "resource",
+      "type": "Observation"
+    },
+    {
+      "filename": "CodeSystem-clinvar-evidence-level-custom-cs.json",
+      "resourceType": "CodeSystem",
+      "id": "clinvar-evidence-level-custom-cs",
+      "url": "http://hl7.org/fhir/uv/genomics-reporting/CodeSystem/clinvar-evidence-level-custom-cs",
+      "version": "2.0.0"
+    },
+    {
+      "filename": "StructureDefinition-implication.json",
+      "resourceType": "StructureDefinition",
+      "id": "implication",
+      "url": "http://hl7.org/fhir/uv/genomics-reporting/StructureDefinition/implication",
+      "version": "2.0.0",
+      "kind": "resource",
+      "type": "Observation"
+    },
+    {
+      "filename": "CodeSystem-tbd-codes-cs.json",
+      "resourceType": "CodeSystem",
+      "id": "tbd-codes-cs",
+      "url": "http://hl7.org/fhir/uv/genomics-reporting/CodeSystem/tbd-codes-cs",
+      "version": "2.0.0"
+    },
+    {
+      "filename": "ValueSet-hgvs-vs.json",
+      "resourceType": "ValueSet",
+      "id": "hgvs-vs",
+      "url": "http://hl7.org/fhir/uv/genomics-reporting/ValueSet/hgvs-vs",
+      "version": "2.0.0"
+    },
+    {
+      "filename": "ValueSet-variant-confidence-status-vs.json",
+      "resourceType": "ValueSet",
+      "id": "variant-confidence-status-vs",
+      "url": "http://hl7.org/fhir/uv/genomics-reporting/ValueSet/variant-confidence-status-vs",
+      "version": "2.0.0"
+    },
+    {
+      "filename": "StructureDefinition-sequence-phase-relationship.json",
+      "resourceType": "StructureDefinition",
+      "id": "sequence-phase-relationship",
+      "url": "http://hl7.org/fhir/uv/genomics-reporting/StructureDefinition/sequence-phase-relationship",
+      "version": "2.0.0",
+      "kind": "resource",
+      "type": "Observation"
+    },
+    {
+      "filename": "ValueSet-sequence-phase-relationship-vs.json",
+      "resourceType": "ValueSet",
+      "id": "sequence-phase-relationship-vs",
+      "url": "http://hl7.org/fhir/uv/genomics-reporting/ValueSet/sequence-phase-relationship-vs",
+      "version": "2.0.0"
+    },
+    {
+      "filename": "StructureDefinition-haplotype.json",
+      "resourceType": "StructureDefinition",
+      "id": "haplotype",
+      "url": "http://hl7.org/fhir/uv/genomics-reporting/StructureDefinition/haplotype",
+      "version": "2.0.0",
+      "kind": "resource",
+      "type": "Observation"
+    },
+    {
+      "filename": "StructureDefinition-region-studied.json",
+      "resourceType": "StructureDefinition",
+      "id": "region-studied",
+      "url": "http://hl7.org/fhir/uv/genomics-reporting/StructureDefinition/region-studied",
+      "version": "2.0.0",
+      "kind": "resource",
+      "type": "Observation"
+    },
+    {
+      "filename": "StructureDefinition-variant.json",
+      "resourceType": "StructureDefinition",
+      "id": "variant",
+      "url": "http://hl7.org/fhir/uv/genomics-reporting/StructureDefinition/variant",
+      "version": "2.0.0",
+      "kind": "resource",
+      "type": "Observation"
+    },
+    {
+      "filename": "StructureDefinition-genomics-base.json",
+      "resourceType": "StructureDefinition",
+      "id": "genomics-base",
+      "url": "http://hl7.org/fhir/uv/genomics-reporting/StructureDefinition/genomics-base",
+      "version": "2.0.0",
+      "kind": "resource",
+      "type": "Observation"
+    },
+    {
+      "filename": "StructureDefinition-medication-assessed.json",
+      "resourceType": "StructureDefinition",
+      "id": "medication-assessed",
+      "url": "http://hl7.org/fhir/uv/genomics-reporting/StructureDefinition/medication-assessed",
+      "version": "2.0.0",
+      "kind": "complex-type",
+      "type": "Extension"
+    },
+    {
+      "filename": "StructureDefinition-finding.json",
+      "resourceType": "StructureDefinition",
+      "id": "finding",
+      "url": "http://hl7.org/fhir/uv/genomics-reporting/StructureDefinition/finding",
+      "version": "2.0.0",
+      "kind": "resource",
+      "type": "Observation"
+    },
+    {
+      "filename": "ValueSet-functional-effect-vs.json",
+      "resourceType": "ValueSet",
+      "id": "functional-effect-vs",
+      "url": "http://hl7.org/fhir/uv/genomics-reporting/ValueSet/functional-effect-vs",
+      "version": "2.0.0"
+    },
+    {
+      "filename": "ValueSet-condition-inheritance-mode-vs.json",
+      "resourceType": "ValueSet",
+      "id": "condition-inheritance-mode-vs",
+      "url": "http://hl7.org/fhir/uv/genomics-reporting/ValueSet/condition-inheritance-mode-vs",
+      "version": "2.0.0"
+    },
+    {
+      "filename": "StructureDefinition-recommended-action.json",
+      "resourceType": "StructureDefinition",
+      "id": "recommended-action",
+      "url": "http://hl7.org/fhir/uv/genomics-reporting/StructureDefinition/recommended-action",
+      "version": "2.0.0",
+      "kind": "complex-type",
+      "type": "Extension"
+    },
+    {
+      "filename": "OperationDefinition-find-subject-variants.json",
+      "resourceType": "OperationDefinition",
+      "id": "find-subject-variants",
+      "url": "http://hl7.org/fhir/uv/genomics-reporting/OperationDefinition/find-subject-variants",
+      "version": "2.0.0",
+      "kind": "operation",
+      "type": "true"
+    },
+    {
+      "filename": "StructureDefinition-annotation-code.json",
+      "resourceType": "StructureDefinition",
+      "id": "annotation-code",
+      "url": "http://hl7.org/fhir/uv/genomics-reporting/StructureDefinition/annotation-code",
+      "version": "2.0.0",
+      "kind": "complex-type",
+      "type": "Extension"
+    },
+    {
+      "filename": "ValueSet-coded-annotation-types-vs.json",
+      "resourceType": "ValueSet",
+      "id": "coded-annotation-types-vs",
+      "url": "http://hl7.org/fhir/uv/genomics-reporting/ValueSet/coded-annotation-types-vs",
+      "version": "2.0.0"
+    },
+    {
+      "filename": "ValueSet-tbd-codes-vs.json",
+      "resourceType": "ValueSet",
+      "id": "tbd-codes-vs",
+      "url": "http://hl7.org/fhir/uv/genomics-reporting/ValueSet/tbd-codes-vs",
+      "version": "2.0.0"
+    },
+    {
+      "filename": "StructureDefinition-therapeutic-implication.json",
+      "resourceType": "StructureDefinition",
+      "id": "therapeutic-implication",
+      "url": "http://hl7.org/fhir/uv/genomics-reporting/StructureDefinition/therapeutic-implication",
+      "version": "2.0.0",
+      "kind": "resource",
+      "type": "Observation"
+    },
+    {
+      "filename": "StructureDefinition-coded-annotation.json",
+      "resourceType": "StructureDefinition",
+      "id": "coded-annotation",
+      "url": "http://hl7.org/fhir/uv/genomics-reporting/StructureDefinition/coded-annotation",
+      "version": "2.0.0",
+      "kind": "complex-type",
+      "type": "Annotation"
+    },
+    {
+      "filename": "StructureDefinition-genomics-artifact.json",
+      "resourceType": "StructureDefinition",
+      "id": "genomics-artifact",
+      "url": "http://hl7.org/fhir/uv/genomics-reporting/StructureDefinition/genomics-artifact",
+      "version": "2.0.0",
+      "kind": "complex-type",
+      "type": "Extension"
+    },
+    {
+      "filename": "StructureDefinition-genomics-file.json",
+      "resourceType": "StructureDefinition",
+      "id": "genomics-file",
+      "url": "http://hl7.org/fhir/uv/genomics-reporting/StructureDefinition/genomics-file",
+      "version": "2.0.0",
+      "kind": "complex-type",
+      "type": "Extension"
+    },
+    {
+      "filename": "StructureDefinition-therapy-assessed.json",
+      "resourceType": "StructureDefinition",
+      "id": "therapy-assessed",
+      "url": "http://hl7.org/fhir/uv/genomics-reporting/StructureDefinition/therapy-assessed",
+      "version": "2.0.0",
+      "kind": "complex-type",
+      "type": "Extension"
+    },
+    {
+      "filename": "StructureDefinition-genomic-report-note.json",
+      "resourceType": "StructureDefinition",
+      "id": "genomic-report-note",
+      "url": "http://hl7.org/fhir/uv/genomics-reporting/StructureDefinition/genomic-report-note",
+      "version": "2.0.0",
+      "kind": "complex-type",
+      "type": "Extension"
+    },
+    {
+      "filename": "CodeSystem-variant-confidence-status-cs.json",
+      "resourceType": "CodeSystem",
+      "id": "variant-confidence-status-cs",
+      "url": "http://hl7.org/fhir/uv/genomics-reporting/CodeSystem/variant-confidence-status-cs",
+      "version": "2.0.0"
+    }
+  ]
+}

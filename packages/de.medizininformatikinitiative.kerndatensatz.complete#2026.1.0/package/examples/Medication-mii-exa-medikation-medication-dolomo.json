@@ -1,0 +1,78 @@
+{
+  "resourceType": "Medication",
+  "id": "mii-exa-medikation-medication-dolomo",
+  "meta": {
+    "security": [
+      {
+        "code": "HTEST",
+        "system": "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+        "display": "test health data"
+      }
+    ],
+    "profile": [
+      "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/Medication|2026.0.1"
+    ]
+  },
+  "code": {
+    "coding": [
+      {
+        "system": "http://fhir.de/CodeSystem/ifa/pzn",
+        "code": "02758994",
+        "version": "02.08.2024",
+        "display": "dolomo® TN"
+      },
+      {
+        "system": "http://fhir.de/CodeSystem/bfarm/atc",
+        "code": "N02BE51",
+        "version": "2023",
+        "display": "Paracetamol, Kombinationen exkl. Psycholeptika"
+      }
+    ]
+  },
+  "form": {
+    "coding": [
+      {
+        "system": "http://standardterms.edqm.eu",
+        "code": "10219000",
+        "display": "Tablet"
+      }
+    ]
+  },
+  "amount": {
+    "numerator": {
+      "value": 27,
+      "unit": "Tablet",
+      "system": "http://unitsofmeasure.org",
+      "code": "1",
+      "extension": [
+        {
+          "url": "http://hl7.org/fhir/StructureDefinition/extension-quantity-translation",
+          "valueQuantity": {
+            "value": 27,
+            "unit": "Tablet",
+            "system": "http://standardterms.edqm.eu",
+            "code": "10219000"
+          }
+        }
+      ]
+    },
+    "denominator": {
+      "value": 1,
+      "unit": "Package",
+      "system": "http://unitsofmeasure.org",
+      "code": "1"
+    }
+  },
+  "ingredient": [
+    {
+      "itemReference": {
+        "reference": "Medication/mii-exa-medikation-medication-dolomo-tag"
+      }
+    },
+    {
+      "itemReference": {
+        "reference": "Medication/mii-exa-medikation-medication-dolomo-nacht"
+      }
+    }
+  ]
+}

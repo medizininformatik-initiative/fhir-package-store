@@ -1,0 +1,1 @@
+{"resourceType":"Parameters","id":"FindPopulationSpecificHaplotypesOutput","parameter":[{"name":"haplotypes","part":[{"name":"haplotypeItem","valueString":"A*1 and B*8 and DRB1*03 and DRB3*01 and A*31 and  B*35 and DRB1*04 and DRB4*01:02"},{"name":"numerator","valueQuantity":{"value":0}},{"name":"denominator","valueQuantity":{"value":7534}}]}]}

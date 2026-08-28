@@ -1,0 +1,2883 @@
+{
+  "index-version" : 2,
+  "files" : [{
+    "filename" : "CapabilityStatement-ISiKCapabilityStatementAMTSAkteur.json",
+    "resourceType" : "CapabilityStatement",
+    "id" : "ISiKCapabilityStatementAMTSAkteur",
+    "url" : "https://gematik.de/fhir/isik/CapabilityStatement/ISiKCapabilityStatementAMTSAkteur",
+    "version" : "6.0.0",
+    "kind" : "requirements"
+  },
+  {
+    "filename" : "CapabilityStatement-ISiKCapabilityStatementAMTSRolle.json",
+    "resourceType" : "CapabilityStatement",
+    "id" : "ISiKCapabilityStatementAMTSRolle",
+    "url" : "https://gematik.de/fhir/isik/CapabilityStatement/ISiKCapabilityStatementAMTSRolle",
+    "version" : "6.0.0",
+    "kind" : "requirements"
+  },
+  {
+    "filename" : "CapabilityStatement-ISiKCapabilityStatementAMTSWRITERolle.json",
+    "resourceType" : "CapabilityStatement",
+    "id" : "ISiKCapabilityStatementAMTSWRITERolle",
+    "url" : "https://gematik.de/fhir/isik/CapabilityStatement/ISiKCapabilityStatementAMTSWRITERolle",
+    "version" : "6.0.0",
+    "kind" : "requirements"
+  },
+  {
+    "filename" : "CapabilityStatement-ISiKCapabilityStatementAmbulanteStammdatenRolle.json",
+    "resourceType" : "CapabilityStatement",
+    "id" : "ISiKCapabilityStatementAmbulanteStammdatenRolle",
+    "url" : "https://gematik.de/fhir/isik/CapabilityStatement/ISiKCapabilityStatementAmbulanteStammdatenRolle",
+    "version" : "6.0.0",
+    "kind" : "requirements"
+  },
+  {
+    "filename" : "CapabilityStatement-ISiKCapabilityStatementAufbaustrukturRolle.json",
+    "resourceType" : "CapabilityStatement",
+    "id" : "ISiKCapabilityStatementAufbaustrukturRolle",
+    "url" : "https://gematik.de/fhir/isik/CapabilityStatement/ISiKCapabilityStatementAufbaustrukturRolle",
+    "version" : "6.0.0",
+    "kind" : "requirements"
+  },
+  {
+    "filename" : "CapabilityStatement-ISiKCapabilityStatementBasisServerAkteur.json",
+    "resourceType" : "CapabilityStatement",
+    "id" : "ISiKCapabilityStatementBasisServerAkteur",
+    "url" : "https://gematik.de/fhir/isik/CapabilityStatement/ISiKCapabilityStatementBasisServerAkteur",
+    "version" : "6.0.0",
+    "kind" : "requirements"
+  },
+  {
+    "filename" : "CapabilityStatement-ISiKCapabilityStatementCompositionKonsumentenRolle.json",
+    "resourceType" : "CapabilityStatement",
+    "id" : "ISiKCapabilityStatementCompositionKonsumentenRolle",
+    "url" : "https://gematik.de/fhir/isik/CapabilityStatement/ISiKCapabilityStatementCompositionKonsumentenRolle",
+    "version" : "6.0.0",
+    "kind" : "requirements"
+  },
+  {
+    "filename" : "CapabilityStatement-ISiKCapabilityStatementDokumentenServerAkteur.json",
+    "resourceType" : "CapabilityStatement",
+    "id" : "ISiKCapabilityStatementDokumentenServerAkteur",
+    "url" : "https://gematik.de/fhir/isik/CapabilityStatement/ISiKCapabilityStatementDokumentenServerAkteur",
+    "version" : "6.0.0",
+    "kind" : "requirements"
+  },
+  {
+    "filename" : "CapabilityStatement-ISiKCapabilityStatementDokumentenverwaltungRolle.json",
+    "resourceType" : "CapabilityStatement",
+    "id" : "ISiKCapabilityStatementDokumentenverwaltungRolle",
+    "url" : "https://gematik.de/fhir/isik/CapabilityStatement/ISiKCapabilityStatementDokumentenverwaltungRolle",
+    "version" : "6.0.0",
+    "kind" : "requirements"
+  },
+  {
+    "filename" : "CapabilityStatement-ISiKCapabilityStatementErweiterteStammdatenRolle.json",
+    "resourceType" : "CapabilityStatement",
+    "id" : "ISiKCapabilityStatementErweiterteStammdatenRolle",
+    "url" : "https://gematik.de/fhir/isik/CapabilityStatement/ISiKCapabilityStatementErweiterteStammdatenRolle",
+    "version" : "6.0.0",
+    "kind" : "requirements"
+  },
+  {
+    "filename" : "CapabilityStatement-ISiKCapabilityStatementFormularDatenQuelleAkteur.json",
+    "resourceType" : "CapabilityStatement",
+    "id" : "ISiKCapabilityStatementFormularDatenQuelleAkteur",
+    "url" : "https://gematik.de/fhir/isik/CapabilityStatement/ISiKCapabilityStatementFormularDatenQuelleAkteur",
+    "version" : "6.0.0",
+    "kind" : "requirements"
+  },
+  {
+    "filename" : "CapabilityStatement-ISiKCapabilityStatementFormularDatenQuelleRolle.json",
+    "resourceType" : "CapabilityStatement",
+    "id" : "ISiKCapabilityStatementFormularDatenQuelleRolle",
+    "url" : "https://gematik.de/fhir/isik/CapabilityStatement/ISiKCapabilityStatementFormularDatenQuelleRolle",
+    "version" : "6.0.0",
+    "kind" : "requirements"
+  },
+  {
+    "filename" : "CapabilityStatement-ISiKCapabilityStatementFormularDefinitionsVerwalterRolle.json",
+    "resourceType" : "CapabilityStatement",
+    "id" : "ISiKCapabilityStatementFormularDefinitionsVerwalterRolle",
+    "url" : "https://gematik.de/fhir/isik/CapabilityStatement/ISiKCapabilityStatementFormularDefinitionsVerwalterRolle",
+    "version" : "6.0.0",
+    "kind" : "requirements"
+  },
+  {
+    "filename" : "CapabilityStatement-ISiKCapabilityStatementFormularExtraktionAkteur.json",
+    "resourceType" : "CapabilityStatement",
+    "id" : "ISiKCapabilityStatementFormularExtraktionAkteur",
+    "url" : "https://gematik.de/fhir/isik/CapabilityStatement/ISiKCapabilityStatementFormularExtraktionAkteur",
+    "version" : "6.0.0",
+    "kind" : "requirements"
+  },
+  {
+    "filename" : "CapabilityStatement-ISiKCapabilityStatementFormularExtraktionRolle.json",
+    "resourceType" : "CapabilityStatement",
+    "id" : "ISiKCapabilityStatementFormularExtraktionRolle",
+    "url" : "https://gematik.de/fhir/isik/CapabilityStatement/ISiKCapabilityStatementFormularExtraktionRolle",
+    "version" : "6.0.0",
+    "kind" : "requirements"
+  },
+  {
+    "filename" : "CapabilityStatement-ISiKCapabilityStatementFormularVorbelegungAkteur.json",
+    "resourceType" : "CapabilityStatement",
+    "id" : "ISiKCapabilityStatementFormularVorbelegungAkteur",
+    "url" : "https://gematik.de/fhir/isik/CapabilityStatement/ISiKCapabilityStatementFormularVorbelegungAkteur",
+    "version" : "6.0.0",
+    "kind" : "requirements"
+  },
+  {
+    "filename" : "CapabilityStatement-ISiKCapabilityStatementFormularVorbelegungRolle.json",
+    "resourceType" : "CapabilityStatement",
+    "id" : "ISiKCapabilityStatementFormularVorbelegungRolle",
+    "url" : "https://gematik.de/fhir/isik/CapabilityStatement/ISiKCapabilityStatementFormularVorbelegungRolle",
+    "version" : "6.0.0",
+    "kind" : "requirements"
+  },
+  {
+    "filename" : "CapabilityStatement-ISiKCapabilityStatementGesundheitsstatusRolle.json",
+    "resourceType" : "CapabilityStatement",
+    "id" : "ISiKCapabilityStatementGesundheitsstatusRolle",
+    "url" : "https://gematik.de/fhir/isik/CapabilityStatement/ISiKCapabilityStatementGesundheitsstatusRolle",
+    "version" : "6.0.0",
+    "kind" : "requirements"
+  },
+  {
+    "filename" : "CapabilityStatement-ISiKCapabilityStatementImplantatRolle.json",
+    "resourceType" : "CapabilityStatement",
+    "id" : "ISiKCapabilityStatementImplantatRolle",
+    "url" : "https://gematik.de/fhir/isik/CapabilityStatement/ISiKCapabilityStatementImplantatRolle",
+    "version" : "6.0.0",
+    "kind" : "requirements"
+  },
+  {
+    "filename" : "CapabilityStatement-ISiKCapabilityStatementKlinischeRolle.json",
+    "resourceType" : "CapabilityStatement",
+    "id" : "ISiKCapabilityStatementKlinischeRolle",
+    "url" : "https://gematik.de/fhir/isik/CapabilityStatement/ISiKCapabilityStatementKlinischeRolle",
+    "version" : "6.0.0",
+    "kind" : "requirements"
+  },
+  {
+    "filename" : "CapabilityStatement-ISiKCapabilityStatementLaborMinimalRolle.json",
+    "resourceType" : "CapabilityStatement",
+    "id" : "ISiKCapabilityStatementLaborMinimalRolle",
+    "url" : "https://gematik.de/fhir/isik/CapabilityStatement/ISiKCapabilityStatementLaborMinimalRolle",
+    "version" : "6.0.0",
+    "kind" : "requirements"
+  },
+  {
+    "filename" : "CapabilityStatement-ISiKCapabilityStatementLeistungserbringerRolle.json",
+    "resourceType" : "CapabilityStatement",
+    "id" : "ISiKCapabilityStatementLeistungserbringerRolle",
+    "url" : "https://gematik.de/fhir/isik/CapabilityStatement/ISiKCapabilityStatementLeistungserbringerRolle",
+    "version" : "6.0.0",
+    "kind" : "requirements"
+  },
+  {
+    "filename" : "CapabilityStatement-ISiKCapabilityStatementMedikamentRolle.json",
+    "resourceType" : "CapabilityStatement",
+    "id" : "ISiKCapabilityStatementMedikamentRolle",
+    "url" : "https://gematik.de/fhir/isik/CapabilityStatement/ISiKCapabilityStatementMedikamentRolle",
+    "version" : "6.0.0",
+    "kind" : "requirements"
+  },
+  {
+    "filename" : "CapabilityStatement-ISiKCapabilityStatementMedikamentWRITERolle.json",
+    "resourceType" : "CapabilityStatement",
+    "id" : "ISiKCapabilityStatementMedikamentWRITERolle",
+    "url" : "https://gematik.de/fhir/isik/CapabilityStatement/ISiKCapabilityStatementMedikamentWRITERolle",
+    "version" : "6.0.0",
+    "kind" : "requirements"
+  },
+  {
+    "filename" : "CapabilityStatement-ISiKCapabilityStatementMedikationInformationAkteur.json",
+    "resourceType" : "CapabilityStatement",
+    "id" : "ISiKCapabilityStatementMedikationInformationAkteur",
+    "url" : "https://gematik.de/fhir/isik/CapabilityStatement/ISiKCapabilityStatementMedikationInformationAkteur",
+    "version" : "6.0.0",
+    "kind" : "requirements"
+  },
+  {
+    "filename" : "CapabilityStatement-ISiKCapabilityStatementMedikationInformationRolle.json",
+    "resourceType" : "CapabilityStatement",
+    "id" : "ISiKCapabilityStatementMedikationInformationRolle",
+    "url" : "https://gematik.de/fhir/isik/CapabilityStatement/ISiKCapabilityStatementMedikationInformationRolle",
+    "version" : "6.0.0",
+    "kind" : "requirements"
+  },
+  {
+    "filename" : "CapabilityStatement-ISiKCapabilityStatementMedikationInformationWRITERolle.json",
+    "resourceType" : "CapabilityStatement",
+    "id" : "ISiKCapabilityStatementMedikationInformationWRITERolle",
+    "url" : "https://gematik.de/fhir/isik/CapabilityStatement/ISiKCapabilityStatementMedikationInformationWRITERolle",
+    "version" : "6.0.0",
+    "kind" : "requirements"
+  },
+  {
+    "filename" : "CapabilityStatement-ISiKCapabilityStatementMedikationVerabreichungAkteur.json",
+    "resourceType" : "CapabilityStatement",
+    "id" : "ISiKCapabilityStatementMedikationVerabreichungAkteur",
+    "url" : "https://gematik.de/fhir/isik/CapabilityStatement/ISiKCapabilityStatementMedikationVerabreichungAkteur",
+    "version" : "6.0.0",
+    "kind" : "requirements"
+  },
+  {
+    "filename" : "CapabilityStatement-ISiKCapabilityStatementMedikationVerabreichungRolle.json",
+    "resourceType" : "CapabilityStatement",
+    "id" : "ISiKCapabilityStatementMedikationVerabreichungRolle",
+    "url" : "https://gematik.de/fhir/isik/CapabilityStatement/ISiKCapabilityStatementMedikationVerabreichungRolle",
+    "version" : "6.0.0",
+    "kind" : "requirements"
+  },
+  {
+    "filename" : "CapabilityStatement-ISiKCapabilityStatementMedikationVerabreichungWRITERolle.json",
+    "resourceType" : "CapabilityStatement",
+    "id" : "ISiKCapabilityStatementMedikationVerabreichungWRITERolle",
+    "url" : "https://gematik.de/fhir/isik/CapabilityStatement/ISiKCapabilityStatementMedikationVerabreichungWRITERolle",
+    "version" : "6.0.0",
+    "kind" : "requirements"
+  },
+  {
+    "filename" : "CapabilityStatement-ISiKCapabilityStatementMedikationVerordnungAkteur.json",
+    "resourceType" : "CapabilityStatement",
+    "id" : "ISiKCapabilityStatementMedikationVerordnungAkteur",
+    "url" : "https://gematik.de/fhir/isik/CapabilityStatement/ISiKCapabilityStatementMedikationVerordnungAkteur",
+    "version" : "6.0.0",
+    "kind" : "requirements"
+  },
+  {
+    "filename" : "CapabilityStatement-ISiKCapabilityStatementMedikationVerordnungRolle.json",
+    "resourceType" : "CapabilityStatement",
+    "id" : "ISiKCapabilityStatementMedikationVerordnungRolle",
+    "url" : "https://gematik.de/fhir/isik/CapabilityStatement/ISiKCapabilityStatementMedikationVerordnungRolle",
+    "version" : "6.0.0",
+    "kind" : "requirements"
+  },
+  {
+    "filename" : "CapabilityStatement-ISiKCapabilityStatementMedikationVerordnungWRITERolle.json",
+    "resourceType" : "CapabilityStatement",
+    "id" : "ISiKCapabilityStatementMedikationVerordnungWRITERolle",
+    "url" : "https://gematik.de/fhir/isik/CapabilityStatement/ISiKCapabilityStatementMedikationVerordnungWRITERolle",
+    "version" : "6.0.0",
+    "kind" : "requirements"
+  },
+  {
+    "filename" : "CapabilityStatement-ISiKCapabilityStatementMetadatenErzeugenRolle.json",
+    "resourceType" : "CapabilityStatement",
+    "id" : "ISiKCapabilityStatementMetadatenErzeugenRolle",
+    "url" : "https://gematik.de/fhir/isik/CapabilityStatement/ISiKCapabilityStatementMetadatenErzeugenRolle",
+    "version" : "6.0.0",
+    "kind" : "requirements"
+  },
+  {
+    "filename" : "CapabilityStatement-ISiKCapabilityStatementMetadatenUpdateRolle.json",
+    "resourceType" : "CapabilityStatement",
+    "id" : "ISiKCapabilityStatementMetadatenUpdateRolle",
+    "url" : "https://gematik.de/fhir/isik/CapabilityStatement/ISiKCapabilityStatementMetadatenUpdateRolle",
+    "version" : "6.0.0",
+    "kind" : "requirements"
+  },
+  {
+    "filename" : "CapabilityStatement-ISiKCapabilityStatementOrganspendeerkennungSourceAkteur.json",
+    "resourceType" : "CapabilityStatement",
+    "id" : "ISiKCapabilityStatementOrganspendeerkennungSourceAkteur",
+    "url" : "https://gematik.de/fhir/isik/CapabilityStatement/ISiKCapabilityStatementOrganspendeerkennungSourceAkteur",
+    "version" : "6.0.0",
+    "kind" : "requirements"
+  },
+  {
+    "filename" : "CapabilityStatement-ISiKCapabilityStatementOrganspendeerkennungSourceRolle.json",
+    "resourceType" : "CapabilityStatement",
+    "id" : "ISiKCapabilityStatementOrganspendeerkennungSourceRolle",
+    "url" : "https://gematik.de/fhir/isik/CapabilityStatement/ISiKCapabilityStatementOrganspendeerkennungSourceRolle",
+    "version" : "6.0.0",
+    "kind" : "requirements"
+  },
+  {
+    "filename" : "CapabilityStatement-ISiKCapabilityStatementStammdatenRolle.json",
+    "resourceType" : "CapabilityStatement",
+    "id" : "ISiKCapabilityStatementStammdatenRolle",
+    "url" : "https://gematik.de/fhir/isik/CapabilityStatement/ISiKCapabilityStatementStammdatenRolle",
+    "version" : "6.0.0",
+    "kind" : "requirements"
+  },
+  {
+    "filename" : "CapabilityStatement-ISiKCapabilityStatementSubscriptionRolle.json",
+    "resourceType" : "CapabilityStatement",
+    "id" : "ISiKCapabilityStatementSubscriptionRolle",
+    "url" : "https://gematik.de/fhir/isik/CapabilityStatement/ISiKCapabilityStatementSubscriptionRolle",
+    "version" : "6.0.0",
+    "kind" : "requirements"
+  },
+  {
+    "filename" : "CapabilityStatement-ISiKCapabilityStatementSubscriptionServerAkteur.json",
+    "resourceType" : "CapabilityStatement",
+    "id" : "ISiKCapabilityStatementSubscriptionServerAkteur",
+    "url" : "https://gematik.de/fhir/isik/CapabilityStatement/ISiKCapabilityStatementSubscriptionServerAkteur",
+    "version" : "6.0.0",
+    "kind" : "requirements"
+  },
+  {
+    "filename" : "CapabilityStatement-ISiKCapabilityStatementTerminRepositoryAkteur.json",
+    "resourceType" : "CapabilityStatement",
+    "id" : "ISiKCapabilityStatementTerminRepositoryAkteur",
+    "url" : "https://gematik.de/fhir/isik/CapabilityStatement/ISiKCapabilityStatementTerminRepositoryAkteur",
+    "version" : "6.0.0",
+    "kind" : "requirements"
+  },
+  {
+    "filename" : "CapabilityStatement-ISiKCapabilityStatementTerminRepositoryRolle.json",
+    "resourceType" : "CapabilityStatement",
+    "id" : "ISiKCapabilityStatementTerminRepositoryRolle",
+    "url" : "https://gematik.de/fhir/isik/CapabilityStatement/ISiKCapabilityStatementTerminRepositoryRolle",
+    "version" : "6.0.0",
+    "kind" : "requirements"
+  },
+  {
+    "filename" : "CapabilityStatement-ISiKCapabilityStatementTerminSubscriptionRolle.json",
+    "resourceType" : "CapabilityStatement",
+    "id" : "ISiKCapabilityStatementTerminSubscriptionRolle",
+    "url" : "https://gematik.de/fhir/isik/CapabilityStatement/ISiKCapabilityStatementTerminSubscriptionRolle",
+    "version" : "6.0.0",
+    "kind" : "requirements"
+  },
+  {
+    "filename" : "CapabilityStatement-ISiKCapabilityStatementTerminologieRolle.json",
+    "resourceType" : "CapabilityStatement",
+    "id" : "ISiKCapabilityStatementTerminologieRolle",
+    "url" : "https://gematik.de/fhir/isik/CapabilityStatement/ISiKCapabilityStatementTerminologieRolle",
+    "version" : "6.0.0",
+    "kind" : "requirements"
+  },
+  {
+    "filename" : "CapabilityStatement-ISiKCapabilityStatementVersicherungsverhaeltnisRolle.json",
+    "resourceType" : "CapabilityStatement",
+    "id" : "ISiKCapabilityStatementVersicherungsverhaeltnisRolle",
+    "url" : "https://gematik.de/fhir/isik/CapabilityStatement/ISiKCapabilityStatementVersicherungsverhaeltnisRolle",
+    "version" : "6.0.0",
+    "kind" : "requirements"
+  },
+  {
+    "filename" : "CapabilityStatement-ISiKCapabilityStatementVitalSignICUSourceExtendedAkteur.json",
+    "resourceType" : "CapabilityStatement",
+    "id" : "ISiKCapabilityStatementVitalSignICUSourceExtendedAkteur",
+    "url" : "https://gematik.de/fhir/isik/CapabilityStatement/ISiKCapabilityStatementVitalSignICUSourceExtendedAkteur",
+    "version" : "6.0.0",
+    "kind" : "requirements"
+  },
+  {
+    "filename" : "CapabilityStatement-ISiKCapabilityStatementVitalSignICUSourceExtendedRolle.json",
+    "resourceType" : "CapabilityStatement",
+    "id" : "ISiKCapabilityStatementVitalSignICUSourceExtendedRolle",
+    "url" : "https://gematik.de/fhir/isik/CapabilityStatement/ISiKCapabilityStatementVitalSignICUSourceExtendedRolle",
+    "version" : "6.0.0",
+    "kind" : "requirements"
+  },
+  {
+    "filename" : "CapabilityStatement-ISiKCapabilityStatementVitalSignICUSourceMinimalAkteur.json",
+    "resourceType" : "CapabilityStatement",
+    "id" : "ISiKCapabilityStatementVitalSignICUSourceMinimalAkteur",
+    "url" : "https://gematik.de/fhir/isik/CapabilityStatement/ISiKCapabilityStatementVitalSignICUSourceMinimalAkteur",
+    "version" : "6.0.0",
+    "kind" : "requirements"
+  },
+  {
+    "filename" : "CapabilityStatement-ISiKCapabilityStatementVitalSignICUSourceMinimalRolle.json",
+    "resourceType" : "CapabilityStatement",
+    "id" : "ISiKCapabilityStatementVitalSignICUSourceMinimalRolle",
+    "url" : "https://gematik.de/fhir/isik/CapabilityStatement/ISiKCapabilityStatementVitalSignICUSourceMinimalRolle",
+    "version" : "6.0.0",
+    "kind" : "requirements"
+  },
+  {
+    "filename" : "CapabilityStatement-ISiKCapabilityStatementVitalSignStandardSourceAkteur.json",
+    "resourceType" : "CapabilityStatement",
+    "id" : "ISiKCapabilityStatementVitalSignStandardSourceAkteur",
+    "url" : "https://gematik.de/fhir/isik/CapabilityStatement/ISiKCapabilityStatementVitalSignStandardSourceAkteur",
+    "version" : "6.0.0",
+    "kind" : "requirements"
+  },
+  {
+    "filename" : "CapabilityStatement-ISiKCapabilityStatementVitalSignStandardSourceRolle.json",
+    "resourceType" : "CapabilityStatement",
+    "id" : "ISiKCapabilityStatementVitalSignStandardSourceRolle",
+    "url" : "https://gematik.de/fhir/isik/CapabilityStatement/ISiKCapabilityStatementVitalSignStandardSourceRolle",
+    "version" : "6.0.0",
+    "kind" : "requirements"
+  },
+  {
+    "filename" : "CapabilityStatement-ISiKCpSFormDefinitionsVerwalterAkteur.json",
+    "resourceType" : "CapabilityStatement",
+    "id" : "ISiKCpSFormDefinitionsVerwalterAkteur",
+    "url" : "https://gematik.de/fhir/isik/CapabilityStatement/ISiKCpSFormDefinitionsVerwalterAkteur",
+    "version" : "6.0.0",
+    "kind" : "requirements"
+  },
+  {
+    "filename" : "CodeSystem-CodeSystemExample.json",
+    "resourceType" : "CodeSystem",
+    "id" : "CodeSystemExample",
+    "version" : "6.0.0",
+    "url" : "http://example.org/fhir/CodeSystem/TestKatalog",
+    "content" : "complete"
+  },
+  {
+    "filename" : "CodeSystem-ISiKBehandlungsergebnisRehaCS.json",
+    "resourceType" : "CodeSystem",
+    "content" : "complete",
+    "id" : "ISiKBehandlungsergebnisRehaCS",
+    "version" : "6.0.0",
+    "url" : "https://gematik.de/fhir/isik/CodeSystem/ISiKBehandlungsergebnisRehaCS"
+  },
+  {
+    "filename" : "CodeSystem-ISiKBesondereBehandlungsformRehaCS.json",
+    "resourceType" : "CodeSystem",
+    "content" : "complete",
+    "id" : "ISiKBesondereBehandlungsformRehaCS",
+    "version" : "6.0.0",
+    "url" : "https://gematik.de/fhir/isik/CodeSystem/ISiKBesondereBehandlungsformRehaCS"
+  },
+  {
+    "filename" : "CodeSystem-ISiKEncounterTypeErweiterungCS.json",
+    "resourceType" : "CodeSystem",
+    "content" : "complete",
+    "id" : "ISiKEncounterTypeErweiterungCS",
+    "version" : "6.0.0",
+    "url" : "https://gematik.de/fhir/isik/CodeSystem/ISiKEncounterTypeErweiterungCS"
+  },
+  {
+    "filename" : "CodeSystem-ISiKEntlassformRehaCS.json",
+    "resourceType" : "CodeSystem",
+    "content" : "complete",
+    "id" : "ISiKEntlassformRehaCS",
+    "version" : "6.0.0",
+    "url" : "https://gematik.de/fhir/isik/CodeSystem/ISiKEntlassformRehaCS"
+  },
+  {
+    "filename" : "CodeSystem-ISiKIdentifierTypeErweiterungCS.json",
+    "resourceType" : "CodeSystem",
+    "content" : "complete",
+    "id" : "ISiKIdentifierTypeErweiterungCS",
+    "version" : "6.0.0",
+    "url" : "https://gematik.de/fhir/isik/CodeSystem/ISiKIdentifierTypeErweiterungCS"
+  },
+  {
+    "filename" : "CodeSystem-ISiKMedikationsartCS.json",
+    "resourceType" : "CodeSystem",
+    "content" : "complete",
+    "id" : "ISiKMedikationsartCS",
+    "version" : "6.0.0",
+    "url" : "https://gematik.de/fhir/isik/CodeSystem/ISiKMedikationsartCS"
+  },
+  {
+    "filename" : "CodeSystem-ISiKSubscriptionTopic.json",
+    "resourceType" : "CodeSystem",
+    "content" : "complete",
+    "id" : "ISiKSubscriptionTopic",
+    "version" : "6.0.0",
+    "url" : "https://gematik.de/fhir/isik/CodeSystem/ISiKSubscriptionTopic"
+  },
+  {
+    "filename" : "CodeSystem-ISiKUnterbrechungRehaCS.json",
+    "resourceType" : "CodeSystem",
+    "content" : "complete",
+    "id" : "ISiKUnterbrechungRehaCS",
+    "version" : "6.0.0",
+    "url" : "https://gematik.de/fhir/isik/CodeSystem/ISiKUnterbrechungRehaCS"
+  },
+  {
+    "filename" : "CodeSystem-MimeTypeCS.json",
+    "resourceType" : "CodeSystem",
+    "content" : "fragment",
+    "id" : "MimeTypeCS",
+    "version" : "6.0.0",
+    "url" : "urn:ietf:bcp:13"
+  },
+  {
+    "filename" : "CodeSystem-subscription-notification-type.json",
+    "resourceType" : "CodeSystem",
+    "content" : "complete",
+    "id" : "subscription-notification-type",
+    "version" : "4.3.0",
+    "url" : "http://hl7.org/fhir/subscription-notification-type",
+    "valueSet" : "http://hl7.org/fhir/ValueSet/subscription-notification-type"
+  },
+  {
+    "filename" : "OperationDefinition-ISiKAppointmentBookOperation.json",
+    "resourceType" : "OperationDefinition",
+    "id" : "ISiKAppointmentBookOperation",
+    "version" : "6.0.0",
+    "url" : "https://gematik.de/fhir/isik/OperationDefinition/AppointmentBook",
+    "kind" : "operation",
+    "type" : "true"
+  },
+  {
+    "filename" : "OperationDefinition-UpdateMetadata.json",
+    "resourceType" : "OperationDefinition",
+    "id" : "UpdateMetadata",
+    "version" : "6.0.0",
+    "url" : "https://gematik.de/fhir/isik/OperationDefinition/UpdateMetadata",
+    "kind" : "operation",
+    "type" : "false"
+  },
+  {
+    "filename" : "SearchParameter-Encounter-date-start.json",
+    "resourceType" : "SearchParameter",
+    "id" : "Encounter-date-start",
+    "url" : "https://gematik.de/fhir/isik/SearchParameter/Encounter-date-start",
+    "version" : "6.0.0",
+    "type" : "date"
+  },
+  {
+    "filename" : "SearchParameter-Encounter-end-date.json",
+    "resourceType" : "SearchParameter",
+    "id" : "Encounter-end-date",
+    "url" : "https://gematik.de/fhir/isik/SearchParameter/Encounter-end-date",
+    "version" : "6.0.0",
+    "type" : "date"
+  },
+  {
+    "filename" : "SearchParameter-Location-form.json",
+    "resourceType" : "SearchParameter",
+    "id" : "Location-form",
+    "url" : "https://gematik.de/fhir/isik/SearchParameter/Location-form",
+    "version" : "6.0.0",
+    "type" : "token"
+  },
+  {
+    "filename" : "StructureDefinition-BackportSubscriptionNotificationR4Fixed.json",
+    "resourceType" : "StructureDefinition",
+    "id" : "BackportSubscriptionNotificationR4Fixed",
+    "url" : "https://gematik.de/fhir/isik/StructureDefinition/BackportSubscriptionNotificationR4Fixed",
+    "version" : "1.1.0",
+    "kind" : "resource",
+    "type" : "Bundle",
+    "derivation" : "constraint"
+  },
+  {
+    "filename" : "StructureDefinition-BackportSubscriptionStatusR4Fixed.json",
+    "resourceType" : "StructureDefinition",
+    "id" : "BackportSubscriptionStatusR4Fixed",
+    "url" : "https://gematik.de/fhir/isik/StructureDefinition/BackportSubscriptionStatusR4Fixed",
+    "version" : "1.1.0",
+    "kind" : "resource",
+    "type" : "Parameters",
+    "derivation" : "constraint"
+  },
+  {
+    "filename" : "StructureDefinition-ExtensionISiKAcceptedRisk.json",
+    "resourceType" : "StructureDefinition",
+    "id" : "ExtensionISiKAcceptedRisk",
+    "url" : "https://gematik.de/fhir/isik/StructureDefinition/ExtensionISiKAcceptedRisk",
+    "version" : "6.0.0",
+    "kind" : "complex-type",
+    "type" : "Extension",
+    "derivation" : "constraint"
+  },
+  {
+    "filename" : "StructureDefinition-ExtensionISiKBehandlungsziel.json",
+    "resourceType" : "StructureDefinition",
+    "id" : "ExtensionISiKBehandlungsziel",
+    "url" : "https://gematik.de/fhir/isik/StructureDefinition/ExtensionISiKBehandlungsziel",
+    "version" : "6.0.0",
+    "kind" : "complex-type",
+    "type" : "Extension",
+    "derivation" : "constraint"
+  },
+  {
+    "filename" : "StructureDefinition-ExtensionISiKCapabilityStatementImportsExpectation.json",
+    "resourceType" : "StructureDefinition",
+    "id" : "ExtensionISiKCapabilityStatementImportsExpectation",
+    "url" : "https://gematik.de/fhir/isik/StructureDefinition/ExtensionISiKCapabilityStatementImportsExpectation",
+    "version" : "6.0.0",
+    "kind" : "complex-type",
+    "type" : "Extension",
+    "derivation" : "constraint"
+  },
+  {
+    "filename" : "StructureDefinition-ExtensionISiKMedikationsart.json",
+    "resourceType" : "StructureDefinition",
+    "id" : "ExtensionISiKMedikationsart",
+    "url" : "https://gematik.de/fhir/isik/StructureDefinition/ExtensionISiKMedikationsart",
+    "version" : "6.0.0",
+    "kind" : "complex-type",
+    "type" : "Extension",
+    "derivation" : "constraint"
+  },
+  {
+    "filename" : "StructureDefinition-ExtensionISiKRehaEntlassung.json",
+    "resourceType" : "StructureDefinition",
+    "id" : "ExtensionISiKRehaEntlassung",
+    "url" : "https://gematik.de/fhir/isik/StructureDefinition/ExtensionISiKRehaEntlassung",
+    "version" : "6.0.0",
+    "kind" : "complex-type",
+    "type" : "Extension",
+    "derivation" : "constraint"
+  },
+  {
+    "filename" : "StructureDefinition-ExtensionISiKSelbstmedikation.json",
+    "resourceType" : "StructureDefinition",
+    "id" : "ExtensionISiKSelbstmedikation",
+    "url" : "https://gematik.de/fhir/isik/StructureDefinition/ExtensionISiKSelbstmedikation",
+    "version" : "6.0.0",
+    "kind" : "complex-type",
+    "type" : "Extension",
+    "derivation" : "constraint"
+  },
+  {
+    "filename" : "StructureDefinition-FormularDatenRueckuebermittlungBundle.json",
+    "resourceType" : "StructureDefinition",
+    "id" : "FormularDatenRueckuebermittlungBundle",
+    "url" : "https://gematik.de/fhir/isik/StructureDefinition/FormularDatenRueckuebermittlungBundle",
+    "version" : "6.0.0",
+    "kind" : "resource",
+    "type" : "Bundle",
+    "derivation" : "constraint"
+  },
+  {
+    "filename" : "StructureDefinition-ISiKAMTSBewertung.json",
+    "resourceType" : "StructureDefinition",
+    "id" : "ISiKAMTSBewertung",
+    "url" : "https://gematik.de/fhir/isik/StructureDefinition/ISiKAMTSBewertung",
+    "version" : "6.0.0",
+    "kind" : "resource",
+    "type" : "RiskAssessment",
+    "derivation" : "constraint"
+  },
+  {
+    "filename" : "StructureDefinition-ISiKASKCoding.json",
+    "resourceType" : "StructureDefinition",
+    "id" : "ISiKASKCoding",
+    "url" : "https://gematik.de/fhir/isik/StructureDefinition/ISiKASKCoding",
+    "version" : "6.0.0",
+    "kind" : "complex-type",
+    "type" : "Coding",
+    "derivation" : "constraint"
+  },
+  {
+    "filename" : "StructureDefinition-ISiKATCCoding.json",
+    "resourceType" : "StructureDefinition",
+    "id" : "ISiKATCCoding",
+    "url" : "https://gematik.de/fhir/isik/StructureDefinition/ISiKATCCoding",
+    "version" : "6.0.0",
+    "kind" : "complex-type",
+    "type" : "Coding",
+    "derivation" : "constraint"
+  },
+  {
+    "filename" : "StructureDefinition-ISiKAbrechnungsfall.json",
+    "resourceType" : "StructureDefinition",
+    "id" : "ISiKAbrechnungsfall",
+    "url" : "https://gematik.de/fhir/isik/StructureDefinition/ISiKAbrechnungsfall",
+    "version" : "6.0.0",
+    "kind" : "resource",
+    "type" : "Account",
+    "derivation" : "constraint"
+  },
+  {
+    "filename" : "StructureDefinition-ISiKAbrechnungsfallAmbulant.json",
+    "resourceType" : "StructureDefinition",
+    "id" : "ISiKAbrechnungsfallAmbulant",
+    "url" : "https://gematik.de/fhir/isik/StructureDefinition/ISiKAbrechnungsfallAmbulant",
+    "version" : "6.0.0",
+    "kind" : "resource",
+    "type" : "Account",
+    "derivation" : "constraint"
+  },
+  {
+    "filename" : "StructureDefinition-ISiKAlkoholAbusus.json",
+    "resourceType" : "StructureDefinition",
+    "id" : "ISiKAlkoholAbusus",
+    "url" : "https://gematik.de/fhir/isik/StructureDefinition/ISiKAlkoholAbusus",
+    "version" : "6.0.0",
+    "kind" : "resource",
+    "type" : "Observation",
+    "derivation" : "constraint"
+  },
+  {
+    "filename" : "StructureDefinition-ISiKAllergieUnvertraeglichkeit.json",
+    "resourceType" : "StructureDefinition",
+    "id" : "ISiKAllergieUnvertraeglichkeit",
+    "url" : "https://gematik.de/fhir/isik/StructureDefinition/ISiKAllergieUnvertraeglichkeit",
+    "version" : "6.0.0",
+    "kind" : "resource",
+    "type" : "AllergyIntolerance",
+    "derivation" : "constraint"
+  },
+  {
+    "filename" : "StructureDefinition-ISiKAngehoeriger.json",
+    "resourceType" : "StructureDefinition",
+    "id" : "ISiKAngehoeriger",
+    "url" : "https://gematik.de/fhir/isik/StructureDefinition/ISiKAngehoeriger",
+    "version" : "6.0.0",
+    "kind" : "resource",
+    "type" : "RelatedPerson",
+    "derivation" : "constraint"
+  },
+  {
+    "filename" : "StructureDefinition-ISiKAtemfrequenz.json",
+    "resourceType" : "StructureDefinition",
+    "id" : "ISiKAtemfrequenz",
+    "url" : "https://gematik.de/fhir/isik/StructureDefinition/ISiKAtemfrequenz",
+    "version" : "6.0.0",
+    "kind" : "resource",
+    "type" : "Observation",
+    "derivation" : "constraint"
+  },
+  {
+    "filename" : "StructureDefinition-ISiKBerichtBundle.json",
+    "resourceType" : "StructureDefinition",
+    "id" : "ISiKBerichtBundle",
+    "url" : "https://gematik.de/fhir/isik/StructureDefinition/ISiKBerichtBundle",
+    "version" : "6.0.0",
+    "kind" : "resource",
+    "type" : "Bundle",
+    "derivation" : "constraint"
+  },
+  {
+    "filename" : "StructureDefinition-ISiKBerichtSubSysteme.json",
+    "resourceType" : "StructureDefinition",
+    "id" : "ISiKBerichtSubSysteme",
+    "url" : "https://gematik.de/fhir/isik/StructureDefinition/ISiKBerichtSubSysteme",
+    "version" : "6.0.0",
+    "kind" : "resource",
+    "type" : "Composition",
+    "derivation" : "constraint"
+  },
+  {
+    "filename" : "StructureDefinition-ISiKBinary.json",
+    "resourceType" : "StructureDefinition",
+    "id" : "ISiKBinary",
+    "url" : "https://gematik.de/fhir/isik/StructureDefinition/ISiKBinary",
+    "version" : "6.0.0",
+    "kind" : "resource",
+    "type" : "Binary",
+    "derivation" : "constraint"
+  },
+  {
+    "filename" : "StructureDefinition-ISiKBlutdruckSystemischArteriell.json",
+    "resourceType" : "StructureDefinition",
+    "id" : "ISiKBlutdruckSystemischArteriell",
+    "url" : "https://gematik.de/fhir/isik/StructureDefinition/ISiKBlutdruckSystemischArteriell",
+    "version" : "6.0.0",
+    "kind" : "resource",
+    "type" : "Observation",
+    "derivation" : "constraint"
+  },
+  {
+    "filename" : "StructureDefinition-ISiKCodeSystem.json",
+    "resourceType" : "StructureDefinition",
+    "id" : "ISiKCodeSystem",
+    "url" : "https://gematik.de/fhir/isik/StructureDefinition/ISiKCodeSystem",
+    "version" : "6.0.0",
+    "kind" : "resource",
+    "type" : "CodeSystem",
+    "derivation" : "constraint"
+  },
+  {
+    "filename" : "StructureDefinition-ISiKCoding.json",
+    "resourceType" : "StructureDefinition",
+    "id" : "ISiKCoding",
+    "url" : "https://gematik.de/fhir/isik/StructureDefinition/ISiKCoding",
+    "version" : "6.0.0",
+    "kind" : "complex-type",
+    "type" : "Coding",
+    "derivation" : "constraint"
+  },
+  {
+    "filename" : "StructureDefinition-ISiKDiagnose.json",
+    "resourceType" : "StructureDefinition",
+    "id" : "ISiKDiagnose",
+    "url" : "https://gematik.de/fhir/isik/StructureDefinition/ISiKDiagnose",
+    "version" : "6.0.0",
+    "kind" : "resource",
+    "type" : "Condition",
+    "derivation" : "constraint"
+  },
+  {
+    "filename" : "StructureDefinition-ISiKDokumentenMetadaten.json",
+    "resourceType" : "StructureDefinition",
+    "id" : "ISiKDokumentenMetadaten",
+    "url" : "https://gematik.de/fhir/isik/StructureDefinition/ISiKDokumentenMetadaten",
+    "version" : "6.0.0",
+    "kind" : "resource",
+    "type" : "DocumentReference",
+    "derivation" : "constraint"
+  },
+  {
+    "filename" : "StructureDefinition-ISiKEKG.json",
+    "resourceType" : "StructureDefinition",
+    "id" : "ISiKEKG",
+    "url" : "https://gematik.de/fhir/isik/StructureDefinition/ISiKEKG",
+    "version" : "6.0.0",
+    "kind" : "resource",
+    "type" : "Observation",
+    "derivation" : "constraint"
+  },
+  {
+    "filename" : "StructureDefinition-ISiKExtensionAbrechnungsDiagnoseProzedurAmbulant.json",
+    "resourceType" : "StructureDefinition",
+    "id" : "ISiKExtensionAbrechnungsDiagnoseProzedurAmbulant",
+    "url" : "https://gematik.de/fhir/isik/StructureDefinition/ISiKExtensionAbrechnungsDiagnoseProzedurAmbulant",
+    "version" : "6.0.0",
+    "kind" : "complex-type",
+    "type" : "Extension",
+    "derivation" : "constraint"
+  },
+  {
+    "filename" : "StructureDefinition-ISiKFormularDaten.json",
+    "resourceType" : "StructureDefinition",
+    "id" : "ISiKFormularDaten",
+    "url" : "https://gematik.de/fhir/isik/StructureDefinition/ISiKFormularDaten",
+    "version" : "6.0.0",
+    "kind" : "resource",
+    "type" : "QuestionnaireResponse",
+    "derivation" : "constraint"
+  },
+  {
+    "filename" : "StructureDefinition-ISiKFormularDefinition.json",
+    "resourceType" : "StructureDefinition",
+    "id" : "ISiKFormularDefinition",
+    "url" : "https://gematik.de/fhir/isik/StructureDefinition/ISiKFormularDefinition",
+    "version" : "6.0.0",
+    "kind" : "resource",
+    "type" : "Questionnaire",
+    "derivation" : "constraint"
+  },
+  {
+    "filename" : "StructureDefinition-ISiKGCS.json",
+    "resourceType" : "StructureDefinition",
+    "id" : "ISiKGCS",
+    "url" : "https://gematik.de/fhir/isik/StructureDefinition/ISiKGCS",
+    "version" : "6.0.0",
+    "kind" : "resource",
+    "type" : "Observation",
+    "derivation" : "constraint"
+  },
+  {
+    "filename" : "StructureDefinition-ISiKHerzfrequenz.json",
+    "resourceType" : "StructureDefinition",
+    "id" : "ISiKHerzfrequenz",
+    "url" : "https://gematik.de/fhir/isik/StructureDefinition/ISiKHerzfrequenz",
+    "version" : "6.0.0",
+    "kind" : "resource",
+    "type" : "Observation",
+    "derivation" : "constraint"
+  },
+  {
+    "filename" : "StructureDefinition-ISiKICD10GMCoding.json",
+    "resourceType" : "StructureDefinition",
+    "id" : "ISiKICD10GMCoding",
+    "url" : "https://gematik.de/fhir/isik/StructureDefinition/ISiKICD10GMCoding",
+    "version" : "6.0.0",
+    "kind" : "complex-type",
+    "type" : "Coding",
+    "derivation" : "constraint"
+  },
+  {
+    "filename" : "StructureDefinition-ISiKImplantat.json",
+    "resourceType" : "StructureDefinition",
+    "id" : "ISiKImplantat",
+    "url" : "https://gematik.de/fhir/isik/StructureDefinition/ISiKImplantat",
+    "version" : "6.0.0",
+    "kind" : "resource",
+    "type" : "Device",
+    "derivation" : "constraint"
+  },
+  {
+    "filename" : "StructureDefinition-ISiKKalender.json",
+    "resourceType" : "StructureDefinition",
+    "id" : "ISiKKalender",
+    "url" : "https://gematik.de/fhir/isik/StructureDefinition/ISiKKalender",
+    "version" : "6.0.0",
+    "kind" : "resource",
+    "type" : "Schedule",
+    "derivation" : "constraint"
+  },
+  {
+    "filename" : "StructureDefinition-ISiKKoerpergewicht.json",
+    "resourceType" : "StructureDefinition",
+    "id" : "ISiKKoerpergewicht",
+    "url" : "https://gematik.de/fhir/isik/StructureDefinition/ISiKKoerpergewicht",
+    "version" : "6.0.0",
+    "kind" : "resource",
+    "type" : "Observation",
+    "derivation" : "constraint"
+  },
+  {
+    "filename" : "StructureDefinition-ISiKKoerpergroesse.json",
+    "resourceType" : "StructureDefinition",
+    "id" : "ISiKKoerpergroesse",
+    "url" : "https://gematik.de/fhir/isik/StructureDefinition/ISiKKoerpergroesse",
+    "version" : "6.0.0",
+    "kind" : "resource",
+    "type" : "Observation",
+    "derivation" : "constraint"
+  },
+  {
+    "filename" : "StructureDefinition-ISiKKoerperkerntemperatur.json",
+    "resourceType" : "StructureDefinition",
+    "id" : "ISiKKoerperkerntemperatur",
+    "url" : "https://gematik.de/fhir/isik/StructureDefinition/ISiKKoerperkerntemperatur",
+    "version" : "6.0.0",
+    "kind" : "resource",
+    "type" : "Observation",
+    "derivation" : "constraint"
+  },
+  {
+    "filename" : "StructureDefinition-ISiKKontaktGesundheitseinrichtung.json",
+    "resourceType" : "StructureDefinition",
+    "id" : "ISiKKontaktGesundheitseinrichtung",
+    "url" : "https://gematik.de/fhir/isik/StructureDefinition/ISiKKontaktGesundheitseinrichtung",
+    "version" : "6.0.0",
+    "kind" : "resource",
+    "type" : "Encounter",
+    "derivation" : "constraint"
+  },
+  {
+    "filename" : "StructureDefinition-ISiKKopfumfang.json",
+    "resourceType" : "StructureDefinition",
+    "id" : "ISiKKopfumfang",
+    "url" : "https://gematik.de/fhir/isik/StructureDefinition/ISiKKopfumfang",
+    "version" : "6.0.0",
+    "kind" : "resource",
+    "type" : "Observation",
+    "derivation" : "constraint"
+  },
+  {
+    "filename" : "StructureDefinition-ISiKLaborbefund.json",
+    "resourceType" : "StructureDefinition",
+    "id" : "ISiKLaborbefund",
+    "url" : "https://gematik.de/fhir/isik/StructureDefinition/ISiKLaborbefund",
+    "version" : "6.0.0",
+    "kind" : "resource",
+    "type" : "DiagnosticReport",
+    "derivation" : "constraint"
+  },
+  {
+    "filename" : "StructureDefinition-ISiKLaboruntersuchung.json",
+    "resourceType" : "StructureDefinition",
+    "id" : "ISiKLaboruntersuchung",
+    "url" : "https://gematik.de/fhir/isik/StructureDefinition/ISiKLaboruntersuchung",
+    "version" : "6.0.0",
+    "kind" : "resource",
+    "type" : "Observation",
+    "derivation" : "constraint"
+  },
+  {
+    "filename" : "StructureDefinition-ISiKLaboruntersuchungCRP.json",
+    "resourceType" : "StructureDefinition",
+    "id" : "ISiKLaboruntersuchungCRP",
+    "url" : "https://gematik.de/fhir/isik/StructureDefinition/ISiKLaboruntersuchungCRP",
+    "version" : "6.0.0",
+    "kind" : "resource",
+    "type" : "Observation",
+    "derivation" : "constraint"
+  },
+  {
+    "filename" : "StructureDefinition-ISiKLaboruntersuchungGFR.json",
+    "resourceType" : "StructureDefinition",
+    "id" : "ISiKLaboruntersuchungGFR",
+    "url" : "https://gematik.de/fhir/isik/StructureDefinition/ISiKLaboruntersuchungGFR",
+    "version" : "6.0.0",
+    "kind" : "resource",
+    "type" : "Observation",
+    "derivation" : "constraint"
+  },
+  {
+    "filename" : "StructureDefinition-ISiKLaboruntersuchungHb.json",
+    "resourceType" : "StructureDefinition",
+    "id" : "ISiKLaboruntersuchungHb",
+    "url" : "https://gematik.de/fhir/isik/StructureDefinition/ISiKLaboruntersuchungHb",
+    "version" : "6.0.0",
+    "kind" : "resource",
+    "type" : "Observation",
+    "derivation" : "constraint"
+  },
+  {
+    "filename" : "StructureDefinition-ISiKLaboruntersuchungPCT.json",
+    "resourceType" : "StructureDefinition",
+    "id" : "ISiKLaboruntersuchungPCT",
+    "url" : "https://gematik.de/fhir/isik/StructureDefinition/ISiKLaboruntersuchungPCT",
+    "version" : "6.0.0",
+    "kind" : "resource",
+    "type" : "Observation",
+    "derivation" : "constraint"
+  },
+  {
+    "filename" : "StructureDefinition-ISiKLaboruntersuchungSerumkreatinin.json",
+    "resourceType" : "StructureDefinition",
+    "id" : "ISiKLaboruntersuchungSerumkreatinin",
+    "url" : "https://gematik.de/fhir/isik/StructureDefinition/ISiKLaboruntersuchungSerumkreatinin",
+    "version" : "6.0.0",
+    "kind" : "resource",
+    "type" : "Observation",
+    "derivation" : "constraint"
+  },
+  {
+    "filename" : "StructureDefinition-ISiKLaboruntersuchungSerumnatrium.json",
+    "resourceType" : "StructureDefinition",
+    "id" : "ISiKLaboruntersuchungSerumnatrium",
+    "url" : "https://gematik.de/fhir/isik/StructureDefinition/ISiKLaboruntersuchungSerumnatrium",
+    "version" : "6.0.0",
+    "kind" : "resource",
+    "type" : "Observation",
+    "derivation" : "constraint"
+  },
+  {
+    "filename" : "StructureDefinition-ISiKLaboruntersuchungTSH.json",
+    "resourceType" : "StructureDefinition",
+    "id" : "ISiKLaboruntersuchungTSH",
+    "url" : "https://gematik.de/fhir/isik/StructureDefinition/ISiKLaboruntersuchungTSH",
+    "version" : "6.0.0",
+    "kind" : "resource",
+    "type" : "Observation",
+    "derivation" : "constraint"
+  },
+  {
+    "filename" : "StructureDefinition-ISiKLaboruntersuchungThrombozyten.json",
+    "resourceType" : "StructureDefinition",
+    "id" : "ISiKLaboruntersuchungThrombozyten",
+    "url" : "https://gematik.de/fhir/isik/StructureDefinition/ISiKLaboruntersuchungThrombozyten",
+    "version" : "6.0.0",
+    "kind" : "resource",
+    "type" : "Observation",
+    "derivation" : "constraint"
+  },
+  {
+    "filename" : "StructureDefinition-ISiKLaboruntersuchungTroponin.json",
+    "resourceType" : "StructureDefinition",
+    "id" : "ISiKLaboruntersuchungTroponin",
+    "url" : "https://gematik.de/fhir/isik/StructureDefinition/ISiKLaboruntersuchungTroponin",
+    "version" : "6.0.0",
+    "kind" : "resource",
+    "type" : "Observation",
+    "derivation" : "constraint"
+  },
+  {
+    "filename" : "StructureDefinition-ISiKLebensZustand.json",
+    "resourceType" : "StructureDefinition",
+    "id" : "ISiKLebensZustand",
+    "url" : "https://gematik.de/fhir/isik/StructureDefinition/ISiKLebensZustand",
+    "version" : "6.0.0",
+    "kind" : "resource",
+    "type" : "Observation",
+    "derivation" : "constraint"
+  },
+  {
+    "filename" : "StructureDefinition-ISiKLoincCoding.json",
+    "resourceType" : "StructureDefinition",
+    "id" : "ISiKLoincCoding",
+    "url" : "https://gematik.de/fhir/isik/StructureDefinition/ISiKLoincCoding",
+    "version" : "6.0.0",
+    "kind" : "complex-type",
+    "type" : "Coding",
+    "derivation" : "constraint"
+  },
+  {
+    "filename" : "StructureDefinition-ISiKMedikament.json",
+    "resourceType" : "StructureDefinition",
+    "id" : "ISiKMedikament",
+    "url" : "https://gematik.de/fhir/isik/StructureDefinition/ISiKMedikament",
+    "version" : "6.0.0",
+    "kind" : "resource",
+    "type" : "Medication",
+    "derivation" : "constraint"
+  },
+  {
+    "filename" : "StructureDefinition-ISiKMedikationTransaction.json",
+    "resourceType" : "StructureDefinition",
+    "id" : "ISiKMedikationTransaction",
+    "url" : "https://gematik.de/fhir/isik/StructureDefinition/ISiKMedikationTransaction",
+    "version" : "6.0.0",
+    "kind" : "resource",
+    "type" : "Bundle",
+    "derivation" : "constraint"
+  },
+  {
+    "filename" : "StructureDefinition-ISiKMedikationTransactionResponse.json",
+    "resourceType" : "StructureDefinition",
+    "id" : "ISiKMedikationTransactionResponse",
+    "url" : "https://gematik.de/fhir/isik/StructureDefinition/ISiKMedikationTransactionResponse",
+    "version" : "6.0.0",
+    "kind" : "resource",
+    "type" : "Bundle",
+    "derivation" : "constraint"
+  },
+  {
+    "filename" : "StructureDefinition-ISiKMedikationsInformation.json",
+    "resourceType" : "StructureDefinition",
+    "id" : "ISiKMedikationsInformation",
+    "url" : "https://gematik.de/fhir/isik/StructureDefinition/ISiKMedikationsInformation",
+    "version" : "6.0.0",
+    "kind" : "resource",
+    "type" : "MedicationStatement",
+    "derivation" : "constraint"
+  },
+  {
+    "filename" : "StructureDefinition-ISiKMedikationsListe.json",
+    "resourceType" : "StructureDefinition",
+    "id" : "ISiKMedikationsListe",
+    "url" : "https://gematik.de/fhir/isik/StructureDefinition/ISiKMedikationsListe",
+    "version" : "6.0.0",
+    "kind" : "resource",
+    "type" : "List",
+    "derivation" : "constraint"
+  },
+  {
+    "filename" : "StructureDefinition-ISiKMedikationsVerabreichung.json",
+    "resourceType" : "StructureDefinition",
+    "id" : "ISiKMedikationsVerabreichung",
+    "url" : "https://gematik.de/fhir/isik/StructureDefinition/ISiKMedikationsVerabreichung",
+    "version" : "6.0.0",
+    "kind" : "resource",
+    "type" : "MedicationAdministration",
+    "derivation" : "constraint"
+  },
+  {
+    "filename" : "StructureDefinition-ISiKMedikationsVerordnung.json",
+    "resourceType" : "StructureDefinition",
+    "id" : "ISiKMedikationsVerordnung",
+    "url" : "https://gematik.de/fhir/isik/StructureDefinition/ISiKMedikationsVerordnung",
+    "version" : "6.0.0",
+    "kind" : "resource",
+    "type" : "MedicationRequest",
+    "derivation" : "constraint"
+  },
+  {
+    "filename" : "StructureDefinition-ISiKMedizinischeBehandlungseinheit.json",
+    "resourceType" : "StructureDefinition",
+    "id" : "ISiKMedizinischeBehandlungseinheit",
+    "url" : "https://gematik.de/fhir/isik/StructureDefinition/ISiKMedizinischeBehandlungseinheit",
+    "version" : "6.0.0",
+    "kind" : "resource",
+    "type" : "HealthcareService",
+    "derivation" : "constraint"
+  },
+  {
+    "filename" : "StructureDefinition-ISiKMpFormularExtension.json",
+    "resourceType" : "StructureDefinition",
+    "id" : "ISiKMpFormularExtension",
+    "url" : "https://gematik.de/fhir/isik/StructureDefinition/ISiKMpFormularExtension",
+    "version" : "6.0.0",
+    "kind" : "complex-type",
+    "type" : "Extension",
+    "derivation" : "constraint"
+  },
+  {
+    "filename" : "StructureDefinition-ISiKOrganisation.json",
+    "resourceType" : "StructureDefinition",
+    "id" : "ISiKOrganisation",
+    "url" : "https://gematik.de/fhir/isik/StructureDefinition/ISiKOrganisation",
+    "version" : "6.0.0",
+    "kind" : "resource",
+    "type" : "Organization",
+    "derivation" : "constraint"
+  },
+  {
+    "filename" : "StructureDefinition-ISiKOrganisationFachabteilung.json",
+    "resourceType" : "StructureDefinition",
+    "id" : "ISiKOrganisationFachabteilung",
+    "url" : "https://gematik.de/fhir/isik/StructureDefinition/ISiKOrganisationFachabteilung",
+    "version" : "6.0.0",
+    "kind" : "resource",
+    "type" : "Organization",
+    "derivation" : "constraint"
+  },
+  {
+    "filename" : "StructureDefinition-ISiKPZNCoding.json",
+    "resourceType" : "StructureDefinition",
+    "id" : "ISiKPZNCoding",
+    "url" : "https://gematik.de/fhir/isik/StructureDefinition/ISiKPZNCoding",
+    "version" : "6.0.0",
+    "kind" : "complex-type",
+    "type" : "Coding",
+    "derivation" : "constraint"
+  },
+  {
+    "filename" : "StructureDefinition-ISiKPatient.json",
+    "resourceType" : "StructureDefinition",
+    "id" : "ISiKPatient",
+    "url" : "https://gematik.de/fhir/isik/StructureDefinition/ISiKPatient",
+    "version" : "6.0.0",
+    "kind" : "resource",
+    "type" : "Patient",
+    "derivation" : "constraint"
+  },
+  {
+    "filename" : "StructureDefinition-ISiKPersonImGesundheitsberuf.json",
+    "resourceType" : "StructureDefinition",
+    "id" : "ISiKPersonImGesundheitsberuf",
+    "url" : "https://gematik.de/fhir/isik/StructureDefinition/ISiKPersonImGesundheitsberuf",
+    "version" : "6.0.0",
+    "kind" : "resource",
+    "type" : "Practitioner",
+    "derivation" : "constraint"
+  },
+  {
+    "filename" : "StructureDefinition-ISiKProzedur.json",
+    "resourceType" : "StructureDefinition",
+    "id" : "ISiKProzedur",
+    "url" : "https://gematik.de/fhir/isik/StructureDefinition/ISiKProzedur",
+    "version" : "6.0.0",
+    "kind" : "resource",
+    "type" : "Procedure",
+    "derivation" : "constraint"
+  },
+  {
+    "filename" : "StructureDefinition-ISiKProzedurBeatmung.json",
+    "resourceType" : "StructureDefinition",
+    "id" : "ISiKProzedurBeatmung",
+    "url" : "https://gematik.de/fhir/isik/StructureDefinition/ISiKProzedurBeatmung",
+    "version" : "6.0.0",
+    "kind" : "resource",
+    "type" : "Procedure",
+    "derivation" : "constraint"
+  },
+  {
+    "filename" : "StructureDefinition-ISiKProzedurReanimation.json",
+    "resourceType" : "StructureDefinition",
+    "id" : "ISiKProzedurReanimation",
+    "url" : "https://gematik.de/fhir/isik/StructureDefinition/ISiKProzedurReanimation",
+    "version" : "6.0.0",
+    "kind" : "resource",
+    "type" : "Procedure",
+    "derivation" : "constraint"
+  },
+  {
+    "filename" : "StructureDefinition-ISiKRaucherStatus.json",
+    "resourceType" : "StructureDefinition",
+    "id" : "ISiKRaucherStatus",
+    "url" : "https://gematik.de/fhir/isik/StructureDefinition/ISiKRaucherStatus",
+    "version" : "6.0.0",
+    "kind" : "resource",
+    "type" : "Observation",
+    "derivation" : "constraint"
+  },
+  {
+    "filename" : "StructureDefinition-ISiKRolleImKrankenhaus.json",
+    "resourceType" : "StructureDefinition",
+    "id" : "ISiKRolleImKrankenhaus",
+    "url" : "https://gematik.de/fhir/isik/StructureDefinition/ISiKRolleImKrankenhaus",
+    "version" : "6.0.0",
+    "kind" : "resource",
+    "type" : "PractitionerRole",
+    "derivation" : "constraint"
+  },
+  {
+    "filename" : "StructureDefinition-ISiKSauerstoffsaettigungArteriell.json",
+    "resourceType" : "StructureDefinition",
+    "id" : "ISiKSauerstoffsaettigungArteriell",
+    "url" : "https://gematik.de/fhir/isik/StructureDefinition/ISiKSauerstoffsaettigungArteriell",
+    "version" : "6.0.0",
+    "kind" : "resource",
+    "type" : "Observation",
+    "derivation" : "constraint"
+  },
+  {
+    "filename" : "StructureDefinition-ISiKSchwangerschaftErwarteterEntbindungstermin.json",
+    "resourceType" : "StructureDefinition",
+    "id" : "ISiKSchwangerschaftErwarteterEntbindungstermin",
+    "url" : "https://gematik.de/fhir/isik/StructureDefinition/ISiKSchwangerschaftErwarteterEntbindungstermin",
+    "version" : "6.0.0",
+    "kind" : "resource",
+    "type" : "Observation",
+    "derivation" : "constraint"
+  },
+  {
+    "filename" : "StructureDefinition-ISiKSchwangerschaftsstatus.json",
+    "resourceType" : "StructureDefinition",
+    "id" : "ISiKSchwangerschaftsstatus",
+    "url" : "https://gematik.de/fhir/isik/StructureDefinition/ISiKSchwangerschaftsstatus",
+    "version" : "6.0.0",
+    "kind" : "resource",
+    "type" : "Observation",
+    "derivation" : "constraint"
+  },
+  {
+    "filename" : "StructureDefinition-ISiKSnomedCTCoding.json",
+    "resourceType" : "StructureDefinition",
+    "id" : "ISiKSnomedCTCoding",
+    "url" : "https://gematik.de/fhir/isik/StructureDefinition/ISiKSnomedCTCoding",
+    "version" : "6.0.0",
+    "kind" : "complex-type",
+    "type" : "Coding",
+    "derivation" : "constraint"
+  },
+  {
+    "filename" : "StructureDefinition-ISiKStandort.json",
+    "resourceType" : "StructureDefinition",
+    "id" : "ISiKStandort",
+    "url" : "https://gematik.de/fhir/isik/StructureDefinition/ISiKStandort",
+    "version" : "6.0.0",
+    "kind" : "resource",
+    "type" : "Location",
+    "derivation" : "constraint"
+  },
+  {
+    "filename" : "StructureDefinition-ISiKStandortBettenstellplatz.json",
+    "resourceType" : "StructureDefinition",
+    "id" : "ISiKStandortBettenstellplatz",
+    "url" : "https://gematik.de/fhir/isik/StructureDefinition/ISiKStandortBettenstellplatz",
+    "version" : "6.0.0",
+    "kind" : "resource",
+    "type" : "Location",
+    "derivation" : "constraint"
+  },
+  {
+    "filename" : "StructureDefinition-ISiKStandortRaum.json",
+    "resourceType" : "StructureDefinition",
+    "id" : "ISiKStandortRaum",
+    "url" : "https://gematik.de/fhir/isik/StructureDefinition/ISiKStandortRaum",
+    "version" : "6.0.0",
+    "kind" : "resource",
+    "type" : "Location",
+    "derivation" : "constraint"
+  },
+  {
+    "filename" : "StructureDefinition-ISiKStillstatus.json",
+    "resourceType" : "StructureDefinition",
+    "id" : "ISiKStillstatus",
+    "url" : "https://gematik.de/fhir/isik/StructureDefinition/ISiKStillstatus",
+    "version" : "6.0.0",
+    "kind" : "resource",
+    "type" : "Observation",
+    "derivation" : "constraint"
+  },
+  {
+    "filename" : "StructureDefinition-ISiKSubscription.json",
+    "resourceType" : "StructureDefinition",
+    "id" : "ISiKSubscription",
+    "url" : "https://gematik.de/fhir/isik/StructureDefinition/ISiKSubscription",
+    "version" : "6.0.0",
+    "kind" : "resource",
+    "type" : "Subscription",
+    "derivation" : "constraint"
+  },
+  {
+    "filename" : "StructureDefinition-ISiKSubscriptionNotification.json",
+    "resourceType" : "StructureDefinition",
+    "id" : "ISiKSubscriptionNotification",
+    "url" : "https://gematik.de/fhir/isik/StructureDefinition/ISiKSubscriptionNotification",
+    "version" : "6.0.0",
+    "kind" : "resource",
+    "type" : "Bundle",
+    "derivation" : "constraint"
+  },
+  {
+    "filename" : "StructureDefinition-ISiKSubscriptionStatus.json",
+    "resourceType" : "StructureDefinition",
+    "id" : "ISiKSubscriptionStatus",
+    "url" : "https://gematik.de/fhir/isik/StructureDefinition/ISiKSubscriptionStatus",
+    "version" : "6.0.0",
+    "kind" : "resource",
+    "type" : "Parameters",
+    "derivation" : "constraint"
+  },
+  {
+    "filename" : "StructureDefinition-ISiKSubscriptionTermin.json",
+    "resourceType" : "StructureDefinition",
+    "id" : "ISiKSubscriptionTermin",
+    "url" : "https://gematik.de/fhir/isik/StructureDefinition/ISiKSubscriptionTermin",
+    "version" : "6.0.0",
+    "kind" : "resource",
+    "type" : "Subscription",
+    "derivation" : "constraint"
+  },
+  {
+    "filename" : "StructureDefinition-ISiKTermin.json",
+    "resourceType" : "StructureDefinition",
+    "id" : "ISiKTermin",
+    "url" : "https://gematik.de/fhir/isik/StructureDefinition/ISiKTermin",
+    "version" : "6.0.0",
+    "kind" : "resource",
+    "type" : "Appointment",
+    "derivation" : "constraint"
+  },
+  {
+    "filename" : "StructureDefinition-ISiKTerminPriorityExtension.json",
+    "resourceType" : "StructureDefinition",
+    "id" : "ISiKTerminPriorityExtension",
+    "url" : "https://gematik.de/fhir/isik/StructureDefinition/ISiKTerminPriorityExtension",
+    "version" : "6.0.0",
+    "kind" : "complex-type",
+    "type" : "Extension",
+    "derivation" : "constraint"
+  },
+  {
+    "filename" : "StructureDefinition-ISiKTerminblock.json",
+    "resourceType" : "StructureDefinition",
+    "id" : "ISiKTerminblock",
+    "url" : "https://gematik.de/fhir/isik/StructureDefinition/ISiKTerminblock",
+    "version" : "6.0.0",
+    "kind" : "resource",
+    "type" : "Slot",
+    "derivation" : "constraint"
+  },
+  {
+    "filename" : "StructureDefinition-ISiKValueSet.json",
+    "resourceType" : "StructureDefinition",
+    "id" : "ISiKValueSet",
+    "url" : "https://gematik.de/fhir/isik/StructureDefinition/ISiKValueSet",
+    "version" : "6.0.0",
+    "kind" : "resource",
+    "type" : "ValueSet",
+    "derivation" : "constraint"
+  },
+  {
+    "filename" : "StructureDefinition-ISiKVersicherungsverhaeltnisGesetzlich.json",
+    "resourceType" : "StructureDefinition",
+    "id" : "ISiKVersicherungsverhaeltnisGesetzlich",
+    "url" : "https://gematik.de/fhir/isik/StructureDefinition/ISiKVersicherungsverhaeltnisGesetzlich",
+    "version" : "6.0.0",
+    "kind" : "resource",
+    "type" : "Coverage",
+    "derivation" : "constraint"
+  },
+  {
+    "filename" : "StructureDefinition-ISiKVersicherungsverhaeltnisSelbstzahler.json",
+    "resourceType" : "StructureDefinition",
+    "id" : "ISiKVersicherungsverhaeltnisSelbstzahler",
+    "url" : "https://gematik.de/fhir/isik/StructureDefinition/ISiKVersicherungsverhaeltnisSelbstzahler",
+    "version" : "6.0.0",
+    "kind" : "resource",
+    "type" : "Coverage",
+    "derivation" : "constraint"
+  },
+  {
+    "filename" : "StructureDefinition-ISiKVersicherungsverhaeltnisSonstige.json",
+    "resourceType" : "StructureDefinition",
+    "id" : "ISiKVersicherungsverhaeltnisSonstige",
+    "url" : "https://gematik.de/fhir/isik/StructureDefinition/ISiKVersicherungsverhaeltnisSonstige",
+    "version" : "6.0.0",
+    "kind" : "resource",
+    "type" : "Coverage",
+    "derivation" : "constraint"
+  },
+  {
+    "filename" : "StructureDefinition-MedicationQuantity.json",
+    "resourceType" : "StructureDefinition",
+    "id" : "MedicationQuantity",
+    "url" : "https://gematik.de/fhir/isik/StructureDefinition/MedicationQuantity",
+    "version" : "6.0.0",
+    "kind" : "complex-type",
+    "type" : "Quantity",
+    "derivation" : "constraint"
+  },
+  {
+    "filename" : "StructureDefinition-MedicationQuantityDoseForm.json",
+    "resourceType" : "StructureDefinition",
+    "id" : "MedicationQuantityDoseForm",
+    "url" : "https://gematik.de/fhir/isik/StructureDefinition/MedicationQuantityDoseForm",
+    "version" : "6.0.0",
+    "kind" : "complex-type",
+    "type" : "Quantity",
+    "derivation" : "constraint"
+  },
+  {
+    "filename" : "StructureDefinition-extension-Dosage.asNeededFor.json",
+    "resourceType" : "StructureDefinition",
+    "id" : "extension-Dosage.asNeededFor",
+    "url" : "http://hl7.org/fhir/5.0/StructureDefinition/extension-Dosage.asNeededFor",
+    "version" : "6.0.0",
+    "kind" : "complex-type",
+    "type" : "Extension",
+    "derivation" : "constraint"
+  },
+  {
+    "filename" : "StructureDefinition-mii-ex-prozedur-durchfuehrungsabsicht.json",
+    "resourceType" : "StructureDefinition",
+    "id" : "mii-ex-prozedur-durchfuehrungsabsicht",
+    "url" : "https://gematik.de/fhir/isik/StructureDefinition/mii-ex-prozedur-durchfuehrungsabsicht",
+    "version" : "6.0.0",
+    "kind" : "complex-type",
+    "type" : "Extension",
+    "derivation" : "constraint"
+  },
+  {
+    "filename" : "StructureDefinition-mii-pr-icu-bilanz-ausfuhr-blutverlust.json",
+    "resourceType" : "StructureDefinition",
+    "id" : "mii-pr-icu-bilanz-ausfuhr-blutverlust",
+    "url" : "https://gematik.de/fhir/isik/StructureDefinition/mii-pr-icu-bilanz-ausfuhr-blutverlust",
+    "version" : "6.0.0",
+    "kind" : "resource",
+    "type" : "Observation",
+    "derivation" : "constraint"
+  },
+  {
+    "filename" : "StructureDefinition-mii-pr-icu-bilanz-ausfuhr-drainage-generisch.json",
+    "resourceType" : "StructureDefinition",
+    "id" : "mii-pr-icu-bilanz-ausfuhr-drainage-generisch",
+    "url" : "https://gematik.de/fhir/isik/StructureDefinition/mii-pr-icu-bilanz-ausfuhr-drainage-generisch",
+    "version" : "6.0.0",
+    "kind" : "resource",
+    "type" : "Observation",
+    "derivation" : "constraint"
+  },
+  {
+    "filename" : "StructureDefinition-mii-pr-icu-bilanz-ausfuhr-fluessigkeit-gesamt.json",
+    "resourceType" : "StructureDefinition",
+    "id" : "mii-pr-icu-bilanz-ausfuhr-fluessigkeit-gesamt",
+    "url" : "https://gematik.de/fhir/isik/StructureDefinition/mii-pr-icu-bilanz-ausfuhr-fluessigkeit-gesamt",
+    "version" : "6.0.0",
+    "kind" : "resource",
+    "type" : "Observation",
+    "derivation" : "constraint"
+  },
+  {
+    "filename" : "StructureDefinition-mii-pr-icu-bilanz-ausfuhr-gallenfluessigkeit.json",
+    "resourceType" : "StructureDefinition",
+    "id" : "mii-pr-icu-bilanz-ausfuhr-gallenfluessigkeit",
+    "url" : "https://gematik.de/fhir/isik/StructureDefinition/mii-pr-icu-bilanz-ausfuhr-gallenfluessigkeit",
+    "version" : "6.0.0",
+    "kind" : "resource",
+    "type" : "Observation",
+    "derivation" : "constraint"
+  },
+  {
+    "filename" : "StructureDefinition-mii-pr-icu-bilanz-ausfuhr-haemofiltration-einzelmesswerte.json",
+    "resourceType" : "StructureDefinition",
+    "id" : "mii-pr-icu-bilanz-ausfuhr-haemofiltration-einzelmesswerte",
+    "url" : "https://gematik.de/fhir/isik/StructureDefinition/mii-pr-icu-bilanz-ausfuhr-haemofiltration-einzelmesswerte",
+    "version" : "6.0.0",
+    "kind" : "resource",
+    "type" : "Observation",
+    "derivation" : "constraint"
+  },
+  {
+    "filename" : "StructureDefinition-mii-pr-icu-bilanz-ausfuhr-magensonde.json",
+    "resourceType" : "StructureDefinition",
+    "id" : "mii-pr-icu-bilanz-ausfuhr-magensonde",
+    "url" : "https://gematik.de/fhir/isik/StructureDefinition/mii-pr-icu-bilanz-ausfuhr-magensonde",
+    "version" : "6.0.0",
+    "kind" : "resource",
+    "type" : "Observation",
+    "derivation" : "constraint"
+  },
+  {
+    "filename" : "StructureDefinition-mii-pr-icu-bilanz-ausfuhr-op-drainage.json",
+    "resourceType" : "StructureDefinition",
+    "id" : "mii-pr-icu-bilanz-ausfuhr-op-drainage",
+    "url" : "https://gematik.de/fhir/isik/StructureDefinition/mii-pr-icu-bilanz-ausfuhr-op-drainage",
+    "version" : "6.0.0",
+    "kind" : "resource",
+    "type" : "Observation",
+    "derivation" : "constraint"
+  },
+  {
+    "filename" : "StructureDefinition-mii-pr-icu-bilanz-ausfuhr-pankreasdrainage.json",
+    "resourceType" : "StructureDefinition",
+    "id" : "mii-pr-icu-bilanz-ausfuhr-pankreasdrainage",
+    "url" : "https://gematik.de/fhir/isik/StructureDefinition/mii-pr-icu-bilanz-ausfuhr-pankreasdrainage",
+    "version" : "6.0.0",
+    "kind" : "resource",
+    "type" : "Observation",
+    "derivation" : "constraint"
+  },
+  {
+    "filename" : "StructureDefinition-mii-pr-icu-bilanz-ausfuhr-stuhlgang.json",
+    "resourceType" : "StructureDefinition",
+    "id" : "mii-pr-icu-bilanz-ausfuhr-stuhlgang",
+    "url" : "https://gematik.de/fhir/isik/StructureDefinition/mii-pr-icu-bilanz-ausfuhr-stuhlgang",
+    "version" : "6.0.0",
+    "kind" : "resource",
+    "type" : "Observation",
+    "derivation" : "constraint"
+  },
+  {
+    "filename" : "StructureDefinition-mii-pr-icu-bilanz-ausfuhr-urin.json",
+    "resourceType" : "StructureDefinition",
+    "id" : "mii-pr-icu-bilanz-ausfuhr-urin",
+    "url" : "https://gematik.de/fhir/isik/StructureDefinition/mii-pr-icu-bilanz-ausfuhr-urin",
+    "version" : "6.0.0",
+    "kind" : "resource",
+    "type" : "Observation",
+    "derivation" : "constraint"
+  },
+  {
+    "filename" : "StructureDefinition-mii-pr-icu-bilanz-ausfuhr-wunddrainage.json",
+    "resourceType" : "StructureDefinition",
+    "id" : "mii-pr-icu-bilanz-ausfuhr-wunddrainage",
+    "url" : "https://gematik.de/fhir/isik/StructureDefinition/mii-pr-icu-bilanz-ausfuhr-wunddrainage",
+    "version" : "6.0.0",
+    "kind" : "resource",
+    "type" : "Observation",
+    "derivation" : "constraint"
+  },
+  {
+    "filename" : "StructureDefinition-mii-pr-icu-bilanz-einfuhr-abgepumpte-muttermilch.json",
+    "resourceType" : "StructureDefinition",
+    "id" : "mii-pr-icu-bilanz-einfuhr-abgepumpte-muttermilch",
+    "url" : "https://gematik.de/fhir/isik/StructureDefinition/mii-pr-icu-bilanz-einfuhr-abgepumpte-muttermilch",
+    "version" : "6.0.0",
+    "kind" : "resource",
+    "type" : "Observation",
+    "derivation" : "constraint"
+  },
+  {
+    "filename" : "StructureDefinition-mii-pr-icu-bilanz-einfuhr-enterale-fluessigkeit.json",
+    "resourceType" : "StructureDefinition",
+    "id" : "mii-pr-icu-bilanz-einfuhr-enterale-fluessigkeit",
+    "url" : "https://gematik.de/fhir/isik/StructureDefinition/mii-pr-icu-bilanz-einfuhr-enterale-fluessigkeit",
+    "version" : "6.0.0",
+    "kind" : "resource",
+    "type" : "Observation",
+    "derivation" : "constraint"
+  },
+  {
+    "filename" : "StructureDefinition-mii-pr-icu-bilanz-einfuhr-fluessigkeit-gesamt.json",
+    "resourceType" : "StructureDefinition",
+    "id" : "mii-pr-icu-bilanz-einfuhr-fluessigkeit-gesamt",
+    "url" : "https://gematik.de/fhir/isik/StructureDefinition/mii-pr-icu-bilanz-einfuhr-fluessigkeit-gesamt",
+    "version" : "6.0.0",
+    "kind" : "resource",
+    "type" : "Observation",
+    "derivation" : "constraint"
+  },
+  {
+    "filename" : "StructureDefinition-mii-pr-icu-bilanz-einfuhr-muttermilch.json",
+    "resourceType" : "StructureDefinition",
+    "id" : "mii-pr-icu-bilanz-einfuhr-muttermilch",
+    "url" : "https://gematik.de/fhir/isik/StructureDefinition/mii-pr-icu-bilanz-einfuhr-muttermilch",
+    "version" : "6.0.0",
+    "kind" : "resource",
+    "type" : "Observation",
+    "derivation" : "constraint"
+  },
+  {
+    "filename" : "StructureDefinition-mii-pr-icu-bilanz-einfuhr-orale-fluessigkeit.json",
+    "resourceType" : "StructureDefinition",
+    "id" : "mii-pr-icu-bilanz-einfuhr-orale-fluessigkeit",
+    "url" : "https://gematik.de/fhir/isik/StructureDefinition/mii-pr-icu-bilanz-einfuhr-orale-fluessigkeit",
+    "version" : "6.0.0",
+    "kind" : "resource",
+    "type" : "Observation",
+    "derivation" : "constraint"
+  },
+  {
+    "filename" : "StructureDefinition-mii-pr-icu-bilanz-einfuhr-saeuglingsnahrung.json",
+    "resourceType" : "StructureDefinition",
+    "id" : "mii-pr-icu-bilanz-einfuhr-saeuglingsnahrung",
+    "url" : "https://gematik.de/fhir/isik/StructureDefinition/mii-pr-icu-bilanz-einfuhr-saeuglingsnahrung",
+    "version" : "6.0.0",
+    "kind" : "resource",
+    "type" : "Observation",
+    "derivation" : "constraint"
+  },
+  {
+    "filename" : "StructureDefinition-mii-pr-icu-bilanz-einfuhr-spendermilch.json",
+    "resourceType" : "StructureDefinition",
+    "id" : "mii-pr-icu-bilanz-einfuhr-spendermilch",
+    "url" : "https://gematik.de/fhir/isik/StructureDefinition/mii-pr-icu-bilanz-einfuhr-spendermilch",
+    "version" : "6.0.0",
+    "kind" : "resource",
+    "type" : "Observation",
+    "derivation" : "constraint"
+  },
+  {
+    "filename" : "StructureDefinition-mii-pr-icu-bilanz-tagesbilanz-fluessigkeit.json",
+    "resourceType" : "StructureDefinition",
+    "id" : "mii-pr-icu-bilanz-tagesbilanz-fluessigkeit",
+    "url" : "https://gematik.de/fhir/isik/StructureDefinition/mii-pr-icu-bilanz-tagesbilanz-fluessigkeit",
+    "version" : "6.0.0",
+    "kind" : "resource",
+    "type" : "Observation",
+    "derivation" : "constraint"
+  },
+  {
+    "filename" : "StructureDefinition-mii-pr-icu-bilanz.json",
+    "resourceType" : "StructureDefinition",
+    "id" : "mii-pr-icu-bilanz",
+    "url" : "https://gematik.de/fhir/isik/StructureDefinition/mii-pr-icu-bilanz",
+    "version" : "6.0.0",
+    "kind" : "resource",
+    "type" : "Observation",
+    "derivation" : "constraint"
+  },
+  {
+    "filename" : "StructureDefinition-mii-pr-icu-muv-zerebraler-perfusionsdruck.json",
+    "resourceType" : "StructureDefinition",
+    "id" : "mii-pr-icu-muv-zerebraler-perfusionsdruck",
+    "url" : "https://gematik.de/fhir/isik/StructureDefinition/mii-pr-icu-muv-zerebraler-perfusionsdruck",
+    "version" : "6.0.0",
+    "kind" : "resource",
+    "type" : "Observation",
+    "derivation" : "constraint"
+  },
+  {
+    "filename" : "StructureDefinition-mii-pr-icu-score-rass.json",
+    "resourceType" : "StructureDefinition",
+    "id" : "mii-pr-icu-score-rass",
+    "url" : "https://gematik.de/fhir/isik/StructureDefinition/mii-pr-icu-score-rass",
+    "version" : "6.0.0",
+    "kind" : "resource",
+    "type" : "Observation",
+    "derivation" : "constraint"
+  },
+  {
+    "filename" : "StructureDefinition-mii-pr-icu-untersuchung-pupillenbefund.json",
+    "resourceType" : "StructureDefinition",
+    "id" : "mii-pr-icu-untersuchung-pupillenbefund",
+    "url" : "https://gematik.de/fhir/isik/StructureDefinition/mii-pr-icu-untersuchung-pupillenbefund",
+    "version" : "6.0.0",
+    "kind" : "resource",
+    "type" : "Observation",
+    "derivation" : "constraint"
+  },
+  {
+    "filename" : "StructureDefinition-mii-pr-icu-untersuchung-pupillenform.json",
+    "resourceType" : "StructureDefinition",
+    "id" : "mii-pr-icu-untersuchung-pupillenform",
+    "url" : "https://gematik.de/fhir/isik/StructureDefinition/mii-pr-icu-untersuchung-pupillenform",
+    "version" : "6.0.0",
+    "kind" : "resource",
+    "type" : "Observation",
+    "derivation" : "constraint"
+  },
+  {
+    "filename" : "StructureDefinition-mii-pr-icu-untersuchung-pupillengroesse.json",
+    "resourceType" : "StructureDefinition",
+    "id" : "mii-pr-icu-untersuchung-pupillengroesse",
+    "url" : "https://gematik.de/fhir/isik/StructureDefinition/mii-pr-icu-untersuchung-pupillengroesse",
+    "version" : "6.0.0",
+    "kind" : "resource",
+    "type" : "Observation",
+    "derivation" : "constraint"
+  },
+  {
+    "filename" : "StructureDefinition-mii-pr-icu-untersuchung-pupillenlichtreaktion-direkt.json",
+    "resourceType" : "StructureDefinition",
+    "id" : "mii-pr-icu-untersuchung-pupillenlichtreaktion-direkt",
+    "url" : "https://gematik.de/fhir/isik/StructureDefinition/mii-pr-icu-untersuchung-pupillenlichtreaktion-direkt",
+    "version" : "6.0.0",
+    "kind" : "resource",
+    "type" : "Observation",
+    "derivation" : "constraint"
+  },
+  {
+    "filename" : "StructureDefinition-mii-pr-icu-untersuchung-pupillenlichtreaktion-indirekt.json",
+    "resourceType" : "StructureDefinition",
+    "id" : "mii-pr-icu-untersuchung-pupillenlichtreaktion-indirekt",
+    "url" : "https://gematik.de/fhir/isik/StructureDefinition/mii-pr-icu-untersuchung-pupillenlichtreaktion-indirekt",
+    "version" : "6.0.0",
+    "kind" : "resource",
+    "type" : "Observation",
+    "derivation" : "constraint"
+  },
+  {
+    "filename" : "StructureDefinition-mii-pr-icu-untersuchung-pupillensymmetrie.json",
+    "resourceType" : "StructureDefinition",
+    "id" : "mii-pr-icu-untersuchung-pupillensymmetrie",
+    "url" : "https://gematik.de/fhir/isik/StructureDefinition/mii-pr-icu-untersuchung-pupillensymmetrie",
+    "version" : "6.0.0",
+    "kind" : "resource",
+    "type" : "Observation",
+    "derivation" : "constraint"
+  },
+  {
+    "filename" : "StructureDefinition-mii-pr-icu-vent-dm-eingestellte-gemessene-parameter-beatmung.json",
+    "resourceType" : "StructureDefinition",
+    "id" : "mii-pr-icu-vent-dm-eingestellte-gemessene-parameter-beatmung",
+    "url" : "https://gematik.de/fhir/isik/StructureDefinition/mii-pr-icu-vent-dm-eingestellte-gemessene-parameter-beatmung",
+    "version" : "6.0.0",
+    "kind" : "resource",
+    "type" : "DeviceMetric",
+    "derivation" : "constraint"
+  },
+  {
+    "filename" : "StructureDefinition-mii-pr-icu-vent-spontane-atemfrequenz-beatmet.json",
+    "resourceType" : "StructureDefinition",
+    "id" : "mii-pr-icu-vent-spontane-atemfrequenz-beatmet",
+    "url" : "https://gematik.de/fhir/isik/StructureDefinition/mii-pr-icu-vent-spontane-atemfrequenz-beatmet",
+    "version" : "6.0.0",
+    "kind" : "resource",
+    "type" : "Observation",
+    "derivation" : "constraint"
+  },
+  {
+    "filename" : "StructureDefinition-mii-pr-icu-vent-spontanes-atemzugvolumen.json",
+    "resourceType" : "StructureDefinition",
+    "id" : "mii-pr-icu-vent-spontanes-atemzugvolumen",
+    "url" : "https://gematik.de/fhir/isik/StructureDefinition/mii-pr-icu-vent-spontanes-atemzugvolumen",
+    "version" : "6.0.0",
+    "kind" : "resource",
+    "type" : "Observation",
+    "derivation" : "constraint"
+  },
+  {
+    "filename" : "StructureDefinition-mii-pr-icu-vent-unterstuezungsdruck-beatmung.json",
+    "resourceType" : "StructureDefinition",
+    "id" : "mii-pr-icu-vent-unterstuezungsdruck-beatmung",
+    "url" : "https://gematik.de/fhir/isik/StructureDefinition/mii-pr-icu-vent-unterstuezungsdruck-beatmung",
+    "version" : "6.0.0",
+    "kind" : "resource",
+    "type" : "Observation",
+    "derivation" : "constraint"
+  },
+  {
+    "filename" : "StructureDefinition-mii-pr-prozedur-procedure.json",
+    "resourceType" : "StructureDefinition",
+    "id" : "mii-pr-prozedur-procedure",
+    "url" : "https://gematik.de/fhir/isik/StructureDefinition/mii-pr-prozedur-procedure",
+    "version" : "6.0.0",
+    "kind" : "resource",
+    "type" : "Procedure",
+    "derivation" : "constraint"
+  },
+  {
+    "filename" : "StructureDefinition-mii-pr-vent-icu-parameter-von-beatmung.json",
+    "resourceType" : "StructureDefinition",
+    "id" : "mii-pr-vent-icu-parameter-von-beatmung",
+    "url" : "https://gematik.de/fhir/isik/StructureDefinition/mii-pr-vent-icu-parameter-von-beatmung",
+    "version" : "6.0.0",
+    "kind" : "resource",
+    "type" : "Observation",
+    "derivation" : "constraint"
+  },
+  {
+    "filename" : "StructureDefinition-sd-mii-icu-herzzeitvolumen.json",
+    "resourceType" : "StructureDefinition",
+    "id" : "sd-mii-icu-herzzeitvolumen",
+    "url" : "https://gematik.de/fhir/isik/StructureDefinition/sd-mii-icu-herzzeitvolumen",
+    "version" : "6.0.0",
+    "kind" : "resource",
+    "type" : "Observation",
+    "derivation" : "constraint"
+  },
+  {
+    "filename" : "StructureDefinition-sd-mii-icu-ideales-koerpergewicht.json",
+    "resourceType" : "StructureDefinition",
+    "id" : "sd-mii-icu-ideales-koerpergewicht",
+    "url" : "https://gematik.de/fhir/isik/StructureDefinition/sd-mii-icu-ideales-koerpergewicht",
+    "version" : "6.0.0",
+    "kind" : "resource",
+    "type" : "Observation",
+    "derivation" : "constraint"
+  },
+  {
+    "filename" : "StructureDefinition-sd-mii-icu-intrakranieller-druck-icp.json",
+    "resourceType" : "StructureDefinition",
+    "id" : "sd-mii-icu-intrakranieller-druck-icp",
+    "url" : "https://gematik.de/fhir/isik/StructureDefinition/sd-mii-icu-intrakranieller-druck-icp",
+    "version" : "6.0.0",
+    "kind" : "resource",
+    "type" : "Observation",
+    "derivation" : "constraint"
+  },
+  {
+    "filename" : "StructureDefinition-sd-mii-icu-koerpergewicht-percentil-altersabhaengig.json",
+    "resourceType" : "StructureDefinition",
+    "id" : "sd-mii-icu-koerpergewicht-percentil-altersabhaengig",
+    "url" : "https://gematik.de/fhir/isik/StructureDefinition/sd-mii-icu-koerpergewicht-percentil-altersabhaengig",
+    "version" : "6.0.0",
+    "kind" : "resource",
+    "type" : "Observation",
+    "derivation" : "constraint"
+  },
+  {
+    "filename" : "StructureDefinition-sd-mii-icu-koerpergroesse-percentil-altersabhaengig.json",
+    "resourceType" : "StructureDefinition",
+    "id" : "sd-mii-icu-koerpergroesse-percentil-altersabhaengig",
+    "url" : "https://gematik.de/fhir/isik/StructureDefinition/sd-mii-icu-koerpergroesse-percentil-altersabhaengig",
+    "version" : "6.0.0",
+    "kind" : "resource",
+    "type" : "Observation",
+    "derivation" : "constraint"
+  },
+  {
+    "filename" : "StructureDefinition-sd-mii-icu-koerperkerntemperatur-stirn.json",
+    "resourceType" : "StructureDefinition",
+    "id" : "sd-mii-icu-koerperkerntemperatur-stirn",
+    "url" : "https://gematik.de/fhir/isik/StructureDefinition/sd-mii-icu-koerperkerntemperatur-stirn",
+    "version" : "6.0.0",
+    "kind" : "resource",
+    "type" : "Observation",
+    "derivation" : "constraint"
+  },
+  {
+    "filename" : "StructureDefinition-sd-mii-icu-koerpertemperatur-achsel.json",
+    "resourceType" : "StructureDefinition",
+    "id" : "sd-mii-icu-koerpertemperatur-achsel",
+    "url" : "https://gematik.de/fhir/isik/StructureDefinition/sd-mii-icu-koerpertemperatur-achsel",
+    "version" : "6.0.0",
+    "kind" : "resource",
+    "type" : "Observation",
+    "derivation" : "constraint"
+  },
+  {
+    "filename" : "StructureDefinition-sd-mii-icu-koerpertemperatur-atemwege.json",
+    "resourceType" : "StructureDefinition",
+    "id" : "sd-mii-icu-koerpertemperatur-atemwege",
+    "url" : "https://gematik.de/fhir/isik/StructureDefinition/sd-mii-icu-koerpertemperatur-atemwege",
+    "version" : "6.0.0",
+    "kind" : "resource",
+    "type" : "Observation",
+    "derivation" : "constraint"
+  },
+  {
+    "filename" : "StructureDefinition-sd-mii-icu-koerpertemperatur-blut.json",
+    "resourceType" : "StructureDefinition",
+    "id" : "sd-mii-icu-koerpertemperatur-blut",
+    "url" : "https://gematik.de/fhir/isik/StructureDefinition/sd-mii-icu-koerpertemperatur-blut",
+    "version" : "6.0.0",
+    "kind" : "resource",
+    "type" : "Observation",
+    "derivation" : "constraint"
+  },
+  {
+    "filename" : "StructureDefinition-sd-mii-icu-koerpertemperatur-brust.json",
+    "resourceType" : "StructureDefinition",
+    "id" : "sd-mii-icu-koerpertemperatur-brust",
+    "url" : "https://gematik.de/fhir/isik/StructureDefinition/sd-mii-icu-koerpertemperatur-brust",
+    "version" : "6.0.0",
+    "kind" : "resource",
+    "type" : "Observation",
+    "derivation" : "constraint"
+  },
+  {
+    "filename" : "StructureDefinition-sd-mii-icu-koerpertemperatur-brustwirbelsaeule.json",
+    "resourceType" : "StructureDefinition",
+    "id" : "sd-mii-icu-koerpertemperatur-brustwirbelsaeule",
+    "url" : "https://gematik.de/fhir/isik/StructureDefinition/sd-mii-icu-koerpertemperatur-brustwirbelsaeule",
+    "version" : "6.0.0",
+    "kind" : "resource",
+    "type" : "Observation",
+    "derivation" : "constraint"
+  },
+  {
+    "filename" : "StructureDefinition-sd-mii-icu-koerpertemperatur-gelenk.json",
+    "resourceType" : "StructureDefinition",
+    "id" : "sd-mii-icu-koerpertemperatur-gelenk",
+    "url" : "https://gematik.de/fhir/isik/StructureDefinition/sd-mii-icu-koerpertemperatur-gelenk",
+    "version" : "6.0.0",
+    "kind" : "resource",
+    "type" : "Observation",
+    "derivation" : "constraint"
+  },
+  {
+    "filename" : "StructureDefinition-sd-mii-icu-koerpertemperatur-generisch.json",
+    "resourceType" : "StructureDefinition",
+    "id" : "sd-mii-icu-koerpertemperatur-generisch",
+    "url" : "https://gematik.de/fhir/isik/StructureDefinition/sd-mii-icu-koerpertemperatur-generisch",
+    "version" : "6.0.0",
+    "kind" : "resource",
+    "type" : "Observation",
+    "derivation" : "constraint"
+  },
+  {
+    "filename" : "StructureDefinition-sd-mii-icu-koerpertemperatur-halswirbelsaeule.json",
+    "resourceType" : "StructureDefinition",
+    "id" : "sd-mii-icu-koerpertemperatur-halswirbelsaeule",
+    "url" : "https://gematik.de/fhir/isik/StructureDefinition/sd-mii-icu-koerpertemperatur-halswirbelsaeule",
+    "version" : "6.0.0",
+    "kind" : "resource",
+    "type" : "Observation",
+    "derivation" : "constraint"
+  },
+  {
+    "filename" : "StructureDefinition-sd-mii-icu-koerpertemperatur-harnblase.json",
+    "resourceType" : "StructureDefinition",
+    "id" : "sd-mii-icu-koerpertemperatur-harnblase",
+    "url" : "https://gematik.de/fhir/isik/StructureDefinition/sd-mii-icu-koerpertemperatur-harnblase",
+    "version" : "6.0.0",
+    "kind" : "resource",
+    "type" : "Observation",
+    "derivation" : "constraint"
+  },
+  {
+    "filename" : "StructureDefinition-sd-mii-icu-koerpertemperatur-kern.json",
+    "resourceType" : "StructureDefinition",
+    "id" : "sd-mii-icu-koerpertemperatur-kern",
+    "url" : "https://gematik.de/fhir/isik/StructureDefinition/sd-mii-icu-koerpertemperatur-kern",
+    "version" : "6.0.0",
+    "kind" : "resource",
+    "type" : "Observation",
+    "derivation" : "constraint"
+  },
+  {
+    "filename" : "StructureDefinition-sd-mii-icu-koerpertemperatur-leiste.json",
+    "resourceType" : "StructureDefinition",
+    "id" : "sd-mii-icu-koerpertemperatur-leiste",
+    "url" : "https://gematik.de/fhir/isik/StructureDefinition/sd-mii-icu-koerpertemperatur-leiste",
+    "version" : "6.0.0",
+    "kind" : "resource",
+    "type" : "Observation",
+    "derivation" : "constraint"
+  },
+  {
+    "filename" : "StructureDefinition-sd-mii-icu-koerpertemperatur-lendenwirbelsaeule.json",
+    "resourceType" : "StructureDefinition",
+    "id" : "sd-mii-icu-koerpertemperatur-lendenwirbelsaeule",
+    "url" : "https://gematik.de/fhir/isik/StructureDefinition/sd-mii-icu-koerpertemperatur-lendenwirbelsaeule",
+    "version" : "6.0.0",
+    "kind" : "resource",
+    "type" : "Observation",
+    "derivation" : "constraint"
+  },
+  {
+    "filename" : "StructureDefinition-sd-mii-icu-koerpertemperatur-myokard.json",
+    "resourceType" : "StructureDefinition",
+    "id" : "sd-mii-icu-koerpertemperatur-myokard",
+    "url" : "https://gematik.de/fhir/isik/StructureDefinition/sd-mii-icu-koerpertemperatur-myokard",
+    "version" : "6.0.0",
+    "kind" : "resource",
+    "type" : "Observation",
+    "derivation" : "constraint"
+  },
+  {
+    "filename" : "StructureDefinition-sd-mii-icu-koerpertemperatur-nasal.json",
+    "resourceType" : "StructureDefinition",
+    "id" : "sd-mii-icu-koerpertemperatur-nasal",
+    "url" : "https://gematik.de/fhir/isik/StructureDefinition/sd-mii-icu-koerpertemperatur-nasal",
+    "version" : "6.0.0",
+    "kind" : "resource",
+    "type" : "Observation",
+    "derivation" : "constraint"
+  },
+  {
+    "filename" : "StructureDefinition-sd-mii-icu-koerpertemperatur-nasen-rachen-raum.json",
+    "resourceType" : "StructureDefinition",
+    "id" : "sd-mii-icu-koerpertemperatur-nasen-rachen-raum",
+    "url" : "https://gematik.de/fhir/isik/StructureDefinition/sd-mii-icu-koerpertemperatur-nasen-rachen-raum",
+    "version" : "6.0.0",
+    "kind" : "resource",
+    "type" : "Observation",
+    "derivation" : "constraint"
+  },
+  {
+    "filename" : "StructureDefinition-sd-mii-icu-koerpertemperatur-rektal.json",
+    "resourceType" : "StructureDefinition",
+    "id" : "sd-mii-icu-koerpertemperatur-rektal",
+    "url" : "https://gematik.de/fhir/isik/StructureDefinition/sd-mii-icu-koerpertemperatur-rektal",
+    "version" : "6.0.0",
+    "kind" : "resource",
+    "type" : "Observation",
+    "derivation" : "constraint"
+  },
+  {
+    "filename" : "StructureDefinition-sd-mii-icu-koerpertemperatur-speiseroehre.json",
+    "resourceType" : "StructureDefinition",
+    "id" : "sd-mii-icu-koerpertemperatur-speiseroehre",
+    "url" : "https://gematik.de/fhir/isik/StructureDefinition/sd-mii-icu-koerpertemperatur-speiseroehre",
+    "version" : "6.0.0",
+    "kind" : "resource",
+    "type" : "Observation",
+    "derivation" : "constraint"
+  },
+  {
+    "filename" : "StructureDefinition-sd-mii-icu-koerpertemperatur-stirn.json",
+    "resourceType" : "StructureDefinition",
+    "id" : "sd-mii-icu-koerpertemperatur-stirn",
+    "url" : "https://gematik.de/fhir/isik/StructureDefinition/sd-mii-icu-koerpertemperatur-stirn",
+    "version" : "6.0.0",
+    "kind" : "resource",
+    "type" : "Observation",
+    "derivation" : "constraint"
+  },
+  {
+    "filename" : "StructureDefinition-sd-mii-icu-koerpertemperatur-trommelfell.json",
+    "resourceType" : "StructureDefinition",
+    "id" : "sd-mii-icu-koerpertemperatur-trommelfell",
+    "url" : "https://gematik.de/fhir/isik/StructureDefinition/sd-mii-icu-koerpertemperatur-trommelfell",
+    "version" : "6.0.0",
+    "kind" : "resource",
+    "type" : "Observation",
+    "derivation" : "constraint"
+  },
+  {
+    "filename" : "StructureDefinition-sd-mii-icu-koerpertemperatur-unter-der-zunge.json",
+    "resourceType" : "StructureDefinition",
+    "id" : "sd-mii-icu-koerpertemperatur-unter-der-zunge",
+    "url" : "https://gematik.de/fhir/isik/StructureDefinition/sd-mii-icu-koerpertemperatur-unter-der-zunge",
+    "version" : "6.0.0",
+    "kind" : "resource",
+    "type" : "Observation",
+    "derivation" : "constraint"
+  },
+  {
+    "filename" : "StructureDefinition-sd-mii-icu-koerpertemperatur-vaginal.json",
+    "resourceType" : "StructureDefinition",
+    "id" : "sd-mii-icu-koerpertemperatur-vaginal",
+    "url" : "https://gematik.de/fhir/isik/StructureDefinition/sd-mii-icu-koerpertemperatur-vaginal",
+    "version" : "6.0.0",
+    "kind" : "resource",
+    "type" : "Observation",
+    "derivation" : "constraint"
+  },
+  {
+    "filename" : "StructureDefinition-sd-mii-icu-linksatrialer-druck.json",
+    "resourceType" : "StructureDefinition",
+    "id" : "sd-mii-icu-linksatrialer-druck",
+    "url" : "https://gematik.de/fhir/isik/StructureDefinition/sd-mii-icu-linksatrialer-druck",
+    "version" : "6.0.0",
+    "kind" : "resource",
+    "type" : "Observation",
+    "derivation" : "constraint"
+  },
+  {
+    "filename" : "StructureDefinition-sd-mii-icu-linksventri-herzindex-durch-indikatorverduennung.json",
+    "resourceType" : "StructureDefinition",
+    "id" : "sd-mii-icu-linksventri-herzindex-durch-indikatorverduennung",
+    "url" : "https://gematik.de/fhir/isik/StructureDefinition/sd-mii-icu-linksventri-herzindex-durch-indikatorverduennung",
+    "version" : "6.0.0",
+    "kind" : "resource",
+    "type" : "Observation",
+    "derivation" : "constraint"
+  },
+  {
+    "filename" : "StructureDefinition-sd-mii-icu-linksventri-schlagvolumen-durch-indikatorverduennung.json",
+    "resourceType" : "StructureDefinition",
+    "id" : "sd-mii-icu-linksventri-schlagvolumen-durch-indikatorverduennung",
+    "url" : "https://gematik.de/fhir/isik/StructureDefinition/sd-mii-icu-linksventri-schlagvolumen-durch-indikatorverduennung",
+    "version" : "6.0.0",
+    "kind" : "resource",
+    "type" : "Observation",
+    "derivation" : "constraint"
+  },
+  {
+    "filename" : "StructureDefinition-sd-mii-icu-linksventri-schlagvolumenindex-durch-indikatorverd.json",
+    "resourceType" : "StructureDefinition",
+    "id" : "sd-mii-icu-linksventri-schlagvolumenindex-durch-indikatorverd",
+    "url" : "https://gematik.de/fhir/isik/StructureDefinition/sd-mii-icu-linksventri-schlagvolumenindex-durch-indikatorverd",
+    "version" : "6.0.0",
+    "kind" : "resource",
+    "type" : "Observation",
+    "derivation" : "constraint"
+  },
+  {
+    "filename" : "StructureDefinition-sd-mii-icu-linksventrikulaerer-druck.json",
+    "resourceType" : "StructureDefinition",
+    "id" : "sd-mii-icu-linksventrikulaerer-druck",
+    "url" : "https://gematik.de/fhir/isik/StructureDefinition/sd-mii-icu-linksventrikulaerer-druck",
+    "version" : "6.0.0",
+    "kind" : "resource",
+    "type" : "Observation",
+    "derivation" : "constraint"
+  },
+  {
+    "filename" : "StructureDefinition-sd-mii-icu-linksventrikulaerer-herzindex.json",
+    "resourceType" : "StructureDefinition",
+    "id" : "sd-mii-icu-linksventrikulaerer-herzindex",
+    "url" : "https://gematik.de/fhir/isik/StructureDefinition/sd-mii-icu-linksventrikulaerer-herzindex",
+    "version" : "6.0.0",
+    "kind" : "resource",
+    "type" : "Observation",
+    "derivation" : "constraint"
+  },
+  {
+    "filename" : "StructureDefinition-sd-mii-icu-linksventrikulaeres-schlagvolumen.json",
+    "resourceType" : "StructureDefinition",
+    "id" : "sd-mii-icu-linksventrikulaeres-schlagvolumen",
+    "url" : "https://gematik.de/fhir/isik/StructureDefinition/sd-mii-icu-linksventrikulaeres-schlagvolumen",
+    "version" : "6.0.0",
+    "kind" : "resource",
+    "type" : "Observation",
+    "derivation" : "constraint"
+  },
+  {
+    "filename" : "StructureDefinition-sd-mii-icu-linksventrikulaeres-schlagvolumenindex.json",
+    "resourceType" : "StructureDefinition",
+    "id" : "sd-mii-icu-linksventrikulaeres-schlagvolumenindex",
+    "url" : "https://gematik.de/fhir/isik/StructureDefinition/sd-mii-icu-linksventrikulaeres-schlagvolumenindex",
+    "version" : "6.0.0",
+    "kind" : "resource",
+    "type" : "Observation",
+    "derivation" : "constraint"
+  },
+  {
+    "filename" : "StructureDefinition-sd-mii-icu-lv-herzzeitvolumen-durch-indikator.json",
+    "resourceType" : "StructureDefinition",
+    "id" : "sd-mii-icu-lv-herzzeitvolumen-durch-indikator",
+    "url" : "https://gematik.de/fhir/isik/StructureDefinition/sd-mii-icu-linksventri-herzzeitvolumen-durch-indikatorverd",
+    "version" : "6.0.0",
+    "kind" : "resource",
+    "type" : "Observation",
+    "derivation" : "constraint"
+  },
+  {
+    "filename" : "StructureDefinition-sd-mii-icu-monitoring-und-vitaldaten.json",
+    "resourceType" : "StructureDefinition",
+    "id" : "sd-mii-icu-monitoring-und-vitaldaten",
+    "url" : "https://gematik.de/fhir/isik/StructureDefinition/sd-mii-icu-monitoring-und-vitaldaten",
+    "version" : "6.0.0",
+    "kind" : "resource",
+    "type" : "Observation",
+    "derivation" : "constraint"
+  },
+  {
+    "filename" : "StructureDefinition-sd-mii-icu-o2saettigung-im-arteriellen-blut-durch-pulsoxymetrie.json",
+    "resourceType" : "StructureDefinition",
+    "id" : "sd-mii-icu-o2saettigung-im-arteriellen-blut-durch-pulsoxymetrie",
+    "url" : "https://gematik.de/fhir/isik/StructureDefinition/sd-mii-icu-o2saettigung-im-arteriellen-blut-durch-pulsoxymetrie",
+    "version" : "6.0.0",
+    "kind" : "resource",
+    "type" : "Observation",
+    "derivation" : "constraint"
+  },
+  {
+    "filename" : "StructureDefinition-sd-mii-icu-o2saettigung-im-blut-postduktal-durch-pulsoxymetrie.json",
+    "resourceType" : "StructureDefinition",
+    "id" : "sd-mii-icu-o2saettigung-im-blut-postduktal-durch-pulsoxymetrie",
+    "url" : "https://gematik.de/fhir/isik/StructureDefinition/sd-mii-icu-o2saettigung-im-blut-postduktal-durch-pulsoxymetrie",
+    "version" : "6.0.0",
+    "kind" : "resource",
+    "type" : "Observation",
+    "derivation" : "constraint"
+  },
+  {
+    "filename" : "StructureDefinition-sd-mii-icu-o2saettigung-im-blut-preduktal-durch-pulsoxymetrie.json",
+    "resourceType" : "StructureDefinition",
+    "id" : "sd-mii-icu-o2saettigung-im-blut-preduktal-durch-pulsoxymetrie",
+    "url" : "https://gematik.de/fhir/isik/StructureDefinition/sd-mii-icu-o2saettigung-im-blut-preduktal-durch-pulsoxymetrie",
+    "version" : "6.0.0",
+    "kind" : "resource",
+    "type" : "Observation",
+    "derivation" : "constraint"
+  },
+  {
+    "filename" : "StructureDefinition-sd-mii-icu-pulmonalarterieller-blutdruck.json",
+    "resourceType" : "StructureDefinition",
+    "id" : "sd-mii-icu-pulmonalarterieller-blutdruck",
+    "url" : "https://gematik.de/fhir/isik/StructureDefinition/sd-mii-icu-pulmonalarterieller-blutdruck",
+    "version" : "6.0.0",
+    "kind" : "resource",
+    "type" : "Observation",
+    "derivation" : "constraint"
+  },
+  {
+    "filename" : "StructureDefinition-sd-mii-icu-pulmonalarterieller-wedge-druck.json",
+    "resourceType" : "StructureDefinition",
+    "id" : "sd-mii-icu-pulmonalarterieller-wedge-druck",
+    "url" : "https://gematik.de/fhir/isik/StructureDefinition/sd-mii-icu-pulmonalarterieller-wedge-druck",
+    "version" : "6.0.0",
+    "kind" : "resource",
+    "type" : "Observation",
+    "derivation" : "constraint"
+  },
+  {
+    "filename" : "StructureDefinition-sd-mii-icu-pulmonalvaskulaerer-widerstandsindex.json",
+    "resourceType" : "StructureDefinition",
+    "id" : "sd-mii-icu-pulmonalvaskulaerer-widerstandsindex",
+    "url" : "https://gematik.de/fhir/isik/StructureDefinition/sd-mii-icu-pulmonalvaskulaerer-widerstandsindex",
+    "version" : "6.0.0",
+    "kind" : "resource",
+    "type" : "Observation",
+    "derivation" : "constraint"
+  },
+  {
+    "filename" : "StructureDefinition-sd-mii-icu-puls.json",
+    "resourceType" : "StructureDefinition",
+    "id" : "sd-mii-icu-puls",
+    "url" : "https://gematik.de/fhir/isik/StructureDefinition/sd-mii-icu-puls",
+    "version" : "6.0.0",
+    "kind" : "resource",
+    "type" : "Observation",
+    "derivation" : "constraint"
+  },
+  {
+    "filename" : "StructureDefinition-sd-mii-icu-rechtsatrialer-druck.json",
+    "resourceType" : "StructureDefinition",
+    "id" : "sd-mii-icu-rechtsatrialer-druck",
+    "url" : "https://gematik.de/fhir/isik/StructureDefinition/sd-mii-icu-rechtsatrialer-druck",
+    "version" : "6.0.0",
+    "kind" : "resource",
+    "type" : "Observation",
+    "derivation" : "constraint"
+  },
+  {
+    "filename" : "StructureDefinition-sd-mii-icu-rechtsventrikulaerer-druck.json",
+    "resourceType" : "StructureDefinition",
+    "id" : "sd-mii-icu-rechtsventrikulaerer-druck",
+    "url" : "https://gematik.de/fhir/isik/StructureDefinition/sd-mii-icu-rechtsventrikulaerer-druck",
+    "version" : "6.0.0",
+    "kind" : "resource",
+    "type" : "Observation",
+    "derivation" : "constraint"
+  },
+  {
+    "filename" : "StructureDefinition-sd-mii-icu-sonstige-pulsatile-druecke-generisch.json",
+    "resourceType" : "StructureDefinition",
+    "id" : "sd-mii-icu-sonstige-pulsatile-druecke-generisch",
+    "url" : "https://gematik.de/fhir/isik/StructureDefinition/sd-mii-icu-sonstige-pulsatile-druecke-generisch",
+    "version" : "6.0.0",
+    "kind" : "resource",
+    "type" : "Observation",
+    "derivation" : "constraint"
+  },
+  {
+    "filename" : "StructureDefinition-sd-mii-icu-systemischer-vaskulaerer-widerstandsindex.json",
+    "resourceType" : "StructureDefinition",
+    "id" : "sd-mii-icu-systemischer-vaskulaerer-widerstandsindex",
+    "url" : "https://gematik.de/fhir/isik/StructureDefinition/sd-mii-icu-systemischer-vaskulaerer-widerstandsindex",
+    "version" : "6.0.0",
+    "kind" : "resource",
+    "type" : "Observation",
+    "derivation" : "constraint"
+  },
+  {
+    "filename" : "StructureDefinition-sd-mii-icu-zentralvenoeser-blutdruck.json",
+    "resourceType" : "StructureDefinition",
+    "id" : "sd-mii-icu-zentralvenoeser-blutdruck",
+    "url" : "https://gematik.de/fhir/isik/StructureDefinition/sd-mii-icu-zentralvenoeser-blutdruck",
+    "version" : "6.0.0",
+    "kind" : "resource",
+    "type" : "Observation",
+    "derivation" : "constraint"
+  },
+  {
+    "filename" : "ValueSet-ConditionDiagnosisSeverity.json",
+    "resourceType" : "ValueSet",
+    "id" : "ConditionDiagnosisSeverity",
+    "version" : "6.0.0",
+    "url" : "https://gematik.de/fhir/isik/ValueSet/ConditionDiagnosisSeverity"
+  },
+  {
+    "filename" : "ValueSet-DiagnosesSCT.json",
+    "resourceType" : "ValueSet",
+    "id" : "DiagnosesSCT",
+    "version" : "6.0.0",
+    "url" : "https://gematik.de/fhir/isik/ValueSet/DiagnosesSCT"
+  },
+  {
+    "filename" : "ValueSet-EncounterReasonCodes.json",
+    "resourceType" : "ValueSet",
+    "id" : "EncounterReasonCodes",
+    "version" : "6.0.0",
+    "url" : "https://gematik.de/fhir/isik/ValueSet/EncounterReasonCodes"
+  },
+  {
+    "filename" : "ValueSet-FhirMimeTypeVS.json",
+    "resourceType" : "ValueSet",
+    "id" : "FhirMimeTypeVS",
+    "version" : "6.0.0",
+    "url" : "https://gematik.de/fhir/isik/ValueSet/FhirMimeTypeVS"
+  },
+  {
+    "filename" : "ValueSet-ISiKAccountType.json",
+    "resourceType" : "ValueSet",
+    "id" : "ISiKAccountType",
+    "version" : "6.0.0",
+    "url" : "https://gematik.de/fhir/isik/ValueSet/ISiKAccountType"
+  },
+  {
+    "filename" : "ValueSet-ISiKBehandlungsergebnisReha.json",
+    "resourceType" : "ValueSet",
+    "id" : "ISiKBehandlungsergebnisReha",
+    "version" : "6.0.0",
+    "url" : "https://gematik.de/fhir/isik/ValueSet/ISiKBehandlungsergebnisReha"
+  },
+  {
+    "filename" : "ValueSet-ISiKBesondereBehandlungsformReha.json",
+    "resourceType" : "ValueSet",
+    "id" : "ISiKBesondereBehandlungsformReha",
+    "version" : "6.0.0",
+    "url" : "https://gematik.de/fhir/isik/ValueSet/ISiKBesondereBehandlungsformReha"
+  },
+  {
+    "filename" : "ValueSet-ISiKConfidentialityCodes.json",
+    "resourceType" : "ValueSet",
+    "id" : "ISiKConfidentialityCodes",
+    "version" : "6.0.0",
+    "url" : "https://gematik.de/fhir/isik/ValueSet/ISiKConfidentialityCodes"
+  },
+  {
+    "filename" : "ValueSet-ISiKEncounterClassDE.json",
+    "resourceType" : "ValueSet",
+    "id" : "ISiKEncounterClassDE",
+    "version" : "6.0.0",
+    "url" : "https://gematik.de/fhir/isik/ValueSet/ISiKEncounterClassDE"
+  },
+  {
+    "filename" : "ValueSet-ISiKEncounterTypeErweiterungVS.json",
+    "resourceType" : "ValueSet",
+    "id" : "ISiKEncounterTypeErweiterungVS",
+    "version" : "6.0.0",
+    "url" : "https://gematik.de/fhir/isik/ValueSet/ISiKEncounterTypeErweiterungVS"
+  },
+  {
+    "filename" : "ValueSet-ISiKEntlassformReha.json",
+    "resourceType" : "ValueSet",
+    "id" : "ISiKEntlassformReha",
+    "version" : "6.0.0",
+    "url" : "https://gematik.de/fhir/isik/ValueSet/ISiKEntlassformReha"
+  },
+  {
+    "filename" : "ValueSet-ISiKKernTempSctVS.json",
+    "resourceType" : "ValueSet",
+    "id" : "ISiKKernTempSctVS",
+    "version" : "6.0.0",
+    "url" : "https://gematik.de/fhir/isik/ValueSet/ISiKKernTempSctVS"
+  },
+  {
+    "filename" : "ValueSet-ISiKLaborMethodeVS.json",
+    "resourceType" : "ValueSet",
+    "id" : "ISiKLaborMethodeVS",
+    "version" : "6.0.0",
+    "url" : "https://gematik.de/fhir/isik/ValueSet/ISiKLaborMethodeVS"
+  },
+  {
+    "filename" : "ValueSet-ISiKLaborbereichVS.json",
+    "resourceType" : "ValueSet",
+    "id" : "ISiKLaborbereichVS",
+    "version" : "6.0.0",
+    "url" : "https://gematik.de/fhir/isik/ValueSet/ISiKLaborbereichVS"
+  },
+  {
+    "filename" : "ValueSet-ISiKMedikationsartVS.json",
+    "resourceType" : "ValueSet",
+    "id" : "ISiKMedikationsartVS",
+    "version" : "6.0.0",
+    "url" : "https://gematik.de/fhir/isik/ValueSet/ISiKMedikationsartVS"
+  },
+  {
+    "filename" : "ValueSet-ISiKSpecificGenericTempLoincVS.json",
+    "resourceType" : "ValueSet",
+    "id" : "ISiKSpecificGenericTempLoincVS",
+    "version" : "6.0.0",
+    "url" : "https://gematik.de/fhir/isik/ValueSet/ISiKSpecificGenericTempLoincVS"
+  },
+  {
+    "filename" : "ValueSet-ISiKSpecificKernTempLoincVS.json",
+    "resourceType" : "ValueSet",
+    "id" : "ISiKSpecificKernTempLoincVS",
+    "version" : "6.0.0",
+    "url" : "https://gematik.de/fhir/isik/ValueSet/ISiKSpecificKernTempLoincVS"
+  },
+  {
+    "filename" : "ValueSet-ISiKSubscriptionTopicAppointmentVS.json",
+    "resourceType" : "ValueSet",
+    "id" : "ISiKSubscriptionTopicAppointmentVS",
+    "version" : "6.0.0",
+    "url" : "https://gematik.de/fhir/isik/ValueSet/ISiKSubscriptionTopicAppointmentVS"
+  },
+  {
+    "filename" : "ValueSet-ISiKSubscriptionTopicVS.json",
+    "resourceType" : "ValueSet",
+    "id" : "ISiKSubscriptionTopicVS",
+    "version" : "6.0.0",
+    "url" : "https://gematik.de/fhir/isik/ValueSet/ISiKSubscriptionTopicVS"
+  },
+  {
+    "filename" : "ValueSet-ISiKTerminCancelationReason.json",
+    "resourceType" : "ValueSet",
+    "id" : "ISiKTerminCancelationReason",
+    "version" : "6.0.0",
+    "url" : "https://gematik.de/fhir/isik/ValueSet/ISiKTerminCancelationReason"
+  },
+  {
+    "filename" : "ValueSet-ISiKTerminPriority.json",
+    "resourceType" : "ValueSet",
+    "id" : "ISiKTerminPriority",
+    "version" : "6.0.0",
+    "url" : "https://gematik.de/fhir/isik/ValueSet/ISiKTerminPriority"
+  },
+  {
+    "filename" : "ValueSet-ISiKUnterbrechungReha.json",
+    "resourceType" : "ValueSet",
+    "id" : "ISiKUnterbrechungReha",
+    "version" : "6.0.0",
+    "url" : "https://gematik.de/fhir/isik/ValueSet/ISiKUnterbrechungReha"
+  },
+  {
+    "filename" : "ValueSet-ISiKValueSetExample.json",
+    "resourceType" : "ValueSet",
+    "id" : "ISiKValueSetExample",
+    "url" : "http://example.org/fhir/ValueSet/TestValueSet",
+    "version" : "2.0.2"
+  },
+  {
+    "filename" : "ValueSet-MedikationsListeListModeVS.json",
+    "resourceType" : "ValueSet",
+    "id" : "MedikationsListeListModeVS",
+    "version" : "6.0.0",
+    "url" : "https://gematik.de/fhir/isik/ValueSet/MedikationsListeListModeVS"
+  },
+  {
+    "filename" : "ValueSet-ObservationCodesCRP.json",
+    "resourceType" : "ValueSet",
+    "id" : "ObservationCodesCRP",
+    "version" : "6.0.0",
+    "url" : "https://gematik.de/fhir/isik/ValueSet/ObservationCodesCRP"
+  },
+  {
+    "filename" : "ValueSet-ObservationCodesGFR.json",
+    "resourceType" : "ValueSet",
+    "id" : "ObservationCodesGFR",
+    "version" : "6.0.0",
+    "url" : "https://gematik.de/fhir/isik/ValueSet/ObservationCodesGFR"
+  },
+  {
+    "filename" : "ValueSet-ObservationCodesHb.json",
+    "resourceType" : "ValueSet",
+    "id" : "ObservationCodesHb",
+    "version" : "6.0.0",
+    "url" : "https://gematik.de/fhir/isik/ValueSet/ObservationCodesHb"
+  },
+  {
+    "filename" : "ValueSet-ObservationCodesPCT.json",
+    "resourceType" : "ValueSet",
+    "id" : "ObservationCodesPCT",
+    "version" : "6.0.0",
+    "url" : "https://gematik.de/fhir/isik/ValueSet/ObservationCodesPCT"
+  },
+  {
+    "filename" : "ValueSet-ObservationCodesSerumkreatinin.json",
+    "resourceType" : "ValueSet",
+    "id" : "ObservationCodesSerumkreatinin",
+    "version" : "6.0.0",
+    "url" : "https://gematik.de/fhir/isik/ValueSet/ObservationCodesSerumkreatinin"
+  },
+  {
+    "filename" : "ValueSet-ObservationCodesSerumnatrium.json",
+    "resourceType" : "ValueSet",
+    "id" : "ObservationCodesSerumnatrium",
+    "version" : "6.0.0",
+    "url" : "https://gematik.de/fhir/isik/ValueSet/ObservationCodesSerumnatrium"
+  },
+  {
+    "filename" : "ValueSet-ObservationCodesTSH.json",
+    "resourceType" : "ValueSet",
+    "id" : "ObservationCodesTSH",
+    "version" : "6.0.0",
+    "url" : "https://gematik.de/fhir/isik/ValueSet/ObservationCodesTSH"
+  },
+  {
+    "filename" : "ValueSet-ObservationCodesThrombozyten.json",
+    "resourceType" : "ValueSet",
+    "id" : "ObservationCodesThrombozyten",
+    "version" : "6.0.0",
+    "url" : "https://gematik.de/fhir/isik/ValueSet/ObservationCodesThrombozyten"
+  },
+  {
+    "filename" : "ValueSet-ObservationCodesTroponin.json",
+    "resourceType" : "ValueSet",
+    "id" : "ObservationCodesTroponin",
+    "version" : "6.0.0",
+    "url" : "https://gematik.de/fhir/isik/ValueSet/ObservationCodesTroponin"
+  },
+  {
+    "filename" : "ValueSet-ObservationUnitsCRP.json",
+    "resourceType" : "ValueSet",
+    "id" : "ObservationUnitsCRP",
+    "version" : "6.0.0",
+    "url" : "https://gematik.de/fhir/isik/ValueSet/ObservationUnitsCRP"
+  },
+  {
+    "filename" : "ValueSet-ObservationUnitsGFR.json",
+    "resourceType" : "ValueSet",
+    "id" : "ObservationUnitsGFR",
+    "version" : "6.0.0",
+    "url" : "https://gematik.de/fhir/isik/ValueSet/ObservationUnitsGFR"
+  },
+  {
+    "filename" : "ValueSet-ObservationUnitsHb.json",
+    "resourceType" : "ValueSet",
+    "id" : "ObservationUnitsHb",
+    "version" : "6.0.0",
+    "url" : "https://gematik.de/fhir/isik/ValueSet/ObservationUnitsHb"
+  },
+  {
+    "filename" : "ValueSet-ObservationUnitsPCT.json",
+    "resourceType" : "ValueSet",
+    "id" : "ObservationUnitsPCT",
+    "version" : "6.0.0",
+    "url" : "https://gematik.de/fhir/isik/ValueSet/ObservationUnitsPCT"
+  },
+  {
+    "filename" : "ValueSet-ObservationUnitsSerumkreatinin.json",
+    "resourceType" : "ValueSet",
+    "id" : "ObservationUnitsSerumkreatinin",
+    "version" : "6.0.0",
+    "url" : "https://gematik.de/fhir/isik/ValueSet/ObservationUnitsSerumkreatinin"
+  },
+  {
+    "filename" : "ValueSet-ObservationUnitsSerumnatrium.json",
+    "resourceType" : "ValueSet",
+    "id" : "ObservationUnitsSerumnatrium",
+    "version" : "6.0.0",
+    "url" : "https://gematik.de/fhir/isik/ValueSet/ObservationUnitsSerumnatrium"
+  },
+  {
+    "filename" : "ValueSet-ObservationUnitsTSH.json",
+    "resourceType" : "ValueSet",
+    "id" : "ObservationUnitsTSH",
+    "version" : "6.0.0",
+    "url" : "https://gematik.de/fhir/isik/ValueSet/ObservationUnitsTSH"
+  },
+  {
+    "filename" : "ValueSet-ObservationUnitsThrombozyten.json",
+    "resourceType" : "ValueSet",
+    "id" : "ObservationUnitsThrombozyten",
+    "version" : "6.0.0",
+    "url" : "https://gematik.de/fhir/isik/ValueSet/ObservationUnitsThrombozyten"
+  },
+  {
+    "filename" : "ValueSet-ObservationUnitsTroponin.json",
+    "resourceType" : "ValueSet",
+    "id" : "ObservationUnitsTroponin",
+    "version" : "6.0.0",
+    "url" : "https://gematik.de/fhir/isik/ValueSet/ObservationUnitsTroponin"
+  },
+  {
+    "filename" : "ValueSet-ProzedurenCodesSCT.json",
+    "resourceType" : "ValueSet",
+    "id" : "ProzedurenCodesSCT",
+    "version" : "6.0.0",
+    "url" : "https://gematik.de/fhir/isik/ValueSet/ProzedurenCodesSCT"
+  },
+  {
+    "filename" : "ValueSet-ProzedurenKategorieSCT.json",
+    "resourceType" : "ValueSet",
+    "id" : "ProzedurenKategorieSCT",
+    "version" : "6.0.0",
+    "url" : "https://gematik.de/fhir/isik/ValueSet/ProzedurenKategorieSCT"
+  },
+  {
+    "filename" : "ValueSet-ProzedurenReanimationCodesOPS.json",
+    "resourceType" : "ValueSet",
+    "id" : "ProzedurenReanimationCodesOPS",
+    "version" : "6.0.0",
+    "url" : "https://gematik.de/fhir/isik/ValueSet/ProzedurenReanimationCodesOPS"
+  },
+  {
+    "filename" : "ValueSet-ProzedurenReanimationCodesSCT.json",
+    "resourceType" : "ValueSet",
+    "id" : "ProzedurenReanimationCodesSCT",
+    "version" : "6.0.0",
+    "url" : "https://gematik.de/fhir/isik/ValueSet/ProzedurenReanimationCodesSCT"
+  },
+  {
+    "filename" : "ValueSet-SchwangerschaftEtMethodeVS.json",
+    "resourceType" : "ValueSet",
+    "id" : "SchwangerschaftEtMethodeVS",
+    "version" : "6.0.0",
+    "url" : "https://gematik.de/fhir/isik/ValueSet/SchwangerschaftEtMethodeVS"
+  },
+  {
+    "filename" : "ValueSet-SchwangerschaftsstatusVS.json",
+    "resourceType" : "ValueSet",
+    "id" : "SchwangerschaftsstatusVS",
+    "version" : "6.0.0",
+    "url" : "https://gematik.de/fhir/isik/ValueSet/SchwangerschaftsstatusVS"
+  },
+  {
+    "filename" : "ValueSet-SctRouteOfAdministration.json",
+    "resourceType" : "ValueSet",
+    "id" : "SctRouteOfAdministration",
+    "version" : "6.0.0",
+    "url" : "https://gematik.de/fhir/isik/ValueSet/SctRouteOfAdministration"
+  },
+  {
+    "filename" : "ValueSet-StillstatusVS.json",
+    "resourceType" : "ValueSet",
+    "id" : "StillstatusVS",
+    "version" : "6.0.0",
+    "url" : "https://gematik.de/fhir/isik/ValueSet/StillstatusVS"
+  },
+  {
+    "filename" : "ValueSet-current-smoking-status-uv-ips.json",
+    "resourceType" : "ValueSet",
+    "id" : "current-smoking-status-uv-ips",
+    "version" : "1.1.0",
+    "url" : "https://gematik.de/fhir/isik/ValueSet/current-smoking-status-uv-ips"
+  },
+  {
+    "filename" : "ValueSet-mii-vs-icu-body-site-observation-beatmung.json",
+    "resourceType" : "ValueSet",
+    "id" : "mii-vs-icu-body-site-observation-beatmung",
+    "version" : "6.0.0",
+    "url" : "https://gematik.de/fhir/isik/ValueSet/mii-vs-icu-body-site-observation-beatmung"
+  },
+  {
+    "filename" : "ValueSet-mii-vs-icu-bodysite-observation-pupillenbefund.json",
+    "resourceType" : "ValueSet",
+    "id" : "mii-vs-icu-bodysite-observation-pupillenbefund",
+    "version" : "6.0.0",
+    "url" : "https://gematik.de/fhir/isik/ValueSet/mii-vs-icu-bodysite-observation-pupillenbefund"
+  },
+  {
+    "filename" : "ValueSet-mii-vs-icu-category-observation-bilanzen-hl7.json",
+    "resourceType" : "ValueSet",
+    "id" : "mii-vs-icu-category-observation-bilanzen-hl7",
+    "version" : "6.0.0",
+    "url" : "https://gematik.de/fhir/isik/ValueSet/mii-vs-icu-category-observation-bilanzen-hl7"
+  },
+  {
+    "filename" : "ValueSet-mii-vs-icu-category-procedure-beatmung-snomed.json",
+    "resourceType" : "ValueSet",
+    "id" : "mii-vs-icu-category-procedure-beatmung-snomed",
+    "version" : "6.0.0",
+    "url" : "https://gematik.de/fhir/isik/ValueSet/mii-vs-icu-category-procedure-beatmung-snomed"
+  },
+  {
+    "filename" : "ValueSet-mii-vs-icu-code-observation-beatmung-loinc-iso11073.json",
+    "resourceType" : "ValueSet",
+    "id" : "mii-vs-icu-code-observation-beatmung-loinc-iso11073",
+    "version" : "6.0.0",
+    "url" : "https://gematik.de/fhir/isik/ValueSet/mii-vs-icu-code-observation-beatmung-loinc-iso11073"
+  },
+  {
+    "filename" : "ValueSet-mii-vs-icu-code-observation-beatmung-loinc.json",
+    "resourceType" : "ValueSet",
+    "id" : "mii-vs-icu-code-observation-beatmung-loinc",
+    "version" : "6.0.0",
+    "url" : "https://gematik.de/fhir/isik/ValueSet/mii-vs-icu-code-observation-beatmung-loinc"
+  },
+  {
+    "filename" : "ValueSet-mii-vs-icu-code-observation-beatmung-snomed.json",
+    "resourceType" : "ValueSet",
+    "id" : "mii-vs-icu-code-observation-beatmung-snomed",
+    "version" : "6.0.0",
+    "url" : "https://gematik.de/fhir/isik/ValueSet/mii-vs-icu-code-observation-beatmung-snomed"
+  },
+  {
+    "filename" : "ValueSet-mii-vs-icu-code-observation-bilanzen-iso11073.json",
+    "resourceType" : "ValueSet",
+    "id" : "mii-vs-icu-code-observation-bilanzen-iso11073",
+    "version" : "6.0.0",
+    "url" : "https://gematik.de/fhir/isik/ValueSet/mii-vs-icu-code-observation-bilanzen-iso11073"
+  },
+  {
+    "filename" : "ValueSet-mii-vs-icu-code-observation-bilanzen-loinc.json",
+    "resourceType" : "ValueSet",
+    "id" : "mii-vs-icu-code-observation-bilanzen-loinc",
+    "version" : "6.0.0",
+    "url" : "https://gematik.de/fhir/isik/ValueSet/mii-vs-icu-code-observation-bilanzen-loinc"
+  },
+  {
+    "filename" : "ValueSet-mii-vs-icu-code-observation-bilanzen-snomed.json",
+    "resourceType" : "ValueSet",
+    "id" : "mii-vs-icu-code-observation-bilanzen-snomed",
+    "version" : "6.0.0",
+    "url" : "https://gematik.de/fhir/isik/ValueSet/mii-vs-icu-code-observation-bilanzen-snomed"
+  },
+  {
+    "filename" : "ValueSet-mii-vs-icu-code-observation-pupillengroesse.json",
+    "resourceType" : "ValueSet",
+    "id" : "mii-vs-icu-code-observation-pupillengroesse",
+    "version" : "6.0.0",
+    "url" : "https://gematik.de/fhir/isik/ValueSet/mii-vs-icu-code-observation-pupillengroesse"
+  },
+  {
+    "filename" : "ValueSet-mii-vs-icu-code-observation-pupillenlichtreaktion.json",
+    "resourceType" : "ValueSet",
+    "id" : "mii-vs-icu-code-observation-pupillenlichtreaktion",
+    "version" : "6.0.0",
+    "url" : "https://gematik.de/fhir/isik/ValueSet/mii-vs-icu-code-observation-pupillenlichtreaktion"
+  },
+  {
+    "filename" : "ValueSet-mii-vs-icu-code-observation-pupillensymmetrie.json",
+    "resourceType" : "ValueSet",
+    "id" : "mii-vs-icu-code-observation-pupillensymmetrie",
+    "version" : "6.0.0",
+    "url" : "https://gematik.de/fhir/isik/ValueSet/mii-vs-icu-code-observation-pupillensymmetrie"
+  },
+  {
+    "filename" : "ValueSet-mii-vs-icu-code-oservation-pupillenform-loinc.json",
+    "resourceType" : "ValueSet",
+    "id" : "mii-vs-icu-code-oservation-pupillenform-loinc",
+    "version" : "6.0.0",
+    "url" : "https://gematik.de/fhir/isik/ValueSet/mii-vs-icu-code-oservation-pupillenform-loinc"
+  },
+  {
+    "filename" : "ValueSet-mii-vs-icu-code-procedure-beatmung-snomed.json",
+    "resourceType" : "ValueSet",
+    "id" : "mii-vs-icu-code-procedure-beatmung-snomed",
+    "version" : "6.0.0",
+    "url" : "https://gematik.de/fhir/isik/ValueSet/mii-vs-icu-code-procedure-beatmung-snomed"
+  },
+  {
+    "filename" : "ValueSet-mii-vs-icu-score-rass.json",
+    "resourceType" : "ValueSet",
+    "id" : "mii-vs-icu-score-rass",
+    "version" : "6.0.0",
+    "url" : "https://gematik.de/fhir/isik/ValueSet/mii-vs-icu-score-rass"
+  },
+  {
+    "filename" : "ValueSet-mii-vs-icu-unit-equivalent-ucum-milliliter.json",
+    "resourceType" : "ValueSet",
+    "id" : "mii-vs-icu-unit-equivalent-ucum-milliliter",
+    "version" : "6.0.0",
+    "url" : "https://gematik.de/fhir/isik/ValueSet/mii-vs-icu-unit-equivalent-ucum-milliliter"
+  },
+  {
+    "filename" : "ValueSet-mii-vs-prozedur-durchfuehrungsabsicht-snomedct.json",
+    "resourceType" : "ValueSet",
+    "id" : "mii-vs-prozedur-durchfuehrungsabsicht-snomedct",
+    "version" : "6.0.0",
+    "url" : "https://gematik.de/fhir/isik/ValueSet/mii-vs-prozedur-durchfuehrungsabsicht-snomedct"
+  },
+  {
+    "filename" : "ValueSet-mii-vs-prozedur-ops.json",
+    "resourceType" : "ValueSet",
+    "id" : "mii-vs-prozedur-ops",
+    "version" : "6.0.0",
+    "url" : "https://gematik.de/fhir/isik/ValueSet/mii-vs-prozedur-ops"
+  },
+  {
+    "filename" : "ValueSet-mii-vs-prozedur-opskategorien-snomedct.json",
+    "resourceType" : "ValueSet",
+    "id" : "mii-vs-prozedur-opskategorien-snomedct",
+    "version" : "6.0.0",
+    "url" : "https://gematik.de/fhir/isik/ValueSet/mii-vs-prozedur-opskategorien-snomedct"
+  },
+  {
+    "filename" : "ValueSet-mii-vs-prozedur-prozeduren-snomedct.json",
+    "resourceType" : "ValueSet",
+    "id" : "mii-vs-prozedur-prozeduren-snomedct",
+    "version" : "6.0.0",
+    "url" : "https://gematik.de/fhir/isik/ValueSet/mii-vs-prozedur-prozeduren-snomedct"
+  },
+  {
+    "filename" : "ValueSet-subscription-notification-type.json",
+    "resourceType" : "ValueSet",
+    "id" : "subscription-notification-type",
+    "version" : "4.3.0",
+    "url" : "http://hl7.org/fhir/ValueSet/subscription-notification-type"
+  },
+  {
+    "filename" : "ValueSet-vs-mii-icu-bodysite-observation-blutdruck.json",
+    "resourceType" : "ValueSet",
+    "id" : "vs-mii-icu-bodysite-observation-blutdruck",
+    "version" : "6.0.0",
+    "url" : "https://gematik.de/fhir/isik/ValueSet/vs-mii-icu-bodysite-observation-blutdruck"
+  },
+  {
+    "filename" : "ValueSet-vs-mii-icu-bodysite-observation-monitoring-und-vitaldaten.json",
+    "resourceType" : "ValueSet",
+    "id" : "vs-mii-icu-bodysite-observation-monitoring-und-vitaldaten",
+    "version" : "6.0.0",
+    "url" : "https://gematik.de/fhir/isik/ValueSet/vs-mii-icu-bodysite-observation-monitoring-und-vitaldaten"
+  },
+  {
+    "filename" : "ValueSet-vs-mii-icu-code-monitoring-und-vitaldaten-iso11073.json",
+    "resourceType" : "ValueSet",
+    "id" : "vs-mii-icu-code-monitoring-und-vitaldaten-iso11073",
+    "version" : "6.0.0",
+    "url" : "https://gematik.de/fhir/isik/ValueSet/vs-mii-icu-code-monitoring-und-vitaldaten-iso11073"
+  },
+  {
+    "filename" : "ValueSet-vs-mii-icu-code-monitoring-und-vitaldaten-loinc.json",
+    "resourceType" : "ValueSet",
+    "id" : "vs-mii-icu-code-monitoring-und-vitaldaten-loinc",
+    "version" : "6.0.0",
+    "url" : "https://gematik.de/fhir/isik/ValueSet/vs-mii-icu-code-monitoring-und-vitaldaten-loinc"
+  },
+  {
+    "filename" : "ValueSet-vs-mii-icu-code-monitoring-und-vitaldaten-snomed.json",
+    "resourceType" : "ValueSet",
+    "id" : "vs-mii-icu-code-monitoring-und-vitaldaten-snomed",
+    "version" : "6.0.0",
+    "url" : "https://gematik.de/fhir/isik/ValueSet/vs-mii-icu-code-monitoring-und-vitaldaten-snomed"
+  },
+  {
+    "filename" : "ValueSet-vs-mii-icu-method-observation-blutdruck.json",
+    "resourceType" : "ValueSet",
+    "id" : "vs-mii-icu-method-observation-blutdruck",
+    "version" : "6.0.0",
+    "url" : "https://gematik.de/fhir/isik/ValueSet/vs-mii-icu-method-observation-blutdruck"
+  }]
+}

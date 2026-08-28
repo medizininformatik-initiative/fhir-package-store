@@ -1,0 +1,20 @@
+{
+  "updated": "2026-05-12T11:51:29.612904+02:00",
+  "dependencies": {
+    "de.medizininformatikinitiative.kerndatensatz.meta": "2026.0.0",
+    "hl7.fhir.r4.core": "4.0.1",
+    "hl7.fhir.uv.sdc": "3.0.0",
+    "hl7.fhir.r4.examples": "4.0.1",
+    "de.gematik.isik": "5.1.1",
+    "hl7.fhir.uv.subscriptions-backport.r4": "1.1.0",
+    "de.basisprofil.r4": "1.5.4",
+    "de.ihe-d.terminology": "3.0.1",
+    "dvmd.kdl.r4": "2025.0.1",
+    "hl7.fhir.uv.extensions.r4": "5.2.0",
+    "de.fhir.medication": "1.0.0",
+    "hl7.terminology.r4": "6.5.0",
+    "de.gematik.ti": "1.1.1",
+    "de.gematik.terminology": "1.0.7"
+  },
+  "missing": {}
+}

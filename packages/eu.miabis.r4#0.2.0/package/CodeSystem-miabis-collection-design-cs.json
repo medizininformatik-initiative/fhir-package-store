@@ -1,0 +1,61 @@
+{
+  "resourceType": "CodeSystem",
+  "status": "active",
+  "content": "complete",
+  "name": "CollectionDesignCS",
+  "id": "miabis-collection-design-cs",
+  "title": "MIABIS Collection Design code System",
+  "description": "Codes describing the overall design of the collection that explains how the collection was/is built up.",
+  "url": "https://fhir.bbmri-eric.eu/fhir/CodeSystem/miabis-collection-design-cs",
+  "concept": [
+    {
+      "code": "CaseControl",
+      "display": "Case-control"
+    },
+    {
+      "code": "CrossSectional",
+      "display": "Cross-sectional"
+    },
+    {
+      "code": "LongitudinalCohort",
+      "display": "Longitudinal cohort"
+    },
+    {
+      "code": "TwinStudy",
+      "display": "Twin-study"
+    },
+    {
+      "code": "QualityControl",
+      "display": "Quality control study"
+    },
+    {
+      "code": "PopulationBasedCohort",
+      "display": "Population-based cohort"
+    },
+    {
+      "code": "DiseaseSpecificCohort",
+      "display": "Disease-specific cohort"
+    },
+    {
+      "code": "BirthCohort",
+      "display": "Birth cohort"
+    },
+    {
+      "code": "MicrobialCollection",
+      "display": "Microbial collection (if applicable with resistance data)"
+    },
+    {
+      "code": "ReferenceCollection",
+      "display": "Reference collection"
+    },
+    {
+      "code": "RareDiseaseCollection",
+      "display": "Rare disease collection"
+    },
+    {
+      "code": "Other",
+      "display": "Other"
+    }
+  ],
+  "count": 12
+}

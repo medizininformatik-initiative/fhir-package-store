@@ -1,0 +1,16 @@
+{
+  "resourceType": "ValueSet",
+  "status": "active",
+  "name": "DiagnosisVS",
+  "id": "miabis-diagnosis-vs",
+  "title": "DiagnosisVS",
+  "description": "Value set containig ICD-10 codes for diagnosis",
+  "url": "https://fhir.bbmri-eric.eu/fhir/ValueSet/miabis-diagnosis-vs",
+  "compose": {
+    "include": [
+      {
+        "system": "http://hl7.org/fhir/sid/icd-10"
+      }
+    ]
+  }
+}

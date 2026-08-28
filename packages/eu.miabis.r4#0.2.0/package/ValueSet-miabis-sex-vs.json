@@ -1,0 +1,16 @@
+{
+  "resourceType": "ValueSet",
+  "status": "active",
+  "name": "SexVS",
+  "id": "miabis-sex-vs",
+  "title": "Sex Value Set",
+  "description": "Biological sex of the sample donor. Can be one or more of the provided values:",
+  "url": "https://fhir.bbmri-eric.eu/fhir/ValueSet/miabis-sex-vs",
+  "compose": {
+    "include": [
+      {
+        "system": "https://fhir.bbmri-eric.eu/fhir/CodeSystem/miabis-sex-cs"
+      }
+    ]
+  }
+}

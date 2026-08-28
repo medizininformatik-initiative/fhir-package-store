@@ -1,0 +1,120 @@
+{
+  "index-version" : 2,
+  "files" : [
+    {
+      "filename" : "DocumentReference-Kulturprotokoll.json",
+      "resourceType" : "DocumentReference",
+      "id" : "Kulturprotokoll",
+      "content" : "["
+    },
+    {
+      "filename" : "DocumentReference-ProtocolCRISPRTP53.json",
+      "resourceType" : "DocumentReference",
+      "id" : "ProtocolCRISPRTP53",
+      "content" : "["
+    },
+    {
+      "filename" : "Observation-DNAConcentrationObs1.json",
+      "resourceType" : "Observation",
+      "id" : "DNAConcentrationObs1"
+    },
+    {
+      "filename" : "Observation-KaryotypOrganoidLunge.json",
+      "resourceType" : "Observation",
+      "id" : "KaryotypOrganoidLunge"
+    },
+    {
+      "filename" : "Observation-MorphologieOrganoidLunge.json",
+      "resourceType" : "Observation",
+      "id" : "MorphologieOrganoidLunge"
+    },
+    {
+      "filename" : "Observation-ProliferationOrganoidLunge.json",
+      "resourceType" : "Observation",
+      "id" : "ProliferationOrganoidLunge"
+    },
+    {
+      "filename" : "Observation-QualitaetspruefungBuffyCoat.json",
+      "resourceType" : "Observation",
+      "id" : "QualitaetspruefungBuffyCoat"
+    },
+    {
+      "filename" : "Observation-QualitaetspruefungPlasma.json",
+      "resourceType" : "Observation",
+      "id" : "QualitaetspruefungPlasma"
+    },
+    {
+      "filename" : "Observation-WachstumstypOrganoidLunge.json",
+      "resourceType" : "Observation",
+      "id" : "WachstumstypOrganoidLunge"
+    },
+    {
+      "filename" : "Organization-BiobankMusterstadt.json",
+      "resourceType" : "Organization",
+      "id" : "BiobankMusterstadt"
+    },
+    {
+      "filename" : "Organization-Mustersammlung.json",
+      "resourceType" : "Organization",
+      "id" : "Mustersammlung"
+    },
+    {
+      "filename" : "ServiceRequest-GewebeBiopsie.json",
+      "resourceType" : "ServiceRequest",
+      "id" : "GewebeBiopsie"
+    },
+    {
+      "filename" : "Specimen-AliquotBuffyCoat1.json",
+      "resourceType" : "Specimen",
+      "id" : "AliquotBuffyCoat1",
+      "type" : "{"
+    },
+    {
+      "filename" : "Specimen-AliquotBuffyCoat2.json",
+      "resourceType" : "Specimen",
+      "id" : "AliquotBuffyCoat2",
+      "type" : "{"
+    },
+    {
+      "filename" : "Specimen-AliquotgruppeBuffyCoat.json",
+      "resourceType" : "Specimen",
+      "id" : "AliquotgruppeBuffyCoat",
+      "type" : "{"
+    },
+    {
+      "filename" : "Specimen-AliquotgruppeDNA.json",
+      "resourceType" : "Specimen",
+      "id" : "AliquotgruppeDNA",
+      "type" : "{"
+    },
+    {
+      "filename" : "Specimen-AliquotgruppePlasma.json",
+      "resourceType" : "Specimen",
+      "id" : "AliquotgruppePlasma",
+      "type" : "{"
+    },
+    {
+      "filename" : "Specimen-MusterprobeFluessig.json",
+      "resourceType" : "Specimen",
+      "id" : "MusterprobeFluessig",
+      "type" : "{"
+    },
+    {
+      "filename" : "Specimen-MusterprobeGewebe.json",
+      "resourceType" : "Specimen",
+      "id" : "MusterprobeGewebe",
+      "type" : "{"
+    },
+    {
+      "filename" : "Specimen-OrganoidLunge.json",
+      "resourceType" : "Specimen",
+      "id" : "OrganoidLunge",
+      "type" : "{"
+    },
+    {
+      "filename" : "Substance-Heparin.json",
+      "resourceType" : "Substance",
+      "id" : "Heparin"
+    }
+  ]
+}

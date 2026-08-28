@@ -1,0 +1,1 @@
+{"resourceType":"PractitionerRole","id":"mii-exa-mtb-study-investigator-biontech","meta":{"profile":["https://www.medizininformatik-initiative.de/fhir/modul-studie/StructureDefinition/mii-pr-studie-beteiligte-person"]},"code":[{"coding":[{"system":"http://snomed.info/sct","code":"768734005","display":"Study coordinator"}]}]}

@@ -1,0 +1,12 @@
+{
+  "name": "eu.miabis.r4",
+  "version": "0.2.0",
+  "description": "Minimum Information About BIobank data Sharing",
+  "author": "radovantomasik",
+  "fhirVersions": [
+    "4.0.1"
+  ],
+  "dependencies": {
+    "hl7.fhir.r4.core": "4.0.1"
+  }
+}
