@@ -1,0 +1,112 @@
+name: Sync MII Packages
+
+# Tägliches Polling der in repos.yaml gelisteten MII-Repos. Neue Releases
+# werden als .tgz heruntergeladen und als batched PR vorgeschlagen.
+# Kein Auto-Merge — Maintainer reviewen vor dem Mergen, damit broken Upstream-
+# Builds (siehe Mikrobio alpha-2 ohne Snapshots) nicht in den Cache schlüpfen.
+
+on:
+  schedule:
+    - cron: '0 6 * * *'   # täglich 06:00 UTC
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  pull-requests: write
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Setup yq
+        run: |
+          sudo wget -qO /usr/local/bin/yq \
+            https://github.com/mikefarah/yq/releases/download/v4.44.3/yq_linux_amd64
+          sudo chmod +x /usr/local/bin/yq
+
+      - name: Fetch latest releases per repo
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          set -euo pipefail
+          changes=0
+          summary=""
+
+          count=$(yq '.repos | length' repos.yaml)
+          for i in $(seq 0 $((count - 1))); do
+            repo=$(yq ".repos[$i].repo" repos.yaml)
+            allow_pre=$(yq ".repos[$i].allow_prerelease // false" repos.yaml)
+            skip=$(yq ".repos[$i].skip // false" repos.yaml)
+
+            if [ "$skip" = "true" ]; then
+              echo "SKIP $repo (skip:true in repos.yaml)"
+              continue
+            fi
+
+            # Latest release oder latest including prerelease
+            if [ "$allow_pre" = "true" ]; then
+              tag=$(gh release list --repo "$repo" --limit 1 --json tagName --jq '.[0].tagName' || echo "")
+            else
+              tag=$(gh release view --repo "$repo" --json tagName --jq '.tagName' 2>/dev/null || echo "")
+            fi
+
+            if [ -z "$tag" ]; then
+              echo "WARN $repo: no release found"
+              continue
+            fi
+
+            asset=$(gh release view "$tag" --repo "$repo" --json assets \
+              --jq ".assets[] | select(.name | endswith(\".tgz\")) | .name" | head -1)
+
+            if [ -z "$asset" ]; then
+              echo "WARN $repo $tag: no .tgz asset"
+              continue
+            fi
+
+            if [ -f "package-tarballs/$asset" ]; then
+              echo "OK   $repo $tag — already cached ($asset)"
+              continue
+            fi
+
+            echo "NEW  $repo $tag → $asset"
+            gh release download "$tag" --repo "$repo" -p "$asset" -D package-tarballs/
+            changes=$((changes + 1))
+            summary="$summary"$'\n'"- \`$repo\` $tag → \`$asset\`"
+          done
+
+          if [ "$changes" -eq 0 ]; then
+            echo "No new packages."
+            echo "HAS_CHANGES=false" >> "$GITHUB_ENV"
+          else
+            {
+              echo "HAS_CHANGES=true"
+              echo "PR_BODY<<EOF_PR"
+              echo "## Auto-Sync Ergebnis"
+              echo ""
+              echo "$changes neue MII-Paket(e) auf Basis von \`repos.yaml\`:"
+              echo "$summary"
+              echo ""
+              echo "Trigger: scheduled run (06:00 UTC)"
+              echo ""
+              echo "**Review-Hinweise:**"
+              echo "- Snapshots prüfen: \`tar -xOzf <pkg> package/StructureDefinition-*.json | jq '.snapshot.element | length'\`"
+              echo "- Bei kaputtem Upstream-Build (z.B. ohne Snapshots): PR schließen, \`repos.yaml\` auf \`skip: true\` setzen, lokal patchen + unter \`overrides/\` einchecken"
+              echo ""
+              echo "cc @ThomasDeBe @julsas"
+              echo "EOF_PR"
+            } >> "$GITHUB_ENV"
+          fi
+
+      - name: Open PR with new tarballs
+        if: env.HAS_CHANGES == 'true'
+        uses: peter-evans/create-pull-request@v6
+        with:
+          branch: auto/mii-package-sync
+          title: "Auto: sync MII package releases"
+          body: ${{ env.PR_BODY }}
+          commit-message: "Auto-sync: new MII package releases"
+          labels: auto-sync
+          reviewers: ThomasDeBe,julsas
+          delete-branch: true
