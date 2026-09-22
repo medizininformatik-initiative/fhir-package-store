@@ -1,0 +1,5374 @@
+{
+  "resourceType": "Questionnaire",
+  "id": "mii-qst-pro-promis-29-de",
+  "meta": {
+    "profile": [
+      "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-questionnaire|2027.0.0-ballot.1"
+    ]
+  },
+  "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/Questionnaire/mii-qst-pro-promis-29-de",
+  "title": "MII QST PRO PROMIS-29 (German)",
+  "description": "PROMIS-29 Profile v2.1 - German language variant derived from English source",
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/artifact-versionAlgorithm",
+      "valueCoding": {
+        "code": "natural",
+        "system": "http://hl7.org/fhir/version-algorithm",
+        "display": "Natural"
+      }
+    },
+    {
+      "extension": [
+        {
+          "url": "displayable",
+          "valueBoolean": true
+        },
+        {
+          "url": "collectable",
+          "valueBoolean": true
+        },
+        {
+          "url": "calculatable",
+          "valueBoolean": true
+        },
+        {
+          "url": "extractable",
+          "valueBoolean": true
+        },
+        {
+          "url": "domainAligned",
+          "valueBoolean": true
+        }
+      ],
+      "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-ex-pro-questionnaire-capabilities"
+    },
+    {
+      "valueExpression": {
+        "name": "physicalFunctionRaw",
+        "language": "text/fhirpath",
+        "expression": "%resource.item.item.where(linkId.matches('^promis-pfa(11|21|23|53)$')).answer.value.weight().sum()"
+      },
+      "url": "http://hl7.org/fhir/StructureDefinition/variable"
+    },
+    {
+      "valueExpression": {
+        "name": "anxietyRaw",
+        "language": "text/fhirpath",
+        "expression": "%resource.item.item.where(linkId.matches('^promis-edanx(01|40|41|53)$')).answer.value.weight().sum()"
+      },
+      "url": "http://hl7.org/fhir/StructureDefinition/variable"
+    },
+    {
+      "valueExpression": {
+        "name": "depressionRaw",
+        "language": "text/fhirpath",
+        "expression": "%resource.item.item.where(linkId.matches('^promis-eddep(04|06|29|41)$')).answer.value.weight().sum()"
+      },
+      "url": "http://hl7.org/fhir/StructureDefinition/variable"
+    },
+    {
+      "valueExpression": {
+        "name": "fatigueRaw",
+        "language": "text/fhirpath",
+        "expression": "%resource.item.item.where(linkId.matches('^promis-(hi7|an3|fatexp41|fatexp40)$')).answer.value.weight().sum()"
+      },
+      "url": "http://hl7.org/fhir/StructureDefinition/variable"
+    },
+    {
+      "valueExpression": {
+        "name": "sleepRaw",
+        "language": "text/fhirpath",
+        "expression": "%resource.item.item.where(linkId.matches('^promis-(sleep109|sleep116|sleep20|sleep44)$')).answer.value.weight().sum()"
+      },
+      "url": "http://hl7.org/fhir/StructureDefinition/variable"
+    },
+    {
+      "valueExpression": {
+        "name": "socialRaw",
+        "language": "text/fhirpath",
+        "expression": "%resource.item.item.where(linkId.matches('^promis-srpper(11-caps|18-caps|23-caps|46-caps)$')).answer.value.weight().sum()"
+      },
+      "url": "http://hl7.org/fhir/StructureDefinition/variable"
+    },
+    {
+      "valueExpression": {
+        "name": "painInterferenceRaw",
+        "language": "text/fhirpath",
+        "expression": "%resource.item.item.where(linkId.matches('^promis-painin(9|22|31|34)$')).answer.value.weight().sum()"
+      },
+      "url": "http://hl7.org/fhir/StructureDefinition/variable"
+    }
+  ],
+  "useContext": [
+    {
+      "valueReference": {
+        "display": "PROMIS (Patient-Reported Outcomes Measurement Information System) (https://www.healthmeasures.net/explore-measurement-systems/promis)"
+      },
+      "code": {
+        "code": "focus",
+        "system": "http://terminology.hl7.org/CodeSystem/usage-context-type"
+      }
+    },
+    {
+      "valueReference": {
+        "display": "PROMIS National Center Deutschland (CPCOR Charité) — Curator of the official German translations provided by PCOR-MII (https://cpcor.charite.de/promis_national_center_deutschland)"
+      },
+      "code": {
+        "code": "focus",
+        "system": "http://terminology.hl7.org/CodeSystem/usage-context-type"
+      }
+    },
+    {
+      "valueReference": {
+        "display": "PROMIS-29 Profile Documentation (https://www.healthmeasures.net/explore-measurement-systems/promis)"
+      },
+      "code": {
+        "code": "focus",
+        "system": "http://terminology.hl7.org/CodeSystem/usage-context-type"
+      }
+    }
+  ],
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "https://cpcor.charite.de/promis_national_center_deutschland/nutzungsanfragen"
+        }
+      ],
+      "name": "PROMIS National Center Deutschland (CPCOR)"
+    }
+  ],
+  "derivedFrom": [
+    "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/Questionnaire/mii-qst-pro-promis-29"
+  ],
+  "code": [
+    {
+      "code": "62337-1",
+      "system": "http://loinc.org",
+      "display": "PROMIS item bank - 29 profile"
+    },
+    {
+      "code": "promis-promis29",
+      "system": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-questionnaire-catalogue",
+      "display": "PROMIS-29 Questionnaire"
+    }
+  ],
+  "item": [
+    {
+      "item": [
+        {
+          "linkId": "PROMIS-29.PhysicalFunction.Description",
+          "type": "display",
+          "text": "Sind Sie zu folgenden Tätigkeiten imstande:"
+        },
+        {
+          "code": [
+            {
+              "code": "61597-1",
+              "system": "http://loinc.org",
+              "display": "Are you able to do chores such as vacuuming or yard work [PROMIS]"
+            }
+          ],
+          "answerOption": [
+            {
+              "valueCoding": {
+                "code": "LA13912-3",
+                "system": "http://loinc.org",
+                "display": "Kann ich gar nicht",
+                "_display": {
+                  "extension": [
+                    {
+                      "extension": [
+                        {
+                          "url": "lang",
+                          "valueCode": "en"
+                        },
+                        {
+                          "url": "content",
+                          "valueString": "Unable to do"
+                        }
+                      ],
+                      "url": "http://hl7.org/fhir/StructureDefinition/translation"
+                    }
+                  ]
+                }
+              },
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/itemWeight",
+                  "valueDecimal": 1
+                }
+              ]
+            },
+            {
+              "valueCoding": {
+                "code": "LA13919-8",
+                "system": "http://loinc.org",
+                "display": "Mit großen Schwierigkeiten",
+                "_display": {
+                  "extension": [
+                    {
+                      "extension": [
+                        {
+                          "url": "lang",
+                          "valueCode": "en"
+                        },
+                        {
+                          "url": "content",
+                          "valueString": "With much difficulty"
+                        }
+                      ],
+                      "url": "http://hl7.org/fhir/StructureDefinition/translation"
+                    }
+                  ]
+                }
+              },
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/itemWeight",
+                  "valueDecimal": 2
+                }
+              ]
+            },
+            {
+              "valueCoding": {
+                "code": "LA13920-6",
+                "system": "http://loinc.org",
+                "display": "Mit einigen Schwierigkeiten",
+                "_display": {
+                  "extension": [
+                    {
+                      "extension": [
+                        {
+                          "url": "lang",
+                          "valueCode": "en"
+                        },
+                        {
+                          "url": "content",
+                          "valueString": "With some difficulty"
+                        }
+                      ],
+                      "url": "http://hl7.org/fhir/StructureDefinition/translation"
+                    }
+                  ]
+                }
+              },
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/itemWeight",
+                  "valueDecimal": 3
+                }
+              ]
+            },
+            {
+              "valueCoding": {
+                "code": "LA13918-0",
+                "system": "http://loinc.org",
+                "display": "Mit geringen Schwierigkeiten",
+                "_display": {
+                  "extension": [
+                    {
+                      "extension": [
+                        {
+                          "url": "lang",
+                          "valueCode": "en"
+                        },
+                        {
+                          "url": "content",
+                          "valueString": "With a little difficulty"
+                        }
+                      ],
+                      "url": "http://hl7.org/fhir/StructureDefinition/translation"
+                    }
+                  ]
+                }
+              },
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/itemWeight",
+                  "valueDecimal": 4
+                }
+              ]
+            },
+            {
+              "valueCoding": {
+                "code": "LA13921-4",
+                "system": "http://loinc.org",
+                "display": "Ohne jede Schwierigkeiten",
+                "_display": {
+                  "extension": [
+                    {
+                      "extension": [
+                        {
+                          "url": "lang",
+                          "valueCode": "en"
+                        },
+                        {
+                          "url": "content",
+                          "valueString": "Without any difficulty"
+                        }
+                      ],
+                      "url": "http://hl7.org/fhir/StructureDefinition/translation"
+                    }
+                  ]
+                }
+              },
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/itemWeight",
+                  "valueDecimal": 5
+                }
+              ]
+            }
+          ],
+          "linkId": "promis-pfa11",
+          "type": "choice",
+          "text": "Können Sie Hausarbeiten erledigen, z.B. Staubsaugen oder Gartenarbeit?",
+          "_text": {
+            "extension": [
+              {
+                "extension": [
+                  {
+                    "url": "lang",
+                    "valueCode": "en"
+                  },
+                  {
+                    "url": "content",
+                    "valueString": "Are you able to do chores such as vacuuming or yard work [PROMIS]"
+                  }
+                ],
+                "url": "http://hl7.org/fhir/StructureDefinition/translation"
+              }
+            ]
+          }
+        },
+        {
+          "code": [
+            {
+              "code": "61607-8",
+              "system": "http://loinc.org",
+              "display": "Are you able to go up and down stairs at a normal pace [PROMIS]"
+            }
+          ],
+          "answerOption": [
+            {
+              "valueCoding": {
+                "code": "LA13912-3",
+                "system": "http://loinc.org",
+                "display": "Kann ich gar nicht",
+                "_display": {
+                  "extension": [
+                    {
+                      "extension": [
+                        {
+                          "url": "lang",
+                          "valueCode": "en"
+                        },
+                        {
+                          "url": "content",
+                          "valueString": "Unable to do"
+                        }
+                      ],
+                      "url": "http://hl7.org/fhir/StructureDefinition/translation"
+                    }
+                  ]
+                }
+              },
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/itemWeight",
+                  "valueDecimal": 1
+                }
+              ]
+            },
+            {
+              "valueCoding": {
+                "code": "LA13919-8",
+                "system": "http://loinc.org",
+                "display": "Mit großen Schwierigkeiten",
+                "_display": {
+                  "extension": [
+                    {
+                      "extension": [
+                        {
+                          "url": "lang",
+                          "valueCode": "en"
+                        },
+                        {
+                          "url": "content",
+                          "valueString": "With much difficulty"
+                        }
+                      ],
+                      "url": "http://hl7.org/fhir/StructureDefinition/translation"
+                    }
+                  ]
+                }
+              },
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/itemWeight",
+                  "valueDecimal": 2
+                }
+              ]
+            },
+            {
+              "valueCoding": {
+                "code": "LA13920-6",
+                "system": "http://loinc.org",
+                "display": "Mit einigen Schwierigkeiten",
+                "_display": {
+                  "extension": [
+                    {
+                      "extension": [
+                        {
+                          "url": "lang",
+                          "valueCode": "en"
+                        },
+                        {
+                          "url": "content",
+                          "valueString": "With some difficulty"
+                        }
+                      ],
+                      "url": "http://hl7.org/fhir/StructureDefinition/translation"
+                    }
+                  ]
+                }
+              },
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/itemWeight",
+                  "valueDecimal": 3
+                }
+              ]
+            },
+            {
+              "valueCoding": {
+                "code": "LA13918-0",
+                "system": "http://loinc.org",
+                "display": "Mit geringen Schwierigkeiten",
+                "_display": {
+                  "extension": [
+                    {
+                      "extension": [
+                        {
+                          "url": "lang",
+                          "valueCode": "en"
+                        },
+                        {
+                          "url": "content",
+                          "valueString": "With a little difficulty"
+                        }
+                      ],
+                      "url": "http://hl7.org/fhir/StructureDefinition/translation"
+                    }
+                  ]
+                }
+              },
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/itemWeight",
+                  "valueDecimal": 4
+                }
+              ]
+            },
+            {
+              "valueCoding": {
+                "code": "LA13921-4",
+                "system": "http://loinc.org",
+                "display": "Ohne jede Schwierigkeiten",
+                "_display": {
+                  "extension": [
+                    {
+                      "extension": [
+                        {
+                          "url": "lang",
+                          "valueCode": "en"
+                        },
+                        {
+                          "url": "content",
+                          "valueString": "Without any difficulty"
+                        }
+                      ],
+                      "url": "http://hl7.org/fhir/StructureDefinition/translation"
+                    }
+                  ]
+                }
+              },
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/itemWeight",
+                  "valueDecimal": 5
+                }
+              ]
+            }
+          ],
+          "linkId": "promis-pfa21",
+          "type": "choice",
+          "text": "Können Sie mit normaler Geschwindigkeit Treppen hoch- und runtergehen?",
+          "_text": {
+            "extension": [
+              {
+                "extension": [
+                  {
+                    "url": "lang",
+                    "valueCode": "en"
+                  },
+                  {
+                    "url": "content",
+                    "valueString": "Are you able to go up and down stairs at a normal pace [PROMIS]"
+                  }
+                ],
+                "url": "http://hl7.org/fhir/StructureDefinition/translation"
+              }
+            ]
+          }
+        },
+        {
+          "code": [
+            {
+              "code": "61609-4",
+              "system": "http://loinc.org",
+              "display": "Are you able to go for a walk of at least 15 minutes [PROMIS]"
+            }
+          ],
+          "answerOption": [
+            {
+              "valueCoding": {
+                "code": "LA13912-3",
+                "system": "http://loinc.org",
+                "display": "Kann ich gar nicht",
+                "_display": {
+                  "extension": [
+                    {
+                      "extension": [
+                        {
+                          "url": "lang",
+                          "valueCode": "en"
+                        },
+                        {
+                          "url": "content",
+                          "valueString": "Unable to do"
+                        }
+                      ],
+                      "url": "http://hl7.org/fhir/StructureDefinition/translation"
+                    }
+                  ]
+                }
+              },
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/itemWeight",
+                  "valueDecimal": 1
+                }
+              ]
+            },
+            {
+              "valueCoding": {
+                "code": "LA13919-8",
+                "system": "http://loinc.org",
+                "display": "Mit großen Schwierigkeiten",
+                "_display": {
+                  "extension": [
+                    {
+                      "extension": [
+                        {
+                          "url": "lang",
+                          "valueCode": "en"
+                        },
+                        {
+                          "url": "content",
+                          "valueString": "With much difficulty"
+                        }
+                      ],
+                      "url": "http://hl7.org/fhir/StructureDefinition/translation"
+                    }
+                  ]
+                }
+              },
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/itemWeight",
+                  "valueDecimal": 2
+                }
+              ]
+            },
+            {
+              "valueCoding": {
+                "code": "LA13920-6",
+                "system": "http://loinc.org",
+                "display": "Mit einigen Schwierigkeiten",
+                "_display": {
+                  "extension": [
+                    {
+                      "extension": [
+                        {
+                          "url": "lang",
+                          "valueCode": "en"
+                        },
+                        {
+                          "url": "content",
+                          "valueString": "With some difficulty"
+                        }
+                      ],
+                      "url": "http://hl7.org/fhir/StructureDefinition/translation"
+                    }
+                  ]
+                }
+              },
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/itemWeight",
+                  "valueDecimal": 3
+                }
+              ]
+            },
+            {
+              "valueCoding": {
+                "code": "LA13918-0",
+                "system": "http://loinc.org",
+                "display": "Mit geringen Schwierigkeiten",
+                "_display": {
+                  "extension": [
+                    {
+                      "extension": [
+                        {
+                          "url": "lang",
+                          "valueCode": "en"
+                        },
+                        {
+                          "url": "content",
+                          "valueString": "With a little difficulty"
+                        }
+                      ],
+                      "url": "http://hl7.org/fhir/StructureDefinition/translation"
+                    }
+                  ]
+                }
+              },
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/itemWeight",
+                  "valueDecimal": 4
+                }
+              ]
+            },
+            {
+              "valueCoding": {
+                "code": "LA13921-4",
+                "system": "http://loinc.org",
+                "display": "Ohne jede Schwierigkeiten",
+                "_display": {
+                  "extension": [
+                    {
+                      "extension": [
+                        {
+                          "url": "lang",
+                          "valueCode": "en"
+                        },
+                        {
+                          "url": "content",
+                          "valueString": "Without any difficulty"
+                        }
+                      ],
+                      "url": "http://hl7.org/fhir/StructureDefinition/translation"
+                    }
+                  ]
+                }
+              },
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/itemWeight",
+                  "valueDecimal": 5
+                }
+              ]
+            }
+          ],
+          "linkId": "promis-pfa23",
+          "type": "choice",
+          "text": "Können Sie mindestens 15 Minuten lang spazieren gehen?",
+          "_text": {
+            "extension": [
+              {
+                "extension": [
+                  {
+                    "url": "lang",
+                    "valueCode": "en"
+                  },
+                  {
+                    "url": "content",
+                    "valueString": "Are you able to go for a walk of at least 15 minutes [PROMIS]"
+                  }
+                ],
+                "url": "http://hl7.org/fhir/StructureDefinition/translation"
+              }
+            ]
+          }
+        },
+        {
+          "code": [
+            {
+              "code": "61635-9",
+              "system": "http://loinc.org",
+              "display": "Are you able to run errands and shop [PROMIS]"
+            }
+          ],
+          "answerOption": [
+            {
+              "valueCoding": {
+                "code": "LA13912-3",
+                "system": "http://loinc.org",
+                "display": "Kann ich gar nicht",
+                "_display": {
+                  "extension": [
+                    {
+                      "extension": [
+                        {
+                          "url": "lang",
+                          "valueCode": "en"
+                        },
+                        {
+                          "url": "content",
+                          "valueString": "Unable to do"
+                        }
+                      ],
+                      "url": "http://hl7.org/fhir/StructureDefinition/translation"
+                    }
+                  ]
+                }
+              },
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/itemWeight",
+                  "valueDecimal": 1
+                }
+              ]
+            },
+            {
+              "valueCoding": {
+                "code": "LA13919-8",
+                "system": "http://loinc.org",
+                "display": "Mit großen Schwierigkeiten",
+                "_display": {
+                  "extension": [
+                    {
+                      "extension": [
+                        {
+                          "url": "lang",
+                          "valueCode": "en"
+                        },
+                        {
+                          "url": "content",
+                          "valueString": "With much difficulty"
+                        }
+                      ],
+                      "url": "http://hl7.org/fhir/StructureDefinition/translation"
+                    }
+                  ]
+                }
+              },
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/itemWeight",
+                  "valueDecimal": 2
+                }
+              ]
+            },
+            {
+              "valueCoding": {
+                "code": "LA13920-6",
+                "system": "http://loinc.org",
+                "display": "Mit einigen Schwierigkeiten",
+                "_display": {
+                  "extension": [
+                    {
+                      "extension": [
+                        {
+                          "url": "lang",
+                          "valueCode": "en"
+                        },
+                        {
+                          "url": "content",
+                          "valueString": "With some difficulty"
+                        }
+                      ],
+                      "url": "http://hl7.org/fhir/StructureDefinition/translation"
+                    }
+                  ]
+                }
+              },
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/itemWeight",
+                  "valueDecimal": 3
+                }
+              ]
+            },
+            {
+              "valueCoding": {
+                "code": "LA13918-0",
+                "system": "http://loinc.org",
+                "display": "Mit geringen Schwierigkeiten",
+                "_display": {
+                  "extension": [
+                    {
+                      "extension": [
+                        {
+                          "url": "lang",
+                          "valueCode": "en"
+                        },
+                        {
+                          "url": "content",
+                          "valueString": "With a little difficulty"
+                        }
+                      ],
+                      "url": "http://hl7.org/fhir/StructureDefinition/translation"
+                    }
+                  ]
+                }
+              },
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/itemWeight",
+                  "valueDecimal": 4
+                }
+              ]
+            },
+            {
+              "valueCoding": {
+                "code": "LA13921-4",
+                "system": "http://loinc.org",
+                "display": "Ohne jede Schwierigkeiten",
+                "_display": {
+                  "extension": [
+                    {
+                      "extension": [
+                        {
+                          "url": "lang",
+                          "valueCode": "en"
+                        },
+                        {
+                          "url": "content",
+                          "valueString": "Without any difficulty"
+                        }
+                      ],
+                      "url": "http://hl7.org/fhir/StructureDefinition/translation"
+                    }
+                  ]
+                }
+              },
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/itemWeight",
+                  "valueDecimal": 5
+                }
+              ]
+            }
+          ],
+          "linkId": "promis-pfa53",
+          "type": "choice",
+          "text": "Können Sie Besorgungen machen und einkaufen gehen?",
+          "_text": {
+            "extension": [
+              {
+                "extension": [
+                  {
+                    "url": "lang",
+                    "valueCode": "en"
+                  },
+                  {
+                    "url": "content",
+                    "valueString": "Are you able to run errands and shop [PROMIS]"
+                  }
+                ],
+                "url": "http://hl7.org/fhir/StructureDefinition/translation"
+              }
+            ]
+          }
+        }
+      ],
+      "linkId": "PROMIS-29.PhysicalFunction",
+      "type": "group",
+      "text": "KÖRPERLICHE FUNKTION"
+    },
+    {
+      "item": [
+        {
+          "linkId": "PROMIS-29.Anxiety.Description",
+          "type": "display",
+          "text": "In den letzten 7 Tagen:"
+        },
+        {
+          "code": [
+            {
+              "code": "61923-9",
+              "system": "http://loinc.org",
+              "display": "I felt fearful in past 7 days [PROMIS]"
+            }
+          ],
+          "answerOption": [
+            {
+              "valueCoding": {
+                "code": "LA6270-8",
+                "system": "http://loinc.org",
+                "display": "Nie",
+                "_display": {
+                  "extension": [
+                    {
+                      "extension": [
+                        {
+                          "url": "lang",
+                          "valueCode": "en"
+                        },
+                        {
+                          "url": "content",
+                          "valueString": "Never"
+                        }
+                      ],
+                      "url": "http://hl7.org/fhir/StructureDefinition/translation"
+                    }
+                  ]
+                }
+              },
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/itemWeight",
+                  "valueDecimal": 1
+                }
+              ]
+            },
+            {
+              "valueCoding": {
+                "code": "LA10066-1",
+                "system": "http://loinc.org",
+                "display": "Selten",
+                "_display": {
+                  "extension": [
+                    {
+                      "extension": [
+                        {
+                          "url": "lang",
+                          "valueCode": "en"
+                        },
+                        {
+                          "url": "content",
+                          "valueString": "Rarely"
+                        }
+                      ],
+                      "url": "http://hl7.org/fhir/StructureDefinition/translation"
+                    }
+                  ]
+                }
+              },
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/itemWeight",
+                  "valueDecimal": 2
+                }
+              ]
+            },
+            {
+              "valueCoding": {
+                "code": "LA10082-8",
+                "system": "http://loinc.org",
+                "display": "Manchmal",
+                "_display": {
+                  "extension": [
+                    {
+                      "extension": [
+                        {
+                          "url": "lang",
+                          "valueCode": "en"
+                        },
+                        {
+                          "url": "content",
+                          "valueString": "Sometimes"
+                        }
+                      ],
+                      "url": "http://hl7.org/fhir/StructureDefinition/translation"
+                    }
+                  ]
+                }
+              },
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/itemWeight",
+                  "valueDecimal": 3
+                }
+              ]
+            },
+            {
+              "valueCoding": {
+                "code": "LA10044-8",
+                "system": "http://loinc.org",
+                "display": "Oft",
+                "_display": {
+                  "extension": [
+                    {
+                      "extension": [
+                        {
+                          "url": "lang",
+                          "valueCode": "en"
+                        },
+                        {
+                          "url": "content",
+                          "valueString": "Often"
+                        }
+                      ],
+                      "url": "http://hl7.org/fhir/StructureDefinition/translation"
+                    }
+                  ]
+                }
+              },
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/itemWeight",
+                  "valueDecimal": 4
+                }
+              ]
+            },
+            {
+              "valueCoding": {
+                "code": "LA9933-8",
+                "system": "http://loinc.org",
+                "display": "Immer",
+                "_display": {
+                  "extension": [
+                    {
+                      "extension": [
+                        {
+                          "url": "lang",
+                          "valueCode": "en"
+                        },
+                        {
+                          "url": "content",
+                          "valueString": "Always"
+                        }
+                      ],
+                      "url": "http://hl7.org/fhir/StructureDefinition/translation"
+                    }
+                  ]
+                }
+              },
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/itemWeight",
+                  "valueDecimal": 5
+                }
+              ]
+            }
+          ],
+          "linkId": "promis-edanx01",
+          "type": "choice",
+          "text": "Ich fürchtete mich."
+        },
+        {
+          "code": [
+            {
+              "code": "61941-1",
+              "system": "http://loinc.org",
+              "display": "I found it hard to focus on anything other than my anxiety in past 7 days"
+            }
+          ],
+          "answerOption": [
+            {
+              "valueCoding": {
+                "code": "LA6270-8",
+                "system": "http://loinc.org",
+                "display": "Nie",
+                "_display": {
+                  "extension": [
+                    {
+                      "extension": [
+                        {
+                          "url": "lang",
+                          "valueCode": "en"
+                        },
+                        {
+                          "url": "content",
+                          "valueString": "Never"
+                        }
+                      ],
+                      "url": "http://hl7.org/fhir/StructureDefinition/translation"
+                    }
+                  ]
+                }
+              },
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/itemWeight",
+                  "valueDecimal": 1
+                }
+              ]
+            },
+            {
+              "valueCoding": {
+                "code": "LA10066-1",
+                "system": "http://loinc.org",
+                "display": "Selten",
+                "_display": {
+                  "extension": [
+                    {
+                      "extension": [
+                        {
+                          "url": "lang",
+                          "valueCode": "en"
+                        },
+                        {
+                          "url": "content",
+                          "valueString": "Rarely"
+                        }
+                      ],
+                      "url": "http://hl7.org/fhir/StructureDefinition/translation"
+                    }
+                  ]
+                }
+              },
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/itemWeight",
+                  "valueDecimal": 2
+                }
+              ]
+            },
+            {
+              "valueCoding": {
+                "code": "LA10082-8",
+                "system": "http://loinc.org",
+                "display": "Manchmal",
+                "_display": {
+                  "extension": [
+                    {
+                      "extension": [
+                        {
+                          "url": "lang",
+                          "valueCode": "en"
+                        },
+                        {
+                          "url": "content",
+                          "valueString": "Sometimes"
+                        }
+                      ],
+                      "url": "http://hl7.org/fhir/StructureDefinition/translation"
+                    }
+                  ]
+                }
+              },
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/itemWeight",
+                  "valueDecimal": 3
+                }
+              ]
+            },
+            {
+              "valueCoding": {
+                "code": "LA10044-8",
+                "system": "http://loinc.org",
+                "display": "Oft",
+                "_display": {
+                  "extension": [
+                    {
+                      "extension": [
+                        {
+                          "url": "lang",
+                          "valueCode": "en"
+                        },
+                        {
+                          "url": "content",
+                          "valueString": "Often"
+                        }
+                      ],
+                      "url": "http://hl7.org/fhir/StructureDefinition/translation"
+                    }
+                  ]
+                }
+              },
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/itemWeight",
+                  "valueDecimal": 4
+                }
+              ]
+            },
+            {
+              "valueCoding": {
+                "code": "LA9933-8",
+                "system": "http://loinc.org",
+                "display": "Immer",
+                "_display": {
+                  "extension": [
+                    {
+                      "extension": [
+                        {
+                          "url": "lang",
+                          "valueCode": "en"
+                        },
+                        {
+                          "url": "content",
+                          "valueString": "Always"
+                        }
+                      ],
+                      "url": "http://hl7.org/fhir/StructureDefinition/translation"
+                    }
+                  ]
+                }
+              },
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/itemWeight",
+                  "valueDecimal": 5
+                }
+              ]
+            }
+          ],
+          "linkId": "promis-edanx40",
+          "type": "choice",
+          "text": "Ich fand es schwer, auf etwas anderes zu achten als auf meine Angst."
+        },
+        {
+          "code": [
+            {
+              "code": "61942-9",
+              "system": "http://loinc.org",
+              "display": "My worries overwhelmed me in past 7 days"
+            }
+          ],
+          "answerOption": [
+            {
+              "valueCoding": {
+                "code": "LA6270-8",
+                "system": "http://loinc.org",
+                "display": "Nie",
+                "_display": {
+                  "extension": [
+                    {
+                      "extension": [
+                        {
+                          "url": "lang",
+                          "valueCode": "en"
+                        },
+                        {
+                          "url": "content",
+                          "valueString": "Never"
+                        }
+                      ],
+                      "url": "http://hl7.org/fhir/StructureDefinition/translation"
+                    }
+                  ]
+                }
+              },
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/itemWeight",
+                  "valueDecimal": 1
+                }
+              ]
+            },
+            {
+              "valueCoding": {
+                "code": "LA10066-1",
+                "system": "http://loinc.org",
+                "display": "Selten",
+                "_display": {
+                  "extension": [
+                    {
+                      "extension": [
+                        {
+                          "url": "lang",
+                          "valueCode": "en"
+                        },
+                        {
+                          "url": "content",
+                          "valueString": "Rarely"
+                        }
+                      ],
+                      "url": "http://hl7.org/fhir/StructureDefinition/translation"
+                    }
+                  ]
+                }
+              },
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/itemWeight",
+                  "valueDecimal": 2
+                }
+              ]
+            },
+            {
+              "valueCoding": {
+                "code": "LA10082-8",
+                "system": "http://loinc.org",
+                "display": "Manchmal",
+                "_display": {
+                  "extension": [
+                    {
+                      "extension": [
+                        {
+                          "url": "lang",
+                          "valueCode": "en"
+                        },
+                        {
+                          "url": "content",
+                          "valueString": "Sometimes"
+                        }
+                      ],
+                      "url": "http://hl7.org/fhir/StructureDefinition/translation"
+                    }
+                  ]
+                }
+              },
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/itemWeight",
+                  "valueDecimal": 3
+                }
+              ]
+            },
+            {
+              "valueCoding": {
+                "code": "LA10044-8",
+                "system": "http://loinc.org",
+                "display": "Oft",
+                "_display": {
+                  "extension": [
+                    {
+                      "extension": [
+                        {
+                          "url": "lang",
+                          "valueCode": "en"
+                        },
+                        {
+                          "url": "content",
+                          "valueString": "Often"
+                        }
+                      ],
+                      "url": "http://hl7.org/fhir/StructureDefinition/translation"
+                    }
+                  ]
+                }
+              },
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/itemWeight",
+                  "valueDecimal": 4
+                }
+              ]
+            },
+            {
+              "valueCoding": {
+                "code": "LA9933-8",
+                "system": "http://loinc.org",
+                "display": "Immer",
+                "_display": {
+                  "extension": [
+                    {
+                      "extension": [
+                        {
+                          "url": "lang",
+                          "valueCode": "en"
+                        },
+                        {
+                          "url": "content",
+                          "valueString": "Always"
+                        }
+                      ],
+                      "url": "http://hl7.org/fhir/StructureDefinition/translation"
+                    }
+                  ]
+                }
+              },
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/itemWeight",
+                  "valueDecimal": 5
+                }
+              ]
+            }
+          ],
+          "linkId": "promis-edanx41",
+          "type": "choice",
+          "text": "Meine Sorgen haben mich überwältigt."
+        },
+        {
+          "code": [
+            {
+              "code": "61949-4",
+              "system": "http://loinc.org",
+              "display": "I felt uneasy in past 7 days"
+            }
+          ],
+          "answerOption": [
+            {
+              "valueCoding": {
+                "code": "LA6270-8",
+                "system": "http://loinc.org",
+                "display": "Nie",
+                "_display": {
+                  "extension": [
+                    {
+                      "extension": [
+                        {
+                          "url": "lang",
+                          "valueCode": "en"
+                        },
+                        {
+                          "url": "content",
+                          "valueString": "Never"
+                        }
+                      ],
+                      "url": "http://hl7.org/fhir/StructureDefinition/translation"
+                    }
+                  ]
+                }
+              },
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/itemWeight",
+                  "valueDecimal": 1
+                }
+              ]
+            },
+            {
+              "valueCoding": {
+                "code": "LA10066-1",
+                "system": "http://loinc.org",
+                "display": "Selten",
+                "_display": {
+                  "extension": [
+                    {
+                      "extension": [
+                        {
+                          "url": "lang",
+                          "valueCode": "en"
+                        },
+                        {
+                          "url": "content",
+                          "valueString": "Rarely"
+                        }
+                      ],
+                      "url": "http://hl7.org/fhir/StructureDefinition/translation"
+                    }
+                  ]
+                }
+              },
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/itemWeight",
+                  "valueDecimal": 2
+                }
+              ]
+            },
+            {
+              "valueCoding": {
+                "code": "LA10082-8",
+                "system": "http://loinc.org",
+                "display": "Manchmal",
+                "_display": {
+                  "extension": [
+                    {
+                      "extension": [
+                        {
+                          "url": "lang",
+                          "valueCode": "en"
+                        },
+                        {
+                          "url": "content",
+                          "valueString": "Sometimes"
+                        }
+                      ],
+                      "url": "http://hl7.org/fhir/StructureDefinition/translation"
+                    }
+                  ]
+                }
+              },
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/itemWeight",
+                  "valueDecimal": 3
+                }
+              ]
+            },
+            {
+              "valueCoding": {
+                "code": "LA10044-8",
+                "system": "http://loinc.org",
+                "display": "Oft",
+                "_display": {
+                  "extension": [
+                    {
+                      "extension": [
+                        {
+                          "url": "lang",
+                          "valueCode": "en"
+                        },
+                        {
+                          "url": "content",
+                          "valueString": "Often"
+                        }
+                      ],
+                      "url": "http://hl7.org/fhir/StructureDefinition/translation"
+                    }
+                  ]
+                }
+              },
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/itemWeight",
+                  "valueDecimal": 4
+                }
+              ]
+            },
+            {
+              "valueCoding": {
+                "code": "LA9933-8",
+                "system": "http://loinc.org",
+                "display": "Immer",
+                "_display": {
+                  "extension": [
+                    {
+                      "extension": [
+                        {
+                          "url": "lang",
+                          "valueCode": "en"
+                        },
+                        {
+                          "url": "content",
+                          "valueString": "Always"
+                        }
+                      ],
+                      "url": "http://hl7.org/fhir/StructureDefinition/translation"
+                    }
+                  ]
+                }
+              },
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/itemWeight",
+                  "valueDecimal": 5
+                }
+              ]
+            }
+          ],
+          "linkId": "promis-edanx53",
+          "type": "choice",
+          "text": "Ich fühlte mich unruhig."
+        }
+      ],
+      "linkId": "PROMIS-29.Anxiety",
+      "type": "group",
+      "text": "ANGST"
+    },
+    {
+      "item": [
+        {
+          "linkId": "PROMIS-29.Depression.Description",
+          "type": "display",
+          "text": "In den letzten 7 Tagen:"
+        },
+        {
+          "code": [
+            {
+              "code": "61953-6",
+              "system": "http://loinc.org",
+              "display": "I felt worthless in past 7 days [PROMIS]"
+            }
+          ],
+          "answerOption": [
+            {
+              "valueCoding": {
+                "code": "LA6270-8",
+                "system": "http://loinc.org",
+                "display": "Nie",
+                "_display": {
+                  "extension": [
+                    {
+                      "extension": [
+                        {
+                          "url": "lang",
+                          "valueCode": "en"
+                        },
+                        {
+                          "url": "content",
+                          "valueString": "Never"
+                        }
+                      ],
+                      "url": "http://hl7.org/fhir/StructureDefinition/translation"
+                    }
+                  ]
+                }
+              },
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/itemWeight",
+                  "valueDecimal": 1
+                }
+              ]
+            },
+            {
+              "valueCoding": {
+                "code": "LA10066-1",
+                "system": "http://loinc.org",
+                "display": "Selten",
+                "_display": {
+                  "extension": [
+                    {
+                      "extension": [
+                        {
+                          "url": "lang",
+                          "valueCode": "en"
+                        },
+                        {
+                          "url": "content",
+                          "valueString": "Rarely"
+                        }
+                      ],
+                      "url": "http://hl7.org/fhir/StructureDefinition/translation"
+                    }
+                  ]
+                }
+              },
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/itemWeight",
+                  "valueDecimal": 2
+                }
+              ]
+            },
+            {
+              "valueCoding": {
+                "code": "LA10082-8",
+                "system": "http://loinc.org",
+                "display": "Manchmal",
+                "_display": {
+                  "extension": [
+                    {
+                      "extension": [
+                        {
+                          "url": "lang",
+                          "valueCode": "en"
+                        },
+                        {
+                          "url": "content",
+                          "valueString": "Sometimes"
+                        }
+                      ],
+                      "url": "http://hl7.org/fhir/StructureDefinition/translation"
+                    }
+                  ]
+                }
+              },
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/itemWeight",
+                  "valueDecimal": 3
+                }
+              ]
+            },
+            {
+              "valueCoding": {
+                "code": "LA10044-8",
+                "system": "http://loinc.org",
+                "display": "Oft",
+                "_display": {
+                  "extension": [
+                    {
+                      "extension": [
+                        {
+                          "url": "lang",
+                          "valueCode": "en"
+                        },
+                        {
+                          "url": "content",
+                          "valueString": "Often"
+                        }
+                      ],
+                      "url": "http://hl7.org/fhir/StructureDefinition/translation"
+                    }
+                  ]
+                }
+              },
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/itemWeight",
+                  "valueDecimal": 4
+                }
+              ]
+            },
+            {
+              "valueCoding": {
+                "code": "LA9933-8",
+                "system": "http://loinc.org",
+                "display": "Immer",
+                "_display": {
+                  "extension": [
+                    {
+                      "extension": [
+                        {
+                          "url": "lang",
+                          "valueCode": "en"
+                        },
+                        {
+                          "url": "content",
+                          "valueString": "Always"
+                        }
+                      ],
+                      "url": "http://hl7.org/fhir/StructureDefinition/translation"
+                    }
+                  ]
+                }
+              },
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/itemWeight",
+                  "valueDecimal": 5
+                }
+              ]
+            }
+          ],
+          "linkId": "promis-eddep04",
+          "type": "choice",
+          "text": "Ich fühlte mich wertlos."
+        },
+        {
+          "code": [
+            {
+              "code": "61955-1",
+              "system": "http://loinc.org",
+              "display": "I felt helpless in past 7 days [PROMIS]"
+            }
+          ],
+          "answerOption": [
+            {
+              "valueCoding": {
+                "code": "LA6270-8",
+                "system": "http://loinc.org",
+                "display": "Nie",
+                "_display": {
+                  "extension": [
+                    {
+                      "extension": [
+                        {
+                          "url": "lang",
+                          "valueCode": "en"
+                        },
+                        {
+                          "url": "content",
+                          "valueString": "Never"
+                        }
+                      ],
+                      "url": "http://hl7.org/fhir/StructureDefinition/translation"
+                    }
+                  ]
+                }
+              },
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/itemWeight",
+                  "valueDecimal": 1
+                }
+              ]
+            },
+            {
+              "valueCoding": {
+                "code": "LA10066-1",
+                "system": "http://loinc.org",
+                "display": "Selten",
+                "_display": {
+                  "extension": [
+                    {
+                      "extension": [
+                        {
+                          "url": "lang",
+                          "valueCode": "en"
+                        },
+                        {
+                          "url": "content",
+                          "valueString": "Rarely"
+                        }
+                      ],
+                      "url": "http://hl7.org/fhir/StructureDefinition/translation"
+                    }
+                  ]
+                }
+              },
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/itemWeight",
+                  "valueDecimal": 2
+                }
+              ]
+            },
+            {
+              "valueCoding": {
+                "code": "LA10082-8",
+                "system": "http://loinc.org",
+                "display": "Manchmal",
+                "_display": {
+                  "extension": [
+                    {
+                      "extension": [
+                        {
+                          "url": "lang",
+                          "valueCode": "en"
+                        },
+                        {
+                          "url": "content",
+                          "valueString": "Sometimes"
+                        }
+                      ],
+                      "url": "http://hl7.org/fhir/StructureDefinition/translation"
+                    }
+                  ]
+                }
+              },
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/itemWeight",
+                  "valueDecimal": 3
+                }
+              ]
+            },
+            {
+              "valueCoding": {
+                "code": "LA10044-8",
+                "system": "http://loinc.org",
+                "display": "Oft",
+                "_display": {
+                  "extension": [
+                    {
+                      "extension": [
+                        {
+                          "url": "lang",
+                          "valueCode": "en"
+                        },
+                        {
+                          "url": "content",
+                          "valueString": "Often"
+                        }
+                      ],
+                      "url": "http://hl7.org/fhir/StructureDefinition/translation"
+                    }
+                  ]
+                }
+              },
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/itemWeight",
+                  "valueDecimal": 4
+                }
+              ]
+            },
+            {
+              "valueCoding": {
+                "code": "LA9933-8",
+                "system": "http://loinc.org",
+                "display": "Immer",
+                "_display": {
+                  "extension": [
+                    {
+                      "extension": [
+                        {
+                          "url": "lang",
+                          "valueCode": "en"
+                        },
+                        {
+                          "url": "content",
+                          "valueString": "Always"
+                        }
+                      ],
+                      "url": "http://hl7.org/fhir/StructureDefinition/translation"
+                    }
+                  ]
+                }
+              },
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/itemWeight",
+                  "valueDecimal": 5
+                }
+              ]
+            }
+          ],
+          "linkId": "promis-eddep06",
+          "type": "choice",
+          "text": "Ich fühlte mich hilflos."
+        },
+        {
+          "code": [
+            {
+              "code": "61967-6",
+              "system": "http://loinc.org",
+              "display": "I felt depressed in past 7 days [PROMIS]"
+            }
+          ],
+          "answerOption": [
+            {
+              "valueCoding": {
+                "code": "LA6270-8",
+                "system": "http://loinc.org",
+                "display": "Nie",
+                "_display": {
+                  "extension": [
+                    {
+                      "extension": [
+                        {
+                          "url": "lang",
+                          "valueCode": "en"
+                        },
+                        {
+                          "url": "content",
+                          "valueString": "Never"
+                        }
+                      ],
+                      "url": "http://hl7.org/fhir/StructureDefinition/translation"
+                    }
+                  ]
+                }
+              },
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/itemWeight",
+                  "valueDecimal": 1
+                }
+              ]
+            },
+            {
+              "valueCoding": {
+                "code": "LA10066-1",
+                "system": "http://loinc.org",
+                "display": "Selten",
+                "_display": {
+                  "extension": [
+                    {
+                      "extension": [
+                        {
+                          "url": "lang",
+                          "valueCode": "en"
+                        },
+                        {
+                          "url": "content",
+                          "valueString": "Rarely"
+                        }
+                      ],
+                      "url": "http://hl7.org/fhir/StructureDefinition/translation"
+                    }
+                  ]
+                }
+              },
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/itemWeight",
+                  "valueDecimal": 2
+                }
+              ]
+            },
+            {
+              "valueCoding": {
+                "code": "LA10082-8",
+                "system": "http://loinc.org",
+                "display": "Manchmal",
+                "_display": {
+                  "extension": [
+                    {
+                      "extension": [
+                        {
+                          "url": "lang",
+                          "valueCode": "en"
+                        },
+                        {
+                          "url": "content",
+                          "valueString": "Sometimes"
+                        }
+                      ],
+                      "url": "http://hl7.org/fhir/StructureDefinition/translation"
+                    }
+                  ]
+                }
+              },
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/itemWeight",
+                  "valueDecimal": 3
+                }
+              ]
+            },
+            {
+              "valueCoding": {
+                "code": "LA10044-8",
+                "system": "http://loinc.org",
+                "display": "Oft",
+                "_display": {
+                  "extension": [
+                    {
+                      "extension": [
+                        {
+                          "url": "lang",
+                          "valueCode": "en"
+                        },
+                        {
+                          "url": "content",
+                          "valueString": "Often"
+                        }
+                      ],
+                      "url": "http://hl7.org/fhir/StructureDefinition/translation"
+                    }
+                  ]
+                }
+              },
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/itemWeight",
+                  "valueDecimal": 4
+                }
+              ]
+            },
+            {
+              "valueCoding": {
+                "code": "LA9933-8",
+                "system": "http://loinc.org",
+                "display": "Immer",
+                "_display": {
+                  "extension": [
+                    {
+                      "extension": [
+                        {
+                          "url": "lang",
+                          "valueCode": "en"
+                        },
+                        {
+                          "url": "content",
+                          "valueString": "Always"
+                        }
+                      ],
+                      "url": "http://hl7.org/fhir/StructureDefinition/translation"
+                    }
+                  ]
+                }
+              },
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/itemWeight",
+                  "valueDecimal": 5
+                }
+              ]
+            }
+          ],
+          "linkId": "promis-eddep29",
+          "type": "choice",
+          "text": "Ich fühlte mich niedergeschlagen."
+        },
+        {
+          "code": [
+            {
+              "code": "61973-4",
+              "system": "http://loinc.org",
+              "display": "I felt hopeless in past 7 days [PROMIS]"
+            }
+          ],
+          "answerOption": [
+            {
+              "valueCoding": {
+                "code": "LA6270-8",
+                "system": "http://loinc.org",
+                "display": "Nie",
+                "_display": {
+                  "extension": [
+                    {
+                      "extension": [
+                        {
+                          "url": "lang",
+                          "valueCode": "en"
+                        },
+                        {
+                          "url": "content",
+                          "valueString": "Never"
+                        }
+                      ],
+                      "url": "http://hl7.org/fhir/StructureDefinition/translation"
+                    }
+                  ]
+                }
+              },
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/itemWeight",
+                  "valueDecimal": 1
+                }
+              ]
+            },
+            {
+              "valueCoding": {
+                "code": "LA10066-1",
+                "system": "http://loinc.org",
+                "display": "Selten",
+                "_display": {
+                  "extension": [
+                    {
+                      "extension": [
+                        {
+                          "url": "lang",
+                          "valueCode": "en"
+                        },
+                        {
+                          "url": "content",
+                          "valueString": "Rarely"
+                        }
+                      ],
+                      "url": "http://hl7.org/fhir/StructureDefinition/translation"
+                    }
+                  ]
+                }
+              },
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/itemWeight",
+                  "valueDecimal": 2
+                }
+              ]
+            },
+            {
+              "valueCoding": {
+                "code": "LA10082-8",
+                "system": "http://loinc.org",
+                "display": "Manchmal",
+                "_display": {
+                  "extension": [
+                    {
+                      "extension": [
+                        {
+                          "url": "lang",
+                          "valueCode": "en"
+                        },
+                        {
+                          "url": "content",
+                          "valueString": "Sometimes"
+                        }
+                      ],
+                      "url": "http://hl7.org/fhir/StructureDefinition/translation"
+                    }
+                  ]
+                }
+              },
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/itemWeight",
+                  "valueDecimal": 3
+                }
+              ]
+            },
+            {
+              "valueCoding": {
+                "code": "LA10044-8",
+                "system": "http://loinc.org",
+                "display": "Oft",
+                "_display": {
+                  "extension": [
+                    {
+                      "extension": [
+                        {
+                          "url": "lang",
+                          "valueCode": "en"
+                        },
+                        {
+                          "url": "content",
+                          "valueString": "Often"
+                        }
+                      ],
+                      "url": "http://hl7.org/fhir/StructureDefinition/translation"
+                    }
+                  ]
+                }
+              },
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/itemWeight",
+                  "valueDecimal": 4
+                }
+              ]
+            },
+            {
+              "valueCoding": {
+                "code": "LA9933-8",
+                "system": "http://loinc.org",
+                "display": "Immer",
+                "_display": {
+                  "extension": [
+                    {
+                      "extension": [
+                        {
+                          "url": "lang",
+                          "valueCode": "en"
+                        },
+                        {
+                          "url": "content",
+                          "valueString": "Always"
+                        }
+                      ],
+                      "url": "http://hl7.org/fhir/StructureDefinition/translation"
+                    }
+                  ]
+                }
+              },
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/itemWeight",
+                  "valueDecimal": 5
+                }
+              ]
+            }
+          ],
+          "linkId": "promis-eddep41",
+          "type": "choice",
+          "text": "Ich fühlte mich hoffnungslos."
+        }
+      ],
+      "linkId": "PROMIS-29.Depression",
+      "type": "group",
+      "text": "DEPRESSION"
+    },
+    {
+      "item": [
+        {
+          "linkId": "PROMIS-29.Fatigue.Description",
+          "type": "display",
+          "text": "In den letzten 7 Tagen:"
+        },
+        {
+          "code": [
+            {
+              "code": "61878-5",
+              "system": "http://loinc.org",
+              "display": "I feel fatigued during the past 7 days [PROMIS]"
+            }
+          ],
+          "answerOption": [
+            {
+              "valueCoding": {
+                "code": "LA6568-5",
+                "system": "http://loinc.org",
+                "display": "Überhaupt nicht",
+                "_display": {
+                  "extension": [
+                    {
+                      "extension": [
+                        {
+                          "url": "lang",
+                          "valueCode": "en"
+                        },
+                        {
+                          "url": "content",
+                          "valueString": "Not at all"
+                        }
+                      ],
+                      "url": "http://hl7.org/fhir/StructureDefinition/translation"
+                    }
+                  ]
+                }
+              },
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/itemWeight",
+                  "valueDecimal": 1
+                }
+              ]
+            },
+            {
+              "valueCoding": {
+                "code": "LA13863-8",
+                "system": "http://loinc.org",
+                "display": "Ein wenig",
+                "_display": {
+                  "extension": [
+                    {
+                      "extension": [
+                        {
+                          "url": "lang",
+                          "valueCode": "en"
+                        },
+                        {
+                          "url": "content",
+                          "valueString": "A little bit"
+                        }
+                      ],
+                      "url": "http://hl7.org/fhir/StructureDefinition/translation"
+                    }
+                  ]
+                }
+              },
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/itemWeight",
+                  "valueDecimal": 2
+                }
+              ]
+            },
+            {
+              "valueCoding": {
+                "code": "LA13909-9",
+                "system": "http://loinc.org",
+                "display": "Mäßig",
+                "_display": {
+                  "extension": [
+                    {
+                      "extension": [
+                        {
+                          "url": "lang",
+                          "valueCode": "en"
+                        },
+                        {
+                          "url": "content",
+                          "valueString": "Somewhat"
+                        }
+                      ],
+                      "url": "http://hl7.org/fhir/StructureDefinition/translation"
+                    }
+                  ]
+                }
+              },
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/itemWeight",
+                  "valueDecimal": 3
+                }
+              ]
+            },
+            {
+              "valueCoding": {
+                "code": "LA13902-4",
+                "system": "http://loinc.org",
+                "display": "Ziemlich",
+                "_display": {
+                  "extension": [
+                    {
+                      "extension": [
+                        {
+                          "url": "lang",
+                          "valueCode": "en"
+                        },
+                        {
+                          "url": "content",
+                          "valueString": "Quite a bit"
+                        }
+                      ],
+                      "url": "http://hl7.org/fhir/StructureDefinition/translation"
+                    }
+                  ]
+                }
+              },
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/itemWeight",
+                  "valueDecimal": 4
+                }
+              ]
+            },
+            {
+              "valueCoding": {
+                "code": "LA13914-9",
+                "system": "http://loinc.org",
+                "display": "Sehr",
+                "_display": {
+                  "extension": [
+                    {
+                      "extension": [
+                        {
+                          "url": "lang",
+                          "valueCode": "en"
+                        },
+                        {
+                          "url": "content",
+                          "valueString": "Very much"
+                        }
+                      ],
+                      "url": "http://hl7.org/fhir/StructureDefinition/translation"
+                    }
+                  ]
+                }
+              },
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/itemWeight",
+                  "valueDecimal": 5
+                }
+              ]
+            }
+          ],
+          "linkId": "promis-hi7",
+          "type": "choice",
+          "text": "Ich bin erschöpft."
+        },
+        {
+          "code": [
+            {
+              "code": "61882-7",
+              "system": "http://loinc.org",
+              "display": "I had trouble starting things because I was tired in past 7 days [PROMIS]"
+            }
+          ],
+          "answerOption": [
+            {
+              "valueCoding": {
+                "code": "LA6568-5",
+                "system": "http://loinc.org",
+                "display": "Überhaupt nicht",
+                "_display": {
+                  "extension": [
+                    {
+                      "extension": [
+                        {
+                          "url": "lang",
+                          "valueCode": "en"
+                        },
+                        {
+                          "url": "content",
+                          "valueString": "Not at all"
+                        }
+                      ],
+                      "url": "http://hl7.org/fhir/StructureDefinition/translation"
+                    }
+                  ]
+                }
+              },
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/itemWeight",
+                  "valueDecimal": 1
+                }
+              ]
+            },
+            {
+              "valueCoding": {
+                "code": "LA13863-8",
+                "system": "http://loinc.org",
+                "display": "Ein wenig",
+                "_display": {
+                  "extension": [
+                    {
+                      "extension": [
+                        {
+                          "url": "lang",
+                          "valueCode": "en"
+                        },
+                        {
+                          "url": "content",
+                          "valueString": "A little bit"
+                        }
+                      ],
+                      "url": "http://hl7.org/fhir/StructureDefinition/translation"
+                    }
+                  ]
+                }
+              },
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/itemWeight",
+                  "valueDecimal": 2
+                }
+              ]
+            },
+            {
+              "valueCoding": {
+                "code": "LA13909-9",
+                "system": "http://loinc.org",
+                "display": "Mäßig",
+                "_display": {
+                  "extension": [
+                    {
+                      "extension": [
+                        {
+                          "url": "lang",
+                          "valueCode": "en"
+                        },
+                        {
+                          "url": "content",
+                          "valueString": "Somewhat"
+                        }
+                      ],
+                      "url": "http://hl7.org/fhir/StructureDefinition/translation"
+                    }
+                  ]
+                }
+              },
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/itemWeight",
+                  "valueDecimal": 3
+                }
+              ]
+            },
+            {
+              "valueCoding": {
+                "code": "LA13902-4",
+                "system": "http://loinc.org",
+                "display": "Ziemlich",
+                "_display": {
+                  "extension": [
+                    {
+                      "extension": [
+                        {
+                          "url": "lang",
+                          "valueCode": "en"
+                        },
+                        {
+                          "url": "content",
+                          "valueString": "Quite a bit"
+                        }
+                      ],
+                      "url": "http://hl7.org/fhir/StructureDefinition/translation"
+                    }
+                  ]
+                }
+              },
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/itemWeight",
+                  "valueDecimal": 4
+                }
+              ]
+            },
+            {
+              "valueCoding": {
+                "code": "LA13914-9",
+                "system": "http://loinc.org",
+                "display": "Sehr",
+                "_display": {
+                  "extension": [
+                    {
+                      "extension": [
+                        {
+                          "url": "lang",
+                          "valueCode": "en"
+                        },
+                        {
+                          "url": "content",
+                          "valueString": "Very much"
+                        }
+                      ],
+                      "url": "http://hl7.org/fhir/StructureDefinition/translation"
+                    }
+                  ]
+                }
+              },
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/itemWeight",
+                  "valueDecimal": 5
+                }
+              ]
+            }
+          ],
+          "linkId": "promis-an3",
+          "type": "choice",
+          "text": "Es fällt mir schwer, etwas anzufangen, weil ich müde bin."
+        },
+        {
+          "code": [
+            {
+              "code": "61863-7",
+              "system": "http://loinc.org",
+              "display": "How fatigued were you on the day you felt most fatigued in past 7 days [PROMIS]"
+            }
+          ],
+          "answerOption": [
+            {
+              "valueCoding": {
+                "code": "LA6568-5",
+                "system": "http://loinc.org",
+                "display": "Überhaupt nicht",
+                "_display": {
+                  "extension": [
+                    {
+                      "extension": [
+                        {
+                          "url": "lang",
+                          "valueCode": "en"
+                        },
+                        {
+                          "url": "content",
+                          "valueString": "Not at all"
+                        }
+                      ],
+                      "url": "http://hl7.org/fhir/StructureDefinition/translation"
+                    }
+                  ]
+                }
+              },
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/itemWeight",
+                  "valueDecimal": 1
+                }
+              ]
+            },
+            {
+              "valueCoding": {
+                "code": "LA13863-8",
+                "system": "http://loinc.org",
+                "display": "Ein wenig",
+                "_display": {
+                  "extension": [
+                    {
+                      "extension": [
+                        {
+                          "url": "lang",
+                          "valueCode": "en"
+                        },
+                        {
+                          "url": "content",
+                          "valueString": "A little bit"
+                        }
+                      ],
+                      "url": "http://hl7.org/fhir/StructureDefinition/translation"
+                    }
+                  ]
+                }
+              },
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/itemWeight",
+                  "valueDecimal": 2
+                }
+              ]
+            },
+            {
+              "valueCoding": {
+                "code": "LA13909-9",
+                "system": "http://loinc.org",
+                "display": "Mäßig",
+                "_display": {
+                  "extension": [
+                    {
+                      "extension": [
+                        {
+                          "url": "lang",
+                          "valueCode": "en"
+                        },
+                        {
+                          "url": "content",
+                          "valueString": "Somewhat"
+                        }
+                      ],
+                      "url": "http://hl7.org/fhir/StructureDefinition/translation"
+                    }
+                  ]
+                }
+              },
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/itemWeight",
+                  "valueDecimal": 3
+                }
+              ]
+            },
+            {
+              "valueCoding": {
+                "code": "LA13902-4",
+                "system": "http://loinc.org",
+                "display": "Ziemlich",
+                "_display": {
+                  "extension": [
+                    {
+                      "extension": [
+                        {
+                          "url": "lang",
+                          "valueCode": "en"
+                        },
+                        {
+                          "url": "content",
+                          "valueString": "Quite a bit"
+                        }
+                      ],
+                      "url": "http://hl7.org/fhir/StructureDefinition/translation"
+                    }
+                  ]
+                }
+              },
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/itemWeight",
+                  "valueDecimal": 4
+                }
+              ]
+            },
+            {
+              "valueCoding": {
+                "code": "LA13914-9",
+                "system": "http://loinc.org",
+                "display": "Sehr",
+                "_display": {
+                  "extension": [
+                    {
+                      "extension": [
+                        {
+                          "url": "lang",
+                          "valueCode": "en"
+                        },
+                        {
+                          "url": "content",
+                          "valueString": "Very much"
+                        }
+                      ],
+                      "url": "http://hl7.org/fhir/StructureDefinition/translation"
+                    }
+                  ]
+                }
+              },
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/itemWeight",
+                  "valueDecimal": 5
+                }
+              ]
+            }
+          ],
+          "linkId": "promis-fatexp41",
+          "type": "choice",
+          "text": "Wie ausgelaugt fühlten Sie sich im Allgemeinen?"
+        },
+        {
+          "code": [
+            {
+              "code": "61864-5",
+              "system": "http://loinc.org",
+              "display": "How fatigued were you on average in past 7 days [PROMIS]"
+            }
+          ],
+          "answerOption": [
+            {
+              "valueCoding": {
+                "code": "LA6568-5",
+                "system": "http://loinc.org",
+                "display": "Überhaupt nicht",
+                "_display": {
+                  "extension": [
+                    {
+                      "extension": [
+                        {
+                          "url": "lang",
+                          "valueCode": "en"
+                        },
+                        {
+                          "url": "content",
+                          "valueString": "Not at all"
+                        }
+                      ],
+                      "url": "http://hl7.org/fhir/StructureDefinition/translation"
+                    }
+                  ]
+                }
+              },
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/itemWeight",
+                  "valueDecimal": 1
+                }
+              ]
+            },
+            {
+              "valueCoding": {
+                "code": "LA13863-8",
+                "system": "http://loinc.org",
+                "display": "Ein wenig",
+                "_display": {
+                  "extension": [
+                    {
+                      "extension": [
+                        {
+                          "url": "lang",
+                          "valueCode": "en"
+                        },
+                        {
+                          "url": "content",
+                          "valueString": "A little bit"
+                        }
+                      ],
+                      "url": "http://hl7.org/fhir/StructureDefinition/translation"
+                    }
+                  ]
+                }
+              },
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/itemWeight",
+                  "valueDecimal": 2
+                }
+              ]
+            },
+            {
+              "valueCoding": {
+                "code": "LA13909-9",
+                "system": "http://loinc.org",
+                "display": "Mäßig",
+                "_display": {
+                  "extension": [
+                    {
+                      "extension": [
+                        {
+                          "url": "lang",
+                          "valueCode": "en"
+                        },
+                        {
+                          "url": "content",
+                          "valueString": "Somewhat"
+                        }
+                      ],
+                      "url": "http://hl7.org/fhir/StructureDefinition/translation"
+                    }
+                  ]
+                }
+              },
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/itemWeight",
+                  "valueDecimal": 3
+                }
+              ]
+            },
+            {
+              "valueCoding": {
+                "code": "LA13902-4",
+                "system": "http://loinc.org",
+                "display": "Ziemlich",
+                "_display": {
+                  "extension": [
+                    {
+                      "extension": [
+                        {
+                          "url": "lang",
+                          "valueCode": "en"
+                        },
+                        {
+                          "url": "content",
+                          "valueString": "Quite a bit"
+                        }
+                      ],
+                      "url": "http://hl7.org/fhir/StructureDefinition/translation"
+                    }
+                  ]
+                }
+              },
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/itemWeight",
+                  "valueDecimal": 4
+                }
+              ]
+            },
+            {
+              "valueCoding": {
+                "code": "LA13914-9",
+                "system": "http://loinc.org",
+                "display": "Sehr",
+                "_display": {
+                  "extension": [
+                    {
+                      "extension": [
+                        {
+                          "url": "lang",
+                          "valueCode": "en"
+                        },
+                        {
+                          "url": "content",
+                          "valueString": "Very much"
+                        }
+                      ],
+                      "url": "http://hl7.org/fhir/StructureDefinition/translation"
+                    }
+                  ]
+                }
+              },
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/itemWeight",
+                  "valueDecimal": 5
+                }
+              ]
+            }
+          ],
+          "linkId": "promis-fatexp40",
+          "type": "choice",
+          "text": "Wie erschöpft waren Sie im Allgemeinen?"
+        }
+      ],
+      "linkId": "PROMIS-29.Fatigue",
+      "type": "group",
+      "text": "ERSCHÖPFUNG"
+    },
+    {
+      "item": [
+        {
+          "linkId": "PROMIS-29.Sleep.Description",
+          "type": "display",
+          "text": "In den letzten 7 Tagen:"
+        },
+        {
+          "code": [
+            {
+              "code": "61987-4",
+              "system": "http://loinc.org",
+              "display": "My sleep quality was...in past 7 days [PROMIS]"
+            }
+          ],
+          "answerOption": [
+            {
+              "valueCoding": {
+                "code": "LA9615-1",
+                "system": "http://loinc.org",
+                "display": "Sehr schlecht",
+                "_display": {
+                  "extension": [
+                    {
+                      "extension": [
+                        {
+                          "url": "lang",
+                          "valueCode": "en"
+                        },
+                        {
+                          "url": "content",
+                          "valueString": "Very poor"
+                        }
+                      ],
+                      "url": "http://hl7.org/fhir/StructureDefinition/translation"
+                    }
+                  ]
+                }
+              },
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/itemWeight",
+                  "valueDecimal": 5
+                }
+              ]
+            },
+            {
+              "valueCoding": {
+                "code": "LA8969-3",
+                "system": "http://loinc.org",
+                "display": "Schlecht",
+                "_display": {
+                  "extension": [
+                    {
+                      "extension": [
+                        {
+                          "url": "lang",
+                          "valueCode": "en"
+                        },
+                        {
+                          "url": "content",
+                          "valueString": "Poor"
+                        }
+                      ],
+                      "url": "http://hl7.org/fhir/StructureDefinition/translation"
+                    }
+                  ]
+                }
+              },
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/itemWeight",
+                  "valueDecimal": 4
+                }
+              ]
+            },
+            {
+              "valueCoding": {
+                "code": "LA8968-5",
+                "system": "http://loinc.org",
+                "display": "Mäßig",
+                "_display": {
+                  "extension": [
+                    {
+                      "extension": [
+                        {
+                          "url": "lang",
+                          "valueCode": "en"
+                        },
+                        {
+                          "url": "content",
+                          "valueString": "Fair"
+                        }
+                      ],
+                      "url": "http://hl7.org/fhir/StructureDefinition/translation"
+                    }
+                  ]
+                }
+              },
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/itemWeight",
+                  "valueDecimal": 3
+                }
+              ]
+            },
+            {
+              "valueCoding": {
+                "code": "LA8967-7",
+                "system": "http://loinc.org",
+                "display": "Gut",
+                "_display": {
+                  "extension": [
+                    {
+                      "extension": [
+                        {
+                          "url": "lang",
+                          "valueCode": "en"
+                        },
+                        {
+                          "url": "content",
+                          "valueString": "Good"
+                        }
+                      ],
+                      "url": "http://hl7.org/fhir/StructureDefinition/translation"
+                    }
+                  ]
+                }
+              },
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/itemWeight",
+                  "valueDecimal": 2
+                }
+              ]
+            },
+            {
+              "valueCoding": {
+                "code": "LA13913-1",
+                "system": "http://loinc.org",
+                "display": "Sehr gut",
+                "_display": {
+                  "extension": [
+                    {
+                      "extension": [
+                        {
+                          "url": "lang",
+                          "valueCode": "en"
+                        },
+                        {
+                          "url": "content",
+                          "valueString": "Very Good"
+                        }
+                      ],
+                      "url": "http://hl7.org/fhir/StructureDefinition/translation"
+                    }
+                  ]
+                }
+              },
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/itemWeight",
+                  "valueDecimal": 1
+                }
+              ]
+            }
+          ],
+          "linkId": "promis-sleep109",
+          "type": "choice",
+          "text": "Meine Schlafqualität war ..."
+        },
+        {
+          "code": [
+            {
+              "code": "61986-6",
+              "system": "http://loinc.org",
+              "display": "My sleep was refreshing in past 7 days [PROMIS]"
+            }
+          ],
+          "answerOption": [
+            {
+              "valueCoding": {
+                "code": "LA6568-5",
+                "system": "http://loinc.org",
+                "display": "Überhaupt nicht",
+                "_display": {
+                  "extension": [
+                    {
+                      "extension": [
+                        {
+                          "url": "lang",
+                          "valueCode": "en"
+                        },
+                        {
+                          "url": "content",
+                          "valueString": "Not at all"
+                        }
+                      ],
+                      "url": "http://hl7.org/fhir/StructureDefinition/translation"
+                    }
+                  ]
+                }
+              },
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/itemWeight",
+                  "valueDecimal": 5
+                }
+              ]
+            },
+            {
+              "valueCoding": {
+                "code": "LA13863-8",
+                "system": "http://loinc.org",
+                "display": "Ein wenig",
+                "_display": {
+                  "extension": [
+                    {
+                      "extension": [
+                        {
+                          "url": "lang",
+                          "valueCode": "en"
+                        },
+                        {
+                          "url": "content",
+                          "valueString": "A little bit"
+                        }
+                      ],
+                      "url": "http://hl7.org/fhir/StructureDefinition/translation"
+                    }
+                  ]
+                }
+              },
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/itemWeight",
+                  "valueDecimal": 4
+                }
+              ]
+            },
+            {
+              "valueCoding": {
+                "code": "LA13909-9",
+                "system": "http://loinc.org",
+                "display": "Mäßig",
+                "_display": {
+                  "extension": [
+                    {
+                      "extension": [
+                        {
+                          "url": "lang",
+                          "valueCode": "en"
+                        },
+                        {
+                          "url": "content",
+                          "valueString": "Somewhat"
+                        }
+                      ],
+                      "url": "http://hl7.org/fhir/StructureDefinition/translation"
+                    }
+                  ]
+                }
+              },
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/itemWeight",
+                  "valueDecimal": 3
+                }
+              ]
+            },
+            {
+              "valueCoding": {
+                "code": "LA13902-4",
+                "system": "http://loinc.org",
+                "display": "Ziemlich",
+                "_display": {
+                  "extension": [
+                    {
+                      "extension": [
+                        {
+                          "url": "lang",
+                          "valueCode": "en"
+                        },
+                        {
+                          "url": "content",
+                          "valueString": "Quite a bit"
+                        }
+                      ],
+                      "url": "http://hl7.org/fhir/StructureDefinition/translation"
+                    }
+                  ]
+                }
+              },
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/itemWeight",
+                  "valueDecimal": 2
+                }
+              ]
+            },
+            {
+              "valueCoding": {
+                "code": "LA13914-9",
+                "system": "http://loinc.org",
+                "display": "Sehr",
+                "_display": {
+                  "extension": [
+                    {
+                      "extension": [
+                        {
+                          "url": "lang",
+                          "valueCode": "en"
+                        },
+                        {
+                          "url": "content",
+                          "valueString": "Very much"
+                        }
+                      ],
+                      "url": "http://hl7.org/fhir/StructureDefinition/translation"
+                    }
+                  ]
+                }
+              },
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/itemWeight",
+                  "valueDecimal": 1
+                }
+              ]
+            }
+          ],
+          "linkId": "promis-sleep116",
+          "type": "choice",
+          "text": "Mein Schlaf war erfrischend."
+        },
+        {
+          "code": [
+            {
+              "code": "61998-1",
+              "system": "http://loinc.org",
+              "display": "I had a problem with my sleep 7 days [PROMIS]"
+            }
+          ],
+          "answerOption": [
+            {
+              "valueCoding": {
+                "code": "LA6568-5",
+                "system": "http://loinc.org",
+                "display": "Überhaupt nicht",
+                "_display": {
+                  "extension": [
+                    {
+                      "extension": [
+                        {
+                          "url": "lang",
+                          "valueCode": "en"
+                        },
+                        {
+                          "url": "content",
+                          "valueString": "Not at all"
+                        }
+                      ],
+                      "url": "http://hl7.org/fhir/StructureDefinition/translation"
+                    }
+                  ]
+                }
+              },
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/itemWeight",
+                  "valueDecimal": 1
+                }
+              ]
+            },
+            {
+              "valueCoding": {
+                "code": "LA13863-8",
+                "system": "http://loinc.org",
+                "display": "Ein wenig",
+                "_display": {
+                  "extension": [
+                    {
+                      "extension": [
+                        {
+                          "url": "lang",
+                          "valueCode": "en"
+                        },
+                        {
+                          "url": "content",
+                          "valueString": "A little bit"
+                        }
+                      ],
+                      "url": "http://hl7.org/fhir/StructureDefinition/translation"
+                    }
+                  ]
+                }
+              },
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/itemWeight",
+                  "valueDecimal": 2
+                }
+              ]
+            },
+            {
+              "valueCoding": {
+                "code": "LA13909-9",
+                "system": "http://loinc.org",
+                "display": "Mäßig",
+                "_display": {
+                  "extension": [
+                    {
+                      "extension": [
+                        {
+                          "url": "lang",
+                          "valueCode": "en"
+                        },
+                        {
+                          "url": "content",
+                          "valueString": "Somewhat"
+                        }
+                      ],
+                      "url": "http://hl7.org/fhir/StructureDefinition/translation"
+                    }
+                  ]
+                }
+              },
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/itemWeight",
+                  "valueDecimal": 3
+                }
+              ]
+            },
+            {
+              "valueCoding": {
+                "code": "LA13902-4",
+                "system": "http://loinc.org",
+                "display": "Ziemlich",
+                "_display": {
+                  "extension": [
+                    {
+                      "extension": [
+                        {
+                          "url": "lang",
+                          "valueCode": "en"
+                        },
+                        {
+                          "url": "content",
+                          "valueString": "Quite a bit"
+                        }
+                      ],
+                      "url": "http://hl7.org/fhir/StructureDefinition/translation"
+                    }
+                  ]
+                }
+              },
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/itemWeight",
+                  "valueDecimal": 4
+                }
+              ]
+            },
+            {
+              "valueCoding": {
+                "code": "LA13914-9",
+                "system": "http://loinc.org",
+                "display": "Sehr",
+                "_display": {
+                  "extension": [
+                    {
+                      "extension": [
+                        {
+                          "url": "lang",
+                          "valueCode": "en"
+                        },
+                        {
+                          "url": "content",
+                          "valueString": "Very much"
+                        }
+                      ],
+                      "url": "http://hl7.org/fhir/StructureDefinition/translation"
+                    }
+                  ]
+                }
+              },
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/itemWeight",
+                  "valueDecimal": 5
+                }
+              ]
+            }
+          ],
+          "linkId": "promis-sleep20",
+          "type": "choice",
+          "text": "Ich hatte Schlafprobleme."
+        },
+        {
+          "code": [
+            {
+              "code": "61999-9",
+              "system": "http://loinc.org",
+              "display": "I had difficulty falling asleep in past 7 days [PROMIS]"
+            }
+          ],
+          "answerOption": [
+            {
+              "valueCoding": {
+                "code": "LA6568-5",
+                "system": "http://loinc.org",
+                "display": "Überhaupt nicht",
+                "_display": {
+                  "extension": [
+                    {
+                      "extension": [
+                        {
+                          "url": "lang",
+                          "valueCode": "en"
+                        },
+                        {
+                          "url": "content",
+                          "valueString": "Not at all"
+                        }
+                      ],
+                      "url": "http://hl7.org/fhir/StructureDefinition/translation"
+                    }
+                  ]
+                }
+              },
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/itemWeight",
+                  "valueDecimal": 1
+                }
+              ]
+            },
+            {
+              "valueCoding": {
+                "code": "LA13863-8",
+                "system": "http://loinc.org",
+                "display": "Ein wenig",
+                "_display": {
+                  "extension": [
+                    {
+                      "extension": [
+                        {
+                          "url": "lang",
+                          "valueCode": "en"
+                        },
+                        {
+                          "url": "content",
+                          "valueString": "A little bit"
+                        }
+                      ],
+                      "url": "http://hl7.org/fhir/StructureDefinition/translation"
+                    }
+                  ]
+                }
+              },
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/itemWeight",
+                  "valueDecimal": 2
+                }
+              ]
+            },
+            {
+              "valueCoding": {
+                "code": "LA13909-9",
+                "system": "http://loinc.org",
+                "display": "Mäßig",
+                "_display": {
+                  "extension": [
+                    {
+                      "extension": [
+                        {
+                          "url": "lang",
+                          "valueCode": "en"
+                        },
+                        {
+                          "url": "content",
+                          "valueString": "Somewhat"
+                        }
+                      ],
+                      "url": "http://hl7.org/fhir/StructureDefinition/translation"
+                    }
+                  ]
+                }
+              },
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/itemWeight",
+                  "valueDecimal": 3
+                }
+              ]
+            },
+            {
+              "valueCoding": {
+                "code": "LA13902-4",
+                "system": "http://loinc.org",
+                "display": "Ziemlich",
+                "_display": {
+                  "extension": [
+                    {
+                      "extension": [
+                        {
+                          "url": "lang",
+                          "valueCode": "en"
+                        },
+                        {
+                          "url": "content",
+                          "valueString": "Quite a bit"
+                        }
+                      ],
+                      "url": "http://hl7.org/fhir/StructureDefinition/translation"
+                    }
+                  ]
+                }
+              },
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/itemWeight",
+                  "valueDecimal": 4
+                }
+              ]
+            },
+            {
+              "valueCoding": {
+                "code": "LA13914-9",
+                "system": "http://loinc.org",
+                "display": "Sehr",
+                "_display": {
+                  "extension": [
+                    {
+                      "extension": [
+                        {
+                          "url": "lang",
+                          "valueCode": "en"
+                        },
+                        {
+                          "url": "content",
+                          "valueString": "Very much"
+                        }
+                      ],
+                      "url": "http://hl7.org/fhir/StructureDefinition/translation"
+                    }
+                  ]
+                }
+              },
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/itemWeight",
+                  "valueDecimal": 5
+                }
+              ]
+            }
+          ],
+          "linkId": "promis-sleep44",
+          "type": "choice",
+          "text": "Ich hatte Schwierigkeiten einzuschlafen."
+        }
+      ],
+      "linkId": "PROMIS-29.Sleep",
+      "type": "group",
+      "text": "SCHLAFSTÖRUNGEN"
+    },
+    {
+      "item": [
+        {
+          "linkId": "PROMIS-29.Social.Description",
+          "type": "display",
+          "text": "In den letzten 7 Tagen:"
+        },
+        {
+          "code": [
+            {
+              "code": "76709-5",
+              "system": "http://loinc.org",
+              "display": "I have trouble doing all of my usual work (include work at home) [PROMIS]"
+            }
+          ],
+          "answerOption": [
+            {
+              "valueCoding": {
+                "code": "LA6270-8",
+                "system": "http://loinc.org",
+                "display": "Nie",
+                "_display": {
+                  "extension": [
+                    {
+                      "extension": [
+                        {
+                          "url": "lang",
+                          "valueCode": "en"
+                        },
+                        {
+                          "url": "content",
+                          "valueString": "Never"
+                        }
+                      ],
+                      "url": "http://hl7.org/fhir/StructureDefinition/translation"
+                    }
+                  ]
+                }
+              },
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/itemWeight",
+                  "valueDecimal": 1
+                }
+              ]
+            },
+            {
+              "valueCoding": {
+                "code": "LA10066-1",
+                "system": "http://loinc.org",
+                "display": "Selten",
+                "_display": {
+                  "extension": [
+                    {
+                      "extension": [
+                        {
+                          "url": "lang",
+                          "valueCode": "en"
+                        },
+                        {
+                          "url": "content",
+                          "valueString": "Rarely"
+                        }
+                      ],
+                      "url": "http://hl7.org/fhir/StructureDefinition/translation"
+                    }
+                  ]
+                }
+              },
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/itemWeight",
+                  "valueDecimal": 2
+                }
+              ]
+            },
+            {
+              "valueCoding": {
+                "code": "LA10082-8",
+                "system": "http://loinc.org",
+                "display": "Manchmal",
+                "_display": {
+                  "extension": [
+                    {
+                      "extension": [
+                        {
+                          "url": "lang",
+                          "valueCode": "en"
+                        },
+                        {
+                          "url": "content",
+                          "valueString": "Sometimes"
+                        }
+                      ],
+                      "url": "http://hl7.org/fhir/StructureDefinition/translation"
+                    }
+                  ]
+                }
+              },
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/itemWeight",
+                  "valueDecimal": 3
+                }
+              ]
+            },
+            {
+              "valueCoding": {
+                "code": "LA10044-8",
+                "system": "http://loinc.org",
+                "display": "Oft",
+                "_display": {
+                  "extension": [
+                    {
+                      "extension": [
+                        {
+                          "url": "lang",
+                          "valueCode": "en"
+                        },
+                        {
+                          "url": "content",
+                          "valueString": "Often"
+                        }
+                      ],
+                      "url": "http://hl7.org/fhir/StructureDefinition/translation"
+                    }
+                  ]
+                }
+              },
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/itemWeight",
+                  "valueDecimal": 4
+                }
+              ]
+            },
+            {
+              "valueCoding": {
+                "code": "LA9933-8",
+                "system": "http://loinc.org",
+                "display": "Immer",
+                "_display": {
+                  "extension": [
+                    {
+                      "extension": [
+                        {
+                          "url": "lang",
+                          "valueCode": "en"
+                        },
+                        {
+                          "url": "content",
+                          "valueString": "Always"
+                        }
+                      ],
+                      "url": "http://hl7.org/fhir/StructureDefinition/translation"
+                    }
+                  ]
+                }
+              },
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/itemWeight",
+                  "valueDecimal": 5
+                }
+              ]
+            }
+          ],
+          "linkId": "promis-srpper23-caps",
+          "type": "choice",
+          "text": "Es fällt mir schwer, meine gewohnte Arbeit zu erledigen (einschließlich der Arbeit zu Hause)."
+        },
+        {
+          "code": [
+            {
+              "code": "75417-6",
+              "system": "http://loinc.org",
+              "display": "I have trouble doing all of my regular leisure activities with others [PROMIS]"
+            }
+          ],
+          "answerOption": [
+            {
+              "valueCoding": {
+                "code": "LA6270-8",
+                "system": "http://loinc.org",
+                "display": "Nie",
+                "_display": {
+                  "extension": [
+                    {
+                      "extension": [
+                        {
+                          "url": "lang",
+                          "valueCode": "en"
+                        },
+                        {
+                          "url": "content",
+                          "valueString": "Never"
+                        }
+                      ],
+                      "url": "http://hl7.org/fhir/StructureDefinition/translation"
+                    }
+                  ]
+                }
+              },
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/itemWeight",
+                  "valueDecimal": 5
+                }
+              ]
+            },
+            {
+              "valueCoding": {
+                "code": "LA10066-1",
+                "system": "http://loinc.org",
+                "display": "Selten",
+                "_display": {
+                  "extension": [
+                    {
+                      "extension": [
+                        {
+                          "url": "lang",
+                          "valueCode": "en"
+                        },
+                        {
+                          "url": "content",
+                          "valueString": "Rarely"
+                        }
+                      ],
+                      "url": "http://hl7.org/fhir/StructureDefinition/translation"
+                    }
+                  ]
+                }
+              },
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/itemWeight",
+                  "valueDecimal": 4
+                }
+              ]
+            },
+            {
+              "valueCoding": {
+                "code": "LA10082-8",
+                "system": "http://loinc.org",
+                "display": "Manchmal",
+                "_display": {
+                  "extension": [
+                    {
+                      "extension": [
+                        {
+                          "url": "lang",
+                          "valueCode": "en"
+                        },
+                        {
+                          "url": "content",
+                          "valueString": "Sometimes"
+                        }
+                      ],
+                      "url": "http://hl7.org/fhir/StructureDefinition/translation"
+                    }
+                  ]
+                }
+              },
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/itemWeight",
+                  "valueDecimal": 3
+                }
+              ]
+            },
+            {
+              "valueCoding": {
+                "code": "LA10044-8",
+                "system": "http://loinc.org",
+                "display": "Oft",
+                "_display": {
+                  "extension": [
+                    {
+                      "extension": [
+                        {
+                          "url": "lang",
+                          "valueCode": "en"
+                        },
+                        {
+                          "url": "content",
+                          "valueString": "Often"
+                        }
+                      ],
+                      "url": "http://hl7.org/fhir/StructureDefinition/translation"
+                    }
+                  ]
+                }
+              },
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/itemWeight",
+                  "valueDecimal": 2
+                }
+              ]
+            },
+            {
+              "valueCoding": {
+                "code": "LA9933-8",
+                "system": "http://loinc.org",
+                "display": "Immer",
+                "_display": {
+                  "extension": [
+                    {
+                      "extension": [
+                        {
+                          "url": "lang",
+                          "valueCode": "en"
+                        },
+                        {
+                          "url": "content",
+                          "valueString": "Always"
+                        }
+                      ],
+                      "url": "http://hl7.org/fhir/StructureDefinition/translation"
+                    }
+                  ]
+                }
+              },
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/itemWeight",
+                  "valueDecimal": 1
+                }
+              ]
+            }
+          ],
+          "linkId": "promis-srpper11-caps",
+          "type": "choice",
+          "text": "Es fällt mir schwer, allen meinen regelmäßigen Freizeitaktivitäten mit anderen nachzugehen."
+        },
+        {
+          "code": [
+            {
+              "code": "76708-7",
+              "system": "http://loinc.org",
+              "display": "I have trouble doing all of the family activities that I want to do [PROMIS]"
+            }
+          ],
+          "answerOption": [
+            {
+              "valueCoding": {
+                "code": "LA6270-8",
+                "system": "http://loinc.org",
+                "display": "Nie",
+                "_display": {
+                  "extension": [
+                    {
+                      "extension": [
+                        {
+                          "url": "lang",
+                          "valueCode": "en"
+                        },
+                        {
+                          "url": "content",
+                          "valueString": "Never"
+                        }
+                      ],
+                      "url": "http://hl7.org/fhir/StructureDefinition/translation"
+                    }
+                  ]
+                }
+              },
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/itemWeight",
+                  "valueDecimal": 5
+                }
+              ]
+            },
+            {
+              "valueCoding": {
+                "code": "LA10066-1",
+                "system": "http://loinc.org",
+                "display": "Selten",
+                "_display": {
+                  "extension": [
+                    {
+                      "extension": [
+                        {
+                          "url": "lang",
+                          "valueCode": "en"
+                        },
+                        {
+                          "url": "content",
+                          "valueString": "Rarely"
+                        }
+                      ],
+                      "url": "http://hl7.org/fhir/StructureDefinition/translation"
+                    }
+                  ]
+                }
+              },
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/itemWeight",
+                  "valueDecimal": 4
+                }
+              ]
+            },
+            {
+              "valueCoding": {
+                "code": "LA10082-8",
+                "system": "http://loinc.org",
+                "display": "Manchmal",
+                "_display": {
+                  "extension": [
+                    {
+                      "extension": [
+                        {
+                          "url": "lang",
+                          "valueCode": "en"
+                        },
+                        {
+                          "url": "content",
+                          "valueString": "Sometimes"
+                        }
+                      ],
+                      "url": "http://hl7.org/fhir/StructureDefinition/translation"
+                    }
+                  ]
+                }
+              },
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/itemWeight",
+                  "valueDecimal": 3
+                }
+              ]
+            },
+            {
+              "valueCoding": {
+                "code": "LA10044-8",
+                "system": "http://loinc.org",
+                "display": "Oft",
+                "_display": {
+                  "extension": [
+                    {
+                      "extension": [
+                        {
+                          "url": "lang",
+                          "valueCode": "en"
+                        },
+                        {
+                          "url": "content",
+                          "valueString": "Often"
+                        }
+                      ],
+                      "url": "http://hl7.org/fhir/StructureDefinition/translation"
+                    }
+                  ]
+                }
+              },
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/itemWeight",
+                  "valueDecimal": 2
+                }
+              ]
+            },
+            {
+              "valueCoding": {
+                "code": "LA9933-8",
+                "system": "http://loinc.org",
+                "display": "Immer",
+                "_display": {
+                  "extension": [
+                    {
+                      "extension": [
+                        {
+                          "url": "lang",
+                          "valueCode": "en"
+                        },
+                        {
+                          "url": "content",
+                          "valueString": "Always"
+                        }
+                      ],
+                      "url": "http://hl7.org/fhir/StructureDefinition/translation"
+                    }
+                  ]
+                }
+              },
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/itemWeight",
+                  "valueDecimal": 1
+                }
+              ]
+            }
+          ],
+          "linkId": "promis-srpper18-caps",
+          "type": "choice",
+          "text": "Es fällt mir schwer, allen Aktivitäten nachzugehen, die ich mit meiner Familie machen möchte."
+        },
+        {
+          "code": [
+            {
+              "code": "76712-9",
+              "system": "http://loinc.org",
+              "display": "I have trouble doing all of the activities with friends that I want to do [PROMIS]"
+            }
+          ],
+          "answerOption": [
+            {
+              "valueCoding": {
+                "code": "LA6270-8",
+                "system": "http://loinc.org",
+                "display": "Nie",
+                "_display": {
+                  "extension": [
+                    {
+                      "extension": [
+                        {
+                          "url": "lang",
+                          "valueCode": "en"
+                        },
+                        {
+                          "url": "content",
+                          "valueString": "Never"
+                        }
+                      ],
+                      "url": "http://hl7.org/fhir/StructureDefinition/translation"
+                    }
+                  ]
+                }
+              },
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/itemWeight",
+                  "valueDecimal": 5
+                }
+              ]
+            },
+            {
+              "valueCoding": {
+                "code": "LA10066-1",
+                "system": "http://loinc.org",
+                "display": "Selten",
+                "_display": {
+                  "extension": [
+                    {
+                      "extension": [
+                        {
+                          "url": "lang",
+                          "valueCode": "en"
+                        },
+                        {
+                          "url": "content",
+                          "valueString": "Rarely"
+                        }
+                      ],
+                      "url": "http://hl7.org/fhir/StructureDefinition/translation"
+                    }
+                  ]
+                }
+              },
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/itemWeight",
+                  "valueDecimal": 4
+                }
+              ]
+            },
+            {
+              "valueCoding": {
+                "code": "LA10082-8",
+                "system": "http://loinc.org",
+                "display": "Manchmal",
+                "_display": {
+                  "extension": [
+                    {
+                      "extension": [
+                        {
+                          "url": "lang",
+                          "valueCode": "en"
+                        },
+                        {
+                          "url": "content",
+                          "valueString": "Sometimes"
+                        }
+                      ],
+                      "url": "http://hl7.org/fhir/StructureDefinition/translation"
+                    }
+                  ]
+                }
+              },
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/itemWeight",
+                  "valueDecimal": 3
+                }
+              ]
+            },
+            {
+              "valueCoding": {
+                "code": "LA10044-8",
+                "system": "http://loinc.org",
+                "display": "Oft",
+                "_display": {
+                  "extension": [
+                    {
+                      "extension": [
+                        {
+                          "url": "lang",
+                          "valueCode": "en"
+                        },
+                        {
+                          "url": "content",
+                          "valueString": "Often"
+                        }
+                      ],
+                      "url": "http://hl7.org/fhir/StructureDefinition/translation"
+                    }
+                  ]
+                }
+              },
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/itemWeight",
+                  "valueDecimal": 2
+                }
+              ]
+            },
+            {
+              "valueCoding": {
+                "code": "LA9933-8",
+                "system": "http://loinc.org",
+                "display": "Immer",
+                "_display": {
+                  "extension": [
+                    {
+                      "extension": [
+                        {
+                          "url": "lang",
+                          "valueCode": "en"
+                        },
+                        {
+                          "url": "content",
+                          "valueString": "Always"
+                        }
+                      ],
+                      "url": "http://hl7.org/fhir/StructureDefinition/translation"
+                    }
+                  ]
+                }
+              },
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/itemWeight",
+                  "valueDecimal": 1
+                }
+              ]
+            }
+          ],
+          "linkId": "promis-srpper46-caps",
+          "type": "choice",
+          "text": "Es fällt mir schwer, allen Aktivitäten nachzugehen, die ich mit Freunden machen möchte."
+        }
+      ],
+      "linkId": "PROMIS-29.Social",
+      "type": "group",
+      "text": "SOZIALE TEILHABE"
+    },
+    {
+      "item": [
+        {
+          "linkId": "PROMIS-29.PainInterference.Description",
+          "type": "display",
+          "text": "In den letzten 7 Tagen: Inwieweit beeinträchtigten Schmerzen..."
+        },
+        {
+          "code": [
+            {
+              "code": "61758-9",
+              "system": "http://loinc.org",
+              "display": "How much did pain interfere with your day to day activities in past 7 days [PROMIS]"
+            }
+          ],
+          "answerOption": [
+            {
+              "valueCoding": {
+                "code": "LA6568-5",
+                "system": "http://loinc.org",
+                "display": "Überhaupt nicht",
+                "_display": {
+                  "extension": [
+                    {
+                      "extension": [
+                        {
+                          "url": "lang",
+                          "valueCode": "en"
+                        },
+                        {
+                          "url": "content",
+                          "valueString": "Not at all"
+                        }
+                      ],
+                      "url": "http://hl7.org/fhir/StructureDefinition/translation"
+                    }
+                  ]
+                }
+              },
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/itemWeight",
+                  "valueDecimal": 1
+                }
+              ]
+            },
+            {
+              "valueCoding": {
+                "code": "LA13863-8",
+                "system": "http://loinc.org",
+                "display": "Ein wenig",
+                "_display": {
+                  "extension": [
+                    {
+                      "extension": [
+                        {
+                          "url": "lang",
+                          "valueCode": "en"
+                        },
+                        {
+                          "url": "content",
+                          "valueString": "A little bit"
+                        }
+                      ],
+                      "url": "http://hl7.org/fhir/StructureDefinition/translation"
+                    }
+                  ]
+                }
+              },
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/itemWeight",
+                  "valueDecimal": 2
+                }
+              ]
+            },
+            {
+              "valueCoding": {
+                "code": "LA13909-9",
+                "system": "http://loinc.org",
+                "display": "Mäßig",
+                "_display": {
+                  "extension": [
+                    {
+                      "extension": [
+                        {
+                          "url": "lang",
+                          "valueCode": "en"
+                        },
+                        {
+                          "url": "content",
+                          "valueString": "Somewhat"
+                        }
+                      ],
+                      "url": "http://hl7.org/fhir/StructureDefinition/translation"
+                    }
+                  ]
+                }
+              },
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/itemWeight",
+                  "valueDecimal": 3
+                }
+              ]
+            },
+            {
+              "valueCoding": {
+                "code": "LA13902-4",
+                "system": "http://loinc.org",
+                "display": "Ziemlich",
+                "_display": {
+                  "extension": [
+                    {
+                      "extension": [
+                        {
+                          "url": "lang",
+                          "valueCode": "en"
+                        },
+                        {
+                          "url": "content",
+                          "valueString": "Quite a bit"
+                        }
+                      ],
+                      "url": "http://hl7.org/fhir/StructureDefinition/translation"
+                    }
+                  ]
+                }
+              },
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/itemWeight",
+                  "valueDecimal": 4
+                }
+              ]
+            },
+            {
+              "valueCoding": {
+                "code": "LA13914-9",
+                "system": "http://loinc.org",
+                "display": "Sehr",
+                "_display": {
+                  "extension": [
+                    {
+                      "extension": [
+                        {
+                          "url": "lang",
+                          "valueCode": "en"
+                        },
+                        {
+                          "url": "content",
+                          "valueString": "Very much"
+                        }
+                      ],
+                      "url": "http://hl7.org/fhir/StructureDefinition/translation"
+                    }
+                  ]
+                }
+              },
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/itemWeight",
+                  "valueDecimal": 5
+                }
+              ]
+            }
+          ],
+          "linkId": "promis-painin9",
+          "type": "choice",
+          "text": "Wie sehr beeinträchtigten Schmerzen Ihre Alltagsaktivitäten?"
+        },
+        {
+          "code": [
+            {
+              "code": "61769-6",
+              "system": "http://loinc.org",
+              "display": "How much did pain interfere with work around the home in past 7 days [PROMIS]"
+            }
+          ],
+          "answerOption": [
+            {
+              "valueCoding": {
+                "code": "LA6568-5",
+                "system": "http://loinc.org",
+                "display": "Überhaupt nicht",
+                "_display": {
+                  "extension": [
+                    {
+                      "extension": [
+                        {
+                          "url": "lang",
+                          "valueCode": "en"
+                        },
+                        {
+                          "url": "content",
+                          "valueString": "Not at all"
+                        }
+                      ],
+                      "url": "http://hl7.org/fhir/StructureDefinition/translation"
+                    }
+                  ]
+                }
+              },
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/itemWeight",
+                  "valueDecimal": 1
+                }
+              ]
+            },
+            {
+              "valueCoding": {
+                "code": "LA13863-8",
+                "system": "http://loinc.org",
+                "display": "Ein wenig",
+                "_display": {
+                  "extension": [
+                    {
+                      "extension": [
+                        {
+                          "url": "lang",
+                          "valueCode": "en"
+                        },
+                        {
+                          "url": "content",
+                          "valueString": "A little bit"
+                        }
+                      ],
+                      "url": "http://hl7.org/fhir/StructureDefinition/translation"
+                    }
+                  ]
+                }
+              },
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/itemWeight",
+                  "valueDecimal": 2
+                }
+              ]
+            },
+            {
+              "valueCoding": {
+                "code": "LA13909-9",
+                "system": "http://loinc.org",
+                "display": "Mäßig",
+                "_display": {
+                  "extension": [
+                    {
+                      "extension": [
+                        {
+                          "url": "lang",
+                          "valueCode": "en"
+                        },
+                        {
+                          "url": "content",
+                          "valueString": "Somewhat"
+                        }
+                      ],
+                      "url": "http://hl7.org/fhir/StructureDefinition/translation"
+                    }
+                  ]
+                }
+              },
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/itemWeight",
+                  "valueDecimal": 3
+                }
+              ]
+            },
+            {
+              "valueCoding": {
+                "code": "LA13902-4",
+                "system": "http://loinc.org",
+                "display": "Ziemlich",
+                "_display": {
+                  "extension": [
+                    {
+                      "extension": [
+                        {
+                          "url": "lang",
+                          "valueCode": "en"
+                        },
+                        {
+                          "url": "content",
+                          "valueString": "Quite a bit"
+                        }
+                      ],
+                      "url": "http://hl7.org/fhir/StructureDefinition/translation"
+                    }
+                  ]
+                }
+              },
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/itemWeight",
+                  "valueDecimal": 4
+                }
+              ]
+            },
+            {
+              "valueCoding": {
+                "code": "LA13914-9",
+                "system": "http://loinc.org",
+                "display": "Sehr",
+                "_display": {
+                  "extension": [
+                    {
+                      "extension": [
+                        {
+                          "url": "lang",
+                          "valueCode": "en"
+                        },
+                        {
+                          "url": "content",
+                          "valueString": "Very much"
+                        }
+                      ],
+                      "url": "http://hl7.org/fhir/StructureDefinition/translation"
+                    }
+                  ]
+                }
+              },
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/itemWeight",
+                  "valueDecimal": 5
+                }
+              ]
+            }
+          ],
+          "linkId": "promis-painin22",
+          "type": "choice",
+          "text": "Wie sehr beeinträchtigten Schmerzen Ihre häuslichen Tätigkeiten?"
+        },
+        {
+          "code": [
+            {
+              "code": "61773-8",
+              "system": "http://loinc.org",
+              "display": "How much did pain interfere with your ability to participate in social activities in past 7 days [PROMIS]"
+            }
+          ],
+          "answerOption": [
+            {
+              "valueCoding": {
+                "code": "LA6568-5",
+                "system": "http://loinc.org",
+                "display": "Überhaupt nicht",
+                "_display": {
+                  "extension": [
+                    {
+                      "extension": [
+                        {
+                          "url": "lang",
+                          "valueCode": "en"
+                        },
+                        {
+                          "url": "content",
+                          "valueString": "Not at all"
+                        }
+                      ],
+                      "url": "http://hl7.org/fhir/StructureDefinition/translation"
+                    }
+                  ]
+                }
+              },
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/itemWeight",
+                  "valueDecimal": 1
+                }
+              ]
+            },
+            {
+              "valueCoding": {
+                "code": "LA13863-8",
+                "system": "http://loinc.org",
+                "display": "Ein wenig",
+                "_display": {
+                  "extension": [
+                    {
+                      "extension": [
+                        {
+                          "url": "lang",
+                          "valueCode": "en"
+                        },
+                        {
+                          "url": "content",
+                          "valueString": "A little bit"
+                        }
+                      ],
+                      "url": "http://hl7.org/fhir/StructureDefinition/translation"
+                    }
+                  ]
+                }
+              },
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/itemWeight",
+                  "valueDecimal": 2
+                }
+              ]
+            },
+            {
+              "valueCoding": {
+                "code": "LA13909-9",
+                "system": "http://loinc.org",
+                "display": "Mäßig",
+                "_display": {
+                  "extension": [
+                    {
+                      "extension": [
+                        {
+                          "url": "lang",
+                          "valueCode": "en"
+                        },
+                        {
+                          "url": "content",
+                          "valueString": "Somewhat"
+                        }
+                      ],
+                      "url": "http://hl7.org/fhir/StructureDefinition/translation"
+                    }
+                  ]
+                }
+              },
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/itemWeight",
+                  "valueDecimal": 3
+                }
+              ]
+            },
+            {
+              "valueCoding": {
+                "code": "LA13902-4",
+                "system": "http://loinc.org",
+                "display": "Ziemlich",
+                "_display": {
+                  "extension": [
+                    {
+                      "extension": [
+                        {
+                          "url": "lang",
+                          "valueCode": "en"
+                        },
+                        {
+                          "url": "content",
+                          "valueString": "Quite a bit"
+                        }
+                      ],
+                      "url": "http://hl7.org/fhir/StructureDefinition/translation"
+                    }
+                  ]
+                }
+              },
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/itemWeight",
+                  "valueDecimal": 4
+                }
+              ]
+            },
+            {
+              "valueCoding": {
+                "code": "LA13914-9",
+                "system": "http://loinc.org",
+                "display": "Sehr",
+                "_display": {
+                  "extension": [
+                    {
+                      "extension": [
+                        {
+                          "url": "lang",
+                          "valueCode": "en"
+                        },
+                        {
+                          "url": "content",
+                          "valueString": "Very much"
+                        }
+                      ],
+                      "url": "http://hl7.org/fhir/StructureDefinition/translation"
+                    }
+                  ]
+                }
+              },
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/itemWeight",
+                  "valueDecimal": 5
+                }
+              ]
+            }
+          ],
+          "linkId": "promis-painin31",
+          "type": "choice",
+          "text": "Wie sehr beeinträchtigten Schmerzen Ihre Fähigkeit, an sozialen Aktivitäten teilzunehmen?"
+        },
+        {
+          "code": [
+            {
+              "code": "61775-3",
+              "system": "http://loinc.org",
+              "display": "How much did pain interfere with your household chores in past 7 days [PROMIS]"
+            }
+          ],
+          "answerOption": [
+            {
+              "valueCoding": {
+                "code": "LA6568-5",
+                "system": "http://loinc.org",
+                "display": "Überhaupt nicht",
+                "_display": {
+                  "extension": [
+                    {
+                      "extension": [
+                        {
+                          "url": "lang",
+                          "valueCode": "en"
+                        },
+                        {
+                          "url": "content",
+                          "valueString": "Not at all"
+                        }
+                      ],
+                      "url": "http://hl7.org/fhir/StructureDefinition/translation"
+                    }
+                  ]
+                }
+              },
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/itemWeight",
+                  "valueDecimal": 1
+                }
+              ]
+            },
+            {
+              "valueCoding": {
+                "code": "LA13863-8",
+                "system": "http://loinc.org",
+                "display": "Ein wenig",
+                "_display": {
+                  "extension": [
+                    {
+                      "extension": [
+                        {
+                          "url": "lang",
+                          "valueCode": "en"
+                        },
+                        {
+                          "url": "content",
+                          "valueString": "A little bit"
+                        }
+                      ],
+                      "url": "http://hl7.org/fhir/StructureDefinition/translation"
+                    }
+                  ]
+                }
+              },
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/itemWeight",
+                  "valueDecimal": 2
+                }
+              ]
+            },
+            {
+              "valueCoding": {
+                "code": "LA13909-9",
+                "system": "http://loinc.org",
+                "display": "Mäßig",
+                "_display": {
+                  "extension": [
+                    {
+                      "extension": [
+                        {
+                          "url": "lang",
+                          "valueCode": "en"
+                        },
+                        {
+                          "url": "content",
+                          "valueString": "Somewhat"
+                        }
+                      ],
+                      "url": "http://hl7.org/fhir/StructureDefinition/translation"
+                    }
+                  ]
+                }
+              },
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/itemWeight",
+                  "valueDecimal": 3
+                }
+              ]
+            },
+            {
+              "valueCoding": {
+                "code": "LA13902-4",
+                "system": "http://loinc.org",
+                "display": "Ziemlich",
+                "_display": {
+                  "extension": [
+                    {
+                      "extension": [
+                        {
+                          "url": "lang",
+                          "valueCode": "en"
+                        },
+                        {
+                          "url": "content",
+                          "valueString": "Quite a bit"
+                        }
+                      ],
+                      "url": "http://hl7.org/fhir/StructureDefinition/translation"
+                    }
+                  ]
+                }
+              },
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/itemWeight",
+                  "valueDecimal": 4
+                }
+              ]
+            },
+            {
+              "valueCoding": {
+                "code": "LA13914-9",
+                "system": "http://loinc.org",
+                "display": "Sehr",
+                "_display": {
+                  "extension": [
+                    {
+                      "extension": [
+                        {
+                          "url": "lang",
+                          "valueCode": "en"
+                        },
+                        {
+                          "url": "content",
+                          "valueString": "Very much"
+                        }
+                      ],
+                      "url": "http://hl7.org/fhir/StructureDefinition/translation"
+                    }
+                  ]
+                }
+              },
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/itemWeight",
+                  "valueDecimal": 5
+                }
+              ]
+            }
+          ],
+          "linkId": "promis-painin34",
+          "type": "choice",
+          "text": "Wie sehr beeinträchtigten Schmerzen Sie bei Ihrer Hausarbeit?"
+        }
+      ],
+      "linkId": "PROMIS-29.PainInterference",
+      "type": "group",
+      "text": "SCHMERZBEDINGTE BEEINTRÄCHTIGUNG"
+    },
+    {
+      "item": [
+        {
+          "code": [
+            {
+              "code": "61583-1",
+              "system": "http://loinc.org",
+              "display": "How would you rate your pain on average in past 7 days [PROMIS]"
+            }
+          ],
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-unit",
+              "valueCoding": {
+                "code": "{score}",
+                "system": "http://unitsofmeasure.org",
+                "display": "{score}"
+              }
+            },
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/minValue",
+              "valueInteger": 0
+            },
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/maxValue",
+              "valueInteger": 10
+            }
+          ],
+          "linkId": "promis-global07",
+          "type": "integer",
+          "text": "Wie würden Sie Ihre Schmerzen im Allgemeinen einschätzen?"
+        }
+      ],
+      "linkId": "PROMIS-29.PainIntensity",
+      "type": "group",
+      "text": "SCHMERZINTENSITÄT"
+    },
+    {
+      "item": [
+        {
+          "code": [
+            {
+              "code": "71960-9",
+              "system": "http://loinc.org",
+              "display": "PROMIS-29 Physical function score"
+            }
+          ],
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-unit",
+              "valueCoding": {
+                "code": "{score}",
+                "system": "http://unitsofmeasure.org",
+                "display": "{score}"
+              }
+            },
+            {
+              "valueExpression": {
+                "language": "text/fhirpath",
+                "expression": "%physicalFunctionRaw"
+              },
+              "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-calculatedExpression"
+            },
+            {
+              "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-observationExtract",
+              "valueBoolean": true
+            }
+          ],
+          "linkId": "promis-29-physical-function-raw",
+          "type": "decimal",
+          "text": "PROMIS-29 Körperliche Funktion - Rohwert",
+          "readOnly": true
+        },
+        {
+          "code": [
+            {
+              "code": "91721-1",
+              "system": "http://loinc.org",
+              "display": "PROMIS physical function - version 2.0 T-score"
+            }
+          ],
+          "extension": [
+            {
+              "valueExpression": {
+                "language": "text/fhirpath",
+                "expression": "iif(%physicalFunctionRaw=4, 24.5, iif(%physicalFunctionRaw=5, 28.0, iif(%physicalFunctionRaw=6, 30.6, iif(%physicalFunctionRaw=7, 32.8, iif(%physicalFunctionRaw=8, 34.7, iif(%physicalFunctionRaw=9, 36.5, iif(%physicalFunctionRaw=10, 38.1, iif(%physicalFunctionRaw=11, 39.7, iif(%physicalFunctionRaw=12, 41.2, iif(%physicalFunctionRaw=13, 42.6, iif(%physicalFunctionRaw=14, 44.0, iif(%physicalFunctionRaw=15, 45.4, iif(%physicalFunctionRaw=16, 46.8, iif(%physicalFunctionRaw=17, 48.2, iif(%physicalFunctionRaw=18, 49.6, iif(%physicalFunctionRaw=19, 51.1, iif(%physicalFunctionRaw=20, 52.6, {})))))))))))))))))"
+              },
+              "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-calculatedExpression"
+            },
+            {
+              "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-observationExtract",
+              "valueBoolean": true
+            }
+          ],
+          "linkId": "promis-29-physical-function-tscore",
+          "type": "decimal",
+          "text": "PROMIS-29 Körperliche Funktion - T-Score",
+          "readOnly": true
+        },
+        {
+          "code": [
+            {
+              "code": "71968-2",
+              "system": "http://loinc.org",
+              "display": "PROMIS-29 Anxiety score"
+            }
+          ],
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-unit",
+              "valueCoding": {
+                "code": "{score}",
+                "system": "http://unitsofmeasure.org",
+                "display": "{score}"
+              }
+            },
+            {
+              "valueExpression": {
+                "language": "text/fhirpath",
+                "expression": "%anxietyRaw"
+              },
+              "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-calculatedExpression"
+            },
+            {
+              "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-observationExtract",
+              "valueBoolean": true
+            }
+          ],
+          "linkId": "promis-29-anxiety-raw",
+          "type": "decimal",
+          "text": "PROMIS-29 Angst - Rohwert",
+          "readOnly": true
+        },
+        {
+          "code": [
+            {
+              "code": "71967-4",
+              "system": "http://loinc.org",
+              "display": "PROMIS-29 Anxiety score T-score"
+            }
+          ],
+          "extension": [
+            {
+              "valueExpression": {
+                "language": "text/fhirpath",
+                "expression": "iif(%anxietyRaw=4, 38.2, iif(%anxietyRaw=5, 44.7, iif(%anxietyRaw=6, 48.8, iif(%anxietyRaw=7, 51.9, iif(%anxietyRaw=8, 54.5, iif(%anxietyRaw=9, 56.8, iif(%anxietyRaw=10, 58.9, iif(%anxietyRaw=11, 60.9, iif(%anxietyRaw=12, 62.8, iif(%anxietyRaw=13, 64.7, iif(%anxietyRaw=14, 66.6, iif(%anxietyRaw=15, 68.6, iif(%anxietyRaw=16, 70.7, iif(%anxietyRaw=17, 72.9, iif(%anxietyRaw=18, 75.4, iif(%anxietyRaw=19, 78.5, iif(%anxietyRaw=20, 83.1, {})))))))))))))))))"
+              },
+              "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-calculatedExpression"
+            },
+            {
+              "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-observationExtract",
+              "valueBoolean": true
+            }
+          ],
+          "linkId": "promis-29-anxiety-tscore",
+          "type": "decimal",
+          "text": "PROMIS-29 Angst - T-Score",
+          "readOnly": true
+        },
+        {
+          "code": [
+            {
+              "code": "71966-6",
+              "system": "http://loinc.org",
+              "display": "PROMIS-29 Depression score"
+            }
+          ],
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-unit",
+              "valueCoding": {
+                "code": "{score}",
+                "system": "http://unitsofmeasure.org",
+                "display": "{score}"
+              }
+            },
+            {
+              "valueExpression": {
+                "language": "text/fhirpath",
+                "expression": "%depressionRaw"
+              },
+              "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-calculatedExpression"
+            },
+            {
+              "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-observationExtract",
+              "valueBoolean": true
+            }
+          ],
+          "linkId": "promis-29-depression-raw",
+          "type": "decimal",
+          "text": "PROMIS-29 Depression - Rohwert",
+          "readOnly": true
+        },
+        {
+          "code": [
+            {
+              "code": "77861-3",
+              "system": "http://loinc.org",
+              "display": "PROMIS emotional distress - depression - version 1.0 Tscore"
+            }
+          ],
+          "extension": [
+            {
+              "valueExpression": {
+                "language": "text/fhirpath",
+                "expression": "iif(%depressionRaw=4, 41.0, iif(%depressionRaw=5, 49.0, iif(%depressionRaw=6, 51.8, iif(%depressionRaw=7, 53.9, iif(%depressionRaw=8, 55.7, iif(%depressionRaw=9, 57.3, iif(%depressionRaw=10, 58.9, iif(%depressionRaw=11, 60.5, iif(%depressionRaw=12, 62.2, iif(%depressionRaw=13, 63.9, iif(%depressionRaw=14, 65.7, iif(%depressionRaw=15, 67.5, iif(%depressionRaw=16, 69.4, iif(%depressionRaw=17, 71.2, iif(%depressionRaw=18, 73.3, iif(%depressionRaw=19, 75.7, iif(%depressionRaw=20, 79.4, {})))))))))))))))))"
+              },
+              "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-calculatedExpression"
+            },
+            {
+              "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-observationExtract",
+              "valueBoolean": true
+            }
+          ],
+          "linkId": "promis-29-depression-tscore",
+          "type": "decimal",
+          "text": "PROMIS-29 Depression - T-Score",
+          "readOnly": true
+        },
+        {
+          "code": [
+            {
+              "code": "71964-1",
+              "system": "http://loinc.org",
+              "display": "PROMIS-29 Fatigue score"
+            }
+          ],
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-unit",
+              "valueCoding": {
+                "code": "{score}",
+                "system": "http://unitsofmeasure.org",
+                "display": "{score}"
+              }
+            },
+            {
+              "valueExpression": {
+                "language": "text/fhirpath",
+                "expression": "%fatigueRaw"
+              },
+              "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-calculatedExpression"
+            },
+            {
+              "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-observationExtract",
+              "valueBoolean": true
+            }
+          ],
+          "linkId": "promis-29-fatigue-raw",
+          "type": "decimal",
+          "text": "PROMIS-29 Erschöpfung - Rohwert",
+          "readOnly": true
+        },
+        {
+          "code": [
+            {
+              "code": "77864-7",
+              "system": "http://loinc.org",
+              "display": "PROMIS fatigue - version 1.0 Tscore"
+            }
+          ],
+          "extension": [
+            {
+              "valueExpression": {
+                "language": "text/fhirpath",
+                "expression": "iif(%fatigueRaw=4, 33.7, iif(%fatigueRaw=5, 40.3, iif(%fatigueRaw=6, 44.4, iif(%fatigueRaw=7, 47.6, iif(%fatigueRaw=8, 50.2, iif(%fatigueRaw=9, 52.5, iif(%fatigueRaw=10, 54.7, iif(%fatigueRaw=11, 56.8, iif(%fatigueRaw=12, 58.8, iif(%fatigueRaw=13, 60.8, iif(%fatigueRaw=14, 62.8, iif(%fatigueRaw=15, 64.9, iif(%fatigueRaw=16, 67.1, iif(%fatigueRaw=17, 69.4, iif(%fatigueRaw=18, 72.0, iif(%fatigueRaw=19, 75.0, iif(%fatigueRaw=20, 78.8, {})))))))))))))))))"
+              },
+              "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-calculatedExpression"
+            },
+            {
+              "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-observationExtract",
+              "valueBoolean": true
+            }
+          ],
+          "linkId": "promis-29-fatigue-tscore",
+          "type": "decimal",
+          "text": "PROMIS-29 Erschöpfung - T-Score",
+          "readOnly": true
+        },
+        {
+          "code": [
+            {
+              "code": "71956-7",
+              "system": "http://loinc.org",
+              "display": "PROMIS-29 Sleep disturbance score"
+            }
+          ],
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-unit",
+              "valueCoding": {
+                "code": "{score}",
+                "system": "http://unitsofmeasure.org",
+                "display": "{score}"
+              }
+            },
+            {
+              "valueExpression": {
+                "language": "text/fhirpath",
+                "expression": "%sleepRaw"
+              },
+              "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-calculatedExpression"
+            },
+            {
+              "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-observationExtract",
+              "valueBoolean": true
+            }
+          ],
+          "linkId": "promis-29-sleep-raw",
+          "type": "decimal",
+          "text": "PROMIS-29 Schlafstörungen - Rohwert",
+          "readOnly": true
+        },
+        {
+          "code": [
+            {
+              "code": "77860-5",
+              "system": "http://loinc.org",
+              "display": "PROMIS sleep disturbance - version 1.0 Tscore"
+            }
+          ],
+          "extension": [
+            {
+              "valueExpression": {
+                "language": "text/fhirpath",
+                "expression": "iif(%sleepRaw=4, 28.0, iif(%sleepRaw=5, 36.0, iif(%sleepRaw=6, 40.6, iif(%sleepRaw=7, 44.0, iif(%sleepRaw=8, 46.8, iif(%sleepRaw=9, 49.3, iif(%sleepRaw=10, 51.5, iif(%sleepRaw=11, 53.6, iif(%sleepRaw=12, 55.6, iif(%sleepRaw=13, 57.5, iif(%sleepRaw=14, 59.4, iif(%sleepRaw=15, 61.3, iif(%sleepRaw=16, 63.3, iif(%sleepRaw=17, 65.4, iif(%sleepRaw=18, 67.7, iif(%sleepRaw=19, 70.4, iif(%sleepRaw=20, 73.9, {})))))))))))))))))"
+              },
+              "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-calculatedExpression"
+            },
+            {
+              "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-observationExtract",
+              "valueBoolean": true
+            }
+          ],
+          "linkId": "promis-29-sleep-tscore",
+          "type": "decimal",
+          "text": "PROMIS-29 Schlafstörungen - T-Score",
+          "readOnly": true
+        },
+        {
+          "code": [
+            {
+              "code": "71958-3",
+              "system": "http://loinc.org",
+              "display": "PROMIS-29 Satisfaction with participation in social roles score"
+            }
+          ],
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-unit",
+              "valueCoding": {
+                "code": "{score}",
+                "system": "http://unitsofmeasure.org",
+                "display": "{score}"
+              }
+            },
+            {
+              "valueExpression": {
+                "language": "text/fhirpath",
+                "expression": "%socialRaw"
+              },
+              "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-calculatedExpression"
+            },
+            {
+              "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-observationExtract",
+              "valueBoolean": true
+            }
+          ],
+          "linkId": "promis-29-social-raw",
+          "type": "decimal",
+          "text": "PROMIS-29 Soziale Teilhabe - Rohwert",
+          "readOnly": true
+        },
+        {
+          "code": [
+            {
+              "code": "77854-8",
+              "system": "http://loinc.org",
+              "display": "PROMIS ability to participate in social roles and activities - version 2.0 Tscore"
+            }
+          ],
+          "extension": [
+            {
+              "valueExpression": {
+                "language": "text/fhirpath",
+                "expression": "iif(%socialRaw=4, 24.5, iif(%socialRaw=5, 28.0, iif(%socialRaw=6, 30.6, iif(%socialRaw=7, 32.8, iif(%socialRaw=8, 34.7, iif(%socialRaw=9, 36.5, iif(%socialRaw=10, 38.1, iif(%socialRaw=11, 39.7, iif(%socialRaw=12, 41.2, iif(%socialRaw=13, 42.6, iif(%socialRaw=14, 44.0, iif(%socialRaw=15, 45.4, iif(%socialRaw=16, 46.8, iif(%socialRaw=17, 48.2, iif(%socialRaw=18, 49.6, iif(%socialRaw=19, 51.1, iif(%socialRaw=20, 52.6, {})))))))))))))))))"
+              },
+              "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-calculatedExpression"
+            },
+            {
+              "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-observationExtract",
+              "valueBoolean": true
+            }
+          ],
+          "linkId": "promis-29-social-tscore",
+          "type": "decimal",
+          "text": "PROMIS-29 Soziale Teilhabe - T-Score",
+          "readOnly": true
+        },
+        {
+          "code": [
+            {
+              "code": "71962-5",
+              "system": "http://loinc.org",
+              "display": "PROMIS-29 Pain interference score"
+            }
+          ],
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-unit",
+              "valueCoding": {
+                "code": "{score}",
+                "system": "http://unitsofmeasure.org",
+                "display": "{score}"
+              }
+            },
+            {
+              "valueExpression": {
+                "language": "text/fhirpath",
+                "expression": "%painInterferenceRaw"
+              },
+              "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-calculatedExpression"
+            },
+            {
+              "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-observationExtract",
+              "valueBoolean": true
+            }
+          ],
+          "linkId": "promis-29-pain-interference-raw",
+          "type": "decimal",
+          "text": "PROMIS-29 Schmerzbedingte Beeinträchtigung - Rohwert",
+          "readOnly": true
+        },
+        {
+          "code": [
+            {
+              "code": "77865-4",
+              "system": "http://loinc.org",
+              "display": "PROMIS pain interference - version 1.0 Tscore"
+            }
+          ],
+          "extension": [
+            {
+              "valueExpression": {
+                "language": "text/fhirpath",
+                "expression": "iif(%painInterferenceRaw=4, 38.2, iif(%painInterferenceRaw=5, 44.7, iif(%painInterferenceRaw=6, 48.8, iif(%painInterferenceRaw=7, 51.9, iif(%painInterferenceRaw=8, 54.5, iif(%painInterferenceRaw=9, 56.8, iif(%painInterferenceRaw=10, 58.9, iif(%painInterferenceRaw=11, 60.9, iif(%painInterferenceRaw=12, 62.8, iif(%painInterferenceRaw=13, 64.7, iif(%painInterferenceRaw=14, 66.6, iif(%painInterferenceRaw=15, 68.6, iif(%painInterferenceRaw=16, 70.7, iif(%painInterferenceRaw=17, 72.9, iif(%painInterferenceRaw=18, 75.4, iif(%painInterferenceRaw=19, 78.5, iif(%painInterferenceRaw=20, 83.1, {})))))))))))))))))"
+              },
+              "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-calculatedExpression"
+            },
+            {
+              "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-observationExtract",
+              "valueBoolean": true
+            }
+          ],
+          "linkId": "promis-29-pain-interference-tscore",
+          "type": "decimal",
+          "text": "PROMIS-29 Schmerzbedingte Beeinträchtigung - T-Score",
+          "readOnly": true
+        }
+      ],
+      "linkId": "PROMIS-29.Scores",
+      "type": "group",
+      "text": "BEREICHS-BEWERTUNGEN"
+    }
+  ],
+  "version": "2027.0.0-ballot.1",
+  "publisher": "Medizininformatik-Initiative (MII) – PRO Modul",
+  "copyright": "The FHIR Questionnaire resource (linkIds, extensions, score calculation logic, observation extraction definitions) is part of the MII PRO Module and is licensed under CC-BY 4.0.\n\nThe PROMIS items contained herein (item text, response options, scoring algorithms, IRT parameters) are © 2008–2024 PROMIS Health Organization and PROMIS Cooperative Group. PROMIS® is a registered trademark. See https://www.healthmeasures.net for the upstream license.\n\nThe official German translations are provided by PCOR-MII (Patient-Centered Outcomes Research within the Medizininformatik-Initiative) and curated by the PROMIS National Center Germany (CPCOR, Charité – Universitätsmedizin Berlin; head: Felix Fischer).\n\nInstitutional use outside the PCOR-MII / MII context requires a usage request to CPCOR: https://cpcor.charite.de/promis_national_center_deutschland/nutzungsanfragen\n\nLOINC® codes are © Regenstrief Institute, Inc. and used under the LOINC license: https://loinc.org/license/",
+  "status": "active",
+  "experimental": true,
+  "language": "de"
+}

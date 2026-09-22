@@ -1,0 +1,134 @@
+{
+  "index-version" : 2,
+  "files" : [
+    {
+      "filename" : "ImplementationGuide-de.fhir.medication.json",
+      "resourceType" : "ImplementationGuide",
+      "id" : "de.fhir.medication",
+      "url" : "http://ig.fhir.de/igs/medication/ImplementationGuide/de.fhir.medication",
+      "version" : "1.0.3"
+    },
+    {
+      "filename" : "StructureDefinition-DosageDE.json",
+      "resourceType" : "StructureDefinition",
+      "id" : "DosageDE",
+      "url" : "http://ig.fhir.de/igs/medication/StructureDefinition/DosageDE",
+      "version" : "1.0.3",
+      "kind" : "complex-type",
+      "type" : "Dosage",
+      "derivation" : "constraint"
+    },
+    {
+      "filename" : "StructureDefinition-DosageDgMP.json",
+      "resourceType" : "StructureDefinition",
+      "id" : "DosageDgMP",
+      "url" : "http://ig.fhir.de/igs/medication/StructureDefinition/DosageDgMP",
+      "version" : "1.0.3",
+      "kind" : "complex-type",
+      "type" : "Dosage",
+      "derivation" : "constraint"
+    },
+    {
+      "filename" : "StructureDefinition-GeneratedDosageInstructionsMeta.json",
+      "resourceType" : "StructureDefinition",
+      "id" : "GeneratedDosageInstructionsMeta",
+      "url" : "http://ig.fhir.de/igs/medication/StructureDefinition/GeneratedDosageInstructionsMeta",
+      "version" : "1.0.3",
+      "kind" : "complex-type",
+      "type" : "Extension",
+      "derivation" : "constraint"
+    },
+    {
+      "filename" : "StructureDefinition-MedicationDispenseDgMP.json",
+      "resourceType" : "StructureDefinition",
+      "id" : "MedicationDispenseDgMP",
+      "url" : "http://ig.fhir.de/igs/medication/StructureDefinition/MedicationDispenseDgMP",
+      "version" : "1.0.3",
+      "kind" : "resource",
+      "type" : "MedicationDispense",
+      "derivation" : "constraint"
+    },
+    {
+      "filename" : "StructureDefinition-MedicationRequestDgMP.json",
+      "resourceType" : "StructureDefinition",
+      "id" : "MedicationRequestDgMP",
+      "url" : "http://ig.fhir.de/igs/medication/StructureDefinition/MedicationRequestDgMP",
+      "version" : "1.0.3",
+      "kind" : "resource",
+      "type" : "MedicationRequest",
+      "derivation" : "constraint"
+    },
+    {
+      "filename" : "StructureDefinition-MedicationStatementDgMP.json",
+      "resourceType" : "StructureDefinition",
+      "id" : "MedicationStatementDgMP",
+      "url" : "http://ig.fhir.de/igs/medication/StructureDefinition/MedicationStatementDgMP",
+      "version" : "1.0.3",
+      "kind" : "resource",
+      "type" : "MedicationStatement",
+      "derivation" : "constraint"
+    },
+    {
+      "filename" : "StructureDefinition-TimingDE.json",
+      "resourceType" : "StructureDefinition",
+      "id" : "TimingDE",
+      "url" : "http://ig.fhir.de/igs/medication/StructureDefinition/TimingDE",
+      "version" : "1.0.3",
+      "kind" : "complex-type",
+      "type" : "Timing",
+      "derivation" : "constraint"
+    },
+    {
+      "filename" : "StructureDefinition-TimingDgMP.json",
+      "resourceType" : "StructureDefinition",
+      "id" : "TimingDgMP",
+      "url" : "http://ig.fhir.de/igs/medication/StructureDefinition/TimingDgMP",
+      "version" : "1.0.3",
+      "kind" : "complex-type",
+      "type" : "Timing",
+      "derivation" : "constraint"
+    },
+    {
+      "filename" : "ValueSet-AlgorithmLanguageCodesDgMP.json",
+      "resourceType" : "ValueSet",
+      "id" : "AlgorithmLanguageCodesDgMP",
+      "url" : "http://ig.fhir.de/igs/medication/ValueSet/AlgorithmLanguageCodesDgMP",
+      "version" : "1.0.3"
+    },
+    {
+      "filename" : "ValueSet-DosageDoseQuantityDE.json",
+      "resourceType" : "ValueSet",
+      "id" : "DosageDoseQuantityDE",
+      "url" : "http://ig.fhir.de/igs/medication/ValueSet/DosageDoseQuantityDE",
+      "version" : "1.0.3"
+    },
+    {
+      "filename" : "ValueSet-DosageUnitsOfTimeDgMP.json",
+      "resourceType" : "ValueSet",
+      "id" : "DosageUnitsOfTimeDgMP",
+      "url" : "http://ig.fhir.de/igs/medication/ValueSet/DosageUnitsOfTimeDgMP",
+      "version" : "1.0.3"
+    },
+    {
+      "filename" : "ValueSet-EDQMUnitOfPresentation.json",
+      "resourceType" : "ValueSet",
+      "id" : "EDQMUnitOfPresentation",
+      "url" : "http://ig.fhir.de/igs/medication/ValueSet/EDQMUnitOfPresentation",
+      "version" : "1.0.3"
+    },
+    {
+      "filename" : "ValueSet-PeriodUnitsOfTimeDgMP.json",
+      "resourceType" : "ValueSet",
+      "id" : "PeriodUnitsOfTimeDgMP",
+      "url" : "http://ig.fhir.de/igs/medication/ValueSet/PeriodUnitsOfTimeDgMP",
+      "version" : "1.0.3"
+    },
+    {
+      "filename" : "ValueSet-TimingWhenDgMP.json",
+      "resourceType" : "ValueSet",
+      "id" : "TimingWhenDgMP",
+      "url" : "http://ig.fhir.de/igs/medication/ValueSet/TimingWhenDgMP",
+      "version" : "1.0.3"
+    }
+  ]
+}

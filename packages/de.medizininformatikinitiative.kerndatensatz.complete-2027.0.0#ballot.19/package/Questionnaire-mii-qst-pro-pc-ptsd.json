@@ -1,0 +1,256 @@
+{
+  "resourceType": "Questionnaire",
+  "id": "mii-qst-pro-pc-ptsd",
+  "meta": {
+    "profile": [
+      "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-questionnaire|2027.0.0-ballot.1"
+    ]
+  },
+  "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/Questionnaire/mii-qst-pro-pc-ptsd",
+  "title": "MII QST PRO PC-PTSD",
+  "description": "PC-PTSD — Primary Care PTSD Screen, four-item screening questionnaire for posttraumatic stress disorder (Prins et al. 2003; German: Schäfer & Schulze 2010)",
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/artifact-versionAlgorithm",
+      "valueCoding": {
+        "code": "natural",
+        "system": "http://hl7.org/fhir/version-algorithm",
+        "display": "Natural"
+      }
+    },
+    {
+      "extension": [
+        {
+          "url": "displayable",
+          "valueBoolean": true
+        },
+        {
+          "url": "collectable",
+          "valueBoolean": true
+        },
+        {
+          "url": "calculatable",
+          "valueBoolean": true
+        },
+        {
+          "url": "extractable",
+          "valueBoolean": true
+        },
+        {
+          "url": "domainAligned",
+          "valueBoolean": true
+        }
+      ],
+      "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-ex-pro-questionnaire-capabilities"
+    },
+    {
+      "valueExpression": {
+        "name": "pcPtsdSum",
+        "language": "text/fhirpath",
+        "expression": "%resource.item.where(linkId.matches('^pc-ptsd-q0[1-4]$')).answer.value.weight().sum()"
+      },
+      "url": "http://hl7.org/fhir/StructureDefinition/variable"
+    }
+  ],
+  "code": [
+    {
+      "code": "pc-ptsd",
+      "system": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-questionnaire-catalogue",
+      "display": "PC-PTSD (Primary Care PTSD Screen)"
+    }
+  ],
+  "item": [
+    {
+      "linkId": "pc-ptsd-intro",
+      "type": "display",
+      "text": "Haben Sie jemals in Ihrem Leben etwas so Beängstigendes, Schreckliches oder Erschütterndes erlebt, dass Sie in den letzten 4 Wochen …"
+    },
+    {
+      "answerOption": [
+        {
+          "valueCoding": {
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/itemWeight",
+                "valueDecimal": 0
+              }
+            ],
+            "code": "373067005",
+            "system": "http://snomed.info/sct",
+            "display": "No"
+          }
+        },
+        {
+          "valueCoding": {
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/itemWeight",
+                "valueDecimal": 1
+              }
+            ],
+            "code": "373066001",
+            "system": "http://snomed.info/sct",
+            "display": "Yes"
+          }
+        }
+      ],
+      "linkId": "pc-ptsd-q01",
+      "type": "choice",
+      "prefix": "1",
+      "text": "… Albträume davon hatten oder daran dachten, obwohl Sie es nicht wollten?"
+    },
+    {
+      "answerOption": [
+        {
+          "valueCoding": {
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/itemWeight",
+                "valueDecimal": 0
+              }
+            ],
+            "code": "373067005",
+            "system": "http://snomed.info/sct",
+            "display": "No"
+          }
+        },
+        {
+          "valueCoding": {
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/itemWeight",
+                "valueDecimal": 1
+              }
+            ],
+            "code": "373066001",
+            "system": "http://snomed.info/sct",
+            "display": "Yes"
+          }
+        }
+      ],
+      "linkId": "pc-ptsd-q02",
+      "type": "choice",
+      "prefix": "2",
+      "text": "… sich stark bemüht haben, nicht daran zu denken oder Situationen zu vermeiden, die Sie daran erinnern?"
+    },
+    {
+      "answerOption": [
+        {
+          "valueCoding": {
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/itemWeight",
+                "valueDecimal": 0
+              }
+            ],
+            "code": "373067005",
+            "system": "http://snomed.info/sct",
+            "display": "No"
+          }
+        },
+        {
+          "valueCoding": {
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/itemWeight",
+                "valueDecimal": 1
+              }
+            ],
+            "code": "373066001",
+            "system": "http://snomed.info/sct",
+            "display": "Yes"
+          }
+        }
+      ],
+      "linkId": "pc-ptsd-q03",
+      "type": "choice",
+      "prefix": "3",
+      "text": "...ständig auf der Hut, wachsam oder schreckhaft waren?"
+    },
+    {
+      "answerOption": [
+        {
+          "valueCoding": {
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/itemWeight",
+                "valueDecimal": 0
+              }
+            ],
+            "code": "373067005",
+            "system": "http://snomed.info/sct",
+            "display": "No"
+          }
+        },
+        {
+          "valueCoding": {
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/itemWeight",
+                "valueDecimal": 1
+              }
+            ],
+            "code": "373066001",
+            "system": "http://snomed.info/sct",
+            "display": "Yes"
+          }
+        }
+      ],
+      "linkId": "pc-ptsd-q04",
+      "type": "choice",
+      "prefix": "4",
+      "text": "...sich abgestumpft und teilnahmslos gegenüber anderen, bei ihren Aktivitäten oder in Ihrem Umfeld fühlten?"
+    },
+    {
+      "code": [
+        {
+          "code": "pc-ptsd-total",
+          "system": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-score-catalogue",
+          "display": "PC-PTSD Total Score (0-4)"
+        }
+      ],
+      "extension": [
+        {
+          "valueExpression": {
+            "name": "Scoreberechnung",
+            "language": "text/fhirpath",
+            "expression": "%pcPtsdSum"
+          },
+          "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-calculatedExpression"
+        },
+        {
+          "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-observationExtract",
+          "valueBoolean": true
+        },
+        {
+          "valueCoding": {
+            "system": "http://unitsofmeasure.org",
+            "code": "{score}"
+          },
+          "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-unit"
+        },
+        {
+          "valueCodeableConcept": {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "survey"
+              }
+            ]
+          },
+          "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-observation-extract-category"
+        }
+      ],
+      "linkId": "pc-ptsd-score-total",
+      "type": "decimal",
+      "prefix": "Score",
+      "readOnly": true,
+      "text": "PC-PTSD Summenwert (0-4)"
+    }
+  ],
+  "version": "2027.0.0-ballot.1",
+  "status": "active",
+  "experimental": true,
+  "language": "de",
+  "copyright": "PC-PTSD © Prins A, et al. 2003; deutsche Fassung Schäfer I, Schulze C, 2010. Freely available — Lizenz-Status: frei verfügbar (Tier A)."
+}

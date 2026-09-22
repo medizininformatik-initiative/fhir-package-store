@@ -1,0 +1,144 @@
+{
+  "index-version" : 2,
+  "files" : [
+    {
+      "filename" : "CapabilityStatement-mii-cps-medikation-capabilitystatement.json",
+      "resourceType" : "CapabilityStatement",
+      "id" : "mii-cps-medikation-capabilitystatement",
+      "url" : "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/CapabilityStatement/metadata",
+      "version" : "2026.0.1",
+      "kind" : "requirements"
+    },
+    {
+      "filename" : "CodeSystem-mii-cs-medikation-wirkstofftyp.json",
+      "resourceType" : "CodeSystem",
+      "content" : "complete",
+      "id" : "mii-cs-medikation-wirkstofftyp",
+      "url" : "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/CodeSystem/wirkstofftyp",
+      "version" : "2026.0.1",
+      "valueSet" : "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/ValueSet/wirkstofftyp"
+    },
+    {
+      "filename" : "MII_IG_Medikation_v2025.json",
+      "resourceType" : "ImplementationGuide",
+      "id" : "mii-ig-medikation",
+      "url" : "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/ImplementationGuide/mii-ig-medikation",
+      "version" : "2026.0.1"
+    },
+    {
+      "filename" : "StructureDefinition-mii-ex-medikation-wirkstoffrelation.json",
+      "resourceType" : "StructureDefinition",
+      "id" : "mii-ex-medikation-wirkstoffrelation",
+      "url" : "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/wirkstoffrelation",
+      "version" : "2026.0.1",
+      "kind" : "complex-type",
+      "type" : "Extension",
+      "derivation" : "constraint"
+    },
+    {
+      "filename" : "StructureDefinition-mii-ex-medikation-wirkstofftyp.json",
+      "resourceType" : "StructureDefinition",
+      "id" : "mii-ex-medikation-wirkstofftyp",
+      "url" : "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/wirkstofftyp",
+      "version" : "2026.0.1",
+      "kind" : "complex-type",
+      "type" : "Extension",
+      "derivation" : "constraint"
+    },
+    {
+      "filename" : "StructureDefinition-mii-lm-medikation.json",
+      "resourceType" : "StructureDefinition",
+      "id" : "mii-lm-medikation",
+      "url" : "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/LogicalModel/BasismodulMedikation",
+      "version" : "2026.0.1",
+      "kind" : "logical",
+      "type" : "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/LogicalModel/BasismodulMedikation",
+      "derivation" : "specialization"
+    },
+    {
+      "filename" : "StructureDefinition-mii-pr-medikation-medication-administration.json",
+      "resourceType" : "StructureDefinition",
+      "id" : "mii-pr-medikation-medication-administration",
+      "url" : "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/MedicationAdministration",
+      "version" : "2026.0.1",
+      "kind" : "resource",
+      "type" : "MedicationAdministration",
+      "derivation" : "constraint"
+    },
+    {
+      "filename" : "StructureDefinition-mii-pr-medikation-medication-request.json",
+      "resourceType" : "StructureDefinition",
+      "id" : "mii-pr-medikation-medication-request",
+      "url" : "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/MedicationRequest",
+      "version" : "2026.0.1",
+      "kind" : "resource",
+      "type" : "MedicationRequest",
+      "derivation" : "constraint"
+    },
+    {
+      "filename" : "StructureDefinition-mii-pr-medikation-medication-statement.json",
+      "resourceType" : "StructureDefinition",
+      "id" : "mii-pr-medikation-medication-statement",
+      "url" : "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/MedicationStatement",
+      "version" : "2026.0.1",
+      "kind" : "resource",
+      "type" : "MedicationStatement",
+      "derivation" : "constraint"
+    },
+    {
+      "filename" : "StructureDefinition-mii-pr-medikation-medication.json",
+      "resourceType" : "StructureDefinition",
+      "id" : "mii-pr-medikation-medication",
+      "url" : "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/Medication",
+      "version" : "2026.0.1",
+      "kind" : "resource",
+      "type" : "Medication",
+      "derivation" : "constraint"
+    },
+    {
+      "filename" : "StructureDefinition-mii-pr-medikation-medikationsliste.json",
+      "resourceType" : "StructureDefinition",
+      "id" : "mii-pr-medikation-medikationsliste",
+      "url" : "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/medikationsliste",
+      "version" : "2026.0.1",
+      "kind" : "resource",
+      "type" : "List",
+      "derivation" : "constraint"
+    },
+    {
+      "filename" : "ValueSet-mii-vs-medikation-ask.json",
+      "resourceType" : "ValueSet",
+      "id" : "mii-vs-medikation-ask",
+      "url" : "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/ValueSet/mii-vs-medikation-ask",
+      "version" : "2026.0.1"
+    },
+    {
+      "filename" : "ValueSet-mii-vs-medikation-atc.json",
+      "resourceType" : "ValueSet",
+      "id" : "mii-vs-medikation-atc",
+      "url" : "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/ValueSet/mii-vs-medikation-atc",
+      "version" : "2026.0.1"
+    },
+    {
+      "filename" : "ValueSet-mii-vs-medikation-fallkontext.json",
+      "resourceType" : "ValueSet",
+      "id" : "mii-vs-medikation-fallkontext",
+      "url" : "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/ValueSet/fallkontext",
+      "version" : "2026.0.1"
+    },
+    {
+      "filename" : "ValueSet-mii-vs-medikation-unii.json",
+      "resourceType" : "ValueSet",
+      "id" : "mii-vs-medikation-unii",
+      "url" : "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/ValueSet/mii-vs-medikation-unii",
+      "version" : "2026.0.1"
+    },
+    {
+      "filename" : "ValueSet-mii-vs-medikation-wirkstofftyp.json",
+      "resourceType" : "ValueSet",
+      "id" : "mii-vs-medikation-wirkstofftyp",
+      "url" : "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/ValueSet/wirkstofftyp",
+      "version" : "2026.0.1"
+    }
+  ]
+}

@@ -1,0 +1,226 @@
+{
+  "resourceType": "CodeSystem",
+  "status": "active",
+  "content": "complete",
+  "name": "MII_CS_PRO_WHODAS_12",
+  "id": "mii-cs-pro-whodas-12",
+  "title": "MII CS PRO WHODAS 2.0 12-Item Response Scale and Item Codes",
+  "description": "CodeSystem for the WHO Disability Assessment Schedule 2.0, 12-item self-administered version (WHODAS-12), with item codes and a 5-point answer scale. English primary displays with German designations. The answer concepts carry itemWeight properties (0-4) enabling SDC ordinal scoring via answerValueSet. WHODAS 2.0 © WHO 2010; electronic use requires a WHO licence (see copyright).",
+  "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-whodas-12",
+  "concept": [
+    {
+      "code": "whodas12-answer-0",
+      "display": "None",
+      "designation": [
+        {
+          "language": "de",
+          "value": "keine"
+        }
+      ],
+      "property": [
+        {
+          "code": "itemWeight",
+          "valueDecimal": 0
+        }
+      ]
+    },
+    {
+      "code": "whodas12-answer-1",
+      "display": "Mild",
+      "designation": [
+        {
+          "language": "de",
+          "value": "geringe"
+        }
+      ],
+      "property": [
+        {
+          "code": "itemWeight",
+          "valueDecimal": 1
+        }
+      ]
+    },
+    {
+      "code": "whodas12-answer-2",
+      "display": "Moderate",
+      "designation": [
+        {
+          "language": "de",
+          "value": "mäßige"
+        }
+      ],
+      "property": [
+        {
+          "code": "itemWeight",
+          "valueDecimal": 2
+        }
+      ]
+    },
+    {
+      "code": "whodas12-answer-3",
+      "display": "Severe",
+      "designation": [
+        {
+          "language": "de",
+          "value": "starke"
+        }
+      ],
+      "property": [
+        {
+          "code": "itemWeight",
+          "valueDecimal": 3
+        }
+      ]
+    },
+    {
+      "code": "whodas12-answer-4",
+      "display": "Extreme or cannot do",
+      "designation": [
+        {
+          "language": "de",
+          "value": "sehr starke/nicht möglich"
+        }
+      ],
+      "property": [
+        {
+          "code": "itemWeight",
+          "valueDecimal": 4
+        }
+      ]
+    },
+    {
+      "code": "whodas12-q01",
+      "display": "Standing for long periods such as 30 minutes?",
+      "designation": [
+        {
+          "language": "de",
+          "value": "längere Zeit (ca. 30 min) zu stehen?"
+        }
+      ]
+    },
+    {
+      "code": "whodas12-q02",
+      "display": "Taking care of your household responsibilities?",
+      "designation": [
+        {
+          "language": "de",
+          "value": "Ihren Haushaltspflichten nachzukommen?"
+        }
+      ]
+    },
+    {
+      "code": "whodas12-q03",
+      "display": "Learning a new task, for example, learning how to get to a new place?",
+      "designation": [
+        {
+          "language": "de",
+          "value": "Neue Aufgaben zu lernen (z.B. erlernen an einen neuen Ort zu gelangen, den sie nicht kannten?)"
+        }
+      ]
+    },
+    {
+      "code": "whodas12-q04",
+      "display": "Joining in community activities (for example, festivities, religious or other activities) in the same way as anyone else can?",
+      "designation": [
+        {
+          "language": "de",
+          "value": "Wie viele Schwierigkeiten hatten Sie, an gesellschaftlichen Aktivitäten (wie z.B. Festlichkeiten, religiöse oder andere Aktivitäten) in der gleichen Art und Weise teilzunehmen, wie jeder andere?"
+        }
+      ]
+    },
+    {
+      "code": "whodas12-q05",
+      "display": "Being emotionally affected by your health problems?",
+      "designation": [
+        {
+          "language": "de",
+          "value": "Wie sehr wurden Sie durch Ihren gesundheitlichen Zustand emotional belastet?"
+        }
+      ]
+    },
+    {
+      "code": "whodas12-q06",
+      "display": "Concentrating on doing something for ten minutes?",
+      "designation": [
+        {
+          "language": "de",
+          "value": "Sich auf etwas für 10 Minuten zu konzentrieren?"
+        }
+      ]
+    },
+    {
+      "code": "whodas12-q07",
+      "display": "Walking a long distance such as a kilometre?",
+      "designation": [
+        {
+          "language": "de",
+          "value": "Eine längere Strecke (ca. einen Kilometer) zu Fuß zu gehen?"
+        }
+      ]
+    },
+    {
+      "code": "whodas12-q08",
+      "display": "Washing your whole body?",
+      "designation": [
+        {
+          "language": "de",
+          "value": "Ihren gesamten Körper zu waschen?"
+        }
+      ]
+    },
+    {
+      "code": "whodas12-q09",
+      "display": "Getting dressed?",
+      "designation": [
+        {
+          "language": "de",
+          "value": "sich anzuziehen?"
+        }
+      ]
+    },
+    {
+      "code": "whodas12-q10",
+      "display": "Dealing with people you do not know?",
+      "designation": [
+        {
+          "language": "de",
+          "value": "Im Umgang mit anderen Personen, die Sie nicht kennen?"
+        }
+      ]
+    },
+    {
+      "code": "whodas12-q11",
+      "display": "Maintaining a friendship?",
+      "designation": [
+        {
+          "language": "de",
+          "value": "Eine Freundschaft aufrechtzuerhalten?"
+        }
+      ]
+    },
+    {
+      "code": "whodas12-q12",
+      "display": "Your day-to-day work/school?",
+      "designation": [
+        {
+          "language": "de",
+          "value": "Bei der Bewältigung des Arbeits-/Schulalltags?"
+        }
+      ]
+    }
+  ],
+  "version": "2027.0.0-ballot.1",
+  "experimental": true,
+  "caseSensitive": true,
+  "language": "en",
+  "copyright": "WHODAS 2.0 © World Health Organization 2010. Scale/item text used under WHO terms; electronic or data-capture use requires a WHO licence agreement (free of charge for non-commercial use) via the WHO Classifications licensing process. MII-authored FHIR content is licensed CC0.",
+  "property": [
+    {
+      "code": "itemWeight",
+      "uri": "http://hl7.org/fhir/concept-properties#itemWeight",
+      "description": "Numerical ordinal value (0-4) for SDC calculatedExpression scoring via .weight().sum()",
+      "type": "decimal"
+    }
+  ],
+  "count": 17
+}

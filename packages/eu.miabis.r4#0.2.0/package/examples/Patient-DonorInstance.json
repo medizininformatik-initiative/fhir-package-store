@@ -1,0 +1,22 @@
+{
+  "resourceType": "Patient",
+  "id": "DonorInstance",
+  "meta": {
+    "profile": [
+      "https://fhir.bbmri-eric.eu/fhir/StructureDefinition/miabis-sample-donor"
+    ]
+  },
+  "identifier": [
+    {
+      "value": "donorId"
+    }
+  ],
+  "extension": [
+    {
+      "url": "https://fhir.bbmri-eric.eu/fhir/StructureDefinition/miabis-dataset-type-extension",
+      "valueCode": "BiologicalSamples"
+    }
+  ],
+  "gender": "male",
+  "birthDate": "1980-01-01"
+}

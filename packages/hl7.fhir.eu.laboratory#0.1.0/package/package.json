@@ -1,0 +1,31 @@
+{
+  "name" : "hl7.fhir.eu.laboratory",
+  "version" : "0.1.0",
+  "tools-version" : 3,
+  "type" : "IG",
+  "date" : "20240226080925",
+  "license" : "CC0-1.0",
+  "canonical" : "http://hl7.eu/fhir/laboratory",
+  "url" : "http://hl7.eu/fhir/laboratory/0.1.0",
+  "title" : "HL7 Europe Laboratory Report",
+  "description" : "This guide describes how the Laboratory Report can be represented in the European REALM. (built Mon, Feb 26, 2024 08:09+0100+01:00)",
+  "fhirVersions" : ["4.0.1"],
+  "dependencies" : {
+    "hl7.fhir.r4.core" : "4.0.1",
+    "hl7.terminology.r4" : "5.3.0",
+    "hl7.fhir.uv.extensions.r4" : "1.0.0",
+    "hl7.fhir.uv.ips" : "1.1.0",
+    "hl7.fhir.eu.extensions" : "0.1.0"
+  },
+  "author" : "HL7 Europe",
+  "maintainers" : [
+    {
+      "name" : "HL7 Europe",
+      "url" : "http://hl7.eu"
+    }
+  ],
+  "directories" : {
+    "lib" : "package",
+    "example" : "example"
+  }
+}

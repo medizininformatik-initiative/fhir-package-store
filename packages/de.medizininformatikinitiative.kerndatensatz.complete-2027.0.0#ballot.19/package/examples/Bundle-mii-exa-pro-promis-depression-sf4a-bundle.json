@@ -1,0 +1,388 @@
+{
+  "resourceType": "Bundle",
+  "id": "mii-exa-pro-promis-depression-sf4a-bundle",
+  "entry": [
+    {
+      "fullUrl": "http://www.medizininformatik-initiative.de/fhir/ext/modul-pro/Patient/mii-exa-pro-patient",
+      "resource": {
+        "resourceType": "Patient",
+        "id": "mii-exa-pro-patient",
+        "identifier": [
+          {
+            "system": "http://identifiers.org/patient-ids",
+            "value": "12345"
+          }
+        ],
+        "name": [
+          {
+            "given": [
+              "Max"
+            ],
+            "family": "Mustermann"
+          }
+        ],
+        "gender": "male",
+        "birthDate": "1980-05-15"
+      }
+    },
+    {
+      "fullUrl": "http://www.medizininformatik-initiative.de/fhir/ext/modul-pro/QuestionnaireResponse/mii-exa-pro-promis-depression-sf4a-response",
+      "resource": {
+        "resourceType": "QuestionnaireResponse",
+        "id": "mii-exa-pro-promis-depression-sf4a-response",
+        "meta": {
+          "profile": [
+            "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-questionnaire-response|2027.0.0-ballot.1"
+          ]
+        },
+        "item": [
+          {
+            "answer": [
+              {
+                "valueCoding": {
+                  "code": "LA10082-8",
+                  "system": "http://loinc.org",
+                  "display": "Sometimes",
+                  "_display": {
+                    "extension": [
+                      {
+                        "extension": [
+                          {
+                            "url": "lang",
+                            "valueCode": "de"
+                          },
+                          {
+                            "url": "content",
+                            "valueString": "Manchmal"
+                          }
+                        ],
+                        "url": "http://hl7.org/fhir/StructureDefinition/translation"
+                      }
+                    ]
+                  }
+                }
+              }
+            ],
+            "linkId": "promis-eddep04",
+            "text": "I felt worthless",
+            "_text": {
+              "extension": [
+                {
+                  "extension": [
+                    {
+                      "url": "lang",
+                      "valueCode": "de"
+                    },
+                    {
+                      "url": "content",
+                      "valueString": "...fühlte ich mich wertlos"
+                    }
+                  ],
+                  "url": "http://hl7.org/fhir/StructureDefinition/translation"
+                }
+              ]
+            }
+          },
+          {
+            "answer": [
+              {
+                "valueCoding": {
+                  "code": "LA10066-1",
+                  "system": "http://loinc.org",
+                  "display": "Rarely",
+                  "_display": {
+                    "extension": [
+                      {
+                        "extension": [
+                          {
+                            "url": "lang",
+                            "valueCode": "de"
+                          },
+                          {
+                            "url": "content",
+                            "valueString": "Selten"
+                          }
+                        ],
+                        "url": "http://hl7.org/fhir/StructureDefinition/translation"
+                      }
+                    ]
+                  }
+                }
+              }
+            ],
+            "linkId": "promis-eddep06",
+            "text": "I felt helpless",
+            "_text": {
+              "extension": [
+                {
+                  "extension": [
+                    {
+                      "url": "lang",
+                      "valueCode": "de"
+                    },
+                    {
+                      "url": "content",
+                      "valueString": "...fühlte ich mich hilflos"
+                    }
+                  ],
+                  "url": "http://hl7.org/fhir/StructureDefinition/translation"
+                }
+              ]
+            }
+          },
+          {
+            "answer": [
+              {
+                "valueCoding": {
+                  "code": "LA10044-8",
+                  "system": "http://loinc.org",
+                  "display": "Often",
+                  "_display": {
+                    "extension": [
+                      {
+                        "extension": [
+                          {
+                            "url": "lang",
+                            "valueCode": "de"
+                          },
+                          {
+                            "url": "content",
+                            "valueString": "Oft"
+                          }
+                        ],
+                        "url": "http://hl7.org/fhir/StructureDefinition/translation"
+                      }
+                    ]
+                  }
+                }
+              }
+            ],
+            "linkId": "promis-eddep29",
+            "text": "I felt depressed",
+            "_text": {
+              "extension": [
+                {
+                  "extension": [
+                    {
+                      "url": "lang",
+                      "valueCode": "de"
+                    },
+                    {
+                      "url": "content",
+                      "valueString": "...fühlte ich mich deprimiert"
+                    }
+                  ],
+                  "url": "http://hl7.org/fhir/StructureDefinition/translation"
+                }
+              ]
+            }
+          },
+          {
+            "answer": [
+              {
+                "valueCoding": {
+                  "code": "LA10082-8",
+                  "system": "http://loinc.org",
+                  "display": "Sometimes",
+                  "_display": {
+                    "extension": [
+                      {
+                        "extension": [
+                          {
+                            "url": "lang",
+                            "valueCode": "de"
+                          },
+                          {
+                            "url": "content",
+                            "valueString": "Manchmal"
+                          }
+                        ],
+                        "url": "http://hl7.org/fhir/StructureDefinition/translation"
+                      }
+                    ]
+                  }
+                }
+              }
+            ],
+            "linkId": "promis-eddep41",
+            "text": "I felt hopeless",
+            "_text": {
+              "extension": [
+                {
+                  "extension": [
+                    {
+                      "url": "lang",
+                      "valueCode": "de"
+                    },
+                    {
+                      "url": "content",
+                      "valueString": "...fühlte ich mich hoffnungslos"
+                    }
+                  ],
+                  "url": "http://hl7.org/fhir/StructureDefinition/translation"
+                }
+              ]
+            }
+          },
+          {
+            "answer": [
+              {
+                "valueDecimal": 12
+              }
+            ],
+            "linkId": "promis-depression-score-raw",
+            "text": "PROMIS Depression Raw Score",
+            "_text": {
+              "extension": [
+                {
+                  "extension": [
+                    {
+                      "url": "lang",
+                      "valueCode": "de"
+                    },
+                    {
+                      "url": "content",
+                      "valueString": "Rohwert (Summenscore)"
+                    }
+                  ],
+                  "url": "http://hl7.org/fhir/StructureDefinition/translation"
+                }
+              ]
+            }
+          },
+          {
+            "answer": [
+              {
+                "valueDecimal": 62.2
+              }
+            ],
+            "linkId": "promis-depression-score-tscore",
+            "text": "PROMIS Depression T-Score",
+            "_text": {
+              "extension": [
+                {
+                  "extension": [
+                    {
+                      "url": "lang",
+                      "valueCode": "de"
+                    },
+                    {
+                      "url": "content",
+                      "valueString": "T-Score"
+                    }
+                  ],
+                  "url": "http://hl7.org/fhir/StructureDefinition/translation"
+                }
+              ]
+            }
+          }
+        ],
+        "language": "en",
+        "questionnaire": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/Questionnaire/mii-qst-pro-promis-depression-sf4a|2027.0.0-ballot.1",
+        "status": "completed",
+        "subject": {
+          "reference": "Patient/mii-exa-pro-patient"
+        },
+        "authored": "2024-01-15T10:30:00Z"
+      }
+    },
+    {
+      "fullUrl": "http://www.medizininformatik-initiative.de/fhir/ext/modul-pro/Observation/mii-exa-pro-promis-depression-sf4a-raw-score",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "mii-exa-pro-promis-depression-sf4a-raw-score",
+        "meta": {
+          "profile": [
+            "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-promis-depression-sf4a-raw-score|2027.0.0-ballot.1"
+          ]
+        },
+        "category": [
+          {
+            "coding": [
+              {
+                "code": "survey",
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "display": "Survey"
+              }
+            ]
+          }
+        ],
+        "valueQuantity": {
+          "unit": "{score}",
+          "system": "http://unitsofmeasure.org",
+          "code": "{score}",
+          "value": 12
+        },
+        "derivedFrom": [
+          {
+            "reference": "QuestionnaireResponse/mii-exa-pro-promis-depression-sf4a-response"
+          }
+        ],
+        "status": "final",
+        "code": {
+          "coding": [
+            {
+              "code": "77821-7",
+              "system": "http://loinc.org",
+              "display": "PROMIS short form - emotional distress - depression 4a - version 1.0 raw score"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/mii-exa-pro-patient"
+        },
+        "effectiveDateTime": "2024-01-15T10:30:00Z"
+      }
+    },
+    {
+      "fullUrl": "http://www.medizininformatik-initiative.de/fhir/ext/modul-pro/Observation/mii-exa-pro-promis-depression-sf4a-tscore",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "mii-exa-pro-promis-depression-sf4a-tscore",
+        "meta": {
+          "profile": [
+            "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-depression-t-score|2027.0.0-ballot.1"
+          ]
+        },
+        "category": [
+          {
+            "coding": [
+              {
+                "code": "survey",
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "display": "Survey"
+              }
+            ]
+          }
+        ],
+        "valueQuantity": {
+          "unit": "{score}",
+          "system": "http://unitsofmeasure.org",
+          "code": "{score}",
+          "value": 62.2
+        },
+        "derivedFrom": [
+          {
+            "reference": "QuestionnaireResponse/mii-exa-pro-promis-depression-sf4a-response"
+          }
+        ],
+        "status": "final",
+        "code": {
+          "coding": [
+            {
+              "code": "77861-3",
+              "system": "http://loinc.org",
+              "display": "PROMIS emotional distress - depression - version 1.0 Tscore"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/mii-exa-pro-patient"
+        },
+        "effectiveDateTime": "2024-01-15T10:30:00Z"
+      }
+    }
+  ],
+  "type": "collection",
+  "timestamp": "2024-01-15T10:35:00Z"
+}

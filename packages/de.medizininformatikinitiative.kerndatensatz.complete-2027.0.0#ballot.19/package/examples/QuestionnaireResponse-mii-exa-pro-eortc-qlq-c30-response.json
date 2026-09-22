@@ -1,0 +1,1428 @@
+{
+  "resourceType": "QuestionnaireResponse",
+  "id": "mii-exa-pro-eortc-qlq-c30-response",
+  "meta": {
+    "profile": [
+      "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-questionnaire-response|2027.0.0-ballot.1"
+    ]
+  },
+  "subject": {
+    "reference": "Patient/mii-exa-pro-patient"
+  },
+  "item": [
+    {
+      "answer": [
+        {
+          "valueCoding": {
+            "system": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-eortc-qlq-c30",
+            "code": "a-little",
+            "display": "A little",
+            "_display": {
+              "extension": [
+                {
+                  "extension": [
+                    {
+                      "url": "lang",
+                      "valueCode": "de"
+                    },
+                    {
+                      "url": "content",
+                      "valueString": "Wenig"
+                    }
+                  ],
+                  "url": "http://hl7.org/fhir/StructureDefinition/translation"
+                }
+              ]
+            }
+          }
+        }
+      ],
+      "linkId": "qlq-c30-q01",
+      "text": "Do you have any trouble doing strenuous activities, like carrying a heavy shopping bag or a suitcase?",
+      "_text": {
+        "extension": [
+          {
+            "extension": [
+              {
+                "url": "lang",
+                "valueCode": "de"
+              },
+              {
+                "url": "content",
+                "valueString": "Bereitet es Ihnen Schwierigkeiten, sich körperlich anzustrengen (z.B. eine schwere Einkaufstasche oder einen Koffer zu tragen)?"
+              }
+            ],
+            "url": "http://hl7.org/fhir/StructureDefinition/translation"
+          }
+        ]
+      }
+    },
+    {
+      "answer": [
+        {
+          "valueCoding": {
+            "system": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-eortc-qlq-c30",
+            "code": "quite-a-bit",
+            "display": "Quite a bit",
+            "_display": {
+              "extension": [
+                {
+                  "extension": [
+                    {
+                      "url": "lang",
+                      "valueCode": "de"
+                    },
+                    {
+                      "url": "content",
+                      "valueString": "Mäßig"
+                    }
+                  ],
+                  "url": "http://hl7.org/fhir/StructureDefinition/translation"
+                }
+              ]
+            }
+          }
+        }
+      ],
+      "linkId": "qlq-c30-q02",
+      "text": "Do you have any trouble taking a long walk?",
+      "_text": {
+        "extension": [
+          {
+            "extension": [
+              {
+                "url": "lang",
+                "valueCode": "de"
+              },
+              {
+                "url": "content",
+                "valueString": "Bereitet es Ihnen Schwierigkeiten, einen längeren Spaziergang zu machen?"
+              }
+            ],
+            "url": "http://hl7.org/fhir/StructureDefinition/translation"
+          }
+        ]
+      }
+    },
+    {
+      "answer": [
+        {
+          "valueCoding": {
+            "system": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-eortc-qlq-c30",
+            "code": "a-little",
+            "display": "A little",
+            "_display": {
+              "extension": [
+                {
+                  "extension": [
+                    {
+                      "url": "lang",
+                      "valueCode": "de"
+                    },
+                    {
+                      "url": "content",
+                      "valueString": "Wenig"
+                    }
+                  ],
+                  "url": "http://hl7.org/fhir/StructureDefinition/translation"
+                }
+              ]
+            }
+          }
+        }
+      ],
+      "linkId": "qlq-c30-q03",
+      "text": "Do you have any trouble taking a short walk outside of the house?",
+      "_text": {
+        "extension": [
+          {
+            "extension": [
+              {
+                "url": "lang",
+                "valueCode": "de"
+              },
+              {
+                "url": "content",
+                "valueString": "Bereitet es Ihnen Schwierigkeiten, eine kurze Strecke außer Haus zu gehen?"
+              }
+            ],
+            "url": "http://hl7.org/fhir/StructureDefinition/translation"
+          }
+        ]
+      }
+    },
+    {
+      "answer": [
+        {
+          "valueCoding": {
+            "system": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-eortc-qlq-c30",
+            "code": "not-at-all",
+            "display": "Not at all",
+            "_display": {
+              "extension": [
+                {
+                  "extension": [
+                    {
+                      "url": "lang",
+                      "valueCode": "de"
+                    },
+                    {
+                      "url": "content",
+                      "valueString": "Überhaupt nicht"
+                    }
+                  ],
+                  "url": "http://hl7.org/fhir/StructureDefinition/translation"
+                }
+              ]
+            }
+          }
+        }
+      ],
+      "linkId": "qlq-c30-q04",
+      "text": "Do you need to stay in bed or a chair during the day?",
+      "_text": {
+        "extension": [
+          {
+            "extension": [
+              {
+                "url": "lang",
+                "valueCode": "de"
+              },
+              {
+                "url": "content",
+                "valueString": "Müssen Sie tagsüber im Bett liegen oder in einem Sessel sitzen?"
+              }
+            ],
+            "url": "http://hl7.org/fhir/StructureDefinition/translation"
+          }
+        ]
+      }
+    },
+    {
+      "answer": [
+        {
+          "valueCoding": {
+            "system": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-eortc-qlq-c30",
+            "code": "not-at-all",
+            "display": "Not at all",
+            "_display": {
+              "extension": [
+                {
+                  "extension": [
+                    {
+                      "url": "lang",
+                      "valueCode": "de"
+                    },
+                    {
+                      "url": "content",
+                      "valueString": "Überhaupt nicht"
+                    }
+                  ],
+                  "url": "http://hl7.org/fhir/StructureDefinition/translation"
+                }
+              ]
+            }
+          }
+        }
+      ],
+      "linkId": "qlq-c30-q05",
+      "text": "Do you need help with eating, dressing, washing yourself or using the toilet?",
+      "_text": {
+        "extension": [
+          {
+            "extension": [
+              {
+                "url": "lang",
+                "valueCode": "de"
+              },
+              {
+                "url": "content",
+                "valueString": "Brauchen Sie Hilfe beim Essen, Anziehen, Waschen oder Benutzen der Toilette?"
+              }
+            ],
+            "url": "http://hl7.org/fhir/StructureDefinition/translation"
+          }
+        ]
+      }
+    },
+    {
+      "answer": [
+        {
+          "valueCoding": {
+            "system": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-eortc-qlq-c30",
+            "code": "a-little",
+            "display": "A little",
+            "_display": {
+              "extension": [
+                {
+                  "extension": [
+                    {
+                      "url": "lang",
+                      "valueCode": "de"
+                    },
+                    {
+                      "url": "content",
+                      "valueString": "Wenig"
+                    }
+                  ],
+                  "url": "http://hl7.org/fhir/StructureDefinition/translation"
+                }
+              ]
+            }
+          }
+        }
+      ],
+      "linkId": "qlq-c30-q06",
+      "text": "Were you limited in doing either your work or other daily activities?",
+      "_text": {
+        "extension": [
+          {
+            "extension": [
+              {
+                "url": "lang",
+                "valueCode": "de"
+              },
+              {
+                "url": "content",
+                "valueString": "Waren Sie bei Ihrer Arbeit oder bei anderen tagtäglichen Beschäftigungen eingeschränkt?"
+              }
+            ],
+            "url": "http://hl7.org/fhir/StructureDefinition/translation"
+          }
+        ]
+      }
+    },
+    {
+      "answer": [
+        {
+          "valueCoding": {
+            "system": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-eortc-qlq-c30",
+            "code": "a-little",
+            "display": "A little",
+            "_display": {
+              "extension": [
+                {
+                  "extension": [
+                    {
+                      "url": "lang",
+                      "valueCode": "de"
+                    },
+                    {
+                      "url": "content",
+                      "valueString": "Wenig"
+                    }
+                  ],
+                  "url": "http://hl7.org/fhir/StructureDefinition/translation"
+                }
+              ]
+            }
+          }
+        }
+      ],
+      "linkId": "qlq-c30-q07",
+      "text": "Were you limited in pursuing your hobbies or other leisure time activities?",
+      "_text": {
+        "extension": [
+          {
+            "extension": [
+              {
+                "url": "lang",
+                "valueCode": "de"
+              },
+              {
+                "url": "content",
+                "valueString": "Waren Sie bei Ihren Hobbys oder anderen Freizeitbeschäftigungen eingeschränkt?"
+              }
+            ],
+            "url": "http://hl7.org/fhir/StructureDefinition/translation"
+          }
+        ]
+      }
+    },
+    {
+      "answer": [
+        {
+          "valueCoding": {
+            "system": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-eortc-qlq-c30",
+            "code": "not-at-all",
+            "display": "Not at all",
+            "_display": {
+              "extension": [
+                {
+                  "extension": [
+                    {
+                      "url": "lang",
+                      "valueCode": "de"
+                    },
+                    {
+                      "url": "content",
+                      "valueString": "Überhaupt nicht"
+                    }
+                  ],
+                  "url": "http://hl7.org/fhir/StructureDefinition/translation"
+                }
+              ]
+            }
+          }
+        }
+      ],
+      "linkId": "qlq-c30-q08",
+      "text": "Were you short of breath?",
+      "_text": {
+        "extension": [
+          {
+            "extension": [
+              {
+                "url": "lang",
+                "valueCode": "de"
+              },
+              {
+                "url": "content",
+                "valueString": "Waren Sie kurzatmig?"
+              }
+            ],
+            "url": "http://hl7.org/fhir/StructureDefinition/translation"
+          }
+        ]
+      }
+    },
+    {
+      "answer": [
+        {
+          "valueCoding": {
+            "system": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-eortc-qlq-c30",
+            "code": "a-little",
+            "display": "A little",
+            "_display": {
+              "extension": [
+                {
+                  "extension": [
+                    {
+                      "url": "lang",
+                      "valueCode": "de"
+                    },
+                    {
+                      "url": "content",
+                      "valueString": "Wenig"
+                    }
+                  ],
+                  "url": "http://hl7.org/fhir/StructureDefinition/translation"
+                }
+              ]
+            }
+          }
+        }
+      ],
+      "linkId": "qlq-c30-q09",
+      "text": "Have you had pain?",
+      "_text": {
+        "extension": [
+          {
+            "extension": [
+              {
+                "url": "lang",
+                "valueCode": "de"
+              },
+              {
+                "url": "content",
+                "valueString": "Hatten Sie Schmerzen?"
+              }
+            ],
+            "url": "http://hl7.org/fhir/StructureDefinition/translation"
+          }
+        ]
+      }
+    },
+    {
+      "answer": [
+        {
+          "valueCoding": {
+            "system": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-eortc-qlq-c30",
+            "code": "quite-a-bit",
+            "display": "Quite a bit",
+            "_display": {
+              "extension": [
+                {
+                  "extension": [
+                    {
+                      "url": "lang",
+                      "valueCode": "de"
+                    },
+                    {
+                      "url": "content",
+                      "valueString": "Mäßig"
+                    }
+                  ],
+                  "url": "http://hl7.org/fhir/StructureDefinition/translation"
+                }
+              ]
+            }
+          }
+        }
+      ],
+      "linkId": "qlq-c30-q10",
+      "text": "Did you need to rest?",
+      "_text": {
+        "extension": [
+          {
+            "extension": [
+              {
+                "url": "lang",
+                "valueCode": "de"
+              },
+              {
+                "url": "content",
+                "valueString": "Mussten Sie sich ausruhen?"
+              }
+            ],
+            "url": "http://hl7.org/fhir/StructureDefinition/translation"
+          }
+        ]
+      }
+    },
+    {
+      "answer": [
+        {
+          "valueCoding": {
+            "system": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-eortc-qlq-c30",
+            "code": "a-little",
+            "display": "A little",
+            "_display": {
+              "extension": [
+                {
+                  "extension": [
+                    {
+                      "url": "lang",
+                      "valueCode": "de"
+                    },
+                    {
+                      "url": "content",
+                      "valueString": "Wenig"
+                    }
+                  ],
+                  "url": "http://hl7.org/fhir/StructureDefinition/translation"
+                }
+              ]
+            }
+          }
+        }
+      ],
+      "linkId": "qlq-c30-q11",
+      "text": "Have you had trouble sleeping?",
+      "_text": {
+        "extension": [
+          {
+            "extension": [
+              {
+                "url": "lang",
+                "valueCode": "de"
+              },
+              {
+                "url": "content",
+                "valueString": "Hatten Sie Schlafstörungen?"
+              }
+            ],
+            "url": "http://hl7.org/fhir/StructureDefinition/translation"
+          }
+        ]
+      }
+    },
+    {
+      "answer": [
+        {
+          "valueCoding": {
+            "system": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-eortc-qlq-c30",
+            "code": "a-little",
+            "display": "A little",
+            "_display": {
+              "extension": [
+                {
+                  "extension": [
+                    {
+                      "url": "lang",
+                      "valueCode": "de"
+                    },
+                    {
+                      "url": "content",
+                      "valueString": "Wenig"
+                    }
+                  ],
+                  "url": "http://hl7.org/fhir/StructureDefinition/translation"
+                }
+              ]
+            }
+          }
+        }
+      ],
+      "linkId": "qlq-c30-q12",
+      "text": "Have you felt weak?",
+      "_text": {
+        "extension": [
+          {
+            "extension": [
+              {
+                "url": "lang",
+                "valueCode": "de"
+              },
+              {
+                "url": "content",
+                "valueString": "Fühlten Sie sich schwach?"
+              }
+            ],
+            "url": "http://hl7.org/fhir/StructureDefinition/translation"
+          }
+        ]
+      }
+    },
+    {
+      "answer": [
+        {
+          "valueCoding": {
+            "system": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-eortc-qlq-c30",
+            "code": "not-at-all",
+            "display": "Not at all",
+            "_display": {
+              "extension": [
+                {
+                  "extension": [
+                    {
+                      "url": "lang",
+                      "valueCode": "de"
+                    },
+                    {
+                      "url": "content",
+                      "valueString": "Überhaupt nicht"
+                    }
+                  ],
+                  "url": "http://hl7.org/fhir/StructureDefinition/translation"
+                }
+              ]
+            }
+          }
+        }
+      ],
+      "linkId": "qlq-c30-q13",
+      "text": "Have you lacked appetite?",
+      "_text": {
+        "extension": [
+          {
+            "extension": [
+              {
+                "url": "lang",
+                "valueCode": "de"
+              },
+              {
+                "url": "content",
+                "valueString": "Hatten Sie Appetitmangel?"
+              }
+            ],
+            "url": "http://hl7.org/fhir/StructureDefinition/translation"
+          }
+        ]
+      }
+    },
+    {
+      "answer": [
+        {
+          "valueCoding": {
+            "system": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-eortc-qlq-c30",
+            "code": "not-at-all",
+            "display": "Not at all",
+            "_display": {
+              "extension": [
+                {
+                  "extension": [
+                    {
+                      "url": "lang",
+                      "valueCode": "de"
+                    },
+                    {
+                      "url": "content",
+                      "valueString": "Überhaupt nicht"
+                    }
+                  ],
+                  "url": "http://hl7.org/fhir/StructureDefinition/translation"
+                }
+              ]
+            }
+          }
+        }
+      ],
+      "linkId": "qlq-c30-q14",
+      "text": "Have you felt nauseated?",
+      "_text": {
+        "extension": [
+          {
+            "extension": [
+              {
+                "url": "lang",
+                "valueCode": "de"
+              },
+              {
+                "url": "content",
+                "valueString": "War Ihnen übel?"
+              }
+            ],
+            "url": "http://hl7.org/fhir/StructureDefinition/translation"
+          }
+        ]
+      }
+    },
+    {
+      "answer": [
+        {
+          "valueCoding": {
+            "system": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-eortc-qlq-c30",
+            "code": "not-at-all",
+            "display": "Not at all",
+            "_display": {
+              "extension": [
+                {
+                  "extension": [
+                    {
+                      "url": "lang",
+                      "valueCode": "de"
+                    },
+                    {
+                      "url": "content",
+                      "valueString": "Überhaupt nicht"
+                    }
+                  ],
+                  "url": "http://hl7.org/fhir/StructureDefinition/translation"
+                }
+              ]
+            }
+          }
+        }
+      ],
+      "linkId": "qlq-c30-q15",
+      "text": "Have you vomited?",
+      "_text": {
+        "extension": [
+          {
+            "extension": [
+              {
+                "url": "lang",
+                "valueCode": "de"
+              },
+              {
+                "url": "content",
+                "valueString": "Haben Sie erbrochen?"
+              }
+            ],
+            "url": "http://hl7.org/fhir/StructureDefinition/translation"
+          }
+        ]
+      }
+    },
+    {
+      "answer": [
+        {
+          "valueCoding": {
+            "system": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-eortc-qlq-c30",
+            "code": "not-at-all",
+            "display": "Not at all",
+            "_display": {
+              "extension": [
+                {
+                  "extension": [
+                    {
+                      "url": "lang",
+                      "valueCode": "de"
+                    },
+                    {
+                      "url": "content",
+                      "valueString": "Überhaupt nicht"
+                    }
+                  ],
+                  "url": "http://hl7.org/fhir/StructureDefinition/translation"
+                }
+              ]
+            }
+          }
+        }
+      ],
+      "linkId": "qlq-c30-q16",
+      "text": "Have you been constipated?",
+      "_text": {
+        "extension": [
+          {
+            "extension": [
+              {
+                "url": "lang",
+                "valueCode": "de"
+              },
+              {
+                "url": "content",
+                "valueString": "Hatten Sie Verstopfung?"
+              }
+            ],
+            "url": "http://hl7.org/fhir/StructureDefinition/translation"
+          }
+        ]
+      }
+    },
+    {
+      "answer": [
+        {
+          "valueCoding": {
+            "system": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-eortc-qlq-c30",
+            "code": "not-at-all",
+            "display": "Not at all",
+            "_display": {
+              "extension": [
+                {
+                  "extension": [
+                    {
+                      "url": "lang",
+                      "valueCode": "de"
+                    },
+                    {
+                      "url": "content",
+                      "valueString": "Überhaupt nicht"
+                    }
+                  ],
+                  "url": "http://hl7.org/fhir/StructureDefinition/translation"
+                }
+              ]
+            }
+          }
+        }
+      ],
+      "linkId": "qlq-c30-q17",
+      "text": "Have you had diarrhea?",
+      "_text": {
+        "extension": [
+          {
+            "extension": [
+              {
+                "url": "lang",
+                "valueCode": "de"
+              },
+              {
+                "url": "content",
+                "valueString": "Hatten Sie Durchfall?"
+              }
+            ],
+            "url": "http://hl7.org/fhir/StructureDefinition/translation"
+          }
+        ]
+      }
+    },
+    {
+      "answer": [
+        {
+          "valueCoding": {
+            "system": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-eortc-qlq-c30",
+            "code": "a-little",
+            "display": "A little",
+            "_display": {
+              "extension": [
+                {
+                  "extension": [
+                    {
+                      "url": "lang",
+                      "valueCode": "de"
+                    },
+                    {
+                      "url": "content",
+                      "valueString": "Wenig"
+                    }
+                  ],
+                  "url": "http://hl7.org/fhir/StructureDefinition/translation"
+                }
+              ]
+            }
+          }
+        }
+      ],
+      "linkId": "qlq-c30-q18",
+      "text": "Were you tired?",
+      "_text": {
+        "extension": [
+          {
+            "extension": [
+              {
+                "url": "lang",
+                "valueCode": "de"
+              },
+              {
+                "url": "content",
+                "valueString": "Waren Sie müde?"
+              }
+            ],
+            "url": "http://hl7.org/fhir/StructureDefinition/translation"
+          }
+        ]
+      }
+    },
+    {
+      "answer": [
+        {
+          "valueCoding": {
+            "system": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-eortc-qlq-c30",
+            "code": "not-at-all",
+            "display": "Not at all",
+            "_display": {
+              "extension": [
+                {
+                  "extension": [
+                    {
+                      "url": "lang",
+                      "valueCode": "de"
+                    },
+                    {
+                      "url": "content",
+                      "valueString": "Überhaupt nicht"
+                    }
+                  ],
+                  "url": "http://hl7.org/fhir/StructureDefinition/translation"
+                }
+              ]
+            }
+          }
+        }
+      ],
+      "linkId": "qlq-c30-q19",
+      "text": "Did pain interfere with your daily activities?",
+      "_text": {
+        "extension": [
+          {
+            "extension": [
+              {
+                "url": "lang",
+                "valueCode": "de"
+              },
+              {
+                "url": "content",
+                "valueString": "Fühlten Sie sich durch Schmerzen in Ihrem alltäglichen Leben beeinträchtigt?"
+              }
+            ],
+            "url": "http://hl7.org/fhir/StructureDefinition/translation"
+          }
+        ]
+      }
+    },
+    {
+      "answer": [
+        {
+          "valueCoding": {
+            "system": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-eortc-qlq-c30",
+            "code": "not-at-all",
+            "display": "Not at all",
+            "_display": {
+              "extension": [
+                {
+                  "extension": [
+                    {
+                      "url": "lang",
+                      "valueCode": "de"
+                    },
+                    {
+                      "url": "content",
+                      "valueString": "Überhaupt nicht"
+                    }
+                  ],
+                  "url": "http://hl7.org/fhir/StructureDefinition/translation"
+                }
+              ]
+            }
+          }
+        }
+      ],
+      "linkId": "qlq-c30-q20",
+      "text": "Have you had difficulty in concentrating on things, like reading a newspaper or watching television?",
+      "_text": {
+        "extension": [
+          {
+            "extension": [
+              {
+                "url": "lang",
+                "valueCode": "de"
+              },
+              {
+                "url": "content",
+                "valueString": "Hatten Sie Schwierigkeiten, sich auf etwas zu konzentrieren, z.B. auf das Zeitunglesen oder das Fernsehen?"
+              }
+            ],
+            "url": "http://hl7.org/fhir/StructureDefinition/translation"
+          }
+        ]
+      }
+    },
+    {
+      "answer": [
+        {
+          "valueCoding": {
+            "system": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-eortc-qlq-c30",
+            "code": "a-little",
+            "display": "A little",
+            "_display": {
+              "extension": [
+                {
+                  "extension": [
+                    {
+                      "url": "lang",
+                      "valueCode": "de"
+                    },
+                    {
+                      "url": "content",
+                      "valueString": "Wenig"
+                    }
+                  ],
+                  "url": "http://hl7.org/fhir/StructureDefinition/translation"
+                }
+              ]
+            }
+          }
+        }
+      ],
+      "linkId": "qlq-c30-q21",
+      "text": "Did you feel tense?",
+      "_text": {
+        "extension": [
+          {
+            "extension": [
+              {
+                "url": "lang",
+                "valueCode": "de"
+              },
+              {
+                "url": "content",
+                "valueString": "Fühlten Sie sich angespannt?"
+              }
+            ],
+            "url": "http://hl7.org/fhir/StructureDefinition/translation"
+          }
+        ]
+      }
+    },
+    {
+      "answer": [
+        {
+          "valueCoding": {
+            "system": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-eortc-qlq-c30",
+            "code": "a-little",
+            "display": "A little",
+            "_display": {
+              "extension": [
+                {
+                  "extension": [
+                    {
+                      "url": "lang",
+                      "valueCode": "de"
+                    },
+                    {
+                      "url": "content",
+                      "valueString": "Wenig"
+                    }
+                  ],
+                  "url": "http://hl7.org/fhir/StructureDefinition/translation"
+                }
+              ]
+            }
+          }
+        }
+      ],
+      "linkId": "qlq-c30-q22",
+      "text": "Did you worry?",
+      "_text": {
+        "extension": [
+          {
+            "extension": [
+              {
+                "url": "lang",
+                "valueCode": "de"
+              },
+              {
+                "url": "content",
+                "valueString": "Haben Sie sich Sorgen gemacht?"
+              }
+            ],
+            "url": "http://hl7.org/fhir/StructureDefinition/translation"
+          }
+        ]
+      }
+    },
+    {
+      "answer": [
+        {
+          "valueCoding": {
+            "system": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-eortc-qlq-c30",
+            "code": "not-at-all",
+            "display": "Not at all",
+            "_display": {
+              "extension": [
+                {
+                  "extension": [
+                    {
+                      "url": "lang",
+                      "valueCode": "de"
+                    },
+                    {
+                      "url": "content",
+                      "valueString": "Überhaupt nicht"
+                    }
+                  ],
+                  "url": "http://hl7.org/fhir/StructureDefinition/translation"
+                }
+              ]
+            }
+          }
+        }
+      ],
+      "linkId": "qlq-c30-q23",
+      "text": "Did you feel irritable?",
+      "_text": {
+        "extension": [
+          {
+            "extension": [
+              {
+                "url": "lang",
+                "valueCode": "de"
+              },
+              {
+                "url": "content",
+                "valueString": "Waren Sie reizbar?"
+              }
+            ],
+            "url": "http://hl7.org/fhir/StructureDefinition/translation"
+          }
+        ]
+      }
+    },
+    {
+      "answer": [
+        {
+          "valueCoding": {
+            "system": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-eortc-qlq-c30",
+            "code": "not-at-all",
+            "display": "Not at all",
+            "_display": {
+              "extension": [
+                {
+                  "extension": [
+                    {
+                      "url": "lang",
+                      "valueCode": "de"
+                    },
+                    {
+                      "url": "content",
+                      "valueString": "Überhaupt nicht"
+                    }
+                  ],
+                  "url": "http://hl7.org/fhir/StructureDefinition/translation"
+                }
+              ]
+            }
+          }
+        }
+      ],
+      "linkId": "qlq-c30-q24",
+      "text": "Did you feel depressed?",
+      "_text": {
+        "extension": [
+          {
+            "extension": [
+              {
+                "url": "lang",
+                "valueCode": "de"
+              },
+              {
+                "url": "content",
+                "valueString": "Fühlten Sie sich niedergeschlagen?"
+              }
+            ],
+            "url": "http://hl7.org/fhir/StructureDefinition/translation"
+          }
+        ]
+      }
+    },
+    {
+      "answer": [
+        {
+          "valueCoding": {
+            "system": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-eortc-qlq-c30",
+            "code": "not-at-all",
+            "display": "Not at all",
+            "_display": {
+              "extension": [
+                {
+                  "extension": [
+                    {
+                      "url": "lang",
+                      "valueCode": "de"
+                    },
+                    {
+                      "url": "content",
+                      "valueString": "Überhaupt nicht"
+                    }
+                  ],
+                  "url": "http://hl7.org/fhir/StructureDefinition/translation"
+                }
+              ]
+            }
+          }
+        }
+      ],
+      "linkId": "qlq-c30-q25",
+      "text": "Have you had difficulty remembering things?",
+      "_text": {
+        "extension": [
+          {
+            "extension": [
+              {
+                "url": "lang",
+                "valueCode": "de"
+              },
+              {
+                "url": "content",
+                "valueString": "Hatten Sie Schwierigkeiten, sich an Dinge zu erinnern?"
+              }
+            ],
+            "url": "http://hl7.org/fhir/StructureDefinition/translation"
+          }
+        ]
+      }
+    },
+    {
+      "answer": [
+        {
+          "valueCoding": {
+            "system": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-eortc-qlq-c30",
+            "code": "not-at-all",
+            "display": "Not at all",
+            "_display": {
+              "extension": [
+                {
+                  "extension": [
+                    {
+                      "url": "lang",
+                      "valueCode": "de"
+                    },
+                    {
+                      "url": "content",
+                      "valueString": "Überhaupt nicht"
+                    }
+                  ],
+                  "url": "http://hl7.org/fhir/StructureDefinition/translation"
+                }
+              ]
+            }
+          }
+        }
+      ],
+      "linkId": "qlq-c30-q26",
+      "text": "Has your physical condition or medical treatment interfered with your family life?",
+      "_text": {
+        "extension": [
+          {
+            "extension": [
+              {
+                "url": "lang",
+                "valueCode": "de"
+              },
+              {
+                "url": "content",
+                "valueString": "Hat Ihr körperlicher Zustand oder Ihre medizinische Behandlung Ihr Familienleben beeinträchtigt?"
+              }
+            ],
+            "url": "http://hl7.org/fhir/StructureDefinition/translation"
+          }
+        ]
+      }
+    },
+    {
+      "answer": [
+        {
+          "valueCoding": {
+            "system": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-eortc-qlq-c30",
+            "code": "a-little",
+            "display": "A little",
+            "_display": {
+              "extension": [
+                {
+                  "extension": [
+                    {
+                      "url": "lang",
+                      "valueCode": "de"
+                    },
+                    {
+                      "url": "content",
+                      "valueString": "Wenig"
+                    }
+                  ],
+                  "url": "http://hl7.org/fhir/StructureDefinition/translation"
+                }
+              ]
+            }
+          }
+        }
+      ],
+      "linkId": "qlq-c30-q27",
+      "text": "Has your physical condition or medical treatment interfered with your social activities?",
+      "_text": {
+        "extension": [
+          {
+            "extension": [
+              {
+                "url": "lang",
+                "valueCode": "de"
+              },
+              {
+                "url": "content",
+                "valueString": "Hat Ihr körperlicher Zustand oder Ihre medizinische Behandlung Ihr Zusammensein oder Ihre gemeinsamen Unternehmungen mit anderen Menschen beeinträchtigt?"
+              }
+            ],
+            "url": "http://hl7.org/fhir/StructureDefinition/translation"
+          }
+        ]
+      }
+    },
+    {
+      "answer": [
+        {
+          "valueCoding": {
+            "system": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-eortc-qlq-c30",
+            "code": "not-at-all",
+            "display": "Not at all",
+            "_display": {
+              "extension": [
+                {
+                  "extension": [
+                    {
+                      "url": "lang",
+                      "valueCode": "de"
+                    },
+                    {
+                      "url": "content",
+                      "valueString": "Überhaupt nicht"
+                    }
+                  ],
+                  "url": "http://hl7.org/fhir/StructureDefinition/translation"
+                }
+              ]
+            }
+          }
+        }
+      ],
+      "linkId": "qlq-c30-q28",
+      "text": "Has your physical condition or medical treatment caused you financial difficulties?",
+      "_text": {
+        "extension": [
+          {
+            "extension": [
+              {
+                "url": "lang",
+                "valueCode": "de"
+              },
+              {
+                "url": "content",
+                "valueString": "Hat Ihr körperlicher Zustand oder Ihre medizinische Behandlung für Sie finanzielle Schwierigkeiten mit sich gebracht?"
+              }
+            ],
+            "url": "http://hl7.org/fhir/StructureDefinition/translation"
+          }
+        ]
+      }
+    },
+    {
+      "answer": [
+        {
+          "valueCoding": {
+            "system": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-eortc-qlq-c30",
+            "code": "5-very-good",
+            "display": "5 - Very good",
+            "_display": {
+              "extension": [
+                {
+                  "extension": [
+                    {
+                      "url": "lang",
+                      "valueCode": "de"
+                    },
+                    {
+                      "url": "content",
+                      "valueString": "5 - Sehr gut"
+                    }
+                  ],
+                  "url": "http://hl7.org/fhir/StructureDefinition/translation"
+                }
+              ]
+            }
+          }
+        }
+      ],
+      "linkId": "qlq-c30-q29",
+      "text": "How would you rate your overall health during the past week?",
+      "_text": {
+        "extension": [
+          {
+            "extension": [
+              {
+                "url": "lang",
+                "valueCode": "de"
+              },
+              {
+                "url": "content",
+                "valueString": "Wie würden Sie insgesamt Ihren Gesundheitszustand während der letzten Woche einschätzen?"
+              }
+            ],
+            "url": "http://hl7.org/fhir/StructureDefinition/translation"
+          }
+        ]
+      }
+    },
+    {
+      "answer": [
+        {
+          "valueCoding": {
+            "system": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-eortc-qlq-c30",
+            "code": "5-very-good",
+            "display": "5 - Very good",
+            "_display": {
+              "extension": [
+                {
+                  "extension": [
+                    {
+                      "url": "lang",
+                      "valueCode": "de"
+                    },
+                    {
+                      "url": "content",
+                      "valueString": "5 - Sehr gut"
+                    }
+                  ],
+                  "url": "http://hl7.org/fhir/StructureDefinition/translation"
+                }
+              ]
+            }
+          }
+        }
+      ],
+      "linkId": "qlq-c30-q30",
+      "text": "How would you rate your overall quality of life during the past week?",
+      "_text": {
+        "extension": [
+          {
+            "extension": [
+              {
+                "url": "lang",
+                "valueCode": "de"
+              },
+              {
+                "url": "content",
+                "valueString": "Wie würden Sie insgesamt Ihre Lebensqualität während der letzten Woche einschätzen?"
+              }
+            ],
+            "url": "http://hl7.org/fhir/StructureDefinition/translation"
+          }
+        ]
+      }
+    }
+  ],
+  "language": "en",
+  "questionnaire": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/Questionnaire/mii-qst-pro-eortc-qlq-c30|2027.0.0-ballot.1",
+  "status": "completed",
+  "authored": "2024-01-15T10:30:00Z"
+}

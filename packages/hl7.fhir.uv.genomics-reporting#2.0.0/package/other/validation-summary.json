@@ -1,0 +1,570 @@
+{
+  "ImplementationGuide/hl7.fhir.uv.genomics-reporting": {
+    "errors": 0,
+    "warnings": 0
+  },
+  "Bundle/bundle-CG-IG-HLA-FullBundle-01": {
+    "errors": 0,
+    "warnings": 9
+  },
+  "Bundle/bundle-cgexample-withGrouping": {
+    "errors": 0,
+    "warnings": 4
+  },
+  "Bundle/bundle-cgexample": {
+    "errors": 0,
+    "warnings": 3
+  },
+  "Bundle/bundle-complexVariant-nonHGVS": {
+    "errors": 0,
+    "warnings": 0
+  },
+  "Bundle/bundle-compound-heterozygote": {
+    "errors": 0,
+    "warnings": 0
+  },
+  "Bundle/bundle-CYP2C19": {
+    "errors": 0,
+    "warnings": 1
+  },
+  "Bundle/bundle-oncology-diagnostic": {
+    "errors": 0,
+    "warnings": 1
+  },
+  "Bundle/bundle-oncology-report-example": {
+    "errors": 0,
+    "warnings": 36
+  },
+  "Bundle/bundle-oncologyexamples-r4-withGrouping": {
+    "errors": 0,
+    "warnings": 3
+  },
+  "Bundle/bundle-oncologyexamples-r4": {
+    "errors": 0,
+    "warnings": 3
+  },
+  "Bundle/bundle-pgxexample": {
+    "errors": 0,
+    "warnings": 6
+  },
+  "Bundle/bundle-sequence-phase-relation-CYP2C19": {
+    "errors": 0,
+    "warnings": 0
+  },
+  "CodeSystem/clinvar-evidence-level-custom-cs": {
+    "errors": 0,
+    "warnings": 0
+  },
+  "CodeSystem/coded-annotation-types-cs": {
+    "errors": 0,
+    "warnings": 0
+  },
+  "CodeSystem/pharmgkb-evidence-level-custom-cs": {
+    "errors": 0,
+    "warnings": 0
+  },
+  "CodeSystem/sequence-phase-relationship-cs": {
+    "errors": 0,
+    "warnings": 0
+  },
+  "CodeSystem/tbd-codes-cs": {
+    "errors": 0,
+    "warnings": 0
+  },
+  "CodeSystem/variant-confidence-status-cs": {
+    "errors": 0,
+    "warnings": 0
+  },
+  "ConceptMap/dna-change-type-map": {
+    "errors": 0,
+    "warnings": 0
+  },
+  "DiagnosticReport/diagnosticreport-hla-glstring-r4": {
+    "errors": 0,
+    "warnings": 0
+  },
+  "DiagnosticReport/GenomicsReportExample01": {
+    "errors": 0,
+    "warnings": 0
+  },
+  "DiagnosticReport/PGxGenomicsReportEMERGE-withGrouping": {
+    "errors": 0,
+    "warnings": 0
+  },
+  "DiagnosticReport/PGxGenomicsReportEMERGE": {
+    "errors": 0,
+    "warnings": 0
+  },
+  "DocumentReference/VCFFile": {
+    "errors": 0,
+    "warnings": 0
+  },
+  "MedicationStatement/MedicationStatementWarfarin": {
+    "errors": 0,
+    "warnings": 0
+  },
+  "Observation/AnnotationExample": {
+    "errors": 0,
+    "warnings": 0
+  },
+  "Observation/ExampleGermlineCNV": {
+    "errors": 0,
+    "warnings": 1
+  },
+  "Observation/ExampleGermlineDEL": {
+    "errors": 0,
+    "warnings": 1
+  },
+  "Observation/ExampleGermlineINV": {
+    "errors": 0,
+    "warnings": 1
+  },
+  "Observation/ExampleSomaticCNV": {
+    "errors": 0,
+    "warnings": 1
+  },
+  "Observation/ExampleSomaticDEL": {
+    "errors": 0,
+    "warnings": 1
+  },
+  "Observation/ExampleSomaticINV": {
+    "errors": 0,
+    "warnings": 1
+  },
+  "Observation/Genotype-Clinical-Trial-Example-using-haplotypes": {
+    "errors": 0,
+    "warnings": 1
+  },
+  "Observation/genotype-hla-a-glstring-r4": {
+    "errors": 0,
+    "warnings": 1
+  },
+  "Observation/GenotypeExample1": {
+    "errors": 0,
+    "warnings": 1
+  },
+  "Observation/GenotypeExamplePharmVar": {
+    "errors": 0,
+    "warnings": 1
+  },
+  "Observation/GrouperEx01": {
+    "errors": 0,
+    "warnings": 0
+  },
+  "Observation/GrouperEx02": {
+    "errors": 0,
+    "warnings": 0
+  },
+  "Observation/GrouperEx03": {
+    "errors": 0,
+    "warnings": 0
+  },
+  "Observation/haplotype-hla-a-1-r4": {
+    "errors": 0,
+    "warnings": 1
+  },
+  "Observation/HaplotypeExamplePharmVar01": {
+    "errors": 0,
+    "warnings": 1
+  },
+  "Observation/HaplotypeExamplePharmVar02": {
+    "errors": 0,
+    "warnings": 1
+  },
+  "Observation/HaplotypeSet-Clinical-Trial-Example-1of2": {
+    "errors": 0,
+    "warnings": 1
+  },
+  "Observation/HaplotypeSet-Clinical-Trial-Example-2of2": {
+    "errors": 0,
+    "warnings": 1
+  },
+  "Observation/MicrosatelliteInstabilityExample01": {
+    "errors": 0,
+    "warnings": 0
+  },
+  "Observation/obs-idh-ex": {
+    "errors": 0,
+    "warnings": 1
+  },
+  "Observation/OverallInterpExample1": {
+    "errors": 0,
+    "warnings": 0
+  },
+  "Observation/OverallInterpExample2": {
+    "errors": 0,
+    "warnings": 0
+  },
+  "Observation/Pgx-geno-1001": {
+    "errors": 0,
+    "warnings": 1
+  },
+  "Observation/Pgx-geno-1002": {
+    "errors": 0,
+    "warnings": 1
+  },
+  "Observation/Pgx-geno-1003": {
+    "errors": 0,
+    "warnings": 1
+  },
+  "Observation/Pgx-var-1011": {
+    "errors": 0,
+    "warnings": 2
+  },
+  "Observation/Pgx-var-1012": {
+    "errors": 0,
+    "warnings": 2
+  },
+  "Observation/Pgx-var-1013": {
+    "errors": 0,
+    "warnings": 2
+  },
+  "Observation/Pgx-var-1014": {
+    "errors": 0,
+    "warnings": 2
+  },
+  "Observation/Pgx-var-1015": {
+    "errors": 0,
+    "warnings": 2
+  },
+  "Observation/Pgx-var-1016": {
+    "errors": 0,
+    "warnings": 2
+  },
+  "Observation/Pgx-var-1017": {
+    "errors": 0,
+    "warnings": 2
+  },
+  "Observation/Pgx-var-1018": {
+    "errors": 0,
+    "warnings": 2
+  },
+  "Observation/Pgx-var-1019": {
+    "errors": 0,
+    "warnings": 2
+  },
+  "Observation/Pgx-var-1020": {
+    "errors": 0,
+    "warnings": 2
+  },
+  "Observation/Pgx-var-1021": {
+    "errors": 0,
+    "warnings": 2
+  },
+  "Observation/PolyGenicDiagnosticImpExample": {
+    "errors": 0,
+    "warnings": 0
+  },
+  "Observation/RegionStudiedPGx1": {
+    "errors": 0,
+    "warnings": 1
+  },
+  "Observation/RegionStudiedPGx2": {
+    "errors": 0,
+    "warnings": 1
+  },
+  "Observation/RegionStudiedPGx3": {
+    "errors": 0,
+    "warnings": 1
+  },
+  "Observation/SequencePhaseRelationExample1": {
+    "errors": 0,
+    "warnings": 0
+  },
+  "Observation/SNVexample": {
+    "errors": 0,
+    "warnings": 1
+  },
+  "Observation/Therapeutic-Implication-Clinical-Trial-2": {
+    "errors": 0,
+    "warnings": 0
+  },
+  "Observation/Therapeutic-Implication-Clinical-Trial-Somatic": {
+    "errors": 0,
+    "warnings": 0
+  },
+  "Observation/TherapeuticImplicationExample1": {
+    "errors": 0,
+    "warnings": 0
+  },
+  "Observation/TumorMutationBurdenExample01": {
+    "errors": 0,
+    "warnings": 0
+  },
+  "Observation/TxImp01": {
+    "errors": 0,
+    "warnings": 0
+  },
+  "Observation/TxImp02": {
+    "errors": 0,
+    "warnings": 0
+  },
+  "Observation/TxImp03": {
+    "errors": 0,
+    "warnings": 0
+  },
+  "Observation/TxImp04": {
+    "errors": 0,
+    "warnings": 0
+  },
+  "Observation/TxImp05": {
+    "errors": 0,
+    "warnings": 0
+  },
+  "Observation/TxImp06": {
+    "errors": 0,
+    "warnings": 0
+  },
+  "Observation/Variant-Somatic-Clinical-Trial": {
+    "errors": 0,
+    "warnings": 1
+  },
+  "Observation/VariantExample1": {
+    "errors": 0,
+    "warnings": 0
+  },
+  "Observation/VariantExample2": {
+    "errors": 0,
+    "warnings": 0
+  },
+  "OperationDefinition/find-subject-variants": {
+    "errors": 0,
+    "warnings": 0
+  },
+  "Organization/ExampleLab": {
+    "errors": 0,
+    "warnings": 0
+  },
+  "Organization/ExampleOrg": {
+    "errors": 0,
+    "warnings": 0
+  },
+  "Patient/CGPatientExample01": {
+    "errors": 0,
+    "warnings": 0
+  },
+  "Patient/ExamplePatient": {
+    "errors": 0,
+    "warnings": 0
+  },
+  "RiskAssessment/GenRiskDiabetesT2": {
+    "errors": 0,
+    "warnings": 0
+  },
+  "ServiceRequest/eMERGEServiceRequest": {
+    "errors": 0,
+    "warnings": 0
+  },
+  "ServiceRequest/ExampleServiceRequest": {
+    "errors": 0,
+    "warnings": 0
+  },
+  "ServiceRequest/GenomicsServiceRequestExample01": {
+    "errors": 0,
+    "warnings": 0
+  },
+  "ServiceRequest/servicerequest-hla-a-r4": {
+    "errors": 0,
+    "warnings": 0
+  },
+  "Specimen/ExampleSpecimen": {
+    "errors": 0,
+    "warnings": 0
+  },
+  "Specimen/GenomicSpecimenExample01": {
+    "errors": 0,
+    "warnings": 0
+  },
+  "Specimen/GenomicSpecimenExample02": {
+    "errors": 0,
+    "warnings": 0
+  },
+  "Specimen/specimen-hla-r4": {
+    "errors": 0,
+    "warnings": 0
+  },
+  "StructureDefinition/annotation-code": {
+    "errors": 0,
+    "warnings": 0
+  },
+  "StructureDefinition/coded-annotation": {
+    "errors": 0,
+    "warnings": 0
+  },
+  "StructureDefinition/diagnostic-implication": {
+    "errors": 0,
+    "warnings": 0
+  },
+  "StructureDefinition/finding": {
+    "errors": 0,
+    "warnings": 0
+  },
+  "StructureDefinition/followup-recommendation": {
+    "errors": 0,
+    "warnings": 0
+  },
+  "StructureDefinition/genomic-report-note": {
+    "errors": 0,
+    "warnings": 0
+  },
+  "StructureDefinition/genomics-artifact": {
+    "errors": 0,
+    "warnings": 0
+  },
+  "StructureDefinition/genomics-base": {
+    "errors": 0,
+    "warnings": 0
+  },
+  "StructureDefinition/genomics-document-reference": {
+    "errors": 0,
+    "warnings": 0
+  },
+  "StructureDefinition/genomics-file": {
+    "errors": 0,
+    "warnings": 0
+  },
+  "StructureDefinition/genomics-report": {
+    "errors": 0,
+    "warnings": 0
+  },
+  "StructureDefinition/genomics-risk-assessment": {
+    "errors": 0,
+    "warnings": 0
+  },
+  "StructureDefinition/genotype": {
+    "errors": 0,
+    "warnings": 0
+  },
+  "StructureDefinition/haplotype": {
+    "errors": 0,
+    "warnings": 0
+  },
+  "StructureDefinition/implication": {
+    "errors": 0,
+    "warnings": 0
+  },
+  "StructureDefinition/medication-assessed": {
+    "errors": 0,
+    "warnings": 0
+  },
+  "StructureDefinition/medication-recommendation": {
+    "errors": 0,
+    "warnings": 0
+  },
+  "StructureDefinition/msi": {
+    "errors": 0,
+    "warnings": 0
+  },
+  "StructureDefinition/overall-interpretation": {
+    "errors": 0,
+    "warnings": 0
+  },
+  "StructureDefinition/recommended-action": {
+    "errors": 0,
+    "warnings": 0
+  },
+  "StructureDefinition/region-studied": {
+    "errors": 0,
+    "warnings": 0
+  },
+  "StructureDefinition/sequence-phase-relationship": {
+    "errors": 0,
+    "warnings": 0
+  },
+  "StructureDefinition/therapeutic-implication": {
+    "errors": 0,
+    "warnings": 0
+  },
+  "StructureDefinition/therapy-assessed": {
+    "errors": 0,
+    "warnings": 0
+  },
+  "StructureDefinition/tmb": {
+    "errors": 0,
+    "warnings": 0
+  },
+  "StructureDefinition/variant": {
+    "errors": 0,
+    "warnings": 0
+  },
+  "Task/MedicationRecommendationExample1": {
+    "errors": 0,
+    "warnings": 0
+  },
+  "Task/PGxRecEx01": {
+    "errors": 0,
+    "warnings": 0
+  },
+  "Task/PGxRecEx02": {
+    "errors": 0,
+    "warnings": 0
+  },
+  "Task/PGxRecEx03": {
+    "errors": 0,
+    "warnings": 0
+  },
+  "Task/PGxRecEx04": {
+    "errors": 0,
+    "warnings": 0
+  },
+  "Task/PGxRecEx05": {
+    "errors": 0,
+    "warnings": 0
+  },
+  "ValueSet/coded-annotation-types-vs": {
+    "errors": 0,
+    "warnings": 0
+  },
+  "ValueSet/condition-inheritance-mode-vs": {
+    "errors": 0,
+    "warnings": 4
+  },
+  "ValueSet/dna-change-type-vs": {
+    "errors": 0,
+    "warnings": 1
+  },
+  "ValueSet/evidence-level-example-vs": {
+    "errors": 0,
+    "warnings": 0
+  },
+  "ValueSet/functional-effect-vs": {
+    "errors": 0,
+    "warnings": 1
+  },
+  "ValueSet/genetic-therapeutic-implications-vs": {
+    "errors": 0,
+    "warnings": 0
+  },
+  "ValueSet/hgnc-vs": {
+    "errors": 0,
+    "warnings": 1
+  },
+  "ValueSet/hgvs-vs": {
+    "errors": 0,
+    "warnings": 0
+  },
+  "ValueSet/high-low-codes-vs": {
+    "errors": 0,
+    "warnings": 0
+  },
+  "ValueSet/molecular-consequence-vs": {
+    "errors": 0,
+    "warnings": 1
+  },
+  "ValueSet/sequence-phase-relationship-vs": {
+    "errors": 0,
+    "warnings": 0
+  },
+  "ValueSet/tbd-codes-vs": {
+    "errors": 0,
+    "warnings": 0
+  },
+  "ValueSet/variant-confidence-status-vs": {
+    "errors": 0,
+    "warnings": 0
+  },
+  "ValueSet/variant-inheritance-vs": {
+    "errors": 0,
+    "warnings": 0
+  }
+}

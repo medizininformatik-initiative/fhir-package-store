@@ -1,0 +1,73 @@
+{
+  "resourceType": "CodeSystem",
+  "status": "active",
+  "content": "complete",
+  "name": "MII_CS_PRO_ISR_Z_Answers",
+  "id": "mii-cs-pro-isr-z-answers",
+  "title": "MII CS PRO ISR-Z Answers",
+  "description": "MII-controlled Zustimmungsskala des ISR (0-4), deutsches Original. itemWeight-Property je Konzept ermöglicht SDC-Ordinalscoring via answerValueSet.",
+  "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-isr-z-answers",
+  "concept": [
+    {
+      "code": "trifft-nicht-zu",
+      "display": "trifft nicht zu",
+      "property": [
+        {
+          "code": "itemWeight",
+          "valueDecimal": 0
+        }
+      ]
+    },
+    {
+      "code": "trifft-kaum-zu",
+      "display": "trifft kaum zu",
+      "property": [
+        {
+          "code": "itemWeight",
+          "valueDecimal": 1
+        }
+      ]
+    },
+    {
+      "code": "trifft-ziemlich-zu",
+      "display": "trifft ziemlich zu",
+      "property": [
+        {
+          "code": "itemWeight",
+          "valueDecimal": 2
+        }
+      ]
+    },
+    {
+      "code": "trifft-deutlich-zu",
+      "display": "trifft deutlich zu",
+      "property": [
+        {
+          "code": "itemWeight",
+          "valueDecimal": 3
+        }
+      ]
+    },
+    {
+      "code": "trifft-extrem-zu",
+      "display": "trifft extrem zu",
+      "property": [
+        {
+          "code": "itemWeight",
+          "valueDecimal": 4
+        }
+      ]
+    }
+  ],
+  "version": "2027.0.0-ballot.1",
+  "language": "de",
+  "property": [
+    {
+      "code": "itemWeight",
+      "uri": "http://hl7.org/fhir/concept-properties#itemWeight",
+      "description": "Numerical ordinal value (0-4) for SDC calculatedExpression scoring via .weight().avg()",
+      "type": "decimal"
+    }
+  ],
+  "count": 5
+}

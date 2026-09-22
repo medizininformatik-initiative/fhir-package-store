@@ -1,0 +1,36 @@
+{
+  "name": "de.medizininformatikinitiative.kerndatensatz.onkologie",
+  "version": "2026.0.0-ballot",
+  "description": "MII-Onkologie-Kommentierungsversion v2026",
+  "author": "t_debertshaeuser",
+  "keywords": [
+    "MII",
+    "KDS",
+    "Onkologie"
+  ],
+  "license": "CC0-1.0",
+  "homepage": "https://www.medizininformatik-initiative.de/",
+  "directories": {
+    "lib": "package",
+    "example": "examples"
+  },
+  "title": "MII IG Onkologie",
+  "fhirVersions": [
+    "4.0.1"
+  ],
+  "maintainers": [
+    {
+      "name": "Medizininformatik Initiative"
+    }
+  ],
+  "jurisdiction": "http://unstats.un.org/unsd/methods/m49/m49.htm#276",
+  "dependencies": {
+    "de.basisprofil.r4": "1.5.x",
+    "de.medizininformatikinitiative.kerndatensatz.biobank": "2025.0.x",
+    "de.medizininformatikinitiative.kerndatensatz.diagnose": "2025.0.x",
+    "de.medizininformatikinitiative.kerndatensatz.medikation": "2025.0.x",
+    "de.medizininformatikinitiative.kerndatensatz.meta": "2025.0.x",
+    "de.medizininformatikinitiative.kerndatensatz.molgen": "2025.0.x",
+    "de.medizininformatikinitiative.kerndatensatz.prozedur": "2025.0.x"
+  }
+}

@@ -1,0 +1,116 @@
+{
+  "resourceType": "ValueSet",
+  "status": "active",
+  "name": "MII_VS_Kardio_Klappenvitium_ICD",
+  "id": "mii-vs-kardio-klappenvitium-icd",
+  "title": "MII VS Kardio Klappenvitium [ICD 10 GM]",
+  "description": "ICD-Codes für Klappenerkrankungen",
+  "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-kardio/ValueSet/mii-vs-kardio-klappenvitium-icd",
+  "version": "2027.0.0-ballot",
+  "publisher": "Medizininformatik Initiative",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "https://www.medizininformatik-initiative.de"
+        }
+      ]
+    }
+  ],
+  "language": "de",
+  "experimental": false,
+  "date": "2026-06-12",
+  "compose": {
+    "include": [
+      {
+        "system": "http://fhir.de/CodeSystem/bfarm/icd-10-gm",
+        "filter": [
+          {
+            "property": "concept",
+            "op": "descendent-of",
+            "value": "I05"
+          }
+        ]
+      },
+      {
+        "system": "http://fhir.de/CodeSystem/bfarm/icd-10-gm",
+        "filter": [
+          {
+            "property": "concept",
+            "op": "descendent-of",
+            "value": "I06"
+          }
+        ]
+      },
+      {
+        "system": "http://fhir.de/CodeSystem/bfarm/icd-10-gm",
+        "filter": [
+          {
+            "property": "concept",
+            "op": "descendent-of",
+            "value": "I07"
+          }
+        ]
+      },
+      {
+        "system": "http://fhir.de/CodeSystem/bfarm/icd-10-gm",
+        "filter": [
+          {
+            "property": "concept",
+            "op": "descendent-of",
+            "value": "I08"
+          }
+        ]
+      },
+      {
+        "system": "http://fhir.de/CodeSystem/bfarm/icd-10-gm",
+        "concept": [
+          {
+            "code": "I09.8"
+          }
+        ]
+      },
+      {
+        "system": "http://fhir.de/CodeSystem/bfarm/icd-10-gm",
+        "filter": [
+          {
+            "property": "concept",
+            "op": "descendent-of",
+            "value": "I34"
+          }
+        ]
+      },
+      {
+        "system": "http://fhir.de/CodeSystem/bfarm/icd-10-gm",
+        "filter": [
+          {
+            "property": "concept",
+            "op": "descendent-of",
+            "value": "I35"
+          }
+        ]
+      },
+      {
+        "system": "http://fhir.de/CodeSystem/bfarm/icd-10-gm",
+        "filter": [
+          {
+            "property": "concept",
+            "op": "descendent-of",
+            "value": "I36"
+          }
+        ]
+      },
+      {
+        "system": "http://fhir.de/CodeSystem/bfarm/icd-10-gm",
+        "filter": [
+          {
+            "property": "concept",
+            "op": "descendent-of",
+            "value": "I37"
+          }
+        ]
+      }
+    ]
+  }
+}

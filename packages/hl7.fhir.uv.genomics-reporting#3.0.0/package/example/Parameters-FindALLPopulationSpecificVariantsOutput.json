@@ -1,0 +1,1 @@
+{"resourceType":"Parameters","id":"FindALLPopulationSpecificVariantsOutput","parameter":[{"name":"variants","part":[{"name":"variantItem","valueString":"NC_000010.10:g.121551307G>A AND NC_000011.10:g.8263343T>C AND NC_000001.10:g.198742263G>A"},{"name":"numerator","valueQuantity":{"value":2}}]}]}

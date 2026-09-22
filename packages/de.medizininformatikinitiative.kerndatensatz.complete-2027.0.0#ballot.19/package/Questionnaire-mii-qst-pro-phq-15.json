@@ -1,0 +1,609 @@
+{
+  "resourceType": "Questionnaire",
+  "id": "mii-qst-pro-phq-15",
+  "meta": {
+    "profile": [
+      "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-questionnaire|2027.0.0-ballot.1"
+    ]
+  },
+  "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/Questionnaire/mii-qst-pro-phq-15",
+  "title": "MII QST PRO PHQ-15",
+  "description": "Patient Health Questionnaire-15 (PHQ-15) — somatic symptom severity (PHQ-D German validated)",
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/artifact-versionAlgorithm",
+      "valueCoding": {
+        "code": "natural",
+        "system": "http://hl7.org/fhir/version-algorithm",
+        "display": "Natural"
+      }
+    },
+    {
+      "extension": [
+        {
+          "url": "displayable",
+          "valueBoolean": true
+        },
+        {
+          "url": "collectable",
+          "valueBoolean": true
+        },
+        {
+          "url": "calculatable",
+          "valueBoolean": true
+        },
+        {
+          "url": "extractable",
+          "valueBoolean": true
+        },
+        {
+          "url": "domainAligned",
+          "valueBoolean": true
+        }
+      ],
+      "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-ex-pro-questionnaire-capabilities"
+    },
+    {
+      "valueExpression": {
+        "name": "phq15Sum",
+        "language": "text/fhirpath",
+        "expression": "%resource.item.where(linkId.matches('^phq-phq(1[a-m]|2[cd])$')).answer.value.weight().sum()"
+      },
+      "url": "http://hl7.org/fhir/StructureDefinition/variable"
+    }
+  ],
+  "code": [
+    {
+      "code": "69728-4",
+      "system": "http://loinc.org",
+      "display": "Patient Health Questionnaire 15 item (PHQ-15) [Reported]"
+    },
+    {
+      "code": "phq-phq15",
+      "system": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-questionnaire-catalogue",
+      "display": "PHQ-15 Questionnaire"
+    }
+  ],
+  "item": [
+    {
+      "linkId": "PHQ-15.Description",
+      "type": "display",
+      "text": "During the past 4 weeks, how much have you been bothered by any of the following problems?",
+      "_text": {
+        "extension": [
+          {
+            "extension": [
+              {
+                "url": "lang",
+                "valueCode": "de"
+              },
+              {
+                "url": "content",
+                "valueString": "Wie stark fühlten Sie sich im Verlauf der letzten 4 Wochen durch die folgenden Beschwerden beeinträchtigt?"
+              }
+            ],
+            "url": "http://hl7.org/fhir/StructureDefinition/translation"
+          }
+        ]
+      }
+    },
+    {
+      "code": [
+        {
+          "code": "69671-6",
+          "system": "http://loinc.org"
+        }
+      ],
+      "linkId": "phq-phq1a",
+      "type": "choice",
+      "prefix": "1",
+      "text": "Stomach pain",
+      "_text": {
+        "extension": [
+          {
+            "extension": [
+              {
+                "url": "lang",
+                "valueCode": "de"
+              },
+              {
+                "url": "content",
+                "valueString": "Bauchschmerzen"
+              }
+            ],
+            "url": "http://hl7.org/fhir/StructureDefinition/translation"
+          }
+        ]
+      },
+      "answerValueSet": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-phq-15-answers"
+    },
+    {
+      "code": [
+        {
+          "code": "69672-4",
+          "system": "http://loinc.org"
+        }
+      ],
+      "linkId": "phq-phq1b",
+      "type": "choice",
+      "prefix": "2",
+      "text": "Back pain",
+      "_text": {
+        "extension": [
+          {
+            "extension": [
+              {
+                "url": "lang",
+                "valueCode": "de"
+              },
+              {
+                "url": "content",
+                "valueString": "Rückenschmerzen"
+              }
+            ],
+            "url": "http://hl7.org/fhir/StructureDefinition/translation"
+          }
+        ]
+      },
+      "answerValueSet": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-phq-15-answers"
+    },
+    {
+      "code": [
+        {
+          "code": "69673-2",
+          "system": "http://loinc.org"
+        }
+      ],
+      "linkId": "phq-phq1c",
+      "type": "choice",
+      "prefix": "3",
+      "text": "Pain in your arms, legs, or joints (knees, hips, etc.)",
+      "_text": {
+        "extension": [
+          {
+            "extension": [
+              {
+                "url": "lang",
+                "valueCode": "de"
+              },
+              {
+                "url": "content",
+                "valueString": "Schmerzen in Armen, Beinen oder Gelenken (Knie, Hüften, usw.)"
+              }
+            ],
+            "url": "http://hl7.org/fhir/StructureDefinition/translation"
+          }
+        ]
+      },
+      "answerValueSet": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-phq-15-answers"
+    },
+    {
+      "code": [
+        {
+          "code": "69674-0",
+          "system": "http://loinc.org"
+        }
+      ],
+      "linkId": "phq-phq1d",
+      "type": "choice",
+      "prefix": "4",
+      "text": "Menstrual cramps or other problems with your periods",
+      "_text": {
+        "extension": [
+          {
+            "extension": [
+              {
+                "url": "lang",
+                "valueCode": "de"
+              },
+              {
+                "url": "content",
+                "valueString": "Menstruationsschmerzen oder andere Probleme mit der Menstruation"
+              }
+            ],
+            "url": "http://hl7.org/fhir/StructureDefinition/translation"
+          }
+        ]
+      },
+      "answerValueSet": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-phq-15-answers"
+    },
+    {
+      "code": [
+        {
+          "code": "69717-7",
+          "system": "http://loinc.org"
+        }
+      ],
+      "linkId": "phq-phq1e",
+      "type": "choice",
+      "prefix": "5",
+      "text": "Pain or problems during sexual intercourse",
+      "_text": {
+        "extension": [
+          {
+            "extension": [
+              {
+                "url": "lang",
+                "valueCode": "de"
+              },
+              {
+                "url": "content",
+                "valueString": "Schmerzen oder Probleme beim Geschlechtsverkehr"
+              }
+            ],
+            "url": "http://hl7.org/fhir/StructureDefinition/translation"
+          }
+        ]
+      },
+      "answerValueSet": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-phq-15-answers"
+    },
+    {
+      "code": [
+        {
+          "code": "69675-7",
+          "system": "http://loinc.org"
+        }
+      ],
+      "linkId": "phq-phq1f",
+      "type": "choice",
+      "prefix": "6",
+      "text": "Headaches",
+      "_text": {
+        "extension": [
+          {
+            "extension": [
+              {
+                "url": "lang",
+                "valueCode": "de"
+              },
+              {
+                "url": "content",
+                "valueString": "Kopfschmerzen"
+              }
+            ],
+            "url": "http://hl7.org/fhir/StructureDefinition/translation"
+          }
+        ]
+      },
+      "answerValueSet": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-phq-15-answers"
+    },
+    {
+      "code": [
+        {
+          "code": "69676-5",
+          "system": "http://loinc.org"
+        }
+      ],
+      "linkId": "phq-phq1g",
+      "type": "choice",
+      "prefix": "7",
+      "text": "Chest pain",
+      "_text": {
+        "extension": [
+          {
+            "extension": [
+              {
+                "url": "lang",
+                "valueCode": "de"
+              },
+              {
+                "url": "content",
+                "valueString": "Schmerzen im Brustbereich"
+              }
+            ],
+            "url": "http://hl7.org/fhir/StructureDefinition/translation"
+          }
+        ]
+      },
+      "answerValueSet": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-phq-15-answers"
+    },
+    {
+      "code": [
+        {
+          "code": "69677-3",
+          "system": "http://loinc.org"
+        }
+      ],
+      "linkId": "phq-phq1h",
+      "type": "choice",
+      "prefix": "8",
+      "text": "Dizziness",
+      "_text": {
+        "extension": [
+          {
+            "extension": [
+              {
+                "url": "lang",
+                "valueCode": "de"
+              },
+              {
+                "url": "content",
+                "valueString": "Schwindel"
+              }
+            ],
+            "url": "http://hl7.org/fhir/StructureDefinition/translation"
+          }
+        ]
+      },
+      "answerValueSet": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-phq-15-answers"
+    },
+    {
+      "code": [
+        {
+          "code": "69678-1",
+          "system": "http://loinc.org"
+        }
+      ],
+      "linkId": "phq-phq1i",
+      "type": "choice",
+      "prefix": "9",
+      "text": "Fainting spells",
+      "_text": {
+        "extension": [
+          {
+            "extension": [
+              {
+                "url": "lang",
+                "valueCode": "de"
+              },
+              {
+                "url": "content",
+                "valueString": "Ohnmachtsanfälle"
+              }
+            ],
+            "url": "http://hl7.org/fhir/StructureDefinition/translation"
+          }
+        ]
+      },
+      "answerValueSet": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-phq-15-answers"
+    },
+    {
+      "code": [
+        {
+          "code": "69679-9",
+          "system": "http://loinc.org"
+        }
+      ],
+      "linkId": "phq-phq1j",
+      "type": "choice",
+      "prefix": "10",
+      "text": "Feeling your heart pound or race",
+      "_text": {
+        "extension": [
+          {
+            "extension": [
+              {
+                "url": "lang",
+                "valueCode": "de"
+              },
+              {
+                "url": "content",
+                "valueString": "Herzklopfen oder Herzrasen"
+              }
+            ],
+            "url": "http://hl7.org/fhir/StructureDefinition/translation"
+          }
+        ]
+      },
+      "answerValueSet": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-phq-15-answers"
+    },
+    {
+      "code": [
+        {
+          "code": "69680-7",
+          "system": "http://loinc.org"
+        }
+      ],
+      "linkId": "phq-phq1k",
+      "type": "choice",
+      "prefix": "11",
+      "text": "Shortness of breath",
+      "_text": {
+        "extension": [
+          {
+            "extension": [
+              {
+                "url": "lang",
+                "valueCode": "de"
+              },
+              {
+                "url": "content",
+                "valueString": "Kurzatmigkeit"
+              }
+            ],
+            "url": "http://hl7.org/fhir/StructureDefinition/translation"
+          }
+        ]
+      },
+      "answerValueSet": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-phq-15-answers"
+    },
+    {
+      "code": [
+        {
+          "code": "69681-5",
+          "system": "http://loinc.org"
+        }
+      ],
+      "linkId": "phq-phq1l",
+      "type": "choice",
+      "prefix": "12",
+      "text": "Constipation, loose bowels, or diarrhea",
+      "_text": {
+        "extension": [
+          {
+            "extension": [
+              {
+                "url": "lang",
+                "valueCode": "de"
+              },
+              {
+                "url": "content",
+                "valueString": "Verstopfung, nervöser Darm oder Durchfall"
+              }
+            ],
+            "url": "http://hl7.org/fhir/StructureDefinition/translation"
+          }
+        ]
+      },
+      "answerValueSet": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-phq-15-answers"
+    },
+    {
+      "code": [
+        {
+          "code": "69682-3",
+          "system": "http://loinc.org"
+        }
+      ],
+      "linkId": "phq-phq1m",
+      "type": "choice",
+      "prefix": "13",
+      "text": "Nausea, gas, or indigestion",
+      "_text": {
+        "extension": [
+          {
+            "extension": [
+              {
+                "url": "lang",
+                "valueCode": "de"
+              },
+              {
+                "url": "content",
+                "valueString": "Übelkeit, Blähungen oder Verdauungsbeschwerden"
+              }
+            ],
+            "url": "http://hl7.org/fhir/StructureDefinition/translation"
+          }
+        ]
+      },
+      "answerValueSet": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-phq-15-answers"
+    },
+    {
+      "code": [
+        {
+          "code": "69731-8",
+          "system": "http://loinc.org"
+        }
+      ],
+      "linkId": "phq-phq2d",
+      "type": "choice",
+      "prefix": "14",
+      "text": "Feeling tired or having low energy",
+      "_text": {
+        "extension": [
+          {
+            "extension": [
+              {
+                "url": "lang",
+                "valueCode": "de"
+              },
+              {
+                "url": "content",
+                "valueString": "Müdigkeit oder Gefühl, keine Energie zu haben"
+              }
+            ],
+            "url": "http://hl7.org/fhir/StructureDefinition/translation"
+          }
+        ]
+      },
+      "answerValueSet": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-phq-15-answers"
+    },
+    {
+      "code": [
+        {
+          "code": "69732-6",
+          "system": "http://loinc.org"
+        }
+      ],
+      "linkId": "phq-phq2c",
+      "type": "choice",
+      "prefix": "15",
+      "text": "Trouble sleeping",
+      "_text": {
+        "extension": [
+          {
+            "extension": [
+              {
+                "url": "lang",
+                "valueCode": "de"
+              },
+              {
+                "url": "content",
+                "valueString": "Schwierigkeiten ein- oder durchzuschlafen oder vermehrter Schlaf"
+              }
+            ],
+            "url": "http://hl7.org/fhir/StructureDefinition/translation"
+          }
+        ]
+      },
+      "answerValueSet": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-phq-15-answers"
+    },
+    {
+      "code": [
+        {
+          "code": "70273-8",
+          "system": "http://loinc.org",
+          "display": "Patient Health Questionnaire 15 item (PHQ-15) total score [Reported]"
+        }
+      ],
+      "extension": [
+        {
+          "valueExpression": {
+            "name": "Scoreberechnung",
+            "language": "text/fhirpath",
+            "expression": "%phq15Sum"
+          },
+          "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-calculatedExpression"
+        },
+        {
+          "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-observationExtract",
+          "valueBoolean": true
+        },
+        {
+          "valueCoding": {
+            "system": "http://unitsofmeasure.org",
+            "code": "{score}"
+          },
+          "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-unit"
+        },
+        {
+          "valueCodeableConcept": {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "survey"
+              }
+            ]
+          },
+          "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-observation-extract-category"
+        }
+      ],
+      "linkId": "phq-phq15-score-total",
+      "type": "decimal",
+      "prefix": "Summenwert",
+      "readOnly": true,
+      "text": "PHQ-15 Total Score (0–30)",
+      "_text": {
+        "extension": [
+          {
+            "extension": [
+              {
+                "url": "lang",
+                "valueCode": "de"
+              },
+              {
+                "url": "content",
+                "valueString": "PHQ-15 Summenwert (0–30)"
+              }
+            ],
+            "url": "http://hl7.org/fhir/StructureDefinition/translation"
+          }
+        ]
+      }
+    }
+  ],
+  "version": "2027.0.0-ballot.1",
+  "status": "active",
+  "experimental": true,
+  "language": "en",
+  "copyright": "Patient Health Questionnaire (PHQ/PHQ-15) © Pfizer Inc. Freely available — no permission required for reproduction, translation, display, or use (public domain). German version: PHQ-D (Löwe, Spitzer, Zipfel & Herzog 2002). Lizenz-Status: frei verfügbar."
+}

@@ -1,0 +1,665 @@
+{
+  "resourceType": "Questionnaire",
+  "id": "mii-qst-pro-euroqol-eq5d5l-answer-coding",
+  "meta": {
+    "profile": [
+      "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-questionnaire|2027.0.0-ballot.1"
+    ]
+  },
+  "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/Questionnaire/mii-qst-pro-euroqol-eq5d5l-answer-coding",
+  "title": "MII QST PRO EQ-5D-5L",
+  "description": "MII QST PRO EuroQol Five Dimension Five Level (EQ-5D-5L) Questionnaire",
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/artifact-versionAlgorithm",
+      "valueCoding": {
+        "code": "natural",
+        "system": "http://hl7.org/fhir/version-algorithm",
+        "display": "Natural"
+      }
+    },
+    {
+      "extension": [
+        {
+          "url": "displayable",
+          "valueBoolean": true
+        },
+        {
+          "url": "collectable",
+          "valueBoolean": true
+        },
+        {
+          "url": "calculatable",
+          "valueBoolean": true
+        },
+        {
+          "url": "extractable",
+          "valueBoolean": true
+        },
+        {
+          "url": "domainAligned",
+          "valueBoolean": true
+        }
+      ],
+      "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-ex-pro-questionnaire-capabilities"
+    }
+  ],
+  "code": [
+    {
+      "code": "73041000052103",
+      "system": "http://snomed.info/sct",
+      "display": "EuroQoL five dimension five level questionnaire"
+    },
+    {
+      "system": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-questionnaire-catalogue",
+      "code": "euroqol-eq5d5l",
+      "display": "EuroQol EQ-5D-5L Questionnaire"
+    }
+  ],
+  "derivedFrom": [
+    "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/Questionnaire/mii-qst-pro-euroqol-eq5d5l"
+  ],
+  "item": [
+    {
+      "linkId": "euroqol-eq5d5l-coded-instruction",
+      "type": "display",
+      "text": "Bitte kreuzen Sie unter jeder Überschrift DAS Kästchen an, das Ihre Gesundheit HEUTE am besten beschreibt.",
+      "_text": {
+        "extension": [
+          {
+            "extension": [
+              {
+                "url": "lang",
+                "valueCode": "en"
+              },
+              {
+                "url": "content",
+                "valueString": "Under each heading, please tick the ONE box that best describes your health TODAY."
+              }
+            ],
+            "url": "http://hl7.org/fhir/StructureDefinition/translation"
+          }
+        ]
+      }
+    },
+    {
+      "answerOption": [
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-optionPrefix",
+              "valueString": "1"
+            }
+          ],
+          "valueCoding": {
+            "code": "MO-1",
+            "system": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-eq-5d-value-set",
+            "display": "Ich habe keine Probleme herumzugehen"
+          }
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-optionPrefix",
+              "valueString": "2"
+            }
+          ],
+          "valueCoding": {
+            "code": "MO-2",
+            "system": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-eq-5d-value-set",
+            "display": "Ich habe leichte Probleme herumzugehen"
+          }
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-optionPrefix",
+              "valueString": "3"
+            }
+          ],
+          "valueCoding": {
+            "code": "MO-3",
+            "system": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-eq-5d-value-set",
+            "display": "Ich habe mäßige Probleme herumzugehen"
+          }
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-optionPrefix",
+              "valueString": "4"
+            }
+          ],
+          "valueCoding": {
+            "code": "MO-4",
+            "system": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-eq-5d-value-set",
+            "display": "Ich habe große Probleme herumzugehen"
+          }
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-optionPrefix",
+              "valueString": "5"
+            }
+          ],
+          "valueCoding": {
+            "code": "MO-5",
+            "system": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-eq-5d-value-set",
+            "display": "Ich bin nicht in der Lage herumzugehen"
+          }
+        }
+      ],
+      "linkId": "euroqol-eq5d5l-coded-q01-MO",
+      "type": "choice",
+      "text": "BEWEGLICHKEIT / MOBILITÄT",
+      "_text": {
+        "extension": [
+          {
+            "extension": [
+              {
+                "url": "lang",
+                "valueCode": "en"
+              },
+              {
+                "url": "content",
+                "valueString": "MOBILITY"
+              }
+            ],
+            "url": "http://hl7.org/fhir/StructureDefinition/translation"
+          }
+        ]
+      },
+      "required": true,
+      "repeats": false
+    },
+    {
+      "answerOption": [
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-optionPrefix",
+              "valueString": "1"
+            }
+          ],
+          "valueCoding": {
+            "code": "SC-1",
+            "system": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-eq-5d-value-set",
+            "display": "Ich habe keine Probleme, mich selbst zu waschen oder anzuziehen"
+          }
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-optionPrefix",
+              "valueString": "2"
+            }
+          ],
+          "valueCoding": {
+            "code": "SC-2",
+            "system": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-eq-5d-value-set",
+            "display": "Ich habe leichte Probleme, mich selbst zu waschen oder anzuziehen"
+          }
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-optionPrefix",
+              "valueString": "3"
+            }
+          ],
+          "valueCoding": {
+            "code": "SC-3",
+            "system": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-eq-5d-value-set",
+            "display": "Ich habe mäßige Probleme, mich selbst zu waschen oder anzuziehen"
+          }
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-optionPrefix",
+              "valueString": "4"
+            }
+          ],
+          "valueCoding": {
+            "code": "SC-4",
+            "system": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-eq-5d-value-set",
+            "display": "Ich habe große Probleme, mich selbst zu waschen oder anzuziehen"
+          }
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-optionPrefix",
+              "valueString": "5"
+            }
+          ],
+          "valueCoding": {
+            "code": "SC-5",
+            "system": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-eq-5d-value-set",
+            "display": "Ich bin nicht in der Lage, mich selbst zu waschen oder anzuziehen"
+          }
+        }
+      ],
+      "linkId": "euroqol-eq5d5l-coded-q02-SC",
+      "type": "choice",
+      "text": "FÜR SICH SELBST SORGEN",
+      "_text": {
+        "extension": [
+          {
+            "extension": [
+              {
+                "url": "lang",
+                "valueCode": "en"
+              },
+              {
+                "url": "content",
+                "valueString": "SELF-CARE"
+              }
+            ],
+            "url": "http://hl7.org/fhir/StructureDefinition/translation"
+          }
+        ]
+      },
+      "required": true,
+      "repeats": false
+    },
+    {
+      "answerOption": [
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-optionPrefix",
+              "valueString": "1"
+            }
+          ],
+          "valueCoding": {
+            "code": "UA-1",
+            "system": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-eq-5d-value-set",
+            "display": "Ich habe keine Probleme, meinen alltäglichen Tätigkeiten nachzugehen"
+          }
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-optionPrefix",
+              "valueString": "2"
+            }
+          ],
+          "valueCoding": {
+            "code": "UA-2",
+            "system": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-eq-5d-value-set",
+            "display": "Ich habe leichte Probleme, meinen alltäglichen Tätigkeiten nachzugehen"
+          }
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-optionPrefix",
+              "valueString": "3"
+            }
+          ],
+          "valueCoding": {
+            "code": "UA-3",
+            "system": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-eq-5d-value-set",
+            "display": "Ich habe mäßige Probleme, meinen alltäglichen Tätigkeiten nachzugehen"
+          }
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-optionPrefix",
+              "valueString": "4"
+            }
+          ],
+          "valueCoding": {
+            "code": "UA-4",
+            "system": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-eq-5d-value-set",
+            "display": "Ich habe große Probleme, meinen alltäglichen Tätigkeiten nachzugehen"
+          }
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-optionPrefix",
+              "valueString": "5"
+            }
+          ],
+          "valueCoding": {
+            "code": "UA-5",
+            "system": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-eq-5d-value-set",
+            "display": "Ich bin nicht in der Lage, meinen alltäglichen Tätigkeiten nachzugehen"
+          }
+        }
+      ],
+      "linkId": "euroqol-eq5d5l-coded-q03-UA",
+      "type": "choice",
+      "text": "ALLTÄGLICHE TÄTIGKEITEN (z.B. Arbeit, Studium, Hausarbeit, Familien- / Freizeitaktivitäten)",
+      "_text": {
+        "extension": [
+          {
+            "extension": [
+              {
+                "url": "lang",
+                "valueCode": "en"
+              },
+              {
+                "url": "content",
+                "valueString": "USUAL ACTIVITIES (e.g. work, study, housework, family or leisure activities)"
+              }
+            ],
+            "url": "http://hl7.org/fhir/StructureDefinition/translation"
+          }
+        ]
+      },
+      "required": true,
+      "repeats": false
+    },
+    {
+      "answerOption": [
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-optionPrefix",
+              "valueString": "1"
+            }
+          ],
+          "valueCoding": {
+            "code": "PD-1",
+            "system": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-eq-5d-value-set",
+            "display": "Ich habe keine Schmerzen oder Beschwerden"
+          }
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-optionPrefix",
+              "valueString": "2"
+            }
+          ],
+          "valueCoding": {
+            "code": "PD-2",
+            "system": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-eq-5d-value-set",
+            "display": "Ich habe leichte Schmerzen oder Beschwerden"
+          }
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-optionPrefix",
+              "valueString": "3"
+            }
+          ],
+          "valueCoding": {
+            "code": "PD-3",
+            "system": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-eq-5d-value-set",
+            "display": "Ich habe mäßige Schmerzen oder Beschwerden"
+          }
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-optionPrefix",
+              "valueString": "4"
+            }
+          ],
+          "valueCoding": {
+            "code": "PD-4",
+            "system": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-eq-5d-value-set",
+            "display": "Ich habe starke Schmerzen oder Beschwerden"
+          }
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-optionPrefix",
+              "valueString": "5"
+            }
+          ],
+          "valueCoding": {
+            "code": "PD-5",
+            "system": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-eq-5d-value-set",
+            "display": "Ich habe extreme Schmerzen oder Beschwerden"
+          }
+        }
+      ],
+      "linkId": "euroqol-eq5d5l-coded-q04-PD",
+      "type": "choice",
+      "text": "SCHMERZEN / KÖRPERLICHEN BESCHWERDEN",
+      "_text": {
+        "extension": [
+          {
+            "extension": [
+              {
+                "url": "lang",
+                "valueCode": "en"
+              },
+              {
+                "url": "content",
+                "valueString": "PAIN / DISCOMFORT"
+              }
+            ],
+            "url": "http://hl7.org/fhir/StructureDefinition/translation"
+          }
+        ]
+      },
+      "required": true,
+      "repeats": false
+    },
+    {
+      "answerOption": [
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-optionPrefix",
+              "valueString": "1"
+            }
+          ],
+          "valueCoding": {
+            "code": "AD-1",
+            "system": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-eq-5d-value-set",
+            "display": "Ich bin nicht ängstlich oder deprimiert"
+          }
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-optionPrefix",
+              "valueString": "2"
+            }
+          ],
+          "valueCoding": {
+            "code": "AD-2",
+            "system": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-eq-5d-value-set",
+            "display": "Ich bin ein wenig ängstlich oder deprimiert"
+          }
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-optionPrefix",
+              "valueString": "3"
+            }
+          ],
+          "valueCoding": {
+            "code": "AD-3",
+            "system": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-eq-5d-value-set",
+            "display": "Ich bin mäßig ängstlich oder deprimiert"
+          }
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-optionPrefix",
+              "valueString": "4"
+            }
+          ],
+          "valueCoding": {
+            "code": "AD-4",
+            "system": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-eq-5d-value-set",
+            "display": "Ich bin sehr ängstlich oder deprimiert"
+          }
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-optionPrefix",
+              "valueString": "5"
+            }
+          ],
+          "valueCoding": {
+            "code": "AD-5",
+            "system": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-eq-5d-value-set",
+            "display": "Ich bin extrem ängstlich oder deprimiert"
+          }
+        }
+      ],
+      "linkId": "euroqol-eq5d5l-coded-q05-AD",
+      "type": "choice",
+      "text": "ANGST / NIEDERGESCHLAGENHEIT",
+      "_text": {
+        "extension": [
+          {
+            "extension": [
+              {
+                "url": "lang",
+                "valueCode": "en"
+              },
+              {
+                "url": "content",
+                "valueString": "ANXIETY / DEPRESSION"
+              }
+            ],
+            "url": "http://hl7.org/fhir/StructureDefinition/translation"
+          }
+        ]
+      },
+      "required": true,
+      "repeats": false
+    },
+    {
+      "code": [
+        {
+          "code": "405157008",
+          "system": "http://snomed.info/sct",
+          "display": "Personal health status"
+        }
+      ],
+      "linkId": "euroqol-eq5d5l-coded-score-profile",
+      "type": "string",
+      "text": "Gesundheitszustand",
+      "_text": {
+        "extension": [
+          {
+            "extension": [
+              {
+                "url": "lang",
+                "valueCode": "en"
+              },
+              {
+                "url": "content",
+                "valueString": "Health State"
+              }
+            ],
+            "url": "http://hl7.org/fhir/StructureDefinition/translation"
+          }
+        ]
+      },
+      "readOnly": true
+    },
+    {
+      "linkId": "euroqol-eq5d5l-coded-vas-instruction",
+      "type": "display",
+      "text": "\n    Wir wollen herausfinden, wie gut oder schlecht Ihre Gesundheit HEUTE ist.\n\n    Die Skala is mit Zahlen von 0 bis 100 versehen.\n\n    100 ist die beste Gesundheit, die Sie sich vorstellen können.\n\n    0 (Null) ist die schlechteste Gesundheit, die Sie sich vorstellen können.\n\n    Bitte kreuzen Sie den Punkt auf der Skala an, der Ihre Gesundheit HEUTE am besten beschreibt.\n\n    Jetzt tragen Sie bitte die Zahl, die Sie auf der Skala angekreuzt haben, in das Kästchen unten ein.",
+      "_text": {
+        "extension": [
+          {
+            "extension": [
+              {
+                "url": "lang",
+                "valueCode": "en"
+              },
+              {
+                "url": "content",
+                "valueString": "\n    We would like to know how good or bad your health is TODAY.\n\n    This scale is numbered from 0 to 100.\n\n    100 means the best health you can imagine.\n\n    0 means the worst health you can imagine.\n\n    Please mark an X on the scale to indicate how your health is TODAY.\n\n    Now, write the number you marked on the scale in the box below."
+              }
+            ],
+            "url": "http://hl7.org/fhir/StructureDefinition/translation"
+          }
+        ]
+      }
+    },
+    {
+      "code": [
+        {
+          "code": "446515003",
+          "system": "http://snomed.info/sct",
+          "display": "Health assessment questionnaire score"
+        }
+      ],
+      "extension": [
+        {
+          "url": "http://hl7.org/fhir/StructureDefinition/minValue",
+          "valueInteger": 0
+        },
+        {
+          "url": "http://hl7.org/fhir/StructureDefinition/maxValue",
+          "valueInteger": 100
+        },
+        {
+          "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-observationExtract",
+          "valueBoolean": true
+        },
+        {
+          "valueCoding": {
+            "system": "http://unitsofmeasure.org",
+            "code": "{score}"
+          },
+          "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-unit"
+        },
+        {
+          "valueCodeableConcept": {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "survey"
+              }
+            ]
+          },
+          "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-observation-extract-category"
+        }
+      ],
+      "initial": [
+        {
+          "valueInteger": 999
+        }
+      ],
+      "linkId": "euroqol-eq5d5l-coded-vas",
+      "type": "integer",
+      "text": "IHRE GESUNDHEIT HEUTE",
+      "_text": {
+        "extension": [
+          {
+            "extension": [
+              {
+                "url": "lang",
+                "valueCode": "en"
+              },
+              {
+                "url": "content",
+                "valueString": "YOUR HEALTH TODAY"
+              }
+            ],
+            "url": "http://hl7.org/fhir/StructureDefinition/translation"
+          }
+        ]
+      },
+      "required": true,
+      "repeats": false
+    }
+  ],
+  "version": "2027.0.0-ballot.1",
+  "status": "active",
+  "experimental": true,
+  "language": "de"
+}

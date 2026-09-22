@@ -1,0 +1,57 @@
+{
+  "resourceType": "ValueSet",
+  "status": "active",
+  "name": "MII_VS_Bildgebung_Instance_Image_Type_CT",
+  "id": "mii-vs-bildgebung-instance-image-type-ct",
+  "title": "MII VS Bildgebung Instance Image Type CT",
+  "description": "Import the ValueSet for Instance Image Type CT",
+  "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/ValueSet/mii-vs-bildgebung-instance-image-type-ct",
+  "publisher": "Medizininformatik Initiative",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "https://www.medizininformatik-initiative.de"
+        }
+      ]
+    }
+  ],
+  "version": "2026.0.0",
+  "date": "2025-12-19",
+  "extension": [
+    {
+      "url": "https://www.medizininformatik-initiative.de/fhir/modul-meta/StructureDefinition/mii-ex-meta-license-codeable",
+      "valueCodeableConcept": {
+        "coding": [
+          {
+            "code": "CC-BY-4.0",
+            "system": "http://hl7.org/fhir/spdx-license",
+            "display": "Creative Commons Attribution 4.0 International"
+          }
+        ]
+      }
+    }
+  ],
+  "meta": {
+    "profile": [
+      "http://hl7.org/fhir/StructureDefinition/shareablevalueset"
+    ]
+  },
+  "experimental": false,
+  "compose": {
+    "include": [
+      {
+        "system": "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/CodeSystem/mii-cs-bildgebung-instance-image-type",
+        "concept": [
+          {
+            "code": "AXIAL"
+          },
+          {
+            "code": "LOCALIZER"
+          }
+        ]
+      }
+    ]
+  }
+}

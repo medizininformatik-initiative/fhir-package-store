@@ -1,0 +1,19 @@
+{
+  "index-version": 1,
+  "files": [
+    {
+      "filename": "ig-r4.json",
+      "resourceType": "ImplementationGuide",
+      "id": "hl7.fhir.uv.smart-app-launch",
+      "url": "http://hl7.org/fhir/smart-app-launch/ImplementationGuide/hl7.fhir.uv.smart-app-launch",
+      "version": "2.0.0"
+    },
+    {
+      "filename": "ImplementationGuide-hl7.fhir.uv.smart-app-launch.json",
+      "resourceType": "ImplementationGuide",
+      "id": "hl7.fhir.uv.smart-app-launch",
+      "url": "http://hl7.org/fhir/smart-app-launch/ImplementationGuide/hl7.fhir.uv.smart-app-launch",
+      "version": "2.0.0"
+    }
+  ]
+}

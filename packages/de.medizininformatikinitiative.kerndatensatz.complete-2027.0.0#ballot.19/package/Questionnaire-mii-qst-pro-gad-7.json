@@ -1,0 +1,1174 @@
+{
+  "resourceType": "Questionnaire",
+  "id": "mii-qst-pro-gad-7",
+  "meta": {
+    "profile": [
+      "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-questionnaire|2027.0.0-ballot.1"
+    ]
+  },
+  "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/Questionnaire/mii-qst-pro-gad-7",
+  "title": "MII QST PRO GAD-7",
+  "description": "Generalized Anxiety Disorder Scale-7 (GAD-7) — Screening auf generalisierte Angststoerung, mit deutscher Uebersetzung (PHQ-D)",
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/artifact-versionAlgorithm",
+      "valueCoding": {
+        "code": "natural",
+        "system": "http://hl7.org/fhir/version-algorithm",
+        "display": "Natural"
+      }
+    },
+    {
+      "extension": [
+        {
+          "url": "displayable",
+          "valueBoolean": true
+        },
+        {
+          "url": "collectable",
+          "valueBoolean": true
+        },
+        {
+          "url": "calculatable",
+          "valueBoolean": true
+        },
+        {
+          "url": "extractable",
+          "valueBoolean": true
+        },
+        {
+          "url": "domainAligned",
+          "valueBoolean": true
+        }
+      ],
+      "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-ex-pro-questionnaire-capabilities"
+    },
+    {
+      "valueExpression": {
+        "name": "gad7Sum",
+        "language": "text/fhirpath",
+        "expression": "%resource.item.where(linkId.matches('^phq-phq5[a-g]$')).answer.value.weight().sum()"
+      },
+      "url": "http://hl7.org/fhir/StructureDefinition/variable"
+    }
+  ],
+  "code": [
+    {
+      "code": "69737-5",
+      "system": "http://loinc.org",
+      "display": "Generalized anxiety disorder 7 item (GAD-7)"
+    },
+    {
+      "code": "phq-gad7",
+      "system": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-questionnaire-catalogue",
+      "display": "GAD-7 (Generalized Anxiety Disorder Scale-7, Spitzer et al. 2006)"
+    }
+  ],
+  "item": [
+    {
+      "linkId": "gad-7-intro",
+      "type": "display",
+      "text": "Over the last two weeks, how often have you been bothered by the following problems?",
+      "_text": {
+        "extension": [
+          {
+            "extension": [
+              {
+                "url": "lang",
+                "valueCode": "de"
+              },
+              {
+                "url": "content",
+                "valueString": "Wie oft fühlten Sie sich im Verlauf der letzten 2 Wochen durch die folgenden Beschwerden beeinträchtigt?"
+              }
+            ],
+            "url": "http://hl7.org/fhir/StructureDefinition/translation"
+          }
+        ]
+      }
+    },
+    {
+      "answerOption": [
+        {
+          "valueCoding": {
+            "code": "LA6568-5",
+            "system": "http://loinc.org",
+            "display": "Not at all",
+            "_display": {
+              "extension": [
+                {
+                  "extension": [
+                    {
+                      "url": "lang",
+                      "valueCode": "de"
+                    },
+                    {
+                      "url": "content",
+                      "valueString": "Überhaupt nicht"
+                    }
+                  ],
+                  "url": "http://hl7.org/fhir/StructureDefinition/translation"
+                }
+              ]
+            }
+          },
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/itemWeight",
+              "valueDecimal": 0
+            }
+          ]
+        },
+        {
+          "valueCoding": {
+            "code": "LA6569-3",
+            "system": "http://loinc.org",
+            "display": "Several days",
+            "_display": {
+              "extension": [
+                {
+                  "extension": [
+                    {
+                      "url": "lang",
+                      "valueCode": "de"
+                    },
+                    {
+                      "url": "content",
+                      "valueString": "An einzelnen Tagen"
+                    }
+                  ],
+                  "url": "http://hl7.org/fhir/StructureDefinition/translation"
+                }
+              ]
+            }
+          },
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/itemWeight",
+              "valueDecimal": 1
+            }
+          ]
+        },
+        {
+          "valueCoding": {
+            "code": "LA6570-1",
+            "system": "http://loinc.org",
+            "display": "More than half the days",
+            "_display": {
+              "extension": [
+                {
+                  "extension": [
+                    {
+                      "url": "lang",
+                      "valueCode": "de"
+                    },
+                    {
+                      "url": "content",
+                      "valueString": "An mehr als der Hälfte der Tage"
+                    }
+                  ],
+                  "url": "http://hl7.org/fhir/StructureDefinition/translation"
+                }
+              ]
+            }
+          },
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/itemWeight",
+              "valueDecimal": 2
+            }
+          ]
+        },
+        {
+          "valueCoding": {
+            "code": "LA6571-9",
+            "system": "http://loinc.org",
+            "display": "Nearly every day",
+            "_display": {
+              "extension": [
+                {
+                  "extension": [
+                    {
+                      "url": "lang",
+                      "valueCode": "de"
+                    },
+                    {
+                      "url": "content",
+                      "valueString": "Beinahe jeden Tag"
+                    }
+                  ],
+                  "url": "http://hl7.org/fhir/StructureDefinition/translation"
+                }
+              ]
+            }
+          },
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/itemWeight",
+              "valueDecimal": 3
+            }
+          ]
+        }
+      ],
+      "linkId": "phq-phq5a",
+      "type": "choice",
+      "prefix": "1",
+      "text": "Feeling nervous, anxious, or on edge",
+      "_text": {
+        "extension": [
+          {
+            "extension": [
+              {
+                "url": "lang",
+                "valueCode": "de"
+              },
+              {
+                "url": "content",
+                "valueString": "Nervosität, Ängstlichkeit oder Anspannung"
+              }
+            ],
+            "url": "http://hl7.org/fhir/StructureDefinition/translation"
+          }
+        ]
+      }
+    },
+    {
+      "answerOption": [
+        {
+          "valueCoding": {
+            "code": "LA6568-5",
+            "system": "http://loinc.org",
+            "display": "Not at all",
+            "_display": {
+              "extension": [
+                {
+                  "extension": [
+                    {
+                      "url": "lang",
+                      "valueCode": "de"
+                    },
+                    {
+                      "url": "content",
+                      "valueString": "Überhaupt nicht"
+                    }
+                  ],
+                  "url": "http://hl7.org/fhir/StructureDefinition/translation"
+                }
+              ]
+            }
+          },
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/itemWeight",
+              "valueDecimal": 0
+            }
+          ]
+        },
+        {
+          "valueCoding": {
+            "code": "LA6569-3",
+            "system": "http://loinc.org",
+            "display": "Several days",
+            "_display": {
+              "extension": [
+                {
+                  "extension": [
+                    {
+                      "url": "lang",
+                      "valueCode": "de"
+                    },
+                    {
+                      "url": "content",
+                      "valueString": "An einzelnen Tagen"
+                    }
+                  ],
+                  "url": "http://hl7.org/fhir/StructureDefinition/translation"
+                }
+              ]
+            }
+          },
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/itemWeight",
+              "valueDecimal": 1
+            }
+          ]
+        },
+        {
+          "valueCoding": {
+            "code": "LA6570-1",
+            "system": "http://loinc.org",
+            "display": "More than half the days",
+            "_display": {
+              "extension": [
+                {
+                  "extension": [
+                    {
+                      "url": "lang",
+                      "valueCode": "de"
+                    },
+                    {
+                      "url": "content",
+                      "valueString": "An mehr als der Hälfte der Tage"
+                    }
+                  ],
+                  "url": "http://hl7.org/fhir/StructureDefinition/translation"
+                }
+              ]
+            }
+          },
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/itemWeight",
+              "valueDecimal": 2
+            }
+          ]
+        },
+        {
+          "valueCoding": {
+            "code": "LA6571-9",
+            "system": "http://loinc.org",
+            "display": "Nearly every day",
+            "_display": {
+              "extension": [
+                {
+                  "extension": [
+                    {
+                      "url": "lang",
+                      "valueCode": "de"
+                    },
+                    {
+                      "url": "content",
+                      "valueString": "Beinahe jeden Tag"
+                    }
+                  ],
+                  "url": "http://hl7.org/fhir/StructureDefinition/translation"
+                }
+              ]
+            }
+          },
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/itemWeight",
+              "valueDecimal": 3
+            }
+          ]
+        }
+      ],
+      "linkId": "phq-phq5b",
+      "type": "choice",
+      "prefix": "2",
+      "text": "Not being able to stop or control worrying",
+      "_text": {
+        "extension": [
+          {
+            "extension": [
+              {
+                "url": "lang",
+                "valueCode": "de"
+              },
+              {
+                "url": "content",
+                "valueString": "Nicht in der Lage sein, Sorgen zu stoppen oder zu kontrollieren"
+              }
+            ],
+            "url": "http://hl7.org/fhir/StructureDefinition/translation"
+          }
+        ]
+      }
+    },
+    {
+      "answerOption": [
+        {
+          "valueCoding": {
+            "code": "LA6568-5",
+            "system": "http://loinc.org",
+            "display": "Not at all",
+            "_display": {
+              "extension": [
+                {
+                  "extension": [
+                    {
+                      "url": "lang",
+                      "valueCode": "de"
+                    },
+                    {
+                      "url": "content",
+                      "valueString": "Überhaupt nicht"
+                    }
+                  ],
+                  "url": "http://hl7.org/fhir/StructureDefinition/translation"
+                }
+              ]
+            }
+          },
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/itemWeight",
+              "valueDecimal": 0
+            }
+          ]
+        },
+        {
+          "valueCoding": {
+            "code": "LA6569-3",
+            "system": "http://loinc.org",
+            "display": "Several days",
+            "_display": {
+              "extension": [
+                {
+                  "extension": [
+                    {
+                      "url": "lang",
+                      "valueCode": "de"
+                    },
+                    {
+                      "url": "content",
+                      "valueString": "An einzelnen Tagen"
+                    }
+                  ],
+                  "url": "http://hl7.org/fhir/StructureDefinition/translation"
+                }
+              ]
+            }
+          },
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/itemWeight",
+              "valueDecimal": 1
+            }
+          ]
+        },
+        {
+          "valueCoding": {
+            "code": "LA6570-1",
+            "system": "http://loinc.org",
+            "display": "More than half the days",
+            "_display": {
+              "extension": [
+                {
+                  "extension": [
+                    {
+                      "url": "lang",
+                      "valueCode": "de"
+                    },
+                    {
+                      "url": "content",
+                      "valueString": "An mehr als der Hälfte der Tage"
+                    }
+                  ],
+                  "url": "http://hl7.org/fhir/StructureDefinition/translation"
+                }
+              ]
+            }
+          },
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/itemWeight",
+              "valueDecimal": 2
+            }
+          ]
+        },
+        {
+          "valueCoding": {
+            "code": "LA6571-9",
+            "system": "http://loinc.org",
+            "display": "Nearly every day",
+            "_display": {
+              "extension": [
+                {
+                  "extension": [
+                    {
+                      "url": "lang",
+                      "valueCode": "de"
+                    },
+                    {
+                      "url": "content",
+                      "valueString": "Beinahe jeden Tag"
+                    }
+                  ],
+                  "url": "http://hl7.org/fhir/StructureDefinition/translation"
+                }
+              ]
+            }
+          },
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/itemWeight",
+              "valueDecimal": 3
+            }
+          ]
+        }
+      ],
+      "linkId": "phq-phq5c",
+      "type": "choice",
+      "prefix": "3",
+      "text": "Worrying too much about different things",
+      "_text": {
+        "extension": [
+          {
+            "extension": [
+              {
+                "url": "lang",
+                "valueCode": "de"
+              },
+              {
+                "url": "content",
+                "valueString": "Übermäßige Sorgen bezüglich verschiedener Angelegenheiten"
+              }
+            ],
+            "url": "http://hl7.org/fhir/StructureDefinition/translation"
+          }
+        ]
+      }
+    },
+    {
+      "answerOption": [
+        {
+          "valueCoding": {
+            "code": "LA6568-5",
+            "system": "http://loinc.org",
+            "display": "Not at all",
+            "_display": {
+              "extension": [
+                {
+                  "extension": [
+                    {
+                      "url": "lang",
+                      "valueCode": "de"
+                    },
+                    {
+                      "url": "content",
+                      "valueString": "Überhaupt nicht"
+                    }
+                  ],
+                  "url": "http://hl7.org/fhir/StructureDefinition/translation"
+                }
+              ]
+            }
+          },
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/itemWeight",
+              "valueDecimal": 0
+            }
+          ]
+        },
+        {
+          "valueCoding": {
+            "code": "LA6569-3",
+            "system": "http://loinc.org",
+            "display": "Several days",
+            "_display": {
+              "extension": [
+                {
+                  "extension": [
+                    {
+                      "url": "lang",
+                      "valueCode": "de"
+                    },
+                    {
+                      "url": "content",
+                      "valueString": "An einzelnen Tagen"
+                    }
+                  ],
+                  "url": "http://hl7.org/fhir/StructureDefinition/translation"
+                }
+              ]
+            }
+          },
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/itemWeight",
+              "valueDecimal": 1
+            }
+          ]
+        },
+        {
+          "valueCoding": {
+            "code": "LA6570-1",
+            "system": "http://loinc.org",
+            "display": "More than half the days",
+            "_display": {
+              "extension": [
+                {
+                  "extension": [
+                    {
+                      "url": "lang",
+                      "valueCode": "de"
+                    },
+                    {
+                      "url": "content",
+                      "valueString": "An mehr als der Hälfte der Tage"
+                    }
+                  ],
+                  "url": "http://hl7.org/fhir/StructureDefinition/translation"
+                }
+              ]
+            }
+          },
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/itemWeight",
+              "valueDecimal": 2
+            }
+          ]
+        },
+        {
+          "valueCoding": {
+            "code": "LA6571-9",
+            "system": "http://loinc.org",
+            "display": "Nearly every day",
+            "_display": {
+              "extension": [
+                {
+                  "extension": [
+                    {
+                      "url": "lang",
+                      "valueCode": "de"
+                    },
+                    {
+                      "url": "content",
+                      "valueString": "Beinahe jeden Tag"
+                    }
+                  ],
+                  "url": "http://hl7.org/fhir/StructureDefinition/translation"
+                }
+              ]
+            }
+          },
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/itemWeight",
+              "valueDecimal": 3
+            }
+          ]
+        }
+      ],
+      "linkId": "phq-phq5d",
+      "type": "choice",
+      "prefix": "4",
+      "text": "Trouble relaxing",
+      "_text": {
+        "extension": [
+          {
+            "extension": [
+              {
+                "url": "lang",
+                "valueCode": "de"
+              },
+              {
+                "url": "content",
+                "valueString": "Schwierigkeiten zu entspannen"
+              }
+            ],
+            "url": "http://hl7.org/fhir/StructureDefinition/translation"
+          }
+        ]
+      }
+    },
+    {
+      "answerOption": [
+        {
+          "valueCoding": {
+            "code": "LA6568-5",
+            "system": "http://loinc.org",
+            "display": "Not at all",
+            "_display": {
+              "extension": [
+                {
+                  "extension": [
+                    {
+                      "url": "lang",
+                      "valueCode": "de"
+                    },
+                    {
+                      "url": "content",
+                      "valueString": "Überhaupt nicht"
+                    }
+                  ],
+                  "url": "http://hl7.org/fhir/StructureDefinition/translation"
+                }
+              ]
+            }
+          },
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/itemWeight",
+              "valueDecimal": 0
+            }
+          ]
+        },
+        {
+          "valueCoding": {
+            "code": "LA6569-3",
+            "system": "http://loinc.org",
+            "display": "Several days",
+            "_display": {
+              "extension": [
+                {
+                  "extension": [
+                    {
+                      "url": "lang",
+                      "valueCode": "de"
+                    },
+                    {
+                      "url": "content",
+                      "valueString": "An einzelnen Tagen"
+                    }
+                  ],
+                  "url": "http://hl7.org/fhir/StructureDefinition/translation"
+                }
+              ]
+            }
+          },
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/itemWeight",
+              "valueDecimal": 1
+            }
+          ]
+        },
+        {
+          "valueCoding": {
+            "code": "LA6570-1",
+            "system": "http://loinc.org",
+            "display": "More than half the days",
+            "_display": {
+              "extension": [
+                {
+                  "extension": [
+                    {
+                      "url": "lang",
+                      "valueCode": "de"
+                    },
+                    {
+                      "url": "content",
+                      "valueString": "An mehr als der Hälfte der Tage"
+                    }
+                  ],
+                  "url": "http://hl7.org/fhir/StructureDefinition/translation"
+                }
+              ]
+            }
+          },
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/itemWeight",
+              "valueDecimal": 2
+            }
+          ]
+        },
+        {
+          "valueCoding": {
+            "code": "LA6571-9",
+            "system": "http://loinc.org",
+            "display": "Nearly every day",
+            "_display": {
+              "extension": [
+                {
+                  "extension": [
+                    {
+                      "url": "lang",
+                      "valueCode": "de"
+                    },
+                    {
+                      "url": "content",
+                      "valueString": "Beinahe jeden Tag"
+                    }
+                  ],
+                  "url": "http://hl7.org/fhir/StructureDefinition/translation"
+                }
+              ]
+            }
+          },
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/itemWeight",
+              "valueDecimal": 3
+            }
+          ]
+        }
+      ],
+      "linkId": "phq-phq5e",
+      "type": "choice",
+      "prefix": "5",
+      "text": "Being so restless that it is hard to sit still",
+      "_text": {
+        "extension": [
+          {
+            "extension": [
+              {
+                "url": "lang",
+                "valueCode": "de"
+              },
+              {
+                "url": "content",
+                "valueString": "Rastlosigkeit, so dass Stillsitzen schwer fällt"
+              }
+            ],
+            "url": "http://hl7.org/fhir/StructureDefinition/translation"
+          }
+        ]
+      }
+    },
+    {
+      "answerOption": [
+        {
+          "valueCoding": {
+            "code": "LA6568-5",
+            "system": "http://loinc.org",
+            "display": "Not at all",
+            "_display": {
+              "extension": [
+                {
+                  "extension": [
+                    {
+                      "url": "lang",
+                      "valueCode": "de"
+                    },
+                    {
+                      "url": "content",
+                      "valueString": "Überhaupt nicht"
+                    }
+                  ],
+                  "url": "http://hl7.org/fhir/StructureDefinition/translation"
+                }
+              ]
+            }
+          },
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/itemWeight",
+              "valueDecimal": 0
+            }
+          ]
+        },
+        {
+          "valueCoding": {
+            "code": "LA6569-3",
+            "system": "http://loinc.org",
+            "display": "Several days",
+            "_display": {
+              "extension": [
+                {
+                  "extension": [
+                    {
+                      "url": "lang",
+                      "valueCode": "de"
+                    },
+                    {
+                      "url": "content",
+                      "valueString": "An einzelnen Tagen"
+                    }
+                  ],
+                  "url": "http://hl7.org/fhir/StructureDefinition/translation"
+                }
+              ]
+            }
+          },
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/itemWeight",
+              "valueDecimal": 1
+            }
+          ]
+        },
+        {
+          "valueCoding": {
+            "code": "LA6570-1",
+            "system": "http://loinc.org",
+            "display": "More than half the days",
+            "_display": {
+              "extension": [
+                {
+                  "extension": [
+                    {
+                      "url": "lang",
+                      "valueCode": "de"
+                    },
+                    {
+                      "url": "content",
+                      "valueString": "An mehr als der Hälfte der Tage"
+                    }
+                  ],
+                  "url": "http://hl7.org/fhir/StructureDefinition/translation"
+                }
+              ]
+            }
+          },
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/itemWeight",
+              "valueDecimal": 2
+            }
+          ]
+        },
+        {
+          "valueCoding": {
+            "code": "LA6571-9",
+            "system": "http://loinc.org",
+            "display": "Nearly every day",
+            "_display": {
+              "extension": [
+                {
+                  "extension": [
+                    {
+                      "url": "lang",
+                      "valueCode": "de"
+                    },
+                    {
+                      "url": "content",
+                      "valueString": "Beinahe jeden Tag"
+                    }
+                  ],
+                  "url": "http://hl7.org/fhir/StructureDefinition/translation"
+                }
+              ]
+            }
+          },
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/itemWeight",
+              "valueDecimal": 3
+            }
+          ]
+        }
+      ],
+      "linkId": "phq-phq5f",
+      "type": "choice",
+      "prefix": "6",
+      "text": "Becoming easily annoyed or irritable",
+      "_text": {
+        "extension": [
+          {
+            "extension": [
+              {
+                "url": "lang",
+                "valueCode": "de"
+              },
+              {
+                "url": "content",
+                "valueString": "Schnelle Verärgerung oder Gereiztheit"
+              }
+            ],
+            "url": "http://hl7.org/fhir/StructureDefinition/translation"
+          }
+        ]
+      }
+    },
+    {
+      "answerOption": [
+        {
+          "valueCoding": {
+            "code": "LA6568-5",
+            "system": "http://loinc.org",
+            "display": "Not at all",
+            "_display": {
+              "extension": [
+                {
+                  "extension": [
+                    {
+                      "url": "lang",
+                      "valueCode": "de"
+                    },
+                    {
+                      "url": "content",
+                      "valueString": "Überhaupt nicht"
+                    }
+                  ],
+                  "url": "http://hl7.org/fhir/StructureDefinition/translation"
+                }
+              ]
+            }
+          },
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/itemWeight",
+              "valueDecimal": 0
+            }
+          ]
+        },
+        {
+          "valueCoding": {
+            "code": "LA6569-3",
+            "system": "http://loinc.org",
+            "display": "Several days",
+            "_display": {
+              "extension": [
+                {
+                  "extension": [
+                    {
+                      "url": "lang",
+                      "valueCode": "de"
+                    },
+                    {
+                      "url": "content",
+                      "valueString": "An einzelnen Tagen"
+                    }
+                  ],
+                  "url": "http://hl7.org/fhir/StructureDefinition/translation"
+                }
+              ]
+            }
+          },
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/itemWeight",
+              "valueDecimal": 1
+            }
+          ]
+        },
+        {
+          "valueCoding": {
+            "code": "LA6570-1",
+            "system": "http://loinc.org",
+            "display": "More than half the days",
+            "_display": {
+              "extension": [
+                {
+                  "extension": [
+                    {
+                      "url": "lang",
+                      "valueCode": "de"
+                    },
+                    {
+                      "url": "content",
+                      "valueString": "An mehr als der Hälfte der Tage"
+                    }
+                  ],
+                  "url": "http://hl7.org/fhir/StructureDefinition/translation"
+                }
+              ]
+            }
+          },
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/itemWeight",
+              "valueDecimal": 2
+            }
+          ]
+        },
+        {
+          "valueCoding": {
+            "code": "LA6571-9",
+            "system": "http://loinc.org",
+            "display": "Nearly every day",
+            "_display": {
+              "extension": [
+                {
+                  "extension": [
+                    {
+                      "url": "lang",
+                      "valueCode": "de"
+                    },
+                    {
+                      "url": "content",
+                      "valueString": "Beinahe jeden Tag"
+                    }
+                  ],
+                  "url": "http://hl7.org/fhir/StructureDefinition/translation"
+                }
+              ]
+            }
+          },
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/itemWeight",
+              "valueDecimal": 3
+            }
+          ]
+        }
+      ],
+      "linkId": "phq-phq5g",
+      "type": "choice",
+      "prefix": "7",
+      "text": "Feeling afraid, as if something awful might happen",
+      "_text": {
+        "extension": [
+          {
+            "extension": [
+              {
+                "url": "lang",
+                "valueCode": "de"
+              },
+              {
+                "url": "content",
+                "valueString": "Gefühl der Angst, so als würde etwas Schlimmes passieren"
+              }
+            ],
+            "url": "http://hl7.org/fhir/StructureDefinition/translation"
+          }
+        ]
+      }
+    },
+    {
+      "code": [
+        {
+          "code": "70274-6",
+          "system": "http://loinc.org",
+          "display": "Generalized anxiety disorder 7 item (GAD-7) total score [Reported.PHQ]"
+        }
+      ],
+      "extension": [
+        {
+          "valueExpression": {
+            "name": "Scoreberechnung",
+            "language": "text/fhirpath",
+            "expression": "%gad7Sum"
+          },
+          "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-calculatedExpression"
+        },
+        {
+          "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-observationExtract",
+          "valueBoolean": true
+        },
+        {
+          "valueCoding": {
+            "system": "http://unitsofmeasure.org",
+            "code": "{score}"
+          },
+          "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-unit"
+        },
+        {
+          "valueCodeableConcept": {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "survey"
+              }
+            ]
+          },
+          "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-observation-extract-category"
+        }
+      ],
+      "linkId": "phq-gad7-score-total",
+      "type": "decimal",
+      "prefix": "Score",
+      "readOnly": true,
+      "text": "GAD-7 Total Score (0-21)",
+      "_text": {
+        "extension": [
+          {
+            "extension": [
+              {
+                "url": "lang",
+                "valueCode": "de"
+              },
+              {
+                "url": "content",
+                "valueString": "GAD-7 Summenwert (0-21)"
+              }
+            ],
+            "url": "http://hl7.org/fhir/StructureDefinition/translation"
+          }
+        ]
+      }
+    }
+  ],
+  "version": "2027.0.0-ballot.1",
+  "status": "active",
+  "experimental": true,
+  "language": "en",
+  "copyright": "GAD-7 © Pfizer Inc. Entwickelt von Robert L. Spitzer, Kurt Kroenke, Janet B.W. Williams und Bernd Löwe. Frei verfuegbar — keine Genehmigung fuer Reproduktion, Uebersetzung, Darstellung oder Nutzung erforderlich. Deutsche Fassung: PHQ-D (Löwe, Spitzer, Zipfel & Herzog 2002)."
+}

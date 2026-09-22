@@ -1,0 +1,65 @@
+{
+  "resourceType": "Questionnaire",
+  "id": "mii-qst-pro-ces-d",
+  "meta": {
+    "profile": [
+      "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-questionnaire|2027.0.0-ballot.1"
+    ]
+  },
+  "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/Questionnaire/mii-qst-pro-ces-d",
+  "title": "Center for Epidemiologic Studies Depression Scale (CES-D)",
+  "description": "Center for Epidemiologic Studies Depression Scale (CES-D) - Metadata-only reference implementation",
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/artifact-versionAlgorithm",
+      "valueCoding": {
+        "code": "natural",
+        "system": "http://hl7.org/fhir/version-algorithm",
+        "display": "Natural"
+      }
+    },
+    {
+      "extension": [
+        {
+          "url": "displayable",
+          "valueBoolean": false
+        },
+        {
+          "url": "collectable",
+          "valueBoolean": false
+        },
+        {
+          "url": "calculatable",
+          "valueBoolean": false
+        },
+        {
+          "url": "extractable",
+          "valueBoolean": false
+        },
+        {
+          "url": "domainAligned",
+          "valueBoolean": true
+        }
+      ],
+      "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-ex-pro-questionnaire-capabilities"
+    }
+  ],
+  "code": [
+    {
+      "system": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-questionnaire-catalogue",
+      "code": "ces-d",
+      "display": "Center for Epidemiologic Studies Depression Scale"
+    }
+  ],
+  "item": [
+    {
+      "linkId": "CES-D.Notice",
+      "type": "display",
+      "text": "This questionnaire requires proper licensing from the copyright holders. Please contact the CES-D rights holders for implementation permissions."
+    }
+  ],
+  "version": "2027.0.0-ballot.1",
+  "status": "active",
+  "experimental": true,
+  "language": "en"
+}

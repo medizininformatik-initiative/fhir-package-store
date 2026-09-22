@@ -1,0 +1,17 @@
+{
+  "resourceType": "ValueSet",
+  "status": "active",
+  "name": "MII_VS_PRO_ISR_Z_Answers",
+  "id": "mii-vs-pro-isr-z-answers",
+  "title": "MII VS PRO ISR-Z Answers",
+  "description": "ISR-Zustimmungsskala (0 = trifft nicht zu, 1 = trifft kaum zu, 2 = trifft ziemlich zu, 3 = trifft deutlich zu, 4 = trifft extrem zu). MII-controlled für zuverlässige ordinal()-Scoreberechnung.",
+  "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-isr-z-answers",
+  "version": "2027.0.0-ballot.1",
+  "compose": {
+    "include": [
+      {
+        "system": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-isr-z-answers"
+      }
+    ]
+  }
+}

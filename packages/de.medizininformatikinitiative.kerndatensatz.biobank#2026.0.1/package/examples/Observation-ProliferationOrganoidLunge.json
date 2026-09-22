@@ -1,0 +1,34 @@
+{
+  "resourceType": "Observation",
+  "id": "ProliferationOrganoidLunge",
+  "meta": {
+    "profile": [
+      "https://www.medizininformatik-initiative.de/fhir/ext/modul-biobank/StructureDefinition/mii-pr-biobank-observation-proliferation"
+    ]
+  },
+  "code": {
+    "coding": [
+      {
+        "code": "GO:0008283",
+        "system": "http://purl.obolibrary.org/obo/go.owl",
+        "display": "cell population proliferation"
+      }
+    ]
+  },
+  "status": "final",
+  "focus": [
+    {
+      "reference": "Specimen/OrganoidLunge"
+    }
+  ],
+  "valueCodeableConcept": {
+    "coding": [
+      {
+        "code": "PATO:0000719",
+        "system": "http://purl.obolibrary.org/obo/pato.owl",
+        "display": "viable"
+      }
+    ]
+  },
+  "effectiveDateTime": "2018-07-05T10:00:00+01:00"
+}

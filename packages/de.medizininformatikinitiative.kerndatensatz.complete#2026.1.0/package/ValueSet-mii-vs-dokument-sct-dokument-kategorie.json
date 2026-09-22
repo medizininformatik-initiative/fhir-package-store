@@ -1,0 +1,42 @@
+{
+  "resourceType": "ValueSet",
+  "status": "active",
+  "name": "MII_VS_Dokument_SCT_Dokument_Kategorie",
+  "id": "mii-vs-dokument-sct-dokument-kategorie",
+  "title": "MII VS Dokument SCT Dokument Kategorie",
+  "description": "SNOMED CT ValueSet zur Kategorie (oder Klasse) eines Dokuments",
+  "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-dokument/ValueSet/mii-vs-dokument-sct-dokument-kategorie",
+  "version": "2026.0.1",
+  "publisher": "Medizininformatik Initiative",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "https://www.medizininformatik-initiative.de"
+        }
+      ]
+    }
+  ],
+  "experimental": false,
+  "language": "de-DE",
+  "meta": {
+    "profile": [
+      "http://hl7.org/fhir/StructureDefinition/shareablevalueset"
+    ]
+  },
+  "compose": {
+    "include": [
+      {
+        "system": "http://snomed.info/sct",
+        "filter": [
+          {
+            "property": "concept",
+            "op": "descendent-of",
+            "value": "424545009"
+          }
+        ]
+      }
+    ]
+  }
+}

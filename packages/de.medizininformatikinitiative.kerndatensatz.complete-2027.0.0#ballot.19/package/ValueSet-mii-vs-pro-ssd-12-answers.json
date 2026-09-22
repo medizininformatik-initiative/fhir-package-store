@@ -1,0 +1,17 @@
+{
+  "resourceType": "ValueSet",
+  "status": "active",
+  "name": "MII_VS_PRO_SSD_12_Answers",
+  "id": "mii-vs-pro-ssd-12-answers",
+  "title": "MII VS PRO SSD-12 Answers",
+  "description": "SSD-12 frequency answer options (0 = nie, 1 = selten, 2 = manchmal, 3 = oft, 4 = sehr oft). MII-controlled for reliable ordinal() score calculation.",
+  "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-ssd-12-answers",
+  "version": "2027.0.0-ballot.1",
+  "compose": {
+    "include": [
+      {
+        "system": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-ssd-12-answers"
+      }
+    ]
+  }
+}

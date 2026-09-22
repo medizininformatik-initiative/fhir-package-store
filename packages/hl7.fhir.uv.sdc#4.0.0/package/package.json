@@ -1,0 +1,31 @@
+{
+  "name" : "hl7.fhir.uv.sdc",
+  "version" : "4.0.0",
+  "tools-version" : 3,
+  "type" : "IG",
+  "date" : "20260324161608",
+  "license" : "CC0-1.0",
+  "canonical" : "http://hl7.org/fhir/uv/sdc",
+  "url" : "http://hl7.org/fhir/uv/sdc/STU4",
+  "title" : "Structured Data Capture",
+  "description" : "The SDC specification provides an infrastructure to standardize the capture and expanded use of patient-level data collected within an EHR. (built Tue, Mar 24, 2026 16:16+1100+11:00)",
+  "fhirVersions" : ["4.0.1"],
+  "dependencies" : {
+    "hl7.fhir.r4.core" : "4.0.1",
+    "hl7.terminology.r4" : "7.1.0",
+    "hl7.fhir.uv.xver-r5.r4" : "0.1.0",
+    "hl7.fhir.uv.tools.r4" : "1.1.2",
+    "hl7.fhir.r4.examples" : "4.0.1",
+    "hl7.fhir.uv.extensions.r4" : "5.3.0-ballot-tc1"
+  },
+  "author" : "HL7 International / FHIR Infrastructure",
+  "maintainers" : [{
+    "name" : "HL7 International / FHIR Infrastructure",
+    "url" : "http://www.hl7.org/Special/committees/fiwg"
+  }],
+  "directories" : {
+    "lib" : "package",
+    "example" : "example"
+  },
+  "jurisdiction" : "http://unstats.un.org/unsd/methods/m49/m49.htm#001"
+}

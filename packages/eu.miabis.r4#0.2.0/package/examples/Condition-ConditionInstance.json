@@ -1,0 +1,26 @@
+{
+  "resourceType": "Condition",
+  "id": "ConditionInstance",
+  "meta": {
+    "profile": [
+      "https://fhir.bbmri-eric.eu/fhir/StructureDefinition/miabis-condition"
+    ]
+  },
+  "identifier": [
+    {
+      "value": "conditionId"
+    }
+  ],
+  "stage": [
+    {
+      "assessment": [
+        {
+          "reference": "Observation/observationId"
+        }
+      ]
+    }
+  ],
+  "subject": {
+    "reference": "Patient/patientId"
+  }
+}

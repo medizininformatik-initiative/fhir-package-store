@@ -1,0 +1,88 @@
+{
+  "resourceType": "ObservationDefinition",
+  "id": "mii-obsdef-pro-promis-29-fatigue-tscore",
+  "meta": {
+    "profile": [
+      "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-score-blueprint|2027.0.0-ballot.1"
+    ]
+  },
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/artifact-version",
+      "valueString": "2027.0.0-ballot.1"
+    }
+  ],
+  "category": [
+    {
+      "coding": [
+        {
+          "code": "survey",
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category"
+        }
+      ]
+    }
+  ],
+  "code": {
+    "coding": [
+      {
+        "system": "http://loinc.org",
+        "code": "77864-7",
+        "display": "PROMIS fatigue - version 1.0 Tscore"
+      },
+      {
+        "system": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-score-catalogue",
+        "code": "promis-29-fatigue-tscore",
+        "display": "PROMIS-29 Fatigue T-Score"
+      }
+    ]
+  },
+  "permittedDataType": [
+    "Quantity"
+  ],
+  "method": {
+    "text": "PROMIS-29 Profile v2.1"
+  },
+  "quantitativeDetails": {
+    "unit": {
+      "coding": [
+        {
+          "code": "{score}",
+          "system": "http://unitsofmeasure.org",
+          "display": "{score}"
+        }
+      ]
+    },
+    "decimalPrecision": 1
+  },
+  "qualifiedInterval": [
+    {
+      "range": {
+        "low": {
+          "value": 20
+        },
+        "high": {
+          "value": 80
+        },
+        "extension": [
+          {
+            "valueCodeableConcept": {
+              "coding": [
+                {
+                  "system": "http://terminology.hl7.org/CodeSystem/measure-improvement-notation",
+                  "code": "decrease"
+                }
+              ],
+              "text": "Higher scores indicate more fatigue"
+            },
+            "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-ex-pro-score-score-health-correlation"
+          }
+        ]
+      },
+      "context": {
+        "text": "PROMIS T-Score metric (Mean=50, SD=10)"
+      },
+      "category": "reference"
+    }
+  ],
+  "multipleResultsAllowed": false
+}

@@ -1,0 +1,37 @@
+{
+  "resourceType": "CodeSystem",
+  "status": "active",
+  "content": "complete",
+  "name": "MII_CS_Kardio_Atherosklerotisches_Ereignis",
+  "id": "mii-cs-kardio-atherosklerotisches-ereignis",
+  "title": "MII CS Kardio Atherosklerotisches Ereignis",
+  "description": "Code für ein unbestimmtes atherosklerotisches Ereignis",
+  "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-kardio/CodeSystem/mii-cs-kardio-atherosklerotisches-ereignis",
+  "concept": [
+    {
+      "code": "ae",
+      "display": "Atherosklerotisches Ereignis"
+    },
+    {
+      "code": "eg-cv",
+      "display": "Embolischer Gefäßverschluss cerebro-vaskulär"
+    }
+  ],
+  "version": "2027.0.0-ballot",
+  "publisher": "Medizininformatik Initiative",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "https://www.medizininformatik-initiative.de"
+        }
+      ]
+    }
+  ],
+  "language": "de",
+  "experimental": false,
+  "date": "2025-09-03",
+  "caseSensitive": true,
+  "count": 2
+}

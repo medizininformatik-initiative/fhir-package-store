@@ -1,0 +1,16 @@
+{
+  "resourceType": "ValueSet",
+  "status": "active",
+  "name": "BioprocessingAndAnalyticalCapabilitiesVS",
+  "id": "miabis-bioprocessing-and-analytical-capabilities-vs",
+  "title": "Bioprocessing and Analytical Capabilities Value Set",
+  "description": "Value set containing codes representing bioprocessing and analytical services that the biobank can offer to the clients. ",
+  "url": "https://fhir.bbmri-eric.eu/fhir/ValueSet/miabis-bioprocessing-and-analytical-capabilities-vs",
+  "compose": {
+    "include": [
+      {
+        "system": "https://fhir.bbmri-eric.eu/fhir/CodeSystem/miabis-bioprocessing-and-analytical-capabilities-cs"
+      }
+    ]
+  }
+}

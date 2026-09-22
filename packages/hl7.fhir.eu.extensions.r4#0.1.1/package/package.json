@@ -1,0 +1,30 @@
+{
+  "name" : "hl7.fhir.eu.extensions.r4",
+  "version" : "0.1.1",
+  "tools-version" : 3,
+  "type" : "IG",
+  "date" : "20251026201319",
+  "license" : "CC0-1.0",
+  "canonical" : "http://hl7.eu/fhir/extensions",
+  "url" : "http://hl7.eu/fhir/extensions/0.1.1",
+  "title" : "HL7 Europe Extensions",
+  "description" : "This guide lists the extensions specified for the European REALM. (built Sun, Oct 26, 2025 20:13+0100+01:00)",
+  "fhirVersions" : ["4.0.1"],
+  "dependencies" : {
+    "hl7.fhir.r4.core" : "4.0.1",
+    "hl7.terminology.r4" : "6.5.0",
+    "hl7.fhir.uv.extensions.r4" : "5.2.0"
+  },
+  "author" : "HL7 Europe",
+  "maintainers" : [
+    {
+      "name" : "HL7 Europe",
+      "url" : "http://hl7.eu"
+    }
+  ],
+  "directories" : {
+    "lib" : "package",
+    "example" : "example"
+  },
+  "jurisdiction" : "http://unstats.un.org/unsd/methods/m49/m49.htm#150"
+}

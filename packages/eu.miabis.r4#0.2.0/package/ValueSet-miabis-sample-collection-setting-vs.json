@@ -1,0 +1,16 @@
+{
+  "resourceType": "ValueSet",
+  "status": "active",
+  "name": "SampleCollectionSettingVS",
+  "id": "miabis-sample-collection-setting-vs",
+  "title": "Sample Collection Setting Value Set",
+  "description": "Value set containing codes for the context in which the sample collection was conducted.",
+  "url": "https://fhir.bbmri-eric.eu/fhir/ValueSet/miabis-sample-collection-setting-vs",
+  "compose": {
+    "include": [
+      {
+        "system": "https://fhir.bbmri-eric.eu/fhir/CodeSystem/miabis-sample-collection-setting-cs"
+      }
+    ]
+  }
+}

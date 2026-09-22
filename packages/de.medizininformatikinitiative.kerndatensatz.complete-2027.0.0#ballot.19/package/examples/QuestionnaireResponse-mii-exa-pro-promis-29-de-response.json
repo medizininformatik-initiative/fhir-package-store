@@ -1,0 +1,599 @@
+{
+  "resourceType": "QuestionnaireResponse",
+  "id": "mii-exa-pro-promis-29-de-response",
+  "meta": {
+    "profile": [
+      "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-questionnaire-response|2027.0.0-ballot.1"
+    ]
+  },
+  "item": [
+    {
+      "item": [
+        {
+          "linkId": "PROMIS-29.PhysicalFunction.Description",
+          "text": "Sind Sie zu folgenden Tätigkeiten imstande:"
+        },
+        {
+          "answer": [
+            {
+              "valueCoding": {
+                "code": "LA13920-6",
+                "system": "http://loinc.org",
+                "display": "Mit einigen Schwierigkeiten"
+              }
+            }
+          ],
+          "linkId": "promis-pfa11",
+          "text": "Können Sie Hausarbeiten erledigen, z.B. Staubsaugen oder Gartenarbeit?"
+        },
+        {
+          "answer": [
+            {
+              "valueCoding": {
+                "code": "LA13920-6",
+                "system": "http://loinc.org",
+                "display": "Mit einigen Schwierigkeiten"
+              }
+            }
+          ],
+          "linkId": "promis-pfa21",
+          "text": "Können Sie mit normaler Geschwindigkeit Treppen hoch- und runtergehen?"
+        },
+        {
+          "answer": [
+            {
+              "valueCoding": {
+                "code": "LA13918-0",
+                "system": "http://loinc.org",
+                "display": "Mit geringen Schwierigkeiten"
+              }
+            }
+          ],
+          "linkId": "promis-pfa23",
+          "text": "Können Sie mindestens 15 Minuten lang spazieren gehen?"
+        },
+        {
+          "answer": [
+            {
+              "valueCoding": {
+                "code": "LA13920-6",
+                "system": "http://loinc.org",
+                "display": "Mit einigen Schwierigkeiten"
+              }
+            }
+          ],
+          "linkId": "promis-pfa53",
+          "text": "Können Sie Besorgungen machen und einkaufen gehen?"
+        }
+      ],
+      "linkId": "PROMIS-29.PhysicalFunction",
+      "text": "KÖRPERLICHE FUNKTION"
+    },
+    {
+      "item": [
+        {
+          "linkId": "PROMIS-29.Anxiety.Description",
+          "text": "In den letzten 7 Tagen:"
+        },
+        {
+          "answer": [
+            {
+              "valueCoding": {
+                "code": "LA10066-1",
+                "system": "http://loinc.org",
+                "display": "Selten"
+              }
+            }
+          ],
+          "linkId": "promis-edanx01",
+          "text": "Ich fürchtete mich."
+        },
+        {
+          "answer": [
+            {
+              "valueCoding": {
+                "code": "LA10082-8",
+                "system": "http://loinc.org",
+                "display": "Manchmal"
+              }
+            }
+          ],
+          "linkId": "promis-edanx40",
+          "text": "Ich fand es schwer, auf etwas anderes zu achten als auf meine Angst."
+        },
+        {
+          "answer": [
+            {
+              "valueCoding": {
+                "code": "LA10066-1",
+                "system": "http://loinc.org",
+                "display": "Selten"
+              }
+            }
+          ],
+          "linkId": "promis-edanx41",
+          "text": "Meine Sorgen haben mich überwältigt."
+        },
+        {
+          "answer": [
+            {
+              "valueCoding": {
+                "code": "LA10066-1",
+                "system": "http://loinc.org",
+                "display": "Selten"
+              }
+            }
+          ],
+          "linkId": "promis-edanx53",
+          "text": "Ich fühlte mich unruhig."
+        }
+      ],
+      "linkId": "PROMIS-29.Anxiety",
+      "text": "ANGST"
+    },
+    {
+      "item": [
+        {
+          "linkId": "PROMIS-29.Depression.Description",
+          "text": "In den letzten 7 Tagen:"
+        },
+        {
+          "answer": [
+            {
+              "valueCoding": {
+                "code": "LA10082-8",
+                "system": "http://loinc.org",
+                "display": "Manchmal"
+              }
+            }
+          ],
+          "linkId": "promis-eddep04",
+          "text": "Ich fühlte mich wertlos."
+        },
+        {
+          "answer": [
+            {
+              "valueCoding": {
+                "code": "LA10082-8",
+                "system": "http://loinc.org",
+                "display": "Manchmal"
+              }
+            }
+          ],
+          "linkId": "promis-eddep06",
+          "text": "Ich fühlte mich hilflos."
+        },
+        {
+          "answer": [
+            {
+              "valueCoding": {
+                "code": "LA10044-8",
+                "system": "http://loinc.org",
+                "display": "Oft"
+              }
+            }
+          ],
+          "linkId": "promis-eddep29",
+          "text": "Ich fühlte mich niedergeschlagen."
+        },
+        {
+          "answer": [
+            {
+              "valueCoding": {
+                "code": "LA10082-8",
+                "system": "http://loinc.org",
+                "display": "Manchmal"
+              }
+            }
+          ],
+          "linkId": "promis-eddep41",
+          "text": "Ich fühlte mich hoffnungslos."
+        }
+      ],
+      "linkId": "PROMIS-29.Depression",
+      "text": "DEPRESSION"
+    },
+    {
+      "item": [
+        {
+          "linkId": "PROMIS-29.Fatigue.Description",
+          "text": "In den letzten 7 Tagen:"
+        },
+        {
+          "answer": [
+            {
+              "valueCoding": {
+                "code": "LA13902-4",
+                "system": "http://loinc.org",
+                "display": "Ziemlich"
+              }
+            }
+          ],
+          "linkId": "promis-hi7",
+          "text": "Ich bin erschöpft."
+        },
+        {
+          "answer": [
+            {
+              "valueCoding": {
+                "code": "LA13902-4",
+                "system": "http://loinc.org",
+                "display": "Ziemlich"
+              }
+            }
+          ],
+          "linkId": "promis-an3",
+          "text": "Es fällt mir schwer, etwas anzufangen, weil ich müde bin."
+        },
+        {
+          "answer": [
+            {
+              "valueCoding": {
+                "code": "LA13909-9",
+                "system": "http://loinc.org",
+                "display": "Mäßig"
+              }
+            }
+          ],
+          "linkId": "promis-fatexp41",
+          "text": "Wie ausgelaugt fühlten Sie sich im Allgemeinen?"
+        },
+        {
+          "answer": [
+            {
+              "valueCoding": {
+                "code": "LA13902-4",
+                "system": "http://loinc.org",
+                "display": "Ziemlich"
+              }
+            }
+          ],
+          "linkId": "promis-fatexp40",
+          "text": "Wie erschöpft waren Sie im Allgemeinen?"
+        }
+      ],
+      "linkId": "PROMIS-29.Fatigue",
+      "text": "ERSCHÖPFUNG"
+    },
+    {
+      "item": [
+        {
+          "linkId": "PROMIS-29.Sleep.Description",
+          "text": "In den letzten 7 Tagen:"
+        },
+        {
+          "answer": [
+            {
+              "valueCoding": {
+                "code": "LA8968-5",
+                "system": "http://loinc.org",
+                "display": "Mäßig"
+              }
+            }
+          ],
+          "linkId": "promis-sleep109",
+          "text": "Meine Schlafqualität war ..."
+        },
+        {
+          "answer": [
+            {
+              "valueCoding": {
+                "code": "LA13909-9",
+                "system": "http://loinc.org",
+                "display": "Mäßig"
+              }
+            }
+          ],
+          "linkId": "promis-sleep116",
+          "text": "Mein Schlaf war erfrischend."
+        },
+        {
+          "answer": [
+            {
+              "valueCoding": {
+                "code": "LA13909-9",
+                "system": "http://loinc.org",
+                "display": "Mäßig"
+              }
+            }
+          ],
+          "linkId": "promis-sleep20",
+          "text": "Ich hatte Schlafprobleme."
+        },
+        {
+          "answer": [
+            {
+              "valueCoding": {
+                "code": "LA13863-8",
+                "system": "http://loinc.org",
+                "display": "Ein wenig"
+              }
+            }
+          ],
+          "linkId": "promis-sleep44",
+          "text": "Ich hatte Schwierigkeiten einzuschlafen."
+        }
+      ],
+      "linkId": "PROMIS-29.Sleep",
+      "text": "SCHLAFSTÖRUNGEN"
+    },
+    {
+      "item": [
+        {
+          "linkId": "PROMIS-29.Social.Description",
+          "text": "In den letzten 7 Tagen:"
+        },
+        {
+          "answer": [
+            {
+              "valueCoding": {
+                "code": "LA10082-8",
+                "system": "http://loinc.org",
+                "display": "Manchmal"
+              }
+            }
+          ],
+          "linkId": "promis-srpper23-caps",
+          "text": "Es fällt mir schwer, meine gewohnte Arbeit zu erledigen (einschließlich der Arbeit zu Hause)."
+        },
+        {
+          "answer": [
+            {
+              "valueCoding": {
+                "code": "LA10082-8",
+                "system": "http://loinc.org",
+                "display": "Manchmal"
+              }
+            }
+          ],
+          "linkId": "promis-srpper11-caps",
+          "text": "Es fällt mir schwer, allen meinen regelmäßigen Freizeitaktivitäten mit anderen nachzugehen."
+        },
+        {
+          "answer": [
+            {
+              "valueCoding": {
+                "code": "LA10066-1",
+                "system": "http://loinc.org",
+                "display": "Selten"
+              }
+            }
+          ],
+          "linkId": "promis-srpper18-caps",
+          "text": "Es fällt mir schwer, allen Aktivitäten nachzugehen, die ich mit meiner Familie machen möchte."
+        },
+        {
+          "answer": [
+            {
+              "valueCoding": {
+                "code": "LA10082-8",
+                "system": "http://loinc.org",
+                "display": "Manchmal"
+              }
+            }
+          ],
+          "linkId": "promis-srpper46-caps",
+          "text": "Es fällt mir schwer, allen Aktivitäten nachzugehen, die ich mit Freunden machen möchte."
+        }
+      ],
+      "linkId": "PROMIS-29.Social",
+      "text": "SOZIALE TEILHABE"
+    },
+    {
+      "item": [
+        {
+          "linkId": "PROMIS-29.PainInterference.Description",
+          "text": "In den letzten 7 Tagen: Inwieweit beeinträchtigten Schmerzen..."
+        },
+        {
+          "answer": [
+            {
+              "valueCoding": {
+                "code": "LA13909-9",
+                "system": "http://loinc.org",
+                "display": "Mäßig"
+              }
+            }
+          ],
+          "linkId": "promis-painin9",
+          "text": "Wie sehr beeinträchtigten Schmerzen Ihre Alltagsaktivitäten?"
+        },
+        {
+          "answer": [
+            {
+              "valueCoding": {
+                "code": "LA13909-9",
+                "system": "http://loinc.org",
+                "display": "Mäßig"
+              }
+            }
+          ],
+          "linkId": "promis-painin22",
+          "text": "Wie sehr beeinträchtigten Schmerzen Ihre häuslichen Tätigkeiten?"
+        },
+        {
+          "answer": [
+            {
+              "valueCoding": {
+                "code": "LA13863-8",
+                "system": "http://loinc.org",
+                "display": "Ein wenig"
+              }
+            }
+          ],
+          "linkId": "promis-painin31",
+          "text": "Wie sehr beeinträchtigten Schmerzen Ihre Fähigkeit, an sozialen Aktivitäten teilzunehmen?"
+        },
+        {
+          "answer": [
+            {
+              "valueCoding": {
+                "code": "LA13909-9",
+                "system": "http://loinc.org",
+                "display": "Mäßig"
+              }
+            }
+          ],
+          "linkId": "promis-painin34",
+          "text": "Wie sehr beeinträchtigten Schmerzen Sie bei Ihrer Hausarbeit?"
+        }
+      ],
+      "linkId": "PROMIS-29.PainInterference",
+      "text": "SCHMERZBEDINGTE BEEINTRÄCHTIGUNG"
+    },
+    {
+      "item": [
+        {
+          "answer": [
+            {
+              "valueInteger": 5
+            }
+          ],
+          "linkId": "promis-global07",
+          "text": "Wie würden Sie Ihre Schmerzen im Allgemeinen einschätzen?"
+        }
+      ],
+      "linkId": "PROMIS-29.PainIntensity",
+      "text": "SCHMERZINTENSITÄT"
+    },
+    {
+      "item": [
+        {
+          "answer": [
+            {
+              "valueDecimal": 13
+            }
+          ],
+          "linkId": "promis-29-physical-function-raw",
+          "text": "PROMIS-29 Körperliche Funktion - Rohwert"
+        },
+        {
+          "answer": [
+            {
+              "valueDecimal": 42.6
+            }
+          ],
+          "linkId": "promis-29-physical-function-tscore",
+          "text": "PROMIS-29 Körperliche Funktion - T-Score"
+        },
+        {
+          "answer": [
+            {
+              "valueDecimal": 9
+            }
+          ],
+          "linkId": "promis-29-anxiety-raw",
+          "text": "PROMIS-29 Angst - Rohwert"
+        },
+        {
+          "answer": [
+            {
+              "valueDecimal": 56.8
+            }
+          ],
+          "linkId": "promis-29-anxiety-tscore",
+          "text": "PROMIS-29 Angst - T-Score"
+        },
+        {
+          "answer": [
+            {
+              "valueDecimal": 13
+            }
+          ],
+          "linkId": "promis-29-depression-raw",
+          "text": "PROMIS-29 Depression - Rohwert"
+        },
+        {
+          "answer": [
+            {
+              "valueDecimal": 63.9
+            }
+          ],
+          "linkId": "promis-29-depression-tscore",
+          "text": "PROMIS-29 Depression - T-Score"
+        },
+        {
+          "answer": [
+            {
+              "valueDecimal": 15
+            }
+          ],
+          "linkId": "promis-29-fatigue-raw",
+          "text": "PROMIS-29 Erschöpfung - Rohwert"
+        },
+        {
+          "answer": [
+            {
+              "valueDecimal": 64.9
+            }
+          ],
+          "linkId": "promis-29-fatigue-tscore",
+          "text": "PROMIS-29 Erschöpfung - T-Score"
+        },
+        {
+          "answer": [
+            {
+              "valueDecimal": 11
+            }
+          ],
+          "linkId": "promis-29-sleep-raw",
+          "text": "PROMIS-29 Schlafstörungen - Rohwert"
+        },
+        {
+          "answer": [
+            {
+              "valueDecimal": 53.6
+            }
+          ],
+          "linkId": "promis-29-sleep-tscore",
+          "text": "PROMIS-29 Schlafstörungen - T-Score"
+        },
+        {
+          "answer": [
+            {
+              "valueDecimal": 11
+            }
+          ],
+          "linkId": "promis-29-social-raw",
+          "text": "PROMIS-29 Soziale Teilhabe - Rohwert"
+        },
+        {
+          "answer": [
+            {
+              "valueDecimal": 39.7
+            }
+          ],
+          "linkId": "promis-29-social-tscore",
+          "text": "PROMIS-29 Soziale Teilhabe - T-Score"
+        },
+        {
+          "answer": [
+            {
+              "valueDecimal": 11
+            }
+          ],
+          "linkId": "promis-29-pain-interference-raw",
+          "text": "PROMIS-29 Schmerzbedingte Beeinträchtigung - Rohwert"
+        },
+        {
+          "answer": [
+            {
+              "valueDecimal": 60.9
+            }
+          ],
+          "linkId": "promis-29-pain-interference-tscore",
+          "text": "PROMIS-29 Schmerzbedingte Beeinträchtigung - T-Score"
+        }
+      ],
+      "linkId": "PROMIS-29.Scores",
+      "text": "BEREICHS-BEWERTUNGEN"
+    }
+  ],
+  "language": "de",
+  "questionnaire": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/Questionnaire/mii-qst-pro-promis-29-de|2027.0.0-ballot.1",
+  "status": "completed",
+  "subject": {
+    "reference": "Patient/mii-exa-pro-patient"
+  },
+  "authored": "2025-01-30T14:30:00Z"
+}

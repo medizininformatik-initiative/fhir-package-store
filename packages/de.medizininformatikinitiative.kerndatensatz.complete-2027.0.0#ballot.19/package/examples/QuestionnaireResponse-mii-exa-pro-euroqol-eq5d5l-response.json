@@ -1,0 +1,110 @@
+{
+  "resourceType": "QuestionnaireResponse",
+  "id": "mii-exa-pro-euroqol-eq5d5l-response",
+  "meta": {
+    "profile": [
+      "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-questionnaire-response|2027.0.0-ballot.1"
+    ]
+  },
+  "item": [
+    {
+      "answer": [
+        {
+          "valueCoding": {
+            "system": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-eq-5d-value-set",
+            "code": "2",
+            "display": "Ich habe leichte Probleme herumzugehen"
+          }
+        }
+      ],
+      "linkId": "euroqol-eq5d5l-q01-MO",
+      "text": "BEWEGLICHKEIT / MOBILITÄT"
+    },
+    {
+      "answer": [
+        {
+          "valueCoding": {
+            "system": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-eq-5d-value-set",
+            "code": "1",
+            "display": "Ich habe keine Probleme, mich selbst zu waschen oder anzuziehen"
+          }
+        }
+      ],
+      "linkId": "euroqol-eq5d5l-q02-SC",
+      "text": "FÜR SICH SELBST SORGEN"
+    },
+    {
+      "answer": [
+        {
+          "valueCoding": {
+            "system": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-eq-5d-value-set",
+            "code": "2",
+            "display": "Ich habe leichte Probleme, meinen alltäglichen Tätigkeiten nachzugehen"
+          }
+        }
+      ],
+      "linkId": "euroqol-eq5d5l-q03-UA",
+      "text": "ALLTÄGLICHE TÄTIGKEITEN (z.B. Arbeit, Studium, Hausarbeit, Familien- / Freizeitaktivitäten)"
+    },
+    {
+      "answer": [
+        {
+          "valueCoding": {
+            "system": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-eq-5d-value-set",
+            "code": "3",
+            "display": "Ich habe mäßige Schmerzen oder Beschwerden"
+          }
+        }
+      ],
+      "linkId": "euroqol-eq5d5l-q04-PD",
+      "text": "SCHMERZEN / KÖRPERLICHEN BESCHWERDEN"
+    },
+    {
+      "answer": [
+        {
+          "valueCoding": {
+            "system": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-eq-5d-value-set",
+            "code": "4",
+            "display": "Ich bin sehr ängstlich oder deprimiert"
+          }
+        }
+      ],
+      "linkId": "euroqol-eq5d5l-q05-AD",
+      "text": "ANGST / NIEDERGESCHLAGENHEIT"
+    },
+    {
+      "answer": [
+        {
+          "valueInteger": 21234
+        }
+      ],
+      "linkId": "euroqol-eq5d5l-score-profile",
+      "text": "Gesundheitszustand"
+    },
+    {
+      "answer": [
+        {
+          "valueDecimal": 0.662
+        }
+      ],
+      "linkId": "euroqol-eq5d5l-score-index",
+      "text": "Indexwert"
+    },
+    {
+      "answer": [
+        {
+          "valueInteger": 75
+        }
+      ],
+      "linkId": "euroqol-eq5d5l-vas",
+      "text": "IHRE GESUNDHEIT HEUTE"
+    }
+  ],
+  "language": "de",
+  "status": "completed",
+  "subject": {
+    "reference": "Patient/mii-exa-pro-patient"
+  },
+  "authored": "2023-10-01T12:00:00Z",
+  "questionnaire": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/Questionnaire/mii-qst-pro-euroqol-eq5d5l-collectable|2027.0.0-ballot.1"
+}

@@ -1,0 +1,371 @@
+{
+  "index-version" : 2,
+  "files" : [
+    {
+      "filename" : "CapabilityStatement-mii-cps-biobank-capabilitystatement.json",
+      "resourceType" : "CapabilityStatement",
+      "id" : "mii-cps-biobank-capabilitystatement",
+      "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-biobank/CapabilityStatement/metadata",
+      "version" : "2026.0.1",
+      "kind" : "requirements"
+    },
+    {
+      "filename" : "CodeSystem-mii-cs-biobank-contact-type.json",
+      "resourceType" : "CodeSystem",
+      "content" : "complete",
+      "id" : "mii-cs-biobank-contact-type",
+      "version" : "2026.0.1",
+      "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-biobank/CodeSystem/ContactType"
+    },
+    {
+      "filename" : "CodeSystem-mii-cs-biobank-probenebene.json",
+      "resourceType" : "CodeSystem",
+      "content" : "complete",
+      "id" : "mii-cs-biobank-probenebene",
+      "version" : "2026.0.1",
+      "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-biobank/CodeSystem/mii-cs-biobank-probenebene"
+    },
+    {
+      "filename" : "ConceptMap-mii-cm-biobank-fixation-type-sprec-sct.json",
+      "resourceType" : "ConceptMap",
+      "id" : "mii-cm-biobank-fixation-type-sprec-sct",
+      "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-biobank/ConceptMap/mii-cm-biobank-fixation-type-sprec-sct",
+      "version" : "2026.0.1"
+    },
+    {
+      "filename" : "ConceptMap-mii-cm-biobank-long-term-storage-sprec-sct.json",
+      "resourceType" : "ConceptMap",
+      "id" : "mii-cm-biobank-long-term-storage-sprec-sct",
+      "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-biobank/ConceptMap/mii-cm-biobank-long-term-storage-sprec-sct",
+      "version" : "2026.0.1"
+    },
+    {
+      "filename" : "ConceptMap-mii-cm-biobank-primary-container-sprec-sct.json",
+      "resourceType" : "ConceptMap",
+      "id" : "mii-cm-biobank-primary-container-sprec-sct",
+      "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-biobank/ConceptMap/mii-cm-biobank-primary-container-sprec-sct",
+      "version" : "2026.0.1"
+    },
+    {
+      "filename" : "ConceptMap-mii-cm-biobank-sample-type-sprec-sct.json",
+      "resourceType" : "ConceptMap",
+      "id" : "mii-cm-biobank-sample-type-sprec-sct",
+      "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-biobank/ConceptMap/mii-cm-biobank-sample-type-sprec-sct",
+      "version" : "2026.0.1"
+    },
+    {
+      "filename" : "StructureDefinition-Biobank.json",
+      "resourceType" : "StructureDefinition",
+      "id" : "Biobank",
+      "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-biobank/StructureDefinition/LogicalModel/Biobank",
+      "version" : "2026.0.1",
+      "kind" : "logical",
+      "type" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-biobank/StructureDefinition/LogicalModel/Biobank",
+      "derivation" : "specialization"
+    },
+    {
+      "filename" : "StructureDefinition-mii-ex-biobank-anzahl-aliquots.json",
+      "resourceType" : "StructureDefinition",
+      "id" : "mii-ex-biobank-anzahl-aliquots",
+      "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-biobank/StructureDefinition/mii-ex-biobank-anzahl-aliquots",
+      "version" : "2026.0.1",
+      "kind" : "complex-type",
+      "type" : "Extension",
+      "derivation" : "constraint"
+    },
+    {
+      "filename" : "StructureDefinition-mii-ex-biobank-anzahl-passagen.json",
+      "resourceType" : "StructureDefinition",
+      "id" : "mii-ex-biobank-anzahl-passagen",
+      "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-biobank/StructureDefinition/mii-ex-biobank-anzahl-passagen",
+      "version" : "2026.0.1",
+      "kind" : "complex-type",
+      "type" : "Extension",
+      "derivation" : "constraint"
+    },
+    {
+      "filename" : "StructureDefinition-mii-ex-biobank-diagnose.json",
+      "resourceType" : "StructureDefinition",
+      "id" : "mii-ex-biobank-diagnose",
+      "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-biobank/StructureDefinition/Diagnose",
+      "version" : "2026.0.1",
+      "kind" : "complex-type",
+      "type" : "Extension",
+      "derivation" : "constraint"
+    },
+    {
+      "filename" : "StructureDefinition-mii-ex-biobank-ebene.json",
+      "resourceType" : "StructureDefinition",
+      "id" : "mii-ex-biobank-ebene",
+      "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-biobank/StructureDefinition/mii-ex-biobank-ebene",
+      "version" : "2026.0.1",
+      "kind" : "complex-type",
+      "type" : "Extension",
+      "derivation" : "constraint"
+    },
+    {
+      "filename" : "StructureDefinition-mii-ex-biobank-einstellung-blutversorgung.json",
+      "resourceType" : "StructureDefinition",
+      "id" : "mii-ex-biobank-einstellung-blutversorgung",
+      "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-biobank/StructureDefinition/EinstellungBlutversorgung",
+      "version" : "2026.0.1",
+      "kind" : "complex-type",
+      "type" : "Extension",
+      "derivation" : "constraint"
+    },
+    {
+      "filename" : "StructureDefinition-mii-ex-biobank-feature-r5.json",
+      "resourceType" : "StructureDefinition",
+      "id" : "mii-ex-biobank-feature-r5",
+      "url" : "http://hl7.org/fhir/5.0/StructureDefinition/extension-Specimen.feature",
+      "version" : "2026.0.1",
+      "kind" : "complex-type",
+      "type" : "Extension",
+      "derivation" : "constraint"
+    },
+    {
+      "filename" : "StructureDefinition-mii-ex-biobank-kontaktrolle.json",
+      "resourceType" : "StructureDefinition",
+      "id" : "mii-ex-biobank-kontaktrolle",
+      "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-biobank/StructureDefinition/KontaktRolle",
+      "version" : "2026.0.1",
+      "kind" : "complex-type",
+      "type" : "Extension",
+      "derivation" : "constraint"
+    },
+    {
+      "filename" : "StructureDefinition-mii-ex-biobank-kulturprotokoll.json",
+      "resourceType" : "StructureDefinition",
+      "id" : "mii-ex-biobank-kulturprotokoll",
+      "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-biobank/StructureDefinition/mii-ex-biobank-kulturprotokoll",
+      "version" : "2026.0.1",
+      "kind" : "complex-type",
+      "type" : "Extension",
+      "derivation" : "constraint"
+    },
+    {
+      "filename" : "StructureDefinition-mii-ex-biobank-modifikationen.json",
+      "resourceType" : "StructureDefinition",
+      "id" : "mii-ex-biobank-modifikationen",
+      "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-biobank/StructureDefinition/mii-ex-biobank-modifikationen",
+      "version" : "2026.0.1",
+      "kind" : "complex-type",
+      "type" : "Extension",
+      "derivation" : "constraint"
+    },
+    {
+      "filename" : "StructureDefinition-mii-ex-biobank-temperaturbedingungen.json",
+      "resourceType" : "StructureDefinition",
+      "id" : "mii-ex-biobank-temperaturbedingungen",
+      "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-biobank/StructureDefinition/Temperaturbedingungen",
+      "version" : "2026.0.1",
+      "kind" : "complex-type",
+      "type" : "Extension",
+      "derivation" : "constraint"
+    },
+    {
+      "filename" : "StructureDefinition-mii-ex-biobank-verwaltende-organisation.json",
+      "resourceType" : "StructureDefinition",
+      "id" : "mii-ex-biobank-verwaltende-organisation",
+      "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-biobank/StructureDefinition/VerwaltendeOrganisation",
+      "version" : "2026.0.1",
+      "kind" : "complex-type",
+      "type" : "Extension",
+      "derivation" : "constraint"
+    },
+    {
+      "filename" : "StructureDefinition-mii-pr-biobank-observation-dna-konzentration.json",
+      "resourceType" : "StructureDefinition",
+      "id" : "mii-pr-biobank-observation-dna-konzentration",
+      "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-biobank/StructureDefinition/mii-pr-biobank-observation-dna-konzentration",
+      "version" : "2026.0.1",
+      "kind" : "resource",
+      "type" : "Observation",
+      "derivation" : "constraint"
+    },
+    {
+      "filename" : "StructureDefinition-mii-pr-biobank-observation-karyotyp.json",
+      "resourceType" : "StructureDefinition",
+      "id" : "mii-pr-biobank-observation-karyotyp",
+      "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-biobank/StructureDefinition/mii-pr-biobank-observation-karyotyp",
+      "version" : "2026.0.1",
+      "kind" : "resource",
+      "type" : "Observation",
+      "derivation" : "constraint"
+    },
+    {
+      "filename" : "StructureDefinition-mii-pr-biobank-observation-morphologie.json",
+      "resourceType" : "StructureDefinition",
+      "id" : "mii-pr-biobank-observation-morphologie",
+      "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-biobank/StructureDefinition/mii-pr-biobank-observation-morphologie",
+      "version" : "2026.0.1",
+      "kind" : "resource",
+      "type" : "Observation",
+      "derivation" : "constraint"
+    },
+    {
+      "filename" : "StructureDefinition-mii-pr-biobank-observation-proliferation.json",
+      "resourceType" : "StructureDefinition",
+      "id" : "mii-pr-biobank-observation-proliferation",
+      "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-biobank/StructureDefinition/mii-pr-biobank-observation-proliferation",
+      "version" : "2026.0.1",
+      "kind" : "resource",
+      "type" : "Observation",
+      "derivation" : "constraint"
+    },
+    {
+      "filename" : "StructureDefinition-mii-pr-biobank-observation-qualitaetspruefung.json",
+      "resourceType" : "StructureDefinition",
+      "id" : "mii-pr-biobank-observation-qualitaetspruefung",
+      "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-biobank/StructureDefinition/mii-pr-biobank-observation-qualitaetspruefung",
+      "version" : "2026.0.1",
+      "kind" : "resource",
+      "type" : "Observation",
+      "derivation" : "constraint"
+    },
+    {
+      "filename" : "StructureDefinition-mii-pr-biobank-observation-wachstumstyp.json",
+      "resourceType" : "StructureDefinition",
+      "id" : "mii-pr-biobank-observation-wachstumstyp",
+      "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-biobank/StructureDefinition/mii-pr-biobank-observation-wachstumstyp",
+      "version" : "2026.0.1",
+      "kind" : "resource",
+      "type" : "Observation",
+      "derivation" : "constraint"
+    },
+    {
+      "filename" : "StructureDefinition-mii-pr-biobank-organization.json",
+      "resourceType" : "StructureDefinition",
+      "id" : "mii-pr-biobank-organization",
+      "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-biobank/StructureDefinition/Organization",
+      "version" : "2026.0.1",
+      "kind" : "resource",
+      "type" : "Organization",
+      "derivation" : "constraint"
+    },
+    {
+      "filename" : "StructureDefinition-mii-pr-biobank-specimen-core.json",
+      "resourceType" : "StructureDefinition",
+      "id" : "mii-pr-biobank-specimen-core",
+      "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-biobank/StructureDefinition/SpecimenCore",
+      "version" : "2026.0.1",
+      "kind" : "resource",
+      "type" : "Specimen",
+      "derivation" : "constraint"
+    },
+    {
+      "filename" : "StructureDefinition-mii-pr-biobank-specimen.json",
+      "resourceType" : "StructureDefinition",
+      "id" : "mii-pr-biobank-specimen",
+      "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-biobank/StructureDefinition/Specimen",
+      "version" : "2026.0.1",
+      "kind" : "resource",
+      "type" : "Specimen",
+      "derivation" : "constraint"
+    },
+    {
+      "filename" : "StructureDefinition-mii-pr-biobank-substance-additiv.json",
+      "resourceType" : "StructureDefinition",
+      "id" : "mii-pr-biobank-substance-additiv",
+      "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-biobank/StructureDefinition/Substance",
+      "version" : "2026.0.1",
+      "kind" : "resource",
+      "type" : "Substance",
+      "derivation" : "constraint"
+    },
+    {
+      "filename" : "StructureDefinition-mii-pr-biobank-zellinie-organoid.json",
+      "resourceType" : "StructureDefinition",
+      "id" : "mii-pr-biobank-zellinie-organoid",
+      "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-biobank/StructureDefinition/mii-pr-biobank-zellinie-organoid",
+      "version" : "2026.0.1",
+      "kind" : "resource",
+      "type" : "Specimen",
+      "derivation" : "constraint"
+    },
+    {
+      "filename" : "ValueSet-mii-vs-biobank-body-structures-sct.json",
+      "resourceType" : "ValueSet",
+      "id" : "mii-vs-biobank-body-structures-sct",
+      "version" : "2026.0.1",
+      "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-biobank/ValueSet/mii-vs-biobank-body-structures-sct"
+    },
+    {
+      "filename" : "ValueSet-mii-vs-biobank-cellline-modification-clo.json",
+      "resourceType" : "ValueSet",
+      "id" : "mii-vs-biobank-cellline-modification-clo",
+      "version" : "2026.0.1",
+      "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-biobank/ValueSet/mii-vs-biobank-cellline-modification-clo"
+    },
+    {
+      "filename" : "ValueSet-mii-vs-biobank-cellline-morphology-sct.json",
+      "resourceType" : "ValueSet",
+      "id" : "mii-vs-biobank-cellline-morphology-sct",
+      "version" : "2026.0.1",
+      "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-biobank/ValueSet/mii-vs-biobank-cellline-morphology-sct"
+    },
+    {
+      "filename" : "ValueSet-mii-vs-biobank-cellline-proliferation.json",
+      "resourceType" : "ValueSet",
+      "id" : "mii-vs-biobank-cellline-proliferation",
+      "version" : "2026.0.1",
+      "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-biobank/ValueSet/mii-vs-biobank-cellline-proliferation"
+    },
+    {
+      "filename" : "ValueSet-mii-vs-biobank-containertyp-sct.json",
+      "resourceType" : "ValueSet",
+      "id" : "mii-vs-biobank-containertyp-sct",
+      "version" : "2026.0.1",
+      "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-biobank/ValueSet/mii-vs-biobank-containertyp-sct"
+    },
+    {
+      "filename" : "ValueSet-mii-vs-biobank-dna-concentration-units-ucum.json",
+      "resourceType" : "ValueSet",
+      "id" : "mii-vs-biobank-dna-concentration-units-ucum",
+      "version" : "2026.0.1",
+      "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-biobank/ValueSet/mii-vs-biobank-dna-concentration-units-ucum"
+    },
+    {
+      "filename" : "ValueSet-mii-vs-biobank-karyotyp-sct.json",
+      "resourceType" : "ValueSet",
+      "id" : "mii-vs-biobank-karyotyp-sct",
+      "version" : "2026.0.1",
+      "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-biobank/ValueSet/mii-vs-biobank-karyotyp-sct"
+    },
+    {
+      "filename" : "ValueSet-mii-vs-biobank-laboratory-procedure-sct.json",
+      "resourceType" : "ValueSet",
+      "id" : "mii-vs-biobank-laboratory-procedure-sct",
+      "version" : "2026.0.1",
+      "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-biobank/ValueSet/mii-vs-biobank-laboratory-procedure-sct"
+    },
+    {
+      "filename" : "ValueSet-mii-vs-biobank-probenart-sct.json",
+      "resourceType" : "ValueSet",
+      "id" : "mii-vs-biobank-probenart-sct",
+      "version" : "2026.0.1",
+      "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-biobank/ValueSet/mii-vs-biobank-probenart-sct"
+    },
+    {
+      "filename" : "ValueSet-mii-vs-biobank-probenebene.json",
+      "resourceType" : "ValueSet",
+      "id" : "mii-vs-biobank-probenebene",
+      "version" : "2026.0.1",
+      "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-biobank/ValueSet/mii-vs-biobank-probenebene"
+    },
+    {
+      "filename" : "ValueSet-mii-vs-biobank-substance-additive-sct.json",
+      "resourceType" : "ValueSet",
+      "id" : "mii-vs-biobank-substance-additive-sct",
+      "version" : "2026.0.1",
+      "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-biobank/ValueSet/mii-vs-biobank-substance-additive-sct"
+    },
+    {
+      "filename" : "ValueSet-mii-vs-biobank-wachstumstyp-clo.json",
+      "resourceType" : "ValueSet",
+      "id" : "mii-vs-biobank-wachstumstyp-clo",
+      "version" : "2026.0.1",
+      "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-biobank/ValueSet/mii-vs-biobank-wachstumstyp-clo"
+    }
+  ]
+}

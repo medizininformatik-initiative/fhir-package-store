@@ -1,0 +1,41 @@
+{
+  "resourceType": "ValueSet",
+  "status": "active",
+  "name": "MII_VS_PRO_EORTC_QLQ_C30_Scale_7pt",
+  "id": "mii-vs-pro-eortc-qlq-c30-scale-7pt",
+  "title": "MII VS PRO EORTC QLQ-C30 7-Point Scale",
+  "description": "7-point response scale for EORTC QLQ-C30 global health status and quality of life items",
+  "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-eortc-qlq-c30-scale-7pt",
+  "version": "2027.0.0-ballot.1",
+  "experimental": true,
+  "compose": {
+    "include": [
+      {
+        "system": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-eortc-qlq-c30",
+        "concept": [
+          {
+            "code": "1-very-poor"
+          },
+          {
+            "code": "2-poor"
+          },
+          {
+            "code": "3-fair"
+          },
+          {
+            "code": "4-good"
+          },
+          {
+            "code": "5-very-good"
+          },
+          {
+            "code": "6-excellent"
+          },
+          {
+            "code": "7-perfect"
+          }
+        ]
+      }
+    ]
+  }
+}

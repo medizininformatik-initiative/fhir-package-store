@@ -1,0 +1,42 @@
+{
+  "resourceType": "ValueSet",
+  "status": "active",
+  "name": "MII_VS_Dokument_Format_Code",
+  "id": "mii-vs-dokument-format-code",
+  "title": "MII VS Dokument Format Code",
+  "description": "ValueSet zum (komplexen) Format Code eines Dokuments",
+  "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-dokument/ValueSet/mii-vs-dokument-format-code",
+  "version": "2026.0.1",
+  "publisher": "Medizininformatik Initiative",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "https://www.medizininformatik-initiative.de"
+        }
+      ]
+    }
+  ],
+  "experimental": false,
+  "language": "de-DE",
+  "meta": {
+    "profile": [
+      "http://hl7.org/fhir/StructureDefinition/shareablevalueset"
+    ]
+  },
+  "compose": {
+    "include": [
+      {
+        "valueSet": [
+          "http://ihe.net/fhir/ihe.formatcode.fhir/ValueSet/formatcode"
+        ]
+      },
+      {
+        "valueSet": [
+          "http://ihe-d.de/ValueSets/IHEXDSformatCodeDE"
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,53 @@
+{
+  "resourceType": "CodeSystem",
+  "status": "active",
+  "content": "complete",
+  "name": "CommonCollaborationTopicsCS",
+  "id": "miabis-common-collaboration-topics-cs",
+  "title": "Common Collaboration Topics Code System",
+  "description": "Codes describing topics that the network partners collaborate on",
+  "url": "https://fhir.bbmri-eric.eu/fhir/CodeSystem/miabis-common-collaboration-topics-cs",
+  "concept": [
+    {
+      "code": "Charter",
+      "display": "Common Charter"
+    },
+    {
+      "code": "SOP",
+      "display": "Common SOPs"
+    },
+    {
+      "code": "DataAccessPolicy",
+      "display": "Common data access policy"
+    },
+    {
+      "code": "SampleAccessPolicy",
+      "display": "Common sample access policy"
+    },
+    {
+      "code": "MTA",
+      "display": "Common MTA"
+    },
+    {
+      "code": "ImageAccessPolicy",
+      "display": "Common image access policy"
+    },
+    {
+      "code": "ImageMTA",
+      "display": "Common image MTA"
+    },
+    {
+      "code": "Representation",
+      "display": "Common representation"
+    },
+    {
+      "code": "URL",
+      "display": "Common URL"
+    },
+    {
+      "code": "Other",
+      "display": "Other"
+    }
+  ],
+  "count": 10
+}

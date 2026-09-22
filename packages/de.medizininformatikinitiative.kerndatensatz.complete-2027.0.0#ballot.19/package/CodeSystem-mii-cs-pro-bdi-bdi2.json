@@ -1,0 +1,56 @@
+{
+  "resourceType": "CodeSystem",
+  "status": "active",
+  "content": "complete",
+  "name": "MII_CS_PRO_BDI_BDI2_AnswerList",
+  "id": "mii-cs-pro-bdi-bdi2",
+  "title": "MII CS PRO BDI-II",
+  "description": "MII CS PRO BDI-II ValueSet for Beck Depression Inventory II (BDI-II) Questionnaire",
+  "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-bdi-bdi2",
+  "concept": [
+    {
+      "code": "bdi-bdi2-answer-0",
+      "display": "0 points"
+    },
+    {
+      "code": "bdi-bdi2-answer-1",
+      "display": "1 point"
+    },
+    {
+      "code": "bdi-bdi2-answer-2",
+      "display": "2 points"
+    },
+    {
+      "code": "bdi-bdi2-answer-3",
+      "display": "3 points"
+    },
+    {
+      "code": "bdi-bdi2-answer-1a",
+      "display": "1 point (variant a)"
+    },
+    {
+      "code": "bdi-bdi2-answer-1b",
+      "display": "1 point (variant b)"
+    },
+    {
+      "code": "bdi-bdi2-answer-2a",
+      "display": "2 points (variant a)"
+    },
+    {
+      "code": "bdi-bdi2-answer-2b",
+      "display": "2 points (variant b)"
+    },
+    {
+      "code": "bdi-bdi2-answer-3a",
+      "display": "3 points (variant a)"
+    },
+    {
+      "code": "bdi-bdi2-answer-3b",
+      "display": "3 points (variant b)"
+    }
+  ],
+  "version": "2027.0.0-ballot.1",
+  "experimental": true,
+  "valueSet": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-bdi-bdi2",
+  "count": 10
+}

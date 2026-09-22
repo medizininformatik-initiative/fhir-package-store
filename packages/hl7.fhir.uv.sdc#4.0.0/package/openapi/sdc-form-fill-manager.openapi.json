@@ -1,0 +1,1568 @@
+﻿{
+  "openapi": "3.0.2",
+  "info": {
+    "title": "SDC Form Fill Manager",
+    "description": "This profile defines the expected capabilities of the *SDC Form Fill Manager* role when conforming to this implementation guide.  This role is responsible for maintaining a repository of form definitions for retrieval by form fillers possibly also supporting pre-population of form data.",
+    "license": {
+      "name": "Creative Commons Zero v1.0 Universal",
+      "url": "http://spdx.org/licenses/CC0-1.0.html"
+    },
+    "version": "4.0.0",
+    "contact": {
+      "name": "HL7 International / FHIR Infrastructure",
+      "url": "http://www.hl7.org/Special/committees/fiwg"
+    }
+  },
+  "externalDocs": {
+    "url": "http://hl7.org/fhir/uv/sdc/CapabilityStatement/sdc-form-fill-manager",
+    "description": "FHIR CapabilityStatement"
+  },
+  "paths": {
+    "/metadata": {
+      "summary": "Access to the Server\u0027s Capability Statement",
+      "description": "All FHIR Servers return a CapabilityStatement that describes what services they perform",
+      "get": {
+        "summary": "Return the server\u0027s capability statement",
+        "operationId": "metadata",
+        "responses": {
+          "default": {
+            "description": "Error, with details",
+            "content": {
+              "application/fhir+json": {
+                "schema": {
+                  "$ref": "https://hl7.org/fhir/R4/fhir.schema.json#/definitions/OperationOutcome"
+                }
+              },
+              "application/fhir+xml": {
+                "schema": {
+                  "$ref": "https://hl7.org/fhir/R4/OperationOutcome.xsd"
+                }
+              }
+            }
+          },
+          "200": {
+            "description": "the capbility statement",
+            "content": {
+              "application/fhir+json": {
+                "schema": {
+                  "$ref": "https://hl7.org/fhir/R4/fhir.schema.json#/definitions/CapabilityStatement"
+                }
+              },
+              "application/fhir+xml": {
+                "schema": {
+                  "$ref": "https://hl7.org/fhir/R4/CapabilityStatement.xsd"
+                }
+              }
+            }
+          }
+        },
+        "parameters": [
+          {
+            "$ref": "#/components/parameters/format"
+          },
+          {
+            "$ref": "#/components/parameters/pretty"
+          },
+          {
+            "$ref": "#/components/parameters/summary"
+          },
+          {
+            "$ref": "#/components/parameters/elements"
+          }
+        ]
+      }
+    },
+    "/Questionnaire": {
+      "summary": "manage the collection of resources of type Questionnaire",
+      "description": "Access to services to manage the collection of all resources of type Questionnaire",
+      "get": {
+        "summary": "Search all resources of type Questionnaire based on a set of criteria",
+        "operationId": "searchQuestionnaire",
+        "responses": {
+          "default": {
+            "description": "Error, with details",
+            "content": {
+              "application/fhir+json": {
+                "schema": {
+                  "$ref": "https://hl7.org/fhir/R4/fhir.schema.json#/definitions/OperationOutcome"
+                }
+              },
+              "application/fhir+xml": {
+                "schema": {
+                  "$ref": "https://hl7.org/fhir/R4/OperationOutcome.xsd"
+                }
+              }
+            }
+          },
+          "200": {
+            "description": "the resource being returned",
+            "content": {
+              "application/fhir+json": {
+                "schema": {
+                  "$ref": "https://hl7.org/fhir/R4/fhir.schema.json#/definitions/Bundle"
+                }
+              },
+              "application/fhir+xml": {
+                "schema": {
+                  "$ref": "https://hl7.org/fhir/R4/Bundle.xsd"
+                }
+              }
+            }
+          }
+        },
+        "parameters": [
+          {
+            "$ref": "#/components/parameters/format"
+          },
+          {
+            "$ref": "#/components/parameters/pretty"
+          },
+          {
+            "$ref": "#/components/parameters/summary"
+          },
+          {
+            "$ref": "#/components/parameters/elements"
+          },
+          {
+            "name": "url",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            },
+            "description": "The uri that identifies the questionnaire"
+          },
+          {
+            "name": "version",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            },
+            "description": "The business version of the questionnaire"
+          },
+          {
+            "name": "status",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            },
+            "description": "The current status of the questionnaire"
+          },
+          {
+            "name": "experimental",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            },
+            "description": "Allows searching by \u0027experimental\u0027 for the canonical resources SDC cares about.  (Official search param should appear in R6 core)"
+          },
+          {
+            "name": "context-type-quantity",
+            "in": "query",
+            "schema": {},
+            "description": "A use context type and quantity- or range-based value assigned to the questionnaire"
+          },
+          {
+            "name": "context-type-value",
+            "in": "query",
+            "schema": {},
+            "description": "A use context type and value assigned to the questionnaire"
+          },
+          {
+            "name": "date",
+            "in": "query",
+            "schema": {
+              "type": "string",
+              "pattern": "([0-9]([0-9]([0-9][1-9]|[1-9]0)|[1-9]00)|[1-9]000)(-(0[1-9]|1[0-2])(-(0[1-9]|[1-2][0-9]|3[0-1])(T([01][0-9]|2[0-3]):[0-5][0-9]:([0-5][0-9]|60)(\\.[0-9]+)?(Z|(\\+|-)((0[0-9]|1[0-3]):[0-5][0-9]|14:00)))?)?)?"
+            },
+            "description": "The questionnaire publication date"
+          },
+          {
+            "name": "description",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            },
+            "description": "The description of the questionnaire"
+          },
+          {
+            "name": "identifier",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            },
+            "description": "External identifier for the questionnaire"
+          },
+          {
+            "name": "publisher",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            },
+            "description": "Name of the publisher of the questionnaire"
+          },
+          {
+            "name": "questionnaire-code",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            },
+            "description": "Allows searching by the questionnaire.code element.  (Official search param appears in R5 core)"
+          },
+          {
+            "name": "subject-type",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            },
+            "description": "Allows searching by the questionnaire.subjectType element.  (Official search param appears in R5 core)"
+          },
+          {
+            "name": "title",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            },
+            "description": "The human-friendly name of the questionnaire"
+          },
+          {
+            "name": "effective",
+            "in": "query",
+            "schema": {
+              "type": "string",
+              "pattern": "([0-9]([0-9]([0-9][1-9]|[1-9]0)|[1-9]00)|[1-9]000)(-(0[1-9]|1[0-2])(-(0[1-9]|[1-2][0-9]|3[0-1])(T([01][0-9]|2[0-3]):[0-5][0-9]:([0-5][0-9]|60)(\\.[0-9]+)?(Z|(\\+|-)((0[0-9]|1[0-3]):[0-5][0-9]|14:00)))?)?)?"
+            },
+            "description": "The time during which the questionnaire is intended to be in use"
+          },
+          {
+            "name": "jurisdiction",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            },
+            "description": "Intended jurisdiction for the questionnaire"
+          },
+          {
+            "name": "assemble-expectation",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            },
+            "description": "Allows searching by \u0027assemble-expectation\u0027 extension on a Questionnaire"
+          }
+        ]
+      }
+    },
+    "/Questionnaire/{rid}": {
+      "summary": "Read/Write/etc resource instance of type Questionnaire",
+      "description": "Access to services to manage the state of a single resource of type Questionnaire",
+      "get": {
+        "summary": "Read the current state of the resource",
+        "operationId": "readQuestionnaire",
+        "responses": {
+          "default": {
+            "description": "Error, with details",
+            "content": {
+              "application/fhir+json": {
+                "schema": {
+                  "$ref": "https://hl7.org/fhir/R4/fhir.schema.json#/definitions/OperationOutcome"
+                }
+              },
+              "application/fhir+xml": {
+                "schema": {
+                  "$ref": "https://hl7.org/fhir/R4/OperationOutcome.xsd"
+                }
+              }
+            }
+          },
+          "200": {
+            "description": "the resource being returned",
+            "headers": {
+              "ETag": {
+                "description": "Version from Resource.meta.version as a weak ETag",
+                "schema": {
+                  "type": "string"
+                }
+              }
+            },
+            "content": {
+              "application/fhir+json": {
+                "schema": {
+                  "$ref": "https://hl7.org/fhir/R4/fhir.schema.json#/definitions/Questionnaire"
+                }
+              },
+              "application/fhir+xml": {
+                "schema": {
+                  "$ref": "https://hl7.org/fhir/R4/Questionnaire.xsd"
+                }
+              }
+            }
+          }
+        },
+        "parameters": [
+          {
+            "$ref": "#/components/parameters/rid"
+          },
+          {
+            "$ref": "#/components/parameters/summary"
+          },
+          {
+            "$ref": "#/components/parameters/format"
+          },
+          {
+            "$ref": "#/components/parameters/pretty"
+          },
+          {
+            "$ref": "#/components/parameters/elements"
+          }
+        ]
+      }
+    },
+    "/ValueSet": {
+      "summary": "manage the collection of resources of type ValueSet",
+      "description": "Access to services to manage the collection of all resources of type ValueSet",
+      "get": {
+        "summary": "Search all resources of type ValueSet based on a set of criteria",
+        "operationId": "searchValueSet",
+        "responses": {
+          "default": {
+            "description": "Error, with details",
+            "content": {
+              "application/fhir+json": {
+                "schema": {
+                  "$ref": "https://hl7.org/fhir/R4/fhir.schema.json#/definitions/OperationOutcome"
+                }
+              },
+              "application/fhir+xml": {
+                "schema": {
+                  "$ref": "https://hl7.org/fhir/R4/OperationOutcome.xsd"
+                }
+              }
+            }
+          },
+          "200": {
+            "description": "the resource being returned",
+            "content": {
+              "application/fhir+json": {
+                "schema": {
+                  "$ref": "https://hl7.org/fhir/R4/fhir.schema.json#/definitions/Bundle"
+                }
+              },
+              "application/fhir+xml": {
+                "schema": {
+                  "$ref": "https://hl7.org/fhir/R4/Bundle.xsd"
+                }
+              }
+            }
+          }
+        },
+        "parameters": [
+          {
+            "$ref": "#/components/parameters/format"
+          },
+          {
+            "$ref": "#/components/parameters/pretty"
+          },
+          {
+            "$ref": "#/components/parameters/summary"
+          },
+          {
+            "$ref": "#/components/parameters/elements"
+          },
+          {
+            "name": "url",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            },
+            "description": "Multiple Resources: \r\n\r\n* [CapabilityStatement](capabilitystatement.html): The uri that identifies the capability statement\r\n* [CodeSystem](codesystem.html): The uri that identifies the code system\r\n* [CompartmentDefinition](compartmentdefinition.html): The uri that identifies the compartment definition\r\n* [ConceptMap](conceptmap.html): The uri that identifies the concept map\r\n* [GraphDefinition](graphdefinition.html): The uri that identifies the graph definition\r\n* [ImplementationGuide](implementationguide.html): The uri that identifies the implementation guide\r\n* [MessageDefinition](messagedefinition.html): The uri that identifies the message definition\r\n* [OperationDefinition](operationdefinition.html): The uri that identifies the operation definition\r\n* [SearchParameter](searchparameter.html): The uri that identifies the search parameter\r\n* [StructureDefinition](structuredefinition.html): The uri that identifies the structure definition\r\n* [StructureMap](structuremap.html): The uri that identifies the structure map\r\n* [TerminologyCapabilities](terminologycapabilities.html): The uri that identifies the terminology capabilities\r\n* [ValueSet](valueset.html): The uri that identifies the value set\r\n"
+          },
+          {
+            "name": "version",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            },
+            "description": "Multiple Resources: \r\n\r\n* [CapabilityStatement](capabilitystatement.html): The business version of the capability statement\r\n* [CodeSystem](codesystem.html): The business version of the code system\r\n* [CompartmentDefinition](compartmentdefinition.html): The business version of the compartment definition\r\n* [ConceptMap](conceptmap.html): The business version of the concept map\r\n* [GraphDefinition](graphdefinition.html): The business version of the graph definition\r\n* [ImplementationGuide](implementationguide.html): The business version of the implementation guide\r\n* [MessageDefinition](messagedefinition.html): The business version of the message definition\r\n* [OperationDefinition](operationdefinition.html): The business version of the operation definition\r\n* [SearchParameter](searchparameter.html): The business version of the search parameter\r\n* [StructureDefinition](structuredefinition.html): The business version of the structure definition\r\n* [StructureMap](structuremap.html): The business version of the structure map\r\n* [TerminologyCapabilities](terminologycapabilities.html): The business version of the terminology capabilities\r\n* [ValueSet](valueset.html): The business version of the value set\r\n"
+          }
+        ]
+      }
+    },
+    "/ValueSet/{rid}": {
+      "summary": "Read/Write/etc resource instance of type ValueSet",
+      "description": "Access to services to manage the state of a single resource of type ValueSet",
+      "get": {
+        "summary": "Read the current state of the resource",
+        "operationId": "readValueSet",
+        "responses": {
+          "default": {
+            "description": "Error, with details",
+            "content": {
+              "application/fhir+json": {
+                "schema": {
+                  "$ref": "https://hl7.org/fhir/R4/fhir.schema.json#/definitions/OperationOutcome"
+                }
+              },
+              "application/fhir+xml": {
+                "schema": {
+                  "$ref": "https://hl7.org/fhir/R4/OperationOutcome.xsd"
+                }
+              }
+            }
+          },
+          "200": {
+            "description": "the resource being returned",
+            "headers": {
+              "ETag": {
+                "description": "Version from Resource.meta.version as a weak ETag",
+                "schema": {
+                  "type": "string"
+                }
+              }
+            },
+            "content": {
+              "application/fhir+json": {
+                "schema": {
+                  "$ref": "https://hl7.org/fhir/R4/fhir.schema.json#/definitions/ValueSet"
+                }
+              },
+              "application/fhir+xml": {
+                "schema": {
+                  "$ref": "https://hl7.org/fhir/R4/ValueSet.xsd"
+                }
+              }
+            }
+          }
+        },
+        "parameters": [
+          {
+            "$ref": "#/components/parameters/rid"
+          },
+          {
+            "$ref": "#/components/parameters/summary"
+          },
+          {
+            "$ref": "#/components/parameters/format"
+          },
+          {
+            "$ref": "#/components/parameters/pretty"
+          },
+          {
+            "$ref": "#/components/parameters/elements"
+          }
+        ]
+      }
+    },
+    "/CodeSystem": {
+      "summary": "manage the collection of resources of type CodeSystem",
+      "description": "Access to services to manage the collection of all resources of type CodeSystem",
+      "get": {
+        "summary": "Search all resources of type CodeSystem based on a set of criteria",
+        "operationId": "searchCodeSystem",
+        "responses": {
+          "default": {
+            "description": "Error, with details",
+            "content": {
+              "application/fhir+json": {
+                "schema": {
+                  "$ref": "https://hl7.org/fhir/R4/fhir.schema.json#/definitions/OperationOutcome"
+                }
+              },
+              "application/fhir+xml": {
+                "schema": {
+                  "$ref": "https://hl7.org/fhir/R4/OperationOutcome.xsd"
+                }
+              }
+            }
+          },
+          "200": {
+            "description": "the resource being returned",
+            "content": {
+              "application/fhir+json": {
+                "schema": {
+                  "$ref": "https://hl7.org/fhir/R4/fhir.schema.json#/definitions/Bundle"
+                }
+              },
+              "application/fhir+xml": {
+                "schema": {
+                  "$ref": "https://hl7.org/fhir/R4/Bundle.xsd"
+                }
+              }
+            }
+          }
+        },
+        "parameters": [
+          {
+            "$ref": "#/components/parameters/format"
+          },
+          {
+            "$ref": "#/components/parameters/pretty"
+          },
+          {
+            "$ref": "#/components/parameters/summary"
+          },
+          {
+            "$ref": "#/components/parameters/elements"
+          },
+          {
+            "name": "url",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            },
+            "description": "Multiple Resources: \r\n\r\n* [CapabilityStatement](capabilitystatement.html): The uri that identifies the capability statement\r\n* [CodeSystem](codesystem.html): The uri that identifies the code system\r\n* [CompartmentDefinition](compartmentdefinition.html): The uri that identifies the compartment definition\r\n* [ConceptMap](conceptmap.html): The uri that identifies the concept map\r\n* [GraphDefinition](graphdefinition.html): The uri that identifies the graph definition\r\n* [ImplementationGuide](implementationguide.html): The uri that identifies the implementation guide\r\n* [MessageDefinition](messagedefinition.html): The uri that identifies the message definition\r\n* [OperationDefinition](operationdefinition.html): The uri that identifies the operation definition\r\n* [SearchParameter](searchparameter.html): The uri that identifies the search parameter\r\n* [StructureDefinition](structuredefinition.html): The uri that identifies the structure definition\r\n* [StructureMap](structuremap.html): The uri that identifies the structure map\r\n* [TerminologyCapabilities](terminologycapabilities.html): The uri that identifies the terminology capabilities\r\n* [ValueSet](valueset.html): The uri that identifies the value set\r\n"
+          },
+          {
+            "name": "version",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            },
+            "description": "Multiple Resources: \r\n\r\n* [CapabilityStatement](capabilitystatement.html): The business version of the capability statement\r\n* [CodeSystem](codesystem.html): The business version of the code system\r\n* [CompartmentDefinition](compartmentdefinition.html): The business version of the compartment definition\r\n* [ConceptMap](conceptmap.html): The business version of the concept map\r\n* [GraphDefinition](graphdefinition.html): The business version of the graph definition\r\n* [ImplementationGuide](implementationguide.html): The business version of the implementation guide\r\n* [MessageDefinition](messagedefinition.html): The business version of the message definition\r\n* [OperationDefinition](operationdefinition.html): The business version of the operation definition\r\n* [SearchParameter](searchparameter.html): The business version of the search parameter\r\n* [StructureDefinition](structuredefinition.html): The business version of the structure definition\r\n* [StructureMap](structuremap.html): The business version of the structure map\r\n* [TerminologyCapabilities](terminologycapabilities.html): The business version of the terminology capabilities\r\n* [ValueSet](valueset.html): The business version of the value set\r\n"
+          }
+        ]
+      }
+    },
+    "/CodeSystem/{rid}": {
+      "summary": "Read/Write/etc resource instance of type CodeSystem",
+      "description": "Access to services to manage the state of a single resource of type CodeSystem",
+      "get": {
+        "summary": "Read the current state of the resource",
+        "operationId": "readCodeSystem",
+        "responses": {
+          "default": {
+            "description": "Error, with details",
+            "content": {
+              "application/fhir+json": {
+                "schema": {
+                  "$ref": "https://hl7.org/fhir/R4/fhir.schema.json#/definitions/OperationOutcome"
+                }
+              },
+              "application/fhir+xml": {
+                "schema": {
+                  "$ref": "https://hl7.org/fhir/R4/OperationOutcome.xsd"
+                }
+              }
+            }
+          },
+          "200": {
+            "description": "the resource being returned",
+            "headers": {
+              "ETag": {
+                "description": "Version from Resource.meta.version as a weak ETag",
+                "schema": {
+                  "type": "string"
+                }
+              }
+            },
+            "content": {
+              "application/fhir+json": {
+                "schema": {
+                  "$ref": "https://hl7.org/fhir/R4/fhir.schema.json#/definitions/CodeSystem"
+                }
+              },
+              "application/fhir+xml": {
+                "schema": {
+                  "$ref": "https://hl7.org/fhir/R4/CodeSystem.xsd"
+                }
+              }
+            }
+          }
+        },
+        "parameters": [
+          {
+            "$ref": "#/components/parameters/rid"
+          },
+          {
+            "$ref": "#/components/parameters/summary"
+          },
+          {
+            "$ref": "#/components/parameters/format"
+          },
+          {
+            "$ref": "#/components/parameters/pretty"
+          },
+          {
+            "$ref": "#/components/parameters/elements"
+          }
+        ]
+      }
+    },
+    "/Library": {
+      "summary": "manage the collection of resources of type Library",
+      "description": "Access to services to manage the collection of all resources of type Library",
+      "get": {
+        "summary": "Search all resources of type Library based on a set of criteria",
+        "operationId": "searchLibrary",
+        "responses": {
+          "default": {
+            "description": "Error, with details",
+            "content": {
+              "application/fhir+json": {
+                "schema": {
+                  "$ref": "https://hl7.org/fhir/R4/fhir.schema.json#/definitions/OperationOutcome"
+                }
+              },
+              "application/fhir+xml": {
+                "schema": {
+                  "$ref": "https://hl7.org/fhir/R4/OperationOutcome.xsd"
+                }
+              }
+            }
+          },
+          "200": {
+            "description": "the resource being returned",
+            "content": {
+              "application/fhir+json": {
+                "schema": {
+                  "$ref": "https://hl7.org/fhir/R4/fhir.schema.json#/definitions/Bundle"
+                }
+              },
+              "application/fhir+xml": {
+                "schema": {
+                  "$ref": "https://hl7.org/fhir/R4/Bundle.xsd"
+                }
+              }
+            }
+          }
+        },
+        "parameters": [
+          {
+            "$ref": "#/components/parameters/format"
+          },
+          {
+            "$ref": "#/components/parameters/pretty"
+          },
+          {
+            "$ref": "#/components/parameters/summary"
+          },
+          {
+            "$ref": "#/components/parameters/elements"
+          },
+          {
+            "name": "url",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            },
+            "description": "The uri that identifies the library"
+          },
+          {
+            "name": "version",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            },
+            "description": "The business version of the library"
+          }
+        ]
+      }
+    },
+    "/Library/{rid}": {
+      "summary": "Read/Write/etc resource instance of type Library",
+      "description": "Access to services to manage the state of a single resource of type Library",
+      "get": {
+        "summary": "Read the current state of the resource",
+        "operationId": "readLibrary",
+        "responses": {
+          "default": {
+            "description": "Error, with details",
+            "content": {
+              "application/fhir+json": {
+                "schema": {
+                  "$ref": "https://hl7.org/fhir/R4/fhir.schema.json#/definitions/OperationOutcome"
+                }
+              },
+              "application/fhir+xml": {
+                "schema": {
+                  "$ref": "https://hl7.org/fhir/R4/OperationOutcome.xsd"
+                }
+              }
+            }
+          },
+          "200": {
+            "description": "the resource being returned",
+            "headers": {
+              "ETag": {
+                "description": "Version from Resource.meta.version as a weak ETag",
+                "schema": {
+                  "type": "string"
+                }
+              }
+            },
+            "content": {
+              "application/fhir+json": {
+                "schema": {
+                  "$ref": "https://hl7.org/fhir/R4/fhir.schema.json#/definitions/Library"
+                }
+              },
+              "application/fhir+xml": {
+                "schema": {
+                  "$ref": "https://hl7.org/fhir/R4/Library.xsd"
+                }
+              }
+            }
+          }
+        },
+        "parameters": [
+          {
+            "$ref": "#/components/parameters/rid"
+          },
+          {
+            "$ref": "#/components/parameters/summary"
+          },
+          {
+            "$ref": "#/components/parameters/format"
+          },
+          {
+            "$ref": "#/components/parameters/pretty"
+          },
+          {
+            "$ref": "#/components/parameters/elements"
+          }
+        ]
+      }
+    },
+    "/StructureMap": {
+      "summary": "manage the collection of resources of type StructureMap",
+      "description": "Access to services to manage the collection of all resources of type StructureMap",
+      "get": {
+        "summary": "Search all resources of type StructureMap based on a set of criteria",
+        "operationId": "searchStructureMap",
+        "responses": {
+          "default": {
+            "description": "Error, with details",
+            "content": {
+              "application/fhir+json": {
+                "schema": {
+                  "$ref": "https://hl7.org/fhir/R4/fhir.schema.json#/definitions/OperationOutcome"
+                }
+              },
+              "application/fhir+xml": {
+                "schema": {
+                  "$ref": "https://hl7.org/fhir/R4/OperationOutcome.xsd"
+                }
+              }
+            }
+          },
+          "200": {
+            "description": "the resource being returned",
+            "content": {
+              "application/fhir+json": {
+                "schema": {
+                  "$ref": "https://hl7.org/fhir/R4/fhir.schema.json#/definitions/Bundle"
+                }
+              },
+              "application/fhir+xml": {
+                "schema": {
+                  "$ref": "https://hl7.org/fhir/R4/Bundle.xsd"
+                }
+              }
+            }
+          }
+        },
+        "parameters": [
+          {
+            "$ref": "#/components/parameters/format"
+          },
+          {
+            "$ref": "#/components/parameters/pretty"
+          },
+          {
+            "$ref": "#/components/parameters/summary"
+          },
+          {
+            "$ref": "#/components/parameters/elements"
+          },
+          {
+            "name": "url",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            },
+            "description": "Multiple Resources: \r\n\r\n* [CapabilityStatement](capabilitystatement.html): The uri that identifies the capability statement\r\n* [CodeSystem](codesystem.html): The uri that identifies the code system\r\n* [CompartmentDefinition](compartmentdefinition.html): The uri that identifies the compartment definition\r\n* [ConceptMap](conceptmap.html): The uri that identifies the concept map\r\n* [GraphDefinition](graphdefinition.html): The uri that identifies the graph definition\r\n* [ImplementationGuide](implementationguide.html): The uri that identifies the implementation guide\r\n* [MessageDefinition](messagedefinition.html): The uri that identifies the message definition\r\n* [OperationDefinition](operationdefinition.html): The uri that identifies the operation definition\r\n* [SearchParameter](searchparameter.html): The uri that identifies the search parameter\r\n* [StructureDefinition](structuredefinition.html): The uri that identifies the structure definition\r\n* [StructureMap](structuremap.html): The uri that identifies the structure map\r\n* [TerminologyCapabilities](terminologycapabilities.html): The uri that identifies the terminology capabilities\r\n* [ValueSet](valueset.html): The uri that identifies the value set\r\n"
+          },
+          {
+            "name": "version",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            },
+            "description": "Multiple Resources: \r\n\r\n* [CapabilityStatement](capabilitystatement.html): The business version of the capability statement\r\n* [CodeSystem](codesystem.html): The business version of the code system\r\n* [CompartmentDefinition](compartmentdefinition.html): The business version of the compartment definition\r\n* [ConceptMap](conceptmap.html): The business version of the concept map\r\n* [GraphDefinition](graphdefinition.html): The business version of the graph definition\r\n* [ImplementationGuide](implementationguide.html): The business version of the implementation guide\r\n* [MessageDefinition](messagedefinition.html): The business version of the message definition\r\n* [OperationDefinition](operationdefinition.html): The business version of the operation definition\r\n* [SearchParameter](searchparameter.html): The business version of the search parameter\r\n* [StructureDefinition](structuredefinition.html): The business version of the structure definition\r\n* [StructureMap](structuremap.html): The business version of the structure map\r\n* [TerminologyCapabilities](terminologycapabilities.html): The business version of the terminology capabilities\r\n* [ValueSet](valueset.html): The business version of the value set\r\n"
+          }
+        ]
+      }
+    },
+    "/StructureMap/{rid}": {
+      "summary": "Read/Write/etc resource instance of type StructureMap",
+      "description": "Access to services to manage the state of a single resource of type StructureMap",
+      "get": {
+        "summary": "Read the current state of the resource",
+        "operationId": "readStructureMap",
+        "responses": {
+          "default": {
+            "description": "Error, with details",
+            "content": {
+              "application/fhir+json": {
+                "schema": {
+                  "$ref": "https://hl7.org/fhir/R4/fhir.schema.json#/definitions/OperationOutcome"
+                }
+              },
+              "application/fhir+xml": {
+                "schema": {
+                  "$ref": "https://hl7.org/fhir/R4/OperationOutcome.xsd"
+                }
+              }
+            }
+          },
+          "200": {
+            "description": "the resource being returned",
+            "headers": {
+              "ETag": {
+                "description": "Version from Resource.meta.version as a weak ETag",
+                "schema": {
+                  "type": "string"
+                }
+              }
+            },
+            "content": {
+              "application/fhir+json": {
+                "schema": {
+                  "$ref": "https://hl7.org/fhir/R4/fhir.schema.json#/definitions/StructureMap"
+                }
+              },
+              "application/fhir+xml": {
+                "schema": {
+                  "$ref": "https://hl7.org/fhir/R4/StructureMap.xsd"
+                }
+              }
+            }
+          }
+        },
+        "parameters": [
+          {
+            "$ref": "#/components/parameters/rid"
+          },
+          {
+            "$ref": "#/components/parameters/summary"
+          },
+          {
+            "$ref": "#/components/parameters/format"
+          },
+          {
+            "$ref": "#/components/parameters/pretty"
+          },
+          {
+            "$ref": "#/components/parameters/elements"
+          }
+        ]
+      }
+    },
+    "/StructureDefinition": {
+      "summary": "manage the collection of resources of type StructureDefinition",
+      "description": "Access to services to manage the collection of all resources of type StructureDefinition",
+      "get": {
+        "summary": "Search all resources of type StructureDefinition based on a set of criteria",
+        "operationId": "searchStructureDefinition",
+        "responses": {
+          "default": {
+            "description": "Error, with details",
+            "content": {
+              "application/fhir+json": {
+                "schema": {
+                  "$ref": "https://hl7.org/fhir/R4/fhir.schema.json#/definitions/OperationOutcome"
+                }
+              },
+              "application/fhir+xml": {
+                "schema": {
+                  "$ref": "https://hl7.org/fhir/R4/OperationOutcome.xsd"
+                }
+              }
+            }
+          },
+          "200": {
+            "description": "the resource being returned",
+            "content": {
+              "application/fhir+json": {
+                "schema": {
+                  "$ref": "https://hl7.org/fhir/R4/fhir.schema.json#/definitions/Bundle"
+                }
+              },
+              "application/fhir+xml": {
+                "schema": {
+                  "$ref": "https://hl7.org/fhir/R4/Bundle.xsd"
+                }
+              }
+            }
+          }
+        },
+        "parameters": [
+          {
+            "$ref": "#/components/parameters/format"
+          },
+          {
+            "$ref": "#/components/parameters/pretty"
+          },
+          {
+            "$ref": "#/components/parameters/summary"
+          },
+          {
+            "$ref": "#/components/parameters/elements"
+          },
+          {
+            "name": "url",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            },
+            "description": "Multiple Resources: \r\n\r\n* [CapabilityStatement](capabilitystatement.html): The uri that identifies the capability statement\r\n* [CodeSystem](codesystem.html): The uri that identifies the code system\r\n* [CompartmentDefinition](compartmentdefinition.html): The uri that identifies the compartment definition\r\n* [ConceptMap](conceptmap.html): The uri that identifies the concept map\r\n* [GraphDefinition](graphdefinition.html): The uri that identifies the graph definition\r\n* [ImplementationGuide](implementationguide.html): The uri that identifies the implementation guide\r\n* [MessageDefinition](messagedefinition.html): The uri that identifies the message definition\r\n* [OperationDefinition](operationdefinition.html): The uri that identifies the operation definition\r\n* [SearchParameter](searchparameter.html): The uri that identifies the search parameter\r\n* [StructureDefinition](structuredefinition.html): The uri that identifies the structure definition\r\n* [StructureMap](structuremap.html): The uri that identifies the structure map\r\n* [TerminologyCapabilities](terminologycapabilities.html): The uri that identifies the terminology capabilities\r\n* [ValueSet](valueset.html): The uri that identifies the value set\r\n"
+          },
+          {
+            "name": "version",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            },
+            "description": "Multiple Resources: \r\n\r\n* [CapabilityStatement](capabilitystatement.html): The business version of the capability statement\r\n* [CodeSystem](codesystem.html): The business version of the code system\r\n* [CompartmentDefinition](compartmentdefinition.html): The business version of the compartment definition\r\n* [ConceptMap](conceptmap.html): The business version of the concept map\r\n* [GraphDefinition](graphdefinition.html): The business version of the graph definition\r\n* [ImplementationGuide](implementationguide.html): The business version of the implementation guide\r\n* [MessageDefinition](messagedefinition.html): The business version of the message definition\r\n* [OperationDefinition](operationdefinition.html): The business version of the operation definition\r\n* [SearchParameter](searchparameter.html): The business version of the search parameter\r\n* [StructureDefinition](structuredefinition.html): The business version of the structure definition\r\n* [StructureMap](structuremap.html): The business version of the structure map\r\n* [TerminologyCapabilities](terminologycapabilities.html): The business version of the terminology capabilities\r\n* [ValueSet](valueset.html): The business version of the value set\r\n"
+          }
+        ]
+      }
+    },
+    "/StructureDefinition/{rid}": {
+      "summary": "Read/Write/etc resource instance of type StructureDefinition",
+      "description": "Access to services to manage the state of a single resource of type StructureDefinition",
+      "get": {
+        "summary": "Read the current state of the resource",
+        "operationId": "readStructureDefinition",
+        "responses": {
+          "default": {
+            "description": "Error, with details",
+            "content": {
+              "application/fhir+json": {
+                "schema": {
+                  "$ref": "https://hl7.org/fhir/R4/fhir.schema.json#/definitions/OperationOutcome"
+                }
+              },
+              "application/fhir+xml": {
+                "schema": {
+                  "$ref": "https://hl7.org/fhir/R4/OperationOutcome.xsd"
+                }
+              }
+            }
+          },
+          "200": {
+            "description": "the resource being returned",
+            "headers": {
+              "ETag": {
+                "description": "Version from Resource.meta.version as a weak ETag",
+                "schema": {
+                  "type": "string"
+                }
+              }
+            },
+            "content": {
+              "application/fhir+json": {
+                "schema": {
+                  "$ref": "https://hl7.org/fhir/R4/fhir.schema.json#/definitions/StructureDefinition"
+                }
+              },
+              "application/fhir+xml": {
+                "schema": {
+                  "$ref": "https://hl7.org/fhir/R4/StructureDefinition.xsd"
+                }
+              }
+            }
+          }
+        },
+        "parameters": [
+          {
+            "$ref": "#/components/parameters/rid"
+          },
+          {
+            "$ref": "#/components/parameters/summary"
+          },
+          {
+            "$ref": "#/components/parameters/format"
+          },
+          {
+            "$ref": "#/components/parameters/pretty"
+          },
+          {
+            "$ref": "#/components/parameters/elements"
+          }
+        ]
+      }
+    },
+    "/ConceptMap": {
+      "summary": "manage the collection of resources of type ConceptMap",
+      "description": "Access to services to manage the collection of all resources of type ConceptMap",
+      "get": {
+        "summary": "Search all resources of type ConceptMap based on a set of criteria",
+        "operationId": "searchConceptMap",
+        "responses": {
+          "default": {
+            "description": "Error, with details",
+            "content": {
+              "application/fhir+json": {
+                "schema": {
+                  "$ref": "https://hl7.org/fhir/R4/fhir.schema.json#/definitions/OperationOutcome"
+                }
+              },
+              "application/fhir+xml": {
+                "schema": {
+                  "$ref": "https://hl7.org/fhir/R4/OperationOutcome.xsd"
+                }
+              }
+            }
+          },
+          "200": {
+            "description": "the resource being returned",
+            "content": {
+              "application/fhir+json": {
+                "schema": {
+                  "$ref": "https://hl7.org/fhir/R4/fhir.schema.json#/definitions/Bundle"
+                }
+              },
+              "application/fhir+xml": {
+                "schema": {
+                  "$ref": "https://hl7.org/fhir/R4/Bundle.xsd"
+                }
+              }
+            }
+          }
+        },
+        "parameters": [
+          {
+            "$ref": "#/components/parameters/format"
+          },
+          {
+            "$ref": "#/components/parameters/pretty"
+          },
+          {
+            "$ref": "#/components/parameters/summary"
+          },
+          {
+            "$ref": "#/components/parameters/elements"
+          },
+          {
+            "name": "experimental",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            },
+            "description": "Allows searching by \u0027experimental\u0027 for the canonical resources SDC cares about.  (Official search param should appear in R6 core)"
+          },
+          {
+            "name": "url",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            },
+            "description": "Multiple Resources: \r\n\r\n* [CapabilityStatement](capabilitystatement.html): The uri that identifies the capability statement\r\n* [CodeSystem](codesystem.html): The uri that identifies the code system\r\n* [CompartmentDefinition](compartmentdefinition.html): The uri that identifies the compartment definition\r\n* [ConceptMap](conceptmap.html): The uri that identifies the concept map\r\n* [GraphDefinition](graphdefinition.html): The uri that identifies the graph definition\r\n* [ImplementationGuide](implementationguide.html): The uri that identifies the implementation guide\r\n* [MessageDefinition](messagedefinition.html): The uri that identifies the message definition\r\n* [OperationDefinition](operationdefinition.html): The uri that identifies the operation definition\r\n* [SearchParameter](searchparameter.html): The uri that identifies the search parameter\r\n* [StructureDefinition](structuredefinition.html): The uri that identifies the structure definition\r\n* [StructureMap](structuremap.html): The uri that identifies the structure map\r\n* [TerminologyCapabilities](terminologycapabilities.html): The uri that identifies the terminology capabilities\r\n* [ValueSet](valueset.html): The uri that identifies the value set\r\n"
+          },
+          {
+            "name": "version",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            },
+            "description": "Multiple Resources: \r\n\r\n* [CapabilityStatement](capabilitystatement.html): The business version of the capability statement\r\n* [CodeSystem](codesystem.html): The business version of the code system\r\n* [CompartmentDefinition](compartmentdefinition.html): The business version of the compartment definition\r\n* [ConceptMap](conceptmap.html): The business version of the concept map\r\n* [GraphDefinition](graphdefinition.html): The business version of the graph definition\r\n* [ImplementationGuide](implementationguide.html): The business version of the implementation guide\r\n* [MessageDefinition](messagedefinition.html): The business version of the message definition\r\n* [OperationDefinition](operationdefinition.html): The business version of the operation definition\r\n* [SearchParameter](searchparameter.html): The business version of the search parameter\r\n* [StructureDefinition](structuredefinition.html): The business version of the structure definition\r\n* [StructureMap](structuremap.html): The business version of the structure map\r\n* [TerminologyCapabilities](terminologycapabilities.html): The business version of the terminology capabilities\r\n* [ValueSet](valueset.html): The business version of the value set\r\n"
+          },
+          {
+            "name": "status",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            },
+            "description": "Multiple Resources: \r\n\r\n* [CapabilityStatement](capabilitystatement.html): The current status of the capability statement\r\n* [CodeSystem](codesystem.html): The current status of the code system\r\n* [CompartmentDefinition](compartmentdefinition.html): The current status of the compartment definition\r\n* [ConceptMap](conceptmap.html): The current status of the concept map\r\n* [GraphDefinition](graphdefinition.html): The current status of the graph definition\r\n* [ImplementationGuide](implementationguide.html): The current status of the implementation guide\r\n* [MessageDefinition](messagedefinition.html): The current status of the message definition\r\n* [NamingSystem](namingsystem.html): The current status of the naming system\r\n* [OperationDefinition](operationdefinition.html): The current status of the operation definition\r\n* [SearchParameter](searchparameter.html): The current status of the search parameter\r\n* [StructureDefinition](structuredefinition.html): The current status of the structure definition\r\n* [StructureMap](structuremap.html): The current status of the structure map\r\n* [TerminologyCapabilities](terminologycapabilities.html): The current status of the terminology capabilities\r\n* [ValueSet](valueset.html): The current status of the value set\r\n"
+          },
+          {
+            "name": "source-system",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            },
+            "description": "Source system where concepts to be mapped are defined"
+          },
+          {
+            "name": "target-system",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            },
+            "description": "Target system that the concepts are to be mapped to"
+          },
+          {
+            "name": "source-uri",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            },
+            "description": "The source value set that contains the concepts that are being mapped"
+          },
+          {
+            "name": "target-uri",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            },
+            "description": "The target value set which provides context for the mappings"
+          }
+        ]
+      }
+    },
+    "/ConceptMap/{rid}": {
+      "summary": "Read/Write/etc resource instance of type ConceptMap",
+      "description": "Access to services to manage the state of a single resource of type ConceptMap",
+      "get": {
+        "summary": "Read the current state of the resource",
+        "operationId": "readConceptMap",
+        "responses": {
+          "default": {
+            "description": "Error, with details",
+            "content": {
+              "application/fhir+json": {
+                "schema": {
+                  "$ref": "https://hl7.org/fhir/R4/fhir.schema.json#/definitions/OperationOutcome"
+                }
+              },
+              "application/fhir+xml": {
+                "schema": {
+                  "$ref": "https://hl7.org/fhir/R4/OperationOutcome.xsd"
+                }
+              }
+            }
+          },
+          "200": {
+            "description": "the resource being returned",
+            "headers": {
+              "ETag": {
+                "description": "Version from Resource.meta.version as a weak ETag",
+                "schema": {
+                  "type": "string"
+                }
+              }
+            },
+            "content": {
+              "application/fhir+json": {
+                "schema": {
+                  "$ref": "https://hl7.org/fhir/R4/fhir.schema.json#/definitions/ConceptMap"
+                }
+              },
+              "application/fhir+xml": {
+                "schema": {
+                  "$ref": "https://hl7.org/fhir/R4/ConceptMap.xsd"
+                }
+              }
+            }
+          }
+        },
+        "parameters": [
+          {
+            "$ref": "#/components/parameters/rid"
+          },
+          {
+            "$ref": "#/components/parameters/summary"
+          },
+          {
+            "$ref": "#/components/parameters/format"
+          },
+          {
+            "$ref": "#/components/parameters/pretty"
+          },
+          {
+            "$ref": "#/components/parameters/elements"
+          }
+        ]
+      }
+    },
+    "/Questionnaire/$next-question": {
+      "summary": "Operation $next-question on type Questionnaire",
+      "description": "Operation $next-question on type Questionnaire",
+      "get": {
+        "summary": "$next-question on type Questionnaire",
+        "description": "The Next Question operation is used for *adaptive questionnaires* - forms where the next question (or set of questions) is based on previous answers.  The result of this operation is to return an updated QuestionnaireResponse with a contained Questionnaire that includes the next question (or set of questions).  It might also include display items with instructions and/or read-only questions containing calculated scores.  This operation uses the [QuestionnaireResponse](http://hl7.org/fhir/R4/questionnaireresponse.html) resource with a [*contained*](http://hl7.org/fhir/R4/references.html#contained) [Questionnaire](http://hl7.org/fhir/R4/questionnaire.html) as both the input and output parameter. The client initiates and queries for the next question by including the answers to all required questions in the questionnaire to that point.  The Server updates the contained Questionnaire in the QuestionnaireResponse in the with the next question or set of questions and any needed instruction or score items.  When the questionnaire is complete, the Server updates the `QuestionnaireResponse.status` resource parameter to `complete`.  If completion of the questionnaire has exceeded any time limit, the Server may return an [OperationOutcome](http://hl7.org/fhir/R4/operationoutcome.html) with an error.",
+        "operationId": "op-next-question-Questionnaire",
+        "responses": {
+          "default": {
+            "description": "Error, with details",
+            "content": {
+              "application/fhir+json": {
+                "schema": {
+                  "$ref": "https://hl7.org/fhir/R4/fhir.schema.json#/definitions/OperationOutcome"
+                }
+              },
+              "application/fhir+xml": {
+                "schema": {
+                  "$ref": "https://hl7.org/fhir/R4/OperationOutcome.xsd"
+                }
+              }
+            }
+          },
+          "200": {
+            "description": "Operation response",
+            "content": {
+              "application/fhir+json": {
+                "schema": {
+                  "$ref": "https://hl7.org/fhir/R4/fhir.schema.json#/definitions/Parameters"
+                }
+              },
+              "application/fhir+xml": {
+                "schema": {
+                  "$ref": "https://hl7.org/fhir/R4/Parameters.xsd"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/Questionnaire/$populate": {
+      "summary": "Operation $populate on type Questionnaire",
+      "description": "Operation $populate on type Questionnaire",
+      "get": {
+        "summary": "$populate on type Questionnaire",
+        "description": "Generates a [QuestionnaireResponse](http://hl7.org/fhir/R4/questionnaireresponse.html) instance  based on a specified [Questionnaire](http://hl7.org/fhir/R4/questionnaire.html), filling in answers to questions where possible based on information provided as part of the operation or already known by the server about the subject of the [Questionnaire](http://hl7.org/fhir/R4/questionnaire.html).\n\nIf the operation is not called at the instance level, one and only one of the identifier, questionnaire or questionnaireRef `in` parameters must be provided.\n\nIf called at the instance level, these parameters will be ignored.\nThe response will contain a [QuestionnaireResponse](http://hl7.org/fhir/R4/questionnaireresponse.html) instance based on the specified [Questionnaire](http://hl7.org/fhir/R4/questionnaire.html) and/or an [OperationOutcome](http://hl7.org/fhir/R4/operationoutcome.html) resource with errors or warnings.\n\nThe [QuestionnaireResponse](http://hl7.org/fhir/R4/questionnaireresponse.html) instance will be populated with an unanswered set of questions following the group and question structure of the specified [Questionnaire](http://hl7.org/fhir/R4/questionnaire.html).\n\nIf  *content* parameters were specified or the *local* parameter was set to true, some of the questions may have answers filled in as well.  In the case of repeating questions or groups, typically only one repetition will be provided unless answer values exist that would support populating multiple repetitions.  \n\nPopulation of the [QuestionnaireResponse](http://hl7.org/fhir/R4/questionnaireresponse.html) with appropriate data is dependent on the questions and/or groups in the [Questionnaire](http://hl7.org/fhir/R4/questionnaire.html) having metadata that allows the server to recognize the questions.  Guidance on mechanisms to perform population can be found [here](populate.html).  \nRegardless of the mechanism used to link the questions in a questionnaire to a \\\"known\\\" mappable concept, solutions using this operation should ensure that the details of the question and associated linkage element are sufficiently similar as to safely allow auto-population; i.e. the question text and context must be sufficiently the same, the value set for the question must fall within the value set for the mapped element, the data types must be the same or convertible, etc.\"\n",
+        "operationId": "op-populate-Questionnaire",
+        "responses": {
+          "default": {
+            "description": "Error, with details",
+            "content": {
+              "application/fhir+json": {
+                "schema": {
+                  "$ref": "https://hl7.org/fhir/R4/fhir.schema.json#/definitions/OperationOutcome"
+                }
+              },
+              "application/fhir+xml": {
+                "schema": {
+                  "$ref": "https://hl7.org/fhir/R4/OperationOutcome.xsd"
+                }
+              }
+            }
+          },
+          "200": {
+            "description": "Operation response",
+            "content": {
+              "application/fhir+json": {
+                "schema": {
+                  "$ref": "https://hl7.org/fhir/R4/fhir.schema.json#/definitions/Parameters"
+                }
+              },
+              "application/fhir+xml": {
+                "schema": {
+                  "$ref": "https://hl7.org/fhir/R4/Parameters.xsd"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/Questionnaire/{rid}/$populate": {
+      "summary": "Operation $populate on instance of Questionnaire",
+      "description": "Operation $populate on an instance of Questionnaire",
+      "get": {
+        "summary": "$populate on Questionnaire instance",
+        "description": "Generates a [QuestionnaireResponse](http://hl7.org/fhir/R4/questionnaireresponse.html) instance  based on a specified [Questionnaire](http://hl7.org/fhir/R4/questionnaire.html), filling in answers to questions where possible based on information provided as part of the operation or already known by the server about the subject of the [Questionnaire](http://hl7.org/fhir/R4/questionnaire.html).\n\nIf the operation is not called at the instance level, one and only one of the identifier, questionnaire or questionnaireRef `in` parameters must be provided.\n\nIf called at the instance level, these parameters will be ignored.\nThe response will contain a [QuestionnaireResponse](http://hl7.org/fhir/R4/questionnaireresponse.html) instance based on the specified [Questionnaire](http://hl7.org/fhir/R4/questionnaire.html) and/or an [OperationOutcome](http://hl7.org/fhir/R4/operationoutcome.html) resource with errors or warnings.\n\nThe [QuestionnaireResponse](http://hl7.org/fhir/R4/questionnaireresponse.html) instance will be populated with an unanswered set of questions following the group and question structure of the specified [Questionnaire](http://hl7.org/fhir/R4/questionnaire.html).\n\nIf  *content* parameters were specified or the *local* parameter was set to true, some of the questions may have answers filled in as well.  In the case of repeating questions or groups, typically only one repetition will be provided unless answer values exist that would support populating multiple repetitions.  \n\nPopulation of the [QuestionnaireResponse](http://hl7.org/fhir/R4/questionnaireresponse.html) with appropriate data is dependent on the questions and/or groups in the [Questionnaire](http://hl7.org/fhir/R4/questionnaire.html) having metadata that allows the server to recognize the questions.  Guidance on mechanisms to perform population can be found [here](populate.html).  \nRegardless of the mechanism used to link the questions in a questionnaire to a \\\"known\\\" mappable concept, solutions using this operation should ensure that the details of the question and associated linkage element are sufficiently similar as to safely allow auto-population; i.e. the question text and context must be sufficiently the same, the value set for the question must fall within the value set for the mapped element, the data types must be the same or convertible, etc.\"\n",
+        "operationId": "op-populate-Questionnaire-instance",
+        "parameters": [
+          {
+            "$ref": "#/components/parameters/rid"
+          }
+        ],
+        "responses": {
+          "default": {
+            "description": "Error, with details",
+            "content": {
+              "application/fhir+json": {
+                "schema": {
+                  "$ref": "https://hl7.org/fhir/R4/fhir.schema.json#/definitions/OperationOutcome"
+                }
+              },
+              "application/fhir+xml": {
+                "schema": {
+                  "$ref": "https://hl7.org/fhir/R4/OperationOutcome.xsd"
+                }
+              }
+            }
+          },
+          "200": {
+            "description": "Operation response",
+            "content": {
+              "application/fhir+json": {
+                "schema": {
+                  "$ref": "https://hl7.org/fhir/R4/fhir.schema.json#/definitions/Parameters"
+                }
+              },
+              "application/fhir+xml": {
+                "schema": {
+                  "$ref": "https://hl7.org/fhir/R4/Parameters.xsd"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/ValueSet/$expand": {
+      "summary": "Operation $expand on type ValueSet",
+      "description": "Operation $expand on type ValueSet",
+      "get": {
+        "summary": "$expand on type ValueSet",
+        "description": "The definition of a value set is used to create a simple collection of codes suitable for use for data entry or validation. \n\nIf the operation is not called at the instance level, one of the in parameters url, context or valueSet must be provided.  An expanded value set will be returned, or an OperationOutcome with an error message.",
+        "operationId": "op-expand-ValueSet",
+        "responses": {
+          "default": {
+            "description": "Error, with details",
+            "content": {
+              "application/fhir+json": {
+                "schema": {
+                  "$ref": "https://hl7.org/fhir/R4/fhir.schema.json#/definitions/OperationOutcome"
+                }
+              },
+              "application/fhir+xml": {
+                "schema": {
+                  "$ref": "https://hl7.org/fhir/R4/OperationOutcome.xsd"
+                }
+              }
+            }
+          },
+          "200": {
+            "description": "Operation response",
+            "content": {
+              "application/fhir+json": {
+                "schema": {
+                  "$ref": "https://hl7.org/fhir/R4/fhir.schema.json#/definitions/Parameters"
+                }
+              },
+              "application/fhir+xml": {
+                "schema": {
+                  "$ref": "https://hl7.org/fhir/R4/Parameters.xsd"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/ValueSet/{rid}/$expand": {
+      "summary": "Operation $expand on instance of ValueSet",
+      "description": "Operation $expand on an instance of ValueSet",
+      "get": {
+        "summary": "$expand on ValueSet instance",
+        "description": "The definition of a value set is used to create a simple collection of codes suitable for use for data entry or validation. \n\nIf the operation is not called at the instance level, one of the in parameters url, context or valueSet must be provided.  An expanded value set will be returned, or an OperationOutcome with an error message.",
+        "operationId": "op-expand-ValueSet-instance",
+        "parameters": [
+          {
+            "$ref": "#/components/parameters/rid"
+          }
+        ],
+        "responses": {
+          "default": {
+            "description": "Error, with details",
+            "content": {
+              "application/fhir+json": {
+                "schema": {
+                  "$ref": "https://hl7.org/fhir/R4/fhir.schema.json#/definitions/OperationOutcome"
+                }
+              },
+              "application/fhir+xml": {
+                "schema": {
+                  "$ref": "https://hl7.org/fhir/R4/OperationOutcome.xsd"
+                }
+              }
+            }
+          },
+          "200": {
+            "description": "Operation response",
+            "content": {
+              "application/fhir+json": {
+                "schema": {
+                  "$ref": "https://hl7.org/fhir/R4/fhir.schema.json#/definitions/Parameters"
+                }
+              },
+              "application/fhir+xml": {
+                "schema": {
+                  "$ref": "https://hl7.org/fhir/R4/Parameters.xsd"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/ValueSet/$validate-code": {
+      "summary": "Operation $validate-code on type ValueSet",
+      "description": "Operation $validate-code on type ValueSet",
+      "get": {
+        "summary": "$validate-code on type ValueSet",
+        "description": "Validate that a coded value is in the set of codes allowed by a value set.\n\nIf the operation is not called at the instance level, one of the in parameters url, context or  valueSet must be provided.  One (and only one) of the in parameters code, coding, or codeableConcept must be provided.  The operation returns a result (true / false), an error message, and the recommended display for the code",
+        "operationId": "op-validate-code-ValueSet",
+        "responses": {
+          "default": {
+            "description": "Error, with details",
+            "content": {
+              "application/fhir+json": {
+                "schema": {
+                  "$ref": "https://hl7.org/fhir/R4/fhir.schema.json#/definitions/OperationOutcome"
+                }
+              },
+              "application/fhir+xml": {
+                "schema": {
+                  "$ref": "https://hl7.org/fhir/R4/OperationOutcome.xsd"
+                }
+              }
+            }
+          },
+          "200": {
+            "description": "Operation response",
+            "content": {
+              "application/fhir+json": {
+                "schema": {
+                  "$ref": "https://hl7.org/fhir/R4/fhir.schema.json#/definitions/Parameters"
+                }
+              },
+              "application/fhir+xml": {
+                "schema": {
+                  "$ref": "https://hl7.org/fhir/R4/Parameters.xsd"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/ValueSet/{rid}/$validate-code": {
+      "summary": "Operation $validate-code on instance of ValueSet",
+      "description": "Operation $validate-code on an instance of ValueSet",
+      "get": {
+        "summary": "$validate-code on ValueSet instance",
+        "description": "Validate that a coded value is in the set of codes allowed by a value set.\n\nIf the operation is not called at the instance level, one of the in parameters url, context or  valueSet must be provided.  One (and only one) of the in parameters code, coding, or codeableConcept must be provided.  The operation returns a result (true / false), an error message, and the recommended display for the code",
+        "operationId": "op-validate-code-ValueSet-instance",
+        "parameters": [
+          {
+            "$ref": "#/components/parameters/rid"
+          }
+        ],
+        "responses": {
+          "default": {
+            "description": "Error, with details",
+            "content": {
+              "application/fhir+json": {
+                "schema": {
+                  "$ref": "https://hl7.org/fhir/R4/fhir.schema.json#/definitions/OperationOutcome"
+                }
+              },
+              "application/fhir+xml": {
+                "schema": {
+                  "$ref": "https://hl7.org/fhir/R4/OperationOutcome.xsd"
+                }
+              }
+            }
+          },
+          "200": {
+            "description": "Operation response",
+            "content": {
+              "application/fhir+json": {
+                "schema": {
+                  "$ref": "https://hl7.org/fhir/R4/fhir.schema.json#/definitions/Parameters"
+                }
+              },
+              "application/fhir+xml": {
+                "schema": {
+                  "$ref": "https://hl7.org/fhir/R4/Parameters.xsd"
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "components": {
+    "parameters": {
+      "rid": {
+        "name": "rid",
+        "in": "path",
+        "description": "id of the resource (\u003dResource.id)",
+        "required": true,
+        "allowEmptyValue": false,
+        "style": "simple",
+        "schema": {
+          "type": "string"
+        }
+      },
+      "hid": {
+        "name": "hid",
+        "in": "path",
+        "description": "id of the history entry (\u003dResource.meta.versionId)",
+        "required": true,
+        "allowEmptyValue": false,
+        "style": "simple",
+        "schema": {
+          "type": "string"
+        }
+      },
+      "summary": {
+        "name": "_summary",
+        "in": "query",
+        "description": "Requests the server to return a designated subset of the resource",
+        "allowEmptyValue": true,
+        "style": "form",
+        "schema": {
+          "type": "string",
+          "enum": [
+            "true",
+            "text",
+            "data",
+            "count",
+            "false"
+          ]
+        }
+      },
+      "format": {
+        "name": "_format",
+        "in": "query",
+        "description": "Specify alternative response formats by their MIME-types (when a client is unable acccess accept: header)",
+        "allowEmptyValue": true,
+        "style": "form",
+        "schema": {
+          "type": "string",
+          "format": "mime-type"
+        }
+      },
+      "pretty": {
+        "name": "_pretty",
+        "in": "query",
+        "description": "Ask for a pretty printed response for human convenience",
+        "allowEmptyValue": true,
+        "style": "form",
+        "schema": {
+          "type": "boolean"
+        }
+      },
+      "elements": {
+        "name": "_elements",
+        "in": "query",
+        "description": "Requests the server to return a collection of elements from the resource",
+        "allowEmptyValue": true,
+        "style": "form",
+        "explode": false,
+        "schema": {
+          "type": "array",
+          "format": "string",
+          "items": {
+            "format": "string"
+          }
+        }
+      },
+      "count": {
+        "name": "_count",
+        "in": "query",
+        "description": "The maximum number of search results on a page. The server is not bound to return the number requested, but cannot return more",
+        "schema": {
+          "type": "number"
+        }
+      }
+    }
+  }
+}

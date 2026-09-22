@@ -1,0 +1,37 @@
+{
+  "resourceType": "CodeSystem",
+  "status": "active",
+  "content": "complete",
+  "name": "StorageTemperatureCS",
+  "id": "miabis-storage-temperature-cs",
+  "title": "MIABIS Storage Temperature Code System",
+  "description": "Code System used to describe the storage temperatur of a sample",
+  "url": "https://fhir.bbmri-eric.eu/fhir/CodeSystem/miabis-storage-temperature-cs",
+  "concept": [
+    {
+      "code": "RT",
+      "display": "Room temperature"
+    },
+    {
+      "code": "2to10",
+      "display": "between 2 and 10 degrees Celsius"
+    },
+    {
+      "code": "-18to-35",
+      "display": "between -18 and -35 degrees Celsius"
+    },
+    {
+      "code": "-60to-85",
+      "display": "between -60 and -85 degrees Celsius"
+    },
+    {
+      "code": "LN",
+      "display": "liquid nitrogen, -150 to -196 degrees Celsius"
+    },
+    {
+      "code": "Other",
+      "display": "any other temperature or long time storage information"
+    }
+  ],
+  "count": 6
+}

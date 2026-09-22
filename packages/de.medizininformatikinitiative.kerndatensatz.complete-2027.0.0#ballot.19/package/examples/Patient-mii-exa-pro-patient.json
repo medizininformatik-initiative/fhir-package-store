@@ -1,0 +1,20 @@
+{
+  "resourceType": "Patient",
+  "id": "mii-exa-pro-patient",
+  "identifier": [
+    {
+      "system": "http://identifiers.org/patient-ids",
+      "value": "12345"
+    }
+  ],
+  "name": [
+    {
+      "given": [
+        "Max"
+      ],
+      "family": "Mustermann"
+    }
+  ],
+  "gender": "male",
+  "birthDate": "1980-05-15"
+}

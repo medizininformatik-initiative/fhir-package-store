@@ -1,0 +1,28 @@
+{
+  "name" : "hl7.fhir.uv.xver-r5.r4",
+  "version" : "0.1.0",
+  "tools-version" : 3,
+  "type" : "IG",
+  "date" : "20260320154041",
+  "license" : "CC0-1.0",
+  "canonical" : "http://hl7.org/fhir/uv/xver",
+  "url" : "http://hl7.org/fhir/uv/hl7.fhir.uv.xver-r5.r4/0.1.0",
+  "title" : "Extensions for Using Data Elements from FHIR R5 in FHIR R4",
+  "description" : "Extensions for Using Data Elements from FHIR R5 in FHIR R4 (built Fri, Mar 20, 2026 15:40+1100+11:00)",
+  "fhirVersions" : ["4.0.1"],
+  "dependencies" : {
+    "hl7.fhir.r4.core" : "4.0.1",
+    "hl7.terminology.r4" : "7.1.0",
+    "hl7.fhir.uv.extensions.r4" : "5.2.0"
+  },
+  "author" : "FHIR Infrastructure",
+  "maintainers" : [{
+    "name" : "FHIR Infrastructure",
+    "url" : "http://www.hl7.org/Special/committees/fiwg"
+  }],
+  "directories" : {
+    "lib" : "package",
+    "example" : "example"
+  },
+  "jurisdiction" : "http://unstats.un.org/unsd/methods/m49/m49.htm#001"
+}

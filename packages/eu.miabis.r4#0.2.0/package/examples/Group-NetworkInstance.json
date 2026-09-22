@@ -1,0 +1,29 @@
+{
+  "resourceType": "Group",
+  "id": "NetworkInstance",
+  "meta": {
+    "profile": [
+      "https://fhir.bbmri-eric.eu/fhir/StructureDefinition/miabis-network"
+    ]
+  },
+  "identifier": [
+    {
+      "value": "networkId"
+    }
+  ],
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/5.0/StructureDefinition/extension-Group.member.entity",
+      "valueReference": {
+        "reference": "Collection/collectionId"
+      }
+    }
+  ],
+  "type": "person",
+  "name": "networkName",
+  "active": true,
+  "actual": true,
+  "managingEntity": {
+    "reference": "Organization/networkOrgId"
+  }
+}

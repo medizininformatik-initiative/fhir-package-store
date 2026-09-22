@@ -1,0 +1,16 @@
+{
+  "resourceType": "ValueSet",
+  "status": "active",
+  "name": "CollectionSampleTypeVS",
+  "id": "miabis-collection-sample-typ-vs",
+  "title": "Collection Sample Type Value Set",
+  "description": "Value set containing codes for the collection sample types of the provided samples",
+  "url": "https://fhir.bbmri-eric.eu/fhir/ValueSet/miabis-collection-sample-typ-vs",
+  "compose": {
+    "include": [
+      {
+        "system": "https://fhir.bbmri-eric.eu/fhir/CodeSystem/miabis-collection-sample-type-cs"
+      }
+    ]
+  }
+}

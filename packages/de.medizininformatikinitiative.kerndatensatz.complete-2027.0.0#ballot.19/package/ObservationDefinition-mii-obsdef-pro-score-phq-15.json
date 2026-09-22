@@ -1,0 +1,137 @@
+{
+  "resourceType": "ObservationDefinition",
+  "id": "mii-obsdef-pro-score-phq-15",
+  "meta": {
+    "profile": [
+      "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-score-blueprint|2027.0.0-ballot.1"
+    ]
+  },
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/artifact-version",
+      "valueString": "2027.0.0-ballot.1"
+    }
+  ],
+  "category": [
+    {
+      "coding": [
+        {
+          "code": "survey",
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category"
+        }
+      ]
+    }
+  ],
+  "code": {
+    "coding": [
+      {
+        "system": "http://loinc.org",
+        "code": "70273-8",
+        "display": "Patient Health Questionnaire 15 item (PHQ-15) total score [Reported]"
+      },
+      {
+        "system": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-score-catalogue",
+        "code": "phq-phq15-total",
+        "display": "PHQ-15 Total Score"
+      }
+    ]
+  },
+  "permittedDataType": [
+    "Quantity"
+  ],
+  "quantitativeDetails": {
+    "unit": {
+      "coding": [
+        {
+          "code": "1",
+          "system": "http://unitsofmeasure.org"
+        }
+      ]
+    },
+    "decimalPrecision": 0
+  },
+  "qualifiedInterval": [
+    {
+      "range": {
+        "high": {
+          "value": 30
+        },
+        "low": {
+          "value": 0
+        },
+        "extension": [
+          {
+            "valueCodeableConcept": {
+              "coding": [
+                {
+                  "system": "http://terminology.hl7.org/CodeSystem/measure-improvement-notation",
+                  "code": "decrease"
+                }
+              ]
+            },
+            "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-ex-pro-score-score-health-correlation"
+          }
+        ]
+      },
+      "category": "absolute"
+    },
+    {
+      "range": {
+        "low": {
+          "value": 0
+        },
+        "high": {
+          "value": 4
+        }
+      },
+      "category": "reference",
+      "condition": "Minimal somatic symptom burden (minimale somatische Symptomlast)"
+    },
+    {
+      "range": {
+        "low": {
+          "value": 5
+        },
+        "high": {
+          "value": 9
+        }
+      },
+      "category": "reference",
+      "condition": "Low somatic symptom burden (geringe somatische Symptomlast)"
+    },
+    {
+      "range": {
+        "low": {
+          "value": 10
+        },
+        "high": {
+          "value": 14
+        }
+      },
+      "category": "reference",
+      "condition": "Medium somatic symptom burden (mittlere somatische Symptomlast)"
+    },
+    {
+      "range": {
+        "low": {
+          "value": 15
+        },
+        "high": {
+          "value": 30
+        }
+      },
+      "category": "reference",
+      "condition": "High somatic symptom burden (hohe somatische Symptomlast)"
+    }
+  ],
+  "multipleResultsAllowed": false,
+  "method": {
+    "coding": [
+      {
+        "code": "69728-4",
+        "system": "http://loinc.org",
+        "display": "Patient Health Questionnaire 15 item (PHQ-15) [Reported]"
+      }
+    ]
+  }
+}

@@ -1,0 +1,57 @@
+{
+  "resourceType": "ValueSet",
+  "status": "active",
+  "name": "MII_VS_Biobank_Probenart_SCT",
+  "id": "mii-vs-biobank-probenart-sct",
+  "title": "MII VS Biobank Probenart SCT",
+  "version": "2026.0.1",
+  "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-biobank/ValueSet/mii-vs-biobank-probenart-sct",
+  "publisher": "Medizininformatik Initiative",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "https://www.medizininformatik-initiative.de"
+        }
+      ]
+    }
+  ],
+  "date": "2025-09-02",
+  "extension": [
+    {
+      "url": "https://www.medizininformatik-initiative.de/fhir/modul-meta/StructureDefinition/mii-ex-meta-license-codeable",
+      "valueCodeableConcept": {
+        "coding": [
+          {
+            "code": "CC-BY-4.0",
+            "system": "http://hl7.org/fhir/spdx-license",
+            "display": "Creative Commons Attribution 4.0 International"
+          }
+        ]
+      }
+    }
+  ],
+  "copyright": "This value set includes content from SNOMED CT, which is copyright © 2002+ International Health Terminology Standards Development Organisation (IHTSDO), and distributed by agreement between IHTSDO and HL7. Implementer use of SNOMED CT is not covered by this agreement",
+  "meta": {
+    "profile": [
+      "http://hl7.org/fhir/StructureDefinition/shareablevalueset"
+    ]
+  },
+  "experimental": false,
+  "description": "Value Set for Sample Types (SNOMED CT)",
+  "compose": {
+    "include": [
+      {
+        "system": "http://snomed.info/sct",
+        "filter": [
+          {
+            "property": "concept",
+            "op": "descendent-of",
+            "value": "123038009"
+          }
+        ]
+      }
+    ]
+  }
+}

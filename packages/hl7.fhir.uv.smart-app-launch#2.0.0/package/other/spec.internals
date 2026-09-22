@@ -1,0 +1,36 @@
+﻿{
+  "npm-name": "hl7.fhir.uv.smart-app-launch",
+  "ig-version": "4.0.1",
+  "tool-version": "4.6.0",
+  "tool-build": "3",
+  "webUrl": "http://hl7.org/fhir/smart-app-launch",
+  "date": "2021-11-26",
+  "date-time": "20211126051218+1100",
+  "paths": {
+    "http://hl7.org/fhir/smart-app-launch/ImplementationGuide/hl7.fhir.uv.smart-app-launch|2.0.0": "2.0.0/ImplementationGuide-hl7.fhir.uv.smart-app-launch.html",
+    "http://hl7.org/fhir/smart-app-launch/ImplementationGuide/hl7.fhir.uv.smart-app-launch": "ImplementationGuide-hl7.fhir.uv.smart-app-launch.html"
+  },
+  "pages": {},
+  "targets": [
+    "app-launch.html",
+    "artifacts.html",
+    "authorization-example-jwks-and-signatures.html",
+    "backend-services.html",
+    "best-practices.html",
+    "client-confidential-asymmetric.html",
+    "client-confidential-symmetric.html",
+    "conformance.html",
+    "example-app-launch-asymmetric-auth.html",
+    "example-app-launch-public.html",
+    "example-app-launch-symmetric-auth.html",
+    "example-backend-services.html",
+    "examples.html",
+    "index.html",
+    "scopes-and-launch-context.html",
+    "searchform.html",
+    "toc.html",
+    "token-introspection.html",
+    "worked_example_id_token.html"
+  ],
+  "images": []
+}

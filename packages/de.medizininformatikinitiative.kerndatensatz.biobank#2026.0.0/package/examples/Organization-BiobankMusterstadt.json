@@ -1,0 +1,62 @@
+{
+  "resourceType": "Organization",
+  "id": "BiobankMusterstadt",
+  "meta": {
+    "profile": [
+      "https://www.medizininformatik-initiative.de/fhir/ext/modul-biobank/StructureDefinition/Organization"
+    ]
+  },
+  "contact": [
+    {
+      "purpose": {
+        "coding": [
+          {
+            "code": "RESEARCH",
+            "system": "https://www.medizininformatik-initiative.de/fhir/ext/modul-biobank/CodeSystem/ContactType"
+          }
+        ]
+      },
+      "extension": [
+        {
+          "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-biobank/StructureDefinition/KontaktRolle",
+          "valueString": "Direktor"
+        }
+      ],
+      "name": {
+        "family": "Mustermann",
+        "given": [
+          "Max"
+        ],
+        "prefix": [
+          "Prof."
+        ]
+      },
+      "telecom": [
+        {
+          "system": "email",
+          "value": "mustermann@biobank.uk-musterstadt.de"
+        }
+      ],
+      "address": {
+        "line": [
+          "Musterstrasse 3"
+        ],
+        "postalCode": "00000",
+        "city": "Musterstadt"
+      }
+    }
+  ],
+  "extension": [
+    {
+      "url": "https://fhir.bbmri-eric.eu/fhir/StructureDefinition/miabis-organization-description-extension",
+      "valueString": "Biobank des Krankenhauses Musterstadt."
+    }
+  ],
+  "identifier": [
+    {
+      "system": "http://www.bbmri-eric.eu/",
+      "value": "de-12345"
+    }
+  ],
+  "name": "Biobank Musterstadt"
+}

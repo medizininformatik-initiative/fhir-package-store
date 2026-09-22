@@ -1,0 +1,31 @@
+{
+  "resourceType": "Observation",
+  "id": "DNAConcentrationObs1",
+  "meta": {
+    "profile": [
+      "https://www.medizininformatik-initiative.de/fhir/ext/modul-biobank/StructureDefinition/mii-pr-biobank-observation-dna-konzentration"
+    ]
+  },
+  "code": {
+    "coding": [
+      {
+        "code": "72496-3",
+        "system": "http://loinc.org",
+        "display": "DNA double strand [Mass/volume] in Specimen"
+      }
+    ]
+  },
+  "status": "final",
+  "focus": [
+    {
+      "reference": "Specimen/AliquotgruppeDNA"
+    }
+  ],
+  "valueQuantity": {
+    "value": 40,
+    "unit": "ng/µL",
+    "system": "http://unitsofmeasure.org",
+    "code": "ng/uL"
+  },
+  "effectiveDateTime": "2018-09-07T13:40:00+01:00"
+}

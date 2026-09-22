@@ -1,0 +1,749 @@
+{
+  "resourceType": "QuestionnaireResponse",
+  "id": "mii-exa-pro-phq-15-response",
+  "meta": {
+    "profile": [
+      "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-questionnaire-response|2027.0.0-ballot.1"
+    ]
+  },
+  "item": [
+    {
+      "answer": [
+        {
+          "valueCoding": {
+            "code": "bothered-a-little",
+            "system": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-phq-15-answers",
+            "display": "Bothered a little",
+            "_display": {
+              "extension": [
+                {
+                  "extension": [
+                    {
+                      "url": "lang",
+                      "valueCode": "de"
+                    },
+                    {
+                      "url": "content",
+                      "valueString": "Wenig beeinträchtigt"
+                    }
+                  ],
+                  "url": "http://hl7.org/fhir/StructureDefinition/translation"
+                }
+              ]
+            }
+          }
+        }
+      ],
+      "linkId": "phq-phq1a",
+      "text": "Stomach pain",
+      "_text": {
+        "extension": [
+          {
+            "extension": [
+              {
+                "url": "lang",
+                "valueCode": "de"
+              },
+              {
+                "url": "content",
+                "valueString": "Bauchschmerzen"
+              }
+            ],
+            "url": "http://hl7.org/fhir/StructureDefinition/translation"
+          }
+        ]
+      }
+    },
+    {
+      "answer": [
+        {
+          "valueCoding": {
+            "code": "bothered-a-little",
+            "system": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-phq-15-answers",
+            "display": "Bothered a little",
+            "_display": {
+              "extension": [
+                {
+                  "extension": [
+                    {
+                      "url": "lang",
+                      "valueCode": "de"
+                    },
+                    {
+                      "url": "content",
+                      "valueString": "Wenig beeinträchtigt"
+                    }
+                  ],
+                  "url": "http://hl7.org/fhir/StructureDefinition/translation"
+                }
+              ]
+            }
+          }
+        }
+      ],
+      "linkId": "phq-phq1b",
+      "text": "Back pain",
+      "_text": {
+        "extension": [
+          {
+            "extension": [
+              {
+                "url": "lang",
+                "valueCode": "de"
+              },
+              {
+                "url": "content",
+                "valueString": "Rückenschmerzen"
+              }
+            ],
+            "url": "http://hl7.org/fhir/StructureDefinition/translation"
+          }
+        ]
+      }
+    },
+    {
+      "answer": [
+        {
+          "valueCoding": {
+            "code": "bothered-a-little",
+            "system": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-phq-15-answers",
+            "display": "Bothered a little",
+            "_display": {
+              "extension": [
+                {
+                  "extension": [
+                    {
+                      "url": "lang",
+                      "valueCode": "de"
+                    },
+                    {
+                      "url": "content",
+                      "valueString": "Wenig beeinträchtigt"
+                    }
+                  ],
+                  "url": "http://hl7.org/fhir/StructureDefinition/translation"
+                }
+              ]
+            }
+          }
+        }
+      ],
+      "linkId": "phq-phq1c",
+      "text": "Pain in your arms, legs, or joints (knees, hips, etc.)",
+      "_text": {
+        "extension": [
+          {
+            "extension": [
+              {
+                "url": "lang",
+                "valueCode": "de"
+              },
+              {
+                "url": "content",
+                "valueString": "Schmerzen in Armen, Beinen oder Gelenken (Knie, Hüften, usw.)"
+              }
+            ],
+            "url": "http://hl7.org/fhir/StructureDefinition/translation"
+          }
+        ]
+      }
+    },
+    {
+      "answer": [
+        {
+          "valueCoding": {
+            "code": "bothered-a-little",
+            "system": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-phq-15-answers",
+            "display": "Bothered a little",
+            "_display": {
+              "extension": [
+                {
+                  "extension": [
+                    {
+                      "url": "lang",
+                      "valueCode": "de"
+                    },
+                    {
+                      "url": "content",
+                      "valueString": "Wenig beeinträchtigt"
+                    }
+                  ],
+                  "url": "http://hl7.org/fhir/StructureDefinition/translation"
+                }
+              ]
+            }
+          }
+        }
+      ],
+      "linkId": "phq-phq1d",
+      "text": "Menstrual cramps or other problems with your periods",
+      "_text": {
+        "extension": [
+          {
+            "extension": [
+              {
+                "url": "lang",
+                "valueCode": "de"
+              },
+              {
+                "url": "content",
+                "valueString": "Menstruationsschmerzen oder andere Probleme mit der Menstruation"
+              }
+            ],
+            "url": "http://hl7.org/fhir/StructureDefinition/translation"
+          }
+        ]
+      }
+    },
+    {
+      "answer": [
+        {
+          "valueCoding": {
+            "code": "bothered-a-little",
+            "system": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-phq-15-answers",
+            "display": "Bothered a little",
+            "_display": {
+              "extension": [
+                {
+                  "extension": [
+                    {
+                      "url": "lang",
+                      "valueCode": "de"
+                    },
+                    {
+                      "url": "content",
+                      "valueString": "Wenig beeinträchtigt"
+                    }
+                  ],
+                  "url": "http://hl7.org/fhir/StructureDefinition/translation"
+                }
+              ]
+            }
+          }
+        }
+      ],
+      "linkId": "phq-phq1e",
+      "text": "Pain or problems during sexual intercourse",
+      "_text": {
+        "extension": [
+          {
+            "extension": [
+              {
+                "url": "lang",
+                "valueCode": "de"
+              },
+              {
+                "url": "content",
+                "valueString": "Schmerzen oder Probleme beim Geschlechtsverkehr"
+              }
+            ],
+            "url": "http://hl7.org/fhir/StructureDefinition/translation"
+          }
+        ]
+      }
+    },
+    {
+      "answer": [
+        {
+          "valueCoding": {
+            "code": "bothered-a-little",
+            "system": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-phq-15-answers",
+            "display": "Bothered a little",
+            "_display": {
+              "extension": [
+                {
+                  "extension": [
+                    {
+                      "url": "lang",
+                      "valueCode": "de"
+                    },
+                    {
+                      "url": "content",
+                      "valueString": "Wenig beeinträchtigt"
+                    }
+                  ],
+                  "url": "http://hl7.org/fhir/StructureDefinition/translation"
+                }
+              ]
+            }
+          }
+        }
+      ],
+      "linkId": "phq-phq1f",
+      "text": "Headaches",
+      "_text": {
+        "extension": [
+          {
+            "extension": [
+              {
+                "url": "lang",
+                "valueCode": "de"
+              },
+              {
+                "url": "content",
+                "valueString": "Kopfschmerzen"
+              }
+            ],
+            "url": "http://hl7.org/fhir/StructureDefinition/translation"
+          }
+        ]
+      }
+    },
+    {
+      "answer": [
+        {
+          "valueCoding": {
+            "code": "bothered-a-little",
+            "system": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-phq-15-answers",
+            "display": "Bothered a little",
+            "_display": {
+              "extension": [
+                {
+                  "extension": [
+                    {
+                      "url": "lang",
+                      "valueCode": "de"
+                    },
+                    {
+                      "url": "content",
+                      "valueString": "Wenig beeinträchtigt"
+                    }
+                  ],
+                  "url": "http://hl7.org/fhir/StructureDefinition/translation"
+                }
+              ]
+            }
+          }
+        }
+      ],
+      "linkId": "phq-phq1g",
+      "text": "Chest pain",
+      "_text": {
+        "extension": [
+          {
+            "extension": [
+              {
+                "url": "lang",
+                "valueCode": "de"
+              },
+              {
+                "url": "content",
+                "valueString": "Schmerzen im Brustbereich"
+              }
+            ],
+            "url": "http://hl7.org/fhir/StructureDefinition/translation"
+          }
+        ]
+      }
+    },
+    {
+      "answer": [
+        {
+          "valueCoding": {
+            "code": "bothered-a-little",
+            "system": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-phq-15-answers",
+            "display": "Bothered a little",
+            "_display": {
+              "extension": [
+                {
+                  "extension": [
+                    {
+                      "url": "lang",
+                      "valueCode": "de"
+                    },
+                    {
+                      "url": "content",
+                      "valueString": "Wenig beeinträchtigt"
+                    }
+                  ],
+                  "url": "http://hl7.org/fhir/StructureDefinition/translation"
+                }
+              ]
+            }
+          }
+        }
+      ],
+      "linkId": "phq-phq1h",
+      "text": "Dizziness",
+      "_text": {
+        "extension": [
+          {
+            "extension": [
+              {
+                "url": "lang",
+                "valueCode": "de"
+              },
+              {
+                "url": "content",
+                "valueString": "Schwindel"
+              }
+            ],
+            "url": "http://hl7.org/fhir/StructureDefinition/translation"
+          }
+        ]
+      }
+    },
+    {
+      "answer": [
+        {
+          "valueCoding": {
+            "code": "bothered-a-little",
+            "system": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-phq-15-answers",
+            "display": "Bothered a little",
+            "_display": {
+              "extension": [
+                {
+                  "extension": [
+                    {
+                      "url": "lang",
+                      "valueCode": "de"
+                    },
+                    {
+                      "url": "content",
+                      "valueString": "Wenig beeinträchtigt"
+                    }
+                  ],
+                  "url": "http://hl7.org/fhir/StructureDefinition/translation"
+                }
+              ]
+            }
+          }
+        }
+      ],
+      "linkId": "phq-phq1i",
+      "text": "Fainting spells",
+      "_text": {
+        "extension": [
+          {
+            "extension": [
+              {
+                "url": "lang",
+                "valueCode": "de"
+              },
+              {
+                "url": "content",
+                "valueString": "Ohnmachtsanfälle"
+              }
+            ],
+            "url": "http://hl7.org/fhir/StructureDefinition/translation"
+          }
+        ]
+      }
+    },
+    {
+      "answer": [
+        {
+          "valueCoding": {
+            "code": "bothered-a-little",
+            "system": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-phq-15-answers",
+            "display": "Bothered a little",
+            "_display": {
+              "extension": [
+                {
+                  "extension": [
+                    {
+                      "url": "lang",
+                      "valueCode": "de"
+                    },
+                    {
+                      "url": "content",
+                      "valueString": "Wenig beeinträchtigt"
+                    }
+                  ],
+                  "url": "http://hl7.org/fhir/StructureDefinition/translation"
+                }
+              ]
+            }
+          }
+        }
+      ],
+      "linkId": "phq-phq1j",
+      "text": "Feeling your heart pound or race",
+      "_text": {
+        "extension": [
+          {
+            "extension": [
+              {
+                "url": "lang",
+                "valueCode": "de"
+              },
+              {
+                "url": "content",
+                "valueString": "Herzklopfen oder Herzrasen"
+              }
+            ],
+            "url": "http://hl7.org/fhir/StructureDefinition/translation"
+          }
+        ]
+      }
+    },
+    {
+      "answer": [
+        {
+          "valueCoding": {
+            "code": "bothered-a-little",
+            "system": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-phq-15-answers",
+            "display": "Bothered a little",
+            "_display": {
+              "extension": [
+                {
+                  "extension": [
+                    {
+                      "url": "lang",
+                      "valueCode": "de"
+                    },
+                    {
+                      "url": "content",
+                      "valueString": "Wenig beeinträchtigt"
+                    }
+                  ],
+                  "url": "http://hl7.org/fhir/StructureDefinition/translation"
+                }
+              ]
+            }
+          }
+        }
+      ],
+      "linkId": "phq-phq1k",
+      "text": "Shortness of breath",
+      "_text": {
+        "extension": [
+          {
+            "extension": [
+              {
+                "url": "lang",
+                "valueCode": "de"
+              },
+              {
+                "url": "content",
+                "valueString": "Kurzatmigkeit"
+              }
+            ],
+            "url": "http://hl7.org/fhir/StructureDefinition/translation"
+          }
+        ]
+      }
+    },
+    {
+      "answer": [
+        {
+          "valueCoding": {
+            "code": "bothered-a-little",
+            "system": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-phq-15-answers",
+            "display": "Bothered a little",
+            "_display": {
+              "extension": [
+                {
+                  "extension": [
+                    {
+                      "url": "lang",
+                      "valueCode": "de"
+                    },
+                    {
+                      "url": "content",
+                      "valueString": "Wenig beeinträchtigt"
+                    }
+                  ],
+                  "url": "http://hl7.org/fhir/StructureDefinition/translation"
+                }
+              ]
+            }
+          }
+        }
+      ],
+      "linkId": "phq-phq1l",
+      "text": "Constipation, loose bowels, or diarrhea",
+      "_text": {
+        "extension": [
+          {
+            "extension": [
+              {
+                "url": "lang",
+                "valueCode": "de"
+              },
+              {
+                "url": "content",
+                "valueString": "Verstopfung, nervöser Darm oder Durchfall"
+              }
+            ],
+            "url": "http://hl7.org/fhir/StructureDefinition/translation"
+          }
+        ]
+      }
+    },
+    {
+      "answer": [
+        {
+          "valueCoding": {
+            "code": "bothered-a-little",
+            "system": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-phq-15-answers",
+            "display": "Bothered a little",
+            "_display": {
+              "extension": [
+                {
+                  "extension": [
+                    {
+                      "url": "lang",
+                      "valueCode": "de"
+                    },
+                    {
+                      "url": "content",
+                      "valueString": "Wenig beeinträchtigt"
+                    }
+                  ],
+                  "url": "http://hl7.org/fhir/StructureDefinition/translation"
+                }
+              ]
+            }
+          }
+        }
+      ],
+      "linkId": "phq-phq1m",
+      "text": "Nausea, gas, or indigestion",
+      "_text": {
+        "extension": [
+          {
+            "extension": [
+              {
+                "url": "lang",
+                "valueCode": "de"
+              },
+              {
+                "url": "content",
+                "valueString": "Übelkeit, Blähungen oder Verdauungsbeschwerden"
+              }
+            ],
+            "url": "http://hl7.org/fhir/StructureDefinition/translation"
+          }
+        ]
+      }
+    },
+    {
+      "answer": [
+        {
+          "valueCoding": {
+            "code": "bothered-a-little",
+            "system": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-phq-15-answers",
+            "display": "Bothered a little",
+            "_display": {
+              "extension": [
+                {
+                  "extension": [
+                    {
+                      "url": "lang",
+                      "valueCode": "de"
+                    },
+                    {
+                      "url": "content",
+                      "valueString": "Wenig beeinträchtigt"
+                    }
+                  ],
+                  "url": "http://hl7.org/fhir/StructureDefinition/translation"
+                }
+              ]
+            }
+          }
+        }
+      ],
+      "linkId": "phq-phq2d",
+      "text": "Feeling tired or having low energy",
+      "_text": {
+        "extension": [
+          {
+            "extension": [
+              {
+                "url": "lang",
+                "valueCode": "de"
+              },
+              {
+                "url": "content",
+                "valueString": "Müdigkeit oder Gefühl, keine Energie zu haben"
+              }
+            ],
+            "url": "http://hl7.org/fhir/StructureDefinition/translation"
+          }
+        ]
+      }
+    },
+    {
+      "answer": [
+        {
+          "valueCoding": {
+            "code": "bothered-a-little",
+            "system": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-phq-15-answers",
+            "display": "Bothered a little",
+            "_display": {
+              "extension": [
+                {
+                  "extension": [
+                    {
+                      "url": "lang",
+                      "valueCode": "de"
+                    },
+                    {
+                      "url": "content",
+                      "valueString": "Wenig beeinträchtigt"
+                    }
+                  ],
+                  "url": "http://hl7.org/fhir/StructureDefinition/translation"
+                }
+              ]
+            }
+          }
+        }
+      ],
+      "linkId": "phq-phq2c",
+      "text": "Trouble sleeping",
+      "_text": {
+        "extension": [
+          {
+            "extension": [
+              {
+                "url": "lang",
+                "valueCode": "de"
+              },
+              {
+                "url": "content",
+                "valueString": "Schwierigkeiten ein- oder durchzuschlafen oder vermehrter Schlaf"
+              }
+            ],
+            "url": "http://hl7.org/fhir/StructureDefinition/translation"
+          }
+        ]
+      }
+    },
+    {
+      "answer": [
+        {
+          "valueDecimal": 15
+        }
+      ],
+      "linkId": "phq-phq15-score-total",
+      "text": "PHQ-15 Total Score (0–30)",
+      "_text": {
+        "extension": [
+          {
+            "extension": [
+              {
+                "url": "lang",
+                "valueCode": "de"
+              },
+              {
+                "url": "content",
+                "valueString": "PHQ-15 Summenwert (0–30)"
+              }
+            ],
+            "url": "http://hl7.org/fhir/StructureDefinition/translation"
+          }
+        ]
+      }
+    }
+  ],
+  "status": "completed",
+  "language": "en",
+  "subject": {
+    "reference": "Patient/mii-exa-pro-patient"
+  },
+  "authored": "2024-03-15T10:00:00Z",
+  "questionnaire": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/Questionnaire/mii-qst-pro-phq-15|2027.0.0-ballot.1"
+}

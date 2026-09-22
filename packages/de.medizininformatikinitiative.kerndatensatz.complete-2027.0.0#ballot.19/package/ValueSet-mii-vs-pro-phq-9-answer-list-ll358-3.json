@@ -1,0 +1,61 @@
+{
+  "resourceType": "ValueSet",
+  "status": "active",
+  "name": "MII_VS_PRO_PHQ9_AnswerList_LL3583",
+  "id": "mii-vs-pro-phq-9-answer-list-ll358-3",
+  "title": "MII VS PRO PHQ-9 Answer List LL358-3",
+  "description": "Patient Health Questionnaire (PHQ-9) Not at all/Several days/More than half the days/Nearly every day",
+  "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-phq-9-answer-list-ll358-3",
+  "version": "2027.0.0-ballot.1",
+  "experimental": false,
+  "language": "de",
+  "compose": {
+    "include": [
+      {
+        "system": "http://loinc.org",
+        "concept": [
+          {
+            "code": "LA6568-5",
+            "display": "Not at all",
+            "designation": [
+              {
+                "language": "de",
+                "value": "Überhaupt nicht"
+              }
+            ]
+          },
+          {
+            "code": "LA6569-3",
+            "display": "Several days",
+            "designation": [
+              {
+                "language": "de",
+                "value": "An einzelnen Tagen"
+              }
+            ]
+          },
+          {
+            "code": "LA6570-1",
+            "display": "More than half the days",
+            "designation": [
+              {
+                "language": "de",
+                "value": "An mehr als der Hälfte der Tage"
+              }
+            ]
+          },
+          {
+            "code": "LA6571-9",
+            "display": "Nearly every day",
+            "designation": [
+              {
+                "language": "de",
+                "value": "Beinahe jeden Tag"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

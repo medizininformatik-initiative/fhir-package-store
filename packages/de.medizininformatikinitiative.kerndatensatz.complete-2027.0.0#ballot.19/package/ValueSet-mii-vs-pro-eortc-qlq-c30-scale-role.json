@@ -1,0 +1,32 @@
+{
+  "resourceType": "ValueSet",
+  "status": "active",
+  "name": "MII_VS_PRO_EORTC_QLQ_C30_Scale_Role",
+  "id": "mii-vs-pro-eortc-qlq-c30-scale-role",
+  "title": "MII VS PRO EORTC QLQ-C30 Role Functioning Scale",
+  "description": "4-point response scale for EORTC QLQ-C30 role functioning items",
+  "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-eortc-qlq-c30-scale-role",
+  "version": "2027.0.0-ballot.1",
+  "experimental": true,
+  "compose": {
+    "include": [
+      {
+        "system": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-eortc-qlq-c30",
+        "concept": [
+          {
+            "code": "not-at-all-role"
+          },
+          {
+            "code": "a-little-role"
+          },
+          {
+            "code": "quite-a-bit-role"
+          },
+          {
+            "code": "very-much-role"
+          }
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,2485 @@
+{
+  "resourceType": "Bundle",
+  "id": "mii-exa-pro-promis-29-bundle",
+  "entry": [
+    {
+      "fullUrl": "urn:uuid:a1b2c3d4-e5f6-7890-abcd-ef1234567890",
+      "resource": {
+        "resourceType": "Patient",
+        "id": "patient-example-1",
+        "meta": {
+          "profile": [
+            "https://www.medizininformatik-initiative.de/fhir/core/modul-person/StructureDefinition/Patient"
+          ]
+        },
+        "identifier": [
+          {
+            "system": "http://example.org/fhir/sid/patients",
+            "value": "12345"
+          }
+        ],
+        "name": [
+          {
+            "given": [
+              "Erika"
+            ],
+            "family": "Mustermann"
+          }
+        ],
+        "gender": "female",
+        "birthDate": "1985-03-15"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:b2c3d4e5-f6a7-8901-bcde-f12345678901",
+      "resource": {
+        "resourceType": "QuestionnaireResponse",
+        "id": "promis-29-response-1",
+        "meta": {
+          "profile": [
+            "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-questionnaire-response|2027.0.0-ballot.1"
+          ]
+        },
+        "item": [
+          {
+            "item": [
+              {
+                "linkId": "PROMIS-29.PhysicalFunction.Description",
+                "text": "Sind Sie zu folgenden Tätigkeiten imstande:",
+                "_text": {
+                  "extension": [
+                    {
+                      "extension": [
+                        {
+                          "url": "lang",
+                          "valueCode": "de"
+                        },
+                        {
+                          "url": "content",
+                          "valueString": "Sind Sie zu folgenden Tätigkeiten imstande:"
+                        }
+                      ],
+                      "url": "http://hl7.org/fhir/StructureDefinition/translation"
+                    }
+                  ]
+                }
+              },
+              {
+                "answer": [
+                  {
+                    "valueCoding": {
+                      "code": "LA13920-6",
+                      "system": "http://loinc.org",
+                      "display": "With some difficulty",
+                      "_display": {
+                        "extension": [
+                          {
+                            "extension": [
+                              {
+                                "url": "lang",
+                                "valueCode": "de"
+                              },
+                              {
+                                "url": "content",
+                                "valueString": "Mit einigen Schwierigkeiten"
+                              }
+                            ],
+                            "url": "http://hl7.org/fhir/StructureDefinition/translation"
+                          }
+                        ]
+                      }
+                    }
+                  }
+                ],
+                "linkId": "promis-pfa11",
+                "text": "Are you able to do chores such as vacuuming or yard work [PROMIS]",
+                "_text": {
+                  "extension": [
+                    {
+                      "extension": [
+                        {
+                          "url": "lang",
+                          "valueCode": "de"
+                        },
+                        {
+                          "url": "content",
+                          "valueString": "Können Sie Hausarbeiten erledigen, z.B. Staubsaugen oder Gartenarbeit?"
+                        }
+                      ],
+                      "url": "http://hl7.org/fhir/StructureDefinition/translation"
+                    }
+                  ]
+                }
+              },
+              {
+                "answer": [
+                  {
+                    "valueCoding": {
+                      "code": "LA13920-6",
+                      "system": "http://loinc.org",
+                      "display": "With some difficulty",
+                      "_display": {
+                        "extension": [
+                          {
+                            "extension": [
+                              {
+                                "url": "lang",
+                                "valueCode": "de"
+                              },
+                              {
+                                "url": "content",
+                                "valueString": "Mit einigen Schwierigkeiten"
+                              }
+                            ],
+                            "url": "http://hl7.org/fhir/StructureDefinition/translation"
+                          }
+                        ]
+                      }
+                    }
+                  }
+                ],
+                "linkId": "promis-pfa21",
+                "text": "Are you able to go up and down stairs at a normal pace [PROMIS]",
+                "_text": {
+                  "extension": [
+                    {
+                      "extension": [
+                        {
+                          "url": "lang",
+                          "valueCode": "de"
+                        },
+                        {
+                          "url": "content",
+                          "valueString": "Können Sie mit normaler Geschwindigkeit Treppen hoch- und runtergehen?"
+                        }
+                      ],
+                      "url": "http://hl7.org/fhir/StructureDefinition/translation"
+                    }
+                  ]
+                }
+              },
+              {
+                "answer": [
+                  {
+                    "valueCoding": {
+                      "code": "LA13918-0",
+                      "system": "http://loinc.org",
+                      "display": "With a little difficulty",
+                      "_display": {
+                        "extension": [
+                          {
+                            "extension": [
+                              {
+                                "url": "lang",
+                                "valueCode": "de"
+                              },
+                              {
+                                "url": "content",
+                                "valueString": "Mit geringen Schwierigkeiten"
+                              }
+                            ],
+                            "url": "http://hl7.org/fhir/StructureDefinition/translation"
+                          }
+                        ]
+                      }
+                    }
+                  }
+                ],
+                "linkId": "promis-pfa23",
+                "text": "Are you able to go for a walk of at least 15 minutes [PROMIS]",
+                "_text": {
+                  "extension": [
+                    {
+                      "extension": [
+                        {
+                          "url": "lang",
+                          "valueCode": "de"
+                        },
+                        {
+                          "url": "content",
+                          "valueString": "Können Sie mindestens 15 Minuten lang spazieren gehen?"
+                        }
+                      ],
+                      "url": "http://hl7.org/fhir/StructureDefinition/translation"
+                    }
+                  ]
+                }
+              },
+              {
+                "answer": [
+                  {
+                    "valueCoding": {
+                      "code": "LA13920-6",
+                      "system": "http://loinc.org",
+                      "display": "With some difficulty",
+                      "_display": {
+                        "extension": [
+                          {
+                            "extension": [
+                              {
+                                "url": "lang",
+                                "valueCode": "de"
+                              },
+                              {
+                                "url": "content",
+                                "valueString": "Mit einigen Schwierigkeiten"
+                              }
+                            ],
+                            "url": "http://hl7.org/fhir/StructureDefinition/translation"
+                          }
+                        ]
+                      }
+                    }
+                  }
+                ],
+                "linkId": "promis-pfa53",
+                "text": "Are you able to run errands and shop [PROMIS]",
+                "_text": {
+                  "extension": [
+                    {
+                      "extension": [
+                        {
+                          "url": "lang",
+                          "valueCode": "de"
+                        },
+                        {
+                          "url": "content",
+                          "valueString": "Können Sie Besorgungen machen und einkaufen gehen?"
+                        }
+                      ],
+                      "url": "http://hl7.org/fhir/StructureDefinition/translation"
+                    }
+                  ]
+                }
+              }
+            ],
+            "linkId": "PROMIS-29.PhysicalFunction",
+            "text": "KÖRPERLICHE FUNKTION",
+            "_text": {
+              "extension": [
+                {
+                  "extension": [
+                    {
+                      "url": "lang",
+                      "valueCode": "de"
+                    },
+                    {
+                      "url": "content",
+                      "valueString": "KÖRPERLICHE FUNKTION"
+                    }
+                  ],
+                  "url": "http://hl7.org/fhir/StructureDefinition/translation"
+                }
+              ]
+            }
+          },
+          {
+            "item": [
+              {
+                "linkId": "PROMIS-29.Anxiety.Description",
+                "text": "In den letzten 7 Tagen:",
+                "_text": {
+                  "extension": [
+                    {
+                      "extension": [
+                        {
+                          "url": "lang",
+                          "valueCode": "de"
+                        },
+                        {
+                          "url": "content",
+                          "valueString": "In den letzten 7 Tagen:"
+                        }
+                      ],
+                      "url": "http://hl7.org/fhir/StructureDefinition/translation"
+                    }
+                  ]
+                }
+              },
+              {
+                "answer": [
+                  {
+                    "valueCoding": {
+                      "code": "LA10066-1",
+                      "system": "http://loinc.org",
+                      "display": "Rarely",
+                      "_display": {
+                        "extension": [
+                          {
+                            "extension": [
+                              {
+                                "url": "lang",
+                                "valueCode": "de"
+                              },
+                              {
+                                "url": "content",
+                                "valueString": "Selten"
+                              }
+                            ],
+                            "url": "http://hl7.org/fhir/StructureDefinition/translation"
+                          }
+                        ]
+                      }
+                    }
+                  }
+                ],
+                "linkId": "promis-edanx01",
+                "text": "Ich fürchtete mich.",
+                "_text": {
+                  "extension": [
+                    {
+                      "extension": [
+                        {
+                          "url": "lang",
+                          "valueCode": "de"
+                        },
+                        {
+                          "url": "content",
+                          "valueString": "Ich fürchtete mich."
+                        }
+                      ],
+                      "url": "http://hl7.org/fhir/StructureDefinition/translation"
+                    }
+                  ]
+                }
+              },
+              {
+                "answer": [
+                  {
+                    "valueCoding": {
+                      "code": "LA10082-8",
+                      "system": "http://loinc.org",
+                      "display": "Sometimes",
+                      "_display": {
+                        "extension": [
+                          {
+                            "extension": [
+                              {
+                                "url": "lang",
+                                "valueCode": "de"
+                              },
+                              {
+                                "url": "content",
+                                "valueString": "Manchmal"
+                              }
+                            ],
+                            "url": "http://hl7.org/fhir/StructureDefinition/translation"
+                          }
+                        ]
+                      }
+                    }
+                  }
+                ],
+                "linkId": "promis-edanx40",
+                "text": "Ich fand es schwer, auf etwas anderes zu achten als auf meine Angst.",
+                "_text": {
+                  "extension": [
+                    {
+                      "extension": [
+                        {
+                          "url": "lang",
+                          "valueCode": "de"
+                        },
+                        {
+                          "url": "content",
+                          "valueString": "Ich fand es schwer, auf etwas anderes zu achten als auf meine Angst."
+                        }
+                      ],
+                      "url": "http://hl7.org/fhir/StructureDefinition/translation"
+                    }
+                  ]
+                }
+              },
+              {
+                "answer": [
+                  {
+                    "valueCoding": {
+                      "code": "LA10066-1",
+                      "system": "http://loinc.org",
+                      "display": "Rarely",
+                      "_display": {
+                        "extension": [
+                          {
+                            "extension": [
+                              {
+                                "url": "lang",
+                                "valueCode": "de"
+                              },
+                              {
+                                "url": "content",
+                                "valueString": "Selten"
+                              }
+                            ],
+                            "url": "http://hl7.org/fhir/StructureDefinition/translation"
+                          }
+                        ]
+                      }
+                    }
+                  }
+                ],
+                "linkId": "promis-edanx41",
+                "text": "Meine Sorgen haben mich überwältigt.",
+                "_text": {
+                  "extension": [
+                    {
+                      "extension": [
+                        {
+                          "url": "lang",
+                          "valueCode": "de"
+                        },
+                        {
+                          "url": "content",
+                          "valueString": "Meine Sorgen haben mich überwältigt."
+                        }
+                      ],
+                      "url": "http://hl7.org/fhir/StructureDefinition/translation"
+                    }
+                  ]
+                }
+              },
+              {
+                "answer": [
+                  {
+                    "valueCoding": {
+                      "code": "LA10066-1",
+                      "system": "http://loinc.org",
+                      "display": "Rarely",
+                      "_display": {
+                        "extension": [
+                          {
+                            "extension": [
+                              {
+                                "url": "lang",
+                                "valueCode": "de"
+                              },
+                              {
+                                "url": "content",
+                                "valueString": "Selten"
+                              }
+                            ],
+                            "url": "http://hl7.org/fhir/StructureDefinition/translation"
+                          }
+                        ]
+                      }
+                    }
+                  }
+                ],
+                "linkId": "promis-edanx53",
+                "text": "Ich fühlte mich unruhig.",
+                "_text": {
+                  "extension": [
+                    {
+                      "extension": [
+                        {
+                          "url": "lang",
+                          "valueCode": "de"
+                        },
+                        {
+                          "url": "content",
+                          "valueString": "Ich fühlte mich unruhig."
+                        }
+                      ],
+                      "url": "http://hl7.org/fhir/StructureDefinition/translation"
+                    }
+                  ]
+                }
+              }
+            ],
+            "linkId": "PROMIS-29.Anxiety",
+            "text": "ANGST",
+            "_text": {
+              "extension": [
+                {
+                  "extension": [
+                    {
+                      "url": "lang",
+                      "valueCode": "de"
+                    },
+                    {
+                      "url": "content",
+                      "valueString": "ANGST"
+                    }
+                  ],
+                  "url": "http://hl7.org/fhir/StructureDefinition/translation"
+                }
+              ]
+            }
+          },
+          {
+            "item": [
+              {
+                "linkId": "PROMIS-29.Depression.Description",
+                "text": "In den letzten 7 Tagen:",
+                "_text": {
+                  "extension": [
+                    {
+                      "extension": [
+                        {
+                          "url": "lang",
+                          "valueCode": "de"
+                        },
+                        {
+                          "url": "content",
+                          "valueString": "In den letzten 7 Tagen:"
+                        }
+                      ],
+                      "url": "http://hl7.org/fhir/StructureDefinition/translation"
+                    }
+                  ]
+                }
+              },
+              {
+                "answer": [
+                  {
+                    "valueCoding": {
+                      "code": "LA10082-8",
+                      "system": "http://loinc.org",
+                      "display": "Sometimes",
+                      "_display": {
+                        "extension": [
+                          {
+                            "extension": [
+                              {
+                                "url": "lang",
+                                "valueCode": "de"
+                              },
+                              {
+                                "url": "content",
+                                "valueString": "Manchmal"
+                              }
+                            ],
+                            "url": "http://hl7.org/fhir/StructureDefinition/translation"
+                          }
+                        ]
+                      }
+                    }
+                  }
+                ],
+                "linkId": "promis-eddep04",
+                "text": "Ich fühlte mich wertlos.",
+                "_text": {
+                  "extension": [
+                    {
+                      "extension": [
+                        {
+                          "url": "lang",
+                          "valueCode": "de"
+                        },
+                        {
+                          "url": "content",
+                          "valueString": "Ich fühlte mich wertlos."
+                        }
+                      ],
+                      "url": "http://hl7.org/fhir/StructureDefinition/translation"
+                    }
+                  ]
+                }
+              },
+              {
+                "answer": [
+                  {
+                    "valueCoding": {
+                      "code": "LA10082-8",
+                      "system": "http://loinc.org",
+                      "display": "Sometimes",
+                      "_display": {
+                        "extension": [
+                          {
+                            "extension": [
+                              {
+                                "url": "lang",
+                                "valueCode": "de"
+                              },
+                              {
+                                "url": "content",
+                                "valueString": "Manchmal"
+                              }
+                            ],
+                            "url": "http://hl7.org/fhir/StructureDefinition/translation"
+                          }
+                        ]
+                      }
+                    }
+                  }
+                ],
+                "linkId": "promis-eddep06",
+                "text": "Ich fühlte mich hilflos.",
+                "_text": {
+                  "extension": [
+                    {
+                      "extension": [
+                        {
+                          "url": "lang",
+                          "valueCode": "de"
+                        },
+                        {
+                          "url": "content",
+                          "valueString": "Ich fühlte mich hilflos."
+                        }
+                      ],
+                      "url": "http://hl7.org/fhir/StructureDefinition/translation"
+                    }
+                  ]
+                }
+              },
+              {
+                "answer": [
+                  {
+                    "valueCoding": {
+                      "code": "LA10044-8",
+                      "system": "http://loinc.org",
+                      "display": "Often",
+                      "_display": {
+                        "extension": [
+                          {
+                            "extension": [
+                              {
+                                "url": "lang",
+                                "valueCode": "de"
+                              },
+                              {
+                                "url": "content",
+                                "valueString": "Oft"
+                              }
+                            ],
+                            "url": "http://hl7.org/fhir/StructureDefinition/translation"
+                          }
+                        ]
+                      }
+                    }
+                  }
+                ],
+                "linkId": "promis-eddep29",
+                "text": "Ich fühlte mich niedergeschlagen.",
+                "_text": {
+                  "extension": [
+                    {
+                      "extension": [
+                        {
+                          "url": "lang",
+                          "valueCode": "de"
+                        },
+                        {
+                          "url": "content",
+                          "valueString": "Ich fühlte mich niedergeschlagen."
+                        }
+                      ],
+                      "url": "http://hl7.org/fhir/StructureDefinition/translation"
+                    }
+                  ]
+                }
+              },
+              {
+                "answer": [
+                  {
+                    "valueCoding": {
+                      "code": "LA10082-8",
+                      "system": "http://loinc.org",
+                      "display": "Sometimes",
+                      "_display": {
+                        "extension": [
+                          {
+                            "extension": [
+                              {
+                                "url": "lang",
+                                "valueCode": "de"
+                              },
+                              {
+                                "url": "content",
+                                "valueString": "Manchmal"
+                              }
+                            ],
+                            "url": "http://hl7.org/fhir/StructureDefinition/translation"
+                          }
+                        ]
+                      }
+                    }
+                  }
+                ],
+                "linkId": "promis-eddep41",
+                "text": "Ich fühlte mich hoffnungslos.",
+                "_text": {
+                  "extension": [
+                    {
+                      "extension": [
+                        {
+                          "url": "lang",
+                          "valueCode": "de"
+                        },
+                        {
+                          "url": "content",
+                          "valueString": "Ich fühlte mich hoffnungslos."
+                        }
+                      ],
+                      "url": "http://hl7.org/fhir/StructureDefinition/translation"
+                    }
+                  ]
+                }
+              }
+            ],
+            "linkId": "PROMIS-29.Depression",
+            "text": "DEPRESSION",
+            "_text": {
+              "extension": [
+                {
+                  "extension": [
+                    {
+                      "url": "lang",
+                      "valueCode": "de"
+                    },
+                    {
+                      "url": "content",
+                      "valueString": "DEPRESSION"
+                    }
+                  ],
+                  "url": "http://hl7.org/fhir/StructureDefinition/translation"
+                }
+              ]
+            }
+          },
+          {
+            "item": [
+              {
+                "linkId": "PROMIS-29.Fatigue.Description",
+                "text": "In den letzten 7 Tagen:",
+                "_text": {
+                  "extension": [
+                    {
+                      "extension": [
+                        {
+                          "url": "lang",
+                          "valueCode": "de"
+                        },
+                        {
+                          "url": "content",
+                          "valueString": "In den letzten 7 Tagen:"
+                        }
+                      ],
+                      "url": "http://hl7.org/fhir/StructureDefinition/translation"
+                    }
+                  ]
+                }
+              },
+              {
+                "answer": [
+                  {
+                    "valueCoding": {
+                      "code": "LA13902-4",
+                      "system": "http://loinc.org",
+                      "display": "Quite a bit",
+                      "_display": {
+                        "extension": [
+                          {
+                            "extension": [
+                              {
+                                "url": "lang",
+                                "valueCode": "de"
+                              },
+                              {
+                                "url": "content",
+                                "valueString": "Ziemlich"
+                              }
+                            ],
+                            "url": "http://hl7.org/fhir/StructureDefinition/translation"
+                          }
+                        ]
+                      }
+                    }
+                  }
+                ],
+                "linkId": "promis-hi7",
+                "text": "Ich bin erschöpft.",
+                "_text": {
+                  "extension": [
+                    {
+                      "extension": [
+                        {
+                          "url": "lang",
+                          "valueCode": "de"
+                        },
+                        {
+                          "url": "content",
+                          "valueString": "Ich bin erschöpft."
+                        }
+                      ],
+                      "url": "http://hl7.org/fhir/StructureDefinition/translation"
+                    }
+                  ]
+                }
+              },
+              {
+                "answer": [
+                  {
+                    "valueCoding": {
+                      "code": "LA13902-4",
+                      "system": "http://loinc.org",
+                      "display": "Quite a bit",
+                      "_display": {
+                        "extension": [
+                          {
+                            "extension": [
+                              {
+                                "url": "lang",
+                                "valueCode": "de"
+                              },
+                              {
+                                "url": "content",
+                                "valueString": "Ziemlich"
+                              }
+                            ],
+                            "url": "http://hl7.org/fhir/StructureDefinition/translation"
+                          }
+                        ]
+                      }
+                    }
+                  }
+                ],
+                "linkId": "promis-an3",
+                "text": "Es fällt mir schwer, etwas anzufangen, weil ich müde bin.",
+                "_text": {
+                  "extension": [
+                    {
+                      "extension": [
+                        {
+                          "url": "lang",
+                          "valueCode": "de"
+                        },
+                        {
+                          "url": "content",
+                          "valueString": "Es fällt mir schwer, etwas anzufangen, weil ich müde bin."
+                        }
+                      ],
+                      "url": "http://hl7.org/fhir/StructureDefinition/translation"
+                    }
+                  ]
+                }
+              },
+              {
+                "answer": [
+                  {
+                    "valueCoding": {
+                      "code": "LA13909-9",
+                      "system": "http://loinc.org",
+                      "display": "Somewhat",
+                      "_display": {
+                        "extension": [
+                          {
+                            "extension": [
+                              {
+                                "url": "lang",
+                                "valueCode": "de"
+                              },
+                              {
+                                "url": "content",
+                                "valueString": "Mäßig"
+                              }
+                            ],
+                            "url": "http://hl7.org/fhir/StructureDefinition/translation"
+                          }
+                        ]
+                      }
+                    }
+                  }
+                ],
+                "linkId": "promis-fatexp41",
+                "text": "Wie ausgelaugt fühlten Sie sich im Allgemeinen?",
+                "_text": {
+                  "extension": [
+                    {
+                      "extension": [
+                        {
+                          "url": "lang",
+                          "valueCode": "de"
+                        },
+                        {
+                          "url": "content",
+                          "valueString": "Wie ausgelaugt fühlten Sie sich im Allgemeinen?"
+                        }
+                      ],
+                      "url": "http://hl7.org/fhir/StructureDefinition/translation"
+                    }
+                  ]
+                }
+              },
+              {
+                "answer": [
+                  {
+                    "valueCoding": {
+                      "code": "LA13902-4",
+                      "system": "http://loinc.org",
+                      "display": "Quite a bit",
+                      "_display": {
+                        "extension": [
+                          {
+                            "extension": [
+                              {
+                                "url": "lang",
+                                "valueCode": "de"
+                              },
+                              {
+                                "url": "content",
+                                "valueString": "Ziemlich"
+                              }
+                            ],
+                            "url": "http://hl7.org/fhir/StructureDefinition/translation"
+                          }
+                        ]
+                      }
+                    }
+                  }
+                ],
+                "linkId": "promis-fatexp40",
+                "text": "Wie erschöpft waren Sie im Allgemeinen?",
+                "_text": {
+                  "extension": [
+                    {
+                      "extension": [
+                        {
+                          "url": "lang",
+                          "valueCode": "de"
+                        },
+                        {
+                          "url": "content",
+                          "valueString": "Wie erschöpft waren Sie im Allgemeinen?"
+                        }
+                      ],
+                      "url": "http://hl7.org/fhir/StructureDefinition/translation"
+                    }
+                  ]
+                }
+              }
+            ],
+            "linkId": "PROMIS-29.Fatigue",
+            "text": "ERSCHÖPFUNG",
+            "_text": {
+              "extension": [
+                {
+                  "extension": [
+                    {
+                      "url": "lang",
+                      "valueCode": "de"
+                    },
+                    {
+                      "url": "content",
+                      "valueString": "ERSCHÖPFUNG"
+                    }
+                  ],
+                  "url": "http://hl7.org/fhir/StructureDefinition/translation"
+                }
+              ]
+            }
+          },
+          {
+            "item": [
+              {
+                "linkId": "PROMIS-29.Sleep.Description",
+                "text": "In den letzten 7 Tagen:",
+                "_text": {
+                  "extension": [
+                    {
+                      "extension": [
+                        {
+                          "url": "lang",
+                          "valueCode": "de"
+                        },
+                        {
+                          "url": "content",
+                          "valueString": "In den letzten 7 Tagen:"
+                        }
+                      ],
+                      "url": "http://hl7.org/fhir/StructureDefinition/translation"
+                    }
+                  ]
+                }
+              },
+              {
+                "answer": [
+                  {
+                    "valueCoding": {
+                      "code": "LA8968-5",
+                      "system": "http://loinc.org",
+                      "display": "Fair",
+                      "_display": {
+                        "extension": [
+                          {
+                            "extension": [
+                              {
+                                "url": "lang",
+                                "valueCode": "de"
+                              },
+                              {
+                                "url": "content",
+                                "valueString": "Mäßig"
+                              }
+                            ],
+                            "url": "http://hl7.org/fhir/StructureDefinition/translation"
+                          }
+                        ]
+                      }
+                    }
+                  }
+                ],
+                "linkId": "promis-sleep109",
+                "text": "Meine Schlafqualität war ...",
+                "_text": {
+                  "extension": [
+                    {
+                      "extension": [
+                        {
+                          "url": "lang",
+                          "valueCode": "de"
+                        },
+                        {
+                          "url": "content",
+                          "valueString": "Meine Schlafqualität war ..."
+                        }
+                      ],
+                      "url": "http://hl7.org/fhir/StructureDefinition/translation"
+                    }
+                  ]
+                }
+              },
+              {
+                "answer": [
+                  {
+                    "valueCoding": {
+                      "code": "LA13909-9",
+                      "system": "http://loinc.org",
+                      "display": "Somewhat",
+                      "_display": {
+                        "extension": [
+                          {
+                            "extension": [
+                              {
+                                "url": "lang",
+                                "valueCode": "de"
+                              },
+                              {
+                                "url": "content",
+                                "valueString": "Mäßig"
+                              }
+                            ],
+                            "url": "http://hl7.org/fhir/StructureDefinition/translation"
+                          }
+                        ]
+                      }
+                    }
+                  }
+                ],
+                "linkId": "promis-sleep116",
+                "text": "Mein Schlaf war erfrischend.",
+                "_text": {
+                  "extension": [
+                    {
+                      "extension": [
+                        {
+                          "url": "lang",
+                          "valueCode": "de"
+                        },
+                        {
+                          "url": "content",
+                          "valueString": "Mein Schlaf war erfrischend."
+                        }
+                      ],
+                      "url": "http://hl7.org/fhir/StructureDefinition/translation"
+                    }
+                  ]
+                }
+              },
+              {
+                "answer": [
+                  {
+                    "valueCoding": {
+                      "code": "LA13909-9",
+                      "system": "http://loinc.org",
+                      "display": "Somewhat",
+                      "_display": {
+                        "extension": [
+                          {
+                            "extension": [
+                              {
+                                "url": "lang",
+                                "valueCode": "de"
+                              },
+                              {
+                                "url": "content",
+                                "valueString": "Mäßig"
+                              }
+                            ],
+                            "url": "http://hl7.org/fhir/StructureDefinition/translation"
+                          }
+                        ]
+                      }
+                    }
+                  }
+                ],
+                "linkId": "promis-sleep20",
+                "text": "Ich hatte Schlafprobleme.",
+                "_text": {
+                  "extension": [
+                    {
+                      "extension": [
+                        {
+                          "url": "lang",
+                          "valueCode": "de"
+                        },
+                        {
+                          "url": "content",
+                          "valueString": "Ich hatte Schlafprobleme."
+                        }
+                      ],
+                      "url": "http://hl7.org/fhir/StructureDefinition/translation"
+                    }
+                  ]
+                }
+              },
+              {
+                "answer": [
+                  {
+                    "valueCoding": {
+                      "code": "LA13863-8",
+                      "system": "http://loinc.org",
+                      "display": "A little bit",
+                      "_display": {
+                        "extension": [
+                          {
+                            "extension": [
+                              {
+                                "url": "lang",
+                                "valueCode": "de"
+                              },
+                              {
+                                "url": "content",
+                                "valueString": "Ein wenig"
+                              }
+                            ],
+                            "url": "http://hl7.org/fhir/StructureDefinition/translation"
+                          }
+                        ]
+                      }
+                    }
+                  }
+                ],
+                "linkId": "promis-sleep44",
+                "text": "Ich hatte Schwierigkeiten einzuschlafen.",
+                "_text": {
+                  "extension": [
+                    {
+                      "extension": [
+                        {
+                          "url": "lang",
+                          "valueCode": "de"
+                        },
+                        {
+                          "url": "content",
+                          "valueString": "Ich hatte Schwierigkeiten einzuschlafen."
+                        }
+                      ],
+                      "url": "http://hl7.org/fhir/StructureDefinition/translation"
+                    }
+                  ]
+                }
+              }
+            ],
+            "linkId": "PROMIS-29.Sleep",
+            "text": "SCHLAFSTÖRUNGEN",
+            "_text": {
+              "extension": [
+                {
+                  "extension": [
+                    {
+                      "url": "lang",
+                      "valueCode": "de"
+                    },
+                    {
+                      "url": "content",
+                      "valueString": "SCHLAFSTÖRUNGEN"
+                    }
+                  ],
+                  "url": "http://hl7.org/fhir/StructureDefinition/translation"
+                }
+              ]
+            }
+          },
+          {
+            "item": [
+              {
+                "linkId": "PROMIS-29.Social.Description",
+                "text": "In den letzten 7 Tagen:",
+                "_text": {
+                  "extension": [
+                    {
+                      "extension": [
+                        {
+                          "url": "lang",
+                          "valueCode": "de"
+                        },
+                        {
+                          "url": "content",
+                          "valueString": "In den letzten 7 Tagen:"
+                        }
+                      ],
+                      "url": "http://hl7.org/fhir/StructureDefinition/translation"
+                    }
+                  ]
+                }
+              },
+              {
+                "answer": [
+                  {
+                    "valueCoding": {
+                      "code": "LA10082-8",
+                      "system": "http://loinc.org",
+                      "display": "Sometimes",
+                      "_display": {
+                        "extension": [
+                          {
+                            "extension": [
+                              {
+                                "url": "lang",
+                                "valueCode": "de"
+                              },
+                              {
+                                "url": "content",
+                                "valueString": "Manchmal"
+                              }
+                            ],
+                            "url": "http://hl7.org/fhir/StructureDefinition/translation"
+                          }
+                        ]
+                      }
+                    }
+                  }
+                ],
+                "linkId": "promis-srpper23-caps",
+                "text": "Es fällt mir schwer, meine gewohnte Arbeit zu erledigen (einschließlich der Arbeit zu Hause).",
+                "_text": {
+                  "extension": [
+                    {
+                      "extension": [
+                        {
+                          "url": "lang",
+                          "valueCode": "de"
+                        },
+                        {
+                          "url": "content",
+                          "valueString": "Es fällt mir schwer, meine gewohnte Arbeit zu erledigen (einschließlich der Arbeit zu Hause)."
+                        }
+                      ],
+                      "url": "http://hl7.org/fhir/StructureDefinition/translation"
+                    }
+                  ]
+                }
+              },
+              {
+                "answer": [
+                  {
+                    "valueCoding": {
+                      "code": "LA10082-8",
+                      "system": "http://loinc.org",
+                      "display": "Sometimes",
+                      "_display": {
+                        "extension": [
+                          {
+                            "extension": [
+                              {
+                                "url": "lang",
+                                "valueCode": "de"
+                              },
+                              {
+                                "url": "content",
+                                "valueString": "Manchmal"
+                              }
+                            ],
+                            "url": "http://hl7.org/fhir/StructureDefinition/translation"
+                          }
+                        ]
+                      }
+                    }
+                  }
+                ],
+                "linkId": "promis-srpper11-caps",
+                "text": "Es fällt mir schwer, allen meinen regelmäßigen Freizeitaktivitäten mit anderen nachzugehen.",
+                "_text": {
+                  "extension": [
+                    {
+                      "extension": [
+                        {
+                          "url": "lang",
+                          "valueCode": "de"
+                        },
+                        {
+                          "url": "content",
+                          "valueString": "Es fällt mir schwer, allen meinen regelmäßigen Freizeitaktivitäten mit anderen nachzugehen."
+                        }
+                      ],
+                      "url": "http://hl7.org/fhir/StructureDefinition/translation"
+                    }
+                  ]
+                }
+              },
+              {
+                "answer": [
+                  {
+                    "valueCoding": {
+                      "code": "LA10066-1",
+                      "system": "http://loinc.org",
+                      "display": "Rarely",
+                      "_display": {
+                        "extension": [
+                          {
+                            "extension": [
+                              {
+                                "url": "lang",
+                                "valueCode": "de"
+                              },
+                              {
+                                "url": "content",
+                                "valueString": "Selten"
+                              }
+                            ],
+                            "url": "http://hl7.org/fhir/StructureDefinition/translation"
+                          }
+                        ]
+                      }
+                    }
+                  }
+                ],
+                "linkId": "promis-srpper18-caps",
+                "text": "Es fällt mir schwer, allen Aktivitäten nachzugehen, die ich mit meiner Familie machen möchte.",
+                "_text": {
+                  "extension": [
+                    {
+                      "extension": [
+                        {
+                          "url": "lang",
+                          "valueCode": "de"
+                        },
+                        {
+                          "url": "content",
+                          "valueString": "Es fällt mir schwer, allen Aktivitäten nachzugehen, die ich mit meiner Familie machen möchte."
+                        }
+                      ],
+                      "url": "http://hl7.org/fhir/StructureDefinition/translation"
+                    }
+                  ]
+                }
+              },
+              {
+                "answer": [
+                  {
+                    "valueCoding": {
+                      "code": "LA10082-8",
+                      "system": "http://loinc.org",
+                      "display": "Sometimes",
+                      "_display": {
+                        "extension": [
+                          {
+                            "extension": [
+                              {
+                                "url": "lang",
+                                "valueCode": "de"
+                              },
+                              {
+                                "url": "content",
+                                "valueString": "Manchmal"
+                              }
+                            ],
+                            "url": "http://hl7.org/fhir/StructureDefinition/translation"
+                          }
+                        ]
+                      }
+                    }
+                  }
+                ],
+                "linkId": "promis-srpper46-caps",
+                "text": "Es fällt mir schwer, allen Aktivitäten nachzugehen, die ich mit Freunden machen möchte.",
+                "_text": {
+                  "extension": [
+                    {
+                      "extension": [
+                        {
+                          "url": "lang",
+                          "valueCode": "de"
+                        },
+                        {
+                          "url": "content",
+                          "valueString": "Es fällt mir schwer, allen Aktivitäten nachzugehen, die ich mit Freunden machen möchte."
+                        }
+                      ],
+                      "url": "http://hl7.org/fhir/StructureDefinition/translation"
+                    }
+                  ]
+                }
+              }
+            ],
+            "linkId": "PROMIS-29.Social",
+            "text": "SOZIALE TEILHABE",
+            "_text": {
+              "extension": [
+                {
+                  "extension": [
+                    {
+                      "url": "lang",
+                      "valueCode": "de"
+                    },
+                    {
+                      "url": "content",
+                      "valueString": "SOZIALE TEILHABE"
+                    }
+                  ],
+                  "url": "http://hl7.org/fhir/StructureDefinition/translation"
+                }
+              ]
+            }
+          },
+          {
+            "item": [
+              {
+                "linkId": "PROMIS-29.PainInterference.Description",
+                "text": "In den letzten 7 Tagen: Inwieweit beeinträchtigten Schmerzen...",
+                "_text": {
+                  "extension": [
+                    {
+                      "extension": [
+                        {
+                          "url": "lang",
+                          "valueCode": "de"
+                        },
+                        {
+                          "url": "content",
+                          "valueString": "In den letzten 7 Tagen: Inwieweit beeinträchtigten Schmerzen..."
+                        }
+                      ],
+                      "url": "http://hl7.org/fhir/StructureDefinition/translation"
+                    }
+                  ]
+                }
+              },
+              {
+                "answer": [
+                  {
+                    "valueCoding": {
+                      "code": "LA13909-9",
+                      "system": "http://loinc.org",
+                      "display": "Somewhat",
+                      "_display": {
+                        "extension": [
+                          {
+                            "extension": [
+                              {
+                                "url": "lang",
+                                "valueCode": "de"
+                              },
+                              {
+                                "url": "content",
+                                "valueString": "Mäßig"
+                              }
+                            ],
+                            "url": "http://hl7.org/fhir/StructureDefinition/translation"
+                          }
+                        ]
+                      }
+                    }
+                  }
+                ],
+                "linkId": "promis-painin9",
+                "text": "Wie sehr beeinträchtigten Schmerzen Ihre Alltagsaktivitäten?",
+                "_text": {
+                  "extension": [
+                    {
+                      "extension": [
+                        {
+                          "url": "lang",
+                          "valueCode": "de"
+                        },
+                        {
+                          "url": "content",
+                          "valueString": "Wie sehr beeinträchtigten Schmerzen Ihre Alltagsaktivitäten?"
+                        }
+                      ],
+                      "url": "http://hl7.org/fhir/StructureDefinition/translation"
+                    }
+                  ]
+                }
+              },
+              {
+                "answer": [
+                  {
+                    "valueCoding": {
+                      "code": "LA13909-9",
+                      "system": "http://loinc.org",
+                      "display": "Somewhat",
+                      "_display": {
+                        "extension": [
+                          {
+                            "extension": [
+                              {
+                                "url": "lang",
+                                "valueCode": "de"
+                              },
+                              {
+                                "url": "content",
+                                "valueString": "Mäßig"
+                              }
+                            ],
+                            "url": "http://hl7.org/fhir/StructureDefinition/translation"
+                          }
+                        ]
+                      }
+                    }
+                  }
+                ],
+                "linkId": "promis-painin22",
+                "text": "Wie sehr beeinträchtigten Schmerzen Ihre häuslichen Tätigkeiten?",
+                "_text": {
+                  "extension": [
+                    {
+                      "extension": [
+                        {
+                          "url": "lang",
+                          "valueCode": "de"
+                        },
+                        {
+                          "url": "content",
+                          "valueString": "Wie sehr beeinträchtigten Schmerzen Ihre häuslichen Tätigkeiten?"
+                        }
+                      ],
+                      "url": "http://hl7.org/fhir/StructureDefinition/translation"
+                    }
+                  ]
+                }
+              },
+              {
+                "answer": [
+                  {
+                    "valueCoding": {
+                      "code": "LA13863-8",
+                      "system": "http://loinc.org",
+                      "display": "A little bit",
+                      "_display": {
+                        "extension": [
+                          {
+                            "extension": [
+                              {
+                                "url": "lang",
+                                "valueCode": "de"
+                              },
+                              {
+                                "url": "content",
+                                "valueString": "Ein wenig"
+                              }
+                            ],
+                            "url": "http://hl7.org/fhir/StructureDefinition/translation"
+                          }
+                        ]
+                      }
+                    }
+                  }
+                ],
+                "linkId": "promis-painin31",
+                "text": "Wie sehr beeinträchtigten Schmerzen Ihre Fähigkeit, an sozialen Aktivitäten teilzunehmen?",
+                "_text": {
+                  "extension": [
+                    {
+                      "extension": [
+                        {
+                          "url": "lang",
+                          "valueCode": "de"
+                        },
+                        {
+                          "url": "content",
+                          "valueString": "Wie sehr beeinträchtigten Schmerzen Ihre Fähigkeit, an sozialen Aktivitäten teilzunehmen?"
+                        }
+                      ],
+                      "url": "http://hl7.org/fhir/StructureDefinition/translation"
+                    }
+                  ]
+                }
+              },
+              {
+                "answer": [
+                  {
+                    "valueCoding": {
+                      "code": "LA13909-9",
+                      "system": "http://loinc.org",
+                      "display": "Somewhat",
+                      "_display": {
+                        "extension": [
+                          {
+                            "extension": [
+                              {
+                                "url": "lang",
+                                "valueCode": "de"
+                              },
+                              {
+                                "url": "content",
+                                "valueString": "Mäßig"
+                              }
+                            ],
+                            "url": "http://hl7.org/fhir/StructureDefinition/translation"
+                          }
+                        ]
+                      }
+                    }
+                  }
+                ],
+                "linkId": "promis-painin34",
+                "text": "Wie sehr beeinträchtigten Schmerzen Sie bei Ihrer Hausarbeit?",
+                "_text": {
+                  "extension": [
+                    {
+                      "extension": [
+                        {
+                          "url": "lang",
+                          "valueCode": "de"
+                        },
+                        {
+                          "url": "content",
+                          "valueString": "Wie sehr beeinträchtigten Schmerzen Sie bei Ihrer Hausarbeit?"
+                        }
+                      ],
+                      "url": "http://hl7.org/fhir/StructureDefinition/translation"
+                    }
+                  ]
+                }
+              }
+            ],
+            "linkId": "PROMIS-29.PainInterference",
+            "text": "SCHMERZBEDINGTE BEEINTRÄCHTIGUNG",
+            "_text": {
+              "extension": [
+                {
+                  "extension": [
+                    {
+                      "url": "lang",
+                      "valueCode": "de"
+                    },
+                    {
+                      "url": "content",
+                      "valueString": "SCHMERZBEDINGTE BEEINTRÄCHTIGUNG"
+                    }
+                  ],
+                  "url": "http://hl7.org/fhir/StructureDefinition/translation"
+                }
+              ]
+            }
+          },
+          {
+            "item": [
+              {
+                "answer": [
+                  {
+                    "valueInteger": 5
+                  }
+                ],
+                "linkId": "promis-global07",
+                "text": "Wie würden Sie Ihre Schmerzen im Allgemeinen einschätzen?",
+                "_text": {
+                  "extension": [
+                    {
+                      "extension": [
+                        {
+                          "url": "lang",
+                          "valueCode": "de"
+                        },
+                        {
+                          "url": "content",
+                          "valueString": "Wie würden Sie Ihre Schmerzen im Allgemeinen einschätzen?"
+                        }
+                      ],
+                      "url": "http://hl7.org/fhir/StructureDefinition/translation"
+                    }
+                  ]
+                }
+              }
+            ],
+            "linkId": "PROMIS-29.PainIntensity",
+            "text": "SCHMERZINTENSITÄT",
+            "_text": {
+              "extension": [
+                {
+                  "extension": [
+                    {
+                      "url": "lang",
+                      "valueCode": "de"
+                    },
+                    {
+                      "url": "content",
+                      "valueString": "SCHMERZINTENSITÄT"
+                    }
+                  ],
+                  "url": "http://hl7.org/fhir/StructureDefinition/translation"
+                }
+              ]
+            }
+          },
+          {
+            "item": [
+              {
+                "answer": [
+                  {
+                    "valueDecimal": 13
+                  }
+                ],
+                "linkId": "promis-29-physical-function-raw",
+                "text": "PROMIS-29 Körperliche Funktion - Rohwert",
+                "_text": {
+                  "extension": [
+                    {
+                      "extension": [
+                        {
+                          "url": "lang",
+                          "valueCode": "de"
+                        },
+                        {
+                          "url": "content",
+                          "valueString": "PROMIS-29 Körperliche Funktion - Rohwert"
+                        }
+                      ],
+                      "url": "http://hl7.org/fhir/StructureDefinition/translation"
+                    }
+                  ]
+                }
+              },
+              {
+                "answer": [
+                  {
+                    "valueDecimal": 42.6
+                  }
+                ],
+                "linkId": "promis-29-physical-function-tscore",
+                "text": "PROMIS-29 Körperliche Funktion - T-Score",
+                "_text": {
+                  "extension": [
+                    {
+                      "extension": [
+                        {
+                          "url": "lang",
+                          "valueCode": "de"
+                        },
+                        {
+                          "url": "content",
+                          "valueString": "PROMIS-29 Körperliche Funktion - T-Score"
+                        }
+                      ],
+                      "url": "http://hl7.org/fhir/StructureDefinition/translation"
+                    }
+                  ]
+                }
+              },
+              {
+                "answer": [
+                  {
+                    "valueDecimal": 9
+                  }
+                ],
+                "linkId": "promis-29-anxiety-raw",
+                "text": "PROMIS-29 Angst - Rohwert",
+                "_text": {
+                  "extension": [
+                    {
+                      "extension": [
+                        {
+                          "url": "lang",
+                          "valueCode": "de"
+                        },
+                        {
+                          "url": "content",
+                          "valueString": "PROMIS-29 Angst - Rohwert"
+                        }
+                      ],
+                      "url": "http://hl7.org/fhir/StructureDefinition/translation"
+                    }
+                  ]
+                }
+              },
+              {
+                "answer": [
+                  {
+                    "valueDecimal": 56.8
+                  }
+                ],
+                "linkId": "promis-29-anxiety-tscore",
+                "text": "PROMIS-29 Angst - T-Score",
+                "_text": {
+                  "extension": [
+                    {
+                      "extension": [
+                        {
+                          "url": "lang",
+                          "valueCode": "de"
+                        },
+                        {
+                          "url": "content",
+                          "valueString": "PROMIS-29 Angst - T-Score"
+                        }
+                      ],
+                      "url": "http://hl7.org/fhir/StructureDefinition/translation"
+                    }
+                  ]
+                }
+              },
+              {
+                "answer": [
+                  {
+                    "valueDecimal": 13
+                  }
+                ],
+                "linkId": "promis-29-depression-raw",
+                "text": "PROMIS-29 Depression - Rohwert",
+                "_text": {
+                  "extension": [
+                    {
+                      "extension": [
+                        {
+                          "url": "lang",
+                          "valueCode": "de"
+                        },
+                        {
+                          "url": "content",
+                          "valueString": "PROMIS-29 Depression - Rohwert"
+                        }
+                      ],
+                      "url": "http://hl7.org/fhir/StructureDefinition/translation"
+                    }
+                  ]
+                }
+              },
+              {
+                "answer": [
+                  {
+                    "valueDecimal": 63.9
+                  }
+                ],
+                "linkId": "promis-29-depression-tscore",
+                "text": "PROMIS-29 Depression - T-Score",
+                "_text": {
+                  "extension": [
+                    {
+                      "extension": [
+                        {
+                          "url": "lang",
+                          "valueCode": "de"
+                        },
+                        {
+                          "url": "content",
+                          "valueString": "PROMIS-29 Depression - T-Score"
+                        }
+                      ],
+                      "url": "http://hl7.org/fhir/StructureDefinition/translation"
+                    }
+                  ]
+                }
+              },
+              {
+                "answer": [
+                  {
+                    "valueDecimal": 15
+                  }
+                ],
+                "linkId": "promis-29-fatigue-raw",
+                "text": "PROMIS-29 Erschöpfung - Rohwert",
+                "_text": {
+                  "extension": [
+                    {
+                      "extension": [
+                        {
+                          "url": "lang",
+                          "valueCode": "de"
+                        },
+                        {
+                          "url": "content",
+                          "valueString": "PROMIS-29 Erschöpfung - Rohwert"
+                        }
+                      ],
+                      "url": "http://hl7.org/fhir/StructureDefinition/translation"
+                    }
+                  ]
+                }
+              },
+              {
+                "answer": [
+                  {
+                    "valueDecimal": 64.9
+                  }
+                ],
+                "linkId": "promis-29-fatigue-tscore",
+                "text": "PROMIS-29 Erschöpfung - T-Score",
+                "_text": {
+                  "extension": [
+                    {
+                      "extension": [
+                        {
+                          "url": "lang",
+                          "valueCode": "de"
+                        },
+                        {
+                          "url": "content",
+                          "valueString": "PROMIS-29 Erschöpfung - T-Score"
+                        }
+                      ],
+                      "url": "http://hl7.org/fhir/StructureDefinition/translation"
+                    }
+                  ]
+                }
+              },
+              {
+                "answer": [
+                  {
+                    "valueDecimal": 11
+                  }
+                ],
+                "linkId": "promis-29-sleep-raw",
+                "text": "PROMIS-29 Schlafstörungen - Rohwert",
+                "_text": {
+                  "extension": [
+                    {
+                      "extension": [
+                        {
+                          "url": "lang",
+                          "valueCode": "de"
+                        },
+                        {
+                          "url": "content",
+                          "valueString": "PROMIS-29 Schlafstörungen - Rohwert"
+                        }
+                      ],
+                      "url": "http://hl7.org/fhir/StructureDefinition/translation"
+                    }
+                  ]
+                }
+              },
+              {
+                "answer": [
+                  {
+                    "valueDecimal": 53.6
+                  }
+                ],
+                "linkId": "promis-29-sleep-tscore",
+                "text": "PROMIS-29 Schlafstörungen - T-Score",
+                "_text": {
+                  "extension": [
+                    {
+                      "extension": [
+                        {
+                          "url": "lang",
+                          "valueCode": "de"
+                        },
+                        {
+                          "url": "content",
+                          "valueString": "PROMIS-29 Schlafstörungen - T-Score"
+                        }
+                      ],
+                      "url": "http://hl7.org/fhir/StructureDefinition/translation"
+                    }
+                  ]
+                }
+              },
+              {
+                "answer": [
+                  {
+                    "valueDecimal": 11
+                  }
+                ],
+                "linkId": "promis-29-social-raw",
+                "text": "PROMIS-29 Soziale Teilhabe - Rohwert",
+                "_text": {
+                  "extension": [
+                    {
+                      "extension": [
+                        {
+                          "url": "lang",
+                          "valueCode": "de"
+                        },
+                        {
+                          "url": "content",
+                          "valueString": "PROMIS-29 Soziale Teilhabe - Rohwert"
+                        }
+                      ],
+                      "url": "http://hl7.org/fhir/StructureDefinition/translation"
+                    }
+                  ]
+                }
+              },
+              {
+                "answer": [
+                  {
+                    "valueDecimal": 39.7
+                  }
+                ],
+                "linkId": "promis-29-social-tscore",
+                "text": "PROMIS-29 Soziale Teilhabe - T-Score",
+                "_text": {
+                  "extension": [
+                    {
+                      "extension": [
+                        {
+                          "url": "lang",
+                          "valueCode": "de"
+                        },
+                        {
+                          "url": "content",
+                          "valueString": "PROMIS-29 Soziale Teilhabe - T-Score"
+                        }
+                      ],
+                      "url": "http://hl7.org/fhir/StructureDefinition/translation"
+                    }
+                  ]
+                }
+              },
+              {
+                "answer": [
+                  {
+                    "valueDecimal": 11
+                  }
+                ],
+                "linkId": "promis-29-pain-interference-raw",
+                "text": "PROMIS-29 Schmerzbedingte Beeinträchtigung - Rohwert",
+                "_text": {
+                  "extension": [
+                    {
+                      "extension": [
+                        {
+                          "url": "lang",
+                          "valueCode": "de"
+                        },
+                        {
+                          "url": "content",
+                          "valueString": "PROMIS-29 Schmerzbedingte Beeinträchtigung - Rohwert"
+                        }
+                      ],
+                      "url": "http://hl7.org/fhir/StructureDefinition/translation"
+                    }
+                  ]
+                }
+              },
+              {
+                "answer": [
+                  {
+                    "valueDecimal": 60.9
+                  }
+                ],
+                "linkId": "promis-29-pain-interference-tscore",
+                "text": "PROMIS-29 Schmerzbedingte Beeinträchtigung - T-Score",
+                "_text": {
+                  "extension": [
+                    {
+                      "extension": [
+                        {
+                          "url": "lang",
+                          "valueCode": "de"
+                        },
+                        {
+                          "url": "content",
+                          "valueString": "PROMIS-29 Schmerzbedingte Beeinträchtigung - T-Score"
+                        }
+                      ],
+                      "url": "http://hl7.org/fhir/StructureDefinition/translation"
+                    }
+                  ]
+                }
+              }
+            ],
+            "linkId": "PROMIS-29.Scores",
+            "text": "BEREICHS-BEWERTUNGEN",
+            "_text": {
+              "extension": [
+                {
+                  "extension": [
+                    {
+                      "url": "lang",
+                      "valueCode": "de"
+                    },
+                    {
+                      "url": "content",
+                      "valueString": "BEREICHS-BEWERTUNGEN"
+                    }
+                  ],
+                  "url": "http://hl7.org/fhir/StructureDefinition/translation"
+                }
+              ]
+            }
+          }
+        ],
+        "language": "en",
+        "questionnaire": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/Questionnaire/mii-qst-pro-promis-29|2027.0.0-ballot.1",
+        "status": "completed",
+        "subject": {
+          "reference": "Patient/patient-example-1"
+        },
+        "authored": "2025-01-30T14:30:00Z"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:c3d4e5f6-a7b8-9012-cdef-123456789012",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "obs-promis-29-physical-function-tscore",
+        "meta": {
+          "profile": [
+            "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-promis-29-physical-function-tscore|2027.0.0-ballot.1"
+          ]
+        },
+        "valueQuantity": {
+          "unit": "{score}",
+          "system": "http://unitsofmeasure.org",
+          "code": "{score}",
+          "value": 42.6
+        },
+        "method": {
+          "text": "PROMIS-29 Profile v2.1"
+        },
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/workflow-instantiatesCanonical",
+            "valueCanonical": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ObservationDefinition/mii-obsdef-pro-promis-29-physical-function-tscore"
+          }
+        ],
+        "derivedFrom": [
+          {
+            "reference": "QuestionnaireResponse/promis-29-response-1"
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "code": "91721-1",
+              "system": "http://loinc.org",
+              "display": "PROMIS physical function - version 2.0 T-score"
+            }
+          ]
+        },
+        "status": "final",
+        "subject": {
+          "reference": "Patient/patient-example-1"
+        },
+        "effectiveDateTime": "2025-01-30T14:30:00Z"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:d4e5f6a7-b8c9-0123-defa-234567890123",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "obs-promis-29-anxiety-tscore",
+        "meta": {
+          "profile": [
+            "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-promis-29-anxiety-tscore|2027.0.0-ballot.1"
+          ]
+        },
+        "valueQuantity": {
+          "unit": "{score}",
+          "system": "http://unitsofmeasure.org",
+          "code": "{score}",
+          "value": 56.8
+        },
+        "method": {
+          "text": "PROMIS-29 Profile v2.1"
+        },
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/workflow-instantiatesCanonical",
+            "valueCanonical": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ObservationDefinition/mii-obsdef-pro-promis-29-anxiety-tscore"
+          }
+        ],
+        "derivedFrom": [
+          {
+            "reference": "QuestionnaireResponse/promis-29-response-1"
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "code": "71967-4",
+              "system": "http://loinc.org",
+              "display": "PROMIS-29 Anxiety score T-score"
+            }
+          ]
+        },
+        "status": "final",
+        "subject": {
+          "reference": "Patient/patient-example-1"
+        },
+        "effectiveDateTime": "2025-01-30T14:30:00Z"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:e5f6a7b8-c9d0-1234-efab-345678901234",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "obs-promis-29-depression-tscore",
+        "meta": {
+          "profile": [
+            "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-promis-29-depression-tscore|2027.0.0-ballot.1"
+          ]
+        },
+        "valueQuantity": {
+          "unit": "{score}",
+          "system": "http://unitsofmeasure.org",
+          "code": "{score}",
+          "value": 63.9
+        },
+        "method": {
+          "text": "PROMIS-29 Profile v2.1"
+        },
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/workflow-instantiatesCanonical",
+            "valueCanonical": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ObservationDefinition/mii-obsdef-pro-promis-29-depression-tscore"
+          }
+        ],
+        "derivedFrom": [
+          {
+            "reference": "QuestionnaireResponse/promis-29-response-1"
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "code": "77861-3",
+              "system": "http://loinc.org",
+              "display": "PROMIS emotional distress - depression - version 1.0 Tscore"
+            }
+          ]
+        },
+        "status": "final",
+        "subject": {
+          "reference": "Patient/patient-example-1"
+        },
+        "effectiveDateTime": "2025-01-30T14:30:00Z"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:f6a7b8c9-d0e1-2345-fabc-456789012345",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "obs-promis-29-fatigue-tscore",
+        "meta": {
+          "profile": [
+            "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-promis-29-fatigue-tscore|2027.0.0-ballot.1"
+          ]
+        },
+        "valueQuantity": {
+          "unit": "{score}",
+          "system": "http://unitsofmeasure.org",
+          "code": "{score}",
+          "value": 64.9
+        },
+        "method": {
+          "text": "PROMIS-29 Profile v2.1"
+        },
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/workflow-instantiatesCanonical",
+            "valueCanonical": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ObservationDefinition/mii-obsdef-pro-promis-29-fatigue-tscore"
+          }
+        ],
+        "derivedFrom": [
+          {
+            "reference": "QuestionnaireResponse/promis-29-response-1"
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "code": "77864-7",
+              "system": "http://loinc.org",
+              "display": "PROMIS fatigue - version 1.0 Tscore"
+            }
+          ]
+        },
+        "status": "final",
+        "subject": {
+          "reference": "Patient/patient-example-1"
+        },
+        "effectiveDateTime": "2025-01-30T14:30:00Z"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:a7b8c9d0-e1f2-3456-abcd-567890123456",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "obs-promis-29-sleep-tscore",
+        "meta": {
+          "profile": [
+            "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-promis-29-sleep-disturbance-tscore|2027.0.0-ballot.1"
+          ]
+        },
+        "valueQuantity": {
+          "unit": "{score}",
+          "system": "http://unitsofmeasure.org",
+          "code": "{score}",
+          "value": 53.6
+        },
+        "method": {
+          "text": "PROMIS-29 Profile v2.1"
+        },
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/workflow-instantiatesCanonical",
+            "valueCanonical": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ObservationDefinition/mii-obsdef-pro-promis-29-sleep-disturbance-tscore"
+          }
+        ],
+        "derivedFrom": [
+          {
+            "reference": "QuestionnaireResponse/promis-29-response-1"
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "code": "77860-5",
+              "system": "http://loinc.org",
+              "display": "PROMIS sleep disturbance - version 1.0 Tscore"
+            }
+          ]
+        },
+        "status": "final",
+        "subject": {
+          "reference": "Patient/patient-example-1"
+        },
+        "effectiveDateTime": "2025-01-30T14:30:00Z"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:b8c9d0e1-f2a3-4567-bcde-678901234567",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "obs-promis-29-social-tscore",
+        "meta": {
+          "profile": [
+            "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-promis-29-social-function-tscore|2027.0.0-ballot.1"
+          ]
+        },
+        "valueQuantity": {
+          "unit": "{score}",
+          "system": "http://unitsofmeasure.org",
+          "code": "{score}",
+          "value": 39.7
+        },
+        "method": {
+          "text": "PROMIS-29 Profile v2.1"
+        },
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/workflow-instantiatesCanonical",
+            "valueCanonical": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ObservationDefinition/mii-obsdef-pro-promis-29-social-function-tscore"
+          }
+        ],
+        "derivedFrom": [
+          {
+            "reference": "QuestionnaireResponse/promis-29-response-1"
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "code": "77854-8",
+              "system": "http://loinc.org",
+              "display": "PROMIS ability to participate in social roles and activities - version 2.0 Tscore"
+            }
+          ]
+        },
+        "status": "final",
+        "subject": {
+          "reference": "Patient/patient-example-1"
+        },
+        "effectiveDateTime": "2025-01-30T14:30:00Z"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:c9d0e1f2-a3b4-5678-cdef-789012345678",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "obs-promis-29-pain-interference-tscore",
+        "meta": {
+          "profile": [
+            "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-promis-29-pain-interference-tscore|2027.0.0-ballot.1"
+          ]
+        },
+        "valueQuantity": {
+          "unit": "{score}",
+          "system": "http://unitsofmeasure.org",
+          "code": "{score}",
+          "value": 60.9
+        },
+        "method": {
+          "text": "PROMIS-29 Profile v2.1"
+        },
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/workflow-instantiatesCanonical",
+            "valueCanonical": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ObservationDefinition/mii-obsdef-pro-promis-29-pain-interference-tscore"
+          }
+        ],
+        "derivedFrom": [
+          {
+            "reference": "QuestionnaireResponse/promis-29-response-1"
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "code": "77865-4",
+              "system": "http://loinc.org",
+              "display": "PROMIS pain interference - version 1.0 Tscore"
+            }
+          ]
+        },
+        "status": "final",
+        "subject": {
+          "reference": "Patient/patient-example-1"
+        },
+        "effectiveDateTime": "2025-01-30T14:30:00Z"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:d0e1f2a3-b4c5-6789-defa-890123456789",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "obs-promis-29-pain-intensity",
+        "meta": {
+          "profile": [
+            "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-promis-29-pain-intensity|2027.0.0-ballot.1"
+          ]
+        },
+        "valueQuantity": {
+          "unit": "1",
+          "system": "http://unitsofmeasure.org",
+          "code": "1",
+          "value": 5
+        },
+        "method": {
+          "text": "PROMIS-29 Profile v2.1 - Pain Intensity single item"
+        },
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/workflow-instantiatesCanonical",
+            "valueCanonical": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ObservationDefinition/mii-obsdef-pro-promis-29-pain-intensity"
+          }
+        ],
+        "derivedFrom": [
+          {
+            "reference": "QuestionnaireResponse/promis-29-response-1"
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "code": "75261-8",
+              "system": "http://loinc.org",
+              "display": "How intense was your average pain in the past 7 days [PROMIS]"
+            }
+          ]
+        },
+        "status": "final",
+        "subject": {
+          "reference": "Patient/patient-example-1"
+        },
+        "effectiveDateTime": "2025-01-30T14:30:00Z"
+      }
+    }
+  ],
+  "type": "collection",
+  "timestamp": "2025-01-30T14:35:00Z"
+}

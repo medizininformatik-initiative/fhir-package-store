@@ -1,0 +1,16 @@
+{
+  "resourceType": "ValueSet",
+  "status": "active",
+  "name": "UseAndAccessConditionsVS",
+  "id": "miabis-use-and-access-conditions-vs",
+  "title": "Use and Access Conditions Value Set",
+  "description": "Value set containing codes describing the conditions that may change the availability of the samples/data in the collection.",
+  "url": "https://fhir.bbmri-eric.eu/fhir/ValueSet/miabis-use-and-access-conditions-vs",
+  "compose": {
+    "include": [
+      {
+        "system": "https://fhir.bbmri-eric.eu/fhir/CodeSystem/miabis-use-and-access-conditions-cs"
+      }
+    ]
+  }
+}

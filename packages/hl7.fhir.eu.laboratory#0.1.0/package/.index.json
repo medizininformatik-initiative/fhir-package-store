@@ -1,0 +1,545 @@
+{
+  "index-version" : 2,
+  "files" : [
+    {
+      "filename" : "ImplementationGuide-hl7.fhir.eu.laboratory.json",
+      "resourceType" : "ImplementationGuide",
+      "id" : "hl7.fhir.eu.laboratory",
+      "url" : "http://hl7.eu/fhir/laboratory/ImplementationGuide/hl7.fhir.eu.laboratory",
+      "version" : "0.1.0"
+    },
+    {
+      "filename" : "CodeSystem-lab-localCs-eu-lab.json",
+      "resourceType" : "CodeSystem",
+      "id" : "lab-localCs-eu-lab",
+      "url" : "http://example.org/lab-codes",
+      "version" : "0.1.0",
+      "content" : "complete"
+    },
+    {
+      "filename" : "ConceptMap-ConceptMap-eu-diagRptStatus2CompStatus.json",
+      "resourceType" : "ConceptMap",
+      "id" : "ConceptMap-eu-diagRptStatus2CompStatus",
+      "url" : "http://hl7.eu/fhir/laboratory/ConceptMap/ConceptMap-eu-diagRptStatus2CompStatus",
+      "version" : "0.1.0"
+    },
+    {
+      "filename" : "ConceptMap-author2FHIR-eu-lab.json",
+      "resourceType" : "ConceptMap",
+      "id" : "author2FHIR-eu-lab",
+      "url" : "http://hl7.eu/fhir/laboratory/ConceptMap/author2FHIR-eu-lab",
+      "version" : "0.1.0"
+    },
+    {
+      "filename" : "ConceptMap-labRpt2FHIR-eu-lab.json",
+      "resourceType" : "ConceptMap",
+      "id" : "labRpt2FHIR-eu-lab",
+      "url" : "http://hl7.eu/fhir/laboratory/ConceptMap/labRpt2FHIR-eu-lab",
+      "version" : "0.1.0"
+    },
+    {
+      "filename" : "ConceptMap-legalAuth2FHIR-eu-lab.json",
+      "resourceType" : "ConceptMap",
+      "id" : "legalAuth2FHIR-eu-lab",
+      "url" : "http://hl7.eu/fhir/laboratory/ConceptMap/legalAuth2FHIR-eu-lab",
+      "version" : "0.1.0"
+    },
+    {
+      "filename" : "ConceptMap-order2FHIR-eu-lab.json",
+      "resourceType" : "ConceptMap",
+      "id" : "order2FHIR-eu-lab",
+      "url" : "http://hl7.eu/fhir/laboratory/ConceptMap/order2FHIR-eu-lab",
+      "version" : "0.1.0"
+    },
+    {
+      "filename" : "ConceptMap-payer2FHIR-eu-lab.json",
+      "resourceType" : "ConceptMap",
+      "id" : "payer2FHIR-eu-lab",
+      "url" : "http://hl7.eu/fhir/laboratory/ConceptMap/payer2FHIR-eu-lab",
+      "version" : "0.1.0"
+    },
+    {
+      "filename" : "ConceptMap-recipient2FHIR-eu-lab.json",
+      "resourceType" : "ConceptMap",
+      "id" : "recipient2FHIR-eu-lab",
+      "url" : "http://hl7.eu/fhir/laboratory/ConceptMap/recipient2FHIR-eu-lab",
+      "version" : "0.1.0"
+    },
+    {
+      "filename" : "ConceptMap-result2FHIR-eu-lab.json",
+      "resourceType" : "ConceptMap",
+      "id" : "result2FHIR-eu-lab",
+      "url" : "http://hl7.eu/fhir/laboratory/ConceptMap/result2FHIR-eu-lab",
+      "version" : "0.1.0"
+    },
+    {
+      "filename" : "ConceptMap-specimen2FHIR-eu-lab.json",
+      "resourceType" : "ConceptMap",
+      "id" : "specimen2FHIR-eu-lab",
+      "url" : "http://hl7.eu/fhir/laboratory/ConceptMap/specimen2FHIR-eu-lab",
+      "version" : "0.1.0"
+    },
+    {
+      "filename" : "ConceptMap-subject2FHIR-eu-lab.json",
+      "resourceType" : "ConceptMap",
+      "id" : "subject2FHIR-eu-lab",
+      "url" : "http://hl7.eu/fhir/laboratory/ConceptMap/subject2FHIR-eu-lab",
+      "version" : "0.1.0"
+    },
+    {
+      "filename" : "ConceptMap-validator2FHIR-eu-lab.json",
+      "resourceType" : "ConceptMap",
+      "id" : "validator2FHIR-eu-lab",
+      "url" : "http://hl7.eu/fhir/laboratory/ConceptMap/validator2FHIR-eu-lab",
+      "version" : "0.1.0"
+    },
+    {
+      "filename" : "StructureDefinition-Address-eu.json",
+      "resourceType" : "StructureDefinition",
+      "id" : "Address-eu",
+      "url" : "http://hl7.eu/fhir/laboratory/StructureDefinition/Address-eu",
+      "version" : "0.1.0",
+      "kind" : "complex-type",
+      "type" : "Address",
+      "derivation" : "constraint"
+    },
+    {
+      "filename" : "StructureDefinition-Author.json",
+      "resourceType" : "StructureDefinition",
+      "id" : "Author",
+      "url" : "http://hl7.eu/fhir/laboratory/StructureDefinition/Author",
+      "version" : "0.1.0",
+      "kind" : "logical",
+      "type" : "http://hl7.eu/fhir/laboratory/StructureDefinition/Author",
+      "derivation" : "specialization"
+    },
+    {
+      "filename" : "StructureDefinition-BodyStructure-eu-lab.json",
+      "resourceType" : "StructureDefinition",
+      "id" : "BodyStructure-eu-lab",
+      "url" : "http://hl7.eu/fhir/laboratory/StructureDefinition/BodyStructure-eu-lab",
+      "version" : "0.1.0",
+      "kind" : "resource",
+      "type" : "BodyStructure",
+      "derivation" : "constraint"
+    },
+    {
+      "filename" : "StructureDefinition-Bundle-eu-lab.json",
+      "resourceType" : "StructureDefinition",
+      "id" : "Bundle-eu-lab",
+      "url" : "http://hl7.eu/fhir/laboratory/StructureDefinition/Bundle-eu-lab",
+      "version" : "0.1.0",
+      "kind" : "resource",
+      "type" : "Bundle",
+      "derivation" : "constraint"
+    },
+    {
+      "filename" : "StructureDefinition-Composition-eu-lab.json",
+      "resourceType" : "StructureDefinition",
+      "id" : "Composition-eu-lab",
+      "url" : "http://hl7.eu/fhir/laboratory/StructureDefinition/Composition-eu-lab",
+      "version" : "0.1.0",
+      "kind" : "resource",
+      "type" : "Composition",
+      "derivation" : "constraint"
+    },
+    {
+      "filename" : "StructureDefinition-DiagnosticReport-eu-lab.json",
+      "resourceType" : "StructureDefinition",
+      "id" : "DiagnosticReport-eu-lab",
+      "url" : "http://hl7.eu/fhir/laboratory/StructureDefinition/DiagnosticReport-eu-lab",
+      "version" : "0.1.0",
+      "kind" : "resource",
+      "type" : "DiagnosticReport",
+      "derivation" : "constraint"
+    },
+    {
+      "filename" : "StructureDefinition-HumanName-eu.json",
+      "resourceType" : "StructureDefinition",
+      "id" : "HumanName-eu",
+      "url" : "http://hl7.eu/fhir/laboratory/StructureDefinition/HumanName-eu",
+      "version" : "0.1.0",
+      "kind" : "complex-type",
+      "type" : "HumanName",
+      "derivation" : "constraint"
+    },
+    {
+      "filename" : "StructureDefinition-HumanName-obl-eu-lab.json",
+      "resourceType" : "StructureDefinition",
+      "id" : "HumanName-obl-eu-lab",
+      "url" : "http://hl7.eu/fhir/laboratory/StructureDefinition/HumanName-obl-eu-lab",
+      "version" : "0.1.0",
+      "kind" : "complex-type",
+      "type" : "HumanName",
+      "derivation" : "constraint"
+    },
+    {
+      "filename" : "StructureDefinition-LabReport.json",
+      "resourceType" : "StructureDefinition",
+      "id" : "LabReport",
+      "url" : "http://hl7.eu/fhir/laboratory/StructureDefinition/LabReport",
+      "version" : "0.1.0",
+      "kind" : "logical",
+      "type" : "http://hl7.eu/fhir/laboratory/StructureDefinition/LabReport",
+      "derivation" : "specialization"
+    },
+    {
+      "filename" : "StructureDefinition-LegalAuthenticator.json",
+      "resourceType" : "StructureDefinition",
+      "id" : "LegalAuthenticator",
+      "url" : "http://hl7.eu/fhir/laboratory/StructureDefinition/LegalAuthenticator",
+      "version" : "0.1.0",
+      "kind" : "logical",
+      "type" : "http://hl7.eu/fhir/laboratory/StructureDefinition/LegalAuthenticator",
+      "derivation" : "specialization"
+    },
+    {
+      "filename" : "StructureDefinition-Observation-obl-eu-lab.json",
+      "resourceType" : "StructureDefinition",
+      "id" : "Observation-obl-eu-lab",
+      "url" : "http://hl7.eu/fhir/laboratory/StructureDefinition/Observation-obl-eu-lab",
+      "version" : "0.1.0",
+      "kind" : "resource",
+      "type" : "Observation",
+      "derivation" : "constraint"
+    },
+    {
+      "filename" : "StructureDefinition-Observation-resultslab-eu-lab.json",
+      "resourceType" : "StructureDefinition",
+      "id" : "Observation-resultslab-eu-lab",
+      "url" : "http://hl7.eu/fhir/laboratory/StructureDefinition/Observation-resultslab-eu-lab",
+      "version" : "0.1.0",
+      "kind" : "resource",
+      "type" : "Observation",
+      "derivation" : "constraint"
+    },
+    {
+      "filename" : "StructureDefinition-Order.json",
+      "resourceType" : "StructureDefinition",
+      "id" : "Order",
+      "url" : "http://hl7.eu/fhir/laboratory/StructureDefinition/Order",
+      "version" : "0.1.0",
+      "kind" : "logical",
+      "type" : "http://hl7.eu/fhir/laboratory/StructureDefinition/Order",
+      "derivation" : "specialization"
+    },
+    {
+      "filename" : "StructureDefinition-Patient-animal-eu-lab.json",
+      "resourceType" : "StructureDefinition",
+      "id" : "Patient-animal-eu-lab",
+      "url" : "http://hl7.eu/fhir/laboratory/StructureDefinition/Patient-animal-eu-lab",
+      "version" : "0.1.0",
+      "kind" : "resource",
+      "type" : "Patient",
+      "derivation" : "constraint"
+    },
+    {
+      "filename" : "StructureDefinition-Patient-eu-lab.json",
+      "resourceType" : "StructureDefinition",
+      "id" : "Patient-eu-lab",
+      "url" : "http://hl7.eu/fhir/laboratory/StructureDefinition/Patient-eu-lab",
+      "version" : "0.1.0",
+      "kind" : "resource",
+      "type" : "Patient",
+      "derivation" : "constraint"
+    },
+    {
+      "filename" : "StructureDefinition-Patient-obl-eu-lab.json",
+      "resourceType" : "StructureDefinition",
+      "id" : "Patient-obl-eu-lab",
+      "url" : "http://hl7.eu/fhir/laboratory/StructureDefinition/Patient-obl-eu-lab",
+      "version" : "0.1.0",
+      "kind" : "resource",
+      "type" : "Patient",
+      "derivation" : "constraint"
+    },
+    {
+      "filename" : "StructureDefinition-Payer.json",
+      "resourceType" : "StructureDefinition",
+      "id" : "Payer",
+      "url" : "http://hl7.eu/fhir/laboratory/StructureDefinition/Payer",
+      "version" : "0.1.0",
+      "kind" : "logical",
+      "type" : "http://hl7.eu/fhir/laboratory/StructureDefinition/Payer",
+      "derivation" : "specialization"
+    },
+    {
+      "filename" : "StructureDefinition-Practitioner-eu-lab.json",
+      "resourceType" : "StructureDefinition",
+      "id" : "Practitioner-eu-lab",
+      "url" : "http://hl7.eu/fhir/laboratory/StructureDefinition/Practitioner-eu-lab",
+      "version" : "0.1.0",
+      "kind" : "resource",
+      "type" : "Practitioner",
+      "derivation" : "constraint"
+    },
+    {
+      "filename" : "StructureDefinition-PractitionerRole-eu-lab.json",
+      "resourceType" : "StructureDefinition",
+      "id" : "PractitionerRole-eu-lab",
+      "url" : "http://hl7.eu/fhir/laboratory/StructureDefinition/PractitionerRole-eu-lab",
+      "version" : "0.1.0",
+      "kind" : "resource",
+      "type" : "PractitionerRole",
+      "derivation" : "constraint"
+    },
+    {
+      "filename" : "StructureDefinition-Quantity-eu-lab.json",
+      "resourceType" : "StructureDefinition",
+      "id" : "Quantity-eu-lab",
+      "url" : "http://hl7.eu/fhir/laboratory/StructureDefinition/Quantity-eu-lab",
+      "version" : "0.1.0",
+      "kind" : "complex-type",
+      "type" : "Quantity",
+      "derivation" : "constraint"
+    },
+    {
+      "filename" : "StructureDefinition-Ratio-eu-lab.json",
+      "resourceType" : "StructureDefinition",
+      "id" : "Ratio-eu-lab",
+      "url" : "http://hl7.eu/fhir/laboratory/StructureDefinition/Ratio-eu-lab",
+      "version" : "0.1.0",
+      "kind" : "complex-type",
+      "type" : "Ratio",
+      "derivation" : "constraint"
+    },
+    {
+      "filename" : "StructureDefinition-Recipient.json",
+      "resourceType" : "StructureDefinition",
+      "id" : "Recipient",
+      "url" : "http://hl7.eu/fhir/laboratory/StructureDefinition/Recipient",
+      "version" : "0.1.0",
+      "kind" : "logical",
+      "type" : "http://hl7.eu/fhir/laboratory/StructureDefinition/Recipient",
+      "derivation" : "specialization"
+    },
+    {
+      "filename" : "StructureDefinition-Result.json",
+      "resourceType" : "StructureDefinition",
+      "id" : "Result",
+      "url" : "http://hl7.eu/fhir/laboratory/StructureDefinition/Result",
+      "version" : "0.1.0",
+      "kind" : "logical",
+      "type" : "http://hl7.eu/fhir/laboratory/StructureDefinition/Result",
+      "derivation" : "specialization"
+    },
+    {
+      "filename" : "StructureDefinition-ServiceRequest-eu-lab.json",
+      "resourceType" : "StructureDefinition",
+      "id" : "ServiceRequest-eu-lab",
+      "url" : "http://hl7.eu/fhir/laboratory/StructureDefinition/ServiceRequest-eu-lab",
+      "version" : "0.1.0",
+      "kind" : "resource",
+      "type" : "ServiceRequest",
+      "derivation" : "constraint"
+    },
+    {
+      "filename" : "StructureDefinition-ServiceRequest-obl-eu-lab.json",
+      "resourceType" : "StructureDefinition",
+      "id" : "ServiceRequest-obl-eu-lab",
+      "url" : "http://hl7.eu/fhir/laboratory/StructureDefinition/ServiceRequest-obl-eu-lab",
+      "version" : "0.1.0",
+      "kind" : "resource",
+      "type" : "ServiceRequest",
+      "derivation" : "constraint"
+    },
+    {
+      "filename" : "StructureDefinition-Specimen-eu-lab.json",
+      "resourceType" : "StructureDefinition",
+      "id" : "Specimen-eu-lab",
+      "url" : "http://hl7.eu/fhir/laboratory/StructureDefinition/Specimen-eu-lab",
+      "version" : "0.1.0",
+      "kind" : "resource",
+      "type" : "Specimen",
+      "derivation" : "constraint"
+    },
+    {
+      "filename" : "StructureDefinition-Specimen-obl-eu-lab.json",
+      "resourceType" : "StructureDefinition",
+      "id" : "Specimen-obl-eu-lab",
+      "url" : "http://hl7.eu/fhir/laboratory/StructureDefinition/Specimen-obl-eu-lab",
+      "version" : "0.1.0",
+      "kind" : "resource",
+      "type" : "Specimen",
+      "derivation" : "constraint"
+    },
+    {
+      "filename" : "StructureDefinition-SpecimenLab.json",
+      "resourceType" : "StructureDefinition",
+      "id" : "SpecimenLab",
+      "url" : "http://hl7.eu/fhir/laboratory/StructureDefinition/SpecimenLab",
+      "version" : "0.1.0",
+      "kind" : "logical",
+      "type" : "http://hl7.eu/fhir/laboratory/StructureDefinition/SpecimenLab",
+      "derivation" : "specialization"
+    },
+    {
+      "filename" : "StructureDefinition-Subject.json",
+      "resourceType" : "StructureDefinition",
+      "id" : "Subject",
+      "url" : "http://hl7.eu/fhir/laboratory/StructureDefinition/Subject",
+      "version" : "0.1.0",
+      "kind" : "logical",
+      "type" : "http://hl7.eu/fhir/laboratory/StructureDefinition/Subject",
+      "derivation" : "specialization"
+    },
+    {
+      "filename" : "StructureDefinition-Substance-additive-eu-lab.json",
+      "resourceType" : "StructureDefinition",
+      "id" : "Substance-additive-eu-lab",
+      "url" : "http://hl7.eu/fhir/laboratory/StructureDefinition/Substance-additive-eu-lab",
+      "version" : "0.1.0",
+      "kind" : "resource",
+      "type" : "Substance",
+      "derivation" : "constraint"
+    },
+    {
+      "filename" : "StructureDefinition-Validator.json",
+      "resourceType" : "StructureDefinition",
+      "id" : "Validator",
+      "url" : "http://hl7.eu/fhir/laboratory/StructureDefinition/Validator",
+      "version" : "0.1.0",
+      "kind" : "logical",
+      "type" : "http://hl7.eu/fhir/laboratory/StructureDefinition/Validator",
+      "derivation" : "specialization"
+    },
+    {
+      "filename" : "StructureDefinition-composition-diagnosticReportReference.json",
+      "resourceType" : "StructureDefinition",
+      "id" : "composition-diagnosticReportReference",
+      "url" : "http://hl7.eu/fhir/laboratory/StructureDefinition/composition-diagnosticReportReference",
+      "version" : "0.1.0",
+      "kind" : "complex-type",
+      "type" : "Extension",
+      "derivation" : "constraint"
+    },
+    {
+      "filename" : "StructureDefinition-observation-certifiedRefMaterialCodeable.json",
+      "resourceType" : "StructureDefinition",
+      "id" : "observation-certifiedRefMaterialCodeable",
+      "url" : "http://hl7.eu/fhir/laboratory/StructureDefinition/observation-certifiedRefMaterialCodeable",
+      "version" : "0.1.0",
+      "kind" : "complex-type",
+      "type" : "Extension",
+      "derivation" : "constraint"
+    },
+    {
+      "filename" : "StructureDefinition-observation-certifiedRefMaterialIdentifer.json",
+      "resourceType" : "StructureDefinition",
+      "id" : "observation-certifiedRefMaterialIdentifer",
+      "url" : "http://hl7.eu/fhir/laboratory/StructureDefinition/observation-certifiedRefMaterialIdentifer",
+      "version" : "0.1.0",
+      "kind" : "complex-type",
+      "type" : "Extension",
+      "derivation" : "constraint"
+    },
+    {
+      "filename" : "StructureDefinition-observation-deviceLabTestKit.json",
+      "resourceType" : "StructureDefinition",
+      "id" : "observation-deviceLabTestKit",
+      "url" : "http://hl7.eu/fhir/laboratory/StructureDefinition/observation-deviceLabTestKit",
+      "version" : "0.1.0",
+      "kind" : "complex-type",
+      "type" : "Extension",
+      "derivation" : "constraint"
+    },
+    {
+      "filename" : "ValueSet-lab-certifiedRefMaterial-eu-lab.json",
+      "resourceType" : "ValueSet",
+      "id" : "lab-certifiedRefMaterial-eu-lab",
+      "url" : "http://hl7.eu/fhir/laboratory/ValueSet/lab-certifiedRefMaterial-eu-lab",
+      "version" : "0.1.0"
+    },
+    {
+      "filename" : "ValueSet-lab-laterality-eu-lab.json",
+      "resourceType" : "ValueSet",
+      "id" : "lab-laterality-eu-lab",
+      "url" : "http://hl7.eu/fhir/laboratory/ValueSet/lab-laterality-eu-lab",
+      "version" : "0.1.0"
+    },
+    {
+      "filename" : "ValueSet-lab-obsCode-eu-lab.json",
+      "resourceType" : "ValueSet",
+      "id" : "lab-obsCode-eu-lab",
+      "url" : "http://hl7.eu/fhir/laboratory/ValueSet/lab-obsCode-eu-lab",
+      "version" : "0.1.0"
+    },
+    {
+      "filename" : "ValueSet-lab-obsCode-loinc-eu-lab.json",
+      "resourceType" : "ValueSet",
+      "id" : "lab-obsCode-loinc-eu-lab",
+      "url" : "http://hl7.eu/fhir/laboratory/ValueSet/lab-obsCode-loinc-eu-lab",
+      "version" : "0.1.0"
+    },
+    {
+      "filename" : "ValueSet-lab-obsCode-npu-eu-lab.json",
+      "resourceType" : "ValueSet",
+      "id" : "lab-obsCode-npu-eu-lab",
+      "url" : "http://hl7.eu/fhir/laboratory/ValueSet/lab-obsCode-npu-eu-lab",
+      "version" : "0.1.0"
+    },
+    {
+      "filename" : "ValueSet-lab-orderCodes-eu-lab.json",
+      "resourceType" : "ValueSet",
+      "id" : "lab-orderCodes-eu-lab",
+      "url" : "http://hl7.eu/fhir/laboratory/ValueSet/lab-orderCodes-eu-lab",
+      "version" : "0.1.0"
+    },
+    {
+      "filename" : "ValueSet-lab-reportType-eu-lab.json",
+      "resourceType" : "ValueSet",
+      "id" : "lab-reportType-eu-lab",
+      "url" : "http://hl7.eu/fhir/laboratory/ValueSet/lab-reportType-eu-lab",
+      "version" : "0.1.0"
+    },
+    {
+      "filename" : "ValueSet-lab-siteQualifier-eu-lab.json",
+      "resourceType" : "ValueSet",
+      "id" : "lab-siteQualifier-eu-lab",
+      "url" : "http://hl7.eu/fhir/laboratory/ValueSet/lab-siteQualifier-eu-lab",
+      "version" : "0.1.0"
+    },
+    {
+      "filename" : "ValueSet-lab-specialty-eu-lab.json",
+      "resourceType" : "ValueSet",
+      "id" : "lab-specialty-eu-lab",
+      "url" : "http://hl7.eu/fhir/laboratory/ValueSet/lab-specialty-eu-lab",
+      "version" : "0.1.0"
+    },
+    {
+      "filename" : "ValueSet-lab-specimenAdditive-eu-lab.json",
+      "resourceType" : "ValueSet",
+      "id" : "lab-specimenAdditive-eu-lab",
+      "url" : "http://hl7.eu/fhir/laboratory/ValueSet/lab-specimenAdditive-eu-lab",
+      "version" : "0.1.0"
+    },
+    {
+      "filename" : "ValueSet-lab-specimenContainer-eu-lab.json",
+      "resourceType" : "ValueSet",
+      "id" : "lab-specimenContainer-eu-lab",
+      "url" : "http://hl7.eu/fhir/laboratory/ValueSet/lab-specimenContainer-eu-lab",
+      "version" : "0.1.0"
+    },
+    {
+      "filename" : "ValueSet-lab-specimenType-eu-lab.json",
+      "resourceType" : "ValueSet",
+      "id" : "lab-specimenType-eu-lab",
+      "url" : "http://hl7.eu/fhir/laboratory/ValueSet/lab-specimenType-eu-lab",
+      "version" : "0.1.0"
+    },
+    {
+      "filename" : "ValueSet-lab-studyType-eu-lab.json",
+      "resourceType" : "ValueSet",
+      "id" : "lab-studyType-eu-lab",
+      "url" : "http://hl7.eu/fhir/laboratory/ValueSet/lab-studyType-eu-lab",
+      "version" : "0.1.0"
+    },
+    {
+      "filename" : "ValueSet-lab-technique-eu-lab.json",
+      "resourceType" : "ValueSet",
+      "id" : "lab-technique-eu-lab",
+      "url" : "http://hl7.eu/fhir/laboratory/ValueSet/lab-technique-eu-lab",
+      "version" : "0.1.0"
+    }
+  ]
+}

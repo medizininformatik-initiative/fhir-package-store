@@ -1,0 +1,373 @@
+{
+  "resourceType": "QuestionnaireResponse",
+  "id": "mii-exa-pro-wi-7-response",
+  "meta": {
+    "profile": [
+      "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-questionnaire-response|2027.0.0-ballot.1"
+    ]
+  },
+  "item": [
+    {
+      "answer": [
+        {
+          "valueCoding": {
+            "code": "373066001",
+            "system": "http://snomed.info/sct",
+            "display": "Yes",
+            "_display": {
+              "extension": [
+                {
+                  "extension": [
+                    {
+                      "url": "lang",
+                      "valueCode": "de"
+                    },
+                    {
+                      "url": "content",
+                      "valueString": "Ja"
+                    }
+                  ],
+                  "url": "http://hl7.org/fhir/StructureDefinition/translation"
+                }
+              ]
+            }
+          }
+        }
+      ],
+      "linkId": "wi7-q01",
+      "text": "Do you think there is something seriously wrong with your body?",
+      "_text": {
+        "extension": [
+          {
+            "extension": [
+              {
+                "url": "lang",
+                "valueCode": "de"
+              },
+              {
+                "url": "content",
+                "valueString": "Denken Sie, dass mit Ihrem Körper ernsthaft etwas nicht in Ordnung ist?"
+              }
+            ],
+            "url": "http://hl7.org/fhir/StructureDefinition/translation"
+          }
+        ]
+      }
+    },
+    {
+      "answer": [
+        {
+          "valueCoding": {
+            "code": "373067005",
+            "system": "http://snomed.info/sct",
+            "display": "No",
+            "_display": {
+              "extension": [
+                {
+                  "extension": [
+                    {
+                      "url": "lang",
+                      "valueCode": "de"
+                    },
+                    {
+                      "url": "content",
+                      "valueString": "Nein"
+                    }
+                  ],
+                  "url": "http://hl7.org/fhir/StructureDefinition/translation"
+                }
+              ]
+            }
+          }
+        }
+      ],
+      "linkId": "wi7-q02",
+      "text": "Do you worry a lot about your health?",
+      "_text": {
+        "extension": [
+          {
+            "extension": [
+              {
+                "url": "lang",
+                "valueCode": "de"
+              },
+              {
+                "url": "content",
+                "valueString": "Machen Sie sich viel Sorgen um Ihre Gesundheit?"
+              }
+            ],
+            "url": "http://hl7.org/fhir/StructureDefinition/translation"
+          }
+        ]
+      }
+    },
+    {
+      "answer": [
+        {
+          "valueCoding": {
+            "code": "373067005",
+            "system": "http://snomed.info/sct",
+            "display": "No",
+            "_display": {
+              "extension": [
+                {
+                  "extension": [
+                    {
+                      "url": "lang",
+                      "valueCode": "de"
+                    },
+                    {
+                      "url": "content",
+                      "valueString": "Nein"
+                    }
+                  ],
+                  "url": "http://hl7.org/fhir/StructureDefinition/translation"
+                }
+              ]
+            }
+          }
+        }
+      ],
+      "linkId": "wi7-q03",
+      "text": "Is it hard for you to believe the doctor when he tells you there is nothing to worry about?",
+      "_text": {
+        "extension": [
+          {
+            "extension": [
+              {
+                "url": "lang",
+                "valueCode": "de"
+              },
+              {
+                "url": "content",
+                "valueString": "Können Sie der Ärztin/dem Arzt nur schwer glauben, wenn sie/er sagt, dass kein Grund zur Besorgnis besteht?"
+              }
+            ],
+            "url": "http://hl7.org/fhir/StructureDefinition/translation"
+          }
+        ]
+      }
+    },
+    {
+      "answer": [
+        {
+          "valueCoding": {
+            "code": "373066001",
+            "system": "http://snomed.info/sct",
+            "display": "Yes",
+            "_display": {
+              "extension": [
+                {
+                  "extension": [
+                    {
+                      "url": "lang",
+                      "valueCode": "de"
+                    },
+                    {
+                      "url": "content",
+                      "valueString": "Ja"
+                    }
+                  ],
+                  "url": "http://hl7.org/fhir/StructureDefinition/translation"
+                }
+              ]
+            }
+          }
+        }
+      ],
+      "linkId": "wi7-q04",
+      "text": "Do you often worry about the possibility that you have a serious illness?",
+      "_text": {
+        "extension": [
+          {
+            "extension": [
+              {
+                "url": "lang",
+                "valueCode": "de"
+              },
+              {
+                "url": "content",
+                "valueString": "Machen Sie sich oft Sorgen, möglicherweise eine ernsthafte Krankheit zu haben?"
+              }
+            ],
+            "url": "http://hl7.org/fhir/StructureDefinition/translation"
+          }
+        ]
+      }
+    },
+    {
+      "answer": [
+        {
+          "valueCoding": {
+            "code": "373066001",
+            "system": "http://snomed.info/sct",
+            "display": "Yes",
+            "_display": {
+              "extension": [
+                {
+                  "extension": [
+                    {
+                      "url": "lang",
+                      "valueCode": "de"
+                    },
+                    {
+                      "url": "content",
+                      "valueString": "Ja"
+                    }
+                  ],
+                  "url": "http://hl7.org/fhir/StructureDefinition/translation"
+                }
+              ]
+            }
+          }
+        }
+      ],
+      "linkId": "wi7-q05",
+      "text": "Are you bothered by many different pains and aches?",
+      "_text": {
+        "extension": [
+          {
+            "extension": [
+              {
+                "url": "lang",
+                "valueCode": "de"
+              },
+              {
+                "url": "content",
+                "valueString": "Werden Sie durch eine Vielzahl von Schmerzen geplagt?"
+              }
+            ],
+            "url": "http://hl7.org/fhir/StructureDefinition/translation"
+          }
+        ]
+      }
+    },
+    {
+      "answer": [
+        {
+          "valueCoding": {
+            "code": "373067005",
+            "system": "http://snomed.info/sct",
+            "display": "No",
+            "_display": {
+              "extension": [
+                {
+                  "extension": [
+                    {
+                      "url": "lang",
+                      "valueCode": "de"
+                    },
+                    {
+                      "url": "content",
+                      "valueString": "Nein"
+                    }
+                  ],
+                  "url": "http://hl7.org/fhir/StructureDefinition/translation"
+                }
+              ]
+            }
+          }
+        }
+      ],
+      "linkId": "wi7-q06",
+      "text": "If disease is brought to your attention (e.g., on TV, radio, the newspapers, or by someone you know), do you worry about getting it yourself?",
+      "_text": {
+        "extension": [
+          {
+            "extension": [
+              {
+                "url": "lang",
+                "valueCode": "de"
+              },
+              {
+                "url": "content",
+                "valueString": "Wenn Sie auf eine Krankheit aufmerksam gemacht werden (durch Fernsehen, Zeitung oder einen Bekannten), machen Sie sich dann Sorgen, dass Sie diese Krankheit auch bekommen?"
+              }
+            ],
+            "url": "http://hl7.org/fhir/StructureDefinition/translation"
+          }
+        ]
+      }
+    },
+    {
+      "answer": [
+        {
+          "valueCoding": {
+            "code": "373067005",
+            "system": "http://snomed.info/sct",
+            "display": "No",
+            "_display": {
+              "extension": [
+                {
+                  "extension": [
+                    {
+                      "url": "lang",
+                      "valueCode": "de"
+                    },
+                    {
+                      "url": "content",
+                      "valueString": "Nein"
+                    }
+                  ],
+                  "url": "http://hl7.org/fhir/StructureDefinition/translation"
+                }
+              ]
+            }
+          }
+        }
+      ],
+      "linkId": "wi7-q07",
+      "text": "Do you find that you are bothered by many different symptoms?",
+      "_text": {
+        "extension": [
+          {
+            "extension": [
+              {
+                "url": "lang",
+                "valueCode": "de"
+              },
+              {
+                "url": "content",
+                "valueString": "Finden Sie, dass Sie von einer Vielzahl unterschiedlicher Symptome geplagt werden?"
+              }
+            ],
+            "url": "http://hl7.org/fhir/StructureDefinition/translation"
+          }
+        ]
+      }
+    },
+    {
+      "answer": [
+        {
+          "valueDecimal": 3
+        }
+      ],
+      "linkId": "wi7-score-total",
+      "text": "WI-7 Total Score (0-7)",
+      "_text": {
+        "extension": [
+          {
+            "extension": [
+              {
+                "url": "lang",
+                "valueCode": "de"
+              },
+              {
+                "url": "content",
+                "valueString": "WI-7 Summenwert (0-7)"
+              }
+            ],
+            "url": "http://hl7.org/fhir/StructureDefinition/translation"
+          }
+        ]
+      }
+    }
+  ],
+  "status": "completed",
+  "language": "en",
+  "subject": {
+    "reference": "Patient/mii-exa-pro-patient"
+  },
+  "authored": "2026-08-28T09:30:00Z",
+  "questionnaire": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/Questionnaire/mii-qst-pro-wi-7|2027.0.0-ballot.1"
+}

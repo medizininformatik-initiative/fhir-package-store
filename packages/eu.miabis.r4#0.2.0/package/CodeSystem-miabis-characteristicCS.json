@@ -1,0 +1,33 @@
+{
+  "resourceType": "CodeSystem",
+  "status": "active",
+  "content": "complete",
+  "name": "CharacteristicCS",
+  "id": "miabis-characteristicCS",
+  "title": "MIABIS Characteristics code system",
+  "description": "Codes for specifiying which characteristic is being described.",
+  "url": "https://fhir.bbmri-eric.eu/fhir/CodeSystem/miabis-characteristicCS",
+  "concept": [
+    {
+      "code": "Age",
+      "display": "Age range"
+    },
+    {
+      "code": "Sex",
+      "display": "Sex"
+    },
+    {
+      "code": "StorageTemperature",
+      "display": "Storage temperature"
+    },
+    {
+      "code": "MaterialType",
+      "display": "Material type"
+    },
+    {
+      "code": "Diagnosis",
+      "display": "Diagnosis"
+    }
+  ],
+  "count": 5
+}

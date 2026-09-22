@@ -1,0 +1,311 @@
+{
+  "resourceType": "ConceptMap",
+  "id": "mii-cm-biobank-long-term-storage-sprec-sct",
+  "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-biobank/ConceptMap/mii-cm-biobank-long-term-storage-sprec-sct",
+  "title": "SPREC 4.0 Long-Term Storage Mapping",
+  "description": "Mapping der SPREC 4.0 Long-Term Storage Containertypen auf die im Modul verwendeten SNOMED CT Codes.",
+  "version": "2026.0.1",
+  "publisher": "Medizininformatik Initiative",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "https://www.medizininformatik-initiative.de"
+        }
+      ]
+    }
+  ],
+  "extension": [
+    {
+      "url": "https://www.medizininformatik-initiative.de/fhir/modul-meta/StructureDefinition/mii-ex-meta-license-codeable",
+      "valueCodeableConcept": {
+        "coding": [
+          {
+            "code": "CC-BY-4.0",
+            "system": "http://hl7.org/fhir/spdx-license",
+            "display": "Creative Commons Attribution 4.0 International"
+          }
+        ]
+      }
+    }
+  ],
+  "copyright": "This concept map includes content from SNOMED CT, which is copyright © 2002+ International Health Terminology Standards Development Organisation (IHTSDO), and distributed by agreement between IHTSDO and HL7. Implementer use of SNOMED CT is not covered by this agreement. It also includes content from SPREC 4.0, https://doi.org/10.1089/bio.2024.0010",
+  "status": "active",
+  "group": [
+    {
+      "source": "http://www.isber.org/sprec/long-term-storage",
+      "target": "http://snomed.info/sct",
+      "element": [
+        {
+          "code": "A",
+          "display": "PP tube",
+          "target": [
+            {
+              "code": "702269006:840560000=256633009",
+              "display": "General specimen container, no additive, sterile (physical object): Has compositional material=Polypropylene (substance)",
+              "equivalence": "wider"
+            }
+          ]
+        },
+        {
+          "code": "B",
+          "display": "PP tube",
+          "target": [
+            {
+              "code": "702269006:840560000=256633009",
+              "display": "General specimen container, no additive, sterile (physical object): Has compositional material=Polypropylene (substance)",
+              "equivalence": "wider"
+            }
+          ]
+        },
+        {
+          "code": "V",
+          "display": "PP tube",
+          "target": [
+            {
+              "code": "702269006:840560000=256633009",
+              "display": "General specimen container, no additive, sterile (physical object): Has compositional material=Polypropylene (substance)",
+              "equivalence": "wider"
+            }
+          ]
+        },
+        {
+          "code": "J",
+          "display": "PP tube",
+          "target": [
+            {
+              "code": "702269006:840560000=256633009",
+              "display": "General specimen container, no additive, sterile (physical object): Has compositional material=Polypropylene (substance)",
+              "equivalence": "wider"
+            }
+          ]
+        },
+        {
+          "code": "K",
+          "display": "PP tube",
+          "target": [
+            {
+              "code": "702269006:840560000=256633009",
+              "display": "General specimen container, no additive, sterile (physical object): Has compositional material=Polypropylene (substance)",
+              "equivalence": "wider"
+            }
+          ]
+        },
+        {
+          "code": "S",
+          "display": "PP tube",
+          "target": [
+            {
+              "code": "702269006:840560000=256633009",
+              "display": "General specimen container, no additive, sterile (physical object): Has compositional material=Polypropylene (substance)",
+              "equivalence": "wider"
+            }
+          ]
+        },
+        {
+          "code": "T",
+          "display": "PP tube",
+          "target": [
+            {
+              "code": "702269006:840560000=256633009",
+              "display": "General specimen container, no additive, sterile (physical object): Has compositional material=Polypropylene (substance)",
+              "equivalence": "wider"
+            }
+          ]
+        },
+        {
+          "code": "W",
+          "display": "PP tube",
+          "target": [
+            {
+              "code": "702269006:840560000=256633009",
+              "display": "General specimen container, no additive, sterile (physical object): Has compositional material=Polypropylene (substance)",
+              "equivalence": "wider"
+            }
+          ]
+        },
+        {
+          "code": "C",
+          "display": "Cryotube",
+          "target": [
+            {
+              "code": "702269006",
+              "display": "General specimen container, no additive, sterile (physical object)",
+              "equivalence": "wider"
+            }
+          ]
+        },
+        {
+          "code": "D",
+          "display": "Cryotube",
+          "target": [
+            {
+              "code": "702269006",
+              "display": "General specimen container, no additive, sterile (physical object)",
+              "equivalence": "wider"
+            }
+          ]
+        },
+        {
+          "code": "E",
+          "display": "Cryotube",
+          "target": [
+            {
+              "code": "702269006",
+              "display": "General specimen container, no additive, sterile (physical object)",
+              "equivalence": "wider"
+            }
+          ]
+        },
+        {
+          "code": "N",
+          "display": "Cryotube",
+          "target": [
+            {
+              "code": "702269006",
+              "display": "General specimen container, no additive, sterile (physical object)",
+              "equivalence": "wider"
+            }
+          ]
+        },
+        {
+          "code": "F",
+          "display": "Straw",
+          "target": [
+            {
+              "code": "464601003",
+              "display": "Tissue storage straw (physical object)",
+              "equivalence": "narrower",
+              "comment": "Der SNOMED Code gilt nur für Tissue straws."
+            }
+          ]
+        },
+        {
+          "code": "G",
+          "display": "Straw",
+          "target": [
+            {
+              "code": "464601003",
+              "display": "Tissue storage straw (physical object)",
+              "equivalence": "narrower",
+              "comment": "Der SNOMED Code gilt nur für Tissue straws."
+            }
+          ]
+        },
+        {
+          "code": "H",
+          "display": "Straw",
+          "target": [
+            {
+              "code": "464601003",
+              "display": "Tissue storage straw (physical object)",
+              "equivalence": "narrower",
+              "comment": "Der SNOMED Code gilt nur für Tissue straws."
+            }
+          ]
+        },
+        {
+          "code": "I",
+          "display": "Straw",
+          "target": [
+            {
+              "code": "464601003",
+              "display": "Tissue storage straw (physical object)",
+              "equivalence": "narrower",
+              "comment": "Der SNOMED Code gilt nur für Tissue straws."
+            }
+          ]
+        },
+        {
+          "code": "O",
+          "display": "Straw",
+          "target": [
+            {
+              "code": "464601003",
+              "display": "Tissue storage straw (physical object)",
+              "equivalence": "narrower",
+              "comment": "Der SNOMED Code gilt nur für Tissue straws."
+            }
+          ]
+        },
+        {
+          "code": "L",
+          "display": "Microplate well",
+          "target": [
+            {
+              "code": "434822004",
+              "display": "Specimen well (physical object)",
+              "equivalence": "wider"
+            }
+          ]
+        },
+        {
+          "code": "M",
+          "display": "Microplate well",
+          "target": [
+            {
+              "code": "434822004",
+              "display": "Specimen well (physical object)",
+              "equivalence": "wider"
+            }
+          ]
+        },
+        {
+          "code": "P",
+          "display": "Paraffin block",
+          "target": [
+            {
+              "equivalence": "unmatched",
+              "product": [
+                {
+                  "property": "http://hl7.org/fhir/StructureDefinition/Specimen#Specimen.container.additive[x]",
+                  "value": "311731000",
+                  "display": "Paraffin wax (substance)"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "code": "U",
+          "display": "Paraffin block",
+          "target": [
+            {
+              "equivalence": "unmatched",
+              "product": [
+                {
+                  "property": "http://hl7.org/fhir/StructureDefinition/Specimen#Specimen.container.additive[x]",
+                  "value": "311731000",
+                  "display": "Paraffin wax (substance)"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "code": "Q",
+          "display": "Bag",
+          "target": [
+            {
+              "code": "463490008",
+              "display": "Medical bag (physical object)",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "Z",
+          "display": "Other",
+          "target": [
+            {
+              "code": "706437002",
+              "display": "Container (physical object)",
+              "equivalence": "wider"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

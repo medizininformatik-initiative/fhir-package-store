@@ -1,0 +1,25 @@
+{
+  "resourceType": "CodeSystem",
+  "status": "active",
+  "content": "complete",
+  "name": "InfrastructuralCapabilitiesCS",
+  "id": "miabis-infrastructural-capabilities-cs",
+  "title": "Infrastructural Capabilities Code System",
+  "description": "Code sistem representing the echnical infrastructural capabilities that the biobank can offer to the clients.",
+  "url": "https://fhir.bbmri-eric.eu/fhir/CodeSystem/miabis-infrastructural-capabilities-cs",
+  "concept": [
+    {
+      "code": "SampleStorage",
+      "display": "Sample Storage"
+    },
+    {
+      "code": "DataStorage",
+      "display": "Data Storage"
+    },
+    {
+      "code": "Biosafety",
+      "display": "Biosafety Abilities"
+    }
+  ],
+  "count": 3
+}

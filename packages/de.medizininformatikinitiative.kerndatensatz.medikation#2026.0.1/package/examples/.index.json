@@ -1,0 +1,130 @@
+{
+  "index-version" : 2,
+  "files" : [
+    {
+      "filename" : "List-mii-exa-medikation-list-admission.json",
+      "resourceType" : "List",
+      "id" : "mii-exa-medikation-list-admission"
+    },
+    {
+      "filename" : "List-mii-exa-medikation-medikationsliste-aktuelle-therapie.json",
+      "resourceType" : "List",
+      "id" : "mii-exa-medikation-medikationsliste-aktuelle-therapie"
+    },
+    {
+      "filename" : "List-mii-exa-medikation-medikationsliste-aufnahmemedikation.json",
+      "resourceType" : "List",
+      "id" : "mii-exa-medikation-medikationsliste-aufnahmemedikation"
+    },
+    {
+      "filename" : "Medication-mii-exa-medikation-medication-ass-100.json",
+      "resourceType" : "Medication",
+      "id" : "mii-exa-medikation-medication-ass-100"
+    },
+    {
+      "filename" : "Medication-mii-exa-medikation-medication-caelyx.json",
+      "resourceType" : "Medication",
+      "id" : "mii-exa-medikation-medication-caelyx"
+    },
+    {
+      "filename" : "Medication-mii-exa-medikation-medication-calcium.json",
+      "resourceType" : "Medication",
+      "id" : "mii-exa-medikation-medication-calcium"
+    },
+    {
+      "filename" : "Medication-mii-exa-medikation-medication-dolomo-nacht.json",
+      "resourceType" : "Medication",
+      "id" : "mii-exa-medikation-medication-dolomo-nacht"
+    },
+    {
+      "filename" : "Medication-mii-exa-medikation-medication-dolomo-tag.json",
+      "resourceType" : "Medication",
+      "id" : "mii-exa-medikation-medication-dolomo-tag"
+    },
+    {
+      "filename" : "Medication-mii-exa-medikation-medication-dolomo.json",
+      "resourceType" : "Medication",
+      "id" : "mii-exa-medikation-medication-dolomo"
+    },
+    {
+      "filename" : "Medication-mii-exa-medikation-medication-glucoseloesung.json",
+      "resourceType" : "Medication",
+      "id" : "mii-exa-medikation-medication-glucoseloesung"
+    },
+    {
+      "filename" : "Medication-mii-exa-medikation-medication-propofol.json",
+      "resourceType" : "Medication",
+      "id" : "mii-exa-medikation-medication-propofol"
+    },
+    {
+      "filename" : "Medication-mii-exa-medikation-medication-rezeptur.json",
+      "resourceType" : "Medication",
+      "id" : "mii-exa-medikation-medication-rezeptur"
+    },
+    {
+      "filename" : "Medication-mii-exa-medikation-medication-thiotepa.json",
+      "resourceType" : "Medication",
+      "id" : "mii-exa-medikation-medication-thiotepa"
+    },
+    {
+      "filename" : "MedicationAdministration-mii-exa-medikation-medication-administration.json",
+      "resourceType" : "MedicationAdministration",
+      "id" : "mii-exa-medikation-medication-administration"
+    },
+    {
+      "filename" : "MedicationRequest-mii-exa-medikation-medication-request-caelyx.json",
+      "resourceType" : "MedicationRequest",
+      "id" : "mii-exa-medikation-medication-request-caelyx"
+    },
+    {
+      "filename" : "MedicationStatement-mii-exa-medikation-medication-statement-caelyx.json",
+      "resourceType" : "MedicationStatement",
+      "id" : "mii-exa-medikation-medication-statement-caelyx"
+    },
+    {
+      "filename" : "MedicationStatement-mii-exa-medikation-medication-statement-concor.json",
+      "resourceType" : "MedicationStatement",
+      "id" : "mii-exa-medikation-medication-statement-concor"
+    },
+    {
+      "filename" : "MedicationStatement-mii-exa-medikation-medication-statement-hct.json",
+      "resourceType" : "MedicationStatement",
+      "id" : "mii-exa-medikation-medication-statement-hct"
+    },
+    {
+      "filename" : "MedicationStatement-mii-exa-medikation-medication-statement-ibuprofen.json",
+      "resourceType" : "MedicationStatement",
+      "id" : "mii-exa-medikation-medication-statement-ibuprofen"
+    },
+    {
+      "filename" : "MedicationStatement-mii-exa-medikation-medication-statement-intravenous-use.json",
+      "resourceType" : "MedicationStatement",
+      "id" : "mii-exa-medikation-medication-statement-intravenous-use"
+    },
+    {
+      "filename" : "MedicationStatement-mii-exa-medikation-medication-statement-offset.json",
+      "resourceType" : "MedicationStatement",
+      "id" : "mii-exa-medikation-medication-statement-offset"
+    },
+    {
+      "filename" : "MedicationStatement-mii-exa-medikation-medication-statement-periodisches-intervall.json",
+      "resourceType" : "MedicationStatement",
+      "id" : "mii-exa-medikation-medication-statement-periodisches-intervall"
+    },
+    {
+      "filename" : "MedicationStatement-mii-exa-medikation-medication-statement-zopiclon.json",
+      "resourceType" : "MedicationStatement",
+      "id" : "mii-exa-medikation-medication-statement-zopiclon"
+    },
+    {
+      "filename" : "MedicationStatement-mii-exa-medikation-medication-statement.json",
+      "resourceType" : "MedicationStatement",
+      "id" : "mii-exa-medikation-medication-statement"
+    },
+    {
+      "filename" : "Procedure-mii-exa-medikation-procedure-thiotepa.json",
+      "resourceType" : "Procedure",
+      "id" : "mii-exa-medikation-procedure-thiotepa"
+    }
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "resourceType": "Organization",
+  "id": "7772",
+  "name": "Zentrallabor Beispielklinikum",
+  "identifier": [
+    {
+      "system": "https://example.org/fhir/sid/test-organizations",
+      "value": "7772"
+    }
+  ]
+}

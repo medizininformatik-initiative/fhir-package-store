@@ -1,0 +1,33 @@
+{
+  "resourceType": "CodeSystem",
+  "status": "active",
+  "content": "complete",
+  "name": "SexCS",
+  "id": "miabis-sex-cs",
+  "title": "MIABIS Sex Code System",
+  "description": "Codes for providing information about sex of the patient",
+  "url": "https://fhir.bbmri-eric.eu/fhir/CodeSystem/miabis-sex-cs",
+  "concept": [
+    {
+      "code": "Male",
+      "display": "Male"
+    },
+    {
+      "code": "Female",
+      "display": "Female"
+    },
+    {
+      "code": "Unknown",
+      "display": "Unknown"
+    },
+    {
+      "code": "Undifferentiated",
+      "display": "Undifferentiated"
+    },
+    {
+      "code": "NotApplicable",
+      "display": "Not Applicable"
+    }
+  ],
+  "count": 5
+}

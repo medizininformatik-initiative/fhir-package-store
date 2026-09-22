@@ -1,0 +1,204 @@
+{
+  "resourceType": "Questionnaire",
+  "id": "mii-qst-pro-ssd-12",
+  "meta": {
+    "profile": [
+      "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-questionnaire|2027.0.0-ballot.1"
+    ]
+  },
+  "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/Questionnaire/mii-qst-pro-ssd-12",
+  "title": "MII QST PRO SSD-12",
+  "description": "SSD-12 — Somatic Symptom Disorder – B Criteria Scale (Toussaint et al. 2016/2017), 12-item German self-report scale",
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/artifact-versionAlgorithm",
+      "valueCoding": {
+        "code": "natural",
+        "system": "http://hl7.org/fhir/version-algorithm",
+        "display": "Natural"
+      }
+    },
+    {
+      "extension": [
+        {
+          "url": "displayable",
+          "valueBoolean": true
+        },
+        {
+          "url": "collectable",
+          "valueBoolean": true
+        },
+        {
+          "url": "calculatable",
+          "valueBoolean": true
+        },
+        {
+          "url": "extractable",
+          "valueBoolean": true
+        },
+        {
+          "url": "domainAligned",
+          "valueBoolean": true
+        }
+      ],
+      "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-ex-pro-questionnaire-capabilities"
+    },
+    {
+      "valueExpression": {
+        "name": "ssd12Sum",
+        "language": "text/fhirpath",
+        "expression": "%resource.item.where(linkId.matches('^ssd12-q(0[1-9]|1[0-2])$')).answer.value.weight().sum()"
+      },
+      "url": "http://hl7.org/fhir/StructureDefinition/variable"
+    }
+  ],
+  "code": [
+    {
+      "code": "ssd-12",
+      "system": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-questionnaire-catalogue",
+      "display": "SSD-12 (Somatic Symptom Disorder - B Criteria Scale, Toussaint et al.)"
+    }
+  ],
+  "item": [
+    {
+      "linkId": "ssd12-intro",
+      "type": "display",
+      "text": "Wie sehr wurden Sie in den letzten 7 Tagen durch folgende Beschwerden beeinträchtigt?"
+    },
+    {
+      "linkId": "ssd12-q01",
+      "type": "choice",
+      "prefix": "1",
+      "text": "Ich denke, dass meine körperlichen Beschwerden Anzeichen einer ernsthaften Erkrankung sind.",
+      "answerValueSet": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-ssd-12-answers"
+    },
+    {
+      "linkId": "ssd12-q02",
+      "type": "choice",
+      "prefix": "2",
+      "text": "Ich mache mir große Sorgen um meine Gesundheit.",
+      "answerValueSet": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-ssd-12-answers"
+    },
+    {
+      "linkId": "ssd12-q03",
+      "type": "choice",
+      "prefix": "3",
+      "text": "Meine gesundheitlichen Sorgen behindern mich im Alltag.",
+      "answerValueSet": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-ssd-12-answers"
+    },
+    {
+      "linkId": "ssd12-q04",
+      "type": "choice",
+      "prefix": "4",
+      "text": "Ich bin von der Ernsthaftigkeit meiner körperlichen Beschwerden überzeugt.",
+      "answerValueSet": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-ssd-12-answers"
+    },
+    {
+      "linkId": "ssd12-q05",
+      "type": "choice",
+      "prefix": "5",
+      "text": "Meine körperlichen Beschwerden machen mir Angst.",
+      "answerValueSet": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-ssd-12-answers"
+    },
+    {
+      "linkId": "ssd12-q06",
+      "type": "choice",
+      "prefix": "6",
+      "text": "Meine körperlichen Beschwerden beschäftigen mich den größten Teil des Tages.",
+      "answerValueSet": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-ssd-12-answers"
+    },
+    {
+      "linkId": "ssd12-q07",
+      "type": "choice",
+      "prefix": "7",
+      "text": "Andere sagen mir, dass meine körperlichen Beschwerden nicht schlimm sind.",
+      "answerValueSet": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-ssd-12-answers"
+    },
+    {
+      "linkId": "ssd12-q08",
+      "type": "choice",
+      "prefix": "8",
+      "text": "Ich mache mir Sorgen, dass meine körperlichen Beschwerden niemals aufhören werden.",
+      "answerValueSet": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-ssd-12-answers"
+    },
+    {
+      "linkId": "ssd12-q09",
+      "type": "choice",
+      "prefix": "9",
+      "text": "Die Sorgen um meine Gesundheit rauben mir Energie.",
+      "answerValueSet": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-ssd-12-answers"
+    },
+    {
+      "linkId": "ssd12-q10",
+      "type": "choice",
+      "prefix": "10",
+      "text": "Ich denke, dass die Ärzte meine körperlichen Beschwerden nicht ernst nehmen.",
+      "answerValueSet": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-ssd-12-answers"
+    },
+    {
+      "linkId": "ssd12-q11",
+      "type": "choice",
+      "prefix": "11",
+      "text": "Ich mache mir Sorgen auch in Zukunft durch meine körperlichen Beschwerden beeinträchtigt zu bleiben.",
+      "answerValueSet": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-ssd-12-answers"
+    },
+    {
+      "linkId": "ssd12-q12",
+      "type": "choice",
+      "prefix": "12",
+      "text": "Durch meine körperlichen Beschwerden kann ich mich schlecht auf andere Dinge konzentrieren.",
+      "answerValueSet": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-ssd-12-answers"
+    },
+    {
+      "code": [
+        {
+          "code": "ssd-12-total",
+          "system": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-score-catalogue",
+          "display": "SSD-12 Total Score (0-48)"
+        }
+      ],
+      "extension": [
+        {
+          "valueExpression": {
+            "name": "Scoreberechnung",
+            "language": "text/fhirpath",
+            "expression": "%ssd12Sum"
+          },
+          "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-calculatedExpression"
+        },
+        {
+          "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-observationExtract",
+          "valueBoolean": true
+        },
+        {
+          "valueCoding": {
+            "system": "http://unitsofmeasure.org",
+            "code": "{score}"
+          },
+          "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-unit"
+        },
+        {
+          "valueCodeableConcept": {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "survey"
+              }
+            ]
+          },
+          "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-observation-extract-category"
+        }
+      ],
+      "linkId": "ssd12-score-total",
+      "type": "decimal",
+      "prefix": "Score",
+      "readOnly": true,
+      "text": "SSD-12 Summenwert (0-48)"
+    }
+  ],
+  "version": "2027.0.0-ballot.1",
+  "status": "active",
+  "experimental": true,
+  "language": "de",
+  "copyright": "SSD-12 © Toussaint, Löwe et al. Freely available for research and clinical use. Lizenz-Status: frei verfügbar (Tier A)."
+}

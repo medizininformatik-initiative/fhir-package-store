@@ -1,0 +1,183 @@
+{
+  "resourceType": "QuestionnaireResponse",
+  "id": "mii-exa-pro-midos2-response-01",
+  "meta": {
+    "profile": [
+      "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-questionnaire-response|2027.0.0-ballot.1"
+    ]
+  },
+  "subject": {
+    "reference": "Patient/mii-exa-pro-patient"
+  },
+  "item": [
+    {
+      "answer": [
+        {
+          "valueCoding": {
+            "code": "midos2-severity-2",
+            "system": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-midos2",
+            "display": "mittlere"
+          }
+        }
+      ],
+      "linkId": "midos2-q01-schmerz",
+      "text": "Schmerz"
+    },
+    {
+      "answer": [
+        {
+          "valueCoding": {
+            "code": "midos2-severity-1",
+            "system": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-midos2",
+            "display": "leichte"
+          }
+        }
+      ],
+      "linkId": "midos2-q02-uebelkeit",
+      "text": "Übelkeit"
+    },
+    {
+      "answer": [
+        {
+          "valueCoding": {
+            "code": "midos2-severity-0",
+            "system": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-midos2",
+            "display": "keine"
+          }
+        }
+      ],
+      "linkId": "midos2-q03-erbrechen",
+      "text": "Erbrechen"
+    },
+    {
+      "answer": [
+        {
+          "valueCoding": {
+            "code": "midos2-severity-1",
+            "system": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-midos2",
+            "display": "leichte"
+          }
+        }
+      ],
+      "linkId": "midos2-q04-luftnot",
+      "text": "Luftnot"
+    },
+    {
+      "answer": [
+        {
+          "valueCoding": {
+            "code": "midos2-severity-2",
+            "system": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-midos2",
+            "display": "mittlere"
+          }
+        }
+      ],
+      "linkId": "midos2-q05-verstopfung",
+      "text": "Verstopfung"
+    },
+    {
+      "answer": [
+        {
+          "valueCoding": {
+            "code": "midos2-severity-3",
+            "system": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-midos2",
+            "display": "starke"
+          }
+        }
+      ],
+      "linkId": "midos2-q06-schwaeche",
+      "text": "Schwäche"
+    },
+    {
+      "answer": [
+        {
+          "valueCoding": {
+            "code": "midos2-severity-3",
+            "system": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-midos2",
+            "display": "starke"
+          }
+        }
+      ],
+      "linkId": "midos2-q07-muedigkeit",
+      "text": "Müdigkeit"
+    },
+    {
+      "answer": [
+        {
+          "valueCoding": {
+            "code": "midos2-severity-3",
+            "system": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-midos2",
+            "display": "starke"
+          }
+        }
+      ],
+      "linkId": "midos2-q08-appetitmangel",
+      "text": "Appetitmangel"
+    },
+    {
+      "answer": [
+        {
+          "valueCoding": {
+            "code": "midos2-severity-2",
+            "system": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-midos2",
+            "display": "mittlere"
+          }
+        }
+      ],
+      "linkId": "midos2-q09-depressivitaet",
+      "text": "Depressivität"
+    },
+    {
+      "answer": [
+        {
+          "valueCoding": {
+            "code": "midos2-severity-1",
+            "system": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-midos2",
+            "display": "leichte"
+          }
+        }
+      ],
+      "linkId": "midos2-q10-angst",
+      "text": "Angst"
+    },
+    {
+      "answer": [
+        {
+          "valueCoding": {
+            "code": "midos2-severity-1",
+            "system": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-midos2",
+            "display": "leichte"
+          }
+        }
+      ],
+      "linkId": "midos2-q11-anspannung",
+      "text": "Anspannung"
+    },
+    {
+      "answer": [
+        {
+          "valueCoding": {
+            "code": "midos2-wellbeing-2",
+            "system": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-midos2",
+            "display": "eher schlecht"
+          }
+        }
+      ],
+      "linkId": "midos2-q12-wohlbefinden",
+      "text": "Wie würden Sie Ihr Wohlbefinden insgesamt einschätzen?"
+    },
+    {
+      "answer": [
+        {
+          "valueString": "Schlafstörungen, häufiges nächtliches Erwachen"
+        }
+      ],
+      "linkId": "midos2-q13-sonstiges",
+      "text": "Andere Beschwerden (bitte angeben)"
+    }
+  ],
+  "language": "de",
+  "questionnaire": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/Questionnaire/mii-qst-pro-midos-midos2|2027.0.0-ballot.1",
+  "status": "completed",
+  "authored": "2026-06-01"
+}

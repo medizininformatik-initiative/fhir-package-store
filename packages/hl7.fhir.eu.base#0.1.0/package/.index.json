@@ -1,0 +1,153 @@
+{
+  "index-version" : 2,
+  "files" : [
+    {
+      "filename" : "ImplementationGuide-hl7.fhir.eu.base.json",
+      "resourceType" : "ImplementationGuide",
+      "id" : "hl7.fhir.eu.base",
+      "url" : "http://hl7.eu/fhir/base/ImplementationGuide/hl7.fhir.eu.base",
+      "version" : "0.1.0"
+    },
+    {
+      "filename" : "StructureDefinition-Address-eu.json",
+      "resourceType" : "StructureDefinition",
+      "id" : "Address-eu",
+      "url" : "http://hl7.eu/fhir/base/StructureDefinition/Address-eu",
+      "version" : "0.1.0",
+      "kind" : "complex-type",
+      "type" : "Address",
+      "derivation" : "constraint"
+    },
+    {
+      "filename" : "StructureDefinition-bodyStructure-eu-core.json",
+      "resourceType" : "StructureDefinition",
+      "id" : "bodyStructure-eu-core",
+      "url" : "http://hl7.eu/fhir/base/StructureDefinition/bodyStructure-eu-core",
+      "version" : "0.1.0",
+      "kind" : "resource",
+      "type" : "BodyStructure",
+      "derivation" : "constraint"
+    },
+    {
+      "filename" : "StructureDefinition-location-eu-core.json",
+      "resourceType" : "StructureDefinition",
+      "id" : "location-eu-core",
+      "url" : "http://hl7.eu/fhir/base/StructureDefinition/location-eu-core",
+      "version" : "0.1.0",
+      "kind" : "resource",
+      "type" : "Location",
+      "derivation" : "constraint"
+    },
+    {
+      "filename" : "StructureDefinition-organization-eu-core.json",
+      "resourceType" : "StructureDefinition",
+      "id" : "organization-eu-core",
+      "url" : "http://hl7.eu/fhir/base/StructureDefinition/organization-eu-core",
+      "version" : "0.1.0",
+      "kind" : "resource",
+      "type" : "Organization",
+      "derivation" : "constraint"
+    },
+    {
+      "filename" : "StructureDefinition-organization-eu.json",
+      "resourceType" : "StructureDefinition",
+      "id" : "organization-eu",
+      "url" : "http://hl7.eu/fhir/base/StructureDefinition/organization-eu",
+      "version" : "0.1.0",
+      "kind" : "resource",
+      "type" : "Organization",
+      "derivation" : "constraint"
+    },
+    {
+      "filename" : "StructureDefinition-patient-animal-eu-core.json",
+      "resourceType" : "StructureDefinition",
+      "id" : "patient-animal-eu-core",
+      "url" : "http://hl7.eu/fhir/base/StructureDefinition/patient-animal-eu-core",
+      "version" : "0.1.0",
+      "kind" : "resource",
+      "type" : "Patient",
+      "derivation" : "constraint"
+    },
+    {
+      "filename" : "StructureDefinition-patient-eu-core.json",
+      "resourceType" : "StructureDefinition",
+      "id" : "patient-eu-core",
+      "url" : "http://hl7.eu/fhir/base/StructureDefinition/patient-eu-core",
+      "version" : "0.1.0",
+      "kind" : "resource",
+      "type" : "Patient",
+      "derivation" : "constraint"
+    },
+    {
+      "filename" : "StructureDefinition-patient-eu.json",
+      "resourceType" : "StructureDefinition",
+      "id" : "patient-eu",
+      "url" : "http://hl7.eu/fhir/base/StructureDefinition/patient-eu",
+      "version" : "0.1.0",
+      "kind" : "resource",
+      "type" : "Patient",
+      "derivation" : "constraint"
+    },
+    {
+      "filename" : "StructureDefinition-practitioner-eu-core.json",
+      "resourceType" : "StructureDefinition",
+      "id" : "practitioner-eu-core",
+      "url" : "http://hl7.eu/fhir/base/StructureDefinition/practitioner-eu-core",
+      "version" : "0.1.0",
+      "kind" : "resource",
+      "type" : "Practitioner",
+      "derivation" : "constraint"
+    },
+    {
+      "filename" : "StructureDefinition-practitioner-eu.json",
+      "resourceType" : "StructureDefinition",
+      "id" : "practitioner-eu",
+      "url" : "http://hl7.eu/fhir/base/StructureDefinition/practitioner-eu",
+      "version" : "0.1.0",
+      "kind" : "resource",
+      "type" : "Practitioner",
+      "derivation" : "constraint"
+    },
+    {
+      "filename" : "StructureDefinition-practitionerRole-eu-core.json",
+      "resourceType" : "StructureDefinition",
+      "id" : "practitionerRole-eu-core",
+      "url" : "http://hl7.eu/fhir/base/StructureDefinition/practitionerRole-eu-core",
+      "version" : "0.1.0",
+      "kind" : "resource",
+      "type" : "PractitionerRole",
+      "derivation" : "constraint"
+    },
+    {
+      "filename" : "StructureDefinition-practitionerRole-eu.json",
+      "resourceType" : "StructureDefinition",
+      "id" : "practitionerRole-eu",
+      "url" : "http://hl7.eu/fhir/base/StructureDefinition/practitionerRole-eu",
+      "version" : "0.1.0",
+      "kind" : "resource",
+      "type" : "PractitionerRole",
+      "derivation" : "constraint"
+    },
+    {
+      "filename" : "ValueSet-siteLaterality-eu.json",
+      "resourceType" : "ValueSet",
+      "id" : "siteLaterality-eu",
+      "url" : "http://hl7.eu/fhir/base/ValueSet/siteLaterality-eu",
+      "version" : "0.1.0"
+    },
+    {
+      "filename" : "ValueSet-siteQualifier-eu.json",
+      "resourceType" : "ValueSet",
+      "id" : "siteQualifier-eu",
+      "url" : "http://hl7.eu/fhir/base/ValueSet/siteQualifier-eu",
+      "version" : "0.1.0"
+    },
+    {
+      "filename" : "ValueSet-speciesType-eu.json",
+      "resourceType" : "ValueSet",
+      "id" : "speciesType-eu",
+      "url" : "http://hl7.eu/fhir/base/ValueSet/speciesType-eu",
+      "version" : "0.1.0"
+    }
+  ]
+}

@@ -1,0 +1,24 @@
+{
+  "resourceType": "DocumentReference",
+  "id": "ProtocolCRISPRTP53",
+  "status": "current",
+  "date": "2018-06-19T09:00:00+01:00",
+  "description": "CRISPR Knockout-Protokoll für TP53 in Lungentumor-Organoiden",
+  "content": [
+    {
+      "attachment": {
+        "contentType": "application/pdf"
+      }
+    },
+    {
+      "attachment": {
+        "url": "https://biobank.uk-musterstadt.de/protocols/CRISPR_TP53_KO_v1.pdf"
+      }
+    },
+    {
+      "attachment": {
+        "title": "CRISPR TP53 Knockout Protokoll v1"
+      }
+    }
+  ]
+}

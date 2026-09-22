@@ -1,0 +1,65 @@
+{
+  "resourceType": "CodeSystem",
+  "status": "active",
+  "content": "complete",
+  "name": "MaterialTypeCS",
+  "id": "miabis-material-type-CS",
+  "title": "MIABIS Material Type Code System",
+  "description": "Codes for the material type of a sample",
+  "url": "https://fhir.bbmri-eric.eu/fhir/CodeSystem/miabis-material-type-CS",
+  "concept": [
+    {
+      "code": "Blood",
+      "display": "Blood that has not been separated into its various components"
+    },
+    {
+      "code": "DNA",
+      "display": "DNA"
+    },
+    {
+      "code": "Faeces",
+      "display": "Faeces"
+    },
+    {
+      "code": "ImmortalizedCellLine",
+      "display": "Immortalized cell line"
+    },
+    {
+      "code": "IsolatedPathogen",
+      "display": "Isolated pathogen"
+    },
+    {
+      "code": "Plasma",
+      "display": "Plasma"
+    },
+    {
+      "code": "RNA",
+      "display": "RNA"
+    },
+    {
+      "code": "Saliva",
+      "display": "Saliva"
+    },
+    {
+      "code": "Serum",
+      "display": "Serum"
+    },
+    {
+      "code": "TissueFrozen",
+      "display": "Tissue (frozen)"
+    },
+    {
+      "code": "TissueFFPE",
+      "display": "Tissue (FFPE)"
+    },
+    {
+      "code": "Urine",
+      "display": "Urine"
+    },
+    {
+      "code": "Other",
+      "display": "Other"
+    }
+  ],
+  "count": 13
+}

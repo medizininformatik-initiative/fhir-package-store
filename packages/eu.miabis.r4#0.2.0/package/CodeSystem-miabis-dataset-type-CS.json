@@ -1,0 +1,49 @@
+{
+  "resourceType": "CodeSystem",
+  "status": "active",
+  "content": "complete",
+  "name": "DatasetTypeCS",
+  "id": "miabis-dataset-type-CS",
+  "title": "MIABIS Dataset Type Code System",
+  "description": "Codes for the type of dataset in used in Sample Donor resource",
+  "url": "https://fhir.bbmri-eric.eu/fhir/CodeSystem/miabis-dataset-type-CS",
+  "concept": [
+    {
+      "code": "Lifestyle",
+      "display": "Lifestyle dataset"
+    },
+    {
+      "code": "BiologicalSamples",
+      "display": "Biological samples collected from the participants in the sample collection/study"
+    },
+    {
+      "code": "SurveyData",
+      "display": "Survey data collected from the participants in the sample collection/study"
+    },
+    {
+      "code": "ImagingData",
+      "display": "Imaging data collected from the participants in the sample collection/study"
+    },
+    {
+      "code": "MedicalRecords",
+      "display": "Medical records collected from the participants in the sample collection/study"
+    },
+    {
+      "code": "NationalRegistries",
+      "display": "National registries data collected from the participants in the sample collection/study"
+    },
+    {
+      "code": "GenealogicalRecords",
+      "display": "Genealogical records collected from the participants in the sample collection/study"
+    },
+    {
+      "code": "PhysioBiochemicalData",
+      "display": "Physiological and biochemical data collected from the participants in the sample collection/study"
+    },
+    {
+      "code": "Other",
+      "display": "Other type of dataset collected from the participants in the sample collection/study"
+    }
+  ],
+  "count": 9
+}

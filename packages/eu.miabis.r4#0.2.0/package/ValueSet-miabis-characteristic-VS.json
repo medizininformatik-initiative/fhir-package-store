@@ -1,0 +1,16 @@
+{
+  "resourceType": "ValueSet",
+  "status": "active",
+  "name": "CharacteristicVS",
+  "id": "miabis-characteristic-VS",
+  "title": "characteristicVS",
+  "description": "Value set containing codes for specifiying which characteristic is being described.",
+  "url": "https://fhir.bbmri-eric.eu/fhir/ValueSet/miabis-characteristic-VS",
+  "compose": {
+    "include": [
+      {
+        "system": "https://fhir.bbmri-eric.eu/fhir/CodeSystem/miabis-characteristicCS"
+      }
+    ]
+  }
+}

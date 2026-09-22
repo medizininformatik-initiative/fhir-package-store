@@ -1,0 +1,17 @@
+{
+  "resourceType": "CodeSystem",
+  "status": "active",
+  "content": "complete",
+  "name": "ContactTypeCS",
+  "id": "miabis-contact-type",
+  "title": "MIABIS ContactType code system",
+  "description": "Contact Type of the managing person of collection or dataset",
+  "url": "https://fhir.bbmri-eric.eu/fhir/CodeSystem/miabis-contact-type",
+  "concept": [
+    {
+      "code": "Research",
+      "display": "Contact for researchers about sample and data requests"
+    }
+  ],
+  "count": 1
+}

@@ -1,0 +1,36 @@
+{
+  "resourceType": "ObservationDefinition",
+  "id": "mii-obsdef-pro-eortc-qlq-c30-nv",
+  "meta": {
+    "profile": [
+      "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-score-blueprint|2027.0.0-ballot.1"
+    ]
+  },
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/artifact-version",
+      "valueString": "2027.0.0-ballot.1"
+    }
+  ],
+  "code": {
+    "coding": [
+      {
+        "system": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-score-catalogue",
+        "code": "eortc-qlq-c30-nv",
+        "display": "EORTC QLQ-C30 Nausea and Vomiting Score"
+      }
+    ]
+  },
+  "quantitativeDetails": {
+    "unit": {
+      "coding": [
+        {
+          "code": "{score}",
+          "system": "http://unitsofmeasure.org",
+          "display": "{score}"
+        }
+      ]
+    },
+    "decimalPrecision": 2
+  }
+}

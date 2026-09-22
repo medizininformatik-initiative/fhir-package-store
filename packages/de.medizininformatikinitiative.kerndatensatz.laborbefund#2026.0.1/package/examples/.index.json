@@ -1,0 +1,35 @@
+{
+  "index-version" : 2,
+  "files" : [
+    {
+      "filename" : "DiagnosticReport-mii-exa-labor-laborbefund.json",
+      "resourceType" : "DiagnosticReport",
+      "id" : "mii-exa-labor-laborbefund"
+    },
+    {
+      "filename" : "Observation-mii-exa-labor-laborwert-data-absent-reason.json",
+      "resourceType" : "Observation",
+      "id" : "mii-exa-labor-laborwert-data-absent-reason"
+    },
+    {
+      "filename" : "Observation-mii-exa-labor-laborwert-range.json",
+      "resourceType" : "Observation",
+      "id" : "mii-exa-labor-laborwert-range"
+    },
+    {
+      "filename" : "Observation-mii-exa-labor-laborwert-ratio.json",
+      "resourceType" : "Observation",
+      "id" : "mii-exa-labor-laborwert-ratio"
+    },
+    {
+      "filename" : "Observation-mii-exa-labor-laborwert.json",
+      "resourceType" : "Observation",
+      "id" : "mii-exa-labor-laborwert"
+    },
+    {
+      "filename" : "ServiceRequest-mii-exa-labor-laboranforderung.json",
+      "resourceType" : "ServiceRequest",
+      "id" : "mii-exa-labor-laboranforderung"
+    }
+  ]
+}

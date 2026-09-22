@@ -1,0 +1,100 @@
+{
+  "resourceType": "ValueSet",
+  "status": "active",
+  "name": "MII_VS_Mikrobio_Resistenzmechanismen_Methode_SNOMED",
+  "id": "mii-vs-mikrobio-resistenzmechanismen-methode-snomed",
+  "title": "MII VS Mikrobio Resistenzmechanismen Methode [SNOMED]",
+  "description": "Methoden für den Nachweis von Resistenzmechanismen und Determinanten: molekulare, immunologische und funktionale Verfahren.",
+  "url": "https://www.medizininformatik-initiative.de/fhir/modul-mikrobio/ValueSet/mii-vs-mikrobio-resistenzmechanismen-methode-snomed",
+  "version": "2027.0.0-ballot2",
+  "experimental": false,
+  "publisher": "Medizininformatik Initiative",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "https://www.medizininformatik-initiative.de"
+        }
+      ]
+    }
+  ],
+  "compose": {
+    "include": [
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/900000000000207008/version/20260701",
+        "concept": [
+          {
+            "code": "258066000",
+            "display": "Polymerase chain reaction technique (qualifier value)"
+          },
+          {
+            "code": "70601000052104",
+            "display": "Real-time polymerase chain reaction technique (qualifier value)"
+          },
+          {
+            "code": "1303992007",
+            "display": "Digital polymerase chain reaction technique (qualifier value)"
+          },
+          {
+            "code": "1303998006",
+            "display": "Multiplex polymerase chain reaction technique (qualifier value)"
+          },
+          {
+            "code": "1304048000",
+            "display": "Transcription mediated amplification technique (qualifier value)"
+          },
+          {
+            "code": "1259932009",
+            "display": "Loop-mediated isothermal amplification technique (qualifier value)"
+          },
+          {
+            "code": "1304162005",
+            "display": "Nucleic acid sequencing technique (qualifier value)"
+          },
+          {
+            "code": "726449005",
+            "display": "Immunoassay technique (qualifier value)"
+          },
+          {
+            "code": "708099001",
+            "display": "Rapid immunoassay technique (qualifier value)"
+          },
+          {
+            "code": "703444002",
+            "display": "Fluorescent immunoassay (qualifier value)"
+          },
+          {
+            "code": "708104000",
+            "display": "Agglutination technique (qualifier value)"
+          },
+          {
+            "code": "703458000",
+            "display": "Neutralization method (qualifier value)"
+          },
+          {
+            "code": "782518009",
+            "display": "Modified carbapenem inactivation technique (qualifier value)"
+          },
+          {
+            "code": "1303975003",
+            "display": "Disk diffusion technique (qualifier value)"
+          },
+          {
+            "code": "703442003",
+            "display": "Gradient strip susceptibility test technique (qualifier value)"
+          },
+          {
+            "code": "260111000146108",
+            "display": "Manual minimum inhibitory concentration microdilution susceptibility test technique (qualifier value)"
+          },
+          {
+            "code": "260101000146106",
+            "display": "Automated minimum inhibitory concentration microdilution susceptibility test technique (qualifier value)"
+          }
+        ]
+      }
+    ]
+  }
+}

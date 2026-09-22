@@ -1,0 +1,10 @@
+{
+  "resourceType": "Patient",
+  "id": "111",
+  "identifier": [
+    {
+      "system": "https://example.org/fhir/sid/test-patients",
+      "value": "111"
+    }
+  ]
+}

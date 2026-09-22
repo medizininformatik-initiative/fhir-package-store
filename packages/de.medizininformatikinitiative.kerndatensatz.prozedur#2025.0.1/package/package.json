@@ -1,0 +1,34 @@
+{
+  "name": "de.medizininformatikinitiative.kerndatensatz.prozedur",
+  "version": "2025.0.1",
+  "description": "Medizininformatik Initiative - Modul Prozedur",
+  "author": "juliansass",
+  "dependencies": {
+    "hl7.fhir.r4.core": "4.0.1",
+    "de.basisprofil.r4": "1.5.x",
+    "de.medizininformatikinitiative.kerndatensatz.meta": "2025.0.x",
+    "kbv.all.st": "1.27.0"
+  },
+  "keywords": [
+    "MII",
+    "KDS",
+    "Prozedur",
+    "Procedure"
+  ],
+  "license": "CC-BY-4.0",
+  "homepage": "https://www.medizininformatik-initiative.de/",
+  "directories": {
+    "lib": "package",
+    "example": "examples"
+  },
+  "title": "MII IG Prozedur",
+  "fhirVersions": [
+    "4.0.1"
+  ],
+  "maintainers": [
+    {
+      "name": "Medizininformatik Initiative"
+    }
+  ],
+  "jurisdiction": "http://unstats.un.org/unsd/methods/m49/m49.htm#276"
+}

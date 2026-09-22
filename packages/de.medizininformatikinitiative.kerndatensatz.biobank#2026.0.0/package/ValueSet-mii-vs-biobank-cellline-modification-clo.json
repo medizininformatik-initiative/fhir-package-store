@@ -1,0 +1,67 @@
+{
+  "resourceType": "ValueSet",
+  "status": "active",
+  "name": "MII_VS_Biobank_Cellline_Modification_CLO",
+  "id": "mii-vs-biobank-cellline-modification-clo",
+  "title": "MII VS Biobank Cellline Modification CLO",
+  "description": "Value Set for Types of Cell Line Modifications (CLO)",
+  "version": "2026.0.0",
+  "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-biobank/ValueSet/mii-vs-biobank-cellline-modification-clo",
+  "publisher": "Medizininformatik Initiative",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "https://www.medizininformatik-initiative.de"
+        }
+      ]
+    }
+  ],
+  "date": "2025-09-02",
+  "extension": [
+    {
+      "url": "https://www.medizininformatik-initiative.de/fhir/modul-meta/StructureDefinition/mii-ex-meta-license-codeable",
+      "valueCodeableConcept": {
+        "coding": [
+          {
+            "code": "CC-BY-4.0",
+            "system": "http://hl7.org/fhir/spdx-license",
+            "display": "Creative Commons Attribution 4.0 International"
+          }
+        ]
+      }
+    }
+  ],
+  "meta": {
+    "profile": [
+      "http://hl7.org/fhir/StructureDefinition/shareablevalueset"
+    ]
+  },
+  "experimental": false,
+  "compose": {
+    "include": [
+      {
+        "system": "http://purl.obolibrary.org/obo/clo.owl",
+        "concept": [
+          {
+            "code": "CLO:0037376",
+            "display": "derived from cell with isogenic modification of gene"
+          },
+          {
+            "code": "CLO:0037377",
+            "display": "derived from cell with knockin gene"
+          },
+          {
+            "code": "CLO:0037375",
+            "display": "derived from cell with knockout gene"
+          },
+          {
+            "code": "CLO:0037378",
+            "display": "derived from cell with transgenic modification"
+          }
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,93 @@
+{
+  "index-version" : 2,
+  "files" : [
+    {
+      "filename" : "Bundle-mii-studie-test-data-bundle-studie.json",
+      "resourceType" : "Bundle",
+      "id" : "mii-studie-test-data-bundle-studie",
+      "type" : "transaction"
+    },
+    {
+      "filename" : "Consent-mii-exa-studie-consent.json",
+      "resourceType" : "Consent",
+      "id" : "mii-exa-studie-consent"
+    },
+    {
+      "filename" : "DocumentReference-mii-exa-studie-dokument.json",
+      "resourceType" : "DocumentReference",
+      "id" : "mii-exa-studie-dokument",
+      "content" : "["
+    },
+    {
+      "filename" : "EvidenceVariable-mii-exa-studie-ein-auschluss-kriterium.json",
+      "resourceType" : "EvidenceVariable",
+      "id" : "mii-exa-studie-ein-auschluss-kriterium"
+    },
+    {
+      "filename" : "EvidenceVariable-mii-exa-studie-evidence-variable-age-restriction.json",
+      "resourceType" : "EvidenceVariable",
+      "id" : "mii-exa-studie-evidence-variable-age-restriction"
+    },
+    {
+      "filename" : "Library-mii-exa-studie-register.json",
+      "resourceType" : "Library",
+      "id" : "mii-exa-studie-register",
+      "type" : "{"
+    },
+    {
+      "filename" : "Organization-mii-exa-studie-author.json",
+      "resourceType" : "Organization",
+      "id" : "mii-exa-studie-author"
+    },
+    {
+      "filename" : "Organization-mii-exa-studie-custodian.json",
+      "resourceType" : "Organization",
+      "id" : "mii-exa-studie-custodian"
+    },
+    {
+      "filename" : "Organization-mii-exa-studie-practitioner-organization.json",
+      "resourceType" : "Organization",
+      "id" : "mii-exa-studie-practitioner-organization"
+    },
+    {
+      "filename" : "Patient-mii-exa-studie-patient.json",
+      "resourceType" : "Patient",
+      "id" : "mii-exa-studie-patient"
+    },
+    {
+      "filename" : "Practitioner-mii-exa-studie-practitioner.json",
+      "resourceType" : "Practitioner",
+      "id" : "mii-exa-studie-practitioner"
+    },
+    {
+      "filename" : "PractitionerRole-mii-exa-studie-beteiligte-person.json",
+      "resourceType" : "PractitionerRole",
+      "id" : "mii-exa-studie-beteiligte-person"
+    },
+    {
+      "filename" : "ResearchStudy-mii-exa-studie-cohort.json",
+      "resourceType" : "ResearchStudy",
+      "id" : "mii-exa-studie-cohort"
+    },
+    {
+      "filename" : "ResearchStudy-mii-exa-studie-reference-study.json",
+      "resourceType" : "ResearchStudy",
+      "id" : "mii-exa-studie-reference-study"
+    },
+    {
+      "filename" : "ResearchStudy-mii-exa-studie-studie.json",
+      "resourceType" : "ResearchStudy",
+      "id" : "mii-exa-studie-studie"
+    },
+    {
+      "filename" : "ResearchSubject-mii-exa-studie-proband.json",
+      "resourceType" : "ResearchSubject",
+      "id" : "mii-exa-studie-proband"
+    },
+    {
+      "filename" : "ServiceRequest-mii-exa-studie-studieneinschluss-anfrage.json",
+      "resourceType" : "ServiceRequest",
+      "id" : "mii-exa-studie-studieneinschluss-anfrage"
+    }
+  ]
+}

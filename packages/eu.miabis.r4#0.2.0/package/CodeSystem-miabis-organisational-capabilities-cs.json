@@ -1,0 +1,53 @@
+{
+  "resourceType": "CodeSystem",
+  "status": "active",
+  "content": "complete",
+  "name": "OrganisationalCapabilitiesCS",
+  "id": "miabis-organisational-capabilities-cs",
+  "title": "Organisational Capabilities",
+  "description": "This code system represents the organisational capabilities and services that the biobank can provide to support clients.",
+  "url": "https://fhir.bbmri-eric.eu/fhir/CodeSystem/miabis-organisational-capabilities-cs",
+  "concept": [
+    {
+      "code": "RecontactDonors",
+      "display": "Recontact with donors"
+    },
+    {
+      "code": "ClinicalTrials",
+      "display": "Facilitating clinical trials"
+    },
+    {
+      "code": "ProspectiveCollections",
+      "display": "Setting up prospective collections"
+    },
+    {
+      "code": "OmicsData",
+      "display": "Access to omics data"
+    },
+    {
+      "code": "LabAnalysisData",
+      "display": "Access to laboratory analysis data"
+    },
+    {
+      "code": "ClinicalData",
+      "display": "Access to donors'clinical data"
+    },
+    {
+      "code": "PathologyArchive",
+      "display": "Access to pathology archive"
+    },
+    {
+      "code": "RadiologyArchive",
+      "display": "Access to radiology archive"
+    },
+    {
+      "code": "MedicalRegistries",
+      "display": "Access to national medical registries"
+    },
+    {
+      "code": "Other",
+      "display": "Other"
+    }
+  ],
+  "count": 10
+}

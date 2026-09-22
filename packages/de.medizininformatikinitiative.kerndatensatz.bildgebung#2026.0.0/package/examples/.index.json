@@ -1,0 +1,96 @@
+{
+  "index-version" : 2,
+  "files" : [
+    {
+      "filename" : "BodyStructure-mii-exa-bildgebung-koerperstruktur.json",
+      "resourceType" : "BodyStructure",
+      "id" : "mii-exa-bildgebung-koerperstruktur"
+    },
+    {
+      "filename" : "CarePlan-mii-exa-bildgebung-behandlungsempfehlung.json",
+      "resourceType" : "CarePlan",
+      "id" : "mii-exa-bildgebung-behandlungsempfehlung"
+    },
+    {
+      "filename" : "Composition-mii-exa-bildgebung-semistrukt-befundbericht.json",
+      "resourceType" : "Composition",
+      "id" : "mii-exa-bildgebung-semistrukt-befundbericht",
+      "type" : "{"
+    },
+    {
+      "filename" : "Device-mii-exa-bildgebung-geraet.json",
+      "resourceType" : "Device",
+      "id" : "mii-exa-bildgebung-geraet"
+    },
+    {
+      "filename" : "DiagnosticReport-mii-exa-bildgebung-radiologischer-Befund.json",
+      "resourceType" : "DiagnosticReport",
+      "id" : "mii-exa-bildgebung-radiologischer-Befund"
+    },
+    {
+      "filename" : "ImagingStudy-mii-exa-bildgebung-bildgebungsstudie-cr.json",
+      "resourceType" : "ImagingStudy",
+      "id" : "mii-exa-bildgebung-bildgebungsstudie-cr"
+    },
+    {
+      "filename" : "ImagingStudy-mii-exa-bildgebung-bildgebungsstudie-ct.json",
+      "resourceType" : "ImagingStudy",
+      "id" : "mii-exa-bildgebung-bildgebungsstudie-ct"
+    },
+    {
+      "filename" : "ImagingStudy-mii-exa-bildgebung-bildgebungsstudie-mr-series.json",
+      "resourceType" : "ImagingStudy",
+      "id" : "mii-exa-bildgebung-bildgebungsstudie-mr-series"
+    },
+    {
+      "filename" : "ImagingStudy-mii-exa-bildgebung-bildgebungsstudie-mr.json",
+      "resourceType" : "ImagingStudy",
+      "id" : "mii-exa-bildgebung-bildgebungsstudie-mr"
+    },
+    {
+      "filename" : "ImagingStudy-mii-exa-bildgebung-bildgebungsstudie-nm.json",
+      "resourceType" : "ImagingStudy",
+      "id" : "mii-exa-bildgebung-bildgebungsstudie-nm"
+    },
+    {
+      "filename" : "ImagingStudy-mii-exa-bildgebung-bildgebungsstudie-pt.json",
+      "resourceType" : "ImagingStudy",
+      "id" : "mii-exa-bildgebung-bildgebungsstudie-pt"
+    },
+    {
+      "filename" : "ImagingStudy-mii-exa-bildgebung-bildgebungsstudie-us.json",
+      "resourceType" : "ImagingStudy",
+      "id" : "mii-exa-bildgebung-bildgebungsstudie-us"
+    },
+    {
+      "filename" : "MedicationAdministration-mii-exa-bildgebung-kontrastmittelgabe.json",
+      "resourceType" : "MedicationAdministration",
+      "id" : "mii-exa-bildgebung-kontrastmittelgabe"
+    },
+    {
+      "filename" : "Observation-mii-exa-bildgebung-radiologische-beobachtung.json",
+      "resourceType" : "Observation",
+      "id" : "mii-exa-bildgebung-radiologische-beobachtung"
+    },
+    {
+      "filename" : "Procedure-mii-exa-bildgebung-bildgebungsprozedur.json",
+      "resourceType" : "Procedure",
+      "id" : "mii-exa-bildgebung-bildgebungsprozedur"
+    },
+    {
+      "filename" : "Procedure-mii-exa-bildgebung-radiologische-befundungsprozedur.json",
+      "resourceType" : "Procedure",
+      "id" : "mii-exa-bildgebung-radiologische-befundungsprozedur"
+    },
+    {
+      "filename" : "Procedure-mii-exa-bildgebung-tnm-radiologische-befundungsprozedur.json",
+      "resourceType" : "Procedure",
+      "id" : "mii-exa-bildgebung-tnm-radiologische-befundungsprozedur"
+    },
+    {
+      "filename" : "ServiceRequest-mii-exa-bildgebung-anforderung-bildgebung.json",
+      "resourceType" : "ServiceRequest",
+      "id" : "mii-exa-bildgebung-anforderung-bildgebung"
+    }
+  ]
+}

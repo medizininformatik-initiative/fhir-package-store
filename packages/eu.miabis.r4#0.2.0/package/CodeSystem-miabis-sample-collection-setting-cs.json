@@ -1,0 +1,45 @@
+{
+  "resourceType": "CodeSystem",
+  "status": "active",
+  "content": "complete",
+  "name": "SampleCollectionSettingCS",
+  "id": "miabis-sample-collection-setting-cs",
+  "title": "MIABIS Sample Collection Setting Code System",
+  "description": "Code set for the context in which the sample collection was conducted.",
+  "url": "https://fhir.bbmri-eric.eu/fhir/CodeSystem/miabis-sample-collection-setting-cs",
+  "concept": [
+    {
+      "code": "RoutineHealthCare",
+      "display": "Routine health care setting"
+    },
+    {
+      "code": "ClinicalTrial",
+      "display": "Clinical trial"
+    },
+    {
+      "code": "ResearchStudy",
+      "display": "Research study"
+    },
+    {
+      "code": "Public",
+      "display": "Public health/population based study"
+    },
+    {
+      "code": "Museum",
+      "display": "Museum and/or archeological collection"
+    },
+    {
+      "code": "Environment",
+      "display": "Environment"
+    },
+    {
+      "code": "Unknown",
+      "display": "Unknown"
+    },
+    {
+      "code": "Other",
+      "display": "Other"
+    }
+  ],
+  "count": 8
+}

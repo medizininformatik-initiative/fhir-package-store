@@ -1,0 +1,67 @@
+{
+  "resourceType": "Observation",
+  "id": "QualitaetspruefungBuffyCoat",
+  "meta": {
+    "profile": [
+      "https://www.medizininformatik-initiative.de/fhir/ext/modul-biobank/StructureDefinition/mii-pr-biobank-observation-qualitaetspruefung"
+    ]
+  },
+  "code": {
+    "coding": [
+      {
+        "code": "386404008",
+        "system": "http://snomed.info/sct",
+        "display": "Quality monitoring (procedure)"
+      }
+    ]
+  },
+  "component": [
+    {
+      "code": {
+        "coding": [
+          {
+            "code": "246423001",
+            "system": "http://snomed.info/sct",
+            "display": "Test protocol used (attribute)"
+          }
+        ]
+      },
+      "valueCodeableConcept": {
+        "coding": [
+          {
+            "code": "401297005",
+            "system": "http://snomed.info/sct",
+            "display": "Hemolysis screening test (procedure)"
+          }
+        ]
+      }
+    },
+    {
+      "code": {
+        "coding": [
+          {
+            "code": "79409006",
+            "system": "http://snomed.info/sct",
+            "display": "Resulting in (attribute)"
+          }
+        ]
+      },
+      "valueCodeableConcept": {
+        "coding": [
+          {
+            "code": "LA10392-1",
+            "system": "http://loinc.org",
+            "display": "Pass"
+          }
+        ]
+      }
+    }
+  ],
+  "status": "final",
+  "focus": [
+    {
+      "reference": "Specimen/AliquotgruppeBuffyCoat"
+    }
+  ],
+  "effectiveDateTime": "2018-06-08T09:00:00+01:00"
+}

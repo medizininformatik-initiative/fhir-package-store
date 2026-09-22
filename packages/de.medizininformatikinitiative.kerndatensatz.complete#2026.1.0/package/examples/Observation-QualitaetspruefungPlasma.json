@@ -1,0 +1,64 @@
+{
+  "resourceType": "Observation",
+  "id": "QualitaetspruefungPlasma",
+  "meta": {
+    "profile": [
+      "https://www.medizininformatik-initiative.de/fhir/ext/modul-biobank/StructureDefinition/mii-pr-biobank-observation-qualitaetspruefung"
+    ]
+  },
+  "code": {
+    "coding": [
+      {
+        "code": "386404008",
+        "system": "http://snomed.info/sct",
+        "display": "Quality monitoring (procedure)"
+      }
+    ]
+  },
+  "component": [
+    {
+      "code": {
+        "coding": [
+          {
+            "code": "246423001",
+            "system": "http://snomed.info/sct",
+            "display": "Test protocol used (attribute)"
+          }
+        ]
+      },
+      "valueCodeableConcept": {
+        "coding": [
+          {
+            "code": "46425-5",
+            "system": "http://loinc.org",
+            "display": "Lipemic interference index of Serum or Plasma"
+          }
+        ]
+      }
+    },
+    {
+      "code": {
+        "coding": [
+          {
+            "code": "79409006",
+            "system": "http://snomed.info/sct",
+            "display": "Resulting in (attribute)"
+          }
+        ]
+      },
+      "valueQuantity": {
+        "value": 3,
+        "unit": "[arb'U]/mL",
+        "system": "http://unitsofmeasure.org",
+        "code": "[arb'U]/mL"
+      }
+    }
+  ],
+  "status": "final",
+  "focus": [
+    {
+      "reference": "Specimen/AliquotgruppePlasma"
+    }
+  ],
+  "effectiveDateTime": "2018-06-08T09:04:00+01:00"
+}

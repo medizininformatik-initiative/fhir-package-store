@@ -1,0 +1,288 @@
+{
+  "resourceType": "QuestionnaireResponse",
+  "id": "mii-exa-pro-bdi-bdi2",
+  "meta": {
+    "profile": [
+      "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-questionnaire-response|2027.0.0-ballot.1"
+    ]
+  },
+  "subject": {
+    "reference": "Patient/mii-exa-pro-patient"
+  },
+  "item": [
+    {
+      "answer": [
+        {
+          "valueCoding": {
+            "code": "bdi-bdi2-answer-1",
+            "system": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-bdi-bdi2",
+            "display": "1 point"
+          }
+        }
+      ],
+      "linkId": "bdi-bdi2-q01",
+      "text": "[TEST PLACEHOLDER: Question 1 about mood - NOT actual BDI-II text]"
+    },
+    {
+      "answer": [
+        {
+          "valueCoding": {
+            "code": "bdi-bdi2-answer-1",
+            "system": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-bdi-bdi2",
+            "display": "1 point"
+          }
+        }
+      ],
+      "linkId": "bdi-bdi2-q02",
+      "text": "[TEST PLACEHOLDER: Question 2 about outlook - NOT actual BDI-II text]"
+    },
+    {
+      "answer": [
+        {
+          "valueCoding": {
+            "code": "bdi-bdi2-answer-0",
+            "system": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-bdi-bdi2",
+            "display": "0 points"
+          }
+        }
+      ],
+      "linkId": "bdi-bdi2-q03",
+      "text": "[TEST PLACEHOLDER: Question 3 about experiences - NOT actual BDI-II text]"
+    },
+    {
+      "answer": [
+        {
+          "valueCoding": {
+            "code": "bdi-bdi2-answer-2",
+            "system": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-bdi-bdi2",
+            "display": "2 points"
+          }
+        }
+      ],
+      "linkId": "bdi-bdi2-q04",
+      "text": "[TEST PLACEHOLDER: Question 4 about enjoyment - NOT actual BDI-II text]"
+    },
+    {
+      "answer": [
+        {
+          "valueCoding": {
+            "code": "bdi-bdi2-answer-1",
+            "system": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-bdi-bdi2",
+            "display": "1 point"
+          }
+        }
+      ],
+      "linkId": "bdi-bdi2-q05",
+      "text": "[TEST PLACEHOLDER: Question 5 about feelings - NOT actual BDI-II text]"
+    },
+    {
+      "answer": [
+        {
+          "valueCoding": {
+            "code": "bdi-bdi2-answer-0",
+            "system": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-bdi-bdi2",
+            "display": "0 points"
+          }
+        }
+      ],
+      "linkId": "bdi-bdi2-q06"
+    },
+    {
+      "answer": [
+        {
+          "valueCoding": {
+            "code": "bdi-bdi2-answer-1",
+            "system": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-bdi-bdi2",
+            "display": "1 point"
+          }
+        }
+      ],
+      "linkId": "bdi-bdi2-q07"
+    },
+    {
+      "answer": [
+        {
+          "valueCoding": {
+            "code": "bdi-bdi2-answer-1",
+            "system": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-bdi-bdi2",
+            "display": "1 point"
+          }
+        }
+      ],
+      "linkId": "bdi-bdi2-q08"
+    },
+    {
+      "answer": [
+        {
+          "valueCoding": {
+            "code": "bdi-bdi2-answer-0",
+            "system": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-bdi-bdi2",
+            "display": "0 points"
+          }
+        }
+      ],
+      "linkId": "bdi-bdi2-q09"
+    },
+    {
+      "answer": [
+        {
+          "valueCoding": {
+            "code": "bdi-bdi2-answer-1",
+            "system": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-bdi-bdi2",
+            "display": "1 point"
+          }
+        }
+      ],
+      "linkId": "bdi-bdi2-q10",
+      "text": "[TEST PLACEHOLDER: Question 10 about emotions - NOT actual BDI-II text]"
+    },
+    {
+      "answer": [
+        {
+          "valueCoding": {
+            "code": "bdi-bdi2-answer-0",
+            "system": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-bdi-bdi2",
+            "display": "0 points"
+          }
+        }
+      ],
+      "linkId": "bdi-bdi2-q11"
+    },
+    {
+      "answer": [
+        {
+          "valueCoding": {
+            "code": "bdi-bdi2-answer-2",
+            "system": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-bdi-bdi2",
+            "display": "2 points"
+          }
+        }
+      ],
+      "linkId": "bdi-bdi2-q12"
+    },
+    {
+      "answer": [
+        {
+          "valueCoding": {
+            "code": "bdi-bdi2-answer-1",
+            "system": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-bdi-bdi2",
+            "display": "1 point"
+          }
+        }
+      ],
+      "linkId": "bdi-bdi2-q13"
+    },
+    {
+      "answer": [
+        {
+          "valueCoding": {
+            "code": "bdi-bdi2-answer-1",
+            "system": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-bdi-bdi2",
+            "display": "1 point"
+          }
+        }
+      ],
+      "linkId": "bdi-bdi2-q14"
+    },
+    {
+      "answer": [
+        {
+          "valueCoding": {
+            "code": "bdi-bdi2-answer-2a",
+            "system": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-bdi-bdi2",
+            "display": "2 points (variant a)"
+          }
+        }
+      ],
+      "linkId": "bdi-bdi2-q15",
+      "text": "[TEST PLACEHOLDER: Question 15 about energy (uses extended scale) - NOT actual BDI-II text]"
+    },
+    {
+      "answer": [
+        {
+          "valueCoding": {
+            "code": "bdi-bdi2-answer-1",
+            "system": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-bdi-bdi2",
+            "display": "1 point"
+          }
+        }
+      ],
+      "linkId": "bdi-bdi2-q16"
+    },
+    {
+      "answer": [
+        {
+          "valueCoding": {
+            "code": "bdi-bdi2-answer-1a",
+            "system": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-bdi-bdi2",
+            "display": "1 point (variant a)"
+          }
+        }
+      ],
+      "linkId": "bdi-bdi2-q17",
+      "text": "[TEST PLACEHOLDER: Question 17 about appetite (uses extended scale) - NOT actual BDI-II text]"
+    },
+    {
+      "answer": [
+        {
+          "valueCoding": {
+            "code": "bdi-bdi2-answer-2",
+            "system": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-bdi-bdi2",
+            "display": "2 points"
+          }
+        }
+      ],
+      "linkId": "bdi-bdi2-q18"
+    },
+    {
+      "answer": [
+        {
+          "valueCoding": {
+            "code": "bdi-bdi2-answer-1",
+            "system": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-bdi-bdi2",
+            "display": "1 point"
+          }
+        }
+      ],
+      "linkId": "bdi-bdi2-q19"
+    },
+    {
+      "answer": [
+        {
+          "valueCoding": {
+            "code": "bdi-bdi2-answer-0",
+            "system": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-bdi-bdi2",
+            "display": "0 points"
+          }
+        }
+      ],
+      "linkId": "bdi-bdi2-q20"
+    },
+    {
+      "answer": [
+        {
+          "valueCoding": {
+            "code": "bdi-bdi2-answer-0",
+            "system": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-bdi-bdi2",
+            "display": "0 points"
+          }
+        }
+      ],
+      "linkId": "bdi-bdi2-q21",
+      "text": "[TEST PLACEHOLDER: Question 21 about interests - NOT actual BDI-II text]"
+    },
+    {
+      "answer": [
+        {
+          "valueDecimal": 19
+        }
+      ],
+      "linkId": "bdi-bdi2-score-total",
+      "text": "BDI-II Gesamtscore (0-63)"
+    }
+  ],
+  "language": "de",
+  "questionnaire": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/Questionnaire/mii-qst-pro-bdi-bdi2|2027.0.0-ballot.1",
+  "status": "completed",
+  "authored": "2023-10-01T12:00:00Z"
+}

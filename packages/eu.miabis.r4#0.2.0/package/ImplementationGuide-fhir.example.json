@@ -1,0 +1,651 @@
+{
+  "resourceType": "ImplementationGuide",
+  "id": "fhir.example",
+  "url": "https://fhir.bbmri-eric.eu/fhir/ImplementationGuide/fhir.example",
+  "version": "0.1.0",
+  "name": "MiabisOnFHIR",
+  "status": "active",
+  "publisher": "Example Publisher",
+  "contact": [
+    {
+      "name": "Example Publisher",
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://example.org/example-publisher"
+        }
+      ]
+    }
+  ],
+  "packageId": "fhir.example",
+  "license": "AGPL-3.0-or-later",
+  "fhirVersion": [
+    "4.0.1"
+  ],
+  "definition": {
+    "resource": [
+      {
+        "reference": {
+          "reference": "StructureDefinition/miabis-biobank"
+        },
+        "name": "Biobank",
+        "description": "This profile represents a Biobank, which is defined as an entity that stores samples and data related to the samples.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "Organization/BiobankInstance"
+        },
+        "name": "BiobankInstance",
+        "description": "Example instance of a Biobank",
+        "exampleCanonical": "https://fhir.bbmri-eric.eu/fhir/StructureDefinition/miabis-biobank"
+      },
+      {
+        "reference": {
+          "reference": "CodeSystem/miabis-bioprocessing-and-analytical-capabilities-cs"
+        },
+        "name": "Bioprocessing and Analytical Capabilities Code System",
+        "description": "Code system representing the bioprocessing and analytical services that the biobank can offer to the clients. ",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/miabis-bioprocessing-and-analytical-capabilities-extension"
+        },
+        "name": "Bioprocessing and Analytical Capabilities Extension",
+        "description": "Bioprocessing and analytical services that the biobank can offer to the clients.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/miabis-bioprocessing-and-analytical-capabilities-vs"
+        },
+        "name": "Bioprocessing and Analytical Capabilities Value Set",
+        "description": "Value set containing codes representing bioprocessing and analytical services that the biobank can offer to the clients. ",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/miabis-characteristic-VS"
+        },
+        "name": "characteristicVS",
+        "description": "Value set containing codes for specifiying which characteristic is being described.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/miabis-collection"
+        },
+        "name": "Collection",
+        "description": "Collection represents a set of samples and/or data items collected and/or derived in a common context and stored under a common stewardship and available for future research",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/miabis-collection-dataset-type-extension"
+        },
+        "name": "Collection Dataset Type Extension",
+        "description": "Types of datasets (groups of related data) obtained or otherwise derived from donors or their specimens.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/miabis-collection-design-extension"
+        },
+        "name": "Collection Design Extension",
+        "description": "The overall design of the collection that explains how the collection was/is built up.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/miabis-collection-design-vs"
+        },
+        "name": "Collection Design Value Set",
+        "description": "Value set containing codes representing the overall design of the collection that explains how the collection was/is built up.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/miabis-collection-organization"
+        },
+        "name": "Collection Organization",
+        "description": "Collection Organization represent a formal part of a organization, like ist name, contact information, publications, etc.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/miabis-collection-sample-typ-vs"
+        },
+        "name": "Collection Sample Type Value Set",
+        "description": "Value set containing codes for the collection sample types of the provided samples",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "Group/CollectionInstance"
+        },
+        "name": "CollectionInstance",
+        "description": "example of a collection instance",
+        "exampleCanonical": "https://fhir.bbmri-eric.eu/fhir/StructureDefinition/miabis-collection"
+      },
+      {
+        "reference": {
+          "reference": "Organization/CollectionOrgInstance"
+        },
+        "name": "CollectionOrgInstance",
+        "description": "Example instance of a Collection Organization",
+        "exampleCanonical": "https://fhir.bbmri-eric.eu/fhir/StructureDefinition/miabis-collection-organization"
+      },
+      {
+        "reference": {
+          "reference": "CodeSystem/miabis-common-collaboration-topics-cs"
+        },
+        "name": "Common Collaboration Topics Code System",
+        "description": "Codes describing topics that the network partners collaborate on",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/miabis-common-collaboration-topics-extension"
+        },
+        "name": "Common Collaboration Topics Extension",
+        "description": "Topics that the network partners collaborate on.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/miabis-common-collaboration-topics-vs"
+        },
+        "name": "Common Collaboration Topics Value Set",
+        "description": "Value set containing codes representing common collaboration topics of members of a network.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/miabis-condition"
+        },
+        "name": "Condition",
+        "description": "This profile represents a condition, which is linked to sample and donor. It is used to describe diagnosis of the donor and his/her sample.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "Condition/ConditionInstance"
+        },
+        "name": "Condition Instance",
+        "description": "example of a condition instance",
+        "exampleCanonical": "https://fhir.bbmri-eric.eu/fhir/StructureDefinition/miabis-condition"
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/miabis-dataset-type-extension"
+        },
+        "name": "Dataset Extension",
+        "description": "The data catogories from which data are available or can be linked to the sample donor",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/miabis-dataset-type-vs"
+        },
+        "name": "dataset type Value Set",
+        "description": "The data categories from which data are available or can be linked to the sample donor. Can be one or more of the provided values",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/miabis-organization-description-extension"
+        },
+        "name": "Description extension",
+        "description": "Description of the collection in English.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "CodeSystem/miabis-detailed-samply-type-cs"
+        },
+        "name": "DetailedSampleType",
+        "description": "Code system for the detailed sample type of a sample",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/miabis-detailed-sample-type-vs"
+        },
+        "name": "DetailedSampleTypeVS",
+        "description": "This value set contains codes for the detailed sample type of the sample.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/miabis-diagnosis-report"
+        },
+        "name": "Diagnosis Report",
+        "description": "Diagnosis Report provides information about the diagnosis linked to sample",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/miabis-diagnosis-vs"
+        },
+        "name": "DiagnosisVS",
+        "description": "Value set containig ICD-10 codes for diagnosis",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "DiagnosticReport/DiagnosisInstance"
+        },
+        "name": "Example Diagnosis Report",
+        "description": "example of a diagnosis report",
+        "exampleCanonical": "https://fhir.bbmri-eric.eu/fhir/StructureDefinition/miabis-diagnosis-report"
+      },
+      {
+        "reference": {
+          "reference": "Patient/DonorInstance"
+        },
+        "name": "Example Donor",
+        "description": "Example instance of a Donor",
+        "exampleCanonical": "https://fhir.bbmri-eric.eu/fhir/StructureDefinition/miabis-sample-donor"
+      },
+      {
+        "reference": {
+          "reference": "Observation/ObservationInstance"
+        },
+        "name": "Example observation",
+        "description": "Example instance of an Observation",
+        "exampleCanonical": "https://fhir.bbmri-eric.eu/fhir/StructureDefinition/miabis-observation"
+      },
+      {
+        "reference": {
+          "reference": "CodeSystem/miabis-inclusion-criteria-cs"
+        },
+        "name": "Inclusion Criteria",
+        "description": "Code system describing information on type of parameters that determine which subjects will become collection participant",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/miabis-inclusion-criteria-extension"
+        },
+        "name": "Inclusion Criteria Extension",
+        "description": "Information on type of parameters that determine which subjects will become collection participants.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/miabis-inclusion-criteria-vs"
+        },
+        "name": "Inclusion Criteria ValueSet",
+        "description": "Value set containing codes describing information on type of parameters that determine which subjects will become collection participants.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "CodeSystem/miabis-infrastructural-capabilities-cs"
+        },
+        "name": "Infrastructural Capabilities Code System",
+        "description": "Code sistem representing the echnical infrastructural capabilities that the biobank can offer to the clients.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/miabis-infrastructural-capabilities-extension"
+        },
+        "name": "Infrastructural Capabilities Extension",
+        "description": "The technical infrastructural capabilities that the biobank can offer to the clients.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/miabis-infrastructural-capabilities-vs"
+        },
+        "name": "Infrastructural Capabilities ValueSet",
+        "description": "Value set containig codes representing the technical infrastructural capabilities that the biobank can offer to the clients.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/miabis-juristic-person-extension"
+        },
+        "name": "JuristicPersonExtension",
+        "description": "Juristic person i.e. a university, concern, county council etc. for the network/collection.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/miabis-material-type-vs"
+        },
+        "name": "Material Type Value Set",
+        "description": "Value set containing codes for the material type of the sample.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "CodeSystem/miabis-characteristicCS"
+        },
+        "name": "MIABIS Characteristics code system",
+        "description": "Codes for specifiying which characteristic is being described.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "CodeSystem/miabis-sample-source-cs"
+        },
+        "name": "MIABIS Code system for the source of the sample",
+        "description": "This Code system defines codes for the source of the sample",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/miabis-collection-dataset-type-vs"
+        },
+        "name": "MIABIS Collection Dataset Type",
+        "description": "Value set containing codes describing the type of dataset that is part of a collection.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "CodeSystem/miabis-collection-dataset-typeCS"
+        },
+        "name": "MIABIS Collection Dataset Type",
+        "description": "Codes describing the type of dataset that is part of a collection.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "CodeSystem/miabis-collection-design-cs"
+        },
+        "name": "MIABIS Collection Design code System",
+        "description": "Codes describing the overall design of the collection that explains how the collection was/is built up.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "CodeSystem/miabis-collection-sample-type-cs"
+        },
+        "name": "MIABIS Collection Sample Type Code System",
+        "description": "Codes for the collection sample types of the provided samples",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "CodeSystem/miabis-contact-type"
+        },
+        "name": "MIABIS ContactType code system",
+        "description": "Contact Type of the managing person of collection or dataset",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "CodeSystem/miabis-dataset-type-CS"
+        },
+        "name": "MIABIS Dataset Type Code System",
+        "description": "Codes for the type of dataset in used in Sample Donor resource",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "CodeSystem/miabis-material-type-CS"
+        },
+        "name": "MIABIS Material Type Code System",
+        "description": "Codes for the material type of a sample",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "CodeSystem/miabis-sample-collection-setting-cs"
+        },
+        "name": "MIABIS Sample Collection Setting Code System",
+        "description": "Code set for the context in which the sample collection was conducted.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "CodeSystem/miabis-sex-cs"
+        },
+        "name": "MIABIS Sex Code System",
+        "description": "Codes for providing information about sex of the patient",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "CodeSystem/miabis-storage-temperature-cs"
+        },
+        "name": "MIABIS Storage Temperature Code System",
+        "description": "Code System used to describe the storage temperatur of a sample",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "CodeSystem/miabis-use-and-access-conditions-cs"
+        },
+        "name": "MIABIS Use and Access Conditions Code System",
+        "description": "Code system representing the conditions that may change the availability of the samples/data in the collection.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/miabis-network"
+        },
+        "name": "Network",
+        "description": "This resource represents a group of interconnected biobanks, collections, and/or research resources",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/miabis-network-organization"
+        },
+        "name": "Network Organization",
+        "description": "Network Organization represent a formal part of a network member, like ist name, contact information, url, etc.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "Group/NetworkInstance"
+        },
+        "name": "NetworkInstance",
+        "description": "example of a network instance",
+        "exampleCanonical": "https://fhir.bbmri-eric.eu/fhir/StructureDefinition/miabis-network"
+      },
+      {
+        "reference": {
+          "reference": "Organization/NetworkOrgInstance"
+        },
+        "name": "NetworkOrgInstance",
+        "description": "example of a network organization instance",
+        "exampleCanonical": "https://fhir.bbmri-eric.eu/fhir/StructureDefinition/miabis-network-organization"
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/miabis-number-of-subjects-extension"
+        },
+        "name": "Number Of Subjects",
+        "description": "Total number of subjects included in the collection.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/miabis-observation"
+        },
+        "name": "Observation",
+        "description": "Observation containing ICD-10 code of diagnosis",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "CodeSystem/miabis-organisational-capabilities-cs"
+        },
+        "name": "Organisational Capabilities",
+        "description": "This code system represents the organisational capabilities and services that the biobank can provide to support clients.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/miabis-organisational-capabilities-extension"
+        },
+        "name": "Organisational Capabilities Extension",
+        "description": "The organisational capabilities and services that the biobank can provide to support clients.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/miabis-organisational-capabilities-vs"
+        },
+        "name": "Organisational Capabilities Value Set",
+        "description": "Value set containing codes representing the organisational capabilities and services that the biobank can provide to support clients",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/miabis-publications-extension"
+        },
+        "name": "Publications Extension",
+        "description": "Key publications produced in the collection.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/miabis-quality-management-standard-extension"
+        },
+        "name": "Quality Management Standard Extension",
+        "description": "The standards that the biobank is certified or accredited for.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/miabis-sample"
+        },
+        "name": "Sample",
+        "description": "Sample is a portion or quantity of biological material that is collected from a sample donor, or a digital representation of a biological entity of the sample donor, such as an image.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/miabis-sample-collection-setting-extension"
+        },
+        "name": "Sample Collection Setting Extension",
+        "description": "The context in which the sample collection was/is conducted.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/miabis-sample-collection-setting-vs"
+        },
+        "name": "Sample Collection Setting Value Set",
+        "description": "Value set containing codes for the context in which the sample collection was conducted.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/miabis-sample-diagnosis-extension"
+        },
+        "name": "Sample content diagnosis",
+        "description": "The ICD-10 code describing the diagnosis of the sample content, such as whether the sample contains carcinogenic material",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/miabis-sample-donor"
+        },
+        "name": "Sample Donor",
+        "description": "Sample donor is a person who is a source of either a biological material or a digital representation of a biological entity such as an image.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/miabis-sample-source-extension"
+        },
+        "name": "Sample Source Extension",
+        "description": "The source from which the samples were collected or isolated.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/miabis-sample-source-vs"
+        },
+        "name": "Sample Source Value Set",
+        "description": "Value set containing the possible sources of a sample.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/miabis-sample-storage-temperature-extension"
+        },
+        "name": "Sample storage temperature",
+        "description": "The long-term temperature at which the sample is stored after preparation, based on SPREC v3",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "Specimen/SampleInstance"
+        },
+        "name": "SampleInstance",
+        "description": "example of a sample instance",
+        "exampleCanonical": "https://fhir.bbmri-eric.eu/fhir/StructureDefinition/miabis-sample"
+      },
+      {
+        "reference": {
+          "reference": "SearchParameter/ExtensionMemberEntitySearch"
+        },
+        "name": "Search Group by extension containing members",
+        "description": "Search parameter for searching Group by provided members via extension",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/miabis-sex-vs"
+        },
+        "name": "Sex Value Set",
+        "description": "Biological sex of the sample donor. Can be one or more of the provided values:",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/miabis-storage-temperature-vs"
+        },
+        "name": "Storage Temperature Value Set",
+        "description": "Value set containing codes for different storage temperatures.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/miabis-use-and-access-conditions-extension"
+        },
+        "name": "Use and Access Conditions Extension",
+        "description": "The conditions that may change the availability of the samples/data in the collection.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/miabis-use-and-access-conditions-vs"
+        },
+        "name": "Use and Access Conditions Value Set",
+        "description": "Value set containing codes describing the conditions that may change the availability of the samples/data in the collection.",
+        "exampleBoolean": false
+      }
+    ],
+    "page": {
+      "nameUrl": "toc.html",
+      "title": "Table of Contents",
+      "generation": "html",
+      "page": [
+        {
+          "nameUrl": "index.html",
+          "title": "Home",
+          "generation": "markdown"
+        }
+      ]
+    },
+    "parameter": [
+      {
+        "code": "copyrightyear",
+        "value": "2024+"
+      },
+      {
+        "code": "releaselabel",
+        "value": "ci-build"
+      }
+    ]
+  }
+}

@@ -1,0 +1,118 @@
+{
+  "resourceType": "ConceptMap",
+  "id": "mii-cm-pro-phq-9-linkid-migration",
+  "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ConceptMap/mii-cm-pro-phq-9-linkid-migration",
+  "title": "MII CM PRO PHQ-9 linkId Migration (2026.4.x → 2026.5.0)",
+  "description": "Maps PHQ-9 item linkIds from the pre-2026.5.0 scheme (phq-phq9-q01…q10) to the PHQ-D block namespace (phq-phq2a…i and phq-phq9-difficulty) introduced in 2026.5.0. Apply to existing PHQ-9 QuestionnaireResponses so their item.linkId values match the current Questionnaire. The calculated items phq-phq9-score-total and phq-phq9-promis-tscore were not renamed.",
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/artifact-versionAlgorithm",
+      "valueCoding": {
+        "code": "natural",
+        "system": "http://hl7.org/fhir/version-algorithm",
+        "display": "Natural"
+      }
+    }
+  ],
+  "group": [
+    {
+      "element": [
+        {
+          "target": [
+            {
+              "code": "phq-phq2a",
+              "equivalence": "equal"
+            }
+          ],
+          "code": "phq-phq9-q01"
+        },
+        {
+          "target": [
+            {
+              "code": "phq-phq2b",
+              "equivalence": "equal"
+            }
+          ],
+          "code": "phq-phq9-q02"
+        },
+        {
+          "target": [
+            {
+              "code": "phq-phq2c",
+              "equivalence": "equal"
+            }
+          ],
+          "code": "phq-phq9-q03"
+        },
+        {
+          "target": [
+            {
+              "code": "phq-phq2d",
+              "equivalence": "equal"
+            }
+          ],
+          "code": "phq-phq9-q04"
+        },
+        {
+          "target": [
+            {
+              "code": "phq-phq2e",
+              "equivalence": "equal"
+            }
+          ],
+          "code": "phq-phq9-q05"
+        },
+        {
+          "target": [
+            {
+              "code": "phq-phq2f",
+              "equivalence": "equal"
+            }
+          ],
+          "code": "phq-phq9-q06"
+        },
+        {
+          "target": [
+            {
+              "code": "phq-phq2g",
+              "equivalence": "equal"
+            }
+          ],
+          "code": "phq-phq9-q07"
+        },
+        {
+          "target": [
+            {
+              "code": "phq-phq2h",
+              "equivalence": "equal"
+            }
+          ],
+          "code": "phq-phq9-q08"
+        },
+        {
+          "target": [
+            {
+              "code": "phq-phq2i",
+              "equivalence": "equal"
+            }
+          ],
+          "code": "phq-phq9-q09"
+        },
+        {
+          "target": [
+            {
+              "code": "phq-phq9-difficulty",
+              "equivalence": "equal"
+            }
+          ],
+          "code": "phq-phq9-q10"
+        }
+      ],
+      "source": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/linkid/mii-qst-pro-phq-9",
+      "target": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/linkid/mii-qst-pro-phq-9"
+    }
+  ],
+  "version": "2027.0.0-ballot.1",
+  "status": "active",
+  "experimental": false
+}

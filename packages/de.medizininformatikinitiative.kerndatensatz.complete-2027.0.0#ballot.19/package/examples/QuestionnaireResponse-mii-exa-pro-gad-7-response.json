@@ -1,0 +1,373 @@
+{
+  "resourceType": "QuestionnaireResponse",
+  "id": "mii-exa-pro-gad-7-response",
+  "meta": {
+    "profile": [
+      "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-questionnaire-response|2027.0.0-ballot.1"
+    ]
+  },
+  "item": [
+    {
+      "answer": [
+        {
+          "valueCoding": {
+            "code": "LA6569-3",
+            "system": "http://loinc.org",
+            "display": "Several days",
+            "_display": {
+              "extension": [
+                {
+                  "extension": [
+                    {
+                      "url": "lang",
+                      "valueCode": "de"
+                    },
+                    {
+                      "url": "content",
+                      "valueString": "An einzelnen Tagen"
+                    }
+                  ],
+                  "url": "http://hl7.org/fhir/StructureDefinition/translation"
+                }
+              ]
+            }
+          }
+        }
+      ],
+      "linkId": "phq-phq5a",
+      "text": "Feeling nervous, anxious, or on edge",
+      "_text": {
+        "extension": [
+          {
+            "extension": [
+              {
+                "url": "lang",
+                "valueCode": "de"
+              },
+              {
+                "url": "content",
+                "valueString": "Nervosität, Ängstlichkeit oder Anspannung"
+              }
+            ],
+            "url": "http://hl7.org/fhir/StructureDefinition/translation"
+          }
+        ]
+      }
+    },
+    {
+      "answer": [
+        {
+          "valueCoding": {
+            "code": "LA6569-3",
+            "system": "http://loinc.org",
+            "display": "Several days",
+            "_display": {
+              "extension": [
+                {
+                  "extension": [
+                    {
+                      "url": "lang",
+                      "valueCode": "de"
+                    },
+                    {
+                      "url": "content",
+                      "valueString": "An einzelnen Tagen"
+                    }
+                  ],
+                  "url": "http://hl7.org/fhir/StructureDefinition/translation"
+                }
+              ]
+            }
+          }
+        }
+      ],
+      "linkId": "phq-phq5b",
+      "text": "Not being able to stop or control worrying",
+      "_text": {
+        "extension": [
+          {
+            "extension": [
+              {
+                "url": "lang",
+                "valueCode": "de"
+              },
+              {
+                "url": "content",
+                "valueString": "Nicht in der Lage sein, Sorgen zu stoppen oder zu kontrollieren"
+              }
+            ],
+            "url": "http://hl7.org/fhir/StructureDefinition/translation"
+          }
+        ]
+      }
+    },
+    {
+      "answer": [
+        {
+          "valueCoding": {
+            "code": "LA6569-3",
+            "system": "http://loinc.org",
+            "display": "Several days",
+            "_display": {
+              "extension": [
+                {
+                  "extension": [
+                    {
+                      "url": "lang",
+                      "valueCode": "de"
+                    },
+                    {
+                      "url": "content",
+                      "valueString": "An einzelnen Tagen"
+                    }
+                  ],
+                  "url": "http://hl7.org/fhir/StructureDefinition/translation"
+                }
+              ]
+            }
+          }
+        }
+      ],
+      "linkId": "phq-phq5c",
+      "text": "Worrying too much about different things",
+      "_text": {
+        "extension": [
+          {
+            "extension": [
+              {
+                "url": "lang",
+                "valueCode": "de"
+              },
+              {
+                "url": "content",
+                "valueString": "Übermäßige Sorgen bezüglich verschiedener Angelegenheiten"
+              }
+            ],
+            "url": "http://hl7.org/fhir/StructureDefinition/translation"
+          }
+        ]
+      }
+    },
+    {
+      "answer": [
+        {
+          "valueCoding": {
+            "code": "LA6570-1",
+            "system": "http://loinc.org",
+            "display": "More than half the days",
+            "_display": {
+              "extension": [
+                {
+                  "extension": [
+                    {
+                      "url": "lang",
+                      "valueCode": "de"
+                    },
+                    {
+                      "url": "content",
+                      "valueString": "An mehr als der Hälfte der Tage"
+                    }
+                  ],
+                  "url": "http://hl7.org/fhir/StructureDefinition/translation"
+                }
+              ]
+            }
+          }
+        }
+      ],
+      "linkId": "phq-phq5d",
+      "text": "Trouble relaxing",
+      "_text": {
+        "extension": [
+          {
+            "extension": [
+              {
+                "url": "lang",
+                "valueCode": "de"
+              },
+              {
+                "url": "content",
+                "valueString": "Schwierigkeiten zu entspannen"
+              }
+            ],
+            "url": "http://hl7.org/fhir/StructureDefinition/translation"
+          }
+        ]
+      }
+    },
+    {
+      "answer": [
+        {
+          "valueCoding": {
+            "code": "LA6570-1",
+            "system": "http://loinc.org",
+            "display": "More than half the days",
+            "_display": {
+              "extension": [
+                {
+                  "extension": [
+                    {
+                      "url": "lang",
+                      "valueCode": "de"
+                    },
+                    {
+                      "url": "content",
+                      "valueString": "An mehr als der Hälfte der Tage"
+                    }
+                  ],
+                  "url": "http://hl7.org/fhir/StructureDefinition/translation"
+                }
+              ]
+            }
+          }
+        }
+      ],
+      "linkId": "phq-phq5e",
+      "text": "Being so restless that it is hard to sit still",
+      "_text": {
+        "extension": [
+          {
+            "extension": [
+              {
+                "url": "lang",
+                "valueCode": "de"
+              },
+              {
+                "url": "content",
+                "valueString": "Rastlosigkeit, so dass Stillsitzen schwer fällt"
+              }
+            ],
+            "url": "http://hl7.org/fhir/StructureDefinition/translation"
+          }
+        ]
+      }
+    },
+    {
+      "answer": [
+        {
+          "valueCoding": {
+            "code": "LA6568-5",
+            "system": "http://loinc.org",
+            "display": "Not at all",
+            "_display": {
+              "extension": [
+                {
+                  "extension": [
+                    {
+                      "url": "lang",
+                      "valueCode": "de"
+                    },
+                    {
+                      "url": "content",
+                      "valueString": "Überhaupt nicht"
+                    }
+                  ],
+                  "url": "http://hl7.org/fhir/StructureDefinition/translation"
+                }
+              ]
+            }
+          }
+        }
+      ],
+      "linkId": "phq-phq5f",
+      "text": "Becoming easily annoyed or irritable",
+      "_text": {
+        "extension": [
+          {
+            "extension": [
+              {
+                "url": "lang",
+                "valueCode": "de"
+              },
+              {
+                "url": "content",
+                "valueString": "Schnelle Verärgerung oder Gereiztheit"
+              }
+            ],
+            "url": "http://hl7.org/fhir/StructureDefinition/translation"
+          }
+        ]
+      }
+    },
+    {
+      "answer": [
+        {
+          "valueCoding": {
+            "code": "LA6568-5",
+            "system": "http://loinc.org",
+            "display": "Not at all",
+            "_display": {
+              "extension": [
+                {
+                  "extension": [
+                    {
+                      "url": "lang",
+                      "valueCode": "de"
+                    },
+                    {
+                      "url": "content",
+                      "valueString": "Überhaupt nicht"
+                    }
+                  ],
+                  "url": "http://hl7.org/fhir/StructureDefinition/translation"
+                }
+              ]
+            }
+          }
+        }
+      ],
+      "linkId": "phq-phq5g",
+      "text": "Feeling afraid, as if something awful might happen",
+      "_text": {
+        "extension": [
+          {
+            "extension": [
+              {
+                "url": "lang",
+                "valueCode": "de"
+              },
+              {
+                "url": "content",
+                "valueString": "Gefühl der Angst, so als würde etwas Schlimmes passieren"
+              }
+            ],
+            "url": "http://hl7.org/fhir/StructureDefinition/translation"
+          }
+        ]
+      }
+    },
+    {
+      "answer": [
+        {
+          "valueDecimal": 7
+        }
+      ],
+      "linkId": "phq-gad7-score-total",
+      "text": "GAD-7 Total Score (0-21)",
+      "_text": {
+        "extension": [
+          {
+            "extension": [
+              {
+                "url": "lang",
+                "valueCode": "de"
+              },
+              {
+                "url": "content",
+                "valueString": "GAD-7 Summenwert (0-21)"
+              }
+            ],
+            "url": "http://hl7.org/fhir/StructureDefinition/translation"
+          }
+        ]
+      }
+    }
+  ],
+  "status": "completed",
+  "language": "en",
+  "subject": {
+    "reference": "Patient/mii-exa-pro-patient"
+  },
+  "authored": "2026-09-02T10:00:00Z",
+  "questionnaire": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/Questionnaire/mii-qst-pro-gad-7|2027.0.0-ballot.1"
+}

@@ -1,0 +1,507 @@
+{
+  "resourceType": "Questionnaire",
+  "id": "mii-qst-pro-whodas-whodas12",
+  "meta": {
+    "profile": [
+      "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-questionnaire|2027.0.0-ballot.1"
+    ]
+  },
+  "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/Questionnaire/mii-qst-pro-whodas-whodas12",
+  "title": "MII QST PRO WHODAS 2.0 12-Item",
+  "description": "WHO Disability Assessment Schedule 2.0, 12-item self-administered version (WHODAS-12). English primary with German translations (validated PCOR-MII wording). WHODAS 2.0 © WHO 2010 — see copyright for licensing conditions (a WHO licence is required for electronic/data-capture use).",
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/artifact-versionAlgorithm",
+      "valueCoding": {
+        "code": "natural",
+        "system": "http://hl7.org/fhir/version-algorithm",
+        "display": "Natural"
+      }
+    },
+    {
+      "extension": [
+        {
+          "url": "displayable",
+          "valueBoolean": true
+        },
+        {
+          "url": "collectable",
+          "valueBoolean": true
+        },
+        {
+          "url": "calculatable",
+          "valueBoolean": true
+        },
+        {
+          "url": "extractable",
+          "valueBoolean": true
+        },
+        {
+          "url": "domainAligned",
+          "valueBoolean": true
+        }
+      ],
+      "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-ex-pro-questionnaire-capabilities"
+    },
+    {
+      "valueExpression": {
+        "name": "simpleSum",
+        "language": "text/fhirpath",
+        "expression": "%resource.item.where(linkId.matches('^whodas-whodas12-q(0[1-9]|1[0-2])$')).answer.value.weight().sum()"
+      },
+      "url": "http://hl7.org/fhir/StructureDefinition/variable"
+    }
+  ],
+  "code": [
+    {
+      "system": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-questionnaire-catalogue",
+      "code": "whodas-whodas12",
+      "display": "WHODAS 2.0 12-Item (WHO Disability Assessment Schedule 2.0, self-administered)"
+    }
+  ],
+  "item": [
+    {
+      "linkId": "WHODAS12.Description",
+      "type": "display",
+      "text": "In the past 30 days, how much difficulty did you have in:",
+      "_text": {
+        "extension": [
+          {
+            "extension": [
+              {
+                "url": "lang",
+                "valueCode": "de"
+              },
+              {
+                "url": "content",
+                "valueString": "Wie viele Schwierigkeiten hatten Sie in den letzten 30 Tagen:"
+              }
+            ],
+            "url": "http://hl7.org/fhir/StructureDefinition/translation"
+          }
+        ]
+      }
+    },
+    {
+      "code": [
+        {
+          "code": "whodas12-q01",
+          "system": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-whodas-12"
+        }
+      ],
+      "linkId": "whodas-whodas12-q01",
+      "type": "choice",
+      "prefix": "1",
+      "text": "Standing for long periods such as 30 minutes?",
+      "_text": {
+        "extension": [
+          {
+            "extension": [
+              {
+                "url": "lang",
+                "valueCode": "de"
+              },
+              {
+                "url": "content",
+                "valueString": "längere Zeit (ca. 30 min) zu stehen?"
+              }
+            ],
+            "url": "http://hl7.org/fhir/StructureDefinition/translation"
+          }
+        ]
+      },
+      "answerValueSet": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-whodas-12-answer-list"
+    },
+    {
+      "code": [
+        {
+          "code": "whodas12-q02",
+          "system": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-whodas-12"
+        }
+      ],
+      "linkId": "whodas-whodas12-q02",
+      "type": "choice",
+      "prefix": "2",
+      "text": "Taking care of your household responsibilities?",
+      "_text": {
+        "extension": [
+          {
+            "extension": [
+              {
+                "url": "lang",
+                "valueCode": "de"
+              },
+              {
+                "url": "content",
+                "valueString": "Ihren Haushaltspflichten nachzukommen?"
+              }
+            ],
+            "url": "http://hl7.org/fhir/StructureDefinition/translation"
+          }
+        ]
+      },
+      "answerValueSet": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-whodas-12-answer-list"
+    },
+    {
+      "code": [
+        {
+          "code": "whodas12-q03",
+          "system": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-whodas-12"
+        }
+      ],
+      "linkId": "whodas-whodas12-q03",
+      "type": "choice",
+      "prefix": "3",
+      "text": "Learning a new task, for example, learning how to get to a new place?",
+      "_text": {
+        "extension": [
+          {
+            "extension": [
+              {
+                "url": "lang",
+                "valueCode": "de"
+              },
+              {
+                "url": "content",
+                "valueString": "Neue Aufgaben zu lernen (z.B. erlernen an einen neuen Ort zu gelangen, den sie nicht kannten?)"
+              }
+            ],
+            "url": "http://hl7.org/fhir/StructureDefinition/translation"
+          }
+        ]
+      },
+      "answerValueSet": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-whodas-12-answer-list"
+    },
+    {
+      "code": [
+        {
+          "code": "whodas12-q04",
+          "system": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-whodas-12"
+        }
+      ],
+      "linkId": "whodas-whodas12-q04",
+      "type": "choice",
+      "prefix": "4",
+      "text": "Joining in community activities (for example, festivities, religious or other activities) in the same way as anyone else can?",
+      "_text": {
+        "extension": [
+          {
+            "extension": [
+              {
+                "url": "lang",
+                "valueCode": "de"
+              },
+              {
+                "url": "content",
+                "valueString": "Wie viele Schwierigkeiten hatten Sie, an gesellschaftlichen Aktivitäten (wie z.B. Festlichkeiten, religiöse oder andere Aktivitäten) in der gleichen Art und Weise teilzunehmen, wie jeder andere?"
+              }
+            ],
+            "url": "http://hl7.org/fhir/StructureDefinition/translation"
+          }
+        ]
+      },
+      "answerValueSet": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-whodas-12-answer-list"
+    },
+    {
+      "code": [
+        {
+          "code": "whodas12-q05",
+          "system": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-whodas-12"
+        }
+      ],
+      "linkId": "whodas-whodas12-q05",
+      "type": "choice",
+      "prefix": "5",
+      "text": "How much have you been emotionally affected by your health problems?",
+      "_text": {
+        "extension": [
+          {
+            "extension": [
+              {
+                "url": "lang",
+                "valueCode": "de"
+              },
+              {
+                "url": "content",
+                "valueString": "Wie sehr wurden Sie durch Ihren gesundheitlichen Zustand emotional belastet?"
+              }
+            ],
+            "url": "http://hl7.org/fhir/StructureDefinition/translation"
+          }
+        ]
+      },
+      "answerValueSet": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-whodas-12-answer-list"
+    },
+    {
+      "code": [
+        {
+          "code": "whodas12-q06",
+          "system": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-whodas-12"
+        }
+      ],
+      "linkId": "whodas-whodas12-q06",
+      "type": "choice",
+      "prefix": "6",
+      "text": "Concentrating on doing something for ten minutes?",
+      "_text": {
+        "extension": [
+          {
+            "extension": [
+              {
+                "url": "lang",
+                "valueCode": "de"
+              },
+              {
+                "url": "content",
+                "valueString": "Sich auf etwas für 10 Minuten zu konzentrieren?"
+              }
+            ],
+            "url": "http://hl7.org/fhir/StructureDefinition/translation"
+          }
+        ]
+      },
+      "answerValueSet": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-whodas-12-answer-list"
+    },
+    {
+      "code": [
+        {
+          "code": "whodas12-q07",
+          "system": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-whodas-12"
+        }
+      ],
+      "linkId": "whodas-whodas12-q07",
+      "type": "choice",
+      "prefix": "7",
+      "text": "Walking a long distance such as a kilometre?",
+      "_text": {
+        "extension": [
+          {
+            "extension": [
+              {
+                "url": "lang",
+                "valueCode": "de"
+              },
+              {
+                "url": "content",
+                "valueString": "Eine längere Strecke (ca. einen Kilometer) zu Fuß zu gehen?"
+              }
+            ],
+            "url": "http://hl7.org/fhir/StructureDefinition/translation"
+          }
+        ]
+      },
+      "answerValueSet": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-whodas-12-answer-list"
+    },
+    {
+      "code": [
+        {
+          "code": "whodas12-q08",
+          "system": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-whodas-12"
+        }
+      ],
+      "linkId": "whodas-whodas12-q08",
+      "type": "choice",
+      "prefix": "8",
+      "text": "Washing your whole body?",
+      "_text": {
+        "extension": [
+          {
+            "extension": [
+              {
+                "url": "lang",
+                "valueCode": "de"
+              },
+              {
+                "url": "content",
+                "valueString": "Ihren gesamten Körper zu waschen?"
+              }
+            ],
+            "url": "http://hl7.org/fhir/StructureDefinition/translation"
+          }
+        ]
+      },
+      "answerValueSet": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-whodas-12-answer-list"
+    },
+    {
+      "code": [
+        {
+          "code": "whodas12-q09",
+          "system": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-whodas-12"
+        }
+      ],
+      "linkId": "whodas-whodas12-q09",
+      "type": "choice",
+      "prefix": "9",
+      "text": "Getting dressed?",
+      "_text": {
+        "extension": [
+          {
+            "extension": [
+              {
+                "url": "lang",
+                "valueCode": "de"
+              },
+              {
+                "url": "content",
+                "valueString": "sich anzuziehen?"
+              }
+            ],
+            "url": "http://hl7.org/fhir/StructureDefinition/translation"
+          }
+        ]
+      },
+      "answerValueSet": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-whodas-12-answer-list"
+    },
+    {
+      "code": [
+        {
+          "code": "whodas12-q10",
+          "system": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-whodas-12"
+        }
+      ],
+      "linkId": "whodas-whodas12-q10",
+      "type": "choice",
+      "prefix": "10",
+      "text": "Dealing with people you do not know?",
+      "_text": {
+        "extension": [
+          {
+            "extension": [
+              {
+                "url": "lang",
+                "valueCode": "de"
+              },
+              {
+                "url": "content",
+                "valueString": "Im Umgang mit anderen Personen, die Sie nicht kennen?"
+              }
+            ],
+            "url": "http://hl7.org/fhir/StructureDefinition/translation"
+          }
+        ]
+      },
+      "answerValueSet": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-whodas-12-answer-list"
+    },
+    {
+      "code": [
+        {
+          "code": "whodas12-q11",
+          "system": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-whodas-12"
+        }
+      ],
+      "linkId": "whodas-whodas12-q11",
+      "type": "choice",
+      "prefix": "11",
+      "text": "Maintaining a friendship?",
+      "_text": {
+        "extension": [
+          {
+            "extension": [
+              {
+                "url": "lang",
+                "valueCode": "de"
+              },
+              {
+                "url": "content",
+                "valueString": "Eine Freundschaft aufrechtzuerhalten?"
+              }
+            ],
+            "url": "http://hl7.org/fhir/StructureDefinition/translation"
+          }
+        ]
+      },
+      "answerValueSet": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-whodas-12-answer-list"
+    },
+    {
+      "code": [
+        {
+          "code": "whodas12-q12",
+          "system": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-whodas-12"
+        }
+      ],
+      "linkId": "whodas-whodas12-q12",
+      "type": "choice",
+      "prefix": "12",
+      "text": "Your day-to-day work/school?",
+      "_text": {
+        "extension": [
+          {
+            "extension": [
+              {
+                "url": "lang",
+                "valueCode": "de"
+              },
+              {
+                "url": "content",
+                "valueString": "Bei der Bewältigung des Arbeits-/Schulalltags?"
+              }
+            ],
+            "url": "http://hl7.org/fhir/StructureDefinition/translation"
+          }
+        ]
+      },
+      "answerValueSet": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-whodas-12-answer-list"
+    },
+    {
+      "extension": [
+        {
+          "valueExpression": {
+            "name": "whodas12SimpleSum",
+            "language": "text/fhirpath",
+            "expression": "%simpleSum"
+          },
+          "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-calculatedExpression"
+        },
+        {
+          "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-observationExtract",
+          "valueBoolean": true
+        },
+        {
+          "valueCoding": {
+            "system": "http://unitsofmeasure.org",
+            "code": "{score}"
+          },
+          "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-unit"
+        },
+        {
+          "valueCodeableConcept": {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "survey"
+              }
+            ]
+          },
+          "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-observation-extract-category"
+        }
+      ],
+      "linkId": "whodas-whodas12-score-simple-sum",
+      "type": "decimal",
+      "prefix": "Sum score",
+      "readOnly": true,
+      "text": "WHODAS 2.0 12-Item simple sum score (0-48)",
+      "_text": {
+        "extension": [
+          {
+            "extension": [
+              {
+                "url": "lang",
+                "valueCode": "de"
+              },
+              {
+                "url": "content",
+                "valueString": "WHODAS 2.0 12-Item Summenwert (Simple Sum, 0-48)"
+              }
+            ],
+            "url": "http://hl7.org/fhir/StructureDefinition/translation"
+          }
+        ]
+      }
+    }
+  ],
+  "version": "2027.0.0-ballot.1",
+  "status": "active",
+  "experimental": true,
+  "language": "en",
+  "copyright": "WHODAS 2.0 © World Health Organization 2010 (Measuring Health and Disability: Manual for WHODAS 2.0, ISBN 9789241547598). WHO permits clinicians to reproduce WHODAS 2.0 for use with their own patients free of charge. Any other use — including reproduction in an electronic data capture system — requires a licence agreement (free of charge for non-commercial use) via the WHO Classifications licensing process; translations require WHO permission. The German item wording follows the validated PCOR-MII Item Level Dictionary. Only the MII-authored FHIR content (profiles, codes, scoring) is licensed CC0; the WHODAS 2.0 item text remains © World Health Organization."
+}

@@ -1,0 +1,71 @@
+{
+  "resourceType": "ValueSet",
+  "status": "active",
+  "name": "MII_VS_PRO_PROMIS_Physical_Function_Response_Scale",
+  "id": "mii-vs-pro-promis-physical-function-response-scale",
+  "title": "MII VS PRO PROMIS Physical Function Response Scale",
+  "description": "PROMIS Physical Function response scale based on LOINC LL1022-4",
+  "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-promis-physical-function-response-scale",
+  "version": "2027.0.0-ballot.1",
+  "experimental": true,
+  "language": "en",
+  "compose": {
+    "include": [
+      {
+        "system": "http://loinc.org",
+        "concept": [
+          {
+            "code": "LA13921-4",
+            "display": "Without any difficulty",
+            "designation": [
+              {
+                "language": "de",
+                "value": "Ohne jede Schwierigkeiten"
+              }
+            ]
+          },
+          {
+            "code": "LA13918-0",
+            "display": "With a little difficulty",
+            "designation": [
+              {
+                "language": "de",
+                "value": "Mit geringen Schwierigkeiten"
+              }
+            ]
+          },
+          {
+            "code": "LA13920-6",
+            "display": "With some difficulty",
+            "designation": [
+              {
+                "language": "de",
+                "value": "Mit einigen Schwierigkeiten"
+              }
+            ]
+          },
+          {
+            "code": "LA13919-8",
+            "display": "With much difficulty",
+            "designation": [
+              {
+                "language": "de",
+                "value": "Mit großen Schwierigkeiten"
+              }
+            ]
+          },
+          {
+            "code": "LA13912-3",
+            "display": "Unable to do",
+            "designation": [
+              {
+                "language": "de",
+                "value": "Kann ich gar nicht"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

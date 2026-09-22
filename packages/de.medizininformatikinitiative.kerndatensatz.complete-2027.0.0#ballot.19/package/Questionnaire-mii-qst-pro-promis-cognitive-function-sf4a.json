@@ -1,0 +1,954 @@
+{
+  "resourceType": "Questionnaire",
+  "id": "mii-qst-pro-promis-cognitive-function-sf4a",
+  "meta": {
+    "profile": [
+      "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-questionnaire|2027.0.0-ballot.1"
+    ]
+  },
+  "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/Questionnaire/mii-qst-pro-promis-cognitive-function-sf4a",
+  "title": "MII QST PRO PROMIS Cognitive Function SF 4a",
+  "description": "PROMIS Cognitive Function Short Form 4a - Assessment of cognitive abilities and concerns",
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/artifact-versionAlgorithm",
+      "valueCoding": {
+        "code": "natural",
+        "system": "http://hl7.org/fhir/version-algorithm",
+        "display": "Natural"
+      }
+    },
+    {
+      "extension": [
+        {
+          "url": "displayable",
+          "valueBoolean": true
+        },
+        {
+          "url": "collectable",
+          "valueBoolean": true
+        },
+        {
+          "url": "calculatable",
+          "valueBoolean": true
+        },
+        {
+          "url": "extractable",
+          "valueBoolean": true
+        }
+      ],
+      "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-ex-pro-questionnaire-capabilities"
+    },
+    {
+      "valueExpression": {
+        "name": "cognitiveRawScore",
+        "language": "text/fhirpath",
+        "expression": "%resource.item.item.where(linkId.matches('^promis-cognition-(pc2r|pc35r|pc36r|pc42r)$')).answer.value.weight().sum()"
+      },
+      "url": "http://hl7.org/fhir/StructureDefinition/variable"
+    }
+  ],
+  "useContext": [
+    {
+      "valueReference": {
+        "display": "PROMIS (Patient-Reported Outcomes Measurement Information System) (https://www.healthmeasures.net/explore-measurement-systems/promis)"
+      },
+      "code": {
+        "code": "focus",
+        "system": "http://terminology.hl7.org/CodeSystem/usage-context-type"
+      }
+    },
+    {
+      "valueReference": {
+        "display": "PROMIS National Center Deutschland (CPCOR Charité) — Curator of the official German translations provided by PCOR-MII (https://cpcor.charite.de/promis_national_center_deutschland)"
+      },
+      "code": {
+        "code": "focus",
+        "system": "http://terminology.hl7.org/CodeSystem/usage-context-type"
+      }
+    }
+  ],
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "https://cpcor.charite.de/promis_national_center_deutschland/nutzungsanfragen"
+        }
+      ],
+      "name": "PROMIS National Center Deutschland (CPCOR)"
+    }
+  ],
+  "code": [
+    {
+      "code": "81525-8",
+      "system": "http://loinc.org",
+      "display": "PROMIS short form - cognitive function - abilities subset 4a - version 2.0"
+    },
+    {
+      "code": "promis-cognitive-function-sf4a",
+      "system": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-questionnaire-catalogue",
+      "display": "PROMIS Cognitive Function Abilities 4a Short Form Questionnaire"
+    }
+  ],
+  "item": [
+    {
+      "item": [
+        {
+          "linkId": "PROMIS-CognitiveFunction-SF4a.Instructions",
+          "type": "display",
+          "text": "In the past 7 days",
+          "_text": {
+            "extension": [
+              {
+                "extension": [
+                  {
+                    "url": "lang",
+                    "valueCode": "de"
+                  },
+                  {
+                    "url": "content",
+                    "valueString": "In den letzten 7 Tagen:"
+                  }
+                ],
+                "url": "http://hl7.org/fhir/StructureDefinition/translation"
+              }
+            ]
+          }
+        },
+        {
+          "code": [
+            {
+              "code": "81461-6",
+              "system": "http://loinc.org",
+              "display": "My thinking has been slow in past 7 days [PROMIS]"
+            }
+          ],
+          "answerOption": [
+            {
+              "valueCoding": {
+                "code": "LA6568-5",
+                "system": "http://loinc.org",
+                "display": "Not at all",
+                "_display": {
+                  "extension": [
+                    {
+                      "extension": [
+                        {
+                          "url": "lang",
+                          "valueCode": "de"
+                        },
+                        {
+                          "url": "content",
+                          "valueString": "Nie"
+                        }
+                      ],
+                      "url": "http://hl7.org/fhir/StructureDefinition/translation"
+                    }
+                  ]
+                }
+              },
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/itemWeight",
+                  "valueDecimal": 5
+                }
+              ]
+            },
+            {
+              "valueCoding": {
+                "code": "LA10066-1",
+                "system": "http://loinc.org",
+                "display": "Rarely",
+                "_display": {
+                  "extension": [
+                    {
+                      "extension": [
+                        {
+                          "url": "lang",
+                          "valueCode": "de"
+                        },
+                        {
+                          "url": "content",
+                          "valueString": "Selten (einmal)"
+                        }
+                      ],
+                      "url": "http://hl7.org/fhir/StructureDefinition/translation"
+                    }
+                  ]
+                }
+              },
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/itemWeight",
+                  "valueDecimal": 4
+                }
+              ]
+            },
+            {
+              "valueCoding": {
+                "code": "LA10082-8",
+                "system": "http://loinc.org",
+                "display": "Sometimes",
+                "_display": {
+                  "extension": [
+                    {
+                      "extension": [
+                        {
+                          "url": "lang",
+                          "valueCode": "de"
+                        },
+                        {
+                          "url": "content",
+                          "valueString": "Manchmal (zwei- oder dreimal)"
+                        }
+                      ],
+                      "url": "http://hl7.org/fhir/StructureDefinition/translation"
+                    }
+                  ]
+                }
+              },
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/itemWeight",
+                  "valueDecimal": 3
+                }
+              ]
+            },
+            {
+              "valueCoding": {
+                "code": "LA10044-8",
+                "system": "http://loinc.org",
+                "display": "Often",
+                "_display": {
+                  "extension": [
+                    {
+                      "extension": [
+                        {
+                          "url": "lang",
+                          "valueCode": "de"
+                        },
+                        {
+                          "url": "content",
+                          "valueString": "Oft (ungefähr einmal täglich)"
+                        }
+                      ],
+                      "url": "http://hl7.org/fhir/StructureDefinition/translation"
+                    }
+                  ]
+                }
+              },
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/itemWeight",
+                  "valueDecimal": 2
+                }
+              ]
+            },
+            {
+              "valueCoding": {
+                "code": "LA9933-8",
+                "system": "http://loinc.org",
+                "display": "Always",
+                "_display": {
+                  "extension": [
+                    {
+                      "extension": [
+                        {
+                          "url": "lang",
+                          "valueCode": "de"
+                        },
+                        {
+                          "url": "content",
+                          "valueString": "Sehr oft (mehrmals täglich)"
+                        }
+                      ],
+                      "url": "http://hl7.org/fhir/StructureDefinition/translation"
+                    }
+                  ]
+                }
+              },
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/itemWeight",
+                  "valueDecimal": 1
+                }
+              ]
+            }
+          ],
+          "linkId": "promis-cognition-pc2r",
+          "type": "choice",
+          "text": "My thinking has been slow",
+          "_text": {
+            "extension": [
+              {
+                "extension": [
+                  {
+                    "url": "lang",
+                    "valueCode": "de"
+                  },
+                  {
+                    "url": "content",
+                    "valueString": "Ich war langsam beim Denken"
+                  }
+                ],
+                "url": "http://hl7.org/fhir/StructureDefinition/translation"
+              }
+            ]
+          },
+          "required": true
+        },
+        {
+          "code": [
+            {
+              "code": "81478-0",
+              "system": "http://loinc.org",
+              "display": "It has seemed like my brain was not working as well as usual in past 7 days [PROMIS]"
+            }
+          ],
+          "answerOption": [
+            {
+              "valueCoding": {
+                "code": "LA6568-5",
+                "system": "http://loinc.org",
+                "display": "Not at all",
+                "_display": {
+                  "extension": [
+                    {
+                      "extension": [
+                        {
+                          "url": "lang",
+                          "valueCode": "de"
+                        },
+                        {
+                          "url": "content",
+                          "valueString": "Nie"
+                        }
+                      ],
+                      "url": "http://hl7.org/fhir/StructureDefinition/translation"
+                    }
+                  ]
+                }
+              },
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/itemWeight",
+                  "valueDecimal": 5
+                }
+              ]
+            },
+            {
+              "valueCoding": {
+                "code": "LA10066-1",
+                "system": "http://loinc.org",
+                "display": "Rarely",
+                "_display": {
+                  "extension": [
+                    {
+                      "extension": [
+                        {
+                          "url": "lang",
+                          "valueCode": "de"
+                        },
+                        {
+                          "url": "content",
+                          "valueString": "Selten (einmal)"
+                        }
+                      ],
+                      "url": "http://hl7.org/fhir/StructureDefinition/translation"
+                    }
+                  ]
+                }
+              },
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/itemWeight",
+                  "valueDecimal": 4
+                }
+              ]
+            },
+            {
+              "valueCoding": {
+                "code": "LA10082-8",
+                "system": "http://loinc.org",
+                "display": "Sometimes",
+                "_display": {
+                  "extension": [
+                    {
+                      "extension": [
+                        {
+                          "url": "lang",
+                          "valueCode": "de"
+                        },
+                        {
+                          "url": "content",
+                          "valueString": "Manchmal (zwei- oder dreimal)"
+                        }
+                      ],
+                      "url": "http://hl7.org/fhir/StructureDefinition/translation"
+                    }
+                  ]
+                }
+              },
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/itemWeight",
+                  "valueDecimal": 3
+                }
+              ]
+            },
+            {
+              "valueCoding": {
+                "code": "LA10044-8",
+                "system": "http://loinc.org",
+                "display": "Often",
+                "_display": {
+                  "extension": [
+                    {
+                      "extension": [
+                        {
+                          "url": "lang",
+                          "valueCode": "de"
+                        },
+                        {
+                          "url": "content",
+                          "valueString": "Oft (ungefähr einmal täglich)"
+                        }
+                      ],
+                      "url": "http://hl7.org/fhir/StructureDefinition/translation"
+                    }
+                  ]
+                }
+              },
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/itemWeight",
+                  "valueDecimal": 2
+                }
+              ]
+            },
+            {
+              "valueCoding": {
+                "code": "LA9933-8",
+                "system": "http://loinc.org",
+                "display": "Always",
+                "_display": {
+                  "extension": [
+                    {
+                      "extension": [
+                        {
+                          "url": "lang",
+                          "valueCode": "de"
+                        },
+                        {
+                          "url": "content",
+                          "valueString": "Sehr oft (mehrmals täglich)"
+                        }
+                      ],
+                      "url": "http://hl7.org/fhir/StructureDefinition/translation"
+                    }
+                  ]
+                }
+              },
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/itemWeight",
+                  "valueDecimal": 1
+                }
+              ]
+            }
+          ],
+          "linkId": "promis-cognition-pc35r",
+          "type": "choice",
+          "text": "It has seemed like my brain was not working as well as usual",
+          "_text": {
+            "extension": [
+              {
+                "extension": [
+                  {
+                    "url": "lang",
+                    "valueCode": "de"
+                  },
+                  {
+                    "url": "content",
+                    "valueString": "Es kam mir so vor, als ob mein Gehirn nicht so gut wie sonst funktionierte"
+                  }
+                ],
+                "url": "http://hl7.org/fhir/StructureDefinition/translation"
+              }
+            ]
+          },
+          "required": true
+        },
+        {
+          "code": [
+            {
+              "code": "81479-8",
+              "system": "http://loinc.org",
+              "display": "I have had to work harder than usual to keep track of what I was doing in past 7 days [PROMIS]"
+            }
+          ],
+          "answerOption": [
+            {
+              "valueCoding": {
+                "code": "LA6568-5",
+                "system": "http://loinc.org",
+                "display": "Not at all",
+                "_display": {
+                  "extension": [
+                    {
+                      "extension": [
+                        {
+                          "url": "lang",
+                          "valueCode": "de"
+                        },
+                        {
+                          "url": "content",
+                          "valueString": "Nie"
+                        }
+                      ],
+                      "url": "http://hl7.org/fhir/StructureDefinition/translation"
+                    }
+                  ]
+                }
+              },
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/itemWeight",
+                  "valueDecimal": 5
+                }
+              ]
+            },
+            {
+              "valueCoding": {
+                "code": "LA10066-1",
+                "system": "http://loinc.org",
+                "display": "Rarely",
+                "_display": {
+                  "extension": [
+                    {
+                      "extension": [
+                        {
+                          "url": "lang",
+                          "valueCode": "de"
+                        },
+                        {
+                          "url": "content",
+                          "valueString": "Selten (einmal)"
+                        }
+                      ],
+                      "url": "http://hl7.org/fhir/StructureDefinition/translation"
+                    }
+                  ]
+                }
+              },
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/itemWeight",
+                  "valueDecimal": 4
+                }
+              ]
+            },
+            {
+              "valueCoding": {
+                "code": "LA10082-8",
+                "system": "http://loinc.org",
+                "display": "Sometimes",
+                "_display": {
+                  "extension": [
+                    {
+                      "extension": [
+                        {
+                          "url": "lang",
+                          "valueCode": "de"
+                        },
+                        {
+                          "url": "content",
+                          "valueString": "Manchmal (zwei- oder dreimal)"
+                        }
+                      ],
+                      "url": "http://hl7.org/fhir/StructureDefinition/translation"
+                    }
+                  ]
+                }
+              },
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/itemWeight",
+                  "valueDecimal": 3
+                }
+              ]
+            },
+            {
+              "valueCoding": {
+                "code": "LA10044-8",
+                "system": "http://loinc.org",
+                "display": "Often",
+                "_display": {
+                  "extension": [
+                    {
+                      "extension": [
+                        {
+                          "url": "lang",
+                          "valueCode": "de"
+                        },
+                        {
+                          "url": "content",
+                          "valueString": "Oft (ungefähr einmal täglich)"
+                        }
+                      ],
+                      "url": "http://hl7.org/fhir/StructureDefinition/translation"
+                    }
+                  ]
+                }
+              },
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/itemWeight",
+                  "valueDecimal": 2
+                }
+              ]
+            },
+            {
+              "valueCoding": {
+                "code": "LA9933-8",
+                "system": "http://loinc.org",
+                "display": "Always",
+                "_display": {
+                  "extension": [
+                    {
+                      "extension": [
+                        {
+                          "url": "lang",
+                          "valueCode": "de"
+                        },
+                        {
+                          "url": "content",
+                          "valueString": "Sehr oft (mehrmals täglich)"
+                        }
+                      ],
+                      "url": "http://hl7.org/fhir/StructureDefinition/translation"
+                    }
+                  ]
+                }
+              },
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/itemWeight",
+                  "valueDecimal": 1
+                }
+              ]
+            }
+          ],
+          "linkId": "promis-cognition-pc36r",
+          "type": "choice",
+          "text": "I have had to work harder than usual to keep track of what I was doing",
+          "_text": {
+            "extension": [
+              {
+                "extension": [
+                  {
+                    "url": "lang",
+                    "valueCode": "de"
+                  },
+                  {
+                    "url": "content",
+                    "valueString": "Ich musste mir größere Mühe geben als sonst, um den Überblick über das zu bewahren, womit ich gerade beschäftigt war"
+                  }
+                ],
+                "url": "http://hl7.org/fhir/StructureDefinition/translation"
+              }
+            ]
+          },
+          "required": true
+        },
+        {
+          "code": [
+            {
+              "code": "81485-5",
+              "system": "http://loinc.org",
+              "display": "I have had trouble shifting back and forth between different activities that require thinking in past 7 days [PROMIS]"
+            }
+          ],
+          "answerOption": [
+            {
+              "valueCoding": {
+                "code": "LA6568-5",
+                "system": "http://loinc.org",
+                "display": "Not at all",
+                "_display": {
+                  "extension": [
+                    {
+                      "extension": [
+                        {
+                          "url": "lang",
+                          "valueCode": "de"
+                        },
+                        {
+                          "url": "content",
+                          "valueString": "Nie"
+                        }
+                      ],
+                      "url": "http://hl7.org/fhir/StructureDefinition/translation"
+                    }
+                  ]
+                }
+              },
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/itemWeight",
+                  "valueDecimal": 5
+                }
+              ]
+            },
+            {
+              "valueCoding": {
+                "code": "LA10066-1",
+                "system": "http://loinc.org",
+                "display": "Rarely",
+                "_display": {
+                  "extension": [
+                    {
+                      "extension": [
+                        {
+                          "url": "lang",
+                          "valueCode": "de"
+                        },
+                        {
+                          "url": "content",
+                          "valueString": "Selten (einmal)"
+                        }
+                      ],
+                      "url": "http://hl7.org/fhir/StructureDefinition/translation"
+                    }
+                  ]
+                }
+              },
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/itemWeight",
+                  "valueDecimal": 4
+                }
+              ]
+            },
+            {
+              "valueCoding": {
+                "code": "LA10082-8",
+                "system": "http://loinc.org",
+                "display": "Sometimes",
+                "_display": {
+                  "extension": [
+                    {
+                      "extension": [
+                        {
+                          "url": "lang",
+                          "valueCode": "de"
+                        },
+                        {
+                          "url": "content",
+                          "valueString": "Manchmal (zwei- oder dreimal)"
+                        }
+                      ],
+                      "url": "http://hl7.org/fhir/StructureDefinition/translation"
+                    }
+                  ]
+                }
+              },
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/itemWeight",
+                  "valueDecimal": 3
+                }
+              ]
+            },
+            {
+              "valueCoding": {
+                "code": "LA10044-8",
+                "system": "http://loinc.org",
+                "display": "Often",
+                "_display": {
+                  "extension": [
+                    {
+                      "extension": [
+                        {
+                          "url": "lang",
+                          "valueCode": "de"
+                        },
+                        {
+                          "url": "content",
+                          "valueString": "Oft (ungefähr einmal täglich)"
+                        }
+                      ],
+                      "url": "http://hl7.org/fhir/StructureDefinition/translation"
+                    }
+                  ]
+                }
+              },
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/itemWeight",
+                  "valueDecimal": 2
+                }
+              ]
+            },
+            {
+              "valueCoding": {
+                "code": "LA9933-8",
+                "system": "http://loinc.org",
+                "display": "Always",
+                "_display": {
+                  "extension": [
+                    {
+                      "extension": [
+                        {
+                          "url": "lang",
+                          "valueCode": "de"
+                        },
+                        {
+                          "url": "content",
+                          "valueString": "Sehr oft (mehrmals täglich)"
+                        }
+                      ],
+                      "url": "http://hl7.org/fhir/StructureDefinition/translation"
+                    }
+                  ]
+                }
+              },
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/itemWeight",
+                  "valueDecimal": 1
+                }
+              ]
+            }
+          ],
+          "linkId": "promis-cognition-pc42r",
+          "type": "choice",
+          "text": "I have had trouble shifting back and forth between different activities that require thinking",
+          "_text": {
+            "extension": [
+              {
+                "extension": [
+                  {
+                    "url": "lang",
+                    "valueCode": "de"
+                  },
+                  {
+                    "url": "content",
+                    "valueString": "Ich hatte Schwierigkeiten, zwischen verschiedenen Aktivitäten, die ein gewisses Nachdenken erfordern, hin und her zu wechseln"
+                  }
+                ],
+                "url": "http://hl7.org/fhir/StructureDefinition/translation"
+              }
+            ]
+          },
+          "required": true
+        },
+        {
+          "code": [
+            {
+              "code": "81533-2",
+              "system": "http://loinc.org",
+              "display": "PROMIS short form - cognitive function 4a - version 2.0 raw score"
+            }
+          ],
+          "extension": [
+            {
+              "valueExpression": {
+                "language": "text/fhirpath",
+                "expression": "%cognitiveRawScore"
+              },
+              "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-calculatedExpression"
+            }
+          ],
+          "linkId": "promis-cognition-sf4a-raw-score",
+          "type": "quantity",
+          "text": "PROMIS Cognitive Function SF 4a Raw Score",
+          "_text": {
+            "extension": [
+              {
+                "extension": [
+                  {
+                    "url": "lang",
+                    "valueCode": "de"
+                  },
+                  {
+                    "url": "content",
+                    "valueString": "PROMIS Kognitive Funktion SF 4a Rohwert"
+                  }
+                ],
+                "url": "http://hl7.org/fhir/StructureDefinition/translation"
+              }
+            ]
+          },
+          "readOnly": true
+        },
+        {
+          "code": [
+            {
+              "code": "81538-1",
+              "system": "http://loinc.org",
+              "display": "PROMIS cognitive function - version 2.0 T-score"
+            }
+          ],
+          "extension": [
+            {
+              "valueExpression": {
+                "language": "text/fhirpath",
+                "expression": "iif(%cognitiveRawScore=4, 24.99, iif(%cognitiveRawScore=5, 28.95, iif(%cognitiveRawScore=6, 31.07, iif(%cognitiveRawScore=7, 32.94, iif(%cognitiveRawScore=8, 34.61, iif(%cognitiveRawScore=9, 36.17, iif(%cognitiveRawScore=10, 37.69, iif(%cognitiveRawScore=11, 39.19, iif(%cognitiveRawScore=12, 40.70, iif(%cognitiveRawScore=13, 42.25, iif(%cognitiveRawScore=14, 43.86, iif(%cognitiveRawScore=15, 45.54, iif(%cognitiveRawScore=16, 47.33, iif(%cognitiveRawScore=17, 49.28, iif(%cognitiveRawScore=18, 51.62, iif(%cognitiveRawScore=19, 54.58, iif(%cognitiveRawScore=20, 61.13, 50.0)))))))))))))))))"
+              },
+              "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-calculatedExpression"
+            }
+          ],
+          "linkId": "promis-cognition-sf4a-t-score",
+          "type": "quantity",
+          "text": "PROMIS Cognitive Function SF 4a T-Score",
+          "_text": {
+            "extension": [
+              {
+                "extension": [
+                  {
+                    "url": "lang",
+                    "valueCode": "de"
+                  },
+                  {
+                    "url": "content",
+                    "valueString": "PROMIS Kognitive Funktion SF 4a T-Score"
+                  }
+                ],
+                "url": "http://hl7.org/fhir/StructureDefinition/translation"
+              }
+            ]
+          },
+          "readOnly": true
+        }
+      ],
+      "linkId": "PROMIS-CognitiveFunction-SF4a",
+      "type": "group",
+      "text": "PROMIS Cognitive Function SF 4a",
+      "_text": {
+        "extension": [
+          {
+            "extension": [
+              {
+                "url": "lang",
+                "valueCode": "de"
+              },
+              {
+                "url": "content",
+                "valueString": "PROMIS Kognitive Funktion SF 4a"
+              }
+            ],
+            "url": "http://hl7.org/fhir/StructureDefinition/translation"
+          }
+        ]
+      }
+    }
+  ],
+  "version": "2027.0.0-ballot.1",
+  "publisher": "Medizininformatik-Initiative (MII) – PRO Modul",
+  "copyright": "The FHIR Questionnaire resource (linkIds, extensions, score calculation logic, observation extraction definitions) is part of the MII PRO Module and is licensed under CC-BY 4.0.\n\nThe PROMIS items contained herein (item text, response options, scoring algorithms, IRT parameters) are © 2008–2024 PROMIS Health Organization and PROMIS Cooperative Group. PROMIS® is a registered trademark. See https://www.healthmeasures.net for the upstream license.\n\nThe official German translations are provided by PCOR-MII (Patient-Centered Outcomes Research within the Medizininformatik-Initiative) and curated by the PROMIS National Center Germany (CPCOR, Charité – Universitätsmedizin Berlin; head: Felix Fischer).\n\nInstitutional use outside the PCOR-MII / MII context requires a usage request to CPCOR: https://cpcor.charite.de/promis_national_center_deutschland/nutzungsanfragen\n\nLOINC® codes are © Regenstrief Institute, Inc. and used under the LOINC license: https://loinc.org/license/",
+  "status": "active",
+  "experimental": true,
+  "language": "en"
+}

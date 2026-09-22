@@ -1,0 +1,71 @@
+{
+  "resourceType": "ValueSet",
+  "status": "active",
+  "name": "MII_VS_PRO_PROMIS_Intensity_Response_Scale",
+  "id": "mii-vs-pro-promis-intensity-response-scale",
+  "title": "MII VS PRO PROMIS Intensity Response Scale",
+  "description": "PROMIS Intensity response scale (Not at all / A little bit / Somewhat / Quite a bit / Very much) based on LOINC LL1024-0",
+  "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-promis-intensity-response-scale",
+  "version": "2027.0.0-ballot.1",
+  "experimental": true,
+  "language": "en",
+  "compose": {
+    "include": [
+      {
+        "system": "http://loinc.org",
+        "concept": [
+          {
+            "code": "LA6568-5",
+            "display": "Not at all",
+            "designation": [
+              {
+                "language": "de",
+                "value": "Überhaupt nicht"
+              }
+            ]
+          },
+          {
+            "code": "LA13863-8",
+            "display": "A little bit",
+            "designation": [
+              {
+                "language": "de",
+                "value": "Ein wenig"
+              }
+            ]
+          },
+          {
+            "code": "LA13909-9",
+            "display": "Somewhat",
+            "designation": [
+              {
+                "language": "de",
+                "value": "Mäßig"
+              }
+            ]
+          },
+          {
+            "code": "LA13902-4",
+            "display": "Quite a bit",
+            "designation": [
+              {
+                "language": "de",
+                "value": "Ziemlich"
+              }
+            ]
+          },
+          {
+            "code": "LA13914-9",
+            "display": "Very much",
+            "designation": [
+              {
+                "language": "de",
+                "value": "Sehr"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

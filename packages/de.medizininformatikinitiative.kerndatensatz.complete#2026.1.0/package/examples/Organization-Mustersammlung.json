@@ -1,0 +1,83 @@
+{
+  "resourceType": "Organization",
+  "id": "Mustersammlung",
+  "meta": {
+    "profile": [
+      "https://www.medizininformatik-initiative.de/fhir/ext/modul-biobank/StructureDefinition/Organization"
+    ]
+  },
+  "contact": [
+    {
+      "purpose": {
+        "coding": [
+          {
+            "code": "RESEARCH",
+            "system": "https://www.medizininformatik-initiative.de/fhir/ext/modul-biobank/CodeSystem/ContactType"
+          }
+        ]
+      },
+      "extension": [
+        {
+          "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-biobank/StructureDefinition/KontaktRolle",
+          "valueString": "Forschungskoordinatorin"
+        }
+      ],
+      "name": {
+        "family": "Musterfrau",
+        "given": [
+          "Tina"
+        ],
+        "prefix": [
+          "Dr."
+        ]
+      },
+      "telecom": [
+        {
+          "system": "email",
+          "value": "musterfrau@biobank.uk-musterstadt.de"
+        }
+      ],
+      "address": {
+        "line": [
+          "Musterweg 10"
+        ],
+        "postalCode": "00000",
+        "city": "Musterstadt"
+      }
+    }
+  ],
+  "extension": [
+    {
+      "url": "https://fhir.bbmri-eric.eu/fhir/StructureDefinition/miabis-organization-description-extension",
+      "valueString": "Sammlung mit im Rahmen der Versorgung gewonnenen Proben."
+    },
+    {
+      "url": "https://fhir.bbmri-eric.eu/fhir/StructureDefinition/miabis-sample-collection-setting-extension",
+      "valueCodeableConcept": {
+        "coding": [
+          {
+            "code": "RoutineHealthCare",
+            "system": "https://fhir.bbmri-eric.eu/fhir/CodeSystem/miabis-sample-collection-setting-cs",
+            "display": "Routine health care setting"
+          }
+        ]
+      }
+    },
+    {
+      "url": "https://fhir.bbmri-eric.eu/fhir/StructureDefinition/miabis-collection-design-extension",
+      "valueCodeableConcept": {
+        "coding": [
+          {
+            "code": "LongitudinalCohort",
+            "system": "https://fhir.bbmri-eric.eu/fhir/CodeSystem/miabis-collection-design-cs",
+            "display": "Longitudinal cohort"
+          }
+        ]
+      }
+    }
+  ],
+  "name": "Mustersammlung",
+  "partOf": {
+    "reference": "Organization/BiobankMusterstadt"
+  }
+}

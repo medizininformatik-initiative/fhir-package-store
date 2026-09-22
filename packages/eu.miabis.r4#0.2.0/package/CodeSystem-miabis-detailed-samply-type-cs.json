@@ -1,0 +1,269 @@
+{
+  "resourceType": "CodeSystem",
+  "status": "active",
+  "content": "complete",
+  "name": "DetailedSampleTypeCS",
+  "id": "miabis-detailed-samply-type-cs",
+  "title": "DetailedSampleType",
+  "description": "Code system for the detailed sample type of a sample",
+  "url": "https://fhir.bbmri-eric.eu/fhir/CodeSystem/miabis-detailed-samply-type-cs",
+  "concept": [
+    {
+      "code": "AmnioticFluid",
+      "display": "Amniotic fluid"
+    },
+    {
+      "code": "AscitesFluid",
+      "display": "ascites Fluid"
+    },
+    {
+      "code": "Bile",
+      "display": "Bile"
+    },
+    {
+      "code": "BodyCavityFluid",
+      "display": "Body cavity fluid"
+    },
+    {
+      "code": "Bone",
+      "display": "Bone"
+    },
+    {
+      "code": "BoneMarrowAspirate",
+      "display": "Bone marrow aspirate"
+    },
+    {
+      "code": "BoneMarrowPlasma",
+      "display": "Bone marrow plasma"
+    },
+    {
+      "code": "BoneMarrowWhole",
+      "display": "Bone marrow whole"
+    },
+    {
+      "code": "BreastMilk",
+      "display": "Breast milk"
+    },
+    {
+      "code": "BronchLavage",
+      "display": "Bronchoalveolar lavage"
+    },
+    {
+      "code": "BuffyCoat",
+      "display": "Buffy coat"
+    },
+    {
+      "code": "CancerCellLine",
+      "display": "Cancer cell lines"
+    },
+    {
+      "code": "CerebrospinalFluid",
+      "display": "Cerebrospinal fluid"
+    },
+    {
+      "code": "CordBlood",
+      "display": "Cord blood"
+    },
+    {
+      "code": "DentalPulp",
+      "display": "Dental pulp"
+    },
+    {
+      "code": "DNA",
+      "display": "DNA"
+    },
+    {
+      "code": "Embryo",
+      "display": "Embryo"
+    },
+    {
+      "code": "EntireOrgan",
+      "display": "Entire body Organ"
+    },
+    {
+      "code": "Faeces",
+      "display": "Faeces"
+    },
+    {
+      "code": "FetalTissue",
+      "display": "Fetal tissue"
+    },
+    {
+      "code": "Fibroblast",
+      "display": "Fibroblast"
+    },
+    {
+      "code": "FoodSpecimen",
+      "display": "Food specimen"
+    },
+    {
+      "code": "Gas",
+      "display": "Gas exhaled (breath)"
+    },
+    {
+      "code": "GastricFluid",
+      "display": "Gastric fluid"
+    },
+    {
+      "code": "Hair",
+      "display": "Hair"
+    },
+    {
+      "code": "ImmortalizedCellLine",
+      "display": "Immortalized cell line"
+    },
+    {
+      "code": "IsolatedMicrobe",
+      "display": "Isolated microbes"
+    },
+    {
+      "code": "IsolatedExosome",
+      "display": "Isolated or encriched exosomes"
+    },
+    {
+      "code": "IsolatedTumorCell",
+      "display": "Isolated tumor cells(neoplastic cells)"
+    },
+    {
+      "code": "LiquidBiopsy",
+      "display": "Liquid biopsy"
+    },
+    {
+      "code": "MenstrualBlood",
+      "display": "Menstrual blood"
+    },
+    {
+      "code": "Nail",
+      "display": "Nail"
+    },
+    {
+      "code": "NasalWashing",
+      "display": "Nasal washing"
+    },
+    {
+      "code": "Organoid",
+      "display": "Organoids"
+    },
+    {
+      "code": "Other",
+      "display": "Other"
+    },
+    {
+      "code": "PericardialFluid",
+      "display": "Pericardial fluid"
+    },
+    {
+      "code": "PBMC",
+      "display": "Peripheral blood mononuclear cells"
+    },
+    {
+      "code": "Placenta",
+      "display": "Placenta"
+    },
+    {
+      "code": "Plasma",
+      "display": "Plasma"
+    },
+    {
+      "code": "PleuralFluid",
+      "display": "Pleural fluid"
+    },
+    {
+      "code": "PostMortemTissue",
+      "display": "Post-mortem tissue"
+    },
+    {
+      "code": "PrimaryCells",
+      "display": "Primary cells"
+    },
+    {
+      "code": "Protein",
+      "display": "Protein"
+    },
+    {
+      "code": "RedBloodCells",
+      "display": "Red blood cells"
+    },
+    {
+      "code": "RNA",
+      "display": "RNA"
+    },
+    {
+      "code": "Saliva",
+      "display": "Saliva"
+    },
+    {
+      "code": "Semen",
+      "display": "Semen"
+    },
+    {
+      "code": "Serum",
+      "display": "Serum"
+    },
+    {
+      "code": "SpecimenEnvironment",
+      "display": "Specimen from environment"
+    },
+    {
+      "code": "Sputum",
+      "display": "Sputum"
+    },
+    {
+      "code": "StemCells",
+      "display": "Stem cells and iPS cells"
+    },
+    {
+      "code": "Swab",
+      "display": "Swab"
+    },
+    {
+      "code": "Sweat",
+      "display": "Sweat"
+    },
+    {
+      "code": "SynovialFluid",
+      "display": "Synovial fluid"
+    },
+    {
+      "code": "Tears",
+      "display": "Tears"
+    },
+    {
+      "code": "Teeth",
+      "display": "Teeth"
+    },
+    {
+      "code": "TissueFixed",
+      "display": "Tissue (fixed)"
+    },
+    {
+      "code": "TissueFreshFrozen",
+      "display": "Tissue (fresh frozen)"
+    },
+    {
+      "code": "UmbilicalCord",
+      "display": "Umbilical cord"
+    },
+    {
+      "code": "Urine",
+      "display": "Urine"
+    },
+    {
+      "code": "UrineSediment",
+      "display": "Urine sediment"
+    },
+    {
+      "code": "VitreousFluid",
+      "display": "Vitreous fluid"
+    },
+    {
+      "code": "WholeBlood",
+      "display": "Whole blood"
+    },
+    {
+      "code": "WholeBloodDried",
+      "display": "Whole blood dried(eg. Guthrie card)"
+    }
+  ],
+  "count": 64
+}

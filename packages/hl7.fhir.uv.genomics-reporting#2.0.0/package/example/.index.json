@@ -1,0 +1,482 @@
+{
+  "index-version": 1,
+  "files": [
+    {
+      "filename": "Observation-Pgx-var-1014.json",
+      "resourceType": "Observation",
+      "id": "Pgx-var-1014"
+    },
+    {
+      "filename": "Observation-GenotypeExamplePharmVar.json",
+      "resourceType": "Observation",
+      "id": "GenotypeExamplePharmVar"
+    },
+    {
+      "filename": "Observation-Therapeutic-Implication-Clinical-Trial-Somatic.json",
+      "resourceType": "Observation",
+      "id": "Therapeutic-Implication-Clinical-Trial-Somatic"
+    },
+    {
+      "filename": "Specimen-GenomicSpecimenExample01.json",
+      "resourceType": "Specimen",
+      "id": "GenomicSpecimenExample01"
+    },
+    {
+      "filename": "MedicationStatement-MedicationStatementWarfarin.json",
+      "resourceType": "MedicationStatement",
+      "id": "MedicationStatementWarfarin"
+    },
+    {
+      "filename": "Observation-SNVexample.json",
+      "resourceType": "Observation",
+      "id": "SNVexample"
+    },
+    {
+      "filename": "Organization-ExampleLab.json",
+      "resourceType": "Organization",
+      "id": "ExampleLab"
+    },
+    {
+      "filename": "Observation-TxImp03.json",
+      "resourceType": "Observation",
+      "id": "TxImp03"
+    },
+    {
+      "filename": "Observation-RegionStudiedPGx2.json",
+      "resourceType": "Observation",
+      "id": "RegionStudiedPGx2"
+    },
+    {
+      "filename": "Observation-Variant-Somatic-Clinical-Trial.json",
+      "resourceType": "Observation",
+      "id": "Variant-Somatic-Clinical-Trial"
+    },
+    {
+      "filename": "Task-MedicationRecommendationExample1.json",
+      "resourceType": "Task",
+      "id": "MedicationRecommendationExample1"
+    },
+    {
+      "filename": "Bundle-bundle-complexVariant-nonHGVS.json",
+      "resourceType": "Bundle",
+      "id": "bundle-complexVariant-nonHGVS",
+      "type": "transaction"
+    },
+    {
+      "filename": "Observation-Pgx-var-1015.json",
+      "resourceType": "Observation",
+      "id": "Pgx-var-1015"
+    },
+    {
+      "filename": "Observation-Pgx-var-1019.json",
+      "resourceType": "Observation",
+      "id": "Pgx-var-1019"
+    },
+    {
+      "filename": "Task-PGxRecEx01.json",
+      "resourceType": "Task",
+      "id": "PGxRecEx01"
+    },
+    {
+      "filename": "Bundle-bundle-pgxexample.json",
+      "resourceType": "Bundle",
+      "id": "bundle-pgxexample",
+      "type": "transaction"
+    },
+    {
+      "filename": "Observation-ExampleSomaticINV.json",
+      "resourceType": "Observation",
+      "id": "ExampleSomaticINV"
+    },
+    {
+      "filename": "Observation-GenotypeExample1.json",
+      "resourceType": "Observation",
+      "id": "GenotypeExample1"
+    },
+    {
+      "filename": "Bundle-bundle-cgexample-withGrouping.json",
+      "resourceType": "Bundle",
+      "id": "bundle-cgexample-withGrouping",
+      "type": "collection"
+    },
+    {
+      "filename": "Observation-OverallInterpExample1.json",
+      "resourceType": "Observation",
+      "id": "OverallInterpExample1"
+    },
+    {
+      "filename": "Specimen-ExampleSpecimen.json",
+      "resourceType": "Specimen",
+      "id": "ExampleSpecimen"
+    },
+    {
+      "filename": "Observation-Therapeutic-Implication-Clinical-Trial-2.json",
+      "resourceType": "Observation",
+      "id": "Therapeutic-Implication-Clinical-Trial-2"
+    },
+    {
+      "filename": "Observation-TherapeuticImplicationExample1.json",
+      "resourceType": "Observation",
+      "id": "TherapeuticImplicationExample1"
+    },
+    {
+      "filename": "ServiceRequest-GenomicsServiceRequestExample01.json",
+      "resourceType": "ServiceRequest",
+      "id": "GenomicsServiceRequestExample01"
+    },
+    {
+      "filename": "Observation-OverallInterpExample2.json",
+      "resourceType": "Observation",
+      "id": "OverallInterpExample2"
+    },
+    {
+      "filename": "Observation-ExampleGermlineDEL.json",
+      "resourceType": "Observation",
+      "id": "ExampleGermlineDEL"
+    },
+    {
+      "filename": "Observation-HaplotypeSet-Clinical-Trial-Example-2of2.json",
+      "resourceType": "Observation",
+      "id": "HaplotypeSet-Clinical-Trial-Example-2of2"
+    },
+    {
+      "filename": "Observation-MicrosatelliteInstabilityExample01.json",
+      "resourceType": "Observation",
+      "id": "MicrosatelliteInstabilityExample01"
+    },
+    {
+      "filename": "Organization-ExampleOrg.json",
+      "resourceType": "Organization",
+      "id": "ExampleOrg"
+    },
+    {
+      "filename": "ServiceRequest-ExampleServiceRequest.json",
+      "resourceType": "ServiceRequest",
+      "id": "ExampleServiceRequest"
+    },
+    {
+      "filename": "Bundle-bundle-oncologyexamples-r4-withGrouping.json",
+      "resourceType": "Bundle",
+      "id": "bundle-oncologyexamples-r4-withGrouping",
+      "type": "transaction"
+    },
+    {
+      "filename": "Patient-CGPatientExample01.json",
+      "resourceType": "Patient",
+      "id": "CGPatientExample01"
+    },
+    {
+      "filename": "Observation-RegionStudiedPGx1.json",
+      "resourceType": "Observation",
+      "id": "RegionStudiedPGx1"
+    },
+    {
+      "filename": "Observation-obs-idh-ex.json",
+      "resourceType": "Observation",
+      "id": "obs-idh-ex"
+    },
+    {
+      "filename": "RiskAssessment-GenRiskDiabetesT2.json",
+      "resourceType": "RiskAssessment",
+      "id": "GenRiskDiabetesT2"
+    },
+    {
+      "filename": "Observation-TumorMutationBurdenExample01.json",
+      "resourceType": "Observation",
+      "id": "TumorMutationBurdenExample01"
+    },
+    {
+      "filename": "Observation-GrouperEx01.json",
+      "resourceType": "Observation",
+      "id": "GrouperEx01"
+    },
+    {
+      "filename": "Observation-TxImp02.json",
+      "resourceType": "Observation",
+      "id": "TxImp02"
+    },
+    {
+      "filename": "Observation-TxImp05.json",
+      "resourceType": "Observation",
+      "id": "TxImp05"
+    },
+    {
+      "filename": "Bundle-bundle-CG-IG-HLA-FullBundle-01.json",
+      "resourceType": "Bundle",
+      "id": "bundle-CG-IG-HLA-FullBundle-01",
+      "type": "transaction"
+    },
+    {
+      "filename": "Bundle-bundle-CYP2C19.json",
+      "resourceType": "Bundle",
+      "id": "bundle-CYP2C19",
+      "type": "transaction"
+    },
+    {
+      "filename": "Observation-genotype-hla-a-glstring-r4.json",
+      "resourceType": "Observation",
+      "id": "genotype-hla-a-glstring-r4"
+    },
+    {
+      "filename": "Observation-Pgx-var-1017.json",
+      "resourceType": "Observation",
+      "id": "Pgx-var-1017"
+    },
+    {
+      "filename": "Observation-haplotype-hla-a-1-r4.json",
+      "resourceType": "Observation",
+      "id": "haplotype-hla-a-1-r4"
+    },
+    {
+      "filename": "ServiceRequest-eMERGEServiceRequest.json",
+      "resourceType": "ServiceRequest",
+      "id": "eMERGEServiceRequest"
+    },
+    {
+      "filename": "Task-PGxRecEx03.json",
+      "resourceType": "Task",
+      "id": "PGxRecEx03"
+    },
+    {
+      "filename": "Observation-GrouperEx03.json",
+      "resourceType": "Observation",
+      "id": "GrouperEx03"
+    },
+    {
+      "filename": "Observation-TxImp06.json",
+      "resourceType": "Observation",
+      "id": "TxImp06"
+    },
+    {
+      "filename": "Observation-Pgx-var-1011.json",
+      "resourceType": "Observation",
+      "id": "Pgx-var-1011"
+    },
+    {
+      "filename": "Observation-HaplotypeExamplePharmVar02.json",
+      "resourceType": "Observation",
+      "id": "HaplotypeExamplePharmVar02"
+    },
+    {
+      "filename": "DiagnosticReport-GenomicsReportExample01.json",
+      "resourceType": "DiagnosticReport",
+      "id": "GenomicsReportExample01"
+    },
+    {
+      "filename": "Patient-ExamplePatient.json",
+      "resourceType": "Patient",
+      "id": "ExamplePatient"
+    },
+    {
+      "filename": "Specimen-specimen-hla-r4.json",
+      "resourceType": "Specimen",
+      "id": "specimen-hla-r4"
+    },
+    {
+      "filename": "Observation-Pgx-geno-1003.json",
+      "resourceType": "Observation",
+      "id": "Pgx-geno-1003"
+    },
+    {
+      "filename": "Observation-SequencePhaseRelationExample1.json",
+      "resourceType": "Observation",
+      "id": "SequencePhaseRelationExample1"
+    },
+    {
+      "filename": "Bundle-bundle-compound-heterozygote.json",
+      "resourceType": "Bundle",
+      "id": "bundle-compound-heterozygote",
+      "type": "transaction"
+    },
+    {
+      "filename": "DocumentReference-VCFFile.json",
+      "resourceType": "DocumentReference",
+      "id": "VCFFile"
+    },
+    {
+      "filename": "Observation-GrouperEx02.json",
+      "resourceType": "Observation",
+      "id": "GrouperEx02"
+    },
+    {
+      "filename": "Observation-Pgx-var-1020.json",
+      "resourceType": "Observation",
+      "id": "Pgx-var-1020"
+    },
+    {
+      "filename": "Observation-AnnotationExample.json",
+      "resourceType": "Observation",
+      "id": "AnnotationExample"
+    },
+    {
+      "filename": "Observation-ExampleGermlineCNV.json",
+      "resourceType": "Observation",
+      "id": "ExampleGermlineCNV"
+    },
+    {
+      "filename": "Observation-Pgx-var-1012.json",
+      "resourceType": "Observation",
+      "id": "Pgx-var-1012"
+    },
+    {
+      "filename": "Observation-VariantExample1.json",
+      "resourceType": "Observation",
+      "id": "VariantExample1"
+    },
+    {
+      "filename": "Task-PGxRecEx04.json",
+      "resourceType": "Task",
+      "id": "PGxRecEx04"
+    },
+    {
+      "filename": "Observation-Pgx-var-1016.json",
+      "resourceType": "Observation",
+      "id": "Pgx-var-1016"
+    },
+    {
+      "filename": "Observation-Pgx-geno-1002.json",
+      "resourceType": "Observation",
+      "id": "Pgx-geno-1002"
+    },
+    {
+      "filename": "Observation-ExampleSomaticCNV.json",
+      "resourceType": "Observation",
+      "id": "ExampleSomaticCNV"
+    },
+    {
+      "filename": "Bundle-bundle-oncology-diagnostic.json",
+      "resourceType": "Bundle",
+      "id": "bundle-oncology-diagnostic",
+      "type": "transaction"
+    },
+    {
+      "filename": "DiagnosticReport-PGxGenomicsReportEMERGE-withGrouping.json",
+      "resourceType": "DiagnosticReport",
+      "id": "PGxGenomicsReportEMERGE-withGrouping"
+    },
+    {
+      "filename": "Observation-ExampleGermlineINV.json",
+      "resourceType": "Observation",
+      "id": "ExampleGermlineINV"
+    },
+    {
+      "filename": "Observation-HaplotypeSet-Clinical-Trial-Example-1of2.json",
+      "resourceType": "Observation",
+      "id": "HaplotypeSet-Clinical-Trial-Example-1of2"
+    },
+    {
+      "filename": "Observation-RegionStudiedPGx3.json",
+      "resourceType": "Observation",
+      "id": "RegionStudiedPGx3"
+    },
+    {
+      "filename": "Observation-Pgx-var-1021.json",
+      "resourceType": "Observation",
+      "id": "Pgx-var-1021"
+    },
+    {
+      "filename": "Observation-Genotype-Clinical-Trial-Example-using-haplotypes.json",
+      "resourceType": "Observation",
+      "id": "Genotype-Clinical-Trial-Example-using-haplotypes"
+    },
+    {
+      "filename": "Observation-PolyGenicDiagnosticImpExample.json",
+      "resourceType": "Observation",
+      "id": "PolyGenicDiagnosticImpExample"
+    },
+    {
+      "filename": "Bundle-bundle-oncology-report-example.json",
+      "resourceType": "Bundle",
+      "id": "bundle-oncology-report-example",
+      "type": "transaction"
+    },
+    {
+      "filename": "Observation-HaplotypeExamplePharmVar01.json",
+      "resourceType": "Observation",
+      "id": "HaplotypeExamplePharmVar01"
+    },
+    {
+      "filename": "Observation-Pgx-var-1013.json",
+      "resourceType": "Observation",
+      "id": "Pgx-var-1013"
+    },
+    {
+      "filename": "Observation-TxImp04.json",
+      "resourceType": "Observation",
+      "id": "TxImp04"
+    },
+    {
+      "filename": "Observation-TxImp01.json",
+      "resourceType": "Observation",
+      "id": "TxImp01"
+    },
+    {
+      "filename": "DiagnosticReport-PGxGenomicsReportEMERGE.json",
+      "resourceType": "DiagnosticReport",
+      "id": "PGxGenomicsReportEMERGE"
+    },
+    {
+      "filename": "Observation-Pgx-var-1018.json",
+      "resourceType": "Observation",
+      "id": "Pgx-var-1018"
+    },
+    {
+      "filename": "Bundle-bundle-cgexample.json",
+      "resourceType": "Bundle",
+      "id": "bundle-cgexample",
+      "type": "collection"
+    },
+    {
+      "filename": "Observation-ExampleSomaticDEL.json",
+      "resourceType": "Observation",
+      "id": "ExampleSomaticDEL"
+    },
+    {
+      "filename": "Bundle-bundle-oncologyexamples-r4.json",
+      "resourceType": "Bundle",
+      "id": "bundle-oncologyexamples-r4",
+      "type": "transaction"
+    },
+    {
+      "filename": "Task-PGxRecEx05.json",
+      "resourceType": "Task",
+      "id": "PGxRecEx05"
+    },
+    {
+      "filename": "DiagnosticReport-diagnosticreport-hla-glstring-r4.json",
+      "resourceType": "DiagnosticReport",
+      "id": "diagnosticreport-hla-glstring-r4"
+    },
+    {
+      "filename": "Bundle-bundle-sequence-phase-relation-CYP2C19.json",
+      "resourceType": "Bundle",
+      "id": "bundle-sequence-phase-relation-CYP2C19",
+      "type": "transaction"
+    },
+    {
+      "filename": "Observation-VariantExample2.json",
+      "resourceType": "Observation",
+      "id": "VariantExample2"
+    },
+    {
+      "filename": "Task-PGxRecEx02.json",
+      "resourceType": "Task",
+      "id": "PGxRecEx02"
+    },
+    {
+      "filename": "Observation-Pgx-geno-1001.json",
+      "resourceType": "Observation",
+      "id": "Pgx-geno-1001"
+    },
+    {
+      "filename": "ServiceRequest-servicerequest-hla-a-r4.json",
+      "resourceType": "ServiceRequest",
+      "id": "servicerequest-hla-a-r4"
+    },
+    {
+      "filename": "Specimen-GenomicSpecimenExample02.json",
+      "resourceType": "Specimen",
+      "id": "GenomicSpecimenExample02"
+    }
+  ]
+}

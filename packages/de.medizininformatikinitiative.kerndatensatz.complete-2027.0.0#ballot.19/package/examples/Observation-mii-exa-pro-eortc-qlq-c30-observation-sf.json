@@ -1,0 +1,45 @@
+{
+  "resourceType": "Observation",
+  "id": "mii-exa-pro-eortc-qlq-c30-observation-sf",
+  "meta": {
+    "profile": [
+      "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-score-instance|2027.0.0-ballot.1"
+    ]
+  },
+  "category": [
+    {
+      "coding": [
+        {
+          "code": "survey",
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "display": "Survey"
+        }
+      ]
+    }
+  ],
+  "code": {
+    "coding": [
+      {
+        "system": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-score-catalogue",
+        "code": "eortc-qlq-c30-sf",
+        "display": "EORTC QLQ-C30 Social Functioning Score"
+      }
+    ]
+  },
+  "subject": {
+    "reference": "Patient/mii-exa-pro-patient"
+  },
+  "valueQuantity": {
+    "value": 91.67,
+    "unit": "{score}",
+    "system": "http://unitsofmeasure.org",
+    "code": "{score}"
+  },
+  "derivedFrom": [
+    {
+      "reference": "QuestionnaireResponse/mii-exa-pro-eortc-qlq-c30-response"
+    }
+  ],
+  "status": "final",
+  "effectiveDateTime": "2024-01-15T10:30:00Z"
+}

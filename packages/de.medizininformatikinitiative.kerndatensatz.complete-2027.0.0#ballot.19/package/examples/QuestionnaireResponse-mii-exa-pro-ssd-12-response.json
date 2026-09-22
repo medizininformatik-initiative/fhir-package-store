@@ -1,0 +1,183 @@
+{
+  "resourceType": "QuestionnaireResponse",
+  "id": "mii-exa-pro-ssd-12-response",
+  "meta": {
+    "profile": [
+      "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-questionnaire-response|2027.0.0-ballot.1"
+    ]
+  },
+  "item": [
+    {
+      "answer": [
+        {
+          "valueCoding": {
+            "code": "sometimes",
+            "system": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-ssd-12-answers",
+            "display": "manchmal"
+          }
+        }
+      ],
+      "linkId": "ssd12-q01",
+      "text": "Ich denke, dass meine körperlichen Beschwerden Anzeichen einer ernsthaften Erkrankung sind."
+    },
+    {
+      "answer": [
+        {
+          "valueCoding": {
+            "code": "sometimes",
+            "system": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-ssd-12-answers",
+            "display": "manchmal"
+          }
+        }
+      ],
+      "linkId": "ssd12-q02",
+      "text": "Ich mache mir große Sorgen um meine Gesundheit."
+    },
+    {
+      "answer": [
+        {
+          "valueCoding": {
+            "code": "sometimes",
+            "system": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-ssd-12-answers",
+            "display": "manchmal"
+          }
+        }
+      ],
+      "linkId": "ssd12-q03",
+      "text": "Meine gesundheitlichen Sorgen behindern mich im Alltag."
+    },
+    {
+      "answer": [
+        {
+          "valueCoding": {
+            "code": "sometimes",
+            "system": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-ssd-12-answers",
+            "display": "manchmal"
+          }
+        }
+      ],
+      "linkId": "ssd12-q04",
+      "text": "Ich bin von der Ernsthaftigkeit meiner körperlichen Beschwerden überzeugt."
+    },
+    {
+      "answer": [
+        {
+          "valueCoding": {
+            "code": "sometimes",
+            "system": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-ssd-12-answers",
+            "display": "manchmal"
+          }
+        }
+      ],
+      "linkId": "ssd12-q05",
+      "text": "Meine körperlichen Beschwerden machen mir Angst."
+    },
+    {
+      "answer": [
+        {
+          "valueCoding": {
+            "code": "sometimes",
+            "system": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-ssd-12-answers",
+            "display": "manchmal"
+          }
+        }
+      ],
+      "linkId": "ssd12-q06",
+      "text": "Meine körperlichen Beschwerden beschäftigen mich den größten Teil des Tages."
+    },
+    {
+      "answer": [
+        {
+          "valueCoding": {
+            "code": "sometimes",
+            "system": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-ssd-12-answers",
+            "display": "manchmal"
+          }
+        }
+      ],
+      "linkId": "ssd12-q07",
+      "text": "Andere sagen mir, dass meine körperlichen Beschwerden nicht schlimm sind."
+    },
+    {
+      "answer": [
+        {
+          "valueCoding": {
+            "code": "sometimes",
+            "system": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-ssd-12-answers",
+            "display": "manchmal"
+          }
+        }
+      ],
+      "linkId": "ssd12-q08",
+      "text": "Ich mache mir Sorgen, dass meine körperlichen Beschwerden niemals aufhören werden."
+    },
+    {
+      "answer": [
+        {
+          "valueCoding": {
+            "code": "sometimes",
+            "system": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-ssd-12-answers",
+            "display": "manchmal"
+          }
+        }
+      ],
+      "linkId": "ssd12-q09",
+      "text": "Die Sorgen um meine Gesundheit rauben mir Energie."
+    },
+    {
+      "answer": [
+        {
+          "valueCoding": {
+            "code": "sometimes",
+            "system": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-ssd-12-answers",
+            "display": "manchmal"
+          }
+        }
+      ],
+      "linkId": "ssd12-q10",
+      "text": "Ich denke, dass die Ärzte meine körperlichen Beschwerden nicht ernst nehmen."
+    },
+    {
+      "answer": [
+        {
+          "valueCoding": {
+            "code": "sometimes",
+            "system": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-ssd-12-answers",
+            "display": "manchmal"
+          }
+        }
+      ],
+      "linkId": "ssd12-q11",
+      "text": "Ich mache mir Sorgen auch in Zukunft durch meine körperlichen Beschwerden beeinträchtigt zu bleiben."
+    },
+    {
+      "answer": [
+        {
+          "valueCoding": {
+            "code": "sometimes",
+            "system": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-ssd-12-answers",
+            "display": "manchmal"
+          }
+        }
+      ],
+      "linkId": "ssd12-q12",
+      "text": "Durch meine körperlichen Beschwerden kann ich mich schlecht auf andere Dinge konzentrieren."
+    },
+    {
+      "answer": [
+        {
+          "valueDecimal": 24
+        }
+      ],
+      "linkId": "ssd12-score-total",
+      "text": "SSD-12 Summenwert (0-48)"
+    }
+  ],
+  "status": "completed",
+  "language": "de",
+  "subject": {
+    "reference": "Patient/mii-exa-pro-patient"
+  },
+  "authored": "2026-08-31T09:30:00Z",
+  "questionnaire": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/Questionnaire/mii-qst-pro-ssd-12|2027.0.0-ballot.1"
+}

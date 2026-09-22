@@ -1,0 +1,12 @@
+{
+  "fhirVersions": [
+    "4.0.1"
+  ],
+  "name": "kbv.all.st",
+  "version": "1.27.0",
+  "description": "KBV Schluesseltabellen",
+  "author": "KBV",
+  "dependencies": {
+    "hl7.fhir.r4.core": "4.0.1"
+  }
+}

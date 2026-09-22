@@ -1,0 +1,61 @@
+{
+  "resourceType": "CodeSystem",
+  "status": "active",
+  "content": "complete",
+  "name": "InclusionCriteriaCS",
+  "id": "miabis-inclusion-criteria-cs",
+  "title": "Inclusion Criteria",
+  "description": "Code system describing information on type of parameters that determine which subjects will become collection participant",
+  "url": "https://fhir.bbmri-eric.eu/fhir/CodeSystem/miabis-inclusion-criteria-cs",
+  "concept": [
+    {
+      "code": "HealthStatus",
+      "display": "Health status"
+    },
+    {
+      "code": "HospitalPatient",
+      "display": "Hospital patient"
+    },
+    {
+      "code": "UseOfMedication",
+      "display": "Use of medication"
+    },
+    {
+      "code": "Gravidity",
+      "display": "Gravidity"
+    },
+    {
+      "code": "AgeGroup",
+      "display": "Age group"
+    },
+    {
+      "code": "FamilialStatus",
+      "display": "Familial status"
+    },
+    {
+      "code": "Sex",
+      "display": "Sex"
+    },
+    {
+      "code": "CountryOfResidence",
+      "display": "Country of residence"
+    },
+    {
+      "code": "EthnicOrigin",
+      "display": "Ethnic origin"
+    },
+    {
+      "code": "PopulationRepresentative",
+      "display": "Population representative sampling"
+    },
+    {
+      "code": "Lifestyle",
+      "display": "Lifestyle/Exposure"
+    },
+    {
+      "code": "Other",
+      "display": "Other"
+    }
+  ],
+  "count": 12
+}

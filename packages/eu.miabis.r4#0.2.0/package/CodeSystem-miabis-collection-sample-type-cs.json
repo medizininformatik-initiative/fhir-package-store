@@ -1,0 +1,101 @@
+{
+  "resourceType": "CodeSystem",
+  "status": "active",
+  "content": "complete",
+  "name": "CollectionSampleTypeCS",
+  "id": "miabis-collection-sample-type-cs",
+  "title": "MIABIS Collection Sample Type Code System",
+  "description": "Codes for the collection sample types of the provided samples",
+  "url": "https://fhir.bbmri-eric.eu/fhir/CodeSystem/miabis-collection-sample-type-cs",
+  "concept": [
+    {
+      "code": "Blood",
+      "display": "Blood"
+    },
+    {
+      "code": "BuffyCoat",
+      "display": "Buffy Coat"
+    },
+    {
+      "code": "CancerCellLine",
+      "display": "Cancer Cell Lines"
+    },
+    {
+      "code": "DNA",
+      "display": "DNA"
+    },
+    {
+      "code": "EntireOrgan",
+      "display": "Entire Organ"
+    },
+    {
+      "code": "Faeces",
+      "display": "Faeces"
+    },
+    {
+      "code": "EmbryoFetal",
+      "display": "Embryo or Fetal tissue"
+    },
+    {
+      "code": "ImmortalizedCellLine",
+      "display": "Immortalized Cell Lines"
+    },
+    {
+      "code": "IsolatedMicrobe",
+      "display": "Isolated Microbes"
+    },
+    {
+      "code": "OtherBodyFluid",
+      "display": "Other Body Fluid"
+    },
+    {
+      "code": "Plasma",
+      "display": "Plasma"
+    },
+    {
+      "code": "PrimaryCells",
+      "display": "Primary Cells"
+    },
+    {
+      "code": "PostMortemTissue",
+      "display": "Post-Mortem Tissue"
+    },
+    {
+      "code": "RNA",
+      "display": "RNA"
+    },
+    {
+      "code": "Saliva",
+      "display": "Saliva"
+    },
+    {
+      "code": "Serum",
+      "display": "Serum"
+    },
+    {
+      "code": "SpecimenEnvironment",
+      "display": "Specimen from Environment or from food"
+    },
+    {
+      "code": "Swab",
+      "display": "Swab"
+    },
+    {
+      "code": "TissueFrozen",
+      "display": "Tissue (frozen)"
+    },
+    {
+      "code": "TissueFFPE",
+      "display": "Tissue (FFPE)"
+    },
+    {
+      "code": "Urine",
+      "display": "Urine"
+    },
+    {
+      "code": "Other",
+      "display": "Other"
+    }
+  ],
+  "count": 22
+}

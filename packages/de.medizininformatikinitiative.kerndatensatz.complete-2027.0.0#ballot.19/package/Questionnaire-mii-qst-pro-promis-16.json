@@ -1,0 +1,755 @@
+{
+  "resourceType": "Questionnaire",
+  "id": "mii-qst-pro-promis-16",
+  "meta": {
+    "profile": [
+      "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-questionnaire|2027.0.0-ballot.1"
+    ]
+  },
+  "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/Questionnaire/mii-qst-pro-promis-16",
+  "title": "MII QST PRO PROMIS-16 (Adults)",
+  "description": "PROMIS-16 Profile v1.0 - Ultra-short 16-item HRQoL Profile across 8 domains (Edelen et al. 2024, doi:10.1007/s11136-023-03597-6). T-score calculation per Supplement S4 is delegated to a CQL Library (see roadmap 2027).",
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/artifact-versionAlgorithm",
+      "valueCoding": {
+        "code": "natural",
+        "system": "http://hl7.org/fhir/version-algorithm",
+        "display": "Natural"
+      }
+    },
+    {
+      "extension": [
+        {
+          "url": "displayable",
+          "valueBoolean": true
+        },
+        {
+          "url": "collectable",
+          "valueBoolean": true
+        },
+        {
+          "url": "calculatable",
+          "valueBoolean": false
+        },
+        {
+          "url": "extractable",
+          "valueBoolean": true
+        },
+        {
+          "url": "domainAligned",
+          "valueBoolean": true
+        }
+      ],
+      "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-ex-pro-questionnaire-capabilities"
+    }
+  ],
+  "useContext": [
+    {
+      "valueReference": {
+        "display": "PROMIS (Patient-Reported Outcomes Measurement Information System) (https://www.healthmeasures.net/explore-measurement-systems/promis)"
+      },
+      "code": {
+        "code": "focus",
+        "system": "http://terminology.hl7.org/CodeSystem/usage-context-type"
+      }
+    },
+    {
+      "valueReference": {
+        "display": "PROMIS National Center Deutschland (CPCOR Charité) — Curator of the official German translations provided by PCOR-MII (https://cpcor.charite.de/promis_national_center_deutschland)"
+      },
+      "code": {
+        "code": "focus",
+        "system": "http://terminology.hl7.org/CodeSystem/usage-context-type"
+      }
+    },
+    {
+      "valueReference": {
+        "display": "PROMIS-16 Profile (Edelen et al. 2024, Qual Life Res) (https://doi.org/10.1007/s11136-023-03597-6)"
+      },
+      "code": {
+        "code": "focus",
+        "system": "http://terminology.hl7.org/CodeSystem/usage-context-type"
+      }
+    }
+  ],
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "https://cpcor.charite.de/promis_national_center_deutschland/nutzungsanfragen"
+        }
+      ],
+      "name": "PROMIS National Center Deutschland (CPCOR)"
+    }
+  ],
+  "code": [
+    {
+      "code": "promis-promis16",
+      "system": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-questionnaire-catalogue",
+      "display": "PROMIS-16 Profile Questionnaire (ultra-short 8-domain profile)"
+    }
+  ],
+  "item": [
+    {
+      "item": [
+        {
+          "code": [
+            {
+              "code": "62826-3",
+              "system": "http://loinc.org",
+              "display": "Are you able to go up and down stairs at a normal pace [PROMIS]"
+            }
+          ],
+          "linkId": "promis-pfa21",
+          "type": "choice",
+          "text": "Are you able to go up and down stairs at a normal pace?",
+          "_text": {
+            "extension": [
+              {
+                "extension": [
+                  {
+                    "url": "lang",
+                    "valueCode": "de"
+                  },
+                  {
+                    "url": "content",
+                    "valueString": "Können Sie mit normaler Geschwindigkeit Treppen hoch- und runtergehen?"
+                  }
+                ],
+                "url": "http://hl7.org/fhir/StructureDefinition/translation"
+              }
+            ]
+          },
+          "required": true,
+          "answerValueSet": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-promis-physical-function-response-scale"
+        },
+        {
+          "code": [
+            {
+              "code": "62827-1",
+              "system": "http://loinc.org",
+              "display": "Are you able to go for a walk of at least 15 minutes [PROMIS]"
+            }
+          ],
+          "linkId": "promis-pfa23",
+          "type": "choice",
+          "text": "Are you able to go for a walk of at least 15 minutes?",
+          "_text": {
+            "extension": [
+              {
+                "extension": [
+                  {
+                    "url": "lang",
+                    "valueCode": "de"
+                  },
+                  {
+                    "url": "content",
+                    "valueString": "Können Sie mindestens 15 Minuten lang spazieren gehen?"
+                  }
+                ],
+                "url": "http://hl7.org/fhir/StructureDefinition/translation"
+              }
+            ]
+          },
+          "required": true,
+          "answerValueSet": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-promis-physical-function-response-scale"
+        }
+      ],
+      "linkId": "PROMIS-16.PhysicalFunction",
+      "type": "group",
+      "text": "Physical Function",
+      "_text": {
+        "extension": [
+          {
+            "extension": [
+              {
+                "url": "lang",
+                "valueCode": "de"
+              },
+              {
+                "url": "content",
+                "valueString": "Körperliche Funktion"
+              }
+            ],
+            "url": "http://hl7.org/fhir/StructureDefinition/translation"
+          }
+        ]
+      }
+    },
+    {
+      "item": [
+        {
+          "code": [
+            {
+              "code": "61941-1",
+              "system": "http://loinc.org",
+              "display": "I found it hard to focus on anything other than my anxiety in past 7 days"
+            }
+          ],
+          "linkId": "promis-edanx40",
+          "type": "choice",
+          "text": "I found it hard to focus on anything other than my anxiety.",
+          "_text": {
+            "extension": [
+              {
+                "extension": [
+                  {
+                    "url": "lang",
+                    "valueCode": "de"
+                  },
+                  {
+                    "url": "content",
+                    "valueString": "Ich fand es schwer, auf etwas anderes zu achten als auf meine Angst."
+                  }
+                ],
+                "url": "http://hl7.org/fhir/StructureDefinition/translation"
+              }
+            ]
+          },
+          "required": true,
+          "answerValueSet": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-promis-frequency-response-scale"
+        },
+        {
+          "code": [
+            {
+              "code": "61942-9",
+              "system": "http://loinc.org",
+              "display": "My worries overwhelmed me in past 7 days"
+            }
+          ],
+          "linkId": "promis-edanx41",
+          "type": "choice",
+          "text": "My worries overwhelmed me.",
+          "_text": {
+            "extension": [
+              {
+                "extension": [
+                  {
+                    "url": "lang",
+                    "valueCode": "de"
+                  },
+                  {
+                    "url": "content",
+                    "valueString": "Meine Sorgen haben mich überwältigt."
+                  }
+                ],
+                "url": "http://hl7.org/fhir/StructureDefinition/translation"
+              }
+            ]
+          },
+          "required": true,
+          "answerValueSet": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-promis-frequency-response-scale"
+        }
+      ],
+      "linkId": "PROMIS-16.Anxiety",
+      "type": "group",
+      "text": "Emotional Distress — Anxiety",
+      "_text": {
+        "extension": [
+          {
+            "extension": [
+              {
+                "url": "lang",
+                "valueCode": "de"
+              },
+              {
+                "url": "content",
+                "valueString": "Emotionale Belastung — Angst"
+              }
+            ],
+            "url": "http://hl7.org/fhir/StructureDefinition/translation"
+          }
+        ]
+      }
+    },
+    {
+      "item": [
+        {
+          "code": [
+            {
+              "code": "61967-6",
+              "system": "http://loinc.org",
+              "display": "I felt depressed in past 7 days [PROMIS]"
+            }
+          ],
+          "linkId": "promis-eddep29",
+          "type": "choice",
+          "text": "I felt depressed.",
+          "_text": {
+            "extension": [
+              {
+                "extension": [
+                  {
+                    "url": "lang",
+                    "valueCode": "de"
+                  },
+                  {
+                    "url": "content",
+                    "valueString": "Ich fühlte mich niedergeschlagen."
+                  }
+                ],
+                "url": "http://hl7.org/fhir/StructureDefinition/translation"
+              }
+            ]
+          },
+          "required": true,
+          "answerValueSet": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-promis-frequency-response-scale"
+        },
+        {
+          "code": [
+            {
+              "code": "61973-4",
+              "system": "http://loinc.org",
+              "display": "I felt hopeless in past 7 days [PROMIS]"
+            }
+          ],
+          "linkId": "promis-eddep41",
+          "type": "choice",
+          "text": "I felt hopeless.",
+          "_text": {
+            "extension": [
+              {
+                "extension": [
+                  {
+                    "url": "lang",
+                    "valueCode": "de"
+                  },
+                  {
+                    "url": "content",
+                    "valueString": "Ich fühlte mich hoffnungslos."
+                  }
+                ],
+                "url": "http://hl7.org/fhir/StructureDefinition/translation"
+              }
+            ]
+          },
+          "required": true,
+          "answerValueSet": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-promis-frequency-response-scale"
+        }
+      ],
+      "linkId": "PROMIS-16.Depression",
+      "type": "group",
+      "text": "Emotional Distress — Depression",
+      "_text": {
+        "extension": [
+          {
+            "extension": [
+              {
+                "url": "lang",
+                "valueCode": "de"
+              },
+              {
+                "url": "content",
+                "valueString": "Emotionale Belastung — Depressivität"
+              }
+            ],
+            "url": "http://hl7.org/fhir/StructureDefinition/translation"
+          }
+        ]
+      }
+    },
+    {
+      "item": [
+        {
+          "code": [
+            {
+              "code": "61878-5",
+              "system": "http://loinc.org",
+              "display": "I feel fatigued during the past 7 days [PROMIS]"
+            }
+          ],
+          "linkId": "promis-hi7",
+          "type": "choice",
+          "text": "I feel fatigued.",
+          "_text": {
+            "extension": [
+              {
+                "extension": [
+                  {
+                    "url": "lang",
+                    "valueCode": "de"
+                  },
+                  {
+                    "url": "content",
+                    "valueString": "Ich bin erschöpft."
+                  }
+                ],
+                "url": "http://hl7.org/fhir/StructureDefinition/translation"
+              }
+            ]
+          },
+          "required": true,
+          "answerValueSet": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-promis-intensity-response-scale"
+        },
+        {
+          "code": [
+            {
+              "code": "61882-7",
+              "system": "http://loinc.org",
+              "display": "I had trouble starting things because I was tired in past 7 days [PROMIS]"
+            }
+          ],
+          "linkId": "promis-an3",
+          "type": "choice",
+          "text": "I had trouble starting things because I was tired.",
+          "_text": {
+            "extension": [
+              {
+                "extension": [
+                  {
+                    "url": "lang",
+                    "valueCode": "de"
+                  },
+                  {
+                    "url": "content",
+                    "valueString": "Es fällt mir schwer, etwas anzufangen, weil ich müde bin."
+                  }
+                ],
+                "url": "http://hl7.org/fhir/StructureDefinition/translation"
+              }
+            ]
+          },
+          "required": true,
+          "answerValueSet": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-promis-intensity-response-scale"
+        }
+      ],
+      "linkId": "PROMIS-16.Fatigue",
+      "type": "group",
+      "text": "Fatigue",
+      "_text": {
+        "extension": [
+          {
+            "extension": [
+              {
+                "url": "lang",
+                "valueCode": "de"
+              },
+              {
+                "url": "content",
+                "valueString": "Erschöpfung"
+              }
+            ],
+            "url": "http://hl7.org/fhir/StructureDefinition/translation"
+          }
+        ]
+      }
+    },
+    {
+      "item": [
+        {
+          "linkId": "promis-sleep25",
+          "type": "choice",
+          "text": "I had problems during the day because of poor sleep.",
+          "_text": {
+            "extension": [
+              {
+                "extension": [
+                  {
+                    "url": "lang",
+                    "valueCode": "de"
+                  },
+                  {
+                    "url": "content",
+                    "valueString": "Ich hatte tagsüber Probleme, weil ich schlecht geschlafen habe."
+                  }
+                ],
+                "url": "http://hl7.org/fhir/StructureDefinition/translation"
+              }
+            ]
+          },
+          "required": true,
+          "answerValueSet": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-promis-intensity-response-scale"
+        },
+        {
+          "linkId": "promis-sleep90",
+          "type": "choice",
+          "text": "I had trouble sleeping.",
+          "_text": {
+            "extension": [
+              {
+                "extension": [
+                  {
+                    "url": "lang",
+                    "valueCode": "de"
+                  },
+                  {
+                    "url": "content",
+                    "valueString": "Es fiel mir schwer zu schlafen."
+                  }
+                ],
+                "url": "http://hl7.org/fhir/StructureDefinition/translation"
+              }
+            ]
+          },
+          "required": true,
+          "answerValueSet": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-promis-frequency-response-scale"
+        }
+      ],
+      "linkId": "PROMIS-16.Sleep",
+      "type": "group",
+      "text": "Sleep-related Impairment / Sleep Disturbance",
+      "_text": {
+        "extension": [
+          {
+            "extension": [
+              {
+                "url": "lang",
+                "valueCode": "de"
+              },
+              {
+                "url": "content",
+                "valueString": "Schlafbezogene Beeinträchtigungen / Schlafbeeinträchtigung"
+              }
+            ],
+            "url": "http://hl7.org/fhir/StructureDefinition/translation"
+          }
+        ]
+      }
+    },
+    {
+      "item": [
+        {
+          "linkId": "promis-srpper31-caps",
+          "type": "choice",
+          "text": "I have trouble taking care of my regular personal responsibilities.",
+          "_text": {
+            "extension": [
+              {
+                "extension": [
+                  {
+                    "url": "lang",
+                    "valueCode": "de"
+                  },
+                  {
+                    "url": "content",
+                    "valueString": "Es fällt mir schwer, mich um meine regelmäßigen persönlichen Verpflichtungen zu kümmern."
+                  }
+                ],
+                "url": "http://hl7.org/fhir/StructureDefinition/translation"
+              }
+            ]
+          },
+          "required": true,
+          "answerValueSet": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-promis-frequency-response-scale"
+        },
+        {
+          "code": [
+            {
+              "code": "76712-9",
+              "system": "http://loinc.org",
+              "display": "I have trouble doing all of the activities with friends that I want to do [PROMIS]"
+            }
+          ],
+          "linkId": "promis-srpper46-caps",
+          "type": "choice",
+          "text": "I have trouble doing all of the activities with friends that I want to do.",
+          "_text": {
+            "extension": [
+              {
+                "extension": [
+                  {
+                    "url": "lang",
+                    "valueCode": "de"
+                  },
+                  {
+                    "url": "content",
+                    "valueString": "Es fällt mir schwer, allen Aktivitäten nachzugehen, die ich mit Freunden machen möchte."
+                  }
+                ],
+                "url": "http://hl7.org/fhir/StructureDefinition/translation"
+              }
+            ]
+          },
+          "required": true,
+          "answerValueSet": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-promis-frequency-response-scale"
+        }
+      ],
+      "linkId": "PROMIS-16.SocialRoles",
+      "type": "group",
+      "text": "Ability to Participate in Social Roles and Activities",
+      "_text": {
+        "extension": [
+          {
+            "extension": [
+              {
+                "url": "lang",
+                "valueCode": "de"
+              },
+              {
+                "url": "content",
+                "valueString": "Teilhabe an sozialen Rollen und Aktivitäten"
+              }
+            ],
+            "url": "http://hl7.org/fhir/StructureDefinition/translation"
+          }
+        ]
+      }
+    },
+    {
+      "item": [
+        {
+          "code": [
+            {
+              "code": "61758-9",
+              "system": "http://loinc.org",
+              "display": "How much did pain interfere with your day to day activities in past 7 days [PROMIS]"
+            }
+          ],
+          "linkId": "promis-painin9",
+          "type": "choice",
+          "text": "How much did pain interfere with your day-to-day activities?",
+          "_text": {
+            "extension": [
+              {
+                "extension": [
+                  {
+                    "url": "lang",
+                    "valueCode": "de"
+                  },
+                  {
+                    "url": "content",
+                    "valueString": "Wie sehr beeinträchtigen Schmerzen Ihre Alltagsaktivitäten?"
+                  }
+                ],
+                "url": "http://hl7.org/fhir/StructureDefinition/translation"
+              }
+            ]
+          },
+          "required": true,
+          "answerValueSet": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-promis-intensity-response-scale"
+        },
+        {
+          "code": [
+            {
+              "code": "61773-8",
+              "system": "http://loinc.org",
+              "display": "How much did pain interfere with your ability to participate in social activities in past 7 days [PROMIS]"
+            }
+          ],
+          "linkId": "promis-painin31",
+          "type": "choice",
+          "text": "How much did pain interfere with your ability to participate in social activities?",
+          "_text": {
+            "extension": [
+              {
+                "extension": [
+                  {
+                    "url": "lang",
+                    "valueCode": "de"
+                  },
+                  {
+                    "url": "content",
+                    "valueString": "Wie sehr beeinträchtigen Schmerzen Ihre Fähigkeit, an sozialen Aktivitäten teilzunehmen?"
+                  }
+                ],
+                "url": "http://hl7.org/fhir/StructureDefinition/translation"
+              }
+            ]
+          },
+          "required": true,
+          "answerValueSet": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-promis-intensity-response-scale"
+        }
+      ],
+      "linkId": "PROMIS-16.PainInterference",
+      "type": "group",
+      "text": "Pain Interference",
+      "_text": {
+        "extension": [
+          {
+            "extension": [
+              {
+                "url": "lang",
+                "valueCode": "de"
+              },
+              {
+                "url": "content",
+                "valueString": "Beeinträchtigung durch Schmerzen"
+              }
+            ],
+            "url": "http://hl7.org/fhir/StructureDefinition/translation"
+          }
+        ]
+      }
+    },
+    {
+      "item": [
+        {
+          "linkId": "promis-pc27r",
+          "type": "choice",
+          "text": "I have been able to remember to do things, like take medicine or buy something I needed.",
+          "_text": {
+            "extension": [
+              {
+                "extension": [
+                  {
+                    "url": "lang",
+                    "valueCode": "de"
+                  },
+                  {
+                    "url": "content",
+                    "valueString": "Ich bin fähig gewesen, mich an Dinge zu erinnern, die ich tun musste, wie z.B. Medikamente einnehmen oder etwas kaufen, das ich benötigte."
+                  }
+                ],
+                "url": "http://hl7.org/fhir/StructureDefinition/translation"
+              }
+            ]
+          },
+          "required": true,
+          "answerValueSet": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-promis-intensity-response-scale"
+        },
+        {
+          "linkId": "promis-pc-caps3r",
+          "type": "choice",
+          "text": "I have been able to think clearly without extra effort.",
+          "_text": {
+            "extension": [
+              {
+                "extension": [
+                  {
+                    "url": "lang",
+                    "valueCode": "de"
+                  },
+                  {
+                    "url": "content",
+                    "valueString": "Ich bin fähig gewesen, klar zu denken, ohne mich extra anzustrengen."
+                  }
+                ],
+                "url": "http://hl7.org/fhir/StructureDefinition/translation"
+              }
+            ]
+          },
+          "required": true,
+          "answerValueSet": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-promis-intensity-response-scale"
+        }
+      ],
+      "linkId": "PROMIS-16.Cognition",
+      "type": "group",
+      "text": "Cognitive Function — Abilities",
+      "_text": {
+        "extension": [
+          {
+            "extension": [
+              {
+                "url": "lang",
+                "valueCode": "de"
+              },
+              {
+                "url": "content",
+                "valueString": "Kognitive Funktionen — Fähigkeiten"
+              }
+            ],
+            "url": "http://hl7.org/fhir/StructureDefinition/translation"
+          }
+        ]
+      }
+    }
+  ],
+  "version": "2027.0.0-ballot.1",
+  "publisher": "Medizininformatik-Initiative (MII) – PRO Modul",
+  "copyright": "The FHIR Questionnaire resource (linkIds, extensions, score calculation logic, observation extraction definitions) is part of the MII PRO Module and is licensed under CC-BY 4.0.\n\nThe PROMIS items contained herein (item text, response options, scoring algorithms, IRT parameters) are © 2008–2024 PROMIS Health Organization and PROMIS Cooperative Group. PROMIS® is a registered trademark. See https://www.healthmeasures.net for the upstream license.\n\nThe official German translations are provided by PCOR-MII (Patient-Centered Outcomes Research within the Medizininformatik-Initiative) and curated by the PROMIS National Center Germany (CPCOR, Charité – Universitätsmedizin Berlin; head: Felix Fischer).\n\nInstitutional use outside the PCOR-MII / MII context requires a usage request to CPCOR: https://cpcor.charite.de/promis_national_center_deutschland/nutzungsanfragen\n\nLOINC® codes are © Regenstrief Institute, Inc. and used under the LOINC license: https://loinc.org/license/",
+  "status": "draft",
+  "experimental": true,
+  "language": "en"
+}

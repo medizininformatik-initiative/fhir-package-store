@@ -1,0 +1,32 @@
+{
+  "resourceType": "ValueSet",
+  "status": "active",
+  "name": "MII_VS_PRO_DASS_21_Answer_List",
+  "id": "mii-vs-pro-dass-21-answer-list",
+  "title": "MII VS PRO DASS-21 Answer List",
+  "description": "4-point Likert response scale for all DASS-21 items (0 = Did not apply to me at all, 3 = Applied to me very much)",
+  "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/ValueSet/mii-vs-pro-dass-21-answer-list",
+  "version": "2027.0.0-ballot.1",
+  "experimental": true,
+  "compose": {
+    "include": [
+      {
+        "system": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-dass-21",
+        "concept": [
+          {
+            "code": "dass-dass21-answer-0"
+          },
+          {
+            "code": "dass-dass21-answer-1"
+          },
+          {
+            "code": "dass-dass21-answer-2"
+          },
+          {
+            "code": "dass-dass21-answer-3"
+          }
+        ]
+      }
+    ]
+  }
+}

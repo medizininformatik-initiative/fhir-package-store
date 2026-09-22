@@ -1,0 +1,66 @@
+{
+  "resourceType": "QuestionnaireResponse",
+  "id": "mii-exa-pro-isr-z-response",
+  "meta": {
+    "profile": [
+      "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-questionnaire-response|2027.0.0-ballot.1"
+    ]
+  },
+  "item": [
+    {
+      "answer": [
+        {
+          "valueCoding": {
+            "code": "trifft-ziemlich-zu",
+            "system": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-isr-z-answers",
+            "display": "trifft ziemlich zu"
+          }
+        }
+      ],
+      "linkId": "isr-z-q01",
+      "text": "Ich leide unter meinen ständig wiederkehrenden, sinnlosen Gedanken oder Handlungen, gegen die ich mich aber nicht wehren kann (z.B. Hände waschen)."
+    },
+    {
+      "answer": [
+        {
+          "valueCoding": {
+            "code": "trifft-kaum-zu",
+            "system": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-isr-z-answers",
+            "display": "trifft kaum zu"
+          }
+        }
+      ],
+      "linkId": "isr-z-q02",
+      "text": "Ich leiste Widerstand gegen immer wiederkehrende, unsinnige Gedanken oder Handlungen, auch wenn mir das nicht immer gelingt."
+    },
+    {
+      "answer": [
+        {
+          "valueCoding": {
+            "code": "trifft-deutlich-zu",
+            "system": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-isr-z-answers",
+            "display": "trifft deutlich zu"
+          }
+        }
+      ],
+      "linkId": "isr-z-q03",
+      "text": "Ich leide unter quälenden, sinnlosen Gedanken oder Handlungen, die mein normales Leben beeinträchtigen."
+    },
+    {
+      "answer": [
+        {
+          "valueDecimal": 2
+        }
+      ],
+      "linkId": "isr-z-score-mean",
+      "text": "ISR-Z Skalenwert (Mittelwert der 3 Zwang-Items, Bereich 0-4)"
+    }
+  ],
+  "status": "completed",
+  "language": "de",
+  "subject": {
+    "reference": "Patient/mii-exa-pro-patient"
+  },
+  "authored": "2026-08-28T09:30:00Z",
+  "questionnaire": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/Questionnaire/mii-qst-pro-isr-z|2027.0.0-ballot.1"
+}

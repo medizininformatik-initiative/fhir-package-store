@@ -1,0 +1,103 @@
+{
+  "resourceType": "CodeSystem",
+  "status": "active",
+  "content": "complete",
+  "name": "MII_CS_PRO_SSD_12_Answers",
+  "id": "mii-cs-pro-ssd-12-answers",
+  "title": "MII CS PRO SSD-12 Answers",
+  "description": "MII-controlled frequency answer scale for SSD-12 (0-4). English display with German designation (original instrument wording). itemWeight properties on each concept enable SDC ordinal scoring via answerValueSet.",
+  "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/CodeSystem/mii-cs-pro-ssd-12-answers",
+  "concept": [
+    {
+      "code": "never",
+      "display": "nie",
+      "designation": [
+        {
+          "language": "en",
+          "value": "Never"
+        }
+      ],
+      "property": [
+        {
+          "code": "itemWeight",
+          "valueDecimal": 0
+        }
+      ]
+    },
+    {
+      "code": "rarely",
+      "display": "selten",
+      "designation": [
+        {
+          "language": "en",
+          "value": "Rarely"
+        }
+      ],
+      "property": [
+        {
+          "code": "itemWeight",
+          "valueDecimal": 1
+        }
+      ]
+    },
+    {
+      "code": "sometimes",
+      "display": "manchmal",
+      "designation": [
+        {
+          "language": "en",
+          "value": "Sometimes"
+        }
+      ],
+      "property": [
+        {
+          "code": "itemWeight",
+          "valueDecimal": 2
+        }
+      ]
+    },
+    {
+      "code": "often",
+      "display": "oft",
+      "designation": [
+        {
+          "language": "en",
+          "value": "Often"
+        }
+      ],
+      "property": [
+        {
+          "code": "itemWeight",
+          "valueDecimal": 3
+        }
+      ]
+    },
+    {
+      "code": "very-often",
+      "display": "sehr oft",
+      "designation": [
+        {
+          "language": "en",
+          "value": "Very often"
+        }
+      ],
+      "property": [
+        {
+          "code": "itemWeight",
+          "valueDecimal": 4
+        }
+      ]
+    }
+  ],
+  "version": "2027.0.0-ballot.1",
+  "language": "en",
+  "property": [
+    {
+      "code": "itemWeight",
+      "uri": "http://hl7.org/fhir/concept-properties#itemWeight",
+      "description": "Numerical ordinal value (0-4) for SDC calculatedExpression scoring via .weight().sum()",
+      "type": "decimal"
+    }
+  ],
+  "count": 5
+}

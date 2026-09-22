@@ -1,0 +1,67 @@
+{
+  "resourceType": "ServiceRequest",
+  "id": "mii-exa-patho-request",
+  "meta": {
+    "profile": [
+      "https://www.medizininformatik-initiative.de/fhir/ext/modul-patho/StructureDefinition/mii-pr-patho-service-request|2026.0.0"
+    ]
+  },
+  "intent": "order",
+  "category": [
+    {
+      "coding": [
+        {
+          "code": "726007",
+          "system": "http://snomed.info/sct",
+          "display": "Pathology consultation, comprehensive, records and specimen with report (procedure)"
+        }
+      ]
+    }
+  ],
+  "identifier": [
+    {
+      "type": {
+        "coding": [
+          {
+            "code": "PLAC",
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0203"
+          }
+        ]
+      },
+      "value": "KHXX_ENDO_18.123451",
+      "system": "https://pathologie.klinikum-karlsruhe.de/fhir/fn/untersuchungsauftrag"
+    }
+  ],
+  "status": "completed",
+  "subject": {
+    "reference": "Patient/12345"
+  },
+  "encounter": {
+    "reference": "Encounter/87687"
+  },
+  "requester": {
+    "reference": "Practitioner/34456"
+  },
+  "code": {
+    "coding": [
+      {
+        "code": "726007",
+        "system": "http://snomed.info/sct",
+        "display": "Pathology consultation, comprehensive, records and specimen with report (procedure)"
+      }
+    ]
+  },
+  "supportingInfo": [
+    {
+      "reference": "List/mii-exa-patho-history-of-present-illness"
+    },
+    {
+      "reference": "List/mii-exa-patho-active-problems-list"
+    }
+  ],
+  "specimen": [
+    {
+      "reference": "Specimen/mii-exa-patho-prostate-tru-cut-biopsy-sample"
+    }
+  ]
+}

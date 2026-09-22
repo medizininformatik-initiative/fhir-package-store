@@ -1,0 +1,67 @@
+{
+  "resourceType": "ValueSet",
+  "status": "active",
+  "name": "MII_VS_Labor_InterpretationsbeeinflussendeEigenschaft_SNOMEDCT",
+  "id": "mii-vs-labor-interpretation-eigenschaften-snomedct",
+  "title": "MII VS Labor Interpretationsbeeinflussende Eigenschaften SNOMEDCT",
+  "description": "Codes zur Beschreibung von interpretationsbeeinflussenden Eigenschaften der Laboruntersuchung oder Probe.",
+  "version": "2026.0.0",
+  "url": "https://www.medizininformatik-initiative.de/fhir/core/modul-labor/ValueSet/mii-vs-labor-interpretation-eigenschaften-snomedct",
+  "meta": {
+    "profile": [
+      "http://hl7.org/fhir/StructureDefinition/shareablevalueset"
+    ]
+  },
+  "publisher": "Medizininformatik Initiative",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "https://www.medizininformatik-initiative.de"
+        }
+      ]
+    }
+  ],
+  "extension": [
+    {
+      "url": "https://www.medizininformatik-initiative.de/fhir/modul-meta/StructureDefinition/mii-ex-meta-license-codeable",
+      "valueCodeableConcept": {
+        "coding": [
+          {
+            "code": "CC-BY-4.0",
+            "system": "http://hl7.org/fhir/spdx-license",
+            "display": "Creative Commons Attribution 4.0 International"
+          }
+        ]
+      }
+    }
+  ],
+  "experimental": false,
+  "compose": {
+    "include": [
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/900000000000207008/version/20250701",
+        "concept": [
+          {
+            "code": "118128002",
+            "display": "Specimen hemolyzed (finding)"
+          },
+          {
+            "code": "118127007",
+            "display": "Specimen lipemic (finding)"
+          },
+          {
+            "code": "118129005",
+            "display": "Specimen icteric (finding)"
+          },
+          {
+            "code": "167569004",
+            "display": "Urine culture - mixed growth (finding)"
+          }
+        ]
+      }
+    ]
+  }
+}

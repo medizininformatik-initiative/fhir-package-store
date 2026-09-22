@@ -1,0 +1,10 @@
+{
+  "resourceType": "Specimen",
+  "id": "4999",
+  "identifier": [
+    {
+      "system": "https://example.org/fhir/sid/test-specimens",
+      "value": "4999"
+    }
+  ]
+}

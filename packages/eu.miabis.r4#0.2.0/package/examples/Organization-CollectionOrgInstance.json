@@ -1,0 +1,113 @@
+{
+  "resourceType": "Organization",
+  "id": "CollectionOrgInstance",
+  "meta": {
+    "profile": [
+      "https://fhir.bbmri-eric.eu/fhir/StructureDefinition/miabis-collection-organization"
+    ]
+  },
+  "identifier": [
+    {
+      "value": "collectionOrgId"
+    }
+  ],
+  "alias": [
+    "collectionOrgAlias"
+  ],
+  "telecom": [
+    {
+      "system": "url",
+      "value": "http://collectionOrg.com"
+    }
+  ],
+  "contact": [
+    {
+      "name": {
+        "given": [
+          "contactName"
+        ],
+        "family": "contactFamilyName"
+      },
+      "telecom": [
+        {
+          "system": "email",
+          "value": "contactEmail"
+        }
+      ]
+    }
+  ],
+  "address": [
+    {
+      "country": "CZ"
+    }
+  ],
+  "extension": [
+    {
+      "url": "https://fhir.bbmri-eric.eu/fhir/StructureDefinition/miabis-collection-dataset-type-extension",
+      "valueCodeableConcept": {
+        "coding": [
+          {
+            "code": "Genomic",
+            "system": "https://fhir.bbmri-eric.eu/fhir/CodeSystem/miabis-collection-dataset-typeCS"
+          }
+        ]
+      }
+    },
+    {
+      "url": "https://fhir.bbmri-eric.eu/fhir/StructureDefinition/miabis-sample-source-extension",
+      "valueCodeableConcept": {
+        "coding": [
+          {
+            "code": "Human",
+            "system": "https://fhir.bbmri-eric.eu/fhir/CodeSystem/miabis-sample-source-cs"
+          }
+        ]
+      }
+    },
+    {
+      "url": "https://fhir.bbmri-eric.eu/fhir/StructureDefinition/miabis-sample-collection-setting-extension",
+      "valueCodeableConcept": {
+        "coding": [
+          {
+            "code": "RoutineHealthCare",
+            "system": "https://fhir.bbmri-eric.eu/fhir/CodeSystem/miabis-sample-collection-setting-cs"
+          }
+        ]
+      }
+    },
+    {
+      "url": "https://fhir.bbmri-eric.eu/fhir/StructureDefinition/miabis-collection-design-extension",
+      "valueCodeableConcept": {
+        "coding": [
+          {
+            "code": "CaseControl",
+            "system": "https://fhir.bbmri-eric.eu/fhir/CodeSystem/miabis-collection-design-cs"
+          }
+        ]
+      }
+    },
+    {
+      "url": "https://fhir.bbmri-eric.eu/fhir/StructureDefinition/miabis-use-and-access-conditions-extension",
+      "valueCodeableConcept": {
+        "coding": [
+          {
+            "code": "CommercialUse",
+            "system": "https://fhir.bbmri-eric.eu/fhir/CodeSystem/miabis-use-and-access-conditions-cs"
+          }
+        ]
+      }
+    },
+    {
+      "url": "https://fhir.bbmri-eric.eu/fhir/StructureDefinition/miabis-publications-extension",
+      "valueString": "publicationExample"
+    },
+    {
+      "url": "https://fhir.bbmri-eric.eu/fhir/StructureDefinition/miabis-organization-description-extension",
+      "valueString": "descriptionExample"
+    }
+  ],
+  "name": "collectionOrgName",
+  "partOf": {
+    "reference": "Organization/biobankId"
+  }
+}
